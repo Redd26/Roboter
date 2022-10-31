@@ -1,0 +1,37 @@
+{
+	"name": "Personagem",
+	"plugin-id": "Sprite",
+	"sid": 376819318606546,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 86,
+						"height": 126,
+						"originX": 1.2674418604651163,
+						"originY": -0.21428571428571427,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9939367,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 733293487046778,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

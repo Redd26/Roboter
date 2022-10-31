@@ -1,0 +1,84 @@
+{
+	"name": "BotaoAceitar",
+	"plugin-id": "Sprite",
+	"sid": 389808581840649,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 436,
+						"height": 469,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1850928,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.6903669724770642,
+								0.04477611940298507,
+								0,
+								0.8166311300639659,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 525422435723015,
+				"name": "CinzaAceitar",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 436,
+						"height": 469,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4725132,
+						"collisionPoly": {
+							"points": [
+								0.07339449541284417,
+								0.28784648187633255,
+								1,
+								0.3837953091684435,
+								1,
+								1,
+								0.1651376146788991,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 905170241683962,
+				"name": "VerdeAceitar",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

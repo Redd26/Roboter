@@ -1,0 +1,354 @@
+{
+	"name": "EV_loja",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "iniciou",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 868980513088747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 281391280815032
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 210560201048413,
+					"parameters": {
+						"variable": "iniciou",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 570792339345402
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 751659368241885
+				}
+			],
+			"sid": 985120100015290
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 812686886745733,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "GuardaCartas"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FundoCartas",
+					"sid": 468266367322493,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoAceitar",
+					"sid": 800064912854541,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoRecusar",
+					"sid": 295824940767124,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 563980304641073
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 174793618673031,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotaoRecusar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoRecusar",
+					"sid": 677486712493739,
+					"parameters": {
+						"animation": "\"RedNegar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FundoCartas",
+					"sid": 804747178965318,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoAceitar",
+					"sid": 712093404125394,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoRecusar",
+					"sid": 479351250296847,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 203184800350825
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 637396970514892,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotaoAceitar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoAceitar",
+					"sid": 213034531199990,
+					"parameters": {
+						"animation": "\"VerdeAceitar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FundoCartas",
+					"sid": 467103958248676,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoAceitar",
+					"sid": 254132695080624,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotaoRecusar",
+					"sid": 441803277267992,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 799804560501780,
+					"parameters": {
+						"layout": "Montagem_Material"
+					}
+				}
+			],
+			"sid": 632935699744586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 425311660258675,
+					"parameters": {
+						"object": "GuardaCartas"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "GuardaCartas",
+					"sid": 472912291942464,
+					"parameters": {
+						"animation": "\"MouseOver\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 619836165282371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 437472548039643,
+					"parameters": {
+						"object": "GuardaCartas"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "GuardaCartas",
+					"sid": 776878853069487,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 286469753009797
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 312931018400375,
+					"parameters": {
+						"object": "BotaoRecusar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoRecusar",
+					"sid": 433602630341597,
+					"parameters": {
+						"animation": "\"RedNegar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 600051912235243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 359069018340521,
+					"parameters": {
+						"object": "BotaoRecusar"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoRecusar",
+					"sid": 366425574431392,
+					"parameters": {
+						"animation": "\"CinzaNegar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 448507413436342
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 238760606657017,
+					"parameters": {
+						"object": "BotaoAceitar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoAceitar",
+					"sid": 893219239813145,
+					"parameters": {
+						"animation": "\"VerdeAceitar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 288908369293572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 185833251494505,
+					"parameters": {
+						"object": "BotaoAceitar"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "BotaoAceitar",
+					"sid": 361652010782136,
+					"parameters": {
+						"animation": "\"CinzaAceitar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 119280026542342
+		}
+	],
+	"sid": 876358280105904
+}

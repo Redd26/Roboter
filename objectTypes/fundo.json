@@ -1,0 +1,57 @@
+{
+	"name": "Fundo",
+	"plugin-id": "Sprite",
+	"sid": 738055674034190,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6919322,
+						"collisionPoly": {
+							"points": [
+								0.003924646781789639,
+								0.001483679525222552,
+								0.5,
+								0.001483679525222552,
+								0.9952904238618524,
+								0.001483679525222552,
+								0.9984301412872841,
+								0.5237388724035609,
+								0.9701726844583988,
+								0.9970326409495549,
+								0.5,
+								0.9970326409495549,
+								0.029042386185243328,
+								0.9970326409495549,
+								0.0007849293563579278,
+								0.5237388724035609
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 870926262264321,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

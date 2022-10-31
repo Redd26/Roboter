@@ -1,0 +1,100 @@
+{
+	"name": "GuardaCartas",
+	"plugin-id": "Sprite",
+	"sid": 774695869404561,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 54,
+						"height": 58,
+						"originX": 0.5,
+						"originY": 0.5344827586206896,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3412717,
+						"collisionPoly": {
+							"points": [
+								0.1312260536398467,
+								0,
+								0.6240421455938697,
+								0,
+								0.9760536398467434,
+								0,
+								1,
+								0.12494678586632624,
+								1,
+								1,
+								0.6240421455938697,
+								1,
+								0,
+								1,
+								0,
+								0.12494678586632624
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 461463791446556,
+				"name": "idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 84,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5344827586206896,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8080055,
+						"collisionPoly": {
+							"points": [
+								0.19189189189189193,
+								0,
+								0.5664864864864865,
+								0,
+								0.872972972972973,
+								0,
+								1,
+								0.2941475309896362,
+								1,
+								1,
+								0.5664864864864865,
+								1,
+								0.05567567567567568,
+								1,
+								0,
+								0.2941475309896362
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 667350662997389,
+				"name": "MouseOver",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

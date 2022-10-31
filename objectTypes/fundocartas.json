@@ -1,0 +1,57 @@
+{
+	"name": "FundoCartas",
+	"plugin-id": "Sprite",
+	"sid": 910119925513474,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 802,
+						"height": 602,
+						"originX": 0.4993765586034913,
+						"originY": 0.5141196013289037,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7403722,
+						"collisionPoly": {
+							"points": [
+								0.0012468827930174563,
+								0.33554817275747506,
+								0.4993765586034913,
+								0.0016611295681063123,
+								0.9975062344139651,
+								0.3338870431893688,
+								0.9975062344139651,
+								0.5141196013289037,
+								0.9975062344139651,
+								0.6926910299003323,
+								0.4993765586034913,
+								0.9966777408637874,
+								0.0012468827930174563,
+								0.691029900332226,
+								0.0012468827930174563,
+								0.5141196013289037
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115310046806559,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

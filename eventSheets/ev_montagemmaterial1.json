@@ -1,0 +1,1003 @@
+{
+	"name": "EV_montagemMaterial1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "EV_loja"
+		},
+		{
+			"eventType": "variable",
+			"name": "SelecioinarElemento",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 239929182267909
+		},
+		{
+			"eventType": "variable",
+			"name": "Quebrar",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 206145477577599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 992546931432936,
+					"parameters": {
+						"object": "ferro"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 563313895186595,
+					"parameters": {
+						"object": "Ouro"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Ferro_texto",
+					"sid": 161756683864573,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 160794912417506,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Intro",
+					"sid": 944560226318231,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 955544954150044,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ouro_texto",
+					"sid": 747913018007668,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 242654575644713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 157271113978580,
+					"parameters": {
+						"object": "ferro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 881274505530488,
+					"parameters": {
+						"object": "Ouro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 836827811587321,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Intro",
+					"sid": 510610866653077,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ouro_texto",
+					"sid": 373554072423964,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 940794443175404,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ferro_texto",
+					"sid": 749361765572849,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 486225181281119,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 608783628029466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 128192040319803,
+					"parameters": {
+						"object": "ferro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 364745839741643,
+					"parameters": {
+						"object": "Ouro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 164877508160760,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Intro",
+					"sid": 571181067196106
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Ouro_texto",
+					"sid": 175534954296562
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 240051991989903
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Ferro_texto",
+					"sid": 346077312661750
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 341407221344425
+				}
+			],
+			"sid": 989860751005780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 666496487095092,
+					"parameters": {
+						"object": "ferro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 973536114643911,
+					"parameters": {
+						"object": "Ouro"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 859522597884083,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Intro",
+					"sid": 614634166064874
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Ouro_texto",
+					"sid": 207105593419782
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 662756784393336
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Ferro_texto",
+					"sid": 364312483464982
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 143244963935125
+				}
+			],
+			"sid": 519775738236269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 429662326174052,
+					"parameters": {
+						"object": "Ouro"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 657951045335329,
+					"parameters": {
+						"object": "ferro"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Ouro_texto",
+					"sid": 950966876309883,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 365817488099144,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 100271803672213,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ferro_texto",
+					"sid": 534189758780746,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Intro",
+					"sid": 483106178925222,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 484879365548130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 600529859093819,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Ouro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Ouro_texto",
+					"sid": 577031705450835
+				}
+			],
+			"sid": 819182367162358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 314060727431240,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ferro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Ferro_texto",
+					"sid": 346624624991158
+				}
+			],
+			"sid": 384099186319057,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 177924957207711,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Ouro"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 295843406686912,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 277692778349711,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 202297030015125,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 705375996239696,
+					"parameters": {
+						"animation": "\"Ouro\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoOuro",
+					"sid": 677936529508733,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Intro",
+					"sid": 441057994287629,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 162071435246994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 589639708167856,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ferro"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 696973187063778,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 248436783752564,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 232384453813091,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 752239034040337,
+					"parameters": {
+						"animation": "\"Ferro\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExplicacaoFerro",
+					"sid": 929943886409009,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Intro",
+					"sid": 392591141581135,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 144530105575323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 732903576840748,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Martelo",
+					"sid": 979328354650367,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Martelo",
+					"sid": 231438318406193,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Martelo",
+					"sid": 812227755056171
+				}
+			],
+			"sid": 540100104073712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 183553581439023,
+					"parameters": {
+						"variable": "SelecioinarElemento",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Martelo",
+					"sid": 846259622310744,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Martelo",
+					"sid": 690843411934674,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Martelo",
+					"sid": 133356980993204
+				}
+			],
+			"sid": 712223600707176
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 907921090700545,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "MaterialParaDestruir"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 522290567708577,
+					"parameters": {
+						"animation": "\"Ouro\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 904025781426277,
+					"parameters": {
+						"variable": "Quebrar",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 848661522461723,
+					"parameters": {
+						"animation": "\"QuebrandoOuro\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 536288232087595,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 323109586798242,
+					"parameters": {
+						"variable": "Quebrar",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 169306126130531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 472512941128708,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "MaterialParaDestruir"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 348189146592253,
+					"parameters": {
+						"animation": "\"QuebrandoOuro\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 491006279694222,
+					"parameters": {
+						"variable": "Quebrar",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TextoMinerioFeito",
+					"sid": 629547897265679,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoMinerioFeito",
+					"sid": 790525599607231,
+					"parameters": {
+						"text": "\"Ouro Feito\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 685374054079158,
+					"parameters": {
+						"animation": "\"QuerbandoOuroFeito\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 751780751022974,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 849609199444056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 708371992993329,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "MaterialParaDestruir"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 621202804112996,
+					"parameters": {
+						"animation": "\"Ferro\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 820131307688591,
+					"parameters": {
+						"variable": "Quebrar",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 226921650417755,
+					"parameters": {
+						"animation": "\"QuebrandoFerro\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 815235167746490,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 365695367137184,
+					"parameters": {
+						"variable": "Quebrar",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 245522337375372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 805208550821319,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "MaterialParaDestruir"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 523653562894542,
+					"parameters": {
+						"animation": "\"QuebrandoFerro\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 574521538879239,
+					"parameters": {
+						"variable": "Quebrar",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TextoMinerioFeito",
+					"sid": 413433540357522,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoMinerioFeito",
+					"sid": 596810002505391,
+					"parameters": {
+						"text": "\"Ferro Feito\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 609999781980805,
+					"parameters": {
+						"animation": "\"QuebrandoFerroFeito\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 689233218989522,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 254060076519255
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 864892324598870,
+					"parameters": {
+						"animation": "\"QuebrandoFerroFeito\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoLevel",
+					"sid": 156553632869440,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 959269494330725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 779080896699449,
+					"parameters": {
+						"animation": "\"QuerbandoOuroFeito\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoLevel",
+					"sid": 946541635896690,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 686182479961358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 854694489074481,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoLevel"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 660447843694437,
+					"parameters": {
+						"animation": "\"QuerbandoOuroFeito\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 816499610030547,
+					"parameters": {
+						"layout": "Montagem_CortarChapa"
+					}
+				}
+			],
+			"sid": 397742739627964
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 816167386262714,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoLevel"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MaterialParaDestruir",
+					"sid": 800908284512776,
+					"parameters": {
+						"animation": "\"QuebrandoFerroFeito\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 289207657942402,
+					"parameters": {
+						"layout": "Montagem_CortarChapa"
+					}
+				}
+			],
+			"sid": 228058444914528
+		}
+	],
+	"sid": 162936259003711
+}

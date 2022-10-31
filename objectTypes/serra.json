@@ -1,0 +1,55 @@
+{
+	"name": "Serra",
+	"plugin-id": "Sprite",
+	"sid": 781656156934532,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 429537332269586
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 52,
+						"originX": 0.5517241379310345,
+						"originY": 0.4313186813186813,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9716155,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.019230769230769232,
+								1,
+								0.019230769230769232,
+								1,
+								0.9735396182764604,
+								0,
+								0.9735396182764604
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 291176174108900,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
