@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "BetterOutline",
+			"author": "skymen",
+			"version": "1.4.0.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "tintmask",
 			"name": "Tint mask",
 			"author": "Scirra",

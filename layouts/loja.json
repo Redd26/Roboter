@@ -134,6 +134,22 @@
 					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 393.97933759449245,
 						"y": 626.0801088904967,
@@ -148,7 +164,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 1
 					}
 				}
 			],

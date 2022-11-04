@@ -217,6 +217,15 @@
 						"animation": "\"MouseOver\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "GuardaCartas",
+					"sid": 488143221301954,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"BetterOutline\""
+					}
 				}
 			],
 			"sid": 619836165282371
@@ -242,6 +251,15 @@
 					"parameters": {
 						"animation": "\"idle\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "GuardaCartas",
+					"sid": 101126509750302,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BetterOutline\""
 					}
 				}
 			],
