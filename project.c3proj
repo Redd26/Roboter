@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 30802,
+	"savedWithRelease": 31700,
 	"name": "MontarRobo",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "tintmask",
 			"name": "Tint mask",
 			"author": "Scirra",
-			"version": "r308.2",
+			"version": "r317",
 			"bundled": false
 		}
 	],
@@ -274,7 +274,8 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat"
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
