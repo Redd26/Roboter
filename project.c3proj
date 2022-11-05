@@ -16,16 +16,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Mouse",
-			"name": "Mouse",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r317",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"version": "r317",
 			"bundled": false
@@ -104,9 +104,22 @@
 			"BotaoAceitar",
 			"BotaoRecusar",
 			"Sprite",
-			"Fundo"
+			"Fundo",
+			"PauseIcone"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"PauseFundo",
+					"PauseTexto",
+					"VoltarMenuTexto",
+					"OpcoesTexto",
+					"RetornarTexto"
+				],
+				"subfolders": [],
+				"name": "Pause"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
