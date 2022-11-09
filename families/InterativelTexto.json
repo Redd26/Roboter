@@ -1,0 +1,13 @@
+{
+	"name": "InterativelTexto",
+	"plugin-id": "Text",
+	"sid": 216388652782623,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"OpcoesTexto",
+		"RetornarTexto",
+		"VoltarMenuTexto"
+	]
+}

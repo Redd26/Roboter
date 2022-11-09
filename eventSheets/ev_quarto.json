@@ -1,5 +1,36 @@
 {
 	"name": "EV_Quarto",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Util"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 519396951189230,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Porta"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 899558948320690,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 546655417803087
+		}
+	],
 	"sid": 319169129069670
 }

@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 31700,
+	"savedWithRelease": 31702,
 	"name": "MontarRobo",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "tintmask",
 			"name": "Tint mask",
 			"author": "Scirra",
-			"version": "r317",
+			"version": "r317.2",
 			"bundled": false
 		}
 	],
@@ -105,7 +105,10 @@
 			"BotaoRecusar",
 			"Sprite",
 			"Fundo",
-			"PauseIcone"
+			"PauseIcone",
+			"Porta",
+			"FundoOficina",
+			"QuartoFundo"
 		],
 		"subfolders": [
 			{
@@ -124,7 +127,11 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"InterativelSprite",
+			"InterativelTexto",
+			"InterativelUtil"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -145,7 +152,8 @@
 			"EV_montagemQuebraCabeca3",
 			"EV_montagemChapa2",
 			"EV_montagemEmpacotar4",
-			"EV_Quarto"
+			"EV_Quarto",
+			"EV_Util"
 		],
 		"subfolders": []
 	},

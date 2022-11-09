@@ -2,6 +2,10 @@
 	"name": "EV_loja",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Util"
+		},
+		{
 			"eventType": "variable",
 			"name": "iniciou",
 			"type": "number",
@@ -22,12 +26,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-layer-visible",
+					"id": "set-layer-interactive",
 					"objectClass": "System",
-					"sid": 849627353876274,
+					"sid": 983120869091926,
 					"parameters": {
-						"layer": "3",
-						"visibility": "invisible"
+						"layer": "\"cartas\"",
+						"interactive": false
 					}
 				}
 			],
@@ -89,6 +93,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 649512153788239,
+							"parameters": {
+								"layer": "\"cartas\"",
+								"interactive": true
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "FundoCartas",
 							"sid": 766547032632331,
@@ -119,6 +132,203 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 220401778841895,
+							"parameters": {
+								"object": "GuardaCartas"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "GuardaCartas",
+							"sid": 998482340025516,
+							"parameters": {
+								"animation": "\"MouseOver\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "GuardaCartas",
+							"sid": 972873431124530,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 905599881805138
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 318829041735667,
+							"parameters": {
+								"object": "GuardaCartas"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "GuardaCartas",
+							"sid": 948849931353395,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "GuardaCartas",
+							"sid": 485290929902620,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 965200160358473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 806078326861903,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Porta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 945606684370401,
+							"parameters": {
+								"layout": "Quarto"
+							}
+						}
+					],
+					"sid": 816643805446772
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 862261705504002,
+							"parameters": {
+								"object": "BotaoRecusar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoRecusar",
+							"sid": 691193937388796,
+							"parameters": {
+								"animation": "\"RedNegar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 998443941916131
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 421497204446295,
+							"parameters": {
+								"object": "BotaoRecusar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoRecusar",
+							"sid": 301649662120780,
+							"parameters": {
+								"animation": "\"CinzaNegar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 566144451540527
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 689298812972748,
+							"parameters": {
+								"object": "BotaoAceitar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoAceitar",
+							"sid": 350711475441561,
+							"parameters": {
+								"animation": "\"VerdeAceitar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 491980900631697
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 661280020716090,
+							"parameters": {
+								"object": "BotaoAceitar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoAceitar",
+							"sid": 891904339911107,
+							"parameters": {
+								"animation": "\"CinzaAceitar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 250665006817755
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
 							"sid": 803399846197091,
@@ -130,6 +340,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 512347856432979,
+							"parameters": {
+								"layer": "\"cartas\"",
+								"interactive": false
+							}
+						},
 						{
 							"id": "set-animation",
 							"objectClass": "BotaoRecusar",
@@ -224,451 +443,9 @@
 						}
 					],
 					"sid": 214183011977445
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 867918146005370,
-							"parameters": {
-								"object": "GuardaCartas"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "GuardaCartas",
-							"sid": 160772863876840,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "GuardaCartas",
-							"sid": 279441397897027,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 643332074628158
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 507834332947102,
-							"parameters": {
-								"object": "GuardaCartas"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "GuardaCartas",
-							"sid": 257309412361497,
-							"parameters": {
-								"animation": "\"idle\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "GuardaCartas",
-							"sid": 301575415269843,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 677850037928608
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 444492283589471,
-							"parameters": {
-								"object": "BotaoRecusar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoRecusar",
-							"sid": 875161809861314,
-							"parameters": {
-								"animation": "\"RedNegar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 128386425524832
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 549709942801600,
-							"parameters": {
-								"object": "BotaoRecusar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoRecusar",
-							"sid": 172347412848680,
-							"parameters": {
-								"animation": "\"CinzaNegar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 911798796112884
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 131438362527444,
-							"parameters": {
-								"object": "BotaoAceitar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoAceitar",
-							"sid": 889328237403497,
-							"parameters": {
-								"animation": "\"VerdeAceitar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 120338863584268
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 342051675396474,
-							"parameters": {
-								"object": "BotaoAceitar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoAceitar",
-							"sid": 424148512693582,
-							"parameters": {
-								"animation": "\"CinzaAceitar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 670060847004792
 				}
 			],
 			"sid": 458705643880923
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Pause Menu",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 719345821847490,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "PauseIcone"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 537374479275304,
-							"parameters": {
-								"layer": "3",
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 528881431687414
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 381613090744593,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "RetornarTexto"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 863352981269756,
-							"parameters": {
-								"layer": "3",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 707238694358280
-				}
-			],
-			"sid": 725556198527412
-		},
-		{
-			"eventType": "comment",
-			"text": "Retornar"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 137075617059624,
-					"parameters": {
-						"object": "RetornarTexto"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "RetornarTexto",
-					"sid": 953052246473731,
-					"parameters": {
-						"color": "rgbEx(247, 187, 22)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "RetornarTexto",
-					"sid": 890851644389318,
-					"parameters": {
-						"size-pt": "33"
-					}
-				}
-			],
-			"sid": 821795455702915
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 802518074666597,
-					"parameters": {
-						"object": "RetornarTexto"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "RetornarTexto",
-					"sid": 161581183880888,
-					"parameters": {
-						"color": "rgbEx(255, 255, 255)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "RetornarTexto",
-					"sid": 264365398505862,
-					"parameters": {
-						"size-pt": "30"
-					}
-				}
-			],
-			"sid": 114372036457880
-		},
-		{
-			"eventType": "comment",
-			"text": "Opções"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 436941943442821,
-					"parameters": {
-						"object": "OpcoesTexto"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "OpcoesTexto",
-					"sid": 270386710820970,
-					"parameters": {
-						"color": "rgbEx(247, 187, 22)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "OpcoesTexto",
-					"sid": 634459008874566,
-					"parameters": {
-						"size-pt": "33"
-					}
-				}
-			],
-			"sid": 671476007326506
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 918043254456527,
-					"parameters": {
-						"object": "OpcoesTexto"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "OpcoesTexto",
-					"sid": 403399729136193,
-					"parameters": {
-						"color": "rgbEx(255, 255, 255)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "OpcoesTexto",
-					"sid": 472338217391029,
-					"parameters": {
-						"size-pt": "30"
-					}
-				}
-			],
-			"sid": 699602551493773
-		},
-		{
-			"eventType": "comment",
-			"text": "Voltar para o Menu"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 478616075130428,
-					"parameters": {
-						"object": "VoltarMenuTexto"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "VoltarMenuTexto",
-					"sid": 471250202801078,
-					"parameters": {
-						"color": "rgbEx(247, 187, 22)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "VoltarMenuTexto",
-					"sid": 666007422112661,
-					"parameters": {
-						"size-pt": "33"
-					}
-				}
-			],
-			"sid": 412829294205235
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 827967615713766,
-					"parameters": {
-						"object": "VoltarMenuTexto"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-font-color",
-					"objectClass": "VoltarMenuTexto",
-					"sid": 259202734128730,
-					"parameters": {
-						"color": "rgbEx(255, 255, 255)"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "VoltarMenuTexto",
-					"sid": 913358268849423,
-					"parameters": {
-						"size-pt": "30"
-					}
-				}
-			],
-			"sid": 222319741085551
 		}
 	],
 	"sid": 876358280105904

@@ -1,0 +1,551 @@
+{
+	"name": "EV_Util",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 919618247857981
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 893403798368804,
+					"parameters": {
+						"layer": "\"pause\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 707330472497170,
+					"parameters": {
+						"layer": "\"pause\"",
+						"interactive": false
+					}
+				}
+			],
+			"sid": 920866117018716
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Objetos Interativos Mouse",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 812589401908585,
+							"parameters": {
+								"object": "InterativelSprite"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 284444936195391,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 665246804015277,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 207332665748556,
+							"parameters": {
+								"object": "InterativelSprite"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 177199150711324,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 111513292715321,
+					"isOrBlock": true
+				}
+			],
+			"sid": 629986651131353
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interacao Porta",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 814734361828826,
+							"parameters": {
+								"object": "Porta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Porta",
+							"sid": 749141249879331,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 307347361425931
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 989157690749899,
+							"parameters": {
+								"object": "Porta"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Porta",
+							"sid": 465264572644006,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 603975183758697
+				}
+			],
+			"sid": 212143696203075
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pause Menu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 521253115566887,
+							"parameters": {
+								"object": "PauseIcone"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PauseIcone",
+							"sid": 923217676607159,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 102597837279324
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 484187775931470,
+							"parameters": {
+								"object": "PauseIcone"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PauseIcone",
+							"sid": 660056438893842,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 964144834772056
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 660893958055604,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "PauseIcone"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 412048972636467,
+							"parameters": {
+								"layer": "\"pause\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 658450276995186,
+							"parameters": {
+								"layer": "\"pause\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 656944912089583,
+							"parameters": {
+								"layer": "\"game\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 941640089099509,
+							"parameters": {
+								"layer": "\"hud\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 516678726208262,
+							"parameters": {
+								"layer": "\"cartas\"",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 867116348393405
+				},
+				{
+					"eventType": "comment",
+					"text": "Retornar"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 958341384733860,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "RetornarTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 774979467223006,
+							"parameters": {
+								"layer": "\"pause\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 912839378845029,
+							"parameters": {
+								"layer": "\"pause\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 509723031586265,
+							"parameters": {
+								"layer": "\"game\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 599536511781020,
+							"parameters": {
+								"layer": "\"hud\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 524461850691701,
+							"parameters": {
+								"layer": "\"cartas\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 899714374313537
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 156037112807119,
+							"parameters": {
+								"object": "RetornarTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "RetornarTexto",
+							"sid": 247372320795491,
+							"parameters": {
+								"color": "rgbEx(247, 187, 22)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "RetornarTexto",
+							"sid": 234193627301758,
+							"parameters": {
+								"size-pt": "33"
+							}
+						}
+					],
+					"sid": 711636809523645
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 565032870444516,
+							"parameters": {
+								"object": "RetornarTexto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "RetornarTexto",
+							"sid": 152362797950941,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "RetornarTexto",
+							"sid": 140265086795867,
+							"parameters": {
+								"size-pt": "30"
+							}
+						}
+					],
+					"sid": 330085028565633
+				},
+				{
+					"eventType": "comment",
+					"text": "Opções"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 375764678746756,
+							"parameters": {
+								"object": "OpcoesTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "OpcoesTexto",
+							"sid": 951494716052815,
+							"parameters": {
+								"color": "rgbEx(247, 187, 22)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "OpcoesTexto",
+							"sid": 306090829717050,
+							"parameters": {
+								"size-pt": "33"
+							}
+						}
+					],
+					"sid": 442156940855513
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 467347385811831,
+							"parameters": {
+								"object": "OpcoesTexto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "OpcoesTexto",
+							"sid": 610469082355492,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "OpcoesTexto",
+							"sid": 825813742093261,
+							"parameters": {
+								"size-pt": "30"
+							}
+						}
+					],
+					"sid": 992898568912336
+				},
+				{
+					"eventType": "comment",
+					"text": "Voltar para o Menu"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 182530214222129,
+							"parameters": {
+								"object": "VoltarMenuTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "VoltarMenuTexto",
+							"sid": 898052952322494,
+							"parameters": {
+								"color": "rgbEx(247, 187, 22)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "VoltarMenuTexto",
+							"sid": 945953043929680,
+							"parameters": {
+								"size-pt": "33"
+							}
+						}
+					],
+					"sid": 898643980059640
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 177058074689386,
+							"parameters": {
+								"object": "VoltarMenuTexto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "VoltarMenuTexto",
+							"sid": 484627337934796,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "VoltarMenuTexto",
+							"sid": 309742747656738,
+							"parameters": {
+								"size-pt": "30"
+							}
+						}
+					],
+					"sid": 964187068486536
+				}
+			],
+			"sid": 111097601605033
+		}
+	],
+	"sid": 853008621508614
+}

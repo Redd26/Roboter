@@ -4,37 +4,72 @@
 		{
 			"name": "game",
 			"overriden": 0,
-			"subLayers": [],
-			"instances": [
+			"subLayers": [
 				{
-					"type": "Fundo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 45,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -0.010288397510521463,
-						"y": -0.0276527334401635,
-						"width": 1280,
-						"height": 720,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
+					"name": "background",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "FundoOficina",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 55,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 0,
+								"y": 160,
+								"width": 1280,
+								"height": 720,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
+					"sid": 146733746399795,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
+			"instances": [
 				{
 					"type": "Personagem",
 					"properties": {
@@ -123,7 +158,7 @@
 					}
 				},
 				{
-					"type": "PauseIcone",
+					"type": "Porta",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -131,14 +166,30 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 54,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 69.91705231440937,
-						"y": 71.27073692139763,
-						"width": 64,
-						"height": 64,
+						"x": 492,
+						"y": 329,
+						"width": 119,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -180,8 +231,8 @@
 						}
 					},
 					"world": {
-						"x": 393.97933759449245,
-						"y": 626.0801088904967,
+						"x": 424.84100970598894,
+						"y": 594.3271083367624,
 						"width": 54,
 						"height": 58,
 						"originX": 0.5,
@@ -350,7 +401,37 @@
 			"name": "hud",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "PauseIcone",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 69.91705231440937,
+						"y": 71.27073692139763,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 921220108107194,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

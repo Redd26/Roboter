@@ -1,0 +1,62 @@
+{
+	"name": "Porta",
+	"plugin-id": "Sprite",
+	"sid": 548782291206535,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 119,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3163096,
+						"collisionPoly": {
+							"points": [
+								0.1092436974789916,
+								0.08125,
+								0.5,
+								0.00625,
+								0.8823529411764706,
+								0.08125,
+								0.9915966386554622,
+								0.5,
+								0.9915966386554622,
+								0.99375,
+								0.5,
+								0.99375,
+								0,
+								0.99375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 471371966897413,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

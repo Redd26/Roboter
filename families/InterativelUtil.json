@@ -1,0 +1,12 @@
+{
+	"name": "InterativelUtil",
+	"plugin-id": "Sprite",
+	"sid": 230636349527469,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GuardaCartas",
+		"Porta"
+	]
+}

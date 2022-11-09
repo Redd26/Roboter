@@ -1,0 +1,15 @@
+{
+	"name": "InterativelSprite",
+	"plugin-id": "Sprite",
+	"sid": 235308455086963,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BotaoAceitar",
+		"BotaoRecusar",
+		"GuardaCartas",
+		"PauseIcone",
+		"Porta"
+	]
+}
