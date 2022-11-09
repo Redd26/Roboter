@@ -2,7 +2,7 @@
 	"name": "RelogioDiaNoite",
 	"plugin-id": "Sprite",
 	"sid": 909135215804629,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

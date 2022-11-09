@@ -108,7 +108,8 @@
 			"PauseIcone",
 			"Porta",
 			"FundoOficina",
-			"QuartoFundo"
+			"QuartoFundo",
+			"MesaOficinaFundo"
 		],
 		"subfolders": [
 			{
