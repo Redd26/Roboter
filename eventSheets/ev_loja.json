@@ -103,7 +103,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FundoCartas",
+							"objectClass": "Carta",
 							"sid": 766547032632331,
 							"parameters": {
 								"visibility": "visible"
@@ -360,7 +360,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FundoCartas",
+							"objectClass": "Carta",
 							"sid": 718437368375062,
 							"parameters": {
 								"visibility": "invisible"
@@ -411,7 +411,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "FundoCartas",
+							"objectClass": "Carta",
 							"sid": 183541100246163,
 							"parameters": {
 								"visibility": "invisible"

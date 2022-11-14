@@ -1,14 +1,14 @@
 {
-	"name": "Sprite",
+	"name": "SeletorMaterial",
 	"plugin-id": "Sprite",
-	"sid": 953829988687293,
+	"sid": 501774478081454,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [
 		{
-			"effectId": "tintmask",
-			"name": "TintMask"
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
 		}
 	],
 	"animations": {
@@ -16,19 +16,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7885218,
+						"imageSpriteId": 887396,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 445903367754502,
+				"sid": 666186877272125,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

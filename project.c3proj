@@ -47,19 +47,27 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
 			"name": "BetterOutline",
 			"author": "skymen",
 			"version": "1.4.0.3",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "tintmask",
-			"name": "Tint mask",
-			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		}
 	],
@@ -100,16 +108,16 @@
 			"CortarChapa",
 			"TextoMinerioFeito",
 			"ProximoLevel",
-			"FundoCartas",
+			"Carta",
 			"BotaoAceitar",
 			"BotaoRecusar",
-			"Sprite",
 			"Fundo",
 			"PauseIcone",
 			"Porta",
 			"FundoOficina",
 			"QuartoFundo",
-			"MesaOficinaFundo"
+			"MesaOficinaFundo",
+			"SeletorMaterial"
 		],
 		"subfolders": [
 			{
@@ -176,7 +184,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Minecraftia-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 118500869409892,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

@@ -429,48 +429,6 @@
 					}
 				},
 				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 48,
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"TintMask": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									0.058823529411764705,
-									0.6980392156862745,
-									0.7803921568627451,
-									1
-								]
-							}
-						}
-					},
-					"world": {
-						"x": 1617,
-						"y": -325,
-						"width": 131.62381105801842,
-						"height": 116.32317818688382,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.261645621622775,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "RelogioDiaNoite",
 					"properties": {
 						"initially-visible": true,

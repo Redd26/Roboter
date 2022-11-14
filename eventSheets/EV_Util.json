@@ -96,7 +96,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Interacao Porta",
+			"title": "Objetos com Outline",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -150,6 +150,159 @@
 						}
 					],
 					"sid": 603975183758697
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 983295617916560,
+							"parameters": {
+								"object": "SeletorMaterial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterial",
+							"sid": 981799908968175,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 129559672087704
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 725137845342168,
+							"parameters": {
+								"object": "SeletorMaterial"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterial",
+							"sid": 386850258854400,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 899621054529373
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 613510958676974,
+							"parameters": {
+								"object": "Ouro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ouro",
+							"sid": 640113271233908,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 808670248772902
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 900905751690225,
+							"parameters": {
+								"object": "Ouro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ouro",
+							"sid": 176184001680022,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 965541536551367
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 948680450102113,
+							"parameters": {
+								"object": "ferro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ferro",
+							"sid": 341367369211345,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 996264746174034
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 666184855973330,
+							"parameters": {
+								"object": "ferro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ferro",
+							"sid": 479978049066096,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 355669873149457
 				}
 			],
 			"sid": 212143696203075

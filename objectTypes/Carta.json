@@ -1,11 +1,27 @@
 {
-	"name": "FundoCartas",
+	"name": "Carta",
 	"plugin-id": "Sprite",
 	"sid": 910119925513474,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 733273411287196
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 330489094379099
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -13,8 +29,8 @@
 					{
 						"width": 802,
 						"height": 602,
-						"originX": 0.4993765586034913,
-						"originY": 0.5141196013289037,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -22,21 +38,21 @@
 						"collisionPoly": {
 							"points": [
 								0.0012468827930174563,
-								0.33554817275747506,
-								0.4993765586034913,
+								0.0016611295681063123,
+								0.5,
 								0.0016611295681063123,
 								0.9975062344139651,
-								0.3338870431893688,
+								0.0016611295681063123,
 								0.9975062344139651,
-								0.5141196013289037,
+								0.5,
 								0.9975062344139651,
-								0.6926910299003323,
-								0.4993765586034913,
+								0.9966777408637874,
+								0.5,
 								0.9966777408637874,
 								0.0012468827930174563,
-								0.691029900332226,
+								0.9966777408637874,
 								0.0012468827930174563,
-								0.5141196013289037
+								0.5
 							]
 						},
 						"useCollisionPoly": true,

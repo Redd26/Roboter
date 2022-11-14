@@ -282,7 +282,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "FundoCartas",
+					"type": "Carta",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -292,14 +292,50 @@
 					},
 					"uid": 44,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									0,
+									0,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 661,
 						"y": 364,
 						"width": 802,
 						"height": 602,
-						"originX": 0.4993765586034913,
-						"originY": 0.5141196013289037,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -499,7 +535,7 @@
 					"properties": {
 						"text": "PAUSE",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Minecraftia-Regular",
 						"size": 50,
 						"line-height": 0,
 						"bold": true,
@@ -521,9 +557,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 121,
-						"width": 230.51315766110116,
-						"height": 63.57697364916517,
+						"y": 169,
+						"width": 380.51315766110116,
+						"height": 177.57697364916515,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -541,7 +577,7 @@
 					"properties": {
 						"text": "Retornar",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Minecraftia-Regular",
 						"size": 30,
 						"line-height": 0,
 						"bold": false,
@@ -563,9 +599,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 245.03609948572668,
-						"width": 200,
-						"height": 36.07219897145336,
+						"y": 316,
+						"width": 281,
+						"height": 110.07219897145336,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -583,7 +619,7 @@
 					"properties": {
 						"text": "Opções",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Minecraftia-Regular",
 						"size": 30,
 						"line-height": 0,
 						"bold": false,
@@ -605,9 +641,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 319,
+						"y": 435,
 						"width": 200,
-						"height": 44,
+						"height": 117,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -625,7 +661,7 @@
 					"properties": {
 						"text": "Voltar para o Menu",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Minecraftia-Regular",
 						"size": 30,
 						"line-height": 0,
 						"bold": false,
@@ -647,9 +683,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 390,
-						"width": 445.8463861017604,
-						"height": 61.074847411200054,
+						"y": 548,
+						"width": 628.8463861017603,
+						"height": 113.07484741120005,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
