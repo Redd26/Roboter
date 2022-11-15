@@ -9,11 +9,6 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 733273411287196
-		},
-		{
-			"behaviorId": "Rotate",
-			"name": "Rotate",
-			"sid": 330489094379099
 		}
 	],
 	"effectTypes": [

@@ -55,14 +55,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Rotate",
-			"name": "Rotate",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
 			"name": "BetterOutline",
