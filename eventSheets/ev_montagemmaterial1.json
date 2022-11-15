@@ -32,6 +32,16 @@
 			"sid": 483171795648889
 		},
 		{
+			"eventType": "variable",
+			"name": "acoesCarta",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 844942982621240
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_loja"
 		},
@@ -358,12 +368,16 @@
 			"sid": 258857600615215
 		},
 		{
+			"eventType": "comment",
+			"text": "Mouse Over teve que ser separado para habilitar o outline do comando para movimentar a carta"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 509139632561911,
+					"sid": 971380193643253,
 					"parameters": {
 						"object": "Carta"
 					}
@@ -373,26 +387,90 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "Carta",
-					"sid": 461612260588463,
+					"sid": 899666517406247,
 					"parameters": {
 						"mode": "enable",
 						"effect": "\"BetterOutline\""
 					}
+				}
+			],
+			"sid": 743040366912050
+		},
+		{
+			"eventType": "comment",
+			"text": "acoesCarta serve para saber qual ação está sendo realizada para não ter conflitos entre o movimento qnd tem Mouse Over de quando a carta é clicada"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 509139632561911,
+					"parameters": {
+						"object": "Carta"
+					}
 				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 152669276443652,
+					"parameters": {
+						"variable": "acoesCarta",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
 				{
 					"id": "move-to-position",
 					"objectClass": "Carta",
 					"sid": 147370279756925,
-					"disabled": true,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "-225",
 						"y": "714",
 						"mode": "direct"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 460310675885902,
+					"parameters": {
+						"variable": "acoesCarta",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 816401951702420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 200868649590779,
+					"parameters": {
+						"object": "Carta"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Carta",
+					"sid": 309073454578267,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BetterOutline\""
+					}
+				}
+			],
+			"sid": 463613279773880
 		},
 		{
 			"eventType": "block",
@@ -405,28 +483,37 @@
 						"object": "Carta"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 166646445184418,
+					"parameters": {
+						"variable": "acoesCarta",
+						"comparison": 0,
+						"value": "1"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "Carta",
-					"sid": 991742810812278,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"BetterOutline\""
-					}
-				},
-				{
 					"id": "move-to-position",
 					"objectClass": "Carta",
 					"sid": 615168137887575,
-					"disabled": true,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "-302",
 						"y": "786",
 						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 954770645226465,
+					"parameters": {
+						"variable": "acoesCarta",
+						"value": "0"
 					}
 				}
 			],
@@ -453,6 +540,16 @@
 						"variable": "isCartaClicada"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 196197358980152,
+					"parameters": {
+						"variable": "acoesCarta",
+						"comparison": 0,
+						"value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -488,6 +585,15 @@
 					"parameters": {
 						"variable": "direcaoCarta",
 						"value": "\"indo\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 519763148827695,
+					"parameters": {
+						"variable": "acoesCarta",
+						"value": "2"
 					}
 				}
 			],
@@ -545,6 +651,16 @@
 					"parameters": {
 						"variable": "isCartaClicada"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 758875745463665,
+					"parameters": {
+						"variable": "acoesCarta",
+						"comparison": 0,
+						"value": "2"
+					}
 				}
 			],
 			"actions": [
@@ -580,6 +696,15 @@
 					"parameters": {
 						"variable": "direcaoCarta",
 						"value": "\"voltando\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 898250610726242,
+					"parameters": {
+						"variable": "acoesCarta",
+						"value": "1"
 					}
 				}
 			],
