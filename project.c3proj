@@ -154,7 +154,8 @@
 			"EV_montagemChapa2",
 			"EV_montagemEmpacotar4",
 			"EV_Quarto",
-			"EV_Util"
+			"EV_Util",
+			"EV_UtilMiniGames"
 		],
 		"subfolders": []
 	},

@@ -6,6 +6,10 @@
 			"includeSheet": "EV_loja"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_UtilMiniGames"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
