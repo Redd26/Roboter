@@ -470,6 +470,7 @@
 							"id": "set-position",
 							"objectClass": "ExplicacaoOuro",
 							"sid": 379919488516404,
+							"disabled": true,
 							"parameters": {
 								"x": "1449",
 								"y": "346"
@@ -479,6 +480,7 @@
 							"id": "create-object",
 							"objectClass": "System",
 							"sid": 203587625671553,
+							"disabled": true,
 							"parameters": {
 								"object-to-create": "BG_DescricaoMaterial",
 								"layer": "\"game\"",
@@ -492,6 +494,7 @@
 							"id": "set-position",
 							"objectClass": "ExplicacaoFerro",
 							"sid": 918092191570642,
+							"disabled": true,
 							"parameters": {
 								"x": "1447",
 								"y": "481"
@@ -501,6 +504,7 @@
 							"id": "create-object",
 							"objectClass": "System",
 							"sid": 390631680903486,
+							"disabled": true,
 							"parameters": {
 								"object-to-create": "BG_DescricaoMaterial",
 								"layer": "\"game\"",
