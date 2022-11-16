@@ -4,13 +4,7 @@
 	"sid": 949858324247297,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pin",
-			"name": "Atrelar",
-			"sid": 976405801210085
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -19,8 +13,8 @@
 					{
 						"width": 62,
 						"height": 66,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.27419354838709675,
+						"originY": 0.24242424242424243,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

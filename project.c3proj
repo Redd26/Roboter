@@ -40,16 +40,24 @@
 		},
 		{
 			"type": "behavior",
-			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"id": "MoveTo",
+			"name": "Move To",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "MoveTo",
-			"name": "Move To",
+			"id": "Fader",
+			"name": "Fader",
+			"author": "Colludium",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -109,7 +117,11 @@
 			"FundoOficina",
 			"QuartoFundo",
 			"MesaOficinaFundo",
-			"SeletorMaterial"
+			"SeletorMaterial",
+			"HitPoint",
+			"debug",
+			"msg",
+			"BG_DescricaoMaterial"
 		],
 		"subfolders": [
 			{
@@ -251,7 +263,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "New Array.json",
+					"type": "application/json",
+					"sid": 380833893671798,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},

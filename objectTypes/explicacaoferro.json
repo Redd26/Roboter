@@ -4,6 +4,17 @@
 	"sid": 535685411443039,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fader",
+			"name": "Fader",
+			"sid": 175401670551817
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 245733344634541
+		}
+	],
 	"effectTypes": []
 }

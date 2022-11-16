@@ -1,34 +1,35 @@
 {
-	"name": "ProximoLevel",
+	"name": "HitPoint",
 	"plugin-id": "Sprite",
-	"sid": 312509058000212,
+	"sid": 120644466206957,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [
+	"behaviorTypes": [
 		{
-			"effectId": "skymen_BetterOutline",
-			"name": "BetterOutline"
+			"behaviorId": "Fader",
+			"name": "Fader",
+			"sid": 898226284172820
 		}
 	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 199,
-						"height": 199,
-						"originX": 0.49748743718592964,
-						"originY": 0.5025125628140703,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 371466,
+						"imageSpriteId": 8562942,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 447987611640392,
+				"sid": 970551680284422,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

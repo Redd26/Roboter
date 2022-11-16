@@ -161,6 +161,15 @@
 							"parameters": {
 								"object": "SeletorMaterial"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 820738020580862,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -303,6 +312,57 @@
 						}
 					],
 					"sid": 355669873149457
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 712256636622475,
+							"parameters": {
+								"object": "ProximoLevel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ProximoLevel",
+							"sid": 120330862348833,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 629340261567251
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 492262917016882,
+							"parameters": {
+								"object": "ProximoLevel"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ProximoLevel",
+							"sid": 650407063888233,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 748877702686946
 				}
 			],
 			"sid": 212143696203075

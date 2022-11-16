@@ -71,9 +71,179 @@
 			],
 			"instances": [
 				{
+					"type": "BG_DescricaoMaterial",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 90,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Fader": {
+							"properties": {
+								"running-at-start": "yes",
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0.8,
+								"at-end": "destroy"
+							}
+						}
+					},
+					"world": {
+						"x": 1760,
+						"y": 135,
+						"width": 330,
+						"height": 98,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExplicacaoFerro",
+					"properties": {
+						"text": "É um metal nobre, pois não enferruja",
+						"enable-bbcode": true,
+						"font": "Minecraftia-Regular",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.8588235294117647,
+							0.8588235294117647,
+							0.8588235294117647,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fader": {
+							"properties": {
+								"running-at-start": "yes",
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"at-end": "destroy"
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1447,
+						"y": 481,
+						"width": 320,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExplicacaoOuro",
+					"properties": {
+						"text": "É resistente à corrosão;\nMetal macio e flexível.",
+						"enable-bbcode": true,
+						"font": "Minecraftia-Regular",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.8509803921568627,
+							0.8980392156862745,
+							0.1803921568627451,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Fader": {
+							"properties": {
+								"running-at-start": "yes",
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"at-end": "destroy"
+							}
+						}
+					},
+					"world": {
+						"x": 1449,
+						"y": 346,
+						"width": 320,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "MaterialParaDestruir",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Ouro",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -83,10 +253,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 701,
-						"y": 433,
-						"width": 318.30257678306714,
-						"height": 304.8294518398685,
+						"x": 608,
+						"y": 960,
+						"width": 300,
+						"height": 300,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -546,6 +716,158 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "debug",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 88,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 160,
+						"y": 192,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "msg",
+					"properties": {
+						"text": "Material Quebrado",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.984313725490196,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 89,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 160,
+						"y": 256,
+						"width": 224,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitPoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 86,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fader": {
+							"properties": {
+								"running-at-start": "yes",
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1.5,
+								"at-end": "destroy"
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 160,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 10
+					}
+				},
+				{
+					"type": "Martelo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1485.4236781986094,
+						"y": 261.7260414717751,
+						"width": 40,
+						"height": 40,
+						"originX": 0.27419354838709675,
+						"originY": 0.24242424242424243,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 11
+					}
 				}
 			],
 			"sid": 749821115397567,
@@ -584,7 +906,7 @@
 				{
 					"type": "ProximoLevel",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -593,97 +915,29 @@
 					"uid": 41,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1048,
-						"y": 591,
+						"x": 1536,
+						"y": 512,
 						"width": 97.47019187423405,
 						"height": 97.47019187423405,
 						"originX": 0.49748743718592964,
 						"originY": 0.5025125628140703,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ExplicacaoFerro",
-					"properties": {
-						"text": "Prata:\nÉ um metal nobre, pois não enferruja",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 22,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 23,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1284,
-						"y": -42,
-						"width": 443,
-						"height": 194,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ExplicacaoOuro",
-					"properties": {
-						"text": "Ouro:\nÉ resistente à corrosão;\nMetal macio e flexível.",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 22,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1659,
-						"y": -49,
-						"width": 443,
-						"height": 194,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
