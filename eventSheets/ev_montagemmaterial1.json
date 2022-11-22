@@ -92,6 +92,16 @@
 			"sid": 312291832438486
 		},
 		{
+			"eventType": "variable",
+			"name": "Timer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 482442481438351
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_loja"
 		},
@@ -100,35 +110,31 @@
 			"includeSheet": "EV_UtilMiniGames"
 		},
 		{
-			"functionName": "FecharSeletorMaterial",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 310598149918628
+				}
+			],
 			"actions": [
 				{
-					"id": "move-forward",
-					"objectClass": "SeletorMaterial",
-					"sid": 188271231622667,
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 862598830636640,
 					"parameters": {
-						"distance": "120"
+						"layer": "\"cartas\"",
+						"interactive": true
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
+					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 985590819157646,
-					"parameters": {
-						"variable": "isSeletorMaterialClicado",
-						"value": "false"
-					}
+					"sid": 547705563647070
 				}
 			],
-			"sid": 840030631169330
+			"sid": 251756401202845
 		},
 		{
 			"functionName": "AbrirSeletorMaterial",
@@ -144,22 +150,53 @@
 				{
 					"id": "move-forward",
 					"objectClass": "SeletorMaterial",
-					"sid": 871911939741967,
+					"sid": 652969503379073,
 					"parameters": {
-						"distance": "-120"
+						"distance": "-108"
 					}
 				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 795462700331368,
+					"sid": 475811727510224,
 					"parameters": {
 						"variable": "isSeletorMaterialClicado",
 						"value": "true"
 					}
 				}
 			],
-			"sid": 970820173739802
+			"sid": 880407730701422
+		},
+		{
+			"functionName": "FecharSeletorMaterial",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "SeletorMaterial",
+					"sid": 866615582891343,
+					"parameters": {
+						"distance": "108"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 985590819157646,
+					"parameters": {
+						"variable": "isSeletorMaterialClicado",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 840030631169330
 		},
 		{
 			"functionName": "CriarHitPoint",
@@ -309,6 +346,15 @@
 							"parameters": {
 								"variable": "isMaterialClicado"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 582945926162693,
+							"parameters": {
+								"object": "Carta"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -353,7 +399,7 @@
 					"actions": [
 						{
 							"id": "pin-to-object-properties",
-							"objectClass": "Ouro",
+							"objectClass": "OuroOverlay",
 							"sid": 915568322029691,
 							"behaviorType": "Pin",
 							"parameters": {
@@ -372,7 +418,7 @@
 							"sid": 260899053027552,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Ouro",
+								"pin-to": "OuroOverlay",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -383,7 +429,7 @@
 						},
 						{
 							"id": "pin-to-object-properties",
-							"objectClass": "ferro",
+							"objectClass": "FerroOverlay",
 							"sid": 393465425842419,
 							"behaviorType": "Pin",
 							"parameters": {
@@ -402,7 +448,7 @@
 							"sid": 982265977648829,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "ferro",
+								"pin-to": "FerroOverlay",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -465,54 +511,6 @@
 						{
 							"callFunction": "AbrirSeletorMaterial",
 							"sid": 774263294426932
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ExplicacaoOuro",
-							"sid": 379919488516404,
-							"disabled": true,
-							"parameters": {
-								"x": "1449",
-								"y": "346"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 203587625671553,
-							"disabled": true,
-							"parameters": {
-								"object-to-create": "BG_DescricaoMaterial",
-								"layer": "\"game\"",
-								"x": "ExplicacaoOuro.X",
-								"y": "ExplicacaoOuro.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ExplicacaoFerro",
-							"sid": 918092191570642,
-							"disabled": true,
-							"parameters": {
-								"x": "1447",
-								"y": "481"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 390631680903486,
-							"disabled": true,
-							"parameters": {
-								"object-to-create": "BG_DescricaoMaterial",
-								"layer": "\"game\"",
-								"x": "ExplicacaoFerro.X",
-								"y": "ExplicacaoFerro.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
 						}
 					],
 					"sid": 247112071074577
@@ -555,7 +553,7 @@
 							"objectClass": "Mouse",
 							"sid": 117800389171037,
 							"parameters": {
-								"object": "Ouro"
+								"object": "OuroOverlay"
 							}
 						}
 					],
@@ -579,7 +577,7 @@
 							"objectClass": "Mouse",
 							"sid": 313211836213932,
 							"parameters": {
-								"object": "Ouro"
+								"object": "OuroOverlay"
 							},
 							"isInverted": true
 						}
@@ -604,7 +602,7 @@
 							"objectClass": "Mouse",
 							"sid": 587444214969039,
 							"parameters": {
-								"object": "ferro"
+								"object": "FerroOverlay"
 							}
 						}
 					],
@@ -628,7 +626,7 @@
 							"objectClass": "Mouse",
 							"sid": 814150499613864,
 							"parameters": {
-								"object": "ferro"
+								"object": "FerroOverlay"
 							},
 							"isInverted": true
 						}
@@ -655,7 +653,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "Ouro"
+								"object-clicked": "OuroOverlay"
 							}
 						},
 						{
@@ -665,7 +663,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "ferro"
+								"object-clicked": "FerroOverlay"
 							}
 						}
 					],
@@ -691,13 +689,52 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 573855613938172,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 287329756173852,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 267857635411460
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 420642157011748,
+									"parameters": {
+										"variable": "Timer",
+										"value": "1 * dt"
+									}
+								}
+							],
+							"sid": 921993991818124
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
 							"sid": 786725947476818,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "Ouro"
+								"object-clicked": "OuroOverlay"
 							}
 						}
 					],
@@ -755,6 +792,61 @@
 							"sid": 456299169569191
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Intro",
+							"sid": 899875899956236
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 114295918999178,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "pausethefade5",
+							"objectClass": "Intro",
+							"sid": 146601562577521,
+							"behaviorType": "Fader"
+						}
+					],
+					"sid": 817810937685837
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Intro",
+							"sid": 171603623356963
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 449986780342738,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "resumefade1",
+							"objectClass": "Intro",
+							"sid": 829729997258425,
+							"behaviorType": "Fader"
+						}
+					],
+					"sid": 839816335966063
 				}
 			],
 			"sid": 234591082126629
@@ -804,14 +896,6 @@
 							"id": "destroy",
 							"objectClass": "HitPoint",
 							"sid": 392634613014602
-						},
-						{
-							"id": "set-text",
-							"objectClass": "debug",
-							"sid": 267777211882579,
-							"parameters": {
-								"text": "contadorHitPoints"
-							}
 						},
 						{
 							"callFunction": "CriarHitPoint",
@@ -879,12 +963,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-time",
+							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 378955849368773,
+							"sid": 454323977139880,
 							"parameters": {
+								"first-value": "Timer",
 								"comparison": 4,
-								"time-seconds": "20"
+								"second-value": "15"
 							}
 						},
 						{
@@ -907,14 +992,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 609049473972761,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -945,14 +1022,6 @@
 							"id": "destroy",
 							"objectClass": "HitPoint",
 							"sid": 157799176770591
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "msg",
-							"sid": 107536572233619,
-							"parameters": {
-								"visibility": "visible"
-							}
 						},
 						{
 							"id": "set-position",

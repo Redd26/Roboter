@@ -33,42 +33,32 @@
 						"layer": "\"cartas\"",
 						"interactive": false
 					}
-				}
-			],
-			"sid": 416672428889199
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 281391280815032
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 210560201048413,
-					"parameters": {
-						"variable": "iniciou",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 570792339345402
 				},
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 751659368241885
+					"sid": 286589638754417
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 270624446254789,
+					"parameters": {
+						"variable": "Timer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 344891914084391,
+					"parameters": {
+						"variable": "isMaterialClicado",
+						"value": "false"
+					}
 				}
 			],
-			"sid": 985120100015290
+			"sid": 416672428889199
 		},
 		{
 			"eventType": "group",

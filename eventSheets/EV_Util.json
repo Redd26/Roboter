@@ -219,14 +219,14 @@
 							"objectClass": "Mouse",
 							"sid": 613510958676974,
 							"parameters": {
-								"object": "Ouro"
+								"object": "OuroOverlay"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Ouro",
+							"objectClass": "OuroOverlay",
 							"sid": 640113271233908,
 							"parameters": {
 								"mode": "enable",
@@ -244,7 +244,7 @@
 							"objectClass": "Mouse",
 							"sid": 900905751690225,
 							"parameters": {
-								"object": "Ouro"
+								"object": "OuroOverlay"
 							},
 							"isInverted": true
 						}
@@ -252,7 +252,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Ouro",
+							"objectClass": "OuroOverlay",
 							"sid": 176184001680022,
 							"parameters": {
 								"mode": "disable",
@@ -270,14 +270,14 @@
 							"objectClass": "Mouse",
 							"sid": 948680450102113,
 							"parameters": {
-								"object": "ferro"
+								"object": "FerroOverlay"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "ferro",
+							"objectClass": "FerroOverlay",
 							"sid": 341367369211345,
 							"parameters": {
 								"mode": "enable",
@@ -295,7 +295,7 @@
 							"objectClass": "Mouse",
 							"sid": 666184855973330,
 							"parameters": {
-								"object": "ferro"
+								"object": "FerroOverlay"
 							},
 							"isInverted": true
 						}
@@ -303,7 +303,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "ferro",
+							"objectClass": "FerroOverlay",
 							"sid": 479978049066096,
 							"parameters": {
 								"mode": "disable",
@@ -363,6 +363,57 @@
 						}
 					],
 					"sid": 748877702686946
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 626593912032374,
+							"parameters": {
+								"object": "botãoVoltar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "botãoVoltar",
+							"sid": 778967304842520,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 279261657136693
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 472640647328110,
+							"parameters": {
+								"object": "botãoVoltar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "botãoVoltar",
+							"sid": 109499956259644,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 604902451474381
 				}
 			],
 			"sid": 212143696203075

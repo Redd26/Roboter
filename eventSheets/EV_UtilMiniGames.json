@@ -445,6 +445,30 @@
 				}
 			],
 			"sid": 643733478473822
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 462917911678758,
+					"parameters": {
+						"object": "Carta"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 735153031289249,
+					"parameters": {
+						"cursor-style": "hand"
+					}
+				}
+			],
+			"sid": 409839330350250
 		}
 	],
 	"sid": 896571990791601

@@ -1,41 +1,53 @@
 {
-	"name": "BG_DescricaoMaterial",
+	"name": "botãoVoltar",
 	"plugin-id": "Sprite",
-	"sid": 521478673241008,
+	"sid": 461202662655562,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 125656738685118
-		},
-		{
-			"behaviorId": "Fader",
-			"name": "Fader",
-			"sid": 508622736115380
+			"sid": 913101302142173
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 82,
+						"height": 66,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7836112,
+						"imageSpriteId": 7865741,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9878048780487805,
+								0,
+								0.9878048780487805,
+								0.9848484848484849,
+								0,
+								0.9848484848484849
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 733852617222397,
-				"name": "Animation 1",
+				"sid": 966963254339265,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

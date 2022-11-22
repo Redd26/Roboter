@@ -11,8 +11,11 @@
 		"GuardaCartas",
 		"PauseIcone",
 		"Porta",
-		"Ouro",
-		"ferro",
-		"SeletorMaterial"
+		"OuroOverlay",
+		"FerroOverlay",
+		"SeletorMaterial",
+		"Iniciar_MP",
+		"Creditos_MP",
+		"botãoVoltar"
 	]
 }

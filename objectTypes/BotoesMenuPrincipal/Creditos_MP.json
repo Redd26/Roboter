@@ -1,0 +1,55 @@
+{
+	"name": "Creditos_MP",
+	"plugin-id": "Sprite",
+	"sid": 998422977549230,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 292713442662911
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 386,
+						"height": 70,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 659253,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 386,
+						"height": 70,
+						"originX": 1.577720207253886,
+						"originY": -1.7571428571428571,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7543195,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 760766350380702,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
