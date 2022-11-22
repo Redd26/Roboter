@@ -7,10 +7,10 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "QuartoFundo",
+					"type": "CenarioQuarto",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -19,12 +19,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 160,
+						"x": 640,
+						"y": 520,
 						"width": 1280,
 						"height": 720,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -70,9 +70,9 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Porta",
+					"type": "quartoSaida",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -98,10 +98,39 @@
 						}
 					},
 					"world": {
-						"x": 496.7710865788591,
-						"y": 629.6867402634227,
-						"width": 119,
-						"height": 160,
+						"x": 500.0205476161046,
+						"y": 670.1532209967488,
+						"width": 103.67637315332524,
+						"height": 43.887236822942555,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Personagem",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 657,
+						"y": 510,
+						"width": 128,
+						"height": 176,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -338,51 +367,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 256,
+						"y": 297,
 						"width": 200,
 						"height": 36.07219897145336,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "OpcoesTexto",
-					"properties": {
-						"text": "Opções",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 60,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 640,
-						"y": 330,
-						"width": 200,
-						"height": 44,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -422,7 +409,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 416,
+						"y": 393,
 						"width": 445.8463861017604,
 						"height": 61.074847411200054,
 						"originX": 0.5,

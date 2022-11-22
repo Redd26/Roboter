@@ -8,14 +8,19 @@
 	"members": [
 		"BotaoAceitar",
 		"BotaoRecusar",
-		"GuardaCartas",
+		"MesaOficina",
 		"PauseIcone",
 		"Porta",
 		"OuroOverlay",
 		"FerroOverlay",
-		"SeletorMaterial",
+		"SeletorMaterialPuxador",
 		"Iniciar_MP",
 		"Creditos_MP",
-		"botãoVoltar"
+		"botãoVoltar",
+		"cobre",
+		"Eritro",
+		"Ferro",
+		"ouro",
+		"viridisOre"
 	]
 }

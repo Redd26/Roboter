@@ -1,29 +1,34 @@
 {
-	"name": "PauseIcone",
+	"name": "quartoSaida",
 	"plugin-id": "Sprite",
-	"sid": 221672754310072,
-	"isGlobal": true,
+	"sid": 274345678777868,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 70,
-						"height": 66,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6873704,
+						"imageSpriteId": 6758224,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 521862896979814,
+				"sid": 949046017855670,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

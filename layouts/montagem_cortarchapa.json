@@ -7,10 +7,10 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "MesaOficinaFundo",
+					"type": "CenarioDosMiniGames",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -502,51 +502,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 256,
+						"y": 280,
 						"width": 200,
 						"height": 36.07219897145336,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "OpcoesTexto",
-					"properties": {
-						"text": "Opções",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 72,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 640,
-						"y": 320,
-						"width": 200,
-						"height": 44,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -586,7 +544,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 384,
+						"y": 376,
 						"width": 445.8463861017604,
 						"height": 61.074847411200054,
 						"originX": 0.5,

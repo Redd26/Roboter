@@ -1,14 +1,14 @@
 {
-	"name": "FerroOverlay",
+	"name": "SeletorMaterialBandeja",
 	"plugin-id": "Sprite",
-	"sid": 759477939561951,
+	"sid": 553358273618405,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 715237688495460
+			"sid": 697643175166364
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,39 @@
 			{
 				"frames": [
 					{
-						"width": 100,
-						"height": 100,
+						"width": 216,
+						"height": 400,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9283510,
+						"imageSpriteId": 9326737,
+						"collisionPoly": {
+							"points": [
+								0.24074074074074073,
+								0.13,
+								0.5,
+								0.05,
+								0.8472222222222222,
+								0.08,
+								0.8657407407407407,
+								0.5,
+								0.8472222222222222,
+								0.9175,
+								0.5,
+								0.9375,
+								0.24074074074074073,
+								0.8675,
+								0.12962962962962962,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 878164344670598,
+				"sid": 869040001519179,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

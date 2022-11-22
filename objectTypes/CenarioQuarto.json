@@ -1,8 +1,8 @@
 {
-	"name": "PauseIcone",
+	"name": "CenarioQuarto",
 	"plugin-id": "Sprite",
-	"sid": 221672754310072,
-	"isGlobal": true,
+	"sid": 831465075694859,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 70,
-						"height": 66,
+						"width": 1280,
+						"height": 720,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6873704,
+						"imageSpriteId": 3779261,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 521862896979814,
-				"name": "Animation 1",
+				"sid": 464847878597541,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

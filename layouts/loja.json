@@ -83,12 +83,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 693,
-						"y": 280,
-						"width": 86,
-						"height": 126,
-						"originX": 1.2674418604651163,
-						"originY": -0.21428571428571427,
+						"x": 688,
+						"y": 400,
+						"width": 128,
+						"height": 176,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -203,7 +203,7 @@
 					}
 				},
 				{
-					"type": "GuardaCartas",
+					"type": "MesaOficina",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "idle",
@@ -231,12 +231,12 @@
 						}
 					},
 					"world": {
-						"x": 424.84100970598894,
-						"y": 594.3271083367624,
-						"width": 54,
-						"height": 58,
+						"x": 704,
+						"y": 560,
+						"width": 726,
+						"height": 210,
 						"originX": 0.5,
-						"originY": 0.5344827586206896,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -591,51 +591,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 316,
+						"y": 320,
 						"width": 281,
 						"height": 110.07219897145336,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "OpcoesTexto",
-					"properties": {
-						"text": "Opções",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 52,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 640,
-						"y": 435,
-						"width": 200,
-						"height": 117,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -675,7 +633,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 548,
+						"y": 448,
 						"width": 628.8463861017603,
 						"height": 113.07484741120005,
 						"originX": 0.5,

@@ -85,11 +85,21 @@
 			"eventType": "variable",
 			"name": "HitPointsTotalOuro",
 			"type": "number",
-			"initialValue": "4",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 312291832438486
+		},
+		{
+			"eventType": "variable",
+			"name": "HitPointsTotalFerro",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 393948273857622
 		},
 		{
 			"eventType": "variable",
@@ -149,7 +159,7 @@
 			"actions": [
 				{
 					"id": "move-forward",
-					"objectClass": "SeletorMaterial",
+					"objectClass": "SeletorMaterialPuxador",
 					"sid": 652969503379073,
 					"parameters": {
 						"distance": "-108"
@@ -180,7 +190,7 @@
 			"actions": [
 				{
 					"id": "move-forward",
-					"objectClass": "SeletorMaterial",
+					"objectClass": "SeletorMaterialPuxador",
 					"sid": 866615582891343,
 					"parameters": {
 						"distance": "108"
@@ -399,11 +409,26 @@
 					"actions": [
 						{
 							"id": "pin-to-object-properties",
+							"objectClass": "ouro",
+							"sid": 511198066371516,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "SeletorMaterialBandeja",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
 							"objectClass": "OuroOverlay",
 							"sid": 915568322029691,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "SeletorMaterial",
+								"pin-to": "ouro",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -418,7 +443,22 @@
 							"sid": 260899053027552,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "OuroOverlay",
+								"pin-to": "ouro",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Ferro",
+							"sid": 875757802876791,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "SeletorMaterialBandeja",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -433,7 +473,7 @@
 							"sid": 393465425842419,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "SeletorMaterial",
+								"pin-to": "Ferro",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -448,7 +488,7 @@
 							"sid": 982265977648829,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "FerroOverlay",
+								"pin-to": "Ferro",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -459,11 +499,146 @@
 						},
 						{
 							"id": "pin-to-object-properties",
-							"objectClass": "EscolhaOMaterialBG",
-							"sid": 206426013833803,
+							"objectClass": "cobre",
+							"sid": 363062039153066,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "SeletorMaterial",
+								"pin-to": "SeletorMaterialBandeja",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "cobreOverlay",
+							"sid": 945918180663427,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "cobre",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "cobre_texto",
+							"sid": 265715034072108,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "cobre",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "viridisOre",
+							"sid": 622268621503638,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "SeletorMaterialBandeja",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "viridisOverlay",
+							"sid": 668368860261363,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "viridisOre",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "viridis_texto",
+							"sid": 601115997942359,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "viridisOre",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Eritro",
+							"sid": 651177607856642,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "SeletorMaterialBandeja",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "eritroOverlay",
+							"sid": 711604160726186,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Eritro",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "eritro_Texto",
+							"sid": 869363228093347,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Eritro",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "SeletorMaterialBandeja",
+							"sid": 662028480023129,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "SeletorMaterialPuxador",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -485,7 +660,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "SeletorMaterial"
+								"object-clicked": "SeletorMaterialPuxador"
 							}
 						},
 						{
@@ -525,7 +700,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "SeletorMaterial"
+								"object-clicked": "SeletorMaterialPuxador"
 							}
 						},
 						{
@@ -546,102 +721,379 @@
 					"sid": 993744254356990
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "OURO",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 117800389171037,
-							"parameters": {
-								"object": "OuroOverlay"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 792989526267550,
+									"parameters": {
+										"object": "ouro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Ouro_texto",
+									"sid": 438621194970263,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "OuroOverlay",
+									"sid": 693011223563627,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 284787951592031
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 166053841090441,
+									"parameters": {
+										"object": "ouro"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Ouro_texto",
+									"sid": 632686513189545,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "OuroOverlay",
+									"sid": 735838002184007,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 178341294571000
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Ouro_texto",
-							"sid": 805540026776922,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 487290949321794
+					"sid": 676392971232207
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "FERRO",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 313211836213932,
-							"parameters": {
-								"object": "OuroOverlay"
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 494603334079854,
+									"parameters": {
+										"object": "Ferro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Ferro_texto",
+									"sid": 637110294817761,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "FerroOverlay",
+									"sid": 172639587673219,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 665225861731456
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 477737806989390,
+									"parameters": {
+										"object": "Ferro"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Ferro_texto",
+									"sid": 976607043239837,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "FerroOverlay",
+									"sid": 661584398412955,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 384031865164929
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Ouro_texto",
-							"sid": 380349623660607,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 311340873329194
+					"sid": 209094004583559
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "COBRE",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 587444214969039,
-							"parameters": {
-								"object": "FerroOverlay"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 730047614961335,
+									"parameters": {
+										"object": "cobre"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "cobre_texto",
+									"sid": 990743993106557,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobreOverlay",
+									"sid": 518562323414780,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 194268805547215
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 759242657901814,
+									"parameters": {
+										"object": "cobre"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "cobre_texto",
+									"sid": 107949020547370,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobreOverlay",
+									"sid": 271200729627199,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 287809062381113
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Ferro_texto",
-							"sid": 852998035150307,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 396895585805525
+					"sid": 925892427113706
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "VIRIDIS",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 814150499613864,
-							"parameters": {
-								"object": "FerroOverlay"
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 124970075913538,
+									"parameters": {
+										"object": "viridisOre"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "viridis_texto",
+									"sid": 622758244716140,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "viridisOverlay",
+									"sid": 245376108759437,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 227189486468701
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 591546970111646,
+									"parameters": {
+										"object": "viridisOre"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "viridis_texto",
+									"sid": 811271488347573,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "viridisOverlay",
+									"sid": 989798504717725,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 813101633321590
 						}
 					],
-					"actions": [
+					"sid": 326540480681094
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "ERITRO",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "set-visible",
-							"objectClass": "Ferro_texto",
-							"sid": 652173624153393,
-							"parameters": {
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 856192844659788,
+									"parameters": {
+										"object": "Eritro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "eritro_Texto",
+									"sid": 274751588545995,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "eritroOverlay",
+									"sid": 323928427465648,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 337295410714586
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 143476368032472,
+									"parameters": {
+										"object": "Eritro"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "eritro_Texto",
+									"sid": 205218885181821,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "eritroOverlay",
+									"sid": 477377444553007,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 825085366874542
 						}
 					],
-					"sid": 963705870381789
+					"sid": 781381518420914
 				},
 				{
 					"eventType": "block",
@@ -649,21 +1101,51 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 630328465011586,
+							"sid": 467362881234621,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "OuroOverlay"
+								"object-clicked": "ouro"
 							}
 						},
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 515183164009441,
+							"sid": 828122903115676,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "FerroOverlay"
+								"object-clicked": "Ferro"
+							}
+						},
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 125954818397403,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "cobre"
+							}
+						},
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 338318279562806,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "viridisOre"
+							}
+						},
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 201743958689601,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Eritro"
 							}
 						}
 					],
@@ -671,7 +1153,7 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 588892085512216,
+							"sid": 646314990757906,
 							"parameters": {
 								"variable": "isMaterialClicado",
 								"value": "true"
@@ -679,10 +1161,10 @@
 						},
 						{
 							"callFunction": "FecharSeletorMaterial",
-							"sid": 872645461362485
+							"sid": 445944423681153
 						}
 					],
-					"sid": 794828892629467,
+					"sid": 518038148177386,
 					"isOrBlock": true
 				},
 				{
@@ -691,14 +1173,14 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 573855613938172,
+							"sid": 416927135680674,
 							"parameters": {
 								"variable": "isMaterialClicado"
 							}
 						}
 					],
 					"actions": [],
-					"sid": 287329756173852,
+					"sid": 893894458687525,
 					"children": [
 						{
 							"eventType": "block",
@@ -706,21 +1188,21 @@
 								{
 									"id": "every-tick",
 									"objectClass": "System",
-									"sid": 267857635411460
+									"sid": 732455905568240
 								}
 							],
 							"actions": [
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 420642157011748,
+									"sid": 280871887704507,
 									"parameters": {
 										"variable": "Timer",
 										"value": "1 * dt"
 									}
 								}
 							],
-							"sid": 921993991818124
+							"sid": 766912574728499
 						}
 					]
 				},
@@ -730,11 +1212,11 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 786725947476818,
+							"sid": 667259254488725,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "OuroOverlay"
+								"object-clicked": "ouro"
 							}
 						}
 					],
@@ -742,7 +1224,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 775320551557434,
+							"sid": 705492356873785,
 							"parameters": {
 								"variable": "materialEscolhido",
 								"value": "\"ouro\""
@@ -751,7 +1233,7 @@
 						{
 							"id": "set-position",
 							"objectClass": "MaterialParaDestruir",
-							"sid": 164582670013190,
+							"sid": 893706113975277,
 							"parameters": {
 								"x": "640",
 								"y": "433"
@@ -760,14 +1242,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "MaterialParaDestruir",
-							"sid": 111011338272189,
+							"sid": 796363439910378,
 							"parameters": {
 								"animation": "\"Ouro\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 812828011840184,
+					"sid": 975395265827436,
 					"children": [
 						{
 							"eventType": "block",
@@ -775,7 +1257,7 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 963699949863654,
+									"sid": 792968807202449,
 									"parameters": {
 										"variable": "materialEscolhido",
 										"comparison": 0,
@@ -786,10 +1268,88 @@
 							"actions": [
 								{
 									"callFunction": "CriarHitPoint",
-									"sid": 234733014162249
+									"sid": 322094499213888
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialParaDestruir",
+									"sid": 413992443685008,
+									"parameters": {
+										"animation": "\"Ouro\"",
+										"from": "beginning"
+									}
 								}
 							],
-							"sid": 456299169569191
+							"sid": 291599866979524
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 356451800830918,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Ferro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 181744821698325,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"value": "\"ferro\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "MaterialParaDestruir",
+							"sid": 441131675524693,
+							"parameters": {
+								"x": "640",
+								"y": "433"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "MaterialParaDestruir",
+							"sid": 317293224199556,
+							"parameters": {
+								"animation": "\"Ferro\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 899255188302840,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 228334965794245,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ferro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "CriarHitPoint",
+									"sid": 380489427730016
+								}
+							],
+							"sid": 385520426780121
 						}
 					]
 				},
@@ -880,6 +1440,16 @@
 								"comparison": 1,
 								"second-value": "HitPointsTotalOuro"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 896827752149174,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"comparison": 0,
+								"value": "\"ouro\""
+							}
 						}
 					],
 					"actions": [
@@ -902,7 +1472,215 @@
 							"sid": 863868106206657
 						}
 					],
-					"sid": 124183930124862
+					"sid": 124183930124862,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 974981577635404,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ouro\""
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 382519418730978,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialParaDestruir",
+									"sid": 976187987701035,
+									"parameters": {
+										"animation": "\"QuebrandoOuro\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 605764729476396
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 854595197671089,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ouro\""
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 406659209732571,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialParaDestruir",
+									"sid": 169546074278846,
+									"parameters": {
+										"animation": "\"QuerbandoOuroFeito\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 882152251130328
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 342097385416563,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "HitPoint"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 649857665726895,
+							"parameters": {
+								"first-value": "contadorHitPoints",
+								"comparison": 1,
+								"second-value": "HitPointsTotalFerro"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 116736686330550,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"comparison": 0,
+								"value": "\"ferro\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 332210985473490,
+							"parameters": {
+								"variable": "contadorHitPoints",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "HitPoint",
+							"sid": 942714200367181
+						},
+						{
+							"callFunction": "CriarHitPoint",
+							"sid": 798569072786877
+						}
+					],
+					"sid": 166437987741019,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 820622876414086,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ferro\""
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 567448167083158,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialParaDestruir",
+									"sid": 245569011737329,
+									"parameters": {
+										"animation": "\"QuebrandoFerro\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 569970021676414
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 836593481727108,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ferro\""
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 249378450482641,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialParaDestruir",
+									"sid": 273900678504890,
+									"parameters": {
+										"animation": "\"QuebrandoFerroFeito\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 835355397023038
+						}
+					]
 				},
 				{
 					"eventType": "comment",
@@ -952,6 +1730,53 @@
 								}
 							],
 							"sid": 558054381785504
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 125522680808214,
+							"parameters": {
+								"first-value": "HitPoint.Count",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 725788287560253,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "onfadeoutend0",
+									"objectClass": "HitPoint",
+									"sid": 307293780611176,
+									"behaviorType": "Fader"
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 286265266978007,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 1,
+										"second-value": "HitPointsTotalFerro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "CriarHitPoint",
+									"sid": 355404026894831
+								}
+							],
+							"sid": 108522648164928
 						}
 					]
 				},
@@ -1009,11 +1834,55 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 814936658589605,
+							"sid": 687195515390782,
+							"parameters": {
+								"first-value": "Timer",
+								"comparison": 4,
+								"second-value": "15"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 102318190434458,
+							"parameters": {
+								"variable": "contadorHitPoints",
+								"comparison": 2,
+								"value": "HitPointsTotalFerro"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 266025791998528,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 267200559372838,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 143226471520829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 142175939768747,
 							"parameters": {
 								"first-value": "contadorHitPoints",
 								"comparison": 0,
-								"second-value": "HitPointsTotalOuro"
+								"second-value": "HitPointsTotalFerro"
 							}
 						}
 					],

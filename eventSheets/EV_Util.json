@@ -159,7 +159,7 @@
 							"objectClass": "Mouse",
 							"sid": 983295617916560,
 							"parameters": {
-								"object": "SeletorMaterial"
+								"object": "SeletorMaterialPuxador"
 							}
 						},
 						{
@@ -175,7 +175,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "SeletorMaterial",
+							"objectClass": "SeletorMaterialPuxador",
 							"sid": 981799908968175,
 							"parameters": {
 								"mode": "enable",
@@ -193,7 +193,7 @@
 							"objectClass": "Mouse",
 							"sid": 725137845342168,
 							"parameters": {
-								"object": "SeletorMaterial"
+								"object": "SeletorMaterialPuxador"
 							},
 							"isInverted": true
 						}
@@ -201,7 +201,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "SeletorMaterial",
+							"objectClass": "SeletorMaterialPuxador",
 							"sid": 386850258854400,
 							"parameters": {
 								"mode": "disable",
@@ -210,108 +210,6 @@
 						}
 					],
 					"sid": 899621054529373
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 613510958676974,
-							"parameters": {
-								"object": "OuroOverlay"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "OuroOverlay",
-							"sid": 640113271233908,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 808670248772902
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 900905751690225,
-							"parameters": {
-								"object": "OuroOverlay"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "OuroOverlay",
-							"sid": 176184001680022,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 965541536551367
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 948680450102113,
-							"parameters": {
-								"object": "FerroOverlay"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "FerroOverlay",
-							"sid": 341367369211345,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 996264746174034
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 666184855973330,
-							"parameters": {
-								"object": "FerroOverlay"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "FerroOverlay",
-							"sid": 479978049066096,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 355669873149457
 				},
 				{
 					"eventType": "block",
@@ -414,6 +312,312 @@
 						}
 					],
 					"sid": 604902451474381
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 779646023548433,
+							"parameters": {
+								"object": "quartoSaida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "quartoSaida",
+							"sid": 426822700556770,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 807439154827346
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 616153462171963,
+							"parameters": {
+								"object": "quartoSaida"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "quartoSaida",
+							"sid": 481486781062975,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 659249813914702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 517582620173747,
+							"parameters": {
+								"object": "ouro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ouro",
+							"sid": 484874377363806,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 597795088718884
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 173067976968481,
+							"parameters": {
+								"object": "ouro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ouro",
+							"sid": 694072646786937,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 389434411775133
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 714825331744392,
+							"parameters": {
+								"object": "Ferro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ferro",
+							"sid": 146112401112591,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 763217517999102
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 249189601773453,
+							"parameters": {
+								"object": "Ferro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ferro",
+							"sid": 606826523380964,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 762306883662673
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 142045398261954,
+							"parameters": {
+								"object": "cobre"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "cobre",
+							"sid": 773246945355659,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 868162800072212
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 381583274008827,
+							"parameters": {
+								"object": "cobre"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "cobre",
+							"sid": 864241245915992,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 228208634444062
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 731407015733967,
+							"parameters": {
+								"object": "viridisOre"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "viridisOre",
+							"sid": 575828862556787,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 889324545820941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 309555214858967,
+							"parameters": {
+								"object": "viridisOre"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "viridisOre",
+							"sid": 871665106587825,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 604937981836897
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 858486280580239,
+							"parameters": {
+								"object": "Eritro"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Eritro",
+							"sid": 984797474640537,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 909782597889172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 813275532196709,
+							"parameters": {
+								"object": "Eritro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Eritro",
+							"sid": 771673873609525,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 120021002423021
 				}
 			],
 			"sid": 212143696203075
@@ -439,11 +643,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
+							"id": "set-opacity",
 							"objectClass": "PauseIcone",
-							"sid": 923217676607159,
+							"sid": 198587229618039,
 							"parameters": {
-								"frame-number": "1"
+								"opacity": "85"
 							}
 						}
 					],
@@ -464,11 +668,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
+							"id": "set-opacity",
 							"objectClass": "PauseIcone",
-							"sid": 660056438893842,
+							"sid": 201253179973595,
 							"parameters": {
-								"frame-number": "0"
+								"opacity": "100"
 							}
 						}
 					],
@@ -741,6 +945,32 @@
 				{
 					"eventType": "comment",
 					"text": "Voltar para o Menu"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 603581086616869,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "VoltarMenuTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 173151168055917,
+							"parameters": {
+								"layout": "MenuPrincipal"
+							}
+						}
+					],
+					"sid": 363314093699807
 				},
 				{
 					"eventType": "block",

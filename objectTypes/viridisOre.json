@@ -1,30 +1,41 @@
 {
-	"name": "PauseIcone",
+	"name": "viridisOre",
 	"plugin-id": "Sprite",
-	"sid": 221672754310072,
-	"isGlobal": true,
+	"sid": 839879535554066,
+	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 743472414326438
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 70,
+						"width": 82,
 						"height": 66,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6873704,
+						"imageSpriteId": 8034853,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 521862896979814,
-				"name": "Animation 1",
+				"sid": 796498149730397,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -1,29 +1,35 @@
 {
-	"name": "PauseIcone",
+	"name": "eritroOverlay",
 	"plugin-id": "Sprite",
-	"sid": 221672754310072,
-	"isGlobal": true,
+	"sid": 481283601791688,
+	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 835608566636220
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 70,
-						"height": 66,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6873704,
+						"imageSpriteId": 40788,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 521862896979814,
+				"sid": 547021713302460,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

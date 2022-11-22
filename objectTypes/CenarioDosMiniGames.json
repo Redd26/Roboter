@@ -1,7 +1,7 @@
 {
-	"name": "MesaOficinaFundo",
+	"name": "CenarioDosMiniGames",
 	"plugin-id": "Sprite",
-	"sid": 495241113933478,
+	"sid": 299814603680970,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5716760,
+						"imageSpriteId": 6696866,
 						"collisionPoly": {
 							"points": [
 								0.125,
@@ -43,8 +43,8 @@
 						"duration": 1
 					}
 				],
-				"sid": 564950805280865,
-				"name": "Animation 1",
+				"sid": 418172787912799,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

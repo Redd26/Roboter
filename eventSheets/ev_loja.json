@@ -77,7 +77,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "GuardaCartas"
+								"object-clicked": "MesaOficina"
 							}
 						}
 					],
@@ -126,14 +126,14 @@
 							"objectClass": "Mouse",
 							"sid": 220401778841895,
 							"parameters": {
-								"object": "GuardaCartas"
+								"object": "MesaOficina"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
-							"objectClass": "GuardaCartas",
+							"objectClass": "MesaOficina",
 							"sid": 998482340025516,
 							"parameters": {
 								"animation": "\"MouseOver\"",
@@ -142,7 +142,7 @@
 						},
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "GuardaCartas",
+							"objectClass": "MesaOficina",
 							"sid": 972873431124530,
 							"parameters": {
 								"mode": "enable",
@@ -160,7 +160,7 @@
 							"objectClass": "Mouse",
 							"sid": 318829041735667,
 							"parameters": {
-								"object": "GuardaCartas"
+								"object": "MesaOficina"
 							},
 							"isInverted": true
 						}
@@ -168,7 +168,7 @@
 					"actions": [
 						{
 							"id": "set-animation",
-							"objectClass": "GuardaCartas",
+							"objectClass": "MesaOficina",
 							"sid": 948849931353395,
 							"parameters": {
 								"animation": "\"idle\"",
@@ -177,7 +177,7 @@
 						},
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "GuardaCartas",
+							"objectClass": "MesaOficina",
 							"sid": 485290929902620,
 							"parameters": {
 								"mode": "disable",

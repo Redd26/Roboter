@@ -15,7 +15,7 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Porta"
+						"object-clicked": "quartoSaida"
 					}
 				}
 			],
