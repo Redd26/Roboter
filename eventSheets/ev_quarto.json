@@ -9,9 +9,38 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 359503682555269
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Personagem",
+					"sid": 549327040281876,
+					"parameters": {
+						"opacity": "80"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "Personagem",
+					"sid": 910282368038085,
+					"parameters": {
+						"color": "rgb(109, 78, 166)"
+					}
+				}
+			],
+			"sid": 126308477982106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 519396951189230,
+					"sid": 938291368619044,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
@@ -23,13 +52,30 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 899558948320690,
+					"sid": 238485031479049,
 					"parameters": {
 						"layout": "Loja"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 179367754588541,
+					"parameters": {
+						"variable": "horarioDoDia",
+						"value": "\"dia\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 444740761922522,
+					"parameters": {
+						"frame-number": "0"
+					}
 				}
 			],
-			"sid": 546655417803087
+			"sid": 433129956956526
 		}
 	],
 	"sid": 319169129069670

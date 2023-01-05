@@ -2,7 +2,7 @@
 	"name": "PauseIcone",
 	"plugin-id": "Sprite",
 	"sid": 221672754310072,
-	"isGlobal": true,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

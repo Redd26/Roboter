@@ -1,14 +1,14 @@
 {
-	"name": "botãoVoltar",
+	"name": "ViridisDescricao",
 	"plugin-id": "Sprite",
-	"sid": 461202662655562,
+	"sid": 721561252748321,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 913101302142173
+			"sid": 530300461004329
 		}
 	],
 	"effectTypes": [
@@ -22,32 +22,20 @@
 			{
 				"frames": [
 					{
-						"width": 82,
-						"height": 66,
+						"width": 303,
+						"height": 236,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7865741,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.9878048780487805,
-								0,
-								0.9878048780487805,
-								0.9848484848484849,
-								0,
-								0.9848484848484849
-							]
-						},
+						"imageSpriteId": 8287782,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 966963254339265,
-				"name": "Default",
+				"sid": 108552033410815,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

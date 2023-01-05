@@ -152,7 +152,7 @@
 					}
 				},
 				{
-					"type": "botãoVoltar",
+					"type": "botaoVoltar",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -179,7 +179,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}

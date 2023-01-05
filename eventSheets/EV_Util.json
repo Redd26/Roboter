@@ -28,6 +28,42 @@
 						"layer": "\"pause\"",
 						"interactive": false
 					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 746522353843443,
+					"disabled": true,
+					"parameters": {
+						"layer": "\"hud\"",
+						"interactive": true
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 746443807406787,
+					"disabled": true,
+					"parameters": {
+						"layer": "\"game\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 325897402447892,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PauseIcone",
+					"sid": 611402816607637,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 920866117018716
@@ -89,6 +125,57 @@
 					],
 					"sid": 111513292715321,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 884595672918679,
+							"parameters": {
+								"object": "InterativelTexto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 998423927706428,
+							"parameters": {
+								"cursor-style": "hand"
+							}
+						}
+					],
+					"sid": 843009202411923,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 471501664947570,
+							"parameters": {
+								"object": "InterativelTexto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 655112526492660,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 756118300092427,
+					"isOrBlock": true
 				}
 			],
 			"sid": 629986651131353
@@ -149,7 +236,8 @@
 							}
 						}
 					],
-					"sid": 603975183758697
+					"sid": 603975183758697,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -268,57 +356,6 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 626593912032374,
-							"parameters": {
-								"object": "botãoVoltar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "botãoVoltar",
-							"sid": 778967304842520,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 279261657136693
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 472640647328110,
-							"parameters": {
-								"object": "botãoVoltar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "botãoVoltar",
-							"sid": 109499956259644,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 604902451474381
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
 							"sid": 779646023548433,
 							"parameters": {
 								"object": "quartoSaida"
@@ -372,14 +409,14 @@
 							"objectClass": "Mouse",
 							"sid": 517582620173747,
 							"parameters": {
-								"object": "ouro"
+								"object": "OuroDescricao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "ouro",
+							"objectClass": "OuroDescricao",
 							"sid": 484874377363806,
 							"parameters": {
 								"mode": "enable",
@@ -397,7 +434,7 @@
 							"objectClass": "Mouse",
 							"sid": 173067976968481,
 							"parameters": {
-								"object": "ouro"
+								"object": "OuroDescricao"
 							},
 							"isInverted": true
 						}
@@ -405,7 +442,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "ouro",
+							"objectClass": "OuroDescricao",
 							"sid": 694072646786937,
 							"parameters": {
 								"mode": "disable",
@@ -423,14 +460,14 @@
 							"objectClass": "Mouse",
 							"sid": 714825331744392,
 							"parameters": {
-								"object": "Ferro"
+								"object": "FerroDescricao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Ferro",
+							"objectClass": "FerroDescricao",
 							"sid": 146112401112591,
 							"parameters": {
 								"mode": "enable",
@@ -448,7 +485,7 @@
 							"objectClass": "Mouse",
 							"sid": 249189601773453,
 							"parameters": {
-								"object": "Ferro"
+								"object": "FerroDescricao"
 							},
 							"isInverted": true
 						}
@@ -456,7 +493,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Ferro",
+							"objectClass": "FerroDescricao",
 							"sid": 606826523380964,
 							"parameters": {
 								"mode": "disable",
@@ -474,14 +511,14 @@
 							"objectClass": "Mouse",
 							"sid": 142045398261954,
 							"parameters": {
-								"object": "cobre"
+								"object": "CobreDescricao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "cobre",
+							"objectClass": "CobreDescricao",
 							"sid": 773246945355659,
 							"parameters": {
 								"mode": "enable",
@@ -499,7 +536,7 @@
 							"objectClass": "Mouse",
 							"sid": 381583274008827,
 							"parameters": {
-								"object": "cobre"
+								"object": "CobreDescricao"
 							},
 							"isInverted": true
 						}
@@ -507,7 +544,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "cobre",
+							"objectClass": "CobreDescricao",
 							"sid": 864241245915992,
 							"parameters": {
 								"mode": "disable",
@@ -525,14 +562,14 @@
 							"objectClass": "Mouse",
 							"sid": 731407015733967,
 							"parameters": {
-								"object": "viridisOre"
+								"object": "ViridisDescricao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "viridisOre",
+							"objectClass": "ViridisDescricao",
 							"sid": 575828862556787,
 							"parameters": {
 								"mode": "enable",
@@ -550,7 +587,7 @@
 							"objectClass": "Mouse",
 							"sid": 309555214858967,
 							"parameters": {
-								"object": "viridisOre"
+								"object": "ViridisDescricao"
 							},
 							"isInverted": true
 						}
@@ -558,7 +595,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "viridisOre",
+							"objectClass": "ViridisDescricao",
 							"sid": 871665106587825,
 							"parameters": {
 								"mode": "disable",
@@ -576,14 +613,14 @@
 							"objectClass": "Mouse",
 							"sid": 858486280580239,
 							"parameters": {
-								"object": "Eritro"
+								"object": "EritroDescricao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Eritro",
+							"objectClass": "EritroDescricao",
 							"sid": 984797474640537,
 							"parameters": {
 								"mode": "enable",
@@ -601,7 +638,7 @@
 							"objectClass": "Mouse",
 							"sid": 813275532196709,
 							"parameters": {
-								"object": "Eritro"
+								"object": "EritroDescricao"
 							},
 							"isInverted": true
 						}
@@ -609,7 +646,7 @@
 					"actions": [
 						{
 							"id": "set-effect-enabled",
-							"objectClass": "Eritro",
+							"objectClass": "EritroDescricao",
 							"sid": 771673873609525,
 							"parameters": {
 								"mode": "disable",
@@ -618,6 +655,57 @@
 						}
 					],
 					"sid": 120021002423021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 261868352738801,
+							"parameters": {
+								"object": "botaoVoltar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "botaoVoltar",
+							"sid": 406308451049052,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 358664287227127
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 230774231691672,
+							"parameters": {
+								"object": "botaoVoltar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "botaoVoltar",
+							"sid": 154740296517808,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 150906166015080
 				}
 			],
 			"sid": 212143696203075
@@ -967,6 +1055,51 @@
 							"sid": 173151168055917,
 							"parameters": {
 								"layout": "MenuPrincipal"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 690900953785569,
+							"parameters": {
+								"layer": "\"pause\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 563193794651871,
+							"parameters": {
+								"layer": "\"pause\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 265721593159179,
+							"parameters": {
+								"layer": "\"game\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 965301355640972,
+							"parameters": {
+								"layer": "\"hud\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 246801430514234,
+							"parameters": {
+								"layer": "\"cartas\"",
+								"interactive": true
 							}
 						}
 					],

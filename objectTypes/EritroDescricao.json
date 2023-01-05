@@ -1,29 +1,40 @@
 {
-	"name": "FerramentaParaIrAMontagem",
+	"name": "EritroDescricao",
 	"plugin-id": "Sprite",
-	"sid": 529208142660206,
+	"sid": 481283601791688,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 835608566636220
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 303,
+						"height": 235,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4113225,
+						"imageSpriteId": 2592376,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 855004391546181,
+				"sid": 547021713302460,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

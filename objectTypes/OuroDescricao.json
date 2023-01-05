@@ -1,35 +1,40 @@
 {
-	"name": "cobreOverlay",
+	"name": "OuroDescricao",
 	"plugin-id": "Sprite",
-	"sid": 127106885847161,
+	"sid": 230548115930888,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 716187680199542
+			"sid": 829792223144356
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 303,
+						"height": 236,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6410115,
+						"imageSpriteId": 8839612,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 460563226721691,
+				"sid": 838259287886253,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

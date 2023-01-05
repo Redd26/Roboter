@@ -70,7 +70,7 @@
 				},
 				{
 					"id": "pin-to-object-properties",
-					"objectClass": "botãoVoltar",
+					"objectClass": "botaoVoltar",
 					"sid": 978077560227524,
 					"behaviorType": "Pin",
 					"parameters": {
@@ -112,6 +112,27 @@
 						"height-type": "no",
 						"z": false
 					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 630911247679079
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 527828112324276,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PauseIcone",
+					"sid": 574900514275573,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 998850988571924
@@ -123,55 +144,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 228392189734448,
-							"parameters": {
-								"object": "Iniciar_MP"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Iniciar_MP",
-							"sid": 619804537304304,
-							"parameters": {
-								"frame-number": "1"
-							}
-						}
-					],
-					"sid": 294781517578752
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 554979823123204,
-							"parameters": {
-								"object": "Iniciar_MP"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Iniciar_MP",
-							"sid": 990662033023910,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 805852783897403
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -197,6 +169,55 @@
 						}
 					],
 					"sid": 890425292661952
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 613802340279579,
+							"parameters": {
+								"object": "Iniciar_MP"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Iniciar_MP",
+							"sid": 605815022338637,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 397568453086959
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 810477104191452,
+							"parameters": {
+								"object": "Iniciar_MP"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Iniciar_MP",
+							"sid": 452579058510101,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 395199704564408
 				}
 			],
 			"sid": 378428995836923
@@ -325,7 +346,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "botãoVoltar"
+								"object-clicked": "botaoVoltar"
 							}
 						}
 					],

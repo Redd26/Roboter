@@ -246,10 +246,10 @@
 					"world": {
 						"x": 1309,
 						"y": 385.21161014603496,
-						"width": 216,
-						"height": 400,
+						"width": 162,
+						"height": 358,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.505586592178771,
 						"color": [
 							1,
 							1,
@@ -313,35 +313,6 @@
 					}
 				},
 				{
-					"type": "RelogioDiaNoite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 640,
-						"y": 85,
-						"width": 126,
-						"height": 126,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "SeletorMaterialPuxador",
 					"properties": {
 						"initially-visible": true,
@@ -363,7 +334,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -372,10 +343,10 @@
 					"world": {
 						"x": 1232.4545454545455,
 						"y": 379.02979196421677,
-						"width": 76,
-						"height": 372,
+						"width": 62,
+						"height": 358,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.4888268156424581,
 						"color": [
 							1,
 							1,
@@ -414,7 +385,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -465,7 +436,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -516,7 +487,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -567,7 +538,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -618,7 +589,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -642,7 +613,7 @@
 					}
 				},
 				{
-					"type": "OuroOverlay",
+					"type": "OuroDescricao",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -659,11 +630,27 @@
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1320.849143998535,
-						"y": 249.11769324968316,
-						"width": 80.26893014361508,
-						"height": 64.15456807344754,
+						"x": 1320.9038901715064,
+						"y": 249.19536749612234,
+						"width": 81.50616886291445,
+						"height": 65.97415905011931,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -708,8 +695,8 @@
 						}
 					},
 					"world": {
-						"x": 1285.6674919171917,
-						"y": 234.38433283197188,
+						"x": 1452.0311282808282,
+						"y": 300.7479691956082,
 						"width": 72.63636363636374,
 						"height": 58.181818181818244,
 						"originX": 0,
@@ -725,7 +712,7 @@
 					}
 				},
 				{
-					"type": "FerroOverlay",
+					"type": "FerroDescricao",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -742,11 +729,27 @@
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1321.2075066362963,
-						"y": 453.16727260693074,
-						"width": 80.26893,
-						"height": 64.154568,
+						"x": 1321.0334571366575,
+						"y": 453.031197254643,
+						"width": 82.0489420138756,
+						"height": 65.63454991153151,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -791,8 +794,8 @@
 						}
 					},
 					"world": {
-						"x": 1281.9568151652595,
-						"y": 436.7250575743823,
+						"x": 1581.0477242561687,
+						"y": 329.4523303016549,
 						"width": 82.09090909090924,
 						"height": 58.385495257367154,
 						"originX": 0,
@@ -808,7 +811,7 @@
 					}
 				},
 				{
-					"type": "viridisOverlay",
+					"type": "ViridisDescricao",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -825,11 +828,27 @@
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1320.8444492987558,
+						"x": 1321.065426270332,
 						"y": 385.10182874226757,
-						"width": 80.26893,
-						"height": 64.154568,
+						"width": 81.91575305013636,
+						"height": 65.22698599409725,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -843,7 +862,7 @@
 					}
 				},
 				{
-					"type": "cobreOverlay",
+					"type": "CobreDescricao",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -860,11 +879,27 @@
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1320.9891564250352,
-						"y": 316.9059370040512,
-						"width": 80.26893,
-						"height": 64.154568,
+						"x": 1321.22241011514,
+						"y": 317.6056980743658,
+						"width": 81.89119961307894,
+						"height": 66.36988986272655,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -878,7 +913,7 @@
 					}
 				},
 				{
-					"type": "eritroOverlay",
+					"type": "EritroDescricao",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -895,11 +930,27 @@
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 1321.0909290648467,
-						"y": 521.1333035192619,
-						"width": 80.26893,
-						"height": 64.154568,
+						"x": 1321.090929064847,
+						"y": 521.2757516808699,
+						"width": 82.47133435275784,
+						"height": 65.71832406110775,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -944,8 +995,8 @@
 						}
 					},
 					"world": {
-						"x": 1280.9904655876735,
-						"y": 304.00730575132513,
+						"x": 1456.4450110422192,
+						"y": 360.3709421149615,
 						"width": 82.43494308326967,
 						"height": 53.31031300935172,
 						"originX": 0,
@@ -992,8 +1043,8 @@
 						}
 					},
 					"world": {
-						"x": 1281.5886618539814,
-						"y": 368.78977011835053,
+						"x": 1456.134116399436,
+						"y": 405.1534064819869,
 						"width": 80.40795934332618,
 						"height": 56.350788619267064,
 						"originX": 0,
@@ -1040,12 +1091,41 @@
 						}
 					},
 					"world": {
-						"x": 1281.3644289648955,
-						"y": 505.53576991961717,
+						"x": 1597.7280653285322,
+						"y": 406.44486082870804,
 						"width": 83.44843495324176,
 						"height": 54.32380487932352,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RelogioDiaNoite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 85,
+						"width": 126,
+						"height": 126,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -83,39 +83,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 688,
-						"y": 400,
-						"width": 128,
-						"height": 176,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FerramentaParaIrAMontagem",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 8,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -49,
-						"y": 324,
-						"width": 49.781464651129525,
-						"height": 49.781464651129525,
+						"x": 696,
+						"y": 416,
+						"width": 96,
+						"height": 136,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -150,7 +121,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -224,7 +195,7 @@
 									1,
 									1
 								],
-								"width": 5,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
