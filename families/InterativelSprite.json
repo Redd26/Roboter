@@ -21,6 +21,11 @@
 		"Eritro",
 		"Ferro",
 		"ouro",
-		"viridisOre"
+		"viridisOre",
+		"CaixaLadoBaixoHitbox",
+		"CaixaLadoCimaHitBox",
+		"CaixaLadoDireitoHitbox",
+		"CaixaLadoEsquerdoHitBox",
+		"SeletorMaterialBandeja"
 	]
 }

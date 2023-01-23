@@ -33,7 +33,18 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
-					},
+					}
+				],
+				"sid": 927522032774122,
+				"name": "dia",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
 					{
 						"width": 126,
 						"height": 126,
@@ -42,7 +53,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9972464,
+						"imageSpriteId": 4366616,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -59,8 +70,8 @@
 						"duration": 1
 					}
 				],
-				"sid": 927522032774122,
-				"name": "Animation 1",
+				"sid": 503822150106430,
+				"name": "noite",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

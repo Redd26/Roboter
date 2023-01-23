@@ -71,6 +71,33 @@
 			"sid": 416672428889199
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 446602576648490,
+					"parameters": {
+						"variable": "horarioDoDia",
+						"comparison": 0,
+						"value": "\"dia\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 574374316641656,
+					"parameters": {
+						"animation": "\"dia\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 482853333764399
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Interacoes Oficina",
@@ -434,6 +461,52 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
+							"sid": 279004053917021,
+							"parameters": {
+								"mouse-button": "right",
+								"click-type": "clicked",
+								"object-clicked": "Porta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 795405867315177,
+							"parameters": {
+								"variable": "horarioDoDia",
+								"value": "\"noite\""
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Porta",
+							"sid": 714292381659996,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "rgb(255,255,0)"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 465269077213361,
+							"parameters": {
+								"animation": "\"noite\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 268468446794528
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
 							"sid": 536279845864084,
 							"parameters": {
 								"mouse-button": "left",
@@ -463,51 +536,6 @@
 						}
 					],
 					"sid": 376928192749993
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 411451393859476,
-							"parameters": {
-								"mouse-button": "right",
-								"click-type": "clicked",
-								"object-clicked": "Porta"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 727962363087371,
-							"parameters": {
-								"variable": "horarioDoDia",
-								"value": "\"noite\""
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "Porta",
-							"sid": 719372089511923,
-							"parameters": {
-								"effect": "\"BetterOutline\"",
-								"parameter-index": "0",
-								"value": "rgb(255,255,0)"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "RelogioDiaNoite",
-							"sid": 571369246921513,
-							"parameters": {
-								"frame-number": "1"
-							}
-						}
-					],
-					"sid": 807445071315981
 				}
 			],
 			"sid": 139097181798489

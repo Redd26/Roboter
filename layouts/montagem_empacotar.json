@@ -70,10 +70,39 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "CaixaEmpacotar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 604.5122268162169,
+						"y": 381.78923510043114,
+						"width": 323.73649089638167,
+						"height": 323.73649089638167,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "RelogioDiaNoite",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "dia",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -97,9 +126,243 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TesterButton",
+					"properties": {
+						"text": "START",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 25,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 201,
+						"y": 358,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TesterText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 18,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 208,
+						"y": 301,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 337799063233307,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "empacotarHitLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "CaixaLadoBaixoHitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 600.5799406738486,
+						"y": 529.5919046020717,
+						"width": 261.36249595712763,
+						"height": 28.912365229041484,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CaixaLadoDireitoHitbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 749.0165179322975,
+						"y": 383.09271261951676,
+						"width": 34.98589443606534,
+						"height": 263.84064005232364,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CaixaLadoCimaHitBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 602.627533786289,
+						"y": 235.30094959030833,
+						"width": 260.2467070878305,
+						"height": 31.095878786367877,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CaixaLadoEsquerdoHitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 77,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 456.993248132477,
+						"y": 384.93728834917107,
+						"width": 28.233637563264836,
+						"height": 262.67007435527654,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 330926296249709,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

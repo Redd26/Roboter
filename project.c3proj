@@ -84,8 +84,6 @@
 			"SeletorMaterialBandeja",
 			"FerroDescricao",
 			"OuroDescricao",
-			"Ouro_texto",
-			"Ferro_texto",
 			"MaterialParaDestruir",
 			"Intro",
 			"ExplicacaoOuro",
@@ -133,9 +131,13 @@
 			"ViridisDescricao",
 			"CobreDescricao",
 			"EritroDescricao",
-			"cobre_texto",
-			"viridis_texto",
-			"eritro_Texto"
+			"CaixaEmpacotar",
+			"CaixaLadoCimaHitBox",
+			"CaixaLadoBaixoHitbox",
+			"CaixaLadoDireitoHitbox",
+			"CaixaLadoEsquerdoHitBox",
+			"TesterButton",
+			"TesterText"
 		],
 		"subfolders": [
 			{

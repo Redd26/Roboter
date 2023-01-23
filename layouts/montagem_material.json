@@ -236,20 +236,14 @@
 					},
 					"uid": 14,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 1309,
-						"y": 385.21161014603496,
+						"x": 1495,
+						"y": 401,
 						"width": 162,
 						"height": 358,
-						"originX": 0.5,
-						"originY": 0.505586592178771,
+						"originX": 1,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -341,12 +335,12 @@
 						}
 					},
 					"world": {
-						"x": 1232.4545454545455,
-						"y": 379.02979196421677,
+						"x": 1244.9759417735709,
+						"y": 382.28473055853095,
 						"width": 62,
-						"height": 358,
-						"originX": 0.5,
-						"originY": 0.4888268156424581,
+						"height": 358.6799900744917,
+						"originX": 1,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -392,8 +386,8 @@
 						}
 					},
 					"world": {
-						"x": 1320.73522073741,
-						"y": 249.13340120098619,
+						"x": 1426,
+						"y": 267,
 						"width": 82,
 						"height": 66,
 						"originX": 0.5,
@@ -443,8 +437,8 @@
 						}
 					},
 					"world": {
-						"x": 1320.983738732608,
-						"y": 385.2892547978969,
+						"x": 1426,
+						"y": 403,
 						"width": 82,
 						"height": 66,
 						"originX": 0.5,
@@ -494,8 +488,8 @@
 						}
 					},
 					"world": {
-						"x": 1320.9900174182762,
-						"y": 452.9913494052831,
+						"x": 1426,
+						"y": 471,
 						"width": 82,
 						"height": 66,
 						"originX": 0.5,
@@ -545,8 +539,8 @@
 						}
 					},
 					"world": {
-						"x": 1321.0362368083984,
-						"y": 521.3027824001417,
+						"x": 1426,
+						"y": 539,
 						"width": 82,
 						"height": 66,
 						"originX": 0.5,
@@ -596,8 +590,8 @@
 						}
 					},
 					"world": {
-						"x": 1321,
-						"y": 317.18971905380357,
+						"x": 1426,
+						"y": 335,
 						"width": 82,
 						"height": 66,
 						"originX": 0.5,
@@ -647,60 +641,12 @@
 						}
 					},
 					"world": {
-						"x": 1320.9038901715064,
-						"y": 249.19536749612234,
+						"x": 1426,
+						"y": 267,
 						"width": 81.50616886291445,
 						"height": 65.97415905011931,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Ouro_texto",
-					"properties": {
-						"text": "Ouro",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0.12941176470588237,
-							0.12941176470588237,
-							0.12941176470588237,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1452.0311282808282,
-						"y": 300.7479691956082,
-						"width": 72.63636363636374,
-						"height": 58.181818181818244,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -746,60 +692,12 @@
 						}
 					},
 					"world": {
-						"x": 1321.0334571366575,
-						"y": 453.031197254643,
+						"x": 1426,
+						"y": 471,
 						"width": 82.0489420138756,
 						"height": 65.63454991153151,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Ferro_texto",
-					"properties": {
-						"text": "Ferro",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1581.0477242561687,
-						"y": 329.4523303016549,
-						"width": 82.09090909090924,
-						"height": 58.385495257367154,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -845,9 +743,9 @@
 						}
 					},
 					"world": {
-						"x": 1321.065426270332,
-						"y": 385.10182874226757,
-						"width": 81.91575305013636,
+						"x": 1426,
+						"y": 403,
+						"width": 81.91575305013637,
 						"height": 65.22698599409725,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -896,8 +794,8 @@
 						}
 					},
 					"world": {
-						"x": 1321.22241011514,
-						"y": 317.6056980743658,
+						"x": 1426,
+						"y": 335,
 						"width": 81.89119961307894,
 						"height": 66.36988986272655,
 						"originX": 0.5,
@@ -947,8 +845,8 @@
 						}
 					},
 					"world": {
-						"x": 1321.090929064847,
-						"y": 521.2757516808699,
+						"x": 1426,
+						"y": 539,
 						"width": 82.47133435275784,
 						"height": 65.71832406110775,
 						"originX": 0.5,
@@ -964,154 +862,10 @@
 					}
 				},
 				{
-					"type": "cobre_texto",
-					"properties": {
-						"text": "Cobre",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 102,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1456.4450110422192,
-						"y": 360.3709421149615,
-						"width": 82.43494308326967,
-						"height": 53.31031300935172,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "viridis_texto",
-					"properties": {
-						"text": "Viridis",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 103,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1456.134116399436,
-						"y": 405.1534064819869,
-						"width": 80.40795934332618,
-						"height": 56.350788619267064,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "eritro_Texto",
-					"properties": {
-						"text": "Eritro",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 104,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1597.7280653285322,
-						"y": 406.44486082870804,
-						"width": 83.44843495324176,
-						"height": 54.32380487932352,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "RelogioDiaNoite",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "dia",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1188,8 +942,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1485.4236781986094,
-						"y": 261.7260414717751,
+						"x": 1760,
+						"y": 215,
 						"width": 40,
 						"height": 40,
 						"originX": 0.27419354838709675,
@@ -1358,8 +1112,8 @@
 						}
 					},
 					"world": {
-						"x": 1536,
-						"y": 512,
+						"x": 1779,
+						"y": 505,
 						"width": 97.47019187423405,
 						"height": 97.47019187423405,
 						"originX": 0.49748743718592964,

@@ -1,5 +1,318 @@
 {
 	"name": "EV_montagemEmpacotar4",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "EV_loja"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_UtilMiniGames"
+		},
+		{
+			"eventType": "variable",
+			"name": "caixaEmpacotarAnimacoes",
+			"type": "string",
+			"initialValue": "\":direitaNota:esquerdaNota:cimaNota:baixoNota:\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 142612030808730
+		},
+		{
+			"eventType": "variable",
+			"name": "empacotarContador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 848770570128667
+		},
+		{
+			"eventType": "variable",
+			"name": "empacotarSequencia",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 717397741551802
+		},
+		{
+			"eventType": "variable",
+			"name": "comecarEmpacotar",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 686763101399530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 664267817101896
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 229882711882748
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 340117232050274,
+					"parameters": {
+						"layer": "\"empacotarHitLayer\"",
+						"interactive": false
+					}
+				}
+			],
+			"sid": 300847618022108
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 491712589474289,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TesterButton"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 393292955005373,
+					"parameters": {
+						"variable": "comecarEmpacotar"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 400623406478216,
+					"parameters": {
+						"variable": "comecarEmpacotar",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TesterButton",
+					"sid": 777320932057326,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 717525510766130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 803432582217129,
+					"parameters": {
+						"variable": "comecarEmpacotar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "TocarEmpacotarSequencia",
+					"sid": 769903805463317
+				}
+			],
+			"sid": 669266939188351
+		},
+		{
+			"functionName": "TocarEmpacotarSequencia",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 801821992592589,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "while",
+							"objectClass": "System",
+							"sid": 587970675563405
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 581579682366914,
+							"parameters": {
+								"variable": "empacotarContador",
+								"comparison": 2,
+								"value": "empacotarSequencia"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 108862834324070,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaEmpacotar",
+							"sid": 505929633955582,
+							"parameters": {
+								"animation": "tokenat(caixaEmpacotarAnimacoes, int(random(tokencount(caixaEmpacotarAnimacoes, \":\"))), \":\")",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 409878234725419,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 377207072003591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 477155882703496,
+							"parameters": {
+								"variable": "empacotarContador",
+								"comparison": 3,
+								"value": "empacotarSequencia"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 382109409493380,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaEmpacotar",
+							"sid": 423865898392259,
+							"parameters": {
+								"animation": "tokenat(caixaEmpacotarAnimacoes, int(random(tokencount(caixaEmpacotarAnimacoes, \":\"))), \":\")",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 539742597776756,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 329537411526524,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 431224055316621,
+							"parameters": {
+								"first-value": "empacotarContador",
+								"comparison": 5,
+								"second-value": "empacotarSequencia"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 799641921668839,
+							"parameters": {
+								"variable": "comecarEmpacotar",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TesterButton",
+							"sid": 336213816835076,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 255595345571136
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 387223038855845
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 204987066114985,
+					"parameters": {
+						"variable": "comecarEmpacotar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TesterText",
+					"sid": 448107701488364,
+					"parameters": {
+						"text": "empacotarContador"
+					}
+				}
+			],
+			"sid": 935238953617575
+		}
+	],
 	"sid": 904139227086244
 }

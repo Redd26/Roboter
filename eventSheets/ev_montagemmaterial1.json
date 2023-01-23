@@ -158,20 +158,29 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "move-forward",
-					"objectClass": "SeletorMaterialPuxador",
-					"sid": 652969503379073,
-					"parameters": {
-						"distance": "-108"
-					}
-				},
-				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 475811727510224,
+					"sid": 922704109585870,
 					"parameters": {
 						"variable": "isSeletorMaterialClicado",
 						"value": "true"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "SeletorMaterialBandeja",
+					"sid": 507376711598664,
+					"parameters": {
+						"object": "SeletorMaterialPuxador",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SeletorMaterialPuxador",
+					"sid": 768744092005051,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -189,20 +198,29 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "move-forward",
-					"objectClass": "SeletorMaterialPuxador",
-					"sid": 866615582891343,
-					"parameters": {
-						"distance": "108"
-					}
-				},
-				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 985590819157646,
+					"sid": 846839080132616,
 					"parameters": {
 						"variable": "isSeletorMaterialClicado",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "SeletorMaterialBandeja",
+					"sid": 307781223802487,
+					"parameters": {
+						"x": "1495",
+						"y": "401"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SeletorMaterialPuxador",
+					"sid": 806261293909634,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
@@ -408,6 +426,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-position",
+							"objectClass": "SeletorMaterialBandeja",
+							"sid": 406229642053984,
+							"parameters": {
+								"x": "1495",
+								"y": "401"
+							}
+						},
+						{
 							"id": "pin-to-object-properties",
 							"objectClass": "ouro",
 							"sid": 511198066371516,
@@ -556,21 +583,6 @@
 								"height-type": "no",
 								"z": false
 							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "SeletorMaterialBandeja",
-							"sid": 662028480023129,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "SeletorMaterialPuxador",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
 						}
 					],
 					"sid": 514261444534771
@@ -625,7 +637,7 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "SeletorMaterialPuxador"
+								"object-clicked": "SeletorMaterialBandeja"
 							}
 						},
 						{

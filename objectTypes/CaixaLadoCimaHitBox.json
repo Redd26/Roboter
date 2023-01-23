@@ -1,0 +1,192 @@
+{
+	"name": "CaixaLadoCimaHitBox",
+	"plugin-id": "Sprite",
+	"sid": 784486940109961,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3149365,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 378179679868040,
+				"name": "idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4267517,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5441339,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 154661,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9245544,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3939007,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8027116,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6622006,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 155397,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4214946,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6000539,
+						"useCollisionPoly": true,
+						"duration": 0.5
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1669354,
+						"useCollisionPoly": true,
+						"duration": 0.5
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4750025,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 438425281098361,
+				"name": "note",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 16
+			}
+		],
+		"subfolders": []
+	}
+}

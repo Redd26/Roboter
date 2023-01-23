@@ -148,7 +148,7 @@
 					"type": "RelogioDiaNoite",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "dia",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -322,12 +322,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 681,
-						"y": 539,
+						"x": 736,
+						"y": 592,
 						"width": 110,
 						"height": 119,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -351,12 +351,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 562,
-						"y": 539,
+						"x": 600,
+						"y": 592,
 						"width": 110,
 						"height": 119,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

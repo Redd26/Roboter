@@ -38,6 +38,33 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 169580530945642,
+					"parameters": {
+						"variable": "horarioDoDia",
+						"comparison": 0,
+						"value": "\"noite\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 860507826616689,
+					"parameters": {
+						"animation": "\"noite\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 825423674699673
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 938291368619044,
@@ -64,14 +91,6 @@
 					"parameters": {
 						"variable": "horarioDoDia",
 						"value": "\"dia\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "RelogioDiaNoite",
-					"sid": 444740761922522,
-					"parameters": {
-						"frame-number": "0"
 					}
 				}
 			],
