@@ -101,20 +101,20 @@
 			],
 			"actions": [
 				{
+					"id": "set-visible",
+					"objectClass": "TesterButton",
+					"sid": 547514020437541,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 400623406478216,
 					"parameters": {
 						"variable": "comecarEmpacotar",
 						"value": "true"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "TesterButton",
-					"sid": 777320932057326,
-					"parameters": {
-						"visibility": "invisible"
 					}
 				}
 			],
@@ -136,6 +136,14 @@
 				{
 					"callFunction": "TocarEmpacotarSequencia",
 					"sid": 769903805463317
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TesterButton",
+					"sid": 194327872685267,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 669266939188351
@@ -174,7 +182,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 108862834324070,
+							"sid": 250818368946730,
 							"parameters": {
 								"interval-seconds": "1"
 							}
@@ -184,10 +192,28 @@
 						{
 							"id": "set-animation",
 							"objectClass": "CaixaEmpacotar",
-							"sid": 505929633955582,
+							"sid": 689538013269645,
 							"parameters": {
-								"animation": "tokenat(caixaEmpacotarAnimacoes, int(random(tokencount(caixaEmpacotarAnimacoes, \":\"))), \":\")",
+								"animation": "choose(\"cimaNota\", \"baixoNota\", \"esquerdaNota\", \"direitaNota\")",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaEmpacotar",
+							"sid": 629794008126039,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"cimaNota\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TesterButton",
+							"sid": 745161729499394,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						},
 						{
@@ -253,15 +279,31 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 431224055316621,
+							"sid": 615532652946070,
 							"parameters": {
 								"first-value": "empacotarContador",
-								"comparison": 5,
+								"comparison": 0,
 								"second-value": "empacotarSequencia"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TesterButton",
+							"sid": 535393836140271,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 360412118224859,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
@@ -269,14 +311,6 @@
 							"parameters": {
 								"variable": "comecarEmpacotar",
 								"value": "false"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "TesterButton",
-							"sid": 336213816835076,
-							"parameters": {
-								"visibility": "visible"
 							}
 						}
 					],
@@ -305,7 +339,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "TesterText",
-					"sid": 448107701488364,
+					"sid": 812489682337813,
 					"parameters": {
 						"text": "empacotarContador"
 					}
