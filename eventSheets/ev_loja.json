@@ -444,6 +444,96 @@
 						}
 					],
 					"sid": 214183011977445
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "BotaoRecusar",
+							"sid": 297008945601092,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BotaoRecusar",
+							"sid": 831014663593266,
+							"parameters": {
+								"x": "-2000",
+								"y": "-2000"
+							}
+						}
+					],
+					"sid": 705879569145404
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "BotaoRecusar",
+							"sid": 746634689719601
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BotaoRecusar",
+							"sid": 142671299439617,
+							"parameters": {
+								"x": "545",
+								"y": "530"
+							}
+						}
+					],
+					"sid": 280588451730038
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "BotaoAceitar",
+							"sid": 807480589931014,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BotaoAceitar",
+							"sid": 110267580080178,
+							"parameters": {
+								"x": "-2000",
+								"y": "-2000"
+							}
+						}
+					],
+					"sid": 365836993962412
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "BotaoAceitar",
+							"sid": 897008038642169
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BotaoAceitar",
+							"sid": 743245940011960,
+							"parameters": {
+								"x": "677",
+								"y": "530"
+							}
+						}
+					],
+					"sid": 387407997501999
 				}
 			],
 			"sid": 458705643880923

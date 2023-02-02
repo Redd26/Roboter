@@ -322,12 +322,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 736,
-						"y": 592,
+						"x": 677,
+						"y": 530,
 						"width": 110,
 						"height": 119,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -351,12 +351,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 600,
-						"y": 592,
+						"x": 545,
+						"y": 530,
 						"width": 110,
 						"height": 119,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -513,7 +513,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 50,
 					"instanceVariables": {},
@@ -555,7 +556,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 51,
 					"instanceVariables": {},
@@ -597,7 +599,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 53,
 					"instanceVariables": {},

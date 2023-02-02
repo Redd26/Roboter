@@ -2,6 +2,36 @@
 	"name": "EV_montagemChapa2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "ChapaAndar",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 896935368671402
+		},
+		{
+			"eventType": "variable",
+			"name": "ChapaSubir",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 288406949813226
+		},
+		{
+			"eventType": "variable",
+			"name": "ChapaDescer",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 555555082285151
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_loja"
 		},
@@ -18,280 +48,8 @@
 					"sid": 724316504202287
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PuzzlePontro",
-					"sid": 641458482108185,
-					"parameters": {
-						"animation": "\"Pontilhado\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PuzzlePontro2",
-					"sid": 283306845985936,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 212917586331307,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PuzzlePontro",
-					"sid": 930046043087153,
-					"parameters": {
-						"animation": "\"PontilhadoB\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 882413663427410,
-					"parameters": {
-						"seconds": "2"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 718301532446357
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 648238335170810
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Serra",
-					"sid": 410632420313597,
-					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
-					}
-				}
-			],
-			"sid": 704631605419937,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 653188981923656,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Mesa"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "PuzzlePontro",
-					"sid": 152184441262455,
-					"parameters": {
-						"animation": "\"Pontilhado\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PuzzlePontro2",
-					"sid": 127647811265380,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PuzzlePontro2",
-					"sid": 992074202644751,
-					"parameters": {
-						"animation": "\"Ponto 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation-speed",
-					"objectClass": "PuzzlePontro2",
-					"sid": 910456200356843,
-					"parameters": {
-						"speed": "0"
-					}
-				}
-			],
-			"sid": 385089947335980
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 730316500710018,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "PuzzlePontro2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-frame",
-					"objectClass": "PuzzlePontro2",
-					"sid": 185705079170568,
-					"disabled": true,
-					"parameters": {
-						"frame-number": "PuzzlePontro2.AnimationFrameCount + 1"
-					}
-				},
-				{
-					"id": "set-animation-speed",
-					"objectClass": "PuzzlePontro2",
-					"sid": 788391539254499,
-					"parameters": {
-						"speed": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 543901600068535,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "set-animation-speed",
-					"objectClass": "PuzzlePontro2",
-					"sid": 415467041794136,
-					"parameters": {
-						"speed": "0"
-					}
-				}
-			],
-			"sid": 173992684032685,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-dragging",
-					"objectClass": "Serra",
-					"sid": 225165567420804,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Serra",
-					"sid": 264178521814720,
-					"parameters": {
-						"object": "PuzzlePontro2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-speed",
-					"objectClass": "PuzzlePontro2",
-					"sid": 646097863142112,
-					"parameters": {
-						"speed": "1"
-					}
-				}
-			],
-			"sid": 746348338538387
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-dragging",
-					"objectClass": "Serra",
-					"sid": 658460651287562,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Serra",
-					"sid": 738649086194331,
-					"parameters": {
-						"object": "PuzzlePontro2"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-speed",
-					"objectClass": "PuzzlePontro2",
-					"sid": 498592136252873,
-					"parameters": {
-						"speed": "0"
-					}
-				}
-			],
-			"sid": 174830221064420
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-animation-frame",
-					"objectClass": "PuzzlePontro2",
-					"sid": 881183858234876,
-					"parameters": {
-						"comparison": 0,
-						"number": "15"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "CortarChapa",
-					"sid": 954070778941540,
-					"parameters": {
-						"text": "\"Concluido\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 968250359454855,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "ProximoLevel",
-					"sid": 167992225283961,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 307065269110454
 		},
 		{
 			"eventType": "block",
@@ -304,15 +62,6 @@
 						"mouse-button": "left",
 						"click-type": "clicked",
 						"object-clicked": "ProximoLevel"
-					}
-				},
-				{
-					"id": "compare-animation-frame",
-					"objectClass": "PuzzlePontro2",
-					"sid": 387837694135425,
-					"parameters": {
-						"comparison": 0,
-						"number": "15"
 					}
 				}
 			],
@@ -327,6 +76,414 @@
 				}
 			],
 			"sid": 397516936659760
+		},
+		{
+			"eventType": "comment",
+			"text": "Mecanica para a chapa andar"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fazer Chapas Andar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 937770008945751,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "BotaoIniciarCorte"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 802370755224251,
+							"parameters": {
+								"variable": "ChapaAndar",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 387153085450959
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 148276613304326,
+							"parameters": {
+								"variable": "ChapaAndar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ChapaFerro",
+							"sid": 993845982423694,
+							"parameters": {
+								"x": "ChapaFerro.X + 0.5",
+								"y": "ChapaFerro.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "LinhaCortar",
+							"sid": 940601148909938,
+							"parameters": {
+								"x": "LinhaCortar.X + 0.5",
+								"y": "LinhaCortar.Y"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 113489770776264,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ChapaFerro",
+							"sid": 803001136996205,
+							"parameters": {
+								"x": "ChapaFerro.X + 0.5",
+								"y": "ChapaFerro.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "LinhaCortar",
+							"sid": 859199544396951,
+							"parameters": {
+								"x": "LinhaCortar.X + 0.5",
+								"y": "LinhaCortar.Y"
+							}
+						}
+					],
+					"sid": 974173013668150
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 647057885497329,
+							"parameters": {
+								"variable": "ChapaAndar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ChapaFerro",
+							"sid": 785128522185256,
+							"parameters": {
+								"x": "ChapaFerro.X",
+								"y": "ChapaFerro.Y"
+							}
+						}
+					],
+					"sid": 200892907391661
+				}
+			],
+			"sid": 818277162746123
+		},
+		{
+			"eventType": "comment",
+			"text": "Mecanica para os botoes de subir e descer"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Subir e Descer Chapas",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 795223293359895,
+							"parameters": {
+								"object": "BotaoCima"
+							}
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 901594888289670,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 410716060649618,
+							"parameters": {
+								"variable": "ChapaSubir",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 586963757189022
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 742189464868252,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 467152978518283,
+							"parameters": {
+								"object": "BotaoCima"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 422724403888761,
+							"parameters": {
+								"variable": "ChapaSubir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 930495012796503
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 591324884653521,
+							"parameters": {
+								"object": "BotaoBaixo"
+							}
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 635241511367020,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 827546038572883,
+							"parameters": {
+								"variable": "ChapaDescer",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 997269976530855
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 713166529735128,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 407079096347305,
+							"parameters": {
+								"object": "BotaoBaixo"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 981126764592357,
+							"parameters": {
+								"variable": "ChapaDescer",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 765047614476212
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 380595462388997,
+							"parameters": {
+								"variable": "ChapaSubir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ChapaFerro",
+							"sid": 403571907351441,
+							"parameters": {
+								"x": "ChapaFerro.X",
+								"y": "ChapaFerro.Y - 1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "LinhaCortar",
+							"sid": 592350897730317,
+							"parameters": {
+								"x": "LinhaCortar.X ",
+								"y": "LinhaCortar.Y - 1"
+							}
+						}
+					],
+					"sid": 340181776072867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 742374316733467,
+							"parameters": {
+								"variable": "ChapaDescer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ChapaFerro",
+							"sid": 988469344893550,
+							"parameters": {
+								"x": "ChapaFerro.X",
+								"y": "ChapaFerro.Y + 1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "LinhaCortar",
+							"sid": 478504351274100,
+							"parameters": {
+								"x": "LinhaCortar.X ",
+								"y": "LinhaCortar.Y + 1"
+							}
+						}
+					],
+					"sid": 223440233583451
+				}
+			],
+			"sid": 466186537669398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "LinhaCortar",
+					"sid": 948100839801495,
+					"parameters": {
+						"object": "Serra"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 322725383286376,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "LinhaCortar",
+					"sid": 671238773448650,
+					"parameters": {
+						"animation": "\"A1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 598365444801896,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "LinhaCortar",
+					"sid": 756236520241794,
+					"parameters": {
+						"animation": "\"A2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 898052458331833,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "LinhaCortar",
+					"sid": 975020927373812,
+					"parameters": {
+						"animation": "\"A3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 227290468658158
 		}
 	],
 	"sid": 886171643003322

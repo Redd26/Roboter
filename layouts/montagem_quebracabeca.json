@@ -70,35 +70,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PuzzlePontro",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Chapa",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 30,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 628.2496709725671,
-						"y": 434.250329027433,
-						"width": 148.9534369337126,
-						"height": 151.9534369337126,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": -1
-					}
-				},
-				{
 					"type": "PecaResp_1",
 					"properties": {
 						"initially-visible": true,
@@ -406,7 +377,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 29,
 					"instanceVariables": {},
@@ -676,7 +648,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 75,
 					"instanceVariables": {},
@@ -718,7 +691,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 76,
 					"instanceVariables": {},
@@ -760,7 +734,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 78,
 					"instanceVariables": {},

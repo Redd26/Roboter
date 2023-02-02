@@ -70,10 +70,10 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PuzzlePontro",
+					"type": "ChapaFerro",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Chapa",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -82,12 +82,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 610,
-						"y": 438,
-						"width": 372.44148484621115,
-						"height": 379.9426508316317,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 92,
+						"y": 315,
+						"width": 486,
+						"height": 182,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -99,24 +99,24 @@
 					}
 				},
 				{
-					"type": "PuzzlePontro2",
+					"type": "Serra",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Pontilhado",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 38,
+					"uid": 37,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 610,
-						"y": 438,
-						"width": 203.60134504926208,
-						"height": 385.00855284272006,
-						"originX": 0.7195121951219512,
-						"originY": 0.5,
+						"x": 658,
+						"y": 335,
+						"width": 146,
+						"height": 118,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -157,42 +157,6 @@
 					}
 				},
 				{
-					"type": "Serra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 37,
-					"instanceVariables": {},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 848,
-						"y": 383,
-						"width": 29,
-						"height": 52,
-						"originX": 0.5517241379310345,
-						"originY": 0.4313186813186813,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "CortarChapa",
 					"properties": {
 						"text": "Clique em cima da chapa de metal para corta-la",
@@ -212,7 +176,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 39,
 					"instanceVariables": {},
@@ -224,6 +189,122 @@
 						"height": 75.46981715488192,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BotaoIniciarCorte",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 82,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 901,
+						"y": 383,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BotaoCima",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 838,
+						"y": 320,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BotaoBaixo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 103,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 838,
+						"y": 450,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LinhaCortar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 86,
+						"y": 303,
+						"width": 486,
+						"height": 113,
+						"originX": -0.01440329218106996,
+						"originY": -0.3893805309734513,
 						"color": [
 							1,
 							1,
@@ -453,7 +534,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 70,
 					"instanceVariables": {},
@@ -495,7 +577,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 71,
 					"instanceVariables": {},
@@ -537,7 +620,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "center",
+						"read-aloud": false
 					},
 					"uid": 73,
 					"instanceVariables": {},

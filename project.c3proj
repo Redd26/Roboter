@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 31702,
+	"savedWithRelease": 32702,
 	"name": "Roboter",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,10 +8,16 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -19,39 +25,6 @@
 			"id": "Text",
 			"name": "Texto",
 			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Mouse",
-			"name": "Mouse",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Atrelar",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Fader",
-			"name": "[Fader]",
-			"author": "Colludium",
-			"version": "1.0.0.0",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "MoveTo",
-			"name": "Mover Para",
-			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +32,28 @@
 			"id": "DragnDrop",
 			"name": "Arrastar & Soltar",
 			"author": "Scirra",
-			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fader",
+			"name": "[Fader]",
+			"author": "Colludium",
+			"bundled": false,
+			"version": "1.0.0.0"
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Mover Para",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Atrelar",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -67,8 +61,8 @@
 			"id": "skymen_BetterOutline",
 			"name": "[BetterOutline]",
 			"author": "skymen",
-			"version": "1.4.0.3",
-			"bundled": false
+			"bundled": false,
+			"version": "1.4.0.3"
 		}
 	],
 	"uniqueId": "ou7yo4zwtj7",
@@ -94,14 +88,11 @@
 			"Peca_3",
 			"Peca_4",
 			"Texto_QuebraCabeca",
-			"PuzzlePontro",
 			"PecaResp_1",
 			"Peca_Resp4",
 			"Peca_Resp2",
 			"Peca_7",
 			"Peca_Resp3",
-			"Serra",
-			"PuzzlePontro2",
 			"CortarChapa",
 			"ProximoLevel",
 			"Carta",
@@ -137,7 +128,13 @@
 			"CaixaLadoDireitoHitbox",
 			"CaixaLadoEsquerdoHitBox",
 			"TesterButton",
-			"TesterText"
+			"TesterText",
+			"BotaoIniciarCorte",
+			"BotaoCima",
+			"BotaoBaixo",
+			"ChapaFerro",
+			"LinhaCortar",
+			"Serra"
 		],
 		"subfolders": [
 			{
@@ -356,6 +353,8 @@
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "splash",
 		"preloadSounds": true,
