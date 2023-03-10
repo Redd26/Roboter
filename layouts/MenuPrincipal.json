@@ -378,7 +378,38 @@
 		}
 	],
 	"sid": 689066833619788,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "SequenciaDeNotas",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 38,
+			"instanceVariables": {}
+		},
+		{
+			"type": "SequenciaDeNotasJogador",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 104,
+			"instanceVariables": {}
+		},
+		{
+			"type": "PecasQuebraCabecaPosicoes",
+			"properties": {
+				"width": 2,
+				"height": 10,
+				"depth": 1
+			},
+			"uid": 43,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1280,
 	"height": 720,

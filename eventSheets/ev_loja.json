@@ -36,12 +36,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-layer-interactive",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 983120869091926,
+					"sid": 272645150724470,
 					"parameters": {
-						"layer": "\"cartas\"",
-						"interactive": false
+						"layer": "\"cartaContainer\"",
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -65,6 +65,45 @@
 					"parameters": {
 						"variable": "isMaterialClicado",
 						"value": "false"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "CartaMascaraRedonad",
+					"sid": 933224703163749,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Carta",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "CartaMascara",
+					"sid": 772827222541761,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Carta",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "TextoCarta",
+					"sid": 449075049664495,
+					"parameters": {
+						"object": "Carta",
+						"image-point-optional": "0"
 					}
 				}
 			],
@@ -105,435 +144,430 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Carta",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 858250606505737,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "MesaOficina"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-interactive",
-							"objectClass": "System",
-							"sid": 649512153788239,
-							"parameters": {
-								"layer": "\"cartas\"",
-								"interactive": true
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 350309973126713,
+									"parameters": {
+										"layer": "\"cartaContainer\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 674377921135792,
+									"parameters": {
+										"group-name": "\"Invisivel\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 440998559192274,
+									"parameters": {
+										"group-name": "\"Visivel\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 924402386421556,
+									"parameters": {
+										"group-name": "\"Ativar Layers\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 148142134688329,
+									"parameters": {
+										"group-name": "\"Desativar Layers\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 755972416237187
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "Carta",
-							"sid": 766547032632331,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 397579110728504,
+									"parameters": {
+										"layer": "\"cartaContainer\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 176088403739413,
+									"parameters": {
+										"group-name": "\"Invisivel\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 100592456397575,
+									"parameters": {
+										"group-name": "\"Visivel\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 293472601608274,
+									"parameters": {
+										"group-name": "\"Ativar Layers\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 777342951077175,
+									"parameters": {
+										"group-name": "\"Desativar Layers\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 274022394985408
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "BotaoAceitar",
-							"sid": 244986139531856,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "group",
+							"disabled": false,
+							"title": "Invisivel",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 970983519250978,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "MesaOficina"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 818321323739302,
+											"parameters": {
+												"layer": "\"cartaContainer\"",
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 151312563363235
+								}
+							],
+							"sid": 681511091016956
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "BotaoRecusar",
-							"sid": 249696687954649,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 746007776014897
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 220401778841895,
-							"parameters": {
-								"object": "MesaOficina"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "MesaOficina",
-							"sid": 998482340025516,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
+							"eventType": "group",
+							"disabled": false,
+							"title": "Visivel",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-mouse-wheel",
+											"objectClass": "Mouse",
+											"sid": 335339370862338,
+											"parameters": {
+												"direction": "up"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 691268183812629
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-mouse-wheel",
+											"objectClass": "Mouse",
+											"sid": 363822757558252,
+											"parameters": {
+												"direction": "down"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 949155039507943
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 903442720950728,
+											"parameters": {
+												"object": "BotaoRecusar"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoRecusar",
+											"sid": 472143139003120,
+											"parameters": {
+												"animation": "\"RedNegar\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 406111318067589
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 130324769523419,
+											"parameters": {
+												"object": "BotaoRecusar"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoRecusar",
+											"sid": 504610852093022,
+											"parameters": {
+												"animation": "\"CinzaNegar\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 819305617719590
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 806267195653491,
+											"parameters": {
+												"object": "BotaoAceitar"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoAceitar",
+											"sid": 917859442909798,
+											"parameters": {
+												"animation": "\"VerdeAceitar\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 730033185699888
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 152320379324960,
+											"parameters": {
+												"object": "BotaoAceitar"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoAceitar",
+											"sid": 279860831797318,
+											"parameters": {
+												"animation": "\"CinzaAceitar\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 516223452776080
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 590774581480466,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "BotaoRecusar"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 988569136624446,
+											"parameters": {
+												"layer": "\"cartaContainer\"",
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 468798808450418
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 767598384337825,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "BotaoAceitar"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 404395638374381,
+											"parameters": {
+												"layer": "\"cartaContainer\"",
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 271715536884621,
+											"parameters": {
+												"layout": "Montagem_Material"
+											}
+										}
+									],
+									"sid": 872523495378766
+								}
+							],
+							"sid": 875756635335834
 						},
 						{
-							"id": "set-effect-enabled",
-							"objectClass": "MesaOficina",
-							"sid": 972873431124530,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 905599881805138
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 318829041735667,
-							"parameters": {
-								"object": "MesaOficina"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "MesaOficina",
-							"sid": 948849931353395,
-							"parameters": {
-								"animation": "\"idle\"",
-								"from": "beginning"
-							}
+							"eventType": "group",
+							"disabled": false,
+							"title": "Ativar Layers",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 348058676827258,
+											"parameters": {
+												"layer": "\"game\"",
+												"interactive": true
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 819077250127909,
+											"parameters": {
+												"layer": "\"background\"",
+												"interactive": true
+											}
+										}
+									],
+									"sid": 289518691115027
+								}
+							],
+							"sid": 265887460481432
 						},
 						{
-							"id": "set-effect-enabled",
-							"objectClass": "MesaOficina",
-							"sid": 485290929902620,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
+							"eventType": "group",
+							"disabled": false,
+							"title": "Desativar Layers",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 881877423805686,
+											"parameters": {
+												"layer": "\"game\"",
+												"interactive": false
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 918869927739159,
+											"parameters": {
+												"layer": "\"background\"",
+												"interactive": false
+											}
+										}
+									],
+									"sid": 381060294584055
+								}
+							],
+							"sid": 791819129271206
 						}
 					],
-					"sid": 965200160358473
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 862261705504002,
-							"parameters": {
-								"object": "BotaoRecusar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoRecusar",
-							"sid": 691193937388796,
-							"parameters": {
-								"animation": "\"RedNegar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 998443941916131
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 421497204446295,
-							"parameters": {
-								"object": "BotaoRecusar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoRecusar",
-							"sid": 301649662120780,
-							"parameters": {
-								"animation": "\"CinzaNegar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 566144451540527
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 689298812972748,
-							"parameters": {
-								"object": "BotaoAceitar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoAceitar",
-							"sid": 350711475441561,
-							"parameters": {
-								"animation": "\"VerdeAceitar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 491980900631697
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 661280020716090,
-							"parameters": {
-								"object": "BotaoAceitar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoAceitar",
-							"sid": 891904339911107,
-							"parameters": {
-								"animation": "\"CinzaAceitar\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 250665006817755
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 803399846197091,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "BotaoRecusar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-interactive",
-							"objectClass": "System",
-							"sid": 512347856432979,
-							"parameters": {
-								"layer": "\"cartas\"",
-								"interactive": false
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoRecusar",
-							"sid": 825292439300304,
-							"parameters": {
-								"animation": "\"RedNegar\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Carta",
-							"sid": 718437368375062,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoAceitar",
-							"sid": 808570986466694,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoRecusar",
-							"sid": 271027234784686,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 271456837436664
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 850817698391124,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "BotaoAceitar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoAceitar",
-							"sid": 620983265945969,
-							"parameters": {
-								"animation": "\"VerdeAceitar\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Carta",
-							"sid": 183541100246163,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoAceitar",
-							"sid": 947425964041664,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoRecusar",
-							"sid": 182709623590910,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 966995130238536,
-							"parameters": {
-								"layout": "Montagem_Material"
-							}
-						}
-					],
-					"sid": 214183011977445
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "BotaoRecusar",
-							"sid": 297008945601092,
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "BotaoRecusar",
-							"sid": 831014663593266,
-							"parameters": {
-								"x": "-2000",
-								"y": "-2000"
-							}
-						}
-					],
-					"sid": 705879569145404
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "BotaoRecusar",
-							"sid": 746634689719601
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "BotaoRecusar",
-							"sid": 142671299439617,
-							"parameters": {
-								"x": "545",
-								"y": "530"
-							}
-						}
-					],
-					"sid": 280588451730038
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "BotaoAceitar",
-							"sid": 807480589931014,
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "BotaoAceitar",
-							"sid": 110267580080178,
-							"parameters": {
-								"x": "-2000",
-								"y": "-2000"
-							}
-						}
-					],
-					"sid": 365836993962412
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "BotaoAceitar",
-							"sid": 897008038642169
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "BotaoAceitar",
-							"sid": 743245940011960,
-							"parameters": {
-								"x": "677",
-								"y": "530"
-							}
-						}
-					],
-					"sid": 387407997501999
+					"sid": 600608644406094
 				}
 			],
 			"sid": 458705643880923

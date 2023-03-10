@@ -248,155 +248,6 @@
 			"global": false
 		},
 		{
-			"name": "cartas",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "Carta",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 44,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 661,
-						"y": 364,
-						"width": 802,
-						"height": 602,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BotaoAceitar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "CinzaAceitar",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 46,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 677,
-						"y": 530,
-						"width": 110,
-						"height": 119,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BotaoRecusar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "CinzaNegar",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 545,
-						"y": 530,
-						"width": 110,
-						"height": 119,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 287696508641265,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "hud",
 			"overriden": 0,
 			"subLayers": [],
@@ -432,6 +283,415 @@
 				}
 			],
 			"sid": 921220108107194,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "cartaContainer",
+			"overriden": 0,
+			"subLayers": [
+				{
+					"name": "cartaFundo",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "Carta",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 44,
+							"instanceVariables": {},
+							"behaviors": {
+								"MoveTo": {
+									"properties": {
+										"max-speed": 200,
+										"acceleration": 600,
+										"deceleration": 600,
+										"rotate-speed": 0,
+										"set-angle": true,
+										"stop-on-solids": false,
+										"enabled": true
+									}
+								}
+							},
+							"effects": {
+								"BetterOutline": {
+									"isEnabled": false,
+									"parameters": {
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"width": 5,
+										"precision-step": 1,
+										"samples": 16
+									}
+								}
+							},
+							"world": {
+								"x": 661,
+								"y": 364,
+								"width": 710,
+								"height": 594,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
+					"sid": 932301673613447,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				},
+				{
+					"name": "cartaTexto",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "TextoCarta",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 107,
+							"instanceVariables": {},
+							"behaviors": {
+								"Pin": {
+									"properties": {
+										"destroy": false
+									}
+								},
+								"BoundedDragDrop": {
+									"properties": {
+										"axes": "vertical only",
+										"initial-state": "enabled",
+										"bound-to": "position",
+										"bound-by": "edge",
+										"bound-method": "clamp",
+										"bound-xradius": 100,
+										"bound-yradius": 100,
+										"bound-min-x": 0,
+										"bound-max-x": 0,
+										"bound-min-y": -270,
+										"bound-max-y": 814
+									}
+								}
+							},
+							"world": {
+								"x": 672,
+								"y": 368,
+								"width": 579,
+								"height": 683,
+								"originX": 0.5,
+								"originY": 0.3411420204978038,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "CartaMascara",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 108,
+							"instanceVariables": {},
+							"behaviors": {
+								"Pin": {
+									"properties": {
+										"destroy": false
+									}
+								}
+							},
+							"world": {
+								"x": 659,
+								"y": -84,
+								"width": 704,
+								"height": 304,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0,
+								"blendMode": "destination-out"
+							}
+						},
+						{
+							"type": "CartaMascara",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 109,
+							"instanceVariables": {},
+							"behaviors": {
+								"Pin": {
+									"properties": {
+										"destroy": false
+									}
+								}
+							},
+							"world": {
+								"x": 664,
+								"y": 796,
+								"width": 704,
+								"height": 344,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0,
+								"blendMode": "destination-out"
+							}
+						},
+						{
+							"type": "CartaMascaraRedonad",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 112,
+							"instanceVariables": {},
+							"behaviors": {
+								"Pin": {
+									"properties": {
+										"destroy": false
+									}
+								}
+							},
+							"world": {
+								"x": 548,
+								"y": 568,
+								"width": 272,
+								"height": 152,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0,
+								"blendMode": "destination-out"
+							}
+						}
+					],
+					"sid": 287696508641265,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						1,
+						1,
+						1,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": true,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				},
+				{
+					"name": "botoesCarta",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "BotaoAceitar",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "CinzaAceitar",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 46,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 616,
+								"y": 568,
+								"width": 110,
+								"height": 119,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BotaoRecusar",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "CinzaNegar",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 47,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 480,
+								"y": 568,
+								"width": 110,
+								"height": 119,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
+					"sid": 580350531398977,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
+			"instances": [],
+			"sid": 612541175344641,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

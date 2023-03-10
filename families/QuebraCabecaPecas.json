@@ -1,0 +1,14 @@
+{
+	"name": "QuebraCabecaPecas",
+	"plugin-id": "Sprite",
+	"sid": 810353265943174,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Peca_1",
+		"Peca_2",
+		"Peca_3",
+		"Peca_4"
+	]
+}

@@ -11,33 +11,44 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "GuardarX",
+			"name": "pecasQuebraCabecaAdicionadas",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 254149564532533
+			"sid": 325210493194573
 		},
 		{
 			"eventType": "variable",
-			"name": "GuardarY",
+			"name": "totalQuebraCabecaPecas",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 460013793067016
+			"sid": 318232225942489
 		},
 		{
-			"eventType": "variable",
-			"name": "PuzzleFeito",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 451153057139123
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 740625158487880
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Debug",
+					"sid": 197749692268467,
+					"parameters": {
+						"text": "Peca_3.PosicaoOriginal"
+					}
+				}
+			],
+			"sid": 552883453296351
 		},
 		{
 			"eventType": "block",
@@ -45,464 +56,11 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 492854778900941
+					"sid": 500510224458218
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_1",
-					"sid": 724762855304261,
-					"parameters": {
-						"x": "Peca_1.X",
-						"y": "Peca_1.Y"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Peca_2",
-					"sid": 397725859233630,
-					"parameters": {
-						"x": "Peca_2.X",
-						"y": "Peca_2.Y"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Peca_3",
-					"sid": 531148631890939,
-					"parameters": {
-						"x": "Peca_3.X",
-						"y": "Peca_3.Y"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Peca_4",
-					"sid": 706297329470328,
-					"parameters": {
-						"x": "Peca_4.X",
-						"y": "Peca_4.Y"
-					}
-				}
-			],
-			"sid": 506579384898514
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_3",
-					"sid": 595276319560163,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_3",
-					"sid": 777197645583104,
-					"parameters": {
-						"object": "Peca_Resp3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_3",
-					"sid": 604095355573680,
-					"parameters": {
-						"x": "664.810853",
-						"y": " 395.567587"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 258110022886156,
-					"parameters": {
-						"variable": "PuzzleFeito",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 293975373442542
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_3",
-					"sid": 960731800283991,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_3",
-					"sid": 907495741253986,
-					"parameters": {
-						"object": "Peca_Resp3"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_3",
-					"sid": 123317836844730,
-					"parameters": {
-						"x": "GuardarX",
-						"y": "GuardarY"
-					}
-				}
-			],
-			"sid": 831900545831242
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drag-start",
-					"objectClass": "Peca_3",
-					"sid": 203083671028864,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 594443800227616,
-					"parameters": {
-						"variable": "GuardarX",
-						"value": "Peca_3.X"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 908842893241923,
-					"parameters": {
-						"variable": "GuardarY",
-						"value": "Peca_3.Y"
-					}
-				}
-			],
-			"sid": 401339238412862
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_4",
-					"sid": 598211117687175,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_4",
-					"sid": 354138447482816,
-					"parameters": {
-						"object": "Peca_Resp4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_4",
-					"sid": 378425246023317,
-					"parameters": {
-						"x": "664.810853",
-						"y": "395.567587"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 286253293983306,
-					"parameters": {
-						"variable": "PuzzleFeito",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 771814473294995
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_4",
-					"sid": 776392155989709,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_4",
-					"sid": 660476011729665,
-					"parameters": {
-						"object": "Peca_Resp4"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_4",
-					"sid": 464533215067403,
-					"parameters": {
-						"x": "GuardarX",
-						"y": "GuardarY"
-					}
-				}
-			],
-			"sid": 809607904291090
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drag-start",
-					"objectClass": "Peca_4",
-					"sid": 888747226928404,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 832389309381854,
-					"parameters": {
-						"variable": "GuardarX",
-						"value": "Peca_4.X"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 293941579157685,
-					"parameters": {
-						"variable": "GuardarY",
-						"value": "Peca_4.Y"
-					}
-				}
-			],
-			"sid": 511204780849691
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_1",
-					"sid": 836121886857258,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_1",
-					"sid": 690418560472584,
-					"parameters": {
-						"object": "PecaResp_1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_1",
-					"sid": 491230830763030,
-					"parameters": {
-						"x": "593",
-						"y": "472"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 233373614353546,
-					"parameters": {
-						"variable": "PuzzleFeito",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 911149707414547
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_1",
-					"sid": 805116479634339,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_1",
-					"sid": 927894027894226,
-					"parameters": {
-						"object": "PecaResp_1"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_1",
-					"sid": 379628643742519,
-					"parameters": {
-						"x": "GuardarX",
-						"y": "GuardarY"
-					}
-				}
-			],
-			"sid": 428486212159113
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drag-start",
-					"objectClass": "Peca_1",
-					"sid": 337022308139012,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 773139482986608,
-					"parameters": {
-						"variable": "GuardarX",
-						"value": "Peca_1.X"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 180707191056078,
-					"parameters": {
-						"variable": "GuardarY",
-						"value": "Peca_1.Y"
-					}
-				}
-			],
-			"sid": 414934627672662
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_2",
-					"sid": 535667198519111,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_2",
-					"sid": 905815173151616,
-					"parameters": {
-						"object": "Peca_Resp2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_2",
-					"sid": 677802175570913,
-					"parameters": {
-						"x": "665",
-						"y": "471"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 385103750272499,
-					"parameters": {
-						"variable": "PuzzleFeito",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 117470822929832
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drop",
-					"objectClass": "Peca_2",
-					"sid": 701636457719517,
-					"behaviorType": "DragDrop"
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Peca_2",
-					"sid": 931764436753731,
-					"parameters": {
-						"object": "Peca_Resp2"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Peca_2",
-					"sid": 565307777310515,
-					"parameters": {
-						"x": "GuardarX",
-						"y": "GuardarY"
-					}
-				}
-			],
-			"sid": 946364738356533
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drag-start",
-					"objectClass": "Peca_2",
-					"sid": 199881825217291,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 156192954216606,
-					"parameters": {
-						"variable": "GuardarX",
-						"value": "Peca_2.X"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 277521111011679,
-					"parameters": {
-						"variable": "GuardarY",
-						"value": "Peca_2.Y"
-					}
-				}
-			],
-			"sid": 214280262758055
+			"actions": [],
+			"sid": 269853752494714
 		},
 		{
 			"eventType": "block",
@@ -510,86 +68,633 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 692087036650418,
+					"sid": 840426296715320,
 					"parameters": {
-						"variable": "PuzzleFeito",
+						"variable": "pecasQuebraCabecaAdicionadas",
 						"comparison": 0,
-						"value": "4"
+						"value": "totalQuebraCabecaPecas"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "Texto_QuebraCabeca",
-					"sid": 620455919357434,
-					"parameters": {
-						"text": "\"Montagem feita\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 509098417860750,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
 					"id": "set-visible",
 					"objectClass": "ProximoLevel",
-					"sid": 271071823782201,
+					"sid": 259878327283026,
 					"parameters": {
 						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 217408267719882
+			"sid": 968409870994055
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interação Mouse",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 129899625080255,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "ProximoLevel"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 509641989095547,
+							"parameters": {
+								"object": "Peca_1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_1",
+							"sid": 513165845200419,
+							"parameters": {
+								"scale": "1.1"
+							}
+						}
+					],
+					"sid": 423046763869745
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 844262045096624,
-					"parameters": {
-						"variable": "PuzzleFeito",
-						"comparison": 0,
-						"value": "4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 997989684426057,
-					"parameters": {
-						"layout": "Loja"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 266006981607954,
+							"parameters": {
+								"object": "Peca_1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_1",
+							"sid": 314636321665515,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 801051787228954
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 170177460469830,
-					"parameters": {
-						"variable": "iniciou",
-						"value": "2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 555388281438244,
+							"parameters": {
+								"object": "Peca_2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_2",
+							"sid": 577213463530604,
+							"parameters": {
+								"scale": "1.1"
+							}
+						}
+					],
+					"sid": 291115576940885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 358891060055768,
+							"parameters": {
+								"object": "Peca_2"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_2",
+							"sid": 553436402890049,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 648500345084062
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 924392387182651,
+							"parameters": {
+								"object": "Peca_3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_3",
+							"sid": 570028350552004,
+							"parameters": {
+								"scale": "1.1"
+							}
+						}
+					],
+					"sid": 309209594657163
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 825744149531171,
+							"parameters": {
+								"object": "Peca_3"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_3",
+							"sid": 828961152038157,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 988315250473671
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 221850577436876,
+							"parameters": {
+								"object": "Peca_4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_4",
+							"sid": 496952899339134,
+							"parameters": {
+								"scale": "1.1"
+							}
+						}
+					],
+					"sid": 465778692794862
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 617280399485156,
+							"parameters": {
+								"object": "Peca_4"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_4",
+							"sid": 923331977915404,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 146030822748095
 				}
 			],
-			"sid": 578355310898929
+			"sid": 515351664662129
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Montagem Quebra-Cabeça",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_1",
+							"sid": 281379411451838,
+							"parameters": {
+								"object": "QuebraCabecaSombras"
+							}
+						},
+						{
+							"id": "isdragging0",
+							"objectClass": "Peca_1",
+							"sid": 708105978449895,
+							"behaviorType": "BoundedDragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_1",
+							"sid": 298074535070722,
+							"parameters": {
+								"scale": ".9"
+							}
+						}
+					],
+					"sid": 399253014260908
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondrop2",
+							"objectClass": "Peca_1",
+							"sid": 732204324219007,
+							"behaviorType": "BoundedDragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_1",
+							"sid": 208541360982187,
+							"parameters": {
+								"object": "PecaResp_1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Peca_1",
+							"sid": 378148018105918,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "PecaResp_1",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Peca_1",
+							"sid": 956861423596432,
+							"parameters": {
+								"width": "PecaResp_1.Width",
+								"height": "PecaResp_1.Height"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 761958920257918,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Peca_1",
+							"sid": 955268649604887,
+							"parameters": {
+								"layer": "\"desativaInteracao\""
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "Peca_1",
+							"sid": 244079822001652,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "disabled"
+							}
+						}
+					],
+					"sid": 868504436991566
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_2",
+							"sid": 954013508239086,
+							"parameters": {
+								"object": "QuebraCabecaSombras"
+							}
+						},
+						{
+							"id": "isdragging0",
+							"objectClass": "Peca_2",
+							"sid": 818626729856610,
+							"behaviorType": "BoundedDragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_2",
+							"sid": 736460670111869,
+							"parameters": {
+								"scale": ".9"
+							}
+						}
+					],
+					"sid": 469652128808672
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondrop2",
+							"objectClass": "Peca_2",
+							"sid": 263487163278798,
+							"behaviorType": "BoundedDragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_2",
+							"sid": 422698476729988,
+							"parameters": {
+								"object": "Peca_Resp2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Peca_2",
+							"sid": 591485858065692,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Peca_Resp2",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Peca_2",
+							"sid": 653834518079904,
+							"parameters": {
+								"width": "Peca_Resp2.Width",
+								"height": "Peca_Resp2.Height"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 351812333944114,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Peca_2",
+							"sid": 566201054295095,
+							"parameters": {
+								"layer": "\"desativaInteracao\""
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "Peca_2",
+							"sid": 725430925174538,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "disabled"
+							}
+						}
+					],
+					"sid": 762117300875478
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_3",
+							"sid": 825377273542516,
+							"parameters": {
+								"object": "QuebraCabecaSombras"
+							}
+						},
+						{
+							"id": "isdragging0",
+							"objectClass": "Peca_3",
+							"sid": 152883017646671,
+							"behaviorType": "BoundedDragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_3",
+							"sid": 393723200444687,
+							"parameters": {
+								"scale": ".9"
+							}
+						}
+					],
+					"sid": 900000939116040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondrop2",
+							"objectClass": "Peca_3",
+							"sid": 999626874963716,
+							"behaviorType": "BoundedDragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_3",
+							"sid": 806018658813190,
+							"parameters": {
+								"object": "Peca_Resp3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Peca_3",
+							"sid": 462570424251225,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Peca_Resp3",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Peca_3",
+							"sid": 253069443897229,
+							"parameters": {
+								"width": "Peca_Resp3.Width",
+								"height": "Peca_Resp3.Height"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 739888726047593,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Peca_3",
+							"sid": 145083694016040,
+							"parameters": {
+								"layer": "\"desativaInteracao\""
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "Peca_3",
+							"sid": 890806601655723,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "disabled"
+							}
+						}
+					],
+					"sid": 984668099171813
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_4",
+							"sid": 716742416085548,
+							"parameters": {
+								"object": "QuebraCabecaSombras"
+							}
+						},
+						{
+							"id": "isdragging0",
+							"objectClass": "Peca_4",
+							"sid": 129969094830792,
+							"behaviorType": "BoundedDragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Peca_4",
+							"sid": 714912320569486,
+							"parameters": {
+								"scale": ".9"
+							}
+						}
+					],
+					"sid": 394046895944435
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondrop2",
+							"objectClass": "Peca_4",
+							"sid": 344144049742233,
+							"behaviorType": "BoundedDragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Peca_4",
+							"sid": 232361637552996,
+							"parameters": {
+								"object": "Peca_Resp4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Peca_4",
+							"sid": 906862486910304,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Peca_Resp4",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Peca_4",
+							"sid": 427463759450727,
+							"parameters": {
+								"width": "Peca_Resp4.Width",
+								"height": "Peca_Resp4.Height"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 574468062071944,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Peca_4",
+							"sid": 978753156800056,
+							"parameters": {
+								"layer": "\"desativaInteracao\""
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "Peca_4",
+							"sid": 521421992313107,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "disabled"
+							}
+						}
+					],
+					"sid": 817379088951047
+				}
+			],
+			"sid": 562421012444758
 		}
 	],
 	"sid": 573301943181991

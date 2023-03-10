@@ -1,35 +1,41 @@
 {
-	"name": "Peca_7",
+	"name": "Checker",
 	"plugin-id": "Sprite",
-	"sid": 237150436507501,
+	"sid": 612869088487665,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "CV_BoundedDragnDrop",
-			"name": "BoundedDragDrop",
-			"sid": 636125158882445
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 34,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4793234,
+						"imageSpriteId": 3902064,
+						"collisionPoly": {
+							"points": [
+								0.029411764705882353,
+								0.029411764705882353,
+								0.9705882352941176,
+								0.029411764705882353,
+								0.9705882352941176,
+								0.9705882352941176,
+								0.029411764705882353,
+								0.9705882352941176
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 842697299321847,
+				"sid": 182521899728243,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -80,17 +80,10 @@
 					},
 					"uid": 31,
 					"instanceVariables": {},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 593,
-						"y": 472,
+						"x": 584,
+						"y": 424,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -116,17 +109,10 @@
 					},
 					"uid": 32,
 					"instanceVariables": {},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 664.8108567492078,
-						"y": 395.6756853926082,
+						"x": 656,
+						"y": 352,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -152,17 +138,10 @@
 					},
 					"uid": 33,
 					"instanceVariables": {},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 665,
-						"y": 471,
+						"x": 544,
+						"y": 392,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -188,17 +167,10 @@
 					},
 					"uid": 34,
 					"instanceVariables": {},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 664.81085262535,
-						"y": 395.56758670926416,
+						"x": 712,
+						"y": 248,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -225,16 +197,52 @@
 					"uid": 25,
 					"instanceVariables": {},
 					"behaviors": {
-						"DragDrop": {
+						"BoundedDragDrop": {
 							"properties": {
 								"axes": "both",
+								"initial-state": "enabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 844,
-						"y": 426,
+						"x": 808,
+						"y": 432,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -261,16 +269,52 @@
 					"uid": 26,
 					"instanceVariables": {},
 					"behaviors": {
-						"DragDrop": {
+						"BoundedDragDrop": {
 							"properties": {
 								"axes": "both",
+								"initial-state": "enabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 350,
-						"y": 346,
+						"x": 464,
+						"y": 264,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -295,18 +339,56 @@
 						"live-preview": false
 					},
 					"uid": 27,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"PosicaoOriginal": "0;0"
+					},
 					"behaviors": {
-						"DragDrop": {
+						"BoundedDragDrop": {
 							"properties": {
 								"axes": "both",
+								"initial-state": "enabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 891,
-						"y": 254,
+						"x": 864,
+						"y": 248,
 						"width": 75,
 						"height": 75,
 						"originX": 0.5,
@@ -333,63 +415,56 @@
 					"uid": 28,
 					"instanceVariables": {},
 					"behaviors": {
-						"DragDrop": {
+						"BoundedDragDrop": {
 							"properties": {
 								"axes": "both",
+								"initial-state": "enabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						}
 					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
-						"x": 362,
-						"y": 557,
-						"width": 75,
-						"height": 75,
+						"x": 456,
+						"y": 512,
+						"width": 55,
+						"height": 55,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Texto_QuebraCabeca",
-					"properties": {
-						"text": "Monte as peças",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 29,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 549,
-						"y": 221,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -429,6 +504,195 @@
 						"zElevation": 0
 					}
 				},
+				{
+					"type": "Debug",
+					"properties": {
+						"text": "",
+						"enable-bbcode": false,
+						"font": "Arial",
+						"size": 25,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 208,
+						"y": 112,
+						"width": 314,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 873206420177425,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "desativaInteracao",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 537354237615899,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "hud",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "ProximoLevel",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 106,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1128,
+						"y": 504,
+						"width": 72,
+						"height": 72,
+						"originX": 0.49748743718592964,
+						"originY": 0.5025125628140703,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 689755593869808,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "cartas",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "Carta",
 					"properties": {
@@ -472,8 +736,8 @@
 					"world": {
 						"x": -480,
 						"y": 360,
-						"width": 802,
-						"height": 602,
+						"width": 710,
+						"height": 594,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -487,86 +751,7 @@
 					}
 				}
 			],
-			"sid": 873206420177425,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "hud",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "ProximoLevel",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 43,
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									0,
-									0,
-									0,
-									1
-								],
-								"width": 1,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1048,
-						"y": 591,
-						"width": 97.47019187423405,
-						"height": 97.47019187423405,
-						"originX": 0.49748743718592964,
-						"originY": 0.5025125628140703,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 689755593869808,
+			"sid": 893698661412742,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

@@ -1,7 +1,7 @@
 {
-	"name": "Peca_Resp3",
+	"name": "Apagador",
 	"plugin-id": "Sprite",
-	"sid": 970984588695870,
+	"sid": 614895078893916,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,39 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 168,
+						"height": 168,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8080253,
+						"imageSpriteId": 5193135,
 						"collisionPoly": {
 							"points": [
-								0.7200000000000004,
-								0.6983333333333333,
-								0.7200000000000003,
-								0,
-								1,
-								0,
-								1,
+								0.1488095238095238,
+								0.1488095238095238,
 								0.5,
-								1,
-								1,
+								0.005952380952380952,
+								0.8511904761904762,
+								0.1488095238095238,
+								0.9940476190476191,
 								0.5,
-								1,
-								0,
-								1,
-								0,
-								0.6966666666666671
+								0.8511904761904762,
+								0.8511904761904762,
+								0.5,
+								0.9940476190476191,
+								0.1488095238095238,
+								0.8511904761904762,
+								0.005952380952380952,
+								0.5
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 568719044587653,
+				"sid": 822385027546193,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,57 +1,55 @@
 {
-	"name": "Peca_4",
+	"name": "Mascara",
 	"plugin-id": "Sprite",
-	"sid": 485244557108874,
+	"sid": 146674850919075,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
-			"sid": 405822303812503
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 298620417362916
+			"sid": 156117444731663
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "skymen_BetterOutline",
-			"name": "BetterOutline"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 55,
-						"height": 55,
+						"width": 168,
+						"height": 168,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6579426,
+						"imageSpriteId": 30161,
 						"collisionPoly": {
 							"points": [
-								0.008806818181818181,
-								0.009053738317757009,
-								0.9907670454545446,
-								0.009199766355140186,
-								0.9897727272727275,
-								0.9894859813084116,
-								0.009090909090909092,
-								0.9900700934579437
+								0.1488095238095238,
+								0.1488095238095238,
+								0.5,
+								0.005952380952380952,
+								0.8511904761904762,
+								0.1488095238095238,
+								0.9940476190476191,
+								0.5,
+								0.8511904761904762,
+								0.8511904761904762,
+								0.5,
+								0.9940476190476191,
+								0.1488095238095238,
+								0.8511904761904762,
+								0.005952380952380952,
+								0.5
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 429273972421217,
+				"sid": 313201118454527,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

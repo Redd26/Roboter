@@ -1,35 +1,41 @@
 {
-	"name": "Peca_7",
+	"name": "Camada",
 	"plugin-id": "Sprite",
-	"sid": 237150436507501,
+	"sid": 974201860611388,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "CV_BoundedDragnDrop",
-			"name": "BoundedDragDrop",
-			"sid": 636125158882445
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 74,
+						"height": 122,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4793234,
+						"imageSpriteId": 1391266,
+						"collisionPoly": {
+							"points": [
+								0.013513513513513514,
+								0.00819672131147541,
+								0.9864864864864865,
+								0.00819672131147541,
+								0.9864864864864865,
+								0.9918032786885246,
+								0.013513513513513514,
+								0.9918032786885246
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 842697299321847,
+				"sid": 433840195426676,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,14 +1,14 @@
 {
-	"name": "Peca_7",
+	"name": "CartaMascara",
 	"plugin-id": "Sprite",
-	"sid": 237150436507501,
+	"sid": 792191116818502,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "CV_BoundedDragnDrop",
-			"name": "BoundedDragDrop",
-			"sid": 636125158882445
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 271341735196806
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4793234,
+						"imageSpriteId": 8746229,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 842697299321847,
+				"sid": 736212082870316,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

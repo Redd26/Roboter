@@ -1,11 +1,25 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32702,
+	"savedWithRelease": 32703,
 	"name": "Roboter",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Mouse",
@@ -23,21 +37,22 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "DragnDrop",
-			"name": "Arrastar & Soltar",
-			"author": "Scirra",
-			"bundled": false
+			"id": "CV_BoundedDragnDrop",
+			"name": "Bounded Drag & Drop",
+			"author": "Chadori",
+			"bundled": false,
+			"version": "3.1.1.2"
 		},
 		{
 			"type": "behavior",
 			"id": "Fader",
-			"name": "[Fader]",
+			"name": "Fader",
 			"author": "Colludium",
 			"bundled": false,
 			"version": "1.0.0.0"
@@ -45,21 +60,21 @@
 		{
 			"type": "behavior",
 			"id": "MoveTo",
-			"name": "Mover Para",
+			"name": "Move To",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Atrelar",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
-			"name": "[BetterOutline]",
+			"name": "BetterOutline",
 			"author": "skymen",
 			"bundled": false,
 			"version": "1.4.0.3"
@@ -87,7 +102,6 @@
 			"Peca_2",
 			"Peca_3",
 			"Peca_4",
-			"Texto_QuebraCabeca",
 			"PecaResp_1",
 			"Peca_Resp4",
 			"Peca_Resp2",
@@ -134,7 +148,18 @@
 			"BotaoBaixo",
 			"ChapaFerro",
 			"LinhaCortar",
-			"Serra"
+			"Serra",
+			"Debug",
+			"Mascara",
+			"objeto",
+			"Camada",
+			"Apagador",
+			"Checker",
+			"SimpleText",
+			"TextoCarta",
+			"CartaMascara",
+			"Browser",
+			"CartaMascaraRedonad"
 		],
 		"subfolders": [
 			{
@@ -155,6 +180,15 @@
 				],
 				"subfolders": [],
 				"name": "BotoesMenuPrincipal"
+			},
+			{
+				"items": [
+					"SequenciaDeNotas",
+					"SequenciaDeNotasJogador",
+					"PecasQuebraCabecaPosicoes"
+				],
+				"subfolders": [],
+				"name": "Arrays"
 			}
 		]
 	},
@@ -164,7 +198,9 @@
 		"items": [
 			"InterativelSprite",
 			"InterativelTexto",
-			"InterativelUtil"
+			"InterativelUtil",
+			"QuebraCabecaPecas",
+			"QuebraCabecaSombras"
 		],
 		"subfolders": []
 	},
@@ -286,16 +322,7 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [
-				{
-					"name": "New Array.json",
-					"type": "application/json",
-					"sid": 380833893671798,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		}
 	},

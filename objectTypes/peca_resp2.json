@@ -4,27 +4,21 @@
 	"sid": 632982803963799,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "DragnDrop",
-			"name": "DragDrop",
-			"sid": 710381690851742
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 75,
+						"height": 75,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 625443,
+						"imageSpriteId": 1305712,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

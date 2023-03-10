@@ -6,25 +6,35 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "DragnDrop",
-			"name": "DragDrop",
-			"sid": 103482278190005
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 935724668910371
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 858898649284971
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 75,
+						"height": 75,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4379648,
+						"imageSpriteId": 608178,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

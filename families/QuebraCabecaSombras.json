@@ -1,0 +1,14 @@
+{
+	"name": "QuebraCabecaSombras",
+	"plugin-id": "Sprite",
+	"sid": 173971285451891,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Peca_Resp2",
+		"Peca_Resp4",
+		"Peca_Resp3",
+		"PecaResp_1"
+	]
+}

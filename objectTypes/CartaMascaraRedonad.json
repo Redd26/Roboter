@@ -1,0 +1,63 @@
+{
+	"name": "CartaMascaraRedonad",
+	"plugin-id": "Sprite",
+	"sid": 237243922837948,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 459619676177373
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 168,
+						"height": 168,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8233651,
+						"collisionPoly": {
+							"points": [
+								0.1488095238095238,
+								0.1488095238095238,
+								0.5,
+								0.005952380952380952,
+								0.8511904761904762,
+								0.1488095238095238,
+								0.9940476190476191,
+								0.5,
+								0.8511904761904762,
+								0.8511904761904762,
+								0.5,
+								0.9940476190476191,
+								0.1488095238095238,
+								0.8511904761904762,
+								0.005952380952380952,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 135178352283917,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

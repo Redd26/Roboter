@@ -1,14 +1,19 @@
 {
-	"name": "Peca_7",
+	"name": "TextoCarta",
 	"plugin-id": "Sprite",
-	"sid": 237150436507501,
+	"sid": 572725306831804,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 249355024474459
+		},
+		{
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
-			"sid": 636125158882445
+			"sid": 735425634940456
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +22,19 @@
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
+						"width": 579,
+						"height": 683,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.3411420204978038,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4793234,
+						"imageSpriteId": 933578,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 842697299321847,
+				"sid": 403843399127120,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
