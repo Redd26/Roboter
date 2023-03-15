@@ -1,5 +1,5 @@
 {
-	"name": "Peca_2",
+	"name": "PescocoCortaPao",
 	"plugin-id": "Sprite",
 	"sid": 489691095596382,
 	"isGlobal": false,
@@ -9,11 +9,6 @@
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
 			"sid": 678497279562986
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 852496444378717
 		}
 	],
 	"effectTypes": [
@@ -27,14 +22,14 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 26,
+						"height": 36,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1109927,
+						"imageSpriteId": 1252333,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

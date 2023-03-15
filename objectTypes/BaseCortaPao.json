@@ -1,29 +1,40 @@
 {
-	"name": "Peca_Resp2",
+	"name": "BaseCortaPao",
 	"plugin-id": "Sprite",
-	"sid": 632982803963799,
+	"sid": 620605194277342,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 278051484447680
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 130,
+						"height": 26,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1305712,
+						"imageSpriteId": 5821108,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 766978145427151,
+				"sid": 194852264750091,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

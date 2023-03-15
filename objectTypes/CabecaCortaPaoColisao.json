@@ -1,0 +1,57 @@
+{
+	"name": "CabecaCortaPaoColisao",
+	"plugin-id": "Sprite",
+	"sid": 659808058778279,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 88,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3331130,
+						"collisionPoly": {
+							"points": [
+								0.09090909090909091,
+								0.25,
+								0.5,
+								0.03125,
+								0.9090909090909091,
+								0.25,
+								0.9886363636363636,
+								0.5,
+								0.9886363636363636,
+								0.96875,
+								0.5,
+								0.96875,
+								0.011363636363636364,
+								0.96875,
+								0.011363636363636364,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 189143334615967,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

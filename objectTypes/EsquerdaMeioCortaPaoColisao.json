@@ -1,7 +1,7 @@
 {
-	"name": "PecaResp_1",
+	"name": "EsquerdaMeioCortaPaoColisao",
 	"plugin-id": "Sprite",
-	"sid": 659808058778279,
+	"sid": 970984588695870,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 72,
+						"height": 72,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5882572,
+						"imageSpriteId": 4989780,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 189143334615967,
+				"sid": 568719044587653,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

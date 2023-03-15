@@ -7,16 +7,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "iniciou",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 868980513088747
-		},
-		{
-			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
 			"initialValue": "\"dia\"",

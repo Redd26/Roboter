@@ -199,6 +199,11 @@
 							"parameters": {
 								"object": "InterativelSprite"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 833481915714309
 						}
 					],
 					"actions": [

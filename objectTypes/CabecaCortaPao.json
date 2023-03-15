@@ -1,19 +1,14 @@
 {
-	"name": "Peca_4",
+	"name": "CabecaCortaPao",
 	"plugin-id": "Sprite",
-	"sid": 485244557108874,
+	"sid": 787309547743431,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
-			"sid": 405822303812503
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 298620417362916
+			"sid": 935724668910371
 		}
 	],
 	"effectTypes": [
@@ -27,31 +22,19 @@
 			{
 				"frames": [
 					{
-						"width": 55,
-						"height": 55,
+						"width": 90,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6579426,
-						"collisionPoly": {
-							"points": [
-								0.008806818181818181,
-								0.009053738317757009,
-								0.9907670454545446,
-								0.009199766355140186,
-								0.9897727272727275,
-								0.9894859813084116,
-								0.009090909090909092,
-								0.9900700934579437
-							]
-						},
+						"imageSpriteId": 9518853,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 429273972421217,
+				"sid": 653159892691057,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

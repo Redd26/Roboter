@@ -1,7 +1,7 @@
 {
-	"name": "Peca_Resp3",
+	"name": "CortaPaoSombra",
 	"plugin-id": "Sprite",
-	"sid": 970984588695870,
+	"sid": 101138707563359,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,39 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 66,
+						"height": 82,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8080253,
+						"imageSpriteId": 4795686,
 						"collisionPoly": {
 							"points": [
-								0.7200000000000004,
-								0.6983333333333333,
-								0.7200000000000003,
-								0,
-								1,
-								0,
-								1,
+								0.3787878787878788,
+								0.012195121951219513,
+								0.6212121212121212,
+								0.012195121951219513,
+								0.803030303030303,
+								0.06097560975609756,
+								0.6212121212121212,
+								0.2073170731707317,
+								0.9848484848484849,
 								0.5,
-								1,
-								1,
-								0.5,
-								1,
-								0,
-								1,
-								0,
-								0.6966666666666671
+								0.6212121212121212,
+								0.9878048780487805,
+								0.07575757575757576,
+								0.6463414634146342,
+								0.4393939393939394,
+								0.2073170731707317
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 568719044587653,
+				"sid": 986798593406201,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

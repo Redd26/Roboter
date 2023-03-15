@@ -1,19 +1,14 @@
 {
-	"name": "Peca_1",
+	"name": "DireitaMeioCortaPao",
 	"plugin-id": "Sprite",
-	"sid": 787309547743431,
+	"sid": 485244557108874,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
-			"sid": 935724668910371
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 858898649284971
+			"sid": 405822303812503
 		}
 	],
 	"effectTypes": [
@@ -27,19 +22,19 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
-						"originX": 0.5,
+						"width": 58,
+						"height": 50,
+						"originX": 0.5344827586206896,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 608178,
+						"imageSpriteId": 9331320,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 653159892691057,
+				"sid": 429273972421217,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

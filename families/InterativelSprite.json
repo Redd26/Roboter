@@ -27,9 +27,10 @@
 		"CaixaLadoDireitoHitbox",
 		"CaixaLadoEsquerdoHitBox",
 		"SeletorMaterialBandeja",
-		"Peca_1",
-		"Peca_2",
-		"Peca_3",
-		"Peca_4"
+		"CabecaCortaPao",
+		"PescocoCortaPao",
+		"EsquerdaMeioCortaPao",
+		"DireitaMeioCortaPao",
+		"BaseCortaPao"
 	]
 }

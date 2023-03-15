@@ -23,7 +23,7 @@
 			"eventType": "variable",
 			"name": "totalQuebraCabecaPecas",
 			"type": "number",
-			"initialValue": "4",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -42,9 +42,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Debug",
-					"sid": 197749692268467,
+					"sid": 895504224633560,
 					"parameters": {
-						"text": "Peca_3.PosicaoOriginal"
+						"text": "totalQuebraCabecaPecas"
 					}
 				}
 			],
@@ -59,7 +59,17 @@
 					"sid": 500510224458218
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 785801437472525,
+					"parameters": {
+						"variable": "totalQuebraCabecaPecas",
+						"value": "QuebraCabecaPecas.Count"
+					}
+				}
+			],
 			"sid": 269853752494714
 		},
 		{
@@ -101,23 +111,33 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 509641989095547,
+							"sid": 594883360696424,
 							"parameters": {
-								"object": "Peca_1"
+								"object": "QuebraCabecaPecas"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 309171457560441
 						}
 					],
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_1",
-							"sid": 513165845200419,
+							"objectClass": "QuebraCabecaPecas",
+							"sid": 423755588711007,
 							"parameters": {
 								"scale": "1.1"
 							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "QuebraCabecaPecas",
+							"sid": 232829444777940
 						}
 					],
-					"sid": 423046763869745
+					"sid": 219923840727676
 				},
 				{
 					"eventType": "block",
@@ -125,9 +145,9 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 266006981607954,
+							"sid": 887406253355289,
 							"parameters": {
-								"object": "Peca_1"
+								"object": "QuebraCabecaPecas"
 							},
 							"isInverted": true
 						}
@@ -135,161 +155,14 @@
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_1",
-							"sid": 314636321665515,
+							"objectClass": "QuebraCabecaPecas",
+							"sid": 426358398472632,
 							"parameters": {
 								"scale": "1"
 							}
 						}
 					],
-					"sid": 801051787228954
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 555388281438244,
-							"parameters": {
-								"object": "Peca_2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_2",
-							"sid": 577213463530604,
-							"parameters": {
-								"scale": "1.1"
-							}
-						}
-					],
-					"sid": 291115576940885
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 358891060055768,
-							"parameters": {
-								"object": "Peca_2"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_2",
-							"sid": 553436402890049,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 648500345084062
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 924392387182651,
-							"parameters": {
-								"object": "Peca_3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_3",
-							"sid": 570028350552004,
-							"parameters": {
-								"scale": "1.1"
-							}
-						}
-					],
-					"sid": 309209594657163
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 825744149531171,
-							"parameters": {
-								"object": "Peca_3"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_3",
-							"sid": 828961152038157,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 988315250473671
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 221850577436876,
-							"parameters": {
-								"object": "Peca_4"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_4",
-							"sid": 496952899339134,
-							"parameters": {
-								"scale": "1.1"
-							}
-						}
-					],
-					"sid": 465778692794862
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 617280399485156,
-							"parameters": {
-								"object": "Peca_4"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "Peca_4",
-							"sid": 923331977915404,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 146030822748095
+					"sid": 665906502806177
 				}
 			],
 			"sid": 515351664662129
@@ -306,7 +179,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 281379411451838,
 							"parameters": {
 								"object": "QuebraCabecaSombras"
@@ -314,7 +187,7 @@
 						},
 						{
 							"id": "isdragging0",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 708105978449895,
 							"behaviorType": "BoundedDragDrop"
 						}
@@ -322,7 +195,7 @@
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 298074535070722,
 							"parameters": {
 								"scale": ".9"
@@ -336,38 +209,29 @@
 					"conditions": [
 						{
 							"id": "ondrop2",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 732204324219007,
 							"behaviorType": "BoundedDragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 208541360982187,
 							"parameters": {
-								"object": "PecaResp_1"
+								"object": "CabecaCortaPaoColisao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-object",
-							"objectClass": "Peca_1",
-							"sid": 378148018105918,
+							"objectClass": "CabecaCortaPao",
+							"sid": 621159658590554,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"object": "PecaResp_1",
+								"object": "CabecaCortaPaoColisao",
 								"image-point": "0",
 								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "Peca_1",
-							"sid": 956861423596432,
-							"parameters": {
-								"width": "PecaResp_1.Width",
-								"height": "PecaResp_1.Height"
 							}
 						},
 						{
@@ -381,7 +245,7 @@
 						},
 						{
 							"id": "move-to-layer",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 955268649604887,
 							"parameters": {
 								"layer": "\"desativaInteracao\""
@@ -389,7 +253,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "Peca_1",
+							"objectClass": "CabecaCortaPao",
 							"sid": 244079822001652,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -404,7 +268,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 954013508239086,
 							"parameters": {
 								"object": "QuebraCabecaSombras"
@@ -412,7 +276,7 @@
 						},
 						{
 							"id": "isdragging0",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 818626729856610,
 							"behaviorType": "BoundedDragDrop"
 						}
@@ -420,7 +284,7 @@
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 736460670111869,
 							"parameters": {
 								"scale": ".9"
@@ -434,38 +298,29 @@
 					"conditions": [
 						{
 							"id": "ondrop2",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 263487163278798,
 							"behaviorType": "BoundedDragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 422698476729988,
 							"parameters": {
-								"object": "Peca_Resp2"
+								"object": "PescocoCortaPaoColisao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-object",
-							"objectClass": "Peca_2",
-							"sid": 591485858065692,
+							"objectClass": "PescocoCortaPao",
+							"sid": 948841226732067,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"object": "Peca_Resp2",
+								"object": "PescocoCortaPaoColisao",
 								"image-point": "0",
 								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "Peca_2",
-							"sid": 653834518079904,
-							"parameters": {
-								"width": "Peca_Resp2.Width",
-								"height": "Peca_Resp2.Height"
 							}
 						},
 						{
@@ -479,7 +334,7 @@
 						},
 						{
 							"id": "move-to-layer",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 566201054295095,
 							"parameters": {
 								"layer": "\"desativaInteracao\""
@@ -487,7 +342,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "Peca_2",
+							"objectClass": "PescocoCortaPao",
 							"sid": 725430925174538,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -502,7 +357,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 825377273542516,
 							"parameters": {
 								"object": "QuebraCabecaSombras"
@@ -510,7 +365,7 @@
 						},
 						{
 							"id": "isdragging0",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 152883017646671,
 							"behaviorType": "BoundedDragDrop"
 						}
@@ -518,7 +373,7 @@
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 393723200444687,
 							"parameters": {
 								"scale": ".9"
@@ -532,38 +387,29 @@
 					"conditions": [
 						{
 							"id": "ondrop2",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 999626874963716,
 							"behaviorType": "BoundedDragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 806018658813190,
 							"parameters": {
-								"object": "Peca_Resp3"
+								"object": "EsquerdaMeioCortaPaoColisao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-object",
-							"objectClass": "Peca_3",
-							"sid": 462570424251225,
+							"objectClass": "EsquerdaMeioCortaPao",
+							"sid": 222374431205282,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"object": "Peca_Resp3",
+								"object": "EsquerdaMeioCortaPaoColisao",
 								"image-point": "0",
 								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "Peca_3",
-							"sid": 253069443897229,
-							"parameters": {
-								"width": "Peca_Resp3.Width",
-								"height": "Peca_Resp3.Height"
 							}
 						},
 						{
@@ -577,7 +423,7 @@
 						},
 						{
 							"id": "move-to-layer",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 145083694016040,
 							"parameters": {
 								"layer": "\"desativaInteracao\""
@@ -585,7 +431,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "Peca_3",
+							"objectClass": "EsquerdaMeioCortaPao",
 							"sid": 890806601655723,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -600,7 +446,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 716742416085548,
 							"parameters": {
 								"object": "QuebraCabecaSombras"
@@ -608,7 +454,7 @@
 						},
 						{
 							"id": "isdragging0",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 129969094830792,
 							"behaviorType": "BoundedDragDrop"
 						}
@@ -616,7 +462,7 @@
 					"actions": [
 						{
 							"id": "set-scale",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 714912320569486,
 							"parameters": {
 								"scale": ".9"
@@ -630,38 +476,29 @@
 					"conditions": [
 						{
 							"id": "ondrop2",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 344144049742233,
 							"behaviorType": "BoundedDragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 232361637552996,
 							"parameters": {
-								"object": "Peca_Resp4"
+								"object": "DireitaMeioCortaPaoColisao"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-object",
-							"objectClass": "Peca_4",
-							"sid": 906862486910304,
+							"objectClass": "DireitaMeioCortaPao",
+							"sid": 566754240068920,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"object": "Peca_Resp4",
+								"object": "DireitaMeioCortaPaoColisao",
 								"image-point": "0",
 								"mode": "direct"
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "Peca_4",
-							"sid": 427463759450727,
-							"parameters": {
-								"width": "Peca_Resp4.Width",
-								"height": "Peca_Resp4.Height"
 							}
 						},
 						{
@@ -675,7 +512,7 @@
 						},
 						{
 							"id": "move-to-layer",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 978753156800056,
 							"parameters": {
 								"layer": "\"desativaInteracao\""
@@ -683,7 +520,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "Peca_4",
+							"objectClass": "DireitaMeioCortaPao",
 							"sid": 521421992313107,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -692,6 +529,95 @@
 						}
 					],
 					"sid": 817379088951047
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "BaseCortaPao",
+							"sid": 270988325982285,
+							"parameters": {
+								"object": "QuebraCabecaSombras"
+							}
+						},
+						{
+							"id": "isdragging0",
+							"objectClass": "BaseCortaPao",
+							"sid": 821780646549798,
+							"behaviorType": "BoundedDragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "BaseCortaPao",
+							"sid": 815141601970619,
+							"parameters": {
+								"scale": ".9"
+							}
+						}
+					],
+					"sid": 108095331787709
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondrop2",
+							"objectClass": "BaseCortaPao",
+							"sid": 211670594892760,
+							"behaviorType": "BoundedDragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "BaseCortaPao",
+							"sid": 624959727328494,
+							"parameters": {
+								"object": "BaseCortaPaoColisao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "BaseCortaPao",
+							"sid": 627194107870786,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "BaseCortaPaoColisao",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 731925089236667,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"value": "1"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "BaseCortaPao",
+							"sid": 486731382286704,
+							"parameters": {
+								"layer": "\"desativaInteracao\""
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BaseCortaPao",
+							"sid": 337431695776958,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "disabled"
+							}
+						}
+					],
+					"sid": 975286894087517
 				}
 			],
 			"sid": 562421012444758

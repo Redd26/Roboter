@@ -1,27 +1,14 @@
 {
-	"name": "Peca_3",
+	"name": "EsquerdaMeioCortaPao",
 	"plugin-id": "Sprite",
 	"sid": 418394934496945,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "PosicaoOriginal",
-			"type": "string",
-			"desc": "",
-			"show": true,
-			"sid": 246938096075537
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "CV_BoundedDragnDrop",
 			"name": "BoundedDragDrop",
 			"sid": 451700174127373
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 595246638232268
 		}
 	],
 	"effectTypes": [
@@ -35,34 +22,14 @@
 			{
 				"frames": [
 					{
-						"width": 75,
-						"height": 75,
+						"width": 74,
+						"height": 74,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3126640,
-						"collisionPoly": {
-							"points": [
-								0.7166666666666665,
-								0.6983333333333333,
-								0.7199999999999999,
-								0,
-								1,
-								0,
-								1,
-								0.5,
-								1,
-								1,
-								0.5,
-								1,
-								0,
-								1,
-								0,
-								0.7000000000000003
-							]
-						},
+						"imageSpriteId": 1812681,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
