@@ -48,7 +48,23 @@
 					"sid": 724316504202287
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ApagadorSerra",
+					"sid": 530236465656064,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Serra",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
 			"sid": 718301532446357
 		},
 		{
@@ -129,47 +145,84 @@
 					],
 					"actions": [
 						{
-							"id": "set-position",
+							"id": "set-angle-of-motion",
+							"objectClass": "Colisor",
+							"sid": 183527769107947,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Colisor",
+							"sid": 766181901942946,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "75"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Colisor",
+							"sid": 403528966783921,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
 							"objectClass": "ChapaFerro",
-							"sid": 993845982423694,
+							"sid": 155752551238667,
+							"behaviorType": "Bullet",
 							"parameters": {
-								"x": "ChapaFerro.X + 0.5",
-								"y": "ChapaFerro.Y"
+								"angle": "0"
 							}
 						},
 						{
-							"id": "set-position",
-							"objectClass": "LinhaCortar",
-							"sid": 940601148909938,
-							"parameters": {
-								"x": "LinhaCortar.X + 0.5",
-								"y": "LinhaCortar.Y"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 113489770776264,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-position",
+							"id": "set-speed",
 							"objectClass": "ChapaFerro",
-							"sid": 803001136996205,
+							"sid": 595675654328805,
+							"behaviorType": "Bullet",
 							"parameters": {
-								"x": "ChapaFerro.X + 0.5",
-								"y": "ChapaFerro.Y"
+								"speed": "75"
 							}
 						},
 						{
-							"id": "set-position",
-							"objectClass": "LinhaCortar",
-							"sid": 859199544396951,
+							"id": "set-enabled",
+							"objectClass": "ChapaFerro",
+							"sid": 278129040364912,
+							"behaviorType": "Bullet",
 							"parameters": {
-								"x": "LinhaCortar.X + 0.5",
-								"y": "LinhaCortar.Y"
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "LinhaCortar",
+							"sid": 737116645922623,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "LinhaCortar",
+							"sid": 836782059035442,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "75"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "LinhaCortar",
+							"sid": 169363170292180,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
 							}
 						}
 					],
@@ -377,6 +430,15 @@
 								"x": "LinhaCortar.X ",
 								"y": "LinhaCortar.Y - 1"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Colisor",
+							"sid": 116900279390682,
+							"parameters": {
+								"x": "Colisor.X",
+								"y": "Colisor.Y -1"
+							}
 						}
 					],
 					"sid": 340181776072867
@@ -410,6 +472,15 @@
 							"parameters": {
 								"x": "LinhaCortar.X ",
 								"y": "LinhaCortar.Y + 1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Colisor",
+							"sid": 532251254493624,
+							"parameters": {
+								"x": "Colisor.X",
+								"y": "Colisor.Y +1"
 							}
 						}
 					],
@@ -483,7 +554,66 @@
 					}
 				}
 			],
-			"sid": 227290468658158
+			"sid": 227290468658158,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Colisor",
+					"sid": 808053280064843,
+					"parameters": {
+						"object": "ApagadorSerra"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Colisor",
+					"sid": 555873488474110
+				},
+				{
+					"callFunction": "Colidiu",
+					"sid": 702346770108482
+				}
+			],
+			"sid": 913911004976092
+		},
+		{
+			"functionName": "Colidiu",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 270294550378235,
+					"parameters": {
+						"first-value": "Colisor.Count",
+						"comparison": 3,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoLevel",
+					"sid": 737804837824940,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 150636054671870
 		}
 	],
 	"sid": 886171643003322

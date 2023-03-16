@@ -43,6 +43,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "CV_BoundedDragnDrop",
 			"name": "Bounded Drag & Drop",
 			"author": "Chadori",
@@ -162,7 +169,10 @@
 			"CartaMascaraRedonad",
 			"CortaPaoSombra",
 			"BaseCortaPaoColisao",
-			"BaseCortaPao"
+			"BaseCortaPao",
+			"ApagadorSerra",
+			"Colisor",
+			"ApagarChapa"
 		],
 		"subfolders": [
 			{

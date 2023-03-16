@@ -4,7 +4,13 @@
 	"sid": 717906921243897,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 829900195979652
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
