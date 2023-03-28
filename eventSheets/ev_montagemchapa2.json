@@ -286,6 +286,14 @@
 							"parameters": {
 								"mouse-button": "left"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 419099175817314,
+							"parameters": {
+								"variable": "ChapaAndar"
+							}
 						}
 					],
 					"actions": [
@@ -318,6 +326,14 @@
 							"sid": 467152978518283,
 							"parameters": {
 								"object": "BotaoCima"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 347718444324615,
+							"parameters": {
+								"variable": "ChapaAndar"
 							}
 						}
 					],
@@ -352,6 +368,14 @@
 							"parameters": {
 								"mouse-button": "left"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 201966179110568,
+							"parameters": {
+								"variable": "ChapaAndar"
+							}
 						}
 					],
 					"actions": [
@@ -385,6 +409,14 @@
 							"parameters": {
 								"object": "BotaoBaixo"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 573252770858941,
+							"parameters": {
+								"variable": "ChapaAndar"
+							}
 						}
 					],
 					"actions": [
@@ -415,29 +447,20 @@
 					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "ChapaFerro",
-							"sid": 403571907351441,
+							"objectClass": "Serra",
+							"sid": 842045885226265,
 							"parameters": {
-								"x": "ChapaFerro.X",
-								"y": "ChapaFerro.Y - 1"
+								"x": "Serra.X",
+								"y": "Serra.Y - 1"
 							}
 						},
 						{
 							"id": "set-position",
-							"objectClass": "LinhaCortar",
-							"sid": 592350897730317,
+							"objectClass": "ApagadorSerra",
+							"sid": 713679770237521,
 							"parameters": {
-								"x": "LinhaCortar.X ",
-								"y": "LinhaCortar.Y - 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Colisor",
-							"sid": 116900279390682,
-							"parameters": {
-								"x": "Colisor.X",
-								"y": "Colisor.Y -1"
+								"x": "ApagadorSerra.X",
+								"y": "ApagadorSerra.Y - 1"
 							}
 						}
 					],
@@ -458,29 +481,20 @@
 					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "ChapaFerro",
-							"sid": 988469344893550,
+							"objectClass": "Serra",
+							"sid": 788189780330434,
 							"parameters": {
-								"x": "ChapaFerro.X",
-								"y": "ChapaFerro.Y + 1"
+								"x": "Serra.X",
+								"y": "Serra.Y + 1"
 							}
 						},
 						{
 							"id": "set-position",
-							"objectClass": "LinhaCortar",
-							"sid": 478504351274100,
+							"objectClass": "ApagadorSerra",
+							"sid": 437411922236386,
 							"parameters": {
-								"x": "LinhaCortar.X ",
-								"y": "LinhaCortar.Y + 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Colisor",
-							"sid": 532251254493624,
-							"parameters": {
-								"x": "Colisor.X",
-								"y": "Colisor.Y +1"
+								"x": "ApagadorSerra.X",
+								"y": "ApagadorSerra.Y + 1"
 							}
 						}
 					],
@@ -488,74 +502,6 @@
 				}
 			],
 			"sid": 466186537669398
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "LinhaCortar",
-					"sid": 948100839801495,
-					"parameters": {
-						"object": "Serra"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 322725383286376,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "LinhaCortar",
-					"sid": 671238773448650,
-					"parameters": {
-						"animation": "\"A1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 598365444801896,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "LinhaCortar",
-					"sid": 756236520241794,
-					"parameters": {
-						"animation": "\"A2\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 898052458331833,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "LinhaCortar",
-					"sid": 975020927373812,
-					"parameters": {
-						"animation": "\"A3\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 227290468658158,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -578,6 +524,20 @@
 				{
 					"callFunction": "Colidiu",
 					"sid": 702346770108482
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 861777434521980,
+					"disabled": true,
+					"parameters": {
+						"object-to-create": "ApagadorSerra",
+						"layer": "\"ObjetosApagar\"",
+						"x": "ApagadorSerra.X",
+						"y": "ApagadorSerra.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 913911004976092
