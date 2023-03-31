@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
@@ -100,7 +107,7 @@
 			"SeletorMaterialBandeja",
 			"FerroDescricao",
 			"OuroDescricao",
-			"MaterialParaDestruir",
+			"MaterialFerroDestruir",
 			"Intro",
 			"ExplicacaoOuro",
 			"ExplicacaoFerro",
@@ -172,7 +179,9 @@
 			"BaseCortaPao",
 			"ApagadorSerra",
 			"Colisor",
-			"ApagarChapa"
+			"ApagarChapa",
+			"Audio",
+			"MaterialOuroDestruir"
 		],
 		"subfolders": [
 			{
@@ -249,7 +258,24 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "menu_confirm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 952589230722427,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "menu_select.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 759398652531681,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

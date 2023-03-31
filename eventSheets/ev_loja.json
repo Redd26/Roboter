@@ -268,6 +268,18 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 638069274455736,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 818321323739302,
@@ -278,6 +290,48 @@
 										}
 									],
 									"sid": 151312563363235
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 644395694259883,
+											"parameters": {
+												"object": "MesaOficina"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 832125554272912,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 730888804715489
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 627604564483709,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 878995516627183
+										}
+									]
 								}
 							],
 							"sid": 681511091016956
@@ -342,7 +396,34 @@
 											}
 										}
 									],
-									"sid": 406111318067589
+									"sid": 406111318067589,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 446621449682034
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 405138922422101,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 143500187759962
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -393,7 +474,34 @@
 											}
 										}
 									],
-									"sid": 730033185699888
+									"sid": 730033185699888,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 939372772182015
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 107576024090559,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 740080538913993
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -437,6 +545,18 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 239158570392813,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 988569136624446,
@@ -463,6 +583,18 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 816934152770109,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
