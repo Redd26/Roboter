@@ -24,11 +24,11 @@
 							"behaviors": {},
 							"world": {
 								"x": 0,
-								"y": 0,
-								"width": 1280,
-								"height": 720,
-								"originX": 0,
-								"originY": 0,
+								"y": 164,
+								"width": 1282,
+								"height": 558,
+								"originX": 0.00078003120124805,
+								"originY": 0.0017921146953405018,
 								"color": [
 									1,
 									1,
@@ -213,7 +213,7 @@
 					"world": {
 						"x": 273,
 						"y": 833,
-						"width": 228,
+						"width": 227.99999999999997,
 						"height": 196,
 						"originX": 0,
 						"originY": 0,
