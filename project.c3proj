@@ -279,7 +279,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "MUSICA_BGM_Ambientação_Montagem01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 934174218810812,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
