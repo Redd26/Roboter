@@ -427,19 +427,15 @@
 										"destroy": false
 									}
 								},
-								"BoundedDragDrop": {
+								"MoveTo": {
 									"properties": {
-										"axes": "vertical only",
-										"initial-state": "enabled",
-										"bound-to": "position",
-										"bound-by": "edge",
-										"bound-method": "clamp",
-										"bound-xradius": 100,
-										"bound-yradius": 100,
-										"bound-min-x": 0,
-										"bound-max-x": 0,
-										"bound-min-y": -270,
-										"bound-max-y": 814
+										"max-speed": 200,
+										"acceleration": 0,
+										"deceleration": 0,
+										"rotate-speed": 0,
+										"set-angle": false,
+										"stop-on-solids": false,
+										"enabled": false
 									}
 								}
 							},
@@ -480,9 +476,9 @@
 							},
 							"world": {
 								"x": 659,
-								"y": -84,
+								"y": -72,
 								"width": 704,
-								"height": 304,
+								"height": 328,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
