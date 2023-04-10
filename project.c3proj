@@ -181,7 +181,9 @@
 			"Colisor",
 			"ApagarChapa",
 			"Audio",
-			"MaterialOuroDestruir"
+			"MaterialOuroDestruir",
+			"HitBoxMinerioParaDestruir",
+			"SombraMartelo"
 		],
 		"subfolders": [
 			{

@@ -1,0 +1,57 @@
+{
+	"name": "SombraMartelo",
+	"plugin-id": "Sprite",
+	"sid": 838334908048919,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 66,
+						"originX": 0.6212121212121212,
+						"originY": 0.4696969696969697,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 876960,
+						"collisionPoly": {
+							"points": [
+								0.52597392689098,
+								0.008657992144167586,
+								0.7987013977843447,
+								0.2943722778584532,
+								0.603896004813058,
+								0.4805195052902419,
+								0.9761905092181588,
+								0.8246753577030062,
+								0.8311688641965134,
+								0.9740259409982915,
+								0.4696969696969695,
+								0.5930735765597522,
+								0.2792208452761433,
+								0.7900432735294496,
+								0.023809490781841844,
+								0.5367965863380597
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 154533793822903,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
