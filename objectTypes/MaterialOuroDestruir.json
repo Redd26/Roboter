@@ -1,7 +1,7 @@
 {
-	"name": "MaterialParaDestruir",
+	"name": "MaterialOuroDestruir",
 	"plugin-id": "Sprite",
-	"sid": 803271901071701,
+	"sid": 834198857272516,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7040215,
+						"imageSpriteId": 5695184,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 998343151434957,
+				"sid": 424299059780936,
 				"name": "Ouro",
 				"isLooping": false,
 				"isPingPong": false,
@@ -41,12 +41,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5369701,
+						"imageSpriteId": 9166584,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 369703274875949,
+				"sid": 105544979958605,
 				"name": "Ferro",
 				"isLooping": false,
 				"isPingPong": false,
@@ -64,12 +64,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2801996,
+						"imageSpriteId": 6807074,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 172488623946465,
+				"sid": 184318919035349,
 				"name": "QuebrandoOuro",
 				"isLooping": false,
 				"isPingPong": false,
@@ -87,12 +87,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1613268,
+						"imageSpriteId": 3807581,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 237017050807930,
+				"sid": 237564889282761,
 				"name": "QuebrandoFerro",
 				"isLooping": false,
 				"isPingPong": false,
@@ -110,12 +110,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8031471,
+						"imageSpriteId": 5679231,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 691557928486934,
+				"sid": 549162829102031,
 				"name": "QuerbandoOuroFeito",
 				"isLooping": false,
 				"isPingPong": false,
@@ -133,12 +133,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4082570,
+						"imageSpriteId": 1904350,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 672078561721332,
+				"sid": 326954757054992,
 				"name": "QuebrandoFerroFeito",
 				"isLooping": false,
 				"isPingPong": false,

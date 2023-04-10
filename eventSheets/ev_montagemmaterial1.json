@@ -142,6 +142,18 @@
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 547705563647070
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 260529424827342,
+					"parameters": {
+						"audio-file": "MUSICA_BGM_Ambientação_Montagem01",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"musicaConstrucao\""
+					}
 				}
 			],
 			"sid": 251756401202845
@@ -243,7 +255,7 @@
 					"sid": 140477918172766,
 					"parameters": {
 						"variable": "posicaoX_HitPoint",
-						"value": "random(MaterialParaDestruir.BBoxLeft, MaterialParaDestruir.BBoxRight)"
+						"value": "random(MaterialFerroDestruir.BBoxLeft, MaterialFerroDestruir.BBoxRight)"
 					}
 				},
 				{
@@ -252,7 +264,7 @@
 					"sid": 196486088891433,
 					"parameters": {
 						"variable": "posicaoY_HitPoint",
-						"value": "random(MaterialParaDestruir.BBoxTop, MaterialParaDestruir.BBoxBottom)"
+						"value": "random(MaterialFerroDestruir.BBoxTop, MaterialFerroDestruir.BBoxBottom)"
 					}
 				}
 			],
@@ -739,7 +751,7 @@
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MaterialParaDestruir",
+									"objectClass": "MaterialFerroDestruir",
 									"sid": 898985231984172,
 									"parameters": {
 										"x": "640",
@@ -748,7 +760,7 @@
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "MaterialParaDestruir",
+									"objectClass": "MaterialFerroDestruir",
 									"sid": 490123477430525,
 									"parameters": {
 										"animation": "\"Ouro\"",
@@ -779,7 +791,7 @@
 										},
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialParaDestruir",
+											"objectClass": "MaterialFerroDestruir",
 											"sid": 954166366486552,
 											"parameters": {
 												"animation": "\"Ouro\"",
@@ -874,7 +886,7 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialParaDestruir",
+											"objectClass": "MaterialFerroDestruir",
 											"sid": 719208400674020,
 											"parameters": {
 												"animation": "\"QuebrandoOuro\"",
@@ -911,7 +923,7 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialParaDestruir",
+											"objectClass": "MaterialFerroDestruir",
 											"sid": 831804406935323,
 											"parameters": {
 												"animation": "\"QuerbandoOuroFeito\"",
@@ -959,7 +971,7 @@
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MaterialParaDestruir",
+									"objectClass": "MaterialFerroDestruir",
 									"sid": 117436545124899,
 									"parameters": {
 										"x": "640",
@@ -968,7 +980,7 @@
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "MaterialParaDestruir",
+									"objectClass": "MaterialFerroDestruir",
 									"sid": 865966852780487,
 									"parameters": {
 										"animation": "\"Ferro\"",
@@ -1134,7 +1146,7 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialParaDestruir",
+											"objectClass": "MaterialFerroDestruir",
 											"sid": 696602239977189,
 											"parameters": {
 												"animation": "\"QuebrandoFerro\"",
@@ -1171,7 +1183,7 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialParaDestruir",
+											"objectClass": "MaterialFerroDestruir",
 											"sid": 422163028225720,
 											"parameters": {
 												"animation": "\"QuebrandoFerroFeito\"",
@@ -1799,6 +1811,31 @@
 				}
 			],
 			"sid": 121591481091420
+		},
+		{
+			"eventType": "comment",
+			"text": "gambiarra tirar isso por favor"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 673491015142005
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 667589242904577,
+					"parameters": {
+						"tag": "\"musicaConstrucao\""
+					}
+				}
+			],
+			"sid": 921648166550024
 		}
 	],
 	"sid": 162936259003711

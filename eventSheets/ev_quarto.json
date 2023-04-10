@@ -14,24 +14,7 @@
 					"sid": 359503682555269
 				}
 			],
-			"actions": [
-				{
-					"id": "set-opacity",
-					"objectClass": "Personagem",
-					"sid": 549327040281876,
-					"parameters": {
-						"opacity": "80"
-					}
-				},
-				{
-					"id": "set-default-color",
-					"objectClass": "Personagem",
-					"sid": 910282368038085,
-					"parameters": {
-						"color": "rgb(109, 78, 166)"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 126308477982106
 		},
 		{

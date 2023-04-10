@@ -277,7 +277,34 @@
 							}
 						}
 					],
-					"sid": 102597837279324
+					"sid": 102597837279324,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 499127447269374
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 654886832333648,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								}
+							],
+							"sid": 642487274356964
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -319,6 +346,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 818698737262883,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"Click\""
+							}
+						},
 						{
 							"id": "set-layer-interactive",
 							"objectClass": "System",
@@ -377,6 +416,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 972602189064974,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"Click\""
+							}
+						},
 						{
 							"id": "set-layer-interactive",
 							"objectClass": "System",
@@ -446,7 +497,34 @@
 							}
 						}
 					],
-					"sid": 711636809523645
+					"sid": 711636809523645,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 700975524853324
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 817232717117652,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								}
+							],
+							"sid": 565319732811534
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -515,7 +593,34 @@
 							}
 						}
 					],
-					"sid": 442156940855513
+					"sid": 442156940855513,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 547740634489811
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 553286834990363,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								}
+							],
+							"sid": 250758888431295
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -569,6 +674,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 827130989321071,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"Click\""
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -646,7 +763,34 @@
 							}
 						}
 					],
-					"sid": 898643980059640
+					"sid": 898643980059640,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 609112504149993
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 873845140557669,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								}
+							],
+							"sid": 237428650801660
+						}
+					]
 				},
 				{
 					"eventType": "block",

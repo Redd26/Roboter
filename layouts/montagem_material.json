@@ -24,11 +24,11 @@
 							"behaviors": {},
 							"world": {
 								"x": 0,
-								"y": 0,
-								"width": 1280,
-								"height": 720,
-								"originX": 0,
-								"originY": 0,
+								"y": 164,
+								"width": 1282,
+								"height": 558,
+								"originX": 0.00078003120124805,
+								"originY": 0.0017921146953405018,
 								"color": [
 									1,
 									1,
@@ -199,10 +199,10 @@
 					}
 				},
 				{
-					"type": "MaterialParaDestruir",
+					"type": "MaterialFerroDestruir",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Ouro",
+						"initial-animation": "IdleFerro",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -211,12 +211,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 608,
-						"y": 960,
-						"width": 300,
-						"height": 300,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 273,
+						"y": 833,
+						"width": 227.99999999999997,
+						"height": 196,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -881,6 +881,35 @@
 						"y": 85,
 						"width": 126,
 						"height": 126,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MaterialOuroDestruir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Ouro",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 134,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 854,
+						"y": 943,
+						"width": 300,
+						"height": 300,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
