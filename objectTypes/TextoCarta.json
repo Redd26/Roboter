@@ -11,9 +11,9 @@
 			"sid": 249355024474459
 		},
 		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 679538921404059
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 735425634940456
 		}
 	],
 	"effectTypes": [],
