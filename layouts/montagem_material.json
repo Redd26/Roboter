@@ -202,7 +202,7 @@
 					"type": "MaterialFerroDestruir",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "nadaFerro",
+						"initial-animation": "IdleFerro",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -211,12 +211,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 358,
-						"y": 1050,
+						"x": 273,
+						"y": 833,
 						"width": 227.99999999999997,
 						"height": 196,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -897,7 +897,7 @@
 					"type": "MaterialOuroDestruir",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "NadaOuro",
+						"initial-animation": "Ouro",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -906,70 +906,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 693,
-						"y": 1051,
-						"width": 227.99999999999997,
-						"height": 196,
+						"x": 854,
+						"y": 943,
+						"width": 300,
+						"height": 300,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HitBoxMinerioParaDestruir",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 135,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -45.363092033255946,
-						"y": 1057.2276526877436,
-						"width": 166.0884628246156,
-						"height": 142.49635162793723,
-						"originX": 0.541095890410959,
-						"originY": 0.38524590163934425,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SombraMartelo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 136,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 808,
-						"y": 252,
-						"width": 66,
-						"height": 66,
-						"originX": 0.6212121212121212,
-						"originY": 0.4696969696969697,
 						"color": [
 							1,
 							1,
@@ -997,7 +939,7 @@
 								"running-at-start": "yes",
 								"fade-in-time": 0,
 								"wait-time": 0,
-								"fade-out-time": 2,
+								"fade-out-time": 1.5,
 								"at-end": "destroy"
 							}
 						}
@@ -1032,12 +974,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 785.2173857781221,
-						"y": 249.19396424770812,
-						"width": 50,
-						"height": 50,
-						"originX": 0.25953079178885624,
-						"originY": 0.23186409550045917,
+						"x": 1760,
+						"y": 215,
+						"width": 40,
+						"height": 40,
+						"originX": 0.27419354838709675,
+						"originY": 0.24242424242424243,
 						"color": [
 							1,
 							1,
@@ -1111,12 +1053,12 @@
 						}
 					},
 					"world": {
-						"x": 1772,
-						"y": 528,
-						"width": 83,
-						"height": 83,
-						"originX": 0.49753312014618545,
-						"originY": 0.5024668798538144,
+						"x": 1779,
+						"y": 505,
+						"width": 97.47019187423405,
+						"height": 97.47019187423405,
+						"originX": 0.49748743718592964,
+						"originY": 0.5025125628140703,
 						"color": [
 							1,
 							1,
