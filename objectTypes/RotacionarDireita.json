@@ -1,19 +1,19 @@
 {
-	"name": "TextoCarta",
+	"name": "RotacionarDireita",
 	"plugin-id": "Sprite",
-	"sid": 572725306831804,
+	"sid": 446441529949325,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 249355024474459
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 383128616063833
 		},
 		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 679538921404059
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 492518386992687
 		}
 	],
 	"effectTypes": [],
@@ -22,19 +22,31 @@
 			{
 				"frames": [
 					{
-						"width": 579,
-						"height": 683,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
-						"originY": 0.3411420204978038,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 933578,
+						"imageSpriteId": 5340562,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 403843399127120,
+				"sid": 381203788201392,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
