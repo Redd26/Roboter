@@ -25,10 +25,10 @@
 							"world": {
 								"x": 0,
 								"y": 160,
-								"width": 1280,
-								"height": 720,
-								"originX": 0,
-								"originY": 0,
+								"width": 1282,
+								"height": 562,
+								"originX": 0.001558845505146259,
+								"originY": 0.00405896581856866,
 								"color": [
 									1,
 									1,
@@ -202,12 +202,12 @@
 						}
 					},
 					"world": {
-						"x": 704,
-						"y": 560,
-						"width": 726,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 347.3938510098902,
+						"y": 507.94130092722787,
+						"width": 710,
+						"height": 194,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
