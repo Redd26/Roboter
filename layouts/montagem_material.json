@@ -24,11 +24,11 @@
 							"behaviors": {},
 							"world": {
 								"x": 0,
-								"y": 0,
-								"width": 1280,
-								"height": 720,
-								"originX": 0,
-								"originY": 0,
+								"y": 164,
+								"width": 1282,
+								"height": 558,
+								"originX": 0.00078003120124805,
+								"originY": 0.0017921146953405018,
 								"color": [
 									1,
 									1,
@@ -199,14 +199,10 @@
 					}
 				},
 				{
-					"type": "MaterialParaDestruir",
+					"type": "MaterialFerroDestruir",
 					"properties": {
 						"initially-visible": true,
-<<<<<<< HEAD
 						"initial-animation": "nadaFerro",
-=======
-						"initial-animation": "Ouro",
->>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -215,17 +211,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-<<<<<<< HEAD
 						"x": 358,
 						"y": 1050,
 						"width": 227.99999999999997,
 						"height": 196,
-=======
-						"x": 608,
-						"y": 960,
-						"width": 300,
-						"height": 300,
->>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -905,7 +894,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 					"type": "MaterialOuroDestruir",
 					"properties": {
 						"initially-visible": true,
@@ -993,8 +981,6 @@
 					}
 				},
 				{
-=======
->>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 					"type": "HitPoint",
 					"properties": {
 						"initially-visible": true,
