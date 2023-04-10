@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
 	"name": "MaterialOuroDestruir",
 	"plugin-id": "Sprite",
 	"sid": 834198857272516,
+=======
+	"name": "MaterialParaDestruir",
+	"plugin-id": "Sprite",
+	"sid": 803271901071701,
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,13 +17,19 @@
 			{
 				"frames": [
 					{
+<<<<<<< HEAD
 						"width": 170,
 						"height": 146,
+=======
+						"width": 250,
+						"height": 250,
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD
 						"imageSpriteId": 9405186,
 						"collisionPoly": {
 							"points": [
@@ -39,16 +51,25 @@
 								0.5441400072164551
 							]
 						},
+=======
+						"imageSpriteId": 7040215,
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
+<<<<<<< HEAD
 				"sid": 843843311447894,
 				"name": "NadaOuro",
+=======
+				"sid": 998343151434957,
+				"name": "Ouro",
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
+<<<<<<< HEAD
 				"speed": 7
 			},
 			{
@@ -1264,6 +1285,9 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 7
+=======
+				"speed": 5
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 			},
 			{
 				"frames": [
@@ -1275,13 +1299,114 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD
 						"imageSpriteId": 4877646,
+=======
+						"imageSpriteId": 5369701,
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
+<<<<<<< HEAD
 				"sid": 704981748850680,
 				"name": "TransformaçãoChapa",
+=======
+				"sid": 369703274875949,
+				"name": "Ferro",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2801996,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 172488623946465,
+				"name": "QuebrandoOuro",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1613268,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 237017050807930,
+				"name": "QuebrandoFerro",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8031471,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 691557928486934,
+				"name": "QuerbandoOuroFeito",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4082570,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 672078561721332,
+				"name": "QuebrandoFerroFeito",
+>>>>>>> parent of 97afb37 (Merge branch 'main' of https://github.com/Redd26/Roboter)
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
