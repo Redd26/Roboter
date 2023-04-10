@@ -7,16 +7,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "velocidadeMovimentoCarta",
-			"type": "number",
-			"initialValue": "80",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 917398703198853
-		},
-		{
-			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
 			"initialValue": "\"dia\"",
@@ -24,16 +14,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 230485625299285
-		},
-		{
-			"eventType": "variable",
-			"name": "robo",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 838051800874636
 		},
 		{
 			"eventType": "block",
@@ -209,16 +189,6 @@
 										"group-name": "\"Desativar Layers\"",
 										"state": "deactivated"
 									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "TextoCarta",
-									"sid": 136941371658378,
-									"disabled": true,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"enabled": false
-									}
 								}
 							],
 							"sid": 755972416237187
@@ -271,16 +241,6 @@
 										"group-name": "\"Desativar Layers\"",
 										"state": "activated"
 									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "TextoCarta",
-									"sid": 148029501798647,
-									"disabled": true,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"enabled": true
-									}
 								}
 							],
 							"sid": 274022394985408
@@ -308,6 +268,18 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 638069274455736,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 818321323739302,
@@ -321,19 +293,45 @@
 								},
 								{
 									"eventType": "block",
-									"conditions": [],
-									"actions": [
+									"conditions": [
 										{
-											"id": "set-enabled",
-											"objectClass": "TextoCarta",
-											"sid": 601957768824223,
-											"behaviorType": "MoveTo",
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 644395694259883,
 											"parameters": {
-												"enabled": false
+												"object": "MesaOficina"
 											}
 										}
 									],
-									"sid": 940769602120195
+									"actions": [],
+									"sid": 832125554272912,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 730888804715489
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 627604564483709,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 878995516627183
+										}
+									]
 								}
 							],
 							"sid": 681511091016956
@@ -347,22 +345,6 @@
 							"children": [
 								{
 									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"id": "set-enabled",
-											"objectClass": "TextoCarta",
-											"sid": 603410814344754,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"enabled": true
-											}
-										}
-									],
-									"sid": 500570382158204
-								},
-								{
-									"eventType": "block",
 									"conditions": [
 										{
 											"id": "on-mouse-wheel",
@@ -371,31 +353,9 @@
 											"parameters": {
 												"direction": "up"
 											}
-										},
-										{
-											"id": "compare-y",
-											"objectClass": "TextoCarta",
-											"sid": 985486929644756,
-											"parameters": {
-												"comparison": 3,
-												"y-co-ordinate": "-40"
-											},
-											"isInverted": true
 										}
 									],
-									"actions": [
-										{
-											"id": "move-to-position",
-											"objectClass": "TextoCarta",
-											"sid": 126562890824541,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"x": "TextoCarta.X",
-												"y": "TextoCarta.Y - velocidadeMovimentoCarta",
-												"mode": "direct"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 691268183812629
 								},
 								{
@@ -408,31 +368,9 @@
 											"parameters": {
 												"direction": "down"
 											}
-										},
-										{
-											"id": "compare-y",
-											"objectClass": "TextoCarta",
-											"sid": 996647692039127,
-											"parameters": {
-												"comparison": 5,
-												"y-co-ordinate": "250"
-											},
-											"isInverted": true
 										}
 									],
-									"actions": [
-										{
-											"id": "move-to-position",
-											"objectClass": "TextoCarta",
-											"sid": 633769043983844,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"x": "TextoCarta.X",
-												"y": "TextoCarta.Y + velocidadeMovimentoCarta",
-												"mode": "direct"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 949155039507943
 								},
 								{
@@ -458,7 +396,34 @@
 											}
 										}
 									],
-									"sid": 406111318067589
+									"sid": 406111318067589,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 446621449682034
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 405138922422101,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 143500187759962
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -509,7 +474,34 @@
 											}
 										}
 									],
-									"sid": 730033185699888
+									"sid": 730033185699888,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 939372772182015
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 107576024090559,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 740080538913993
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -553,6 +545,18 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 239158570392813,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 988569136624446,
@@ -579,6 +583,18 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 816934152770109,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
