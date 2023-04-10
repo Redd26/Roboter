@@ -15,15 +15,15 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -86,13 +86,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
 			"name": "BetterOutline",
@@ -114,7 +107,7 @@
 			"SeletorMaterialBandeja",
 			"FerroDescricao",
 			"OuroDescricao",
-			"MaterialParaDestruir",
+			"MaterialFerroDestruir",
 			"Intro",
 			"ExplicacaoOuro",
 			"ExplicacaoFerro",
@@ -187,9 +180,10 @@
 			"ApagadorSerra",
 			"Colisor",
 			"ApagarChapa",
-			"RotacionarDireita",
-			"RotacionarEsquerda",
-			"Keyboard"
+			"Audio",
+			"MaterialOuroDestruir",
+			"HitBoxMinerioParaDestruir",
+			"SombraMartelo"
 		],
 		"subfolders": [
 			{
@@ -266,11 +260,37 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "menu_confirm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 952589230722427,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "menu_select.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 759398652531681,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "MUSICA_BGM_Ambientação_Montagem01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 934174218810812,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
