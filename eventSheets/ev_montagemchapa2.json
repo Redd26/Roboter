@@ -555,7 +555,7 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 270294550378235,
+					"sid": 722350386099304,
 					"parameters": {
 						"first-value": "Colisor.Count",
 						"comparison": 3,
@@ -565,15 +565,122 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
+					"id": "set-position",
 					"objectClass": "ProximoLevel",
-					"sid": 737804837824940,
+					"sid": 787185305206999,
 					"parameters": {
-						"visibility": "visible"
+						"x": "1094",
+						"y": "526"
 					}
 				}
 			],
 			"sid": 150636054671870
+		},
+		{
+			"functionName": "Colidiu2",
+			"functionCopyPicked": false,
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "ChapaFerro",
+					"sid": 257669012607078,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 5,
+						"distance": "710"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 571314847331505,
+					"parameters": {
+						"first-value": "Colisor.Count",
+						"comparison": 5,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 284894705051181,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 751146605169251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "ChapaFerro",
+					"sid": 619769752745938,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 5,
+						"distance": "718"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ChapaFerro",
+					"sid": 984756637578463
+				}
+			],
+			"sid": 107679956222577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "LinhaCortar",
+					"sid": 182218467804205,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 5,
+						"distance": "718"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "LinhaCortar",
+					"sid": 288386812026680
+				}
+			],
+			"sid": 921954006545381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 795779270190598
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Colidiu2",
+					"sid": 323002627697325
+				}
+			],
+			"sid": 392349605669510
 		}
 	],
 	"sid": 886171643003322

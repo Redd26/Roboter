@@ -109,11 +109,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
+					"id": "set-position",
 					"objectClass": "ProximoLevel",
-					"sid": 259878327283026,
+					"sid": 597306129930803,
 					"parameters": {
-						"visibility": "visible"
+						"x": "1094",
+						"y": "526"
 					}
 				}
 			],
@@ -901,6 +902,53 @@
 				}
 			],
 			"sid": 562421012444758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 506123707844157,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoLevel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 302691415859469,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 188660424504055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 673491015142005
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 667589242904577,
+					"parameters": {
+						"tag": "\"musicaConstrucao\""
+					}
+				}
+			],
+			"sid": 921648166550024
 		}
 	],
 	"sid": 573301943181991

@@ -194,7 +194,8 @@
 			"paraFimDeTestes",
 			"MaterialCobreDestruir",
 			"MaterialViridisDestruir",
-			"MaterialEritroDestruir"
+			"MaterialEritroDestruir",
+			"ApagadorDasCoisas"
 		],
 		"subfolders": [
 			{
@@ -294,9 +295,9 @@
 		"music": {
 			"items": [
 				{
-					"name": "MUSICA_BGM_Ambientação_Montagem01.webm",
+					"name": "Musica_BGM_Ambientação_Montagem_01.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 934174218810812,
+					"sid": 320658350871188,
 					"file-info": {
 						"purpose": "none"
 					}

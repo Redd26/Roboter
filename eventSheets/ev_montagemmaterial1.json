@@ -196,11 +196,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 260529424827342,
+					"sid": 456931485527952,
 					"parameters": {
-						"audio-file": "MUSICA_BGM_Ambientação_Montagem01",
+						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-10",
 						"stereo-pan": "0",
 						"tag-optional": "\"musicaConstrucao\""
 					}
@@ -3580,27 +3580,6 @@
 		{
 			"eventType": "comment",
 			"text": "gambiarra tirar isso por favor"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-end-of-layout",
-					"objectClass": "System",
-					"sid": 673491015142005
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 667589242904577,
-					"parameters": {
-						"tag": "\"musicaConstrucao\""
-					}
-				}
-			],
-			"sid": 921648166550024
 		},
 		{
 			"eventType": "comment",
