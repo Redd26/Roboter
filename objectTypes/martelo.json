@@ -4,21 +4,47 @@
 	"sid": 949858324247297,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 256849508708735
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 62,
+						"width": 66,
 						"height": 66,
-						"originX": 0.27419354838709675,
-						"originY": 0.24242424242424243,
+						"originX": 0.4090909090909091,
+						"originY": 0.4090909090909091,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3994964,
+						"imageSpriteId": 5313848,
+						"collisionPoly": {
+							"points": [
+								0.5272726579145952,
+								0.018181800842285264,
+								0.7757575295188199,
+								0.2818181875980259,
+								0.5954544760964134,
+								0.4696969696969697,
+								0.9545454545454546,
+								0.8333333333333335,
+								0.8348484617291074,
+								0.9560605829412286,
+								0.475757598876953,
+								0.5909090909090908,
+								0.2772726579145951,
+								0.807575746016069,
+								0.019697015935724458,
+								0.5090908859715315
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

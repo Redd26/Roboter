@@ -83,16 +83,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "HitPointsTotalOuro",
-			"type": "number",
-			"initialValue": "5",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 312291832438486
-		},
-		{
-			"eventType": "variable",
 			"name": "HitPointsTotalFerro",
 			"type": "number",
 			"initialValue": "4",
@@ -103,6 +93,46 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "HitPointsTotalCobre",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 111791681738223
+		},
+		{
+			"eventType": "variable",
+			"name": "HitPointsTotalOuro",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 276620250317314
+		},
+		{
+			"eventType": "variable",
+			"name": "HitPointsTotalViridis",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 106658919678693
+		},
+		{
+			"eventType": "variable",
+			"name": "HitPointsTotalEritro",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 979057199035689
+		},
+		{
+			"eventType": "variable",
 			"name": "Timer",
 			"type": "number",
 			"initialValue": "0",
@@ -110,6 +140,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 482442481438351
+		},
+		{
+			"eventType": "variable",
+			"name": "TransformarMouse",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 189049385651374
+		},
+		{
+			"eventType": "variable",
+			"name": "eEsseMaterialQueORoboUsa",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 726421900263177
 		},
 		{
 			"eventType": "include",
@@ -147,6 +197,7 @@
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 260529424827342,
+					"disabled": true,
 					"parameters": {
 						"audio-file": "MUSICA_BGM_Ambientação_Montagem01",
 						"loop": "looping",
@@ -252,19 +303,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 140477918172766,
+					"sid": 836182912834215,
 					"parameters": {
 						"variable": "posicaoX_HitPoint",
-						"value": "random(MaterialFerroDestruir.BBoxLeft, MaterialFerroDestruir.BBoxRight)"
+						"value": "random(HitBoxMaterialDestruir.BBoxLeft, HitBoxMaterialDestruir.BBoxRight)"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 196486088891433,
+					"sid": 150376098510357,
 					"parameters": {
 						"variable": "posicaoY_HitPoint",
-						"value": "random(MaterialFerroDestruir.BBoxTop, MaterialFerroDestruir.BBoxBottom)"
+						"value": "random(HitBoxMaterialDestruir.BBoxTop, HitBoxMaterialDestruir.BBoxBottom)"
 					}
 				}
 			],
@@ -375,22 +426,82 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 106939726712872
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 992252349484868,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Martelo"
+							}
 						},
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 470031447432673,
+							"sid": 149140997979566,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 166127198126691,
+							"parameters": {
+								"variable": "TransformarMouse",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "SombraMArtelo",
+							"sid": 257898392788289,
+							"parameters": {
+								"x": "835",
+								"y": "257"
+							}
+						},
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Martelo",
+							"sid": 112704265155361,
+							"parameters": {
+								"z": "11"
+							}
+						}
+					],
+					"sid": 405720504504649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 281734946243357
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 369460455282708,
 							"parameters": {
 								"variable": "isMaterialClicado"
 							}
 						},
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 183855926919604,
+							"parameters": {
+								"variable": "TransformarMouse"
+							}
+						},
+						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 582945926162693,
+							"sid": 646799382981656,
 							"parameters": {
 								"object": "Carta"
 							},
@@ -399,23 +510,86 @@
 					],
 					"actions": [
 						{
-							"id": "set-cursor-style",
-							"objectClass": "Mouse",
-							"sid": 962993581769649,
+							"id": "set-position",
+							"objectClass": "Martelo",
+							"sid": 204345813685973,
 							"parameters": {
-								"cursor-style": "none"
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
 							}
 						},
 						{
-							"id": "set-cursor-from-sprite",
+							"id": "set-cursor-style",
 							"objectClass": "Mouse",
-							"sid": 324780923178677,
+							"sid": 120230570277479,
 							"parameters": {
-								"sprite": "Martelo"
+								"cursor-style": "none"
 							}
 						}
 					],
-					"sid": 795110560310282
+					"sid": 723290881940792
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 211757817318069,
+							"parameters": {
+								"mouse-button": "right",
+								"click-type": "clicked",
+								"object-clicked": "SombraMArtelo"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 107083424454897,
+							"parameters": {
+								"object": "Carta"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 205231625818072,
+							"parameters": {
+								"variable": "TransformarMouse",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Martelo",
+							"sid": 679470337133020,
+							"parameters": {
+								"z": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Martelo",
+							"sid": 462217346648231,
+							"parameters": {
+								"x": "835",
+								"y": "257"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "SombraMArtelo",
+							"sid": 753363264037729,
+							"parameters": {
+								"x": "2000",
+								"y": "3000"
+							}
+						}
+					],
+					"sid": 392110784672587
 				}
 			],
 			"sid": 912520935520990
@@ -680,6 +854,109 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 145866276255367,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "ouro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 340426459330823,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"value": "\"ouro\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MaterialOuroDestruir",
+									"sid": 897512235052337,
+									"parameters": {
+										"x": "535",
+										"y": "357"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialOuroDestruir",
+									"sid": 392019070544368,
+									"parameters": {
+										"animation": "\"IdleOuro\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 739119208802218,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 421547542574360,
+									"parameters": {
+										"x": "531",
+										"y": "353"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 102148760874315,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 285996857532258,
+									"parameters": {
+										"variable": "eEsseMaterialQueORoboUsa",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 389781033404654,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 338198175217909,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ouro\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CriarHitPoint",
+											"sid": 946024513027047
+										}
+									],
+									"sid": 886419601057266
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "cursor-is-over-object",
 									"objectClass": "Mouse",
 									"sid": 792989526267550,
@@ -724,84 +1001,6 @@
 								}
 							],
 							"sid": 178341294571000
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-object-clicked",
-									"objectClass": "Mouse",
-									"sid": 283523600387983,
-									"parameters": {
-										"mouse-button": "left",
-										"click-type": "clicked",
-										"object-clicked": "ouro"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 790168761321204,
-									"parameters": {
-										"variable": "materialEscolhido",
-										"value": "\"ouro\""
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "MaterialFerroDestruir",
-									"sid": 898985231984172,
-									"parameters": {
-										"x": "640",
-										"y": "433"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialFerroDestruir",
-									"sid": 490123477430525,
-									"parameters": {
-										"animation": "\"Ouro\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 683501510749360,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 594452293079299,
-											"parameters": {
-												"variable": "materialEscolhido",
-												"comparison": 0,
-												"value": "\"ouro\""
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "CriarHitPoint",
-											"sid": 304915809980454
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "MaterialFerroDestruir",
-											"sid": 954166366486552,
-											"parameters": {
-												"animation": "\"Ouro\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 165819813794276
-								}
-							]
 						},
 						{
 							"eventType": "block",
@@ -875,7 +1074,81 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 942029408207553,
+											"sid": 551684847134518,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 983752591466704,
+											"parameters": {
+												"animation": "\"Quebra01Ouro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 877307428235400
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 269336901308862,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ouro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 273955468430601,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 747169351797090,
+											"parameters": {
+												"animation": "\"Quebra02Ouro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 227747156848864
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 947732182520661,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ouro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 122180782737666,
 											"parameters": {
 												"variable": "contadorHitPoints",
 												"comparison": 0,
@@ -886,15 +1159,52 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialFerroDestruir",
-											"sid": 719208400674020,
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 619124245648012,
 											"parameters": {
-												"animation": "\"QuebrandoOuro\"",
+												"animation": "\"Quebra03Ouro\"",
 												"from": "beginning"
 											}
 										}
 									],
-									"sid": 877307428235400
+									"sid": 450652401386723
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 647606201203420,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ouro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 755549542986130,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 218289078229223,
+											"parameters": {
+												"animation": "\"Quebra04Ouro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 445110720276403
 								},
 								{
 									"eventType": "block",
@@ -923,10 +1233,10 @@
 									"actions": [
 										{
 											"id": "set-animation",
-											"objectClass": "MaterialFerroDestruir",
-											"sid": 831804406935323,
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 761135999950218,
 											"parameters": {
-												"animation": "\"QuerbandoOuroFeito\"",
+												"animation": "\"Quebra05Ouro\"",
 												"from": "beginning"
 											}
 										}
@@ -934,6 +1244,48 @@
 									"sid": 786925620344975
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 171395783264522,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 0,
+										"second-value": "HitPointsTotalOuro"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 421467019336565,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ouro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 634034339050586
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ProximoLevel",
+									"sid": 479840752895402,
+									"parameters": {
+										"x": "1094",
+										"y": "526"
+									}
+								}
+							],
+							"sid": 896701008735292
 						}
 					],
 					"sid": 676392971232207
@@ -972,19 +1324,53 @@
 								{
 									"id": "set-position",
 									"objectClass": "MaterialFerroDestruir",
-									"sid": 117436545124899,
+									"sid": 594782647468791,
 									"parameters": {
-										"x": "640",
-										"y": "433"
+										"x": "535",
+										"y": "357"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "MaterialFerroDestruir",
-									"sid": 865966852780487,
+									"sid": 944690090256445,
 									"parameters": {
-										"animation": "\"Ferro\"",
+										"animation": "\"IdleFerro\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 486151555004617,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 670805176352611,
+									"parameters": {
+										"x": "531",
+										"y": "353"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 997048319933514,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 794558952775223,
+									"parameters": {
+										"variable": "eEsseMaterialQueORoboUsa",
+										"value": "true"
 									}
 								}
 							],
@@ -1135,7 +1521,44 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 871134800353710,
+											"sid": 115132971793544,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialFerroDestruir",
+											"sid": 791075263798816,
+											"parameters": {
+												"animation": "\"Quebra01Ferro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 814046628799691
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 292261114402997,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ferro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 581763405586870,
 											"parameters": {
 												"variable": "contadorHitPoints",
 												"comparison": 0,
@@ -1147,14 +1570,51 @@
 										{
 											"id": "set-animation",
 											"objectClass": "MaterialFerroDestruir",
-											"sid": 696602239977189,
+											"sid": 194579638962973,
 											"parameters": {
-												"animation": "\"QuebrandoFerro\"",
+												"animation": "\"Quebra02Ferro\"",
 												"from": "beginning"
 											}
 										}
 									],
-									"sid": 814046628799691
+									"sid": 828809997066741
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 910466349929661,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"ferro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 334671499136512,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialFerroDestruir",
+											"sid": 402013544760966,
+											"parameters": {
+												"animation": "\"Quebra03Ferro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 671594885198290
 								},
 								{
 									"eventType": "block",
@@ -1184,9 +1644,9 @@
 										{
 											"id": "set-animation",
 											"objectClass": "MaterialFerroDestruir",
-											"sid": 422163028225720,
+											"sid": 891946070055160,
 											"parameters": {
-												"animation": "\"QuebrandoFerroFeito\"",
+												"animation": "\"Quebra04Ferro\"",
 												"from": "beginning"
 											}
 										}
@@ -1194,6 +1654,48 @@
 									"sid": 945144537755799
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 121550854218755,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 0,
+										"second-value": "HitPointsTotalFerro"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 927787376072694,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"ferro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 843481696732740
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ProximoLevel",
+									"sid": 995890058373506,
+									"parameters": {
+										"x": "1094",
+										"y": "526"
+									}
+								}
+							],
+							"sid": 234603405668355
 						}
 					],
 					"sid": 209094004583559
@@ -1205,6 +1707,109 @@
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 543813418852916,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "cobre"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 583222279645605,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"value": "\"cobre\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MaterialCobreDestruir",
+									"sid": 399956733994535,
+									"parameters": {
+										"x": "535",
+										"y": "357"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialCobreDestruir",
+									"sid": 957924913196833,
+									"parameters": {
+										"animation": "\"IdleCobre\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 220286073994270,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 714502364988638,
+									"parameters": {
+										"x": "531",
+										"y": "353"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 154434051640590,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 490641292154484,
+									"parameters": {
+										"variable": "eEsseMaterialQueORoboUsa",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 481002117887671,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 797923442818032,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"cobre\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CriarHitPoint",
+											"sid": 577758063259482
+										}
+									],
+									"sid": 225042000439729
+								}
+							]
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -1253,6 +1858,254 @@
 								}
 							],
 							"sid": 287809062381113
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 438915228226227,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "HitPoint"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 378506997565124,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 1,
+										"second-value": "HitPointsTotalCobre"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 528715892913887,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"cobre\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 501911079811848,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 310437023680399
+								},
+								{
+									"callFunction": "CriarHitPoint",
+									"sid": 403506278868775
+								}
+							],
+							"sid": 480931886824264,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 667310486504124,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"cobre\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 982122308848547,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 102622238614836,
+											"parameters": {
+												"animation": "\"Quebra01Cobre\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 419663033742397
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 902682618527800,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"cobre\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 414621960030581,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 695932107978844,
+											"parameters": {
+												"animation": "\"Quebra02Cobre\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 619858720106475
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 416077841019435,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"cobre\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 177927232135448,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 197574421487194,
+											"parameters": {
+												"animation": "\"Quebra03Cobre\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 581400753290009
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 112984308130931,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"cobre\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 784148366261179,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 117708395407082,
+											"parameters": {
+												"animation": "\"Quebra04Cobre\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 203577013228368
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 805506258672676,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 0,
+										"second-value": "HitPointsTotalCobre"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 234373112111199,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"cobre\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 576480951126660
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ProximoLevel",
+									"sid": 665752615670319,
+									"parameters": {
+										"x": "1094",
+										"y": "526"
+									}
+								}
+							],
+							"sid": 421693247687049
 						}
 					],
 					"sid": 925892427113706
@@ -1264,6 +2117,109 @@
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 676747983600673,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "viridisOre"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 922992662868759,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"value": "\"viridis\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MaterialViridisDestruir",
+									"sid": 802343600929871,
+									"parameters": {
+										"x": "535",
+										"y": "357"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialViridisDestruir",
+									"sid": 355713009301415,
+									"parameters": {
+										"animation": "\"IdleViridis\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 994535995472389,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 333155679698593,
+									"parameters": {
+										"x": "531",
+										"y": "353"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 616756778802590,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 140771328863300,
+									"parameters": {
+										"variable": "eEsseMaterialQueORoboUsa",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 371430980102000,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 640069989241821,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CriarHitPoint",
+											"sid": 203764144642576
+										}
+									],
+									"sid": 846331605725245
+								}
+							]
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -1312,6 +2268,291 @@
 								}
 							],
 							"sid": 813101633321590
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 191192196838640,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "HitPoint"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 675284644273691,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 1,
+										"second-value": "HitPointsTotalViridis"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 547970537322372,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"viridis\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 357326139153473,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 275545303610717
+								},
+								{
+									"callFunction": "CriarHitPoint",
+									"sid": 552626148263997
+								}
+							],
+							"sid": 212217867073541,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 678063073738304,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 929694082467853,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 133865126751635,
+											"parameters": {
+												"animation": "\"Quebra01Viridis\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 587682995783553
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 592530093012004,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 711163265480824,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 845281889267656,
+											"parameters": {
+												"animation": "\"Quebra02Viridis\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 603568743311520
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 483018789316780,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 281231743121501,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 957825274415625,
+											"parameters": {
+												"animation": "\"Quebra03Viridis\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 536594984865682
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 381607517100239,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 790091431248913,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 739317933015975,
+											"parameters": {
+												"animation": "\"Quebra04Viridis\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 521658837252430
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 987851256051272,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 961140629792980,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 550757080163064,
+											"parameters": {
+												"animation": "\"Quebra05Viridis\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 737368996902521
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 733352871629795,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 0,
+										"second-value": "HitPointsTotalViridis"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 375102228197583,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"viridis\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 725695794621784
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ProximoLevel",
+									"sid": 991549616281608,
+									"parameters": {
+										"x": "1094",
+										"y": "526"
+									}
+								}
+							],
+							"sid": 973261247406995
 						}
 					],
 					"sid": 326540480681094
@@ -1323,6 +2564,109 @@
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 558897969004888,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Eritro"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 906862009211923,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"value": "\"eritro\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MaterialEritroDestruir",
+									"sid": 907946335457548,
+									"parameters": {
+										"x": "535",
+										"y": "357"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "MaterialEritroDestruir",
+									"sid": 597322675214420,
+									"parameters": {
+										"animation": "\"IdleEritro\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 938759887762944,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 945945524481110,
+									"parameters": {
+										"x": "531",
+										"y": "353"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "HitBoxMaterialDestruir",
+									"sid": 276330390631458,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 208288619031464,
+									"parameters": {
+										"variable": "eEsseMaterialQueORoboUsa",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 776309093751353,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 782699416550179,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CriarHitPoint",
+											"sid": 737923294474612
+										}
+									],
+									"sid": 846943065310980
+								}
+							]
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -1371,6 +2715,328 @@
 								}
 							],
 							"sid": 825085366874542
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 697060609468109,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "HitPoint"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 978116286891663,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 1,
+										"second-value": "HitPointsTotalEritro"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 892394471296372,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"eritro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 231280986244188,
+									"parameters": {
+										"variable": "contadorHitPoints",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 178938869111031
+								},
+								{
+									"callFunction": "CriarHitPoint",
+									"sid": 931783710867396
+								}
+							],
+							"sid": 258907669089508,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 566469032151060,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 610514410837925,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 137017700222198,
+											"parameters": {
+												"animation": "\"Quebra01Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 962415864804492
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 806361822222066,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 633988573217802,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 119780719050983,
+											"parameters": {
+												"animation": "\"Quebra02Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 676133944922234
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 780219315251047,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 836646974849087,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 671854689579672,
+											"parameters": {
+												"animation": "\"Quebra03Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 630028419034416
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 785609818945671,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 747290764840302,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 317099316598471,
+											"parameters": {
+												"animation": "\"Quebra04Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 833496150911668
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 632082585703941,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 707852326817844,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 105919769292721,
+											"parameters": {
+												"animation": "\"Quebra05Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 886703471849027
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 617876867490192,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"comparison": 0,
+												"value": "\"eritro\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 397935807762972,
+											"parameters": {
+												"variable": "contadorHitPoints",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 828516240964985,
+											"parameters": {
+												"animation": "\"Quebra06Eritro\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 757487159525882
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 805400212134966,
+									"parameters": {
+										"first-value": "contadorHitPoints",
+										"comparison": 0,
+										"second-value": "HitPointsTotalEritro"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 247927856114544,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 0,
+										"value": "\"eritro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "HitPoint",
+									"sid": 981690971457822
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ProximoLevel",
+									"sid": 484313305503360,
+									"parameters": {
+										"x": "1094",
+										"y": "526"
+									}
+								}
+							],
+							"sid": 900633829887494
 						}
 					],
 					"sid": 781381518420914
@@ -1659,11 +3325,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 454323977139880,
+							"sid": 541317571953610,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "15"
+								"second-value": "35"
 							}
 						},
 						{
@@ -1679,7 +3345,7 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 106453183514244,
+							"sid": 431730550970210,
 							"parameters": {
 								"variable": "isMaterialClicado"
 							}
@@ -1703,11 +3369,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 687195515390782,
+							"sid": 715356206715758,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "15"
+								"second-value": "35"
 							}
 						},
 						{
@@ -1747,31 +3413,131 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 142175939768747,
+							"sid": 828635984103047,
 							"parameters": {
-								"first-value": "contadorHitPoints",
-								"comparison": 0,
-								"second-value": "HitPointsTotalFerro"
+								"first-value": "Timer",
+								"comparison": 4,
+								"second-value": "35"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 286196720175541,
+							"parameters": {
+								"variable": "contadorHitPoints",
+								"comparison": 2,
+								"value": "HitPointsTotalCobre"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 507204099371198,
+							"parameters": {
+								"variable": "isMaterialClicado"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "HitPoint",
-							"sid": 157799176770591
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ProximoLevel",
-							"sid": 698122058645114,
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 110401097513203,
 							"parameters": {
-								"x": "1048",
-								"y": "591"
+								"layout": "Loja"
 							}
 						}
 					],
-					"sid": 181937985580531
+					"sid": 723125691252956
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 686120297916202,
+							"parameters": {
+								"first-value": "Timer",
+								"comparison": 4,
+								"second-value": "35"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 846753647309806,
+							"parameters": {
+								"variable": "contadorHitPoints",
+								"comparison": 2,
+								"value": "HitPointsTotalViridis"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 457673852586124,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 438061942710916,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 620383398910670
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 189753312373545,
+							"parameters": {
+								"first-value": "Timer",
+								"comparison": 4,
+								"second-value": "35"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 517724256820518,
+							"parameters": {
+								"variable": "contadorHitPoints",
+								"comparison": 2,
+								"value": "HitPointsTotalEritro"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 534581555016376,
+							"parameters": {
+								"variable": "isMaterialClicado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 344177588406024,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 187147973088710
 				}
 			],
 			"sid": 617237442160539
@@ -1836,6 +3602,63 @@
 				}
 			],
 			"sid": 921648166550024
+		},
+		{
+			"eventType": "comment",
+			"text": "paraFins de teste "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 443131061472568,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked",
+						"object-clicked": "paraFimDeTestes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 835027709956798
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 268345561186434
+				}
+			],
+			"sid": 963516503315469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 724893131041956,
+					"parameters": {
+						"variable": "eEsseMaterialQueORoboUsa"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 317183214211486,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 357272413518558
 		}
 	],
 	"sid": 162936259003711

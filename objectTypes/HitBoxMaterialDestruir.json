@@ -1,0 +1,55 @@
+{
+	"name": "HitBoxMaterialDestruir",
+	"plugin-id": "Sprite",
+	"sid": 509074434261534,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 146,
+						"height": 122,
+						"originX": 0.541095890410959,
+						"originY": 0.38524590163934425,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9522124,
+						"collisionPoly": {
+							"points": [
+								0.22450533885752594,
+								0.07285974499089261,
+								0.5129377344790478,
+								0,
+								0.9931507313813973,
+								0.7367941573235074,
+								0.7519025178441898,
+								0.9198542457677846,
+								0.4277017207269077,
+								0.9699453412943633,
+								0.031354512253852745,
+								0.6236795102312263,
+								0.1961948505093879,
+								0.47504557416738724
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 491286245874630,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

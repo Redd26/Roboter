@@ -202,7 +202,7 @@
 					"type": "MaterialFerroDestruir",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "IdleFerro",
+						"initial-animation": "ImagemFerro",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -211,12 +211,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 273,
-						"y": 833,
-						"width": 227.99999999999997,
-						"height": 196,
-						"originX": 0,
-						"originY": 0,
+						"x": 155,
+						"y": 1215,
+						"width": 271,
+						"height": 187.99999999999997,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -897,7 +897,7 @@
 					"type": "MaterialOuroDestruir",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Ouro",
+						"initial-animation": "ImagemOuro",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -906,10 +906,264 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 854,
-						"y": 943,
-						"width": 300,
-						"height": 300,
+						"x": 842,
+						"y": 1237,
+						"width": 271,
+						"height": 187.99999999999997,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitBoxMaterialDestruir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 136,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 178,
+						"y": 1235,
+						"width": 134,
+						"height": 141,
+						"originX": 0.541095890410959,
+						"originY": 0.38524590163934425,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "paraFimDeTestes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 137,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1430,
+						"y": 1082,
+						"width": 60,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ProximoLevel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1477,
+						"y": 735,
+						"width": 60,
+						"height": 60,
+						"originX": 0.49748743718592964,
+						"originY": 0.5025125628140703,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SombraMArtelo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 135,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1086,
+						"y": 925,
+						"width": 66,
+						"height": 66,
+						"originX": 0.4090909090909091,
+						"originY": 0.4090909090909091,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Martelo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 835,
+						"y": 257,
+						"width": 70.25806451612902,
+						"height": 66,
+						"originX": 0.4090909090909091,
+						"originY": 0.4090909090909091,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MaterialCobreDestruir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ImagemCobre",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 373,
+						"y": 1207,
+						"width": 271,
+						"height": 187.99999999999997,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MaterialViridisDestruir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ImagemViridis",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 139,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 598,
+						"y": 1221,
+						"width": 271,
+						"height": 187.99999999999997,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MaterialEritroDestruir",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ImagemEritro",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1115,
+						"y": 1222,
+						"width": 271,
+						"height": 187.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -939,7 +1193,7 @@
 								"running-at-start": "yes",
 								"fade-in-time": 0,
 								"wait-time": 0,
-								"fade-out-time": 1.5,
+								"fade-out-time": 2,
 								"at-end": "destroy"
 							}
 						}
@@ -959,35 +1213,6 @@
 						],
 						"angle": 0,
 						"zElevation": 1
-					}
-				},
-				{
-					"type": "Martelo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 87,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1760,
-						"y": 215,
-						"width": 40,
-						"height": 40,
-						"originX": 0.27419354838709675,
-						"originY": 0.24242424242424243,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 11
 					}
 				}
 			],
@@ -1023,53 +1248,7 @@
 			"name": "hud",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "ProximoLevel",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									0,
-									0,
-									0,
-									1
-								],
-								"width": 1,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1779,
-						"y": 505,
-						"width": 97.47019187423405,
-						"height": 97.47019187423405,
-						"originX": 0.49748743718592964,
-						"originY": 0.5025125628140703,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 122200636164233,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

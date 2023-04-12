@@ -86,6 +86,13 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
 			"name": "BetterOutline",
@@ -181,7 +188,13 @@
 			"Colisor",
 			"ApagarChapa",
 			"Audio",
-			"MaterialOuroDestruir"
+			"MaterialOuroDestruir",
+			"SombraMArtelo",
+			"HitBoxMaterialDestruir",
+			"paraFimDeTestes",
+			"MaterialCobreDestruir",
+			"MaterialViridisDestruir",
+			"MaterialEritroDestruir"
 		],
 		"subfolders": [
 			{
