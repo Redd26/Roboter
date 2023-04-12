@@ -197,7 +197,6 @@
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 260529424827342,
-					"disabled": true,
 					"parameters": {
 						"audio-file": "MUSICA_BGM_Ambientação_Montagem01",
 						"loop": "looping",

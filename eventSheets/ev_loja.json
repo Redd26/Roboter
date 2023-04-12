@@ -16,6 +16,26 @@
 			"sid": 230485625299285
 		},
 		{
+			"eventType": "variable",
+			"name": "velocidadeMovimentoCarta",
+			"type": "number",
+			"initialValue": "80",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 568693637133946
+		},
+		{
+			"eventType": "variable",
+			"name": "robo",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 326064193654310
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -293,6 +313,22 @@
 								},
 								{
 									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "TextoCarta",
+											"sid": 891023039304049,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										}
+									],
+									"sid": 735890566178369
+								},
+								{
+									"eventType": "block",
 									"conditions": [
 										{
 											"id": "cursor-is-over-object",
@@ -345,18 +381,19 @@
 							"children": [
 								{
 									"eventType": "block",
-									"conditions": [
+									"conditions": [],
+									"actions": [
 										{
-											"id": "on-mouse-wheel",
-											"objectClass": "Mouse",
-											"sid": 335339370862338,
+											"id": "set-enabled",
+											"objectClass": "TextoCarta",
+											"sid": 200902828497997,
+											"behaviorType": "MoveTo",
 											"parameters": {
-												"direction": "up"
+												"enabled": true
 											}
 										}
 									],
-									"actions": [],
-									"sid": 691268183812629
+									"sid": 160244077648638
 								},
 								{
 									"eventType": "block",
@@ -364,14 +401,73 @@
 										{
 											"id": "on-mouse-wheel",
 											"objectClass": "Mouse",
-											"sid": 363822757558252,
+											"sid": 146519908617890,
 											"parameters": {
-												"direction": "down"
+												"direction": "up"
+											}
+										},
+										{
+											"id": "compare-y",
+											"objectClass": "TextoCarta",
+											"sid": 290653782033998,
+											"parameters": {
+												"comparison": 3,
+												"y-co-ordinate": "-40"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "TextoCarta",
+											"sid": 267743547556918,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "TextoCarta.X",
+												"y": "TextoCarta.Y - velocidadeMovimentoCarta",
+												"mode": "direct"
 											}
 										}
 									],
-									"actions": [],
-									"sid": 949155039507943
+									"sid": 672202073977959
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-mouse-wheel",
+											"objectClass": "Mouse",
+											"sid": 904142411543394,
+											"parameters": {
+												"direction": "down"
+											}
+										},
+										{
+											"id": "compare-y",
+											"objectClass": "TextoCarta",
+											"sid": 246999160911217,
+											"parameters": {
+												"comparison": 5,
+												"y-co-ordinate": "250"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "TextoCarta",
+											"sid": 453711755282609,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "TextoCarta.X",
+												"y": "TextoCarta.Y + velocidadeMovimentoCarta",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 117619772843877
 								},
 								{
 									"eventType": "block",

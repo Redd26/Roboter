@@ -441,6 +441,17 @@
 										"bound-min-y": -270,
 										"bound-max-y": 814
 									}
+								},
+								"MoveTo": {
+									"properties": {
+										"max-speed": 200,
+										"acceleration": 600,
+										"deceleration": 600,
+										"rotate-speed": 0,
+										"set-angle": false,
+										"stop-on-solids": false,
+										"enabled": true
+									}
 								}
 							},
 							"world": {
