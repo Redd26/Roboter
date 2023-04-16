@@ -162,12 +162,26 @@
 			"sid": 726421900263177
 		},
 		{
+			"eventType": "variable",
+			"name": "NumeroCarta",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 486729467447268
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_loja"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "EV_UtilMiniGames"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
 		},
 		{
 			"eventType": "block",
@@ -920,6 +934,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 285996857532258,
+									"disabled": true,
 									"parameters": {
 										"variable": "eEsseMaterialQueORoboUsa",
 										"value": "false"
@@ -1367,6 +1382,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 794558952775223,
+									"disabled": true,
 									"parameters": {
 										"variable": "eEsseMaterialQueORoboUsa",
 										"value": "true"
@@ -1777,6 +1793,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 490641292154484,
+									"disabled": true,
 									"parameters": {
 										"variable": "eEsseMaterialQueORoboUsa",
 										"value": "false"
@@ -2187,6 +2204,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 140771328863300,
+									"disabled": true,
 									"parameters": {
 										"variable": "eEsseMaterialQueORoboUsa",
 										"value": "false"
@@ -2634,6 +2652,7 @@
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 208288619031464,
+									"disabled": true,
 									"parameters": {
 										"variable": "eEsseMaterialQueORoboUsa",
 										"value": "false"
@@ -3637,6 +3656,12 @@
 				}
 			],
 			"sid": 357272413518558
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 718217295963398
 		}
 	],
 	"sid": 162936259003711

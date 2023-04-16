@@ -1,0 +1,262 @@
+{
+	"name": "EV_Pedidos",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "QualMaterial",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 974772511596750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 634231013934927
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 382494786554024,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 940701760251443,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 335872623229008,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 545444593847555,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 535179064018091
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 470294966791037,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 600179186688459,
+					"parameters": {
+						"variable": "QualMaterial",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 399126828096438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 926546062232694,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Ferro"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 571786977543804,
+					"parameters": {
+						"first-value": "QualMaterial",
+						"comparison": 0,
+						"second-value": "Ferro.MaterialCodigo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 753649248696527
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 846550503471513,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ouro"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 530523782697623,
+					"parameters": {
+						"first-value": "QualMaterial",
+						"comparison": 0,
+						"second-value": "Ferro.MaterialCodigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 570938199303298,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 518824202093166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 857211070826671,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Eritro"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 540487927560354,
+					"parameters": {
+						"first-value": "QualMaterial",
+						"comparison": 0,
+						"second-value": "Ferro.MaterialCodigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 526917219114322,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 389586009383239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 696810283417565,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "viridisOre"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 435390189346878,
+					"parameters": {
+						"first-value": "QualMaterial",
+						"comparison": 0,
+						"second-value": "Ferro.MaterialCodigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 634505429448666,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 590047230114177
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 219202844926093,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "cobre"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 507569155174711,
+					"parameters": {
+						"first-value": "QualMaterial",
+						"comparison": 0,
+						"second-value": "Ferro.MaterialCodigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 755556361589636,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 178459784364396
+		}
+	],
+	"sid": 524867988248230
+}

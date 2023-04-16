@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 803271901071701,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "TesteTesteApagarDepois",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 573104445157083
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

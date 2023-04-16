@@ -208,7 +208,9 @@
 						"live-preview": false
 					},
 					"uid": 20,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TesteTesteApagarDepois": 3
+					},
 					"behaviors": {},
 					"world": {
 						"x": 155,
@@ -466,7 +468,9 @@
 						"live-preview": false
 					},
 					"uid": 96,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"MaterialCodigo": 4
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -1073,8 +1077,8 @@
 						}
 					},
 					"world": {
-						"x": 835,
-						"y": 257,
+						"x": 833.6109338785802,
+						"y": 256.8201641928506,
 						"width": 70.25806451612902,
 						"height": 66,
 						"originX": 0.4090909090909091,

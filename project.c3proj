@@ -262,7 +262,8 @@
 			"EV_Quarto",
 			"EV_Util",
 			"EV_UtilMiniGames",
-			"EV_MenuPrincipal"
+			"EV_MenuPrincipal",
+			"EV_Pedidos"
 		],
 		"subfolders": []
 	},
