@@ -36,6 +36,26 @@
 			"sid": 326064193654310
 		},
 		{
+			"eventType": "variable",
+			"name": "PedidoAceito",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 996246572718793
+		},
+		{
+			"eventType": "variable",
+			"name": "PedidoNegado",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 744681309705597
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -57,7 +77,8 @@
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 286589638754417
+					"sid": 286589638754417,
+					"disabled": true
 				},
 				{
 					"id": "set-eventvar-value",
@@ -396,6 +417,10 @@
 									"sid": 160244077648638
 								},
 								{
+									"eventType": "comment",
+									"text": "ARRUMAR ESSA BOSTA AQUI NAO FUNCIONA"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -409,10 +434,11 @@
 										{
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
-											"sid": 290653782033998,
+											"sid": 151023771776516,
+											"disabled": true,
 											"parameters": {
 												"comparison": 3,
-												"y-co-ordinate": "-40"
+												"y-co-ordinate": "20"
 											},
 											"isInverted": true
 										}
@@ -421,7 +447,7 @@
 										{
 											"id": "move-to-position",
 											"objectClass": "TextoCarta",
-											"sid": 267743547556918,
+											"sid": 397189228005929,
 											"behaviorType": "MoveTo",
 											"parameters": {
 												"x": "TextoCarta.X",
@@ -447,6 +473,7 @@
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
 											"sid": 246999160911217,
+											"disabled": true,
 											"parameters": {
 												"comparison": 5,
 												"y-co-ordinate": "250"
@@ -458,11 +485,11 @@
 										{
 											"id": "move-to-position",
 											"objectClass": "TextoCarta",
-											"sid": 453711755282609,
+											"sid": 958166340302146,
 											"behaviorType": "MoveTo",
 											"parameters": {
 												"x": "TextoCarta.X",
-												"y": "TextoCarta.Y + velocidadeMovimentoCarta",
+												"y": "TextoCarta.Y +velocidadeMovimentoCarta",
 												"mode": "direct"
 											}
 										}
@@ -660,6 +687,24 @@
 												"layer": "\"cartaContainer\"",
 												"visibility": "invisible"
 											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 401271983743541,
+											"parameters": {
+												"variable": "PedidoNegado",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 857846735064634,
+											"parameters": {
+												"variable": "NumeroCartaNegada",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 468798808450418
@@ -679,6 +724,24 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 499042669694667,
+											"parameters": {
+												"variable": "PedidoAceito",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 290482899028692,
+											"parameters": {
+												"variable": "NumeroCarta",
+												"value": "1"
+											}
+										},
 										{
 											"id": "play",
 											"objectClass": "Audio",

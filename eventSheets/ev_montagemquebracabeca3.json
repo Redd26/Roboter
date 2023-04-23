@@ -907,6 +907,27 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 966426431612216
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 989415259703235,
+					"parameters": {
+						"tag": "\"musicaConstrucao\""
+					}
+				}
+			],
+			"sid": 651122568400329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 506123707844157,
@@ -919,6 +940,15 @@
 			],
 			"actions": [
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 345152560860891,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "1"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 302691415859469,
@@ -928,27 +958,6 @@
 				}
 			],
 			"sid": 188660424504055
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-end-of-layout",
-					"objectClass": "System",
-					"sid": 673491015142005
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 667589242904577,
-					"parameters": {
-						"tag": "\"musicaConstrucao\""
-					}
-				}
-			],
-			"sid": 921648166550024
 		}
 	],
 	"sid": 573301943181991

@@ -592,6 +592,10 @@
 			"sid": 828232998051096
 		},
 		{
+			"eventType": "comment",
+			"text": "ARRUMAR ESSA OUTRA BOSTA AQUI NÃO FUNCIONA"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -617,16 +621,17 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 722607928372053,
+					"sid": 649319804141890,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y - velocidadeMovimentoCarta",
+						"y": "TextoCarta.Y+80",
 						"mode": "direct"
 					}
 				}
 			],
-			"sid": 297987941976899
+			"sid": 297987941976899,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -654,16 +659,17 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 725038648244318,
+					"sid": 127032725447169,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y + velocidadeMovimentoCarta",
+						"y": "TextoCarta.Y - 100",
 						"mode": "direct"
 					}
 				}
 			],
-			"sid": 424734108295030
+			"sid": 424734108295030,
+			"disabled": true
 		},
 		{
 			"eventType": "block",

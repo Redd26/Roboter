@@ -12,6 +12,16 @@
 			"sid": 974772511596750
 		},
 		{
+			"eventType": "variable",
+			"name": "NumeroCartaNegada",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 664898974903095
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -38,11 +48,100 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 567215587905802,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 742178942415321,
+					"parameters": {
+						"variable": "PedidoAceito"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 912457814908976,
+					"parameters": {
+						"variable": "QualMaterial",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 264255702617055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 310977687905558,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TextoCarta",
+					"sid": 516212305561957,
+					"parameters": {
+						"animation": "\"Pedido01Carta\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 535627981137510
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 694563001099269,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TextoCarta",
+					"sid": 988736141477959,
+					"parameters": {
+						"animation": "\"Pedido02Carta\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 857131286164184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-animation-playing",
 					"objectClass": "TextoCarta",
-					"sid": 335872623229008,
+					"sid": 667908315331901,
 					"parameters": {
-						"animation": "\"Animation 1\""
+						"animation": "\"Pedido01Carta\""
 					}
 				}
 			],
@@ -57,7 +156,8 @@
 					}
 				}
 			],
-			"sid": 535179064018091
+			"sid": 535179064018091,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -84,7 +184,8 @@
 					}
 				}
 			],
-			"sid": 399126828096438
+			"sid": 399126828096438,
+			"disabled": true
 		},
 		{
 			"eventType": "block",

@@ -205,7 +205,8 @@
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 547705563647070
+					"sid": 547705563647070,
+					"disabled": true
 				},
 				{
 					"id": "play",

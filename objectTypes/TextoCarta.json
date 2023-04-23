@@ -40,12 +40,70 @@
 					}
 				],
 				"sid": 403843399127120,
-				"name": "Animation 1",
+				"name": "Pedido01Carta",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 562,
+						"height": 682,
+						"originX": 0.5,
+						"originY": 0.3411420204978038,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 299892,
+						"collisionPoly": {
+							"points": [
+								0.017793594306049824,
+								0.004398826979472141,
+								1,
+								0,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 322803753894944,
+				"name": "Pedido02Carta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 574,
+						"height": 879,
+						"originX": 0.5,
+						"originY": 0.3411420204978038,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6989211,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 789784830748314,
+				"name": "Pedido03Carta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []
