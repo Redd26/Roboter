@@ -1,0 +1,37 @@
+{
+	"name": "FitaDaSerra",
+	"plugin-id": "Sprite",
+	"sid": 622981620282473,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 202,
+						"originX": -1.108695652173913,
+						"originY": 0.400990099009901,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4883746,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 318493949624491,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

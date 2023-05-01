@@ -274,7 +274,7 @@
 						{
 							"id": "cursor-is-over-object",
 							"objectClass": "Mouse",
-							"sid": 795223293359895,
+							"sid": 529440934998101,
 							"parameters": {
 								"object": "BotaoCima"
 							}
@@ -282,7 +282,7 @@
 						{
 							"id": "mouse-button-is-down",
 							"objectClass": "Mouse",
-							"sid": 901594888289670,
+							"sid": 910452755257850,
 							"parameters": {
 								"mouse-button": "left"
 							}
@@ -290,7 +290,7 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 419099175817314,
+							"sid": 680696088891791,
 							"parameters": {
 								"variable": "ChapaAndar"
 							}
@@ -300,14 +300,45 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 410716060649618,
+							"sid": 766364790088530,
 							"parameters": {
 								"variable": "ChapaSubir",
 								"value": "true"
 							}
 						}
 					],
-					"sid": 586963757189022
+					"sid": 591020492191616
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 510709420413843
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Serra",
+							"sid": 328098496067303,
+							"parameters": {
+								"comparison": 3,
+								"y-co-ordinate": "285"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 730647364123153,
+							"parameters": {
+								"variable": "ChapaSubir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 974612881283361
 				},
 				{
 					"eventType": "block",
@@ -390,6 +421,37 @@
 						}
 					],
 					"sid": 997269976530855
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 361409898281059
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Serra",
+							"sid": 537978593207580,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "425"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 851395426900346,
+							"parameters": {
+								"variable": "ChapaDescer",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 862575381914013
 				},
 				{
 					"eventType": "block",
@@ -567,10 +629,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "ProximoLevel",
-					"sid": 787185305206999,
+					"sid": 894098991591327,
 					"parameters": {
-						"x": "1094",
-						"y": "526"
+						"x": "1095",
+						"y": "239"
 					}
 				}
 			],

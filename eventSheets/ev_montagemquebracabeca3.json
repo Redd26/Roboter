@@ -61,7 +61,7 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "Debug",
+					"objectClass": "AcertouDebug",
 					"sid": 347960441609524,
 					"parameters": {
 						"text": "pecaPosicaoXOriginal & \";\" & pecaPosicaoYOriginal"

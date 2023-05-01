@@ -162,15 +162,15 @@
 			"CaixaLadoBaixoHitbox",
 			"CaixaLadoDireitoHitbox",
 			"CaixaLadoEsquerdoHitBox",
-			"TesterButton",
-			"TesterText",
+			"BotaoDeIniciarEmpacotar",
+			"ContadorDosBrilhosEmpacotar",
 			"BotaoIniciarCorte",
 			"BotaoCima",
 			"BotaoBaixo",
 			"ChapaFerro",
 			"LinhaCortar",
 			"Serra",
-			"Debug",
+			"AcertouDebug",
 			"Mascara",
 			"objeto",
 			"Camada",
@@ -195,7 +195,10 @@
 			"MaterialCobreDestruir",
 			"MaterialViridisDestruir",
 			"MaterialEritroDestruir",
-			"ApagadorDasCoisas"
+			"ApagadorDasCoisas",
+			"FitaDaSerra",
+			"ErrouDebug",
+			"CaixaMontadaDebug"
 		],
 		"subfolders": [
 			{
