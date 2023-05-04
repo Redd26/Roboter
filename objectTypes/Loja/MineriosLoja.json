@@ -1,29 +1,35 @@
 {
-	"name": "paraFimDeTestes",
+	"name": "MineriosLoja",
 	"plugin-id": "Sprite",
-	"sid": 676397400136220,
+	"sid": 730604064470499,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 822188822915436
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 60,
-						"height": 60,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 106,
+						"height": 162,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9243846,
+						"imageSpriteId": 6497708,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 517619264146946,
+				"sid": 598797252025799,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

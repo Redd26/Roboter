@@ -1,7 +1,7 @@
 {
-	"name": "Checker",
+	"name": "CaixaCorreiosLoja",
 	"plugin-id": "Sprite",
-	"sid": 612869088487665,
+	"sid": 947195191851882,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,31 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 34,
-						"height": 34,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 62,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3902064,
-						"collisionPoly": {
-							"points": [
-								0.029411764705882353,
-								0.029411764705882353,
-								0.9705882352941176,
-								0.029411764705882353,
-								0.9705882352941176,
-								0.9705882352941176,
-								0.029411764705882353,
-								0.9705882352941176
-							]
-						},
+						"imageSpriteId": 7603600,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 182521899728243,
+				"sid": 948835405653993,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

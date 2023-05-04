@@ -219,6 +219,14 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"musicaConstrucao\""
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 479391148145953,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 251756401202845
@@ -3607,18 +3615,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 443131061472568,
-					"parameters": {
-						"mouse-button": "right",
-						"click-type": "clicked",
-						"object-clicked": "paraFimDeTestes"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "reset-global-variables",

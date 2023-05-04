@@ -1,35 +1,29 @@
 {
-	"name": "Peca_7",
+	"name": "PauseFundo2",
 	"plugin-id": "Sprite",
-	"sid": 237150436507501,
+	"sid": 751071268165471,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "CV_BoundedDragnDrop",
-			"name": "BoundedDragDrop",
-			"sid": 636125158882445
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 150,
-						"height": 150,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4793234,
+						"imageSpriteId": 4525472,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 842697299321847,
+				"sid": 406196921031107,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

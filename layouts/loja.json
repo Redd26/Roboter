@@ -23,12 +23,12 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 0,
-								"y": 160,
+								"x": -1.105340680440026,
+								"y": 159.00932167378005,
 								"width": 1282,
 								"height": 562,
-								"originX": 0.001558845505146259,
-								"originY": 0.00405896581856866,
+								"originX": 0,
+								"originY": 0,
 								"color": [
 									1,
 									1,
@@ -36,6 +36,417 @@
 									1
 								],
 								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BarreiraDaParede",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 158,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 639.6956499478638,
+								"y": 276.0410965956889,
+								"width": 1291.345186280222,
+								"height": 231.74260391462093,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "FornoCenarioLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 159,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 878.9001361155106,
+								"y": 170.9974078854397,
+								"width": 374,
+								"height": 298,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "CaixaCorreiosLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 160,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 590.8899459867727,
+								"y": 311.03015214201884,
+								"width": 62,
+								"height": 54,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "PrateleirasLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 161,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 570.8610213478902,
+								"y": 207.0397134696773,
+								"width": 266,
+								"height": 138,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "ArCondicionadoLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 162,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 18.905984057754836,
+								"y": 187.05301322823772,
+								"width": 234,
+								"height": 214,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "RestosRobosLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 163,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 30.87517388940922,
+								"y": 411.01643380979897,
+								"width": 110,
+								"height": 270,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BauLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 164,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 270.8821965563645,
+								"y": 352.000514003048,
+								"width": 114,
+								"height": 102,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "TapeteLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 165,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 154.88668487032197,
+								"y": 655.0315686756978,
+								"width": 106,
+								"height": 46,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "MineriosLoja",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 166,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 1154.904436657276,
+								"y": 542.9842082378344,
+								"width": 106,
+								"height": 162,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BarreiraDaParede",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 167,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 640.2642129414678,
+								"y": 730.5015148230398,
+								"width": 1300.9118241019862,
+								"height": 80.234857443316,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BarreiraDaParede",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 168,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": 1298.7192928622317,
+								"y": 376.7381920123355,
+								"width": 792.9118241019862,
+								"height": 61.74260391462093,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 1.5707963267948966,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "BarreiraDaParede",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 169,
+							"instanceVariables": {},
+							"behaviors": {
+								"Solid": {
+									"properties": {
+										"enabled": true,
+										"tags": ""
+									}
+								}
+							},
+							"world": {
+								"x": -18.986805629050025,
+								"y": 375.00944639013164,
+								"width": 792.9118241019862,
+								"height": 61.74260391462093,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 1.5707963267948966,
 								"zElevation": 0
 							}
 						}
@@ -71,35 +482,6 @@
 			],
 			"instances": [
 				{
-					"type": "Personagem",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 696,
-						"y": 416,
-						"width": 96,
-						"height": 136,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Porta",
 					"properties": {
 						"initially-visible": true,
@@ -128,12 +510,12 @@
 						}
 					},
 					"world": {
-						"x": 492,
-						"y": 329,
-						"width": 119,
-						"height": 160,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 430.46077251273897,
+						"y": 246.86860328997437,
+						"width": 122,
+						"height": 162,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -174,6 +556,53 @@
 					}
 				},
 				{
+					"type": "Personagem",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 696,
+						"y": 416,
+						"width": 96,
+						"height": 136,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "MesaOficina",
 					"properties": {
 						"initially-visible": true,
@@ -184,7 +613,14 @@
 					},
 					"uid": 11,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"effects": {
 						"BetterOutline": {
 							"isEnabled": false,
@@ -202,8 +638,8 @@
 						}
 					},
 					"world": {
-						"x": 347.3938510098902,
-						"y": 507.94130092722787,
+						"x": 346.88503080010094,
+						"y": 507.0133099286414,
 						"width": 710,
 						"height": 194,
 						"originX": 0,
@@ -215,7 +651,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
 					}
 				}
 			],
@@ -265,7 +701,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 69.91705231440937,
+						"x": 1211.917052,
 						"y": 71.27073692139763,
 						"width": 64,
 						"height": 64,

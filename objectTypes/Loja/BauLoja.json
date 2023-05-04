@@ -1,29 +1,35 @@
 {
-	"name": "PortaQuarto",
+	"name": "BauLoja",
 	"plugin-id": "Sprite",
-	"sid": 844478087697723,
+	"sid": 268429503535857,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 395648929761903
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 114,
+						"height": 102,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4663048,
+						"imageSpriteId": 7634549,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 425956566477927,
+				"sid": 769565874660281,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

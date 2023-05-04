@@ -1,55 +1,50 @@
 {
-	"name": "MesaOficina",
+	"name": "ArCondicionadoLoja",
 	"plugin-id": "Sprite",
-	"sid": 774695869404561,
+	"sid": 188704853072244,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [
+	"behaviorTypes": [
 		{
-			"effectId": "skymen_BetterOutline",
-			"name": "BetterOutline"
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 328211034390431
 		}
 	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 710,
-						"height": 194,
+						"width": 234,
+						"height": 214,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5581607,
+						"imageSpriteId": 8253811,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
-								0.4275753695728086,
+								0.04368462340670999,
 								0,
 								1,
 								0,
 								1,
-								0,
-								1,
-								1,
-								0.4275753695728086,
-								1,
-								0,
-								1,
-								0,
-								0
+								0.8943925304947611,
+								0.6595442030164929,
+								0.8894081234560577,
+								0.09829062002676509,
+								0.8341121614165021
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 461463791446556,
-				"name": "idle",
+				"sid": 174488482406265,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

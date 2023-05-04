@@ -1,29 +1,35 @@
 {
-	"name": "Balcao",
+	"name": "FornoCenarioLoja",
 	"plugin-id": "Sprite",
-	"sid": 466109559281486,
+	"sid": 352335218055943,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 662536701185265
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 374,
+						"height": 298,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8387386,
+						"imageSpriteId": 4047324,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 488101199420071,
+				"sid": 510474651859014,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

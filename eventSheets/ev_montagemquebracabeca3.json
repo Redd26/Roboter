@@ -89,6 +89,14 @@
 						"variable": "totalQuebraCabecaPecas",
 						"value": "QuebraCabecaPecas.Count"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 282476653680753,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 269853752494714

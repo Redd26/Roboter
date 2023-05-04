@@ -123,6 +123,14 @@
 						"layer": "\"empacotarHitLayer\"",
 						"interactive": false
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 296332927185768,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 300847618022108

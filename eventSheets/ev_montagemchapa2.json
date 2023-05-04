@@ -63,6 +63,14 @@
 						"height-type": "no",
 						"z": false
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 729381348303423,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 718301532446357

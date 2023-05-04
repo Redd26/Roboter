@@ -65,6 +65,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fader",
 			"name": "Fader",
 			"author": "Colludium",
@@ -93,6 +100,13 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
 			"name": "BetterOutline",
@@ -104,101 +118,9 @@
 	"uniqueId": "ou7yo4zwtj7",
 	"objectTypes": {
 		"items": [
-			"Balcao",
 			"Mouse",
-			"Personagem",
-			"PortaQuarto",
-			"RelogioDiaNoite",
-			"MesaOficina",
-			"Mesa",
-			"SeletorMaterialBandeja",
-			"FerroDescricao",
-			"OuroDescricao",
-			"MaterialFerroDestruir",
-			"Intro",
-			"ExplicacaoOuro",
-			"ExplicacaoFerro",
-			"Martelo",
-			"CabecaCortaPao",
-			"PescocoCortaPao",
-			"EsquerdaMeioCortaPao",
-			"DireitaMeioCortaPao",
-			"CabecaCortaPaoColisao",
-			"DireitaMeioCortaPaoColisao",
-			"PescocoCortaPaoColisao",
-			"Peca_7",
-			"EsquerdaMeioCortaPaoColisao",
-			"CortarChapa",
-			"ProximoLevel",
-			"Carta",
-			"BotaoAceitar",
-			"BotaoRecusar",
-			"Fundo",
-			"PauseIcone",
-			"Porta",
-			"FundoOficina",
-			"QuartoFundo",
-			"SeletorMaterialPuxador",
-			"HitPoint",
-			"Logo",
-			"ouro",
-			"telaDeMenu",
-			"MenuPrincipalCanvas",
-			"CreditosMenuPrincipalCanvas",
-			"botaoVoltar",
-			"TelaCreditos",
-			"CenarioQuarto",
-			"quartoSaida",
-			"CenarioDosMiniGames",
-			"viridisOre",
-			"Ferro",
-			"Eritro",
-			"cobre",
-			"ViridisDescricao",
-			"CobreDescricao",
-			"EritroDescricao",
-			"CaixaEmpacotar",
-			"CaixaLadoCimaHitBox",
-			"CaixaLadoBaixoHitbox",
-			"CaixaLadoDireitoHitbox",
-			"CaixaLadoEsquerdoHitBox",
-			"BotaoDeIniciarEmpacotar",
-			"ContadorDosBrilhosEmpacotar",
-			"BotaoIniciarCorte",
-			"BotaoCima",
-			"BotaoBaixo",
-			"ChapaFerro",
-			"LinhaCortar",
-			"Serra",
-			"AcertouDebug",
-			"Mascara",
-			"objeto",
-			"Camada",
-			"Apagador",
-			"Checker",
-			"SimpleText",
-			"TextoCarta",
-			"CartaMascara",
 			"Browser",
-			"CartaMascaraRedonad",
-			"CortaPaoSombra",
-			"BaseCortaPaoColisao",
-			"BaseCortaPao",
-			"ApagadorSerra",
-			"Colisor",
-			"ApagarChapa",
-			"Audio",
-			"MaterialOuroDestruir",
-			"SombraMArtelo",
-			"HitBoxMaterialDestruir",
-			"paraFimDeTestes",
-			"MaterialCobreDestruir",
-			"MaterialViridisDestruir",
-			"MaterialEritroDestruir",
-			"ApagadorDasCoisas",
-			"FitaDaSerra",
-			"ErrouDebug",
-			"CaixaMontadaDebug"
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -207,7 +129,8 @@
 					"PauseTexto",
 					"VoltarMenuTexto",
 					"OpcoesTexto",
-					"RetornarTexto"
+					"RetornarTexto",
+					"PauseFundo2"
 				],
 				"subfolders": [],
 				"name": "Pause"
@@ -228,6 +151,142 @@
 				],
 				"subfolders": [],
 				"name": "Arrays"
+			},
+			{
+				"items": [
+					"ArCondicionadoLoja",
+					"BarreiraDaParede",
+					"BauLoja",
+					"CaixaCorreiosLoja",
+					"FornoCenarioLoja",
+					"FundoOficina",
+					"MesaOficina",
+					"MineriosLoja",
+					"Porta",
+					"PrateleirasLoja",
+					"RestosRobosLoja",
+					"TapeteLoja"
+				],
+				"subfolders": [],
+				"name": "Loja"
+			},
+			{
+				"items": [
+					"cobre",
+					"CobreDescricao",
+					"Eritro",
+					"EritroDescricao",
+					"Ferro",
+					"FerroDescricao",
+					"HitBoxMaterialDestruir",
+					"HitPoint",
+					"Martelo",
+					"MaterialCobreDestruir",
+					"MaterialEritroDestruir",
+					"MaterialFerroDestruir",
+					"MaterialOuroDestruir",
+					"MaterialViridisDestruir",
+					"ouro",
+					"OuroDescricao",
+					"SombraMArtelo",
+					"ViridisDescricao",
+					"viridisOre",
+					"SeletorMaterialBandeja",
+					"SeletorMaterialPuxador",
+					"ExplicacaoFerro",
+					"ExplicacaoOuro",
+					"Intro"
+				],
+				"subfolders": [],
+				"name": "MiniGameMinerio"
+			},
+			{
+				"items": [
+					"Apagador",
+					"ApagadorDasCoisas",
+					"ApagadorSerra",
+					"ApagarChapa",
+					"ChapaFerro",
+					"Colisor",
+					"CortarChapa",
+					"Serra",
+					"BotaoBaixo",
+					"BotaoCima",
+					"BotaoIniciarCorte",
+					"FitaDaSerra",
+					"LinhaCortar"
+				],
+				"subfolders": [],
+				"name": "MiniGameSerra"
+			},
+			{
+				"items": [
+					"BaseCortaPao",
+					"BaseCortaPaoColisao",
+					"CabecaCortaPao",
+					"CabecaCortaPaoColisao",
+					"CortaPaoSombra",
+					"DireitaMeioCortaPao",
+					"DireitaMeioCortaPaoColisao",
+					"EsquerdaMeioCortaPao",
+					"EsquerdaMeioCortaPaoColisao",
+					"PescocoCortaPao",
+					"PescocoCortaPaoColisao"
+				],
+				"subfolders": [],
+				"name": "MiniGameMontagem"
+			},
+			{
+				"items": [
+					"CaixaEmpacotar",
+					"CaixaLadoBaixoHitbox",
+					"CaixaLadoCimaHitBox",
+					"CaixaLadoDireitoHitbox",
+					"CaixaLadoEsquerdoHitBox",
+					"CaixaMontadaDebug",
+					"ContadorDosBrilhosEmpacotar",
+					"ErrouDebug",
+					"AcertouDebug",
+					"BotaoDeIniciarEmpacotar"
+				],
+				"subfolders": [],
+				"name": "MiniGameEmbalar"
+			},
+			{
+				"items": [
+					"BotaoAceitar",
+					"BotaoRecusar",
+					"botaoVoltar",
+					"Carta",
+					"CartaMascara",
+					"CartaMascaraRedonad",
+					"PauseIcone",
+					"ProximoLevel",
+					"RelogioDiaNoite",
+					"TextoCarta"
+				],
+				"subfolders": [],
+				"name": "HUD"
+			},
+			{
+				"items": [
+					"CenarioQuarto",
+					"quartoSaida"
+				],
+				"subfolders": [],
+				"name": "Quarto"
+			},
+			{
+				"items": [
+					"CenarioDosMiniGames",
+					"Personagem",
+					"TelaCreditos",
+					"telaDeMenu",
+					"CreditosMenuPrincipalCanvas",
+					"MenuPrincipalCanvas"
+				],
+				"subfolders": [],
+				"name": "ObjetosEmVariosLayout"
 			}
 		]
 	},
@@ -263,7 +322,7 @@
 			"EV_montagemChapa2",
 			"EV_montagemEmpacotar4",
 			"EV_Quarto",
-			"EV_Util",
+			"EV_Pause",
 			"EV_UtilMiniGames",
 			"EV_MenuPrincipal",
 			"EV_Pedidos"

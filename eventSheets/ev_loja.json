@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Util"
+			"includeSheet": "EV_Pause"
 		},
 		{
 			"eventType": "variable",
@@ -435,7 +435,6 @@
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
 											"sid": 151023771776516,
-											"disabled": true,
 											"parameters": {
 												"comparison": 3,
 												"y-co-ordinate": "20"
@@ -473,7 +472,6 @@
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
 											"sid": 246999160911217,
-											"disabled": true,
 											"parameters": {
 												"comparison": 5,
 												"y-co-ordinate": "250"

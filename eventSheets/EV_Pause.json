@@ -1,5 +1,5 @@
 {
-	"name": "EV_Util",
+	"name": "EV_Pause",
 	"events": [
 		{
 			"eventType": "block",
@@ -33,7 +33,6 @@
 					"id": "set-layer-interactive",
 					"objectClass": "System",
 					"sid": 746522353843443,
-					"disabled": true,
 					"parameters": {
 						"layer": "\"hud\"",
 						"interactive": true
@@ -43,7 +42,6 @@
 					"id": "set-layer-interactive",
 					"objectClass": "System",
 					"sid": 746443807406787,
-					"disabled": true,
 					"parameters": {
 						"layer": "\"game\"",
 						"interactive": false
@@ -149,7 +147,6 @@
 						}
 					],
 					"sid": 843009202411923,
-					"disabled": true,
 					"isOrBlock": true
 				},
 				{
@@ -176,7 +173,6 @@
 						}
 					],
 					"sid": 756118300092427,
-					"disabled": true,
 					"isOrBlock": true
 				}
 			],
@@ -271,7 +267,7 @@
 						{
 							"id": "set-opacity",
 							"objectClass": "PauseIcone",
-							"sid": 198587229618039,
+							"sid": 603638157887050,
 							"parameters": {
 								"opacity": "85"
 							}
@@ -393,9 +389,68 @@
 								"layer": "\"hud\"",
 								"interactive": false
 							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 645417832003194,
+							"parameters": {
+								"time-scale": "0"
+							}
 						}
 					],
 					"sid": 867116348393405
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 857408728688956,
+							"parameters": {
+								"layer": "\"pause\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 990871562753066,
+							"parameters": {
+								"group-name": "\"Desativar Layers\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 819964178957935
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 179346627896265,
+							"parameters": {
+								"layer": "\"pause\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 142478109748674,
+							"parameters": {
+								"group-name": "\"Desativar Layers\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 142299460041632
 				},
 				{
 					"eventType": "comment",
@@ -462,6 +517,14 @@
 							"parameters": {
 								"layer": "\"hud\"",
 								"interactive": true
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 314453900335937,
+							"parameters": {
+								"time-scale": "1"
 							}
 						}
 					],
@@ -728,6 +791,14 @@
 							"parameters": {
 								"layer": "\"hud\"",
 								"interactive": true
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 914505334663364,
+							"parameters": {
+								"time-scale": "1"
 							}
 						}
 					],

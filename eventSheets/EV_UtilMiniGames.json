@@ -91,7 +91,6 @@
 									"id": "set-angle",
 									"objectClass": "CartaMascara",
 									"sid": 371557841894737,
-									"disabled": true,
 									"parameters": {
 										"angle": "22.1"
 									}
@@ -630,8 +629,7 @@
 					}
 				}
 			],
-			"sid": 297987941976899,
-			"disabled": true
+			"sid": 297987941976899
 		},
 		{
 			"eventType": "block",
@@ -668,8 +666,7 @@
 					}
 				}
 			],
-			"sid": 424734108295030,
-			"disabled": true
+			"sid": 424734108295030
 		},
 		{
 			"eventType": "block",

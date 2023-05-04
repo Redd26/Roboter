@@ -1,7 +1,7 @@
 {
-	"name": "Mesa",
+	"name": "TapeteLoja",
 	"plugin-id": "Sprite",
-	"sid": 425396182086432,
+	"sid": 336944495515810,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 106,
+						"height": 46,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6775416,
+						"imageSpriteId": 975598,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 186946775031497,
+				"sid": 892526494285976,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,50 +1,53 @@
 {
-	"name": "QuartoFundo",
+	"name": "MesaOficina",
 	"plugin-id": "Sprite",
-	"sid": 276897268621417,
+	"sid": 774695869404561,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 310425985077310
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 710,
+						"height": 194,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 923844,
+						"imageSpriteId": 1876759,
 						"collisionPoly": {
 							"points": [
 								0,
-								0,
-								0.5,
-								0,
-								0.99921875,
-								0,
-								0.99921875,
-								0.5,
-								0.87421875,
-								0.7763888888888889,
-								0.5,
-								0.7763888888888889,
-								0.125,
-								0.7763888888888889,
-								0,
-								0.5
+								0.008247434478445153,
+								1,
+								0.013745713206637492,
+								0.99499215617053,
+								1,
+								0.006259780907668232,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 105399233129817,
-				"name": "Animation 1",
+				"sid": 461463791446556,
+				"name": "idle",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
