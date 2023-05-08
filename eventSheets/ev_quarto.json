@@ -78,6 +78,294 @@
 				}
 			],
 			"sid": 433129956956526
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MOVIMENTACAO DO PERSONAGEM QUARTO",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Trocar pro outro cenario"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 781664069569210,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "FundoOficina"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "Personagem",
+							"sid": 663991344071596,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 900431107727047,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Definir animação para esquerda"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Personagem",
+									"sid": 532018569027707,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "Mouse.X"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "Personagem",
+									"sid": 581789754985261,
+									"disabled": true,
+									"parameters": {
+										"comparison": 2,
+										"y-co-ordinate": "Mouse.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Personagem",
+									"sid": 643739500284535,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Personagem",
+									"sid": 470417828167217,
+									"disabled": true,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Personagem",
+									"sid": 888285468667582,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 587938608597264
+						},
+						{
+							"eventType": "comment",
+							"text": "Definir animação para baixo"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "Personagem",
+									"sid": 461304984751021,
+									"parameters": {
+										"comparison": 2,
+										"y-co-ordinate": "Mouse.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Personagem",
+									"sid": 504473983027837,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Personagem",
+									"sid": 908638976059211,
+									"disabled": true,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Personagem",
+									"sid": 708256649893220,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 879708577877909
+						},
+						{
+							"eventType": "comment",
+							"text": "Definir animação para direita"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "Personagem",
+									"sid": 140313956001152,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "Mouse.X"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "Personagem",
+									"sid": 922450507034465,
+									"disabled": true,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "Mouse.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Personagem",
+									"sid": 521327686909719,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Personagem",
+									"sid": 714906873235931,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Personagem",
+									"sid": 409931900241989,
+									"disabled": true,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 926918606417367
+						},
+						{
+							"eventType": "comment",
+							"text": "Definir animação para cima"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "Personagem",
+									"sid": 164362841622119,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "Mouse.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Personagem",
+									"sid": 289208967343706,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Personagem",
+									"sid": 642459315009747,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Personagem",
+									"sid": 117367258452436,
+									"disabled": true,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 133791041196440
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "voltar animação para idlle"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Personagem",
+							"sid": 610395200445554,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Personagem",
+							"sid": 763048134087964,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 104429306433300
+				}
+			],
+			"sid": 418336694693478
 		}
 	],
 	"sid": 319169129069670
