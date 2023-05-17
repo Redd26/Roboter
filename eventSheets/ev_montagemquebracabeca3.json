@@ -7,7 +7,7 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_UtilMiniGames"
+			"includeSheet": "EV_Carta"
 		},
 		{
 			"eventType": "variable",

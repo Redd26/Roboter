@@ -24,7 +24,30 @@
 					}
 				],
 				"sid": 948835405653993,
-				"name": "Animation 1",
+				"name": "IdleCorreio",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 70,
+						"height": 62,
+						"originX": -0.04285714285714286,
+						"originY": -0.04838709677419355,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4742145,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 297852169345123,
+				"name": "OutlneCorreio",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

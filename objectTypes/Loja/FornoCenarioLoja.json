@@ -30,7 +30,30 @@
 					}
 				],
 				"sid": 510474651859014,
-				"name": "Animation 1",
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 382,
+						"height": 302,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8153180,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 755581510716398,
+				"name": "Outline",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

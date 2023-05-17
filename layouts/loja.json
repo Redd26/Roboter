@@ -79,7 +79,7 @@
 							"type": "FornoCenarioLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "Idle",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -96,7 +96,7 @@
 							},
 							"world": {
 								"x": 878.9001361155106,
-								"y": 170.9974078854397,
+								"y": 164.9974078854397,
 								"width": 374,
 								"height": 298,
 								"originX": 0,
@@ -115,7 +115,7 @@
 							"type": "CaixaCorreiosLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "IdleCorreio",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -173,7 +173,7 @@
 							"type": "ArCondicionadoLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "Idle",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -209,7 +209,7 @@
 							"type": "RestosRobosLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "Idle",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -245,7 +245,7 @@
 							"type": "BauLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "Idle",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -310,7 +310,7 @@
 							"type": "MineriosLoja",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "IdleCaixa",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -556,64 +556,6 @@
 					}
 				},
 				{
-					"type": "Personagem",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 2",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-4",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 200,
-								"deceleration": 50,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 696,
-						"y": 416,
-						"width": 96,
-						"height": 136,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "MesaOficina",
 					"properties": {
 						"initially-visible": true,
@@ -650,11 +592,58 @@
 					},
 					"world": {
 						"x": 346.88503080010094,
-						"y": 507.0133099286414,
+						"y": 512.0133099286413,
 						"width": 710,
 						"height": 194,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Personagem",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IdleFrente",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 300,
+								"deceleration": 500,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 696,
+						"y": 416,
+						"width": 96,
+						"height": 136,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -872,21 +861,6 @@
 								"Pin": {
 									"properties": {
 										"destroy": false
-									}
-								},
-								"BoundedDragDrop": {
-									"properties": {
-										"axes": "vertical only",
-										"initial-state": "enabled",
-										"bound-to": "position",
-										"bound-by": "edge",
-										"bound-method": "clamp",
-										"bound-xradius": 100,
-										"bound-yradius": 100,
-										"bound-min-x": 0,
-										"bound-max-x": 0,
-										"bound-min-y": -270,
-										"bound-max-y": 814
 									}
 								},
 								"MoveTo": {

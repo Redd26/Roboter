@@ -9,21 +9,28 @@
 		{
 			"type": "plugin",
 			"id": "Arr",
-			"name": "Matriz",
+			"name": "Array",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Audio",
-			"name": "Áudio",
+			"name": "Audio",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Browser",
-			"name": "Navegador",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -44,21 +51,21 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Projétil",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "CV_BoundedDragnDrop",
-			"name": "[Bounded Drag & Drop]",
+			"name": "Bounded Drag & Drop",
 			"author": "Chadori",
 			"bundled": false,
 			"version": "3.1.1.2"
@@ -66,14 +73,14 @@
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Direções",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Fader",
-			"name": "[Fader]",
+			"name": "Fader",
 			"author": "Colludium",
 			"bundled": false,
 			"version": "1.0.0.0"
@@ -81,35 +88,35 @@
 		{
 			"type": "behavior",
 			"id": "MoveTo",
-			"name": "Mover Para",
+			"name": "Move To",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Atrelar",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "bound",
-			"name": "Restrito ao layout",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "skymen_BetterOutline",
-			"name": "[BetterOutline]",
+			"name": "BetterOutline",
 			"author": "skymen",
 			"bundled": false,
 			"version": "1.4.0.3"
@@ -120,7 +127,8 @@
 		"items": [
 			"Mouse",
 			"Browser",
-			"Audio"
+			"Audio",
+			"Keyboard"
 		],
 		"subfolders": [
 			{
@@ -271,7 +279,18 @@
 			{
 				"items": [
 					"CenarioQuarto",
-					"quartoSaida"
+					"quartoSaida",
+					"ArCondicionadoQuarto",
+					"CamaQuarto",
+					"JanelaQuarto",
+					"EscrivaninhaQuarto",
+					"EstanteDeLivrosQuarto",
+					"MesaPlantas",
+					"Robozao",
+					"tapeteQuarto",
+					"MesaDeEstudos",
+					"MesaDeCama",
+					"ObjetoAmaldicoado"
 				],
 				"subfolders": [],
 				"name": "Quarto"
@@ -323,9 +342,11 @@
 			"EV_montagemEmpacotar4",
 			"EV_Quarto",
 			"EV_Pause",
-			"EV_UtilMiniGames",
+			"EV_Carta",
 			"EV_MenuPrincipal",
-			"EV_Pedidos"
+			"EV_Pedidos",
+			"EV_Movimentacao",
+			"EV_Outlines"
 		],
 		"subfolders": []
 	},

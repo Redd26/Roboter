@@ -1365,21 +1365,6 @@
 								"destroy": false
 							}
 						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "enabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 0,
-								"bound-max-x": 0,
-								"bound-min-y": 0,
-								"bound-max-y": 0
-							}
-						},
 						"MoveTo": {
 							"properties": {
 								"max-speed": 400,

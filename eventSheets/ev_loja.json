@@ -6,6 +6,10 @@
 			"includeSheet": "EV_Pause"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Movimentacao"
+		},
+		{
 			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
@@ -417,10 +421,6 @@
 									"sid": 160244077648638
 								},
 								{
-									"eventType": "comment",
-									"text": "ARRUMAR ESSA BOSTA AQUI NAO FUNCIONA"
-								},
-								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -434,10 +434,10 @@
 										{
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
-											"sid": 151023771776516,
+											"sid": 725895019525243,
 											"parameters": {
-												"comparison": 3,
-												"y-co-ordinate": "20"
+												"comparison": 5,
+												"y-co-ordinate": "300"
 											},
 											"isInverted": true
 										}
@@ -446,11 +446,11 @@
 										{
 											"id": "move-to-position",
 											"objectClass": "TextoCarta",
-											"sid": 397189228005929,
+											"sid": 183913606214871,
 											"behaviorType": "MoveTo",
 											"parameters": {
 												"x": "TextoCarta.X",
-												"y": "TextoCarta.Y - velocidadeMovimentoCarta",
+												"y": "TextoCarta.Y+80",
 												"mode": "direct"
 											}
 										}
@@ -463,7 +463,7 @@
 										{
 											"id": "on-mouse-wheel",
 											"objectClass": "Mouse",
-											"sid": 904142411543394,
+											"sid": 392102881259276,
 											"parameters": {
 												"direction": "down"
 											}
@@ -471,10 +471,10 @@
 										{
 											"id": "compare-y",
 											"objectClass": "TextoCarta",
-											"sid": 246999160911217,
+											"sid": 104081182392809,
 											"parameters": {
-												"comparison": 5,
-												"y-co-ordinate": "250"
+												"comparison": 3,
+												"y-co-ordinate": "20"
 											},
 											"isInverted": true
 										}
@@ -483,16 +483,16 @@
 										{
 											"id": "move-to-position",
 											"objectClass": "TextoCarta",
-											"sid": 958166340302146,
+											"sid": 523122870006671,
 											"behaviorType": "MoveTo",
 											"parameters": {
 												"x": "TextoCarta.X",
-												"y": "TextoCarta.Y +velocidadeMovimentoCarta",
+												"y": "TextoCarta.Y-80",
 												"mode": "direct"
 											}
 										}
 									],
-									"sid": 117619772843877
+									"sid": 383649777774580
 								},
 								{
 									"eventType": "block",
@@ -942,290 +942,6 @@
 				}
 			],
 			"sid": 139097181798489
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "MOVIMENTACAO DO PERSONAGEM",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 761716182606711,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "FundoOficina"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "move-to-position",
-							"objectClass": "Personagem",
-							"sid": 669840985144607,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y",
-								"mode": "direct"
-							}
-						}
-					],
-					"sid": 358419964196612,
-					"children": [
-						{
-							"eventType": "comment",
-							"text": "Definir animação para esquerda"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-x",
-									"objectClass": "Personagem",
-									"sid": 703086978598174,
-									"parameters": {
-										"comparison": 2,
-										"x-co-ordinate": "Mouse.X"
-									}
-								},
-								{
-									"id": "compare-y",
-									"objectClass": "Personagem",
-									"sid": 114602256753185,
-									"disabled": true,
-									"parameters": {
-										"comparison": 2,
-										"y-co-ordinate": "Mouse.Y"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Personagem",
-									"sid": 560162387165264,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"control": "left"
-									}
-								},
-								{
-									"id": "set-mirrored",
-									"objectClass": "Personagem",
-									"sid": 645004816713764,
-									"disabled": true,
-									"parameters": {
-										"state": "mirrored"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Personagem",
-									"sid": 900581122623012,
-									"disabled": true,
-									"parameters": {
-										"animation": "\"Animation 1\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 531172916864815
-						},
-						{
-							"eventType": "comment",
-							"text": "Definir animação para baixo"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-y",
-									"objectClass": "Personagem",
-									"sid": 739567283613947,
-									"parameters": {
-										"comparison": 2,
-										"y-co-ordinate": "Mouse.Y"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Personagem",
-									"sid": 970375842983194,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"control": "down"
-									}
-								},
-								{
-									"id": "set-mirrored",
-									"objectClass": "Personagem",
-									"sid": 322288748424339,
-									"disabled": true,
-									"parameters": {
-										"state": "mirrored"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Personagem",
-									"sid": 427693099046251,
-									"disabled": true,
-									"parameters": {
-										"animation": "\"Animation 1\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 259798629827947
-						},
-						{
-							"eventType": "comment",
-							"text": "Definir animação para direita"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-x",
-									"objectClass": "Personagem",
-									"sid": 909426665678827,
-									"parameters": {
-										"comparison": 4,
-										"x-co-ordinate": "Mouse.X"
-									}
-								},
-								{
-									"id": "compare-y",
-									"objectClass": "Personagem",
-									"sid": 430975568094226,
-									"disabled": true,
-									"parameters": {
-										"comparison": 4,
-										"y-co-ordinate": "Mouse.Y"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Personagem",
-									"sid": 954947125888805,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"control": "right"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Personagem",
-									"sid": 332706157253829,
-									"disabled": true,
-									"parameters": {
-										"animation": "\"Animation 1\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-mirrored",
-									"objectClass": "Personagem",
-									"sid": 460506459501650,
-									"disabled": true,
-									"parameters": {
-										"state": "mirrored"
-									}
-								}
-							],
-							"sid": 281274574467134
-						},
-						{
-							"eventType": "comment",
-							"text": "Definir animação para cima"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-y",
-									"objectClass": "Personagem",
-									"sid": 901063661010640,
-									"parameters": {
-										"comparison": 4,
-										"y-co-ordinate": "Mouse.Y"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
-									"objectClass": "Personagem",
-									"sid": 903461058742235,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"control": "up"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Personagem",
-									"sid": 302482469530821,
-									"disabled": true,
-									"parameters": {
-										"animation": "\"Animation 1\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-mirrored",
-									"objectClass": "Personagem",
-									"sid": 492391944010572,
-									"disabled": true,
-									"parameters": {
-										"state": "mirrored"
-									}
-								}
-							],
-							"sid": 368878050137306
-						}
-					]
-				},
-				{
-					"eventType": "comment",
-					"text": "voltar animação para idlle"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-arrived",
-							"objectClass": "Personagem",
-							"sid": 130677475370764,
-							"behaviorType": "MoveTo"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Personagem",
-							"sid": 873082129784928,
-							"parameters": {
-								"animation": "\"Animation 2\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 118014939876887
-				}
-			],
-			"sid": 679104595581766
 		}
 	],
 	"sid": 876358280105904

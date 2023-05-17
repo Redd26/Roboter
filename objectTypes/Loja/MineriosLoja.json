@@ -30,7 +30,30 @@
 					}
 				],
 				"sid": 598797252025799,
-				"name": "Animation 1",
+				"name": "IdleCaixa",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 114,
+						"height": 170,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9367756,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 321213171456609,
+				"name": "Outline",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

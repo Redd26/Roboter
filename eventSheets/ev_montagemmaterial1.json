@@ -177,11 +177,15 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_UtilMiniGames"
+			"includeSheet": "EV_Carta"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "EV_Pedidos"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Pause"
 		},
 		{
 			"eventType": "block",
@@ -196,9 +200,9 @@
 				{
 					"id": "set-layer-interactive",
 					"objectClass": "System",
-					"sid": 862598830636640,
+					"sid": 691657356055818,
 					"parameters": {
-						"layer": "\"cartas\"",
+						"layer": "\"cartaTexto\"",
 						"interactive": true
 					}
 				},
@@ -3352,11 +3356,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 541317571953610,
+							"sid": 681722532388356,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "35"
+								"second-value": "115"
 							}
 						},
 						{
@@ -3396,11 +3400,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 715356206715758,
+							"sid": 867512630562056,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "35"
+								"second-value": "115"
 							}
 						},
 						{
@@ -3440,11 +3444,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 828635984103047,
+							"sid": 162676304903295,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "35"
+								"second-value": "115"
 							}
 						},
 						{
@@ -3484,11 +3488,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 686120297916202,
+							"sid": 180694389706436,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "35"
+								"second-value": "115"
 							}
 						},
 						{
@@ -3528,11 +3532,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 189753312373545,
+							"sid": 936684289890393,
 							"parameters": {
 								"first-value": "Timer",
 								"comparison": 4,
-								"second-value": "35"
+								"second-value": "115"
 							}
 						},
 						{
@@ -3628,7 +3632,8 @@
 					"sid": 268345561186434
 				}
 			],
-			"sid": 963516503315469
+			"sid": 963516503315469,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3654,12 +3659,6 @@
 				}
 			],
 			"sid": 357272413518558
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 718217295963398
 		}
 	],
 	"sid": 162936259003711

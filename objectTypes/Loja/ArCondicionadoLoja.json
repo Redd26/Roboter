@@ -44,7 +44,44 @@
 					}
 				],
 				"sid": 174488482406265,
-				"name": "Animation 1",
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 240,
+						"height": 212,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5623075,
+						"collisionPoly": {
+							"points": [
+								0.04368462340670999,
+								0,
+								1,
+								0,
+								1,
+								0.8943925304947611,
+								0.6595442030164929,
+								0.8894081234560577,
+								0.09829062002676509,
+								0.8341121614165021
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 717452352336573,
+				"name": "Outline",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

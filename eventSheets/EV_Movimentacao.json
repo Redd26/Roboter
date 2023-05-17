@@ -1,0 +1,266 @@
+{
+	"name": "EV_Movimentacao",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 993903713329504,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Personagem",
+					"sid": 273326730704098,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 875849872738440,
+					"parameters": {
+						"animation": "\"WalkDireita\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 550780823949510
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 292957244608176,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Personagem",
+					"sid": 841046237941236,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 646634032282430,
+					"parameters": {
+						"animation": "\"WalkEsquerda\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 184780548230304
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 580020743349693,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Personagem",
+					"sid": 109042404056706,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 952638909052142,
+					"parameters": {
+						"animation": "\"WalkCima\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 409923898127748
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 628459490407056,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Personagem",
+					"sid": 316484938094490,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 637388371322701,
+					"parameters": {
+						"animation": "\"WalkBaixo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 258500052851179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 217510865285440,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Personagem",
+					"sid": 728263437809460,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 449605014946355,
+					"parameters": {
+						"animation": "\"IdleDireito\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 513883293664179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 942020817499876,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Personagem",
+					"sid": 881287211874368,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 284146093673403,
+					"parameters": {
+						"animation": "\"IdleEsquerdo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 936528605367349
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 780533130389737,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Personagem",
+					"sid": 973268354103568,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 192433862207125,
+					"parameters": {
+						"animation": "\"IdleCostas\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 529342264493703
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 566081770824480,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Personagem",
+					"sid": 576012439434813,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Personagem",
+					"sid": 513392285803772,
+					"parameters": {
+						"animation": "\"IdleFrente\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 587736022886352
+		}
+	],
+	"sid": 253642011600534
+}
