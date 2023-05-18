@@ -498,6 +498,176 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-y",
+											"objectClass": "TextoCarta",
+											"sid": 280786667381611,
+											"parameters": {
+												"comparison": 3,
+												"y-co-ordinate": "20"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 596288466220318,
+											"parameters": {
+												"variable": "PosicaoCarimbada"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 305551374405652,
+											"parameters": {
+												"variable": "PosicaoCarimbada",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 236220448651843
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-y",
+											"objectClass": "TextoCarta",
+											"sid": 723798909932220,
+											"parameters": {
+												"comparison": 5,
+												"y-co-ordinate": "50"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 240168167207463,
+											"parameters": {
+												"variable": "PosicaoCarimbada"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 429129775272489,
+											"parameters": {
+												"variable": "PosicaoCarimbada",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 571956035772604
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 665923549434029,
+											"parameters": {
+												"variable": "PosicaoCarimbada"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "CarimbadaAprovada",
+											"sid": 671879056877377,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CarimbadaNegada",
+											"sid": 254190960482956,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "CarimbadaNegada",
+											"sid": 979600743056432,
+											"parameters": {
+												"x": "480.01514",
+												"y": "568.152085"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "CarimbadaAprovada",
+											"sid": 702225096487157,
+											"parameters": {
+												"x": "807.954508",
+												"y": "567.117249"
+											}
+										}
+									],
+									"sid": 759195557002682
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 573024861811087,
+											"parameters": {
+												"variable": "PosicaoCarimbada"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "CarimbadaAprovada",
+											"sid": 611877142574236,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CarimbadaNegada",
+											"sid": 298342207900307,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "CarimbadaNegada",
+											"sid": 746451182433918,
+											"parameters": {
+												"x": "76",
+												"y": "1103"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "CarimbadaAprovada",
+											"sid": 334767349111058,
+											"parameters": {
+												"x": "805",
+												"y": "1117"
+											}
+										}
+									],
+									"sid": 581109149756632
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "cursor-is-over-object",
 											"objectClass": "Mouse",
 											"sid": 903442720950728,

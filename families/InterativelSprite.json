@@ -31,6 +31,7 @@
 		"PescocoCortaPao",
 		"EsquerdaMeioCortaPao",
 		"DireitaMeioCortaPao",
-		"BaseCortaPao"
+		"BaseCortaPao",
+		"SeletorMaterialPuxador2"
 	]
 }

@@ -32,6 +32,16 @@
 			"sid": 868183415816826
 		},
 		{
+			"eventType": "variable",
+			"name": "PosicaoCarimbada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 192333327441917
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Interação Carta",
@@ -738,6 +748,108 @@
 				}
 			],
 			"sid": 278696084668488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "TextoCarta",
+					"sid": 989316227557590,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 475535963082270,
+					"parameters": {
+						"variable": "PosicaoCarimbada",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 246006676770403
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "TextoCarta",
+					"sid": 530374356286499,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 706610468947977,
+					"parameters": {
+						"variable": "PosicaoCarimbada",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 119514060444078
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 870296098254400,
+					"parameters": {
+						"variable": "PosicaoCarimbada"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "CarimbadaNegada",
+					"sid": 925086358660324,
+					"parameters": {
+						"x": "480.01514",
+						"y": "568.152085"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CarimbadaAprovada",
+					"sid": 352734371445663,
+					"parameters": {
+						"x": "807.954508",
+						"y": "567.117249"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CarimbadaAprovada",
+					"sid": 644855584029635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CarimbadaNegada",
+					"sid": 817616049825297,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 990512211774074
 		}
 	],
 	"sid": 896571990791601

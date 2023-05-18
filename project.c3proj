@@ -128,7 +128,15 @@
 			"Mouse",
 			"Browser",
 			"Audio",
-			"Keyboard"
+			"Keyboard",
+			"IconeHUDmaldicao",
+			"HUDMaldicao",
+			"IconeHUDrobotica",
+			"HUDrobotica",
+			"FundoDosCarimbos",
+			"CarimbadaNegada",
+			"CarimbadaAprovada",
+			"CasaDosCarimbos"
 		],
 		"subfolders": [
 			{
@@ -203,7 +211,8 @@
 					"SeletorMaterialPuxador",
 					"ExplicacaoFerro",
 					"ExplicacaoOuro",
-					"Intro"
+					"Intro",
+					"SeletorMaterialPuxador2"
 				],
 				"subfolders": [],
 				"name": "MiniGameMinerio"
