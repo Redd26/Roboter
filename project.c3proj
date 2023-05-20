@@ -72,6 +72,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -212,7 +219,7 @@
 					"ExplicacaoFerro",
 					"ExplicacaoOuro",
 					"Intro",
-					"SeletorMaterialPuxador2"
+					"SeletorCarimbo"
 				],
 				"subfolders": [],
 				"name": "MiniGameMinerio"
@@ -378,6 +385,14 @@
 					"name": "menu_select.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 759398652531681,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "stamp_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 594655897078679,
 					"file-info": {
 						"purpose": "none"
 					}

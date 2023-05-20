@@ -6,6 +6,10 @@
 			"includeSheet": "EV_Pause"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Outlines"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

@@ -1,5 +1,714 @@
 {
 	"name": "EV_Outlines",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Quarto",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 988251880356177,
+							"parameters": {
+								"object": "CamaQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CamaQuarto",
+							"sid": 987242242579732,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 661453063281538
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 108135377095137,
+							"parameters": {
+								"object": "CamaQuarto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CamaQuarto",
+							"sid": 822613304600057,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 125379611179829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 803423327462586,
+							"parameters": {
+								"object": "MesaDeEstudos"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaDeEstudos",
+							"sid": 734246267533769,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 837159671043097
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 902888942923131,
+							"parameters": {
+								"object": "MesaDeEstudos"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaDeEstudos",
+							"sid": 913222530502558,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 696498537588909
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 163238417728533,
+							"parameters": {
+								"object": "MesaPlantas"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaPlantas",
+							"sid": 699940130847648,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 140180041124356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 135313929398901,
+							"parameters": {
+								"object": "MesaPlantas"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaPlantas",
+							"sid": 929439665402317,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 556456888476936
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 590851576814456,
+							"parameters": {
+								"object": "EstanteDeLivrosQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EstanteDeLivrosQuarto",
+							"sid": 901396430895838,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 112489588452692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 792399907564807,
+							"parameters": {
+								"object": "EstanteDeLivrosQuarto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "EstanteDeLivrosQuarto",
+							"sid": 393155793305676,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 563010766211814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 217350119240254,
+							"parameters": {
+								"object": "ObjetoAmaldicoado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ObjetoAmaldicoado",
+							"sid": 776432428804624,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 341280759661110
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 797391042446661,
+							"parameters": {
+								"object": "ObjetoAmaldicoado"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ObjetoAmaldicoado",
+							"sid": 107069741345374,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 793375773092190
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 454887734362110,
+							"parameters": {
+								"object": "Robozao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Robozao",
+							"sid": 624924306397712,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 515668533100566
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 129743891405368,
+							"parameters": {
+								"object": "Robozao"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Robozao",
+							"sid": 730657280190803,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 584976164554749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 423490863593943,
+							"parameters": {
+								"object": "JanelaQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "JanelaQuarto",
+							"sid": 850247984662720,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 804552495570342
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 540710101131697,
+							"parameters": {
+								"object": "JanelaQuarto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "JanelaQuarto",
+							"sid": 493460541970979,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 269103200430283
+				}
+			],
+			"sid": 607267664675802
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Loja",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 800772425794184,
+							"parameters": {
+								"object": "RestosRobosLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "RestosRobosLoja",
+							"sid": 547018890705944,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 849985508611312
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 451226801511060,
+							"parameters": {
+								"object": "RestosRobosLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "RestosRobosLoja",
+							"sid": 914220485343760,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 254930285503305
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 493216503879371,
+							"parameters": {
+								"object": "FornoCenarioLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FornoCenarioLoja",
+							"sid": 433326544604601,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 967484457856298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 421583565348864,
+							"parameters": {
+								"object": "FornoCenarioLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FornoCenarioLoja",
+							"sid": 676140596789650,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 834980962023615
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 741156352954712,
+							"parameters": {
+								"object": "MineriosLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MineriosLoja",
+							"sid": 284285536792200,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 732217286877874
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 573693396409407,
+							"parameters": {
+								"object": "MineriosLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MineriosLoja",
+							"sid": 129270915362523,
+							"parameters": {
+								"animation": "\"IdleCaixa\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 686571324851849
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 170594965323233,
+							"parameters": {
+								"object": "BauLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BauLoja",
+							"sid": 198967040442822,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 311100796922355
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 828550999801529,
+							"parameters": {
+								"object": "BauLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BauLoja",
+							"sid": 359848195747866,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 517309998602277
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 111908626897001,
+							"parameters": {
+								"object": "ArCondicionadoLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 565479881431182,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 884792954298227
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 856487019323938,
+							"parameters": {
+								"object": "ArCondicionadoLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 902912667753704,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 454052413506316
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 916332300496985,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 388272520810226,
+							"parameters": {
+								"animation": "\"OutlneCorreio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 539115749690580
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 485078189219973,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 615059370229775,
+							"parameters": {
+								"animation": "\"IdleCorreio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 694943782360893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 855371867316532,
+							"parameters": {
+								"object": "MesaOficina"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaOficina",
+							"sid": 569871129788073,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 721091180703702
+				}
+			],
+			"sid": 730790377958747
+		}
+	],
 	"sid": 891906922951720
 }

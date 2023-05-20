@@ -36,8 +36,8 @@
 					{
 						"width": 70,
 						"height": 62,
-						"originX": -0.04285714285714286,
-						"originY": -0.04838709677419355,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

@@ -3,8 +3,34 @@
 	"plugin-id": "Sprite",
 	"sid": 389808581840649,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "PosX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 325744997916763
+		},
+		{
+			"name": "PosY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 638267778311264
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 694229775705371
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 649777768653598
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -45,7 +71,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 7
 			},
 			{
 				"frames": [
@@ -252,7 +278,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 9
 			},
 			{
 				"frames": [
