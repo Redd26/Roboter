@@ -22,6 +22,66 @@
 			"sid": 664898974903095
 		},
 		{
+			"eventType": "variable",
+			"name": "MaterialCerto",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 788187045002744
+		},
+		{
+			"eventType": "variable",
+			"name": "PedidoAutorizado",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 859272847362322
+		},
+		{
+			"eventType": "variable",
+			"name": "PedidoFinalizado",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 340594239806383
+		},
+		{
+			"eventType": "variable",
+			"name": "Dia",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 275267263074613
+		},
+		{
+			"eventType": "variable",
+			"name": "FinalizarDia",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 683133418505732
+		},
+		{
+			"eventType": "variable",
+			"name": "PedidosAcertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 912844300797716
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -41,97 +101,7 @@
 					}
 				}
 			],
-			"sid": 940701760251443,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 567215587905802,
-					"parameters": {
-						"variable": "NumeroCarta",
-						"comparison": 0,
-						"value": "1"
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 742178942415321,
-					"parameters": {
-						"variable": "PedidoAceito"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 912457814908976,
-					"parameters": {
-						"variable": "QualMaterial",
-						"value": "4"
-					}
-				}
-			],
-			"sid": 264255702617055
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 310977687905558,
-					"parameters": {
-						"variable": "NumeroCarta",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TextoCarta",
-					"sid": 516212305561957,
-					"parameters": {
-						"animation": "\"Pedido01Carta\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 535627981137510
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 694563001099269,
-					"parameters": {
-						"variable": "NumeroCarta",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TextoCarta",
-					"sid": 988736141477959,
-					"parameters": {
-						"animation": "\"Pedido02Carta\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 857131286164184
+			"sid": 940701760251443
 		},
 		{
 			"eventType": "block",
@@ -156,8 +126,161 @@
 					}
 				}
 			],
-			"sid": 535179064018091,
-			"disabled": true
+			"sid": 535179064018091
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 913114643732011,
+					"parameters": {
+						"animation": "\"Pedido02Carta\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 381577203790120,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 345583396241741
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 477086045054552,
+					"parameters": {
+						"animation": "\"Pedido03Carta\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 841955672125338,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 358799120602473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 911048412652403,
+					"parameters": {
+						"variable": "PedidoFinalizado"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 240198552672938,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 658790350345835
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 928629003719969,
+					"parameters": {
+						"variable": "PedidoNegado"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 660564582395838,
+					"parameters": {
+						"variable": "PedidoNegado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 563056570843755,
+					"parameters": {
+						"variable": "robo",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 356778854083837,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 591552295191538,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 187045546891959,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 515450650524832,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 231986391266069,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 273133212538170
 		},
 		{
 			"eventType": "block",
@@ -165,9 +288,50 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 470294966791037,
+					"sid": 309225039672462,
 					"parameters": {
-						"variable": "NumeroCarta",
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 661817561844849,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 133142208674152,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 759442838904041
+		},
+		{
+			"eventType": "comment",
+			"text": "Contagem de dias"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 713628544379147,
+					"parameters": {
+						"variable": "Dia",
 						"comparison": 0,
 						"value": "1"
 					}
@@ -177,186 +341,698 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 600179186688459,
+					"sid": 579633839782086,
 					"parameters": {
-						"variable": "QualMaterial",
-						"value": "4"
+						"variable": "PedidosAcertos",
+						"value": "0"
 					}
 				}
 			],
-			"sid": 399126828096438,
-			"disabled": true
+			"sid": 344533951271640
+		},
+		{
+			"eventType": "comment",
+			"text": "Com base nos acertos ele seta as cartas do dia"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 926546062232694,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Ferro"
-					}
-				},
-				{
-					"id": "compare-two-values",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 571786977543804,
+					"sid": 371785640051890,
 					"parameters": {
-						"first-value": "QualMaterial",
+						"variable": "PedidosAcertos",
 						"comparison": 0,
-						"second-value": "Ferro.MaterialCodigo"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 753649248696527
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 846550503471513,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "ouro"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 530523782697623,
-					"parameters": {
-						"first-value": "QualMaterial",
-						"comparison": 0,
-						"second-value": "Ferro.MaterialCodigo"
+						"value": "0"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 570938199303298,
+					"id": "set-animation",
+					"objectClass": "TextoCarta",
+					"sid": 918284105507922,
 					"parameters": {
-						"layout": "Loja"
+						"animation": "\"Pedido01Carta\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 518824202093166
+			"sid": 896150029849148
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 857211070826671,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Eritro"
-					}
-				},
-				{
-					"id": "compare-two-values",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 540487927560354,
+					"sid": 452291948175213,
 					"parameters": {
-						"first-value": "QualMaterial",
+						"variable": "PedidosAcertos",
 						"comparison": 0,
-						"second-value": "Ferro.MaterialCodigo"
+						"value": "1"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 526917219114322,
+					"sid": 554541018984294,
 					"parameters": {
-						"layout": "Loja"
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 340878934822847,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 390661466966731,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 898663798428940,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 869010720728531,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 662045794489180,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
 					}
 				}
 			],
-			"sid": 389586009383239
+			"sid": 347037047952506
+		},
+		{
+			"eventType": "comment",
+			"text": "Ao finalizar o dia bloquear caixa de correio para jogador ir para o quarto"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 696810283417565,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "viridisOre"
-					}
-				},
-				{
-					"id": "compare-two-values",
+					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 435390189346878,
+					"sid": 995638181146747,
 					"parameters": {
-						"first-value": "QualMaterial",
-						"comparison": 0,
-						"second-value": "Ferro.MaterialCodigo"
+						"variable": "FinalizarDia"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 634505429448666,
+					"sid": 909448086577189,
 					"parameters": {
-						"layout": "Loja"
+						"variable": "BloquearCorreio",
+						"value": "true"
 					}
 				}
 			],
-			"sid": 590047230114177
+			"sid": 999321334908002
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fase 1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 219202844926093,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "cobre"
-					}
+					"eventType": "comment",
+					"text": "colocar os robos de acordo com seus materiais"
 				},
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 507569155174711,
-					"parameters": {
-						"first-value": "QualMaterial",
-						"comparison": 0,
-						"second-value": "Ferro.MaterialCodigo"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 991696707271312,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 212080151719245,
+							"parameters": {
+								"animation": "\"Pedido01Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 762289653860388,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"ferro\""
+							}
+						}
+					],
+					"sid": 204088946409569
+				},
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 755556361589636,
-					"parameters": {
-						"layout": "Loja"
-					}
+					"eventType": "comment",
+					"text": "negar"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 924777161626561,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 452114269661423,
+							"parameters": {
+								"animation": "\"Pedido02Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 747041657578214,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"ferro\""
+							}
+						}
+					],
+					"sid": 625542081730451
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 431039155654420,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 169253325691663,
+							"parameters": {
+								"animation": "\"Pedido03Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 156236642086724,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"Eritro\""
+							}
+						}
+					],
+					"sid": 955738754013306
+				},
+				{
+					"functionName": "AnalisarMaterial",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 669669628391778,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "materialEscolhido"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 575205981265350,
+							"parameters": {
+								"variable": "PedidoAutorizado",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 344027822468435
 				}
 			],
-			"sid": 178459784364396
+			"sid": 501978987945235
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fase 2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Para chapas de ferro"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 208529359512636,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"ferro\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 223423803855302,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortar",
+							"sid": 200296447002765,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 866051709377487,
+							"parameters": {
+								"variable": "ChapaPreparada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 910083872596345
+				},
+				{
+					"eventType": "comment",
+					"text": "caso não seja o mesmo material"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 379656525581051,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"ferro\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 584805660671445,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortar",
+							"sid": 864726927346209,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Colisor",
+							"sid": 817143503394771,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 102187137410065
+				}
+			],
+			"sid": 397622548870718
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fase 3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 207587741358298,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CortaPaoSombra",
+							"sid": 145940738498219,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BaseCortaPao",
+							"sid": 480889945163460,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CabecaCortaPao",
+							"sid": 583649533797146,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DireitaMeioCortaPao",
+							"sid": 655441352481546,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EsquerdaMeioCortaPao",
+							"sid": 513442539195885,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PescocoCortaPao",
+							"sid": 970248673133291,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PescocoCortaPao",
+							"sid": 615950029686250,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "CabecaCortaPao",
+							"sid": 370636347060180,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "DireitaMeioCortaPao",
+							"sid": 778046759889366,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BaseCortaPao",
+							"sid": 717580016940206,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EsquerdaMeioCortaPao",
+							"sid": 814125868666152,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 751300434602916
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 424827507511248,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CortaPaoSombra",
+							"sid": 975184527060014,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BaseCortaPao",
+							"sid": 159561135046687,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BaseCortaPaoColisao",
+							"sid": 638852520360992,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CabecaCortaPao",
+							"sid": 375998141647049,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CabecaCortaPaoColisao",
+							"sid": 613804096876680,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DireitaMeioCortaPao",
+							"sid": 944486536067634,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DireitaMeioCortaPaoColisao",
+							"sid": 971246316571645,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EsquerdaMeioCortaPao",
+							"sid": 660418669024429,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EsquerdaMeioCortaPaoColisao",
+							"sid": 248523361066782,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PescocoCortaPao",
+							"sid": 407718467765569,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PescocoCortaPaoColisao",
+							"sid": 293481662707098,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PescocoCortaPao",
+							"sid": 661108495748365,
+							"disabled": true,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "CabecaCortaPao",
+							"sid": 343117186966164,
+							"disabled": true,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "DireitaMeioCortaPao",
+							"sid": 483378578333816,
+							"disabled": true,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BaseCortaPao",
+							"sid": 235076295786304,
+							"disabled": true,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EsquerdaMeioCortaPao",
+							"sid": 360271274907080,
+							"disabled": true,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 984776448544163
+				}
+			],
+			"sid": 374219924983506
 		}
 	],
 	"sid": 524867988248230

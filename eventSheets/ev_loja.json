@@ -14,6 +14,10 @@
 			"includeSheet": "EV_Outlines"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
+		},
+		{
 			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
@@ -37,7 +41,7 @@
 			"eventType": "variable",
 			"name": "robo",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -62,6 +66,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 744681309705597
+		},
+		{
+			"eventType": "variable",
+			"name": "BloquearCorreio",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 889770544069836
 		},
 		{
 			"eventType": "block",
@@ -347,6 +361,15 @@
 												"click-type": "clicked",
 												"object-clicked": "CaixaCorreiosLoja"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 592664657192134,
+											"parameters": {
+												"variable": "BloquearCorreio"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -431,6 +454,141 @@
 											"sid": 878995516627183
 										}
 									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 403105773832728,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "MesaOficina"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 966297957716509,
+											"parameters": {
+												"variable": "PedidoAceito"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 708909013294226,
+											"parameters": {
+												"variable": "NumeroCarta",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 820682027683218,
+											"parameters": {
+												"layer": "\"cartaContainer\"",
+												"visibility": "invisible"
+											}
+										},
+										{
+											"callFunction": "FecharCarimbo",
+											"sid": 113471676463909
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 977136028823284,
+											"parameters": {
+												"variable": "PedidoAceito",
+												"value": "true"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 785069172478365,
+											"parameters": {
+												"variable": "robo",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "Transicao",
+											"sid": 264782394348548,
+											"parameters": {
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Transicao",
+											"sid": 839799652095032,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 295912922766858,
+											"parameters": {
+												"seconds": "1.3"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "Transicao",
+											"sid": 621662018941191,
+											"parameters": {
+												"x": "3000",
+												"y": "1500"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 224704446963987,
+											"parameters": {
+												"layout": "Montagem_Material"
+											}
+										}
+									],
+									"sid": 107778681266247
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 560370852475007,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "MesaOficina"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 563113549993898,
+											"parameters": {
+												"variable": "PedidoAceito"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 588831904965900
 								}
 							],
 							"sid": 681511091016956
@@ -704,296 +862,6 @@
 								},
 								{
 									"eventType": "comment",
-									"text": "Antes era botao"
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 903442720950728,
-											"parameters": {
-												"object": "BotaoRecusar"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "BotaoRecusar",
-											"sid": 472143139003120,
-											"parameters": {
-												"animation": "\"RedNegar\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 406111318067589,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "trigger-once-while-true",
-													"objectClass": "System",
-													"sid": 446621449682034
-												}
-											],
-											"actions": [
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 405138922422101,
-													"parameters": {
-														"audio-file": "menu_select",
-														"loop": "not-looping",
-														"volume": "0",
-														"stereo-pan": "0",
-														"tag-optional": "\"Click\""
-													}
-												}
-											],
-											"sid": 143500187759962,
-											"disabled": true
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 130324769523419,
-											"parameters": {
-												"object": "BotaoRecusar"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "BotaoRecusar",
-											"sid": 504610852093022,
-											"parameters": {
-												"animation": "\"CinzaNegar\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 819305617719590,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 806267195653491,
-											"parameters": {
-												"object": "BotaoAceitar"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "BotaoAceitar",
-											"sid": 917859442909798,
-											"parameters": {
-												"animation": "\"VerdeAceitar\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 730033185699888,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "trigger-once-while-true",
-													"objectClass": "System",
-													"sid": 939372772182015
-												}
-											],
-											"actions": [
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 107576024090559,
-													"parameters": {
-														"audio-file": "menu_select",
-														"loop": "not-looping",
-														"volume": "0",
-														"stereo-pan": "0",
-														"tag-optional": "\"Click\""
-													}
-												}
-											],
-											"sid": 740080538913993,
-											"disabled": true
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 152320379324960,
-											"parameters": {
-												"object": "BotaoAceitar"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "BotaoAceitar",
-											"sid": 279860831797318,
-											"parameters": {
-												"animation": "\"CinzaAceitar\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 516223452776080,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-object-clicked",
-											"objectClass": "Mouse",
-											"sid": 590774581480466,
-											"parameters": {
-												"mouse-button": "left",
-												"click-type": "clicked",
-												"object-clicked": "BotaoRecusar"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 239158570392813,
-											"parameters": {
-												"audio-file": "menu_confirm",
-												"loop": "not-looping",
-												"volume": "0",
-												"stereo-pan": "0",
-												"tag-optional": "\"Click\""
-											}
-										},
-										{
-											"id": "set-layer-visible",
-											"objectClass": "System",
-											"sid": 988569136624446,
-											"parameters": {
-												"layer": "\"cartaContainer\"",
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "set-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 401271983743541,
-											"parameters": {
-												"variable": "PedidoNegado",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 857846735064634,
-											"parameters": {
-												"variable": "NumeroCartaNegada",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 468798808450418,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-object-clicked",
-											"objectClass": "Mouse",
-											"sid": 767598384337825,
-											"parameters": {
-												"mouse-button": "left",
-												"click-type": "clicked",
-												"object-clicked": "BotaoAceitar"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 499042669694667,
-											"parameters": {
-												"variable": "PedidoAceito",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 290482899028692,
-											"parameters": {
-												"variable": "NumeroCarta",
-												"value": "1"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 816934152770109,
-											"parameters": {
-												"audio-file": "menu_confirm",
-												"loop": "not-looping",
-												"volume": "0",
-												"stereo-pan": "0",
-												"tag-optional": "\"Click\""
-											}
-										},
-										{
-											"id": "set-layer-visible",
-											"objectClass": "System",
-											"sid": 404395638374381,
-											"parameters": {
-												"layer": "\"cartaContainer\"",
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "go-to-layout",
-											"objectClass": "System",
-											"sid": 271715536884621,
-											"parameters": {
-												"layout": "Montagem_Material"
-											}
-										}
-									],
-									"sid": 872523495378766,
-									"disabled": true
-								},
-								{
-									"eventType": "comment",
 									"text": "Aprovado"
 								},
 								{
@@ -1180,35 +1048,26 @@
 											}
 										},
 										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 884159174745911,
-											"parameters": {
-												"seconds": "4"
-											}
-										},
-										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 855507628396078,
+											"sid": 227798400318297,
 											"parameters": {
 												"variable": "PedidoAceito",
 												"value": "true"
 											}
 										},
 										{
-											"id": "set-eventvar-value",
+											"id": "wait",
 											"objectClass": "System",
-											"sid": 675862709616514,
+											"sid": 875525314641517,
 											"parameters": {
-												"variable": "NumeroCarta",
-												"value": "1"
+												"seconds": "4"
 											}
 										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
-											"sid": 723890740308309,
+											"sid": 568091948735629,
 											"parameters": {
 												"layer": "\"cartaContainer\"",
 												"visibility": "invisible"
@@ -1216,15 +1075,7 @@
 										},
 										{
 											"callFunction": "FecharCarimbo",
-											"sid": 449785225255116
-										},
-										{
-											"id": "go-to-layout",
-											"objectClass": "System",
-											"sid": 512124530319303,
-											"parameters": {
-												"layout": "Montagem_Material"
-											}
+											"sid": 555409818464608
 										}
 									],
 									"sid": 324015433351181
@@ -1777,6 +1628,14 @@
 								"mouse-button": "right",
 								"click-type": "clicked",
 								"object-clicked": "Porta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 514978185961591,
+							"parameters": {
+								"variable": "FinalizarDia"
 							}
 						}
 					],

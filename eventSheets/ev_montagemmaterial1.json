@@ -901,47 +901,8 @@
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "MaterialOuroDestruir",
-									"sid": 897512235052337,
-									"parameters": {
-										"x": "535",
-										"y": "357"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialOuroDestruir",
-									"sid": 392019070544368,
-									"parameters": {
-										"animation": "\"IdleOuro\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 739119208802218,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 421547542574360,
-									"parameters": {
-										"x": "531",
-										"y": "353"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 102148760874315,
-									"parameters": {
-										"visibility": "invisible"
-									}
+									"callFunction": "AnalisarMaterial",
+									"sid": 940772702358894
 								},
 								{
 									"id": "set-boolean-eventvar",
@@ -956,6 +917,94 @@
 							],
 							"sid": 389781033404654,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 357961062640220,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 764951669211508,
+											"parameters": {
+												"x": "535",
+												"y": "357"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialOuroDestruir",
+											"sid": 762285940923397,
+											"parameters": {
+												"animation": "\"IdleOuro\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 548182964716257,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 167064152248697,
+											"parameters": {
+												"x": "531",
+												"y": "353"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 706532152805918,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 909511016045816
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 525657229492637,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Dar mensagem de erro"
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 554043164190891,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 383090687932138
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1349,61 +1398,100 @@
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "MaterialFerroDestruir",
-									"sid": 594782647468791,
-									"parameters": {
-										"x": "535",
-										"y": "357"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialFerroDestruir",
-									"sid": 944690090256445,
-									"parameters": {
-										"animation": "\"IdleFerro\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 486151555004617,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 670805176352611,
-									"parameters": {
-										"x": "531",
-										"y": "353"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 997048319933514,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 794558952775223,
-									"disabled": true,
-									"parameters": {
-										"variable": "eEsseMaterialQueORoboUsa",
-										"value": "true"
-									}
+									"callFunction": "AnalisarMaterial",
+									"sid": 979670709613150
 								}
 							],
 							"sid": 121290979966043,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 740092022803374,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MaterialFerroDestruir",
+											"sid": 555103417684878,
+											"parameters": {
+												"x": "535",
+												"y": "357"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialFerroDestruir",
+											"sid": 716161905366661,
+											"parameters": {
+												"animation": "\"IdleFerro\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 724809896107195,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 318444591137200,
+											"parameters": {
+												"x": "531",
+												"y": "353"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 907449142367812,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 123198902962473
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 448581819172027,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Dar mensagem de erro"
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 784190513052342,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 529697357839891
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1415,6 +1503,14 @@
 												"variable": "materialEscolhido",
 												"comparison": 0,
 												"value": "\"ferro\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 510171600004489,
+											"parameters": {
+												"variable": "TransformarMouse"
 											}
 										}
 									],
@@ -3596,6 +3692,41 @@
 					],
 					"actions": [
 						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 750997934483350,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 696648182287452,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 502529023344144,
+							"parameters": {
+								"seconds": "1.3"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 516313303840516,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 234858707856737,
@@ -3649,6 +3780,41 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 210072712568324,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 876904327004306,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 475995604611265,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 111475302477862,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

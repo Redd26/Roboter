@@ -10,6 +10,10 @@
 			"includeSheet": "EV_Carta"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
+		},
+		{
 			"eventType": "variable",
 			"name": "pecasQuebraCabecaAdicionadas",
 			"type": "number",
@@ -948,20 +952,46 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 345152560860891,
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 131975126680539,
 					"parameters": {
-						"variable": "NumeroCarta",
-						"value": "1"
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 661266502842377,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 875749463559372,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 571201934529072,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
 					}
 				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 302691415859469,
+					"sid": 690429961186619,
 					"parameters": {
-						"layout": "Loja"
+						"layout": "Montagem_Empacotar"
 					}
 				}
 			],

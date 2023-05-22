@@ -10,6 +10,10 @@
 			"includeSheet": "EV_Carta"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
+		},
+		{
 			"eventType": "variable",
 			"name": "empacotarContador",
 			"type": "number",
@@ -1482,6 +1486,58 @@
 					"sid": 811273564022238,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 175198338311029,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 886700682848710,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 244823146218295,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 585726928173303,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 386010204785289,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 822587059293232,
+					"parameters": {
+						"layout": "Loja"
 					}
 				},
 				{

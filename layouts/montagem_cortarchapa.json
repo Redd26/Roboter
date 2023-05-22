@@ -524,7 +524,7 @@
 				{
 					"type": "ChapaFerro",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -546,7 +546,7 @@
 						}
 					},
 					"world": {
-						"x": 93,
+						"x": 49,
 						"y": 293,
 						"width": 486,
 						"height": 182,
@@ -565,7 +565,7 @@
 				{
 					"type": "LinhaCortar",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -587,7 +587,7 @@
 						}
 					},
 					"world": {
-						"x": 87,
+						"x": 43,
 						"y": 281,
 						"width": 486,
 						"height": 113,
@@ -664,7 +664,7 @@
 						}
 					},
 					"world": {
-						"x": 559.9325475355486,
+						"x": 515.9325475355486,
 						"y": 388.9590661933518,
 						"width": 20,
 						"height": 20,
@@ -705,7 +705,7 @@
 						}
 					},
 					"world": {
-						"x": 523.2706298828124,
+						"x": 479.2706298828124,
 						"y": 369.63252563476556,
 						"width": 20,
 						"height": 20,
@@ -746,7 +746,7 @@
 						}
 					},
 					"world": {
-						"x": 485.4161376953127,
+						"x": 441.4161376953127,
 						"y": 349.17424011230446,
 						"width": 20,
 						"height": 20,
@@ -787,7 +787,7 @@
 						}
 					},
 					"world": {
-						"x": 445.55864122178826,
+						"x": 401.55864122178826,
 						"y": 385.1545049879285,
 						"width": 20,
 						"height": 20,
@@ -828,7 +828,7 @@
 						}
 					},
 					"world": {
-						"x": 406.3509826660157,
+						"x": 362.3509826660157,
 						"y": 385.5785013834635,
 						"width": 20,
 						"height": 20,
@@ -869,7 +869,7 @@
 						}
 					},
 					"world": {
-						"x": 374.5740661621091,
+						"x": 330.5740661621091,
 						"y": 405.512062072754,
 						"width": 20,
 						"height": 20,
@@ -910,7 +910,7 @@
 						}
 					},
 					"world": {
-						"x": 341.92960866292333,
+						"x": 297.92960866292333,
 						"y": 405.18440373738594,
 						"width": 20,
 						"height": 20,
@@ -951,7 +951,7 @@
 						}
 					},
 					"world": {
-						"x": 313.0962575276692,
+						"x": 269.0962575276692,
 						"y": 405.3510640462239,
 						"width": 20,
 						"height": 20,
@@ -992,7 +992,7 @@
 						}
 					},
 					"world": {
-						"x": 285.58567810058565,
+						"x": 241.58567810058565,
 						"y": 425.3504638671879,
 						"width": 20,
 						"height": 20,
@@ -1033,7 +1033,7 @@
 						}
 					},
 					"world": {
-						"x": 252.45545705159492,
+						"x": 208.45545705159492,
 						"y": 425.566874186198,
 						"width": 20,
 						"height": 20,
@@ -1074,7 +1074,7 @@
 						}
 					},
 					"world": {
-						"x": 226.98806762695312,
+						"x": 182.98806762695312,
 						"y": 406.0331726074219,
 						"width": 20,
 						"height": 20,
@@ -1115,7 +1115,7 @@
 						}
 					},
 					"world": {
-						"x": 203.3213806152344,
+						"x": 159.3213806152344,
 						"y": 389.1998519897464,
 						"width": 20,
 						"height": 20,
@@ -1156,7 +1156,7 @@
 						}
 					},
 					"world": {
-						"x": 175.8590087890625,
+						"x": 131.8590087890625,
 						"y": 389.9542541503906,
 						"width": 20,
 						"height": 20,
@@ -1197,7 +1197,7 @@
 						}
 					},
 					"world": {
-						"x": 153.70887756347656,
+						"x": 109.70887756347656,
 						"y": 358.35546875,
 						"width": 20,
 						"height": 20,
@@ -1238,7 +1238,7 @@
 						}
 					},
 					"world": {
-						"x": 124.59978061252139,
+						"x": 80.59978061252139,
 						"y": 337.05651813083233,
 						"width": 20,
 						"height": 20,
@@ -1824,6 +1824,69 @@
 			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": true,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "transicao",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Transicao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 216,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -20,
+						"y": 949,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 907840759531169,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
 			"renderingMode": "3d",
 			"drawOrder": "z-order",
 			"useRenderCells": false,

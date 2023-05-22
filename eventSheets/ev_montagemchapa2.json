@@ -32,12 +32,26 @@
 			"sid": 555555082285151
 		},
 		{
+			"eventType": "variable",
+			"name": "ChapaPreparada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 458914978056482
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_loja"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "EV_Carta"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
 		},
 		{
 			"eventType": "block",
@@ -91,6 +105,41 @@
 			],
 			"actions": [
 				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 130967939518134,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 535710455528201,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 937540589358018,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 477569287698595,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 424809746398780,
@@ -123,6 +172,14 @@
 								"mouse-button": "left",
 								"click-type": "clicked",
 								"object-clicked": "BotaoIniciarCorte"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 445125130905206,
+							"parameters": {
+								"variable": "ChapaPreparada"
 							}
 						}
 					],
@@ -635,6 +692,14 @@
 			],
 			"actions": [
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 141082726180459,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "ProximoLevel",
 					"sid": 894098991591327,
@@ -678,6 +743,41 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 711687789343783,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 545354012742606,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 703227502571776,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 135283191478993,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
