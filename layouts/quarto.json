@@ -450,10 +450,10 @@
 								"max-speed": 200,
 								"acceleration": 600,
 								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
+								"directions": "dir-4",
+								"set-angle": "no",
 								"allow-sliding": false,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						},

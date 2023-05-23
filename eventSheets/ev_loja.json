@@ -18,6 +18,14 @@
 			"includeSheet": "EV_Pedidos"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Quarto"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_Hud"
+		},
+		{
 			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
@@ -76,6 +84,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 889770544069836
+		},
+		{
+			"eventType": "variable",
+			"name": "EstouLoja",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 106123472105139
 		},
 		{
 			"eventType": "block",
@@ -157,6 +175,24 @@
 					"parameters": {
 						"object": "Carta",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 561877525168934,
+					"parameters": {
+						"variable": "EstouQuarto",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 624880007824785,
+					"parameters": {
+						"variable": "EstouLoja",
+						"value": "true"
 					}
 				}
 			],
@@ -1633,7 +1669,7 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 514978185961591,
+							"sid": 355481609224054,
 							"parameters": {
 								"variable": "FinalizarDia"
 							}

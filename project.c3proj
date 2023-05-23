@@ -363,7 +363,8 @@
 			"EV_MenuPrincipal",
 			"EV_Pedidos",
 			"EV_Movimentacao",
-			"EV_Outlines"
+			"EV_Outlines",
+			"Ev_Hud"
 		],
 		"subfolders": []
 	},

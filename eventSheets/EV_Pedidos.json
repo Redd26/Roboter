@@ -2,6 +2,10 @@
 	"name": "EV_Pedidos",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Ev_Hud"
+		},
+		{
 			"eventType": "variable",
 			"name": "QualMaterial",
 			"type": "number",
@@ -80,6 +84,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 912844300797716
+		},
+		{
+			"eventType": "variable",
+			"name": "Erro",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 497561751922802
 		},
 		{
 			"eventType": "block",
@@ -217,15 +231,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 660564582395838,
-					"parameters": {
-						"variable": "PedidoNegado",
-						"value": "false"
-					}
-				},
-				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
 					"sid": 563056570843755,
@@ -276,6 +281,15 @@
 					"sid": 231986391266069,
 					"parameters": {
 						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 906680233850708,
+					"parameters": {
+						"variable": "PedidoNegado",
 						"value": "false"
 					}
 				}
@@ -1033,6 +1047,220 @@
 				}
 			],
 			"sid": 374219924983506
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Quarto 1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 678061534969719,
+							"parameters": {
+								"variable": "EstouQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Estudar 1",
+							"sid": 299513271417632
+						},
+						{
+							"callFunction": "Estudar 2",
+							"sid": 630984826958290
+						},
+						{
+							"callFunction": "Dormir 1",
+							"sid": 770270670306409
+						},
+						{
+							"callFunction": "Dormir 2",
+							"sid": 623250495214151
+						}
+					],
+					"sid": 246062912422092
+				},
+				{
+					"functionName": "Estudar 1",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 430432346514902,
+							"parameters": {
+								"variable": "Dia",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 719807789756586,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 915731812033534,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 232371166099881
+				},
+				{
+					"functionName": "Estudar 2",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 174116441636338,
+							"parameters": {
+								"variable": "Dia",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 483984224468267,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 974258032606862,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 841020243837784
+				},
+				{
+					"functionName": "Dormir 1",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 469777222191118,
+							"parameters": {
+								"variable": "Dia",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 908221420385133,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 826721891017556,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 623777550063991
+				},
+				{
+					"functionName": "Dormir 2",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 322763786326548,
+							"parameters": {
+								"variable": "Dia",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 928695805169420,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 411349317288703,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 364320905982538
+				}
+			],
+			"sid": 346182188172137
 		}
 	],
 	"sid": 524867988248230

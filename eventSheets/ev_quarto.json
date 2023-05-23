@@ -2,12 +2,68 @@
 	"name": "EV_Quarto",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "EstouQuarto",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 422634919536010
+		},
+		{
+			"eventType": "variable",
+			"name": "Estudar",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 247667770436628
+		},
+		{
+			"eventType": "variable",
+			"name": "Dormir",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 992254169142226
+		},
+		{
+			"eventType": "variable",
+			"name": "BarraRobotica",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 948695245830266
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_Pause"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "EV_Outlines"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Movimentacao"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_loja"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_Hud"
 		},
 		{
 			"eventType": "block",
@@ -18,7 +74,17 @@
 					"sid": 359503682555269
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 536195217031440,
+					"parameters": {
+						"variable": "EstouQuarto",
+						"value": "true"
+					}
+				}
+			],
 			"sid": 126308477982106
 		},
 		{
@@ -82,6 +148,297 @@
 				}
 			],
 			"sid": 433129956956526
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "dormir",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 266045505074858,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "CamaQuarto"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 421013782319452,
+							"parameters": {
+								"variable": "Dormir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "SetarCut"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 363525314870540,
+							"parameters": {
+								"animation": "\"dia\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 641871229083653,
+							"parameters": {
+								"variable": "Dia",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 144440568793683,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 510687027527261
+				}
+			],
+			"sid": 346628142447910
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "estudar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 293350292457338,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MesaDeEstudos"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 751204172967561,
+							"parameters": {
+								"variable": "Estudar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Adicionar a Barra de upgrade mais um"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 964395458131725,
+							"parameters": {
+								"animation": "\"dia\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 666683731326043,
+							"parameters": {
+								"variable": "Dia",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 238066398742905,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 805262264506269,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 960960685716617
+				}
+			],
+			"sid": 721372035831389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 119726344236388,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "tapeteQuarto"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 135669925252418,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 618564429862308
+		},
+		{
+			"eventType": "comment",
+			"text": "Caixas de dialogo"
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "InteracoesQuarto",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 140506487658846,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MesaPlantas"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 664047836353518,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 748498658648324,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Robozao"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 915279279993869,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 543342892892359,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ArCondicionadoQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 334368970667004,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 181883703681522,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ObjetoAmaldicoado"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 703466284114821,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 662240295562027,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "JanelaQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 634176220860088,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 271211984115000,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EstanteDeLivrosQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 714798822349573,
+					"disabled": true
+				}
+			],
+			"sid": 866965185709682
 		}
 	],
 	"sid": 319169129069670

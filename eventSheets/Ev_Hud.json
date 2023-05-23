@@ -1,0 +1,302 @@
+{
+	"name": "Ev_Hud",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Maldicao",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 540721369315135
+		},
+		{
+			"eventType": "variable",
+			"name": "Robotica",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 358863352333659
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MALDICAO",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 499442812433390,
+							"parameters": {
+								"variable": "NumeroCartaNegada",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 984581503064743,
+							"parameters": {
+								"variable": "Maldicao",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HUDMaldicao",
+							"sid": 244870898480524,
+							"parameters": {
+								"animation": "\"UmMaldicao\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 582222352092140
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 870319450093815,
+							"parameters": {
+								"variable": "NumeroCartaNegada",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 948956493004859,
+							"parameters": {
+								"variable": "Maldicao",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HUDMaldicao",
+							"sid": 934352899667655,
+							"parameters": {
+								"animation": "\"DoisMaldicao\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 205474354509830
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 455772191237214,
+							"parameters": {
+								"variable": "NumeroCartaNegada",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 230507181424266,
+							"parameters": {
+								"variable": "Maldicao",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HUDMaldicao",
+							"sid": 442998966280056,
+							"parameters": {
+								"animation": "\"TresMaldicao\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Depois ele ira ser possuido pela maldicao fadado a andar \"vagando\" para sempre"
+						}
+					],
+					"sid": 754100403749437
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 110711002916793,
+							"parameters": {
+								"variable": "Maldicao",
+								"comparison": 5,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Depois ele ira ser possuido pela maldicao fadado a andar \"vagando\" para sempre"
+						}
+					],
+					"sid": 187034096443017
+				}
+			],
+			"sid": 443434162714688
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ROBOTICA",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 433641578757737,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 484078499088047,
+							"parameters": {
+								"variable": "Robotica",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HUDrobotica",
+							"sid": 953171590643503,
+							"parameters": {
+								"animation": "\"UmRob\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 327360619248846
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 878766893065812,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 432555644255346,
+							"parameters": {
+								"variable": "Robotica",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HUDrobotica",
+							"sid": 475565289580366,
+							"parameters": {
+								"animation": "\"DoisRob\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 261878015222288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 360443030271385,
+							"parameters": {
+								"interval-seconds": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "IconeHUDrobotica",
+							"sid": 551073814732397,
+							"parameters": {
+								"animation": "\"MorfRobotica\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 239815583969005
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "IconeHUDrobotica",
+							"sid": 222974676520726,
+							"parameters": {
+								"animation": "\"MorfRobotica\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "IconeHUDrobotica",
+							"sid": 702656392101566,
+							"parameters": {
+								"animation": "\"IdleRobotica\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 538732623006666
+				}
+			],
+			"sid": 987263336354028
+		}
+	],
+	"sid": 546775470846456
+}

@@ -779,6 +779,15 @@
 					}
 				},
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 118673134997025,
+					"parameters": {
+						"variable": "Erro",
+						"value": "1"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 284894705051181,
