@@ -1,5 +1,5 @@
 {
-	"name": "EV_MenuPrincipal",
+	"name": "EV_001MenuPrincipal",
 	"events": [
 		{
 			"eventType": "block",
@@ -11,6 +11,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 942002132262262,
+					"parameters": {
+						"audio-file": "BGM_MENU",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"MenuMusic\""
+					}
+				},
 				{
 					"id": "set-layer-interactive",
 					"objectClass": "System",
@@ -132,18 +144,6 @@
 					"sid": 574900514275573,
 					"parameters": {
 						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 193254882811143,
-					"parameters": {
-						"audio-file": "BGM_MENU",
-						"loop": "looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"MenuMusic\""
 					}
 				}
 			],
@@ -540,6 +540,27 @@
 				}
 			],
 			"sid": 583905554562636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 934304598064858
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 210992121918654,
+					"parameters": {
+						"tag": "\"MenuMusic\""
+					}
+				}
+			],
+			"sid": 469928226844396
 		}
 	],
 	"sid": 921381669590858

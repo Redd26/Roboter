@@ -1,17 +1,17 @@
 {
-	"name": "EV_montagemQuebraCabeca3",
+	"name": "EV_007montagemQuebraCabeca",
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "EV_loja"
+			"includeSheet": "EV_003loja"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Carta"
+			"includeSheet": "EV_002Carta"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pedidos"
+			"includeSheet": "EV_013Pedidos"
 		},
 		{
 			"eventType": "variable",
@@ -86,6 +86,33 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 108472976334489,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 940459521460451,
+					"parameters": {
+						"variable": "EstouLoja",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 118240625834947,
+					"parameters": {
+						"variable": "EstouQuarto",
+						"value": "false"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 634380396552460,
@@ -100,6 +127,15 @@
 					"sid": 282476653680753,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 941483857796451,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"LojaMusic\""
 					}
 				}
 			],
@@ -934,7 +970,8 @@
 					}
 				}
 			],
-			"sid": 651122568400329
+			"sid": 651122568400329,
+			"disabled": true
 		},
 		{
 			"eventType": "block",

@@ -1,9 +1,9 @@
 {
-	"name": "EV_Pedidos",
+	"name": "EV_013Pedidos",
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "Ev_Hud"
+			"includeSheet": "Ev_009Hud"
 		},
 		{
 			"eventType": "variable",
@@ -1258,28 +1258,42 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 485810029604235,
+					"children": [
 						{
-							"id": "spawn-another-object",
-							"objectClass": "CabecaCortaPao",
-							"sid": 827860686128517,
-							"parameters": {
-								"object": "SpawnRobos",
-								"layer": "\"game\"",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "ColicaoCabecaEmpacotar",
-							"sid": 176377745245660,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 502888773205869
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "SpawnRobos",
+									"sid": 819733859387001,
+									"parameters": {
+										"object": "CabecaCortaPao",
+										"layer": "\"game\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ColicaoCabecaEmpacotar",
+									"sid": 140011026475762,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 677753051829422
 						}
-					],
-					"sid": 485810029604235
+					]
 				}
 			],
 			"sid": 782170677474286
@@ -1985,6 +1999,222 @@
 				}
 			],
 			"sid": 949722409680873
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MusicaLojaQuartoMiniGame",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 876081595740826,
+							"parameters": {
+								"variable": "EstouMiniGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 474926600726165,
+							"parameters": {
+								"audio-file": "Musica_BGM_Ambientação_Montagem_01",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"MontagemMusic\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 524704690315510,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"LojaMusic\""
+							}
+						}
+					],
+					"sid": 261407468132291,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 343819052386797,
+							"parameters": {
+								"variable": "EstouMiniGame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 759453705522281,
+							"parameters": {
+								"tag": "\"MontagemMusic\""
+							}
+						}
+					],
+					"sid": 746797370324272
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 363867248581831,
+							"parameters": {
+								"variable": "EstouLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 811918633030264,
+							"parameters": {
+								"audio-file": "BGM_Loja",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"LojaMusic\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 655920814720830,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"MenuMusic\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 325997600729825,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"QuartoMusic\""
+							}
+						}
+					],
+					"sid": 744809061816426,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 900916488159031,
+							"parameters": {
+								"variable": "EstouLoja"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 656457059443898,
+							"parameters": {
+								"tag": "\"LojaMusic\""
+							}
+						}
+					],
+					"sid": 441424521045124
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 521038654140021,
+							"parameters": {
+								"variable": "EstouQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 773326222931333,
+							"parameters": {
+								"audio-file": "BGM_Quarto",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"QuartoMusic\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 670374059555114,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"MenuMusic\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 355262838309758,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"LojaMusic\""
+							}
+						}
+					],
+					"sid": 265525463394286
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 144225667794810,
+							"parameters": {
+								"variable": "EstouQuarto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 681021371754947,
+							"parameters": {
+								"tag": "\"QuartoMusic\""
+							}
+						}
+					],
+					"sid": 151032669738159
+				}
+			],
+			"sid": 721978836388461
 		}
 	],
 	"sid": 524867988248230

@@ -1,5 +1,5 @@
 {
-	"name": "EV_Quarto",
+	"name": "EV_004Quarto",
 	"events": [
 		{
 			"eventType": "variable",
@@ -43,27 +43,27 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pause"
+			"includeSheet": "EV_012Pause"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Outlines"
+			"includeSheet": "EV_011Outlines"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Movimentacao"
+			"includeSheet": "EV_010Movimentacao"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pedidos"
+			"includeSheet": "EV_013Pedidos"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_loja"
+			"includeSheet": "EV_003loja"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Ev_Hud"
+			"includeSheet": "Ev_009Hud"
 		},
 		{
 			"eventType": "block",
@@ -82,6 +82,24 @@
 					"parameters": {
 						"variable": "EstouQuarto",
 						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 146489067046539,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 463550009293947,
+					"parameters": {
+						"variable": "EstouLoja",
+						"value": "false"
 					}
 				}
 			],
@@ -439,6 +457,61 @@
 				}
 			],
 			"sid": 866965185709682
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 622497556652019,
+					"parameters": {
+						"variable": "EstouQuarto"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 985174161063032,
+					"parameters": {
+						"variable": "horarioDoDia",
+						"comparison": 0,
+						"value": "\"noite\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 944150396328354,
+					"parameters": {
+						"tag": "\"MontagemMusic\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 451904479846754,
+					"parameters": {
+						"tag": "\"LojaMusic\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 546407462083559,
+					"parameters": {
+						"audio-file": "BGM_Quarto",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"QuartoMusic\""
+					}
+				}
+			],
+			"sid": 825560692357594,
+			"disabled": true
 		}
 	],
 	"sid": 319169129069670

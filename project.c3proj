@@ -354,19 +354,19 @@
 	},
 	"eventSheets": {
 		"items": [
-			"EV_loja",
-			"EV_montagemMaterial1",
-			"EV_montagemQuebraCabeca3",
-			"EV_montagemChapa2",
-			"EV_montagemEmpacotar4",
-			"EV_Quarto",
-			"EV_Pause",
-			"EV_Carta",
-			"EV_MenuPrincipal",
-			"EV_Pedidos",
-			"EV_Movimentacao",
-			"EV_Outlines",
-			"Ev_Hud"
+			"EV_003loja",
+			"EV_005montagemMaterial",
+			"EV_007montagemQuebraCabeca",
+			"EV_006montagemChapa",
+			"EV_008montagemEmpacotar",
+			"EV_004Quarto",
+			"EV_012Pause",
+			"EV_002Carta",
+			"EV_001MenuPrincipal",
+			"EV_013Pedidos",
+			"EV_010Movimentacao",
+			"EV_011Outlines",
+			"Ev_009Hud"
 		],
 		"subfolders": []
 	},
@@ -418,6 +418,22 @@
 					"name": "BGM_MENU.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 253403472979703,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BGM_Loja.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 710933217022920,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BGM_Quarto.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 332533288034118,
 					"file-info": {
 						"purpose": "none"
 					}

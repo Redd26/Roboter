@@ -1,5 +1,5 @@
 {
-	"name": "EV_Carta",
+	"name": "EV_002Carta",
 	"events": [
 		{
 			"eventType": "variable",
@@ -627,11 +627,11 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 960033970122484,
+					"sid": 340483024352218,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y+80",
+						"y": "TextoCarta.Y+130",
 						"mode": "direct"
 					}
 				}
@@ -664,11 +664,11 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 449266417100546,
+					"sid": 751486315888394,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y-80",
+						"y": "TextoCarta.Y-130",
 						"mode": "direct"
 					}
 				}

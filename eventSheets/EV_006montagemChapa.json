@@ -1,5 +1,5 @@
 {
-	"name": "EV_montagemChapa2",
+	"name": "EV_006montagemChapa",
 	"events": [
 		{
 			"eventType": "variable",
@@ -43,15 +43,15 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_loja"
+			"includeSheet": "EV_003loja"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Carta"
+			"includeSheet": "EV_002Carta"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pedidos"
+			"includeSheet": "EV_013Pedidos"
 		},
 		{
 			"eventType": "block",
@@ -84,6 +84,51 @@
 					"sid": 729381348303423,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 534037707966264,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 898902136539400,
+					"parameters": {
+						"variable": "EstouLoja",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 411140726342746,
+					"parameters": {
+						"variable": "EstouQuarto",
+						"value": "false"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 252933286224977,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"LojaMusic\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 472031870733008,
+					"disabled": true,
+					"parameters": {
+						"audio-file": "Musica_BGM_Ambientação_Montagem_01"
 					}
 				}
 			],
@@ -712,6 +757,47 @@
 			"sid": 150636054671870
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 478000892829511
+				},
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "ChapaFerro",
+					"sid": 306565229719007,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 5,
+						"distance": "710"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 957776670362515,
+					"parameters": {
+						"first-value": "Colisor.Count",
+						"comparison": 5,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 745473661452640,
+					"parameters": {
+						"tag": "\"MontagemMusic\""
+					}
+				}
+			],
+			"sid": 379461603236539
+		},
+		{
 			"functionName": "Colidiu2",
 			"functionCopyPicked": false,
 			"functionDescription": "",
@@ -776,6 +862,15 @@
 					"parameters": {
 						"x": "3000",
 						"y": "1500"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 659471139160091,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "true"
 					}
 				},
 				{

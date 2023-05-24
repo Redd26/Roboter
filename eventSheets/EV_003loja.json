@@ -1,29 +1,29 @@
 {
-	"name": "EV_loja",
+	"name": "EV_003loja",
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pause"
+			"includeSheet": "EV_012Pause"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Movimentacao"
+			"includeSheet": "EV_010Movimentacao"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Outlines"
+			"includeSheet": "EV_011Outlines"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pedidos"
+			"includeSheet": "EV_013Pedidos"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Quarto"
+			"includeSheet": "EV_004Quarto"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Ev_Hud"
+			"includeSheet": "Ev_009Hud"
 		},
 		{
 			"eventType": "variable",
@@ -189,6 +189,15 @@
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
+					"sid": 475587649398904,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
 					"sid": 624880007824785,
 					"parameters": {
 						"variable": "EstouLoja",
@@ -198,21 +207,31 @@
 				{
 					"id": "stop",
 					"objectClass": "Audio",
-					"sid": 331247156588577,
+					"sid": 179668742337631,
+					"disabled": true,
 					"parameters": {
 						"tag": "\"MenuMusic\""
 					}
 				},
 				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 687872719948506,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"QuartoMusic\""
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 873142136664057,
+					"sid": 821051452021133,
 					"parameters": {
-						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
-						"loop": "not-looping",
+						"audio-file": "BGM_Loja",
+						"loop": "looping",
 						"volume": "-10",
 						"stereo-pan": "0",
-						"tag-optional": "\"MontagemMusic\""
+						"tag-optional": "\"LojaMusic\""
 					}
 				}
 			],
@@ -1762,6 +1781,27 @@
 						}
 					],
 					"sid": 376928192749993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-end-of-layout",
+							"objectClass": "System",
+							"sid": 879689465685507
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 177346695957646,
+							"parameters": {
+								"tag": "\"LojaMusic\""
+							}
+						}
+					],
+					"sid": 781774855988681
 				}
 			],
 			"sid": 139097181798489

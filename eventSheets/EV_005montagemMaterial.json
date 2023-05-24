@@ -1,5 +1,5 @@
 {
-	"name": "EV_montagemMaterial1",
+	"name": "EV_005montagemMaterial",
 	"events": [
 		{
 			"eventType": "variable",
@@ -172,24 +172,34 @@
 			"sid": 486729467447268
 		},
 		{
-			"eventType": "include",
-			"includeSheet": "EV_loja"
+			"eventType": "variable",
+			"name": "EstouMiniGame",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 827245917946134
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Carta"
+			"includeSheet": "EV_003loja"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pedidos"
+			"includeSheet": "EV_002Carta"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "EV_Pause"
+			"includeSheet": "EV_013Pedidos"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Ev_Hud"
+			"includeSheet": "EV_012Pause"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_009Hud"
 		},
 		{
 			"eventType": "block",
@@ -217,23 +227,50 @@
 					"disabled": true
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 456931485527952,
-					"parameters": {
-						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
-						"loop": "looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"musicaConstrucao\""
-					}
-				},
-				{
 					"id": "set-visible",
 					"objectClass": "RelogioDiaNoite",
 					"sid": 479391148145953,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 266589380096920,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 858912033568094,
+					"parameters": {
+						"variable": "EstouLoja",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 971040669619837,
+					"parameters": {
+						"variable": "EstouQuarto",
+						"value": "false"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 393932323095275,
+					"parameters": {
+						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"MontagemMusic\""
 					}
 				}
 			],
@@ -3901,32 +3938,6 @@
 			"sid": 121591481091420
 		},
 		{
-			"eventType": "comment",
-			"text": "gambiarra tirar isso por favor"
-		},
-		{
-			"eventType": "comment",
-			"text": "paraFins de teste "
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 835027709956798
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 268345561186434
-				}
-			],
-			"sid": 963516503315469,
-			"disabled": true
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -3940,6 +3951,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 220604291950668,
+					"parameters": {
+						"variable": "EstouMiniGame",
+						"value": "false"
+					}
+				},
 				{
 					"id": "set-position",
 					"objectClass": "Transicao",
@@ -3985,6 +4005,90 @@
 				}
 			],
 			"sid": 357272413518558
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 628052429487499,
+					"parameters": {
+						"variable": "EstouMiniGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 121259170717356,
+					"parameters": {
+						"tag": "\"LojaMusic\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 110511286413879,
+					"parameters": {
+						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"MontagemMusic\""
+					}
+				}
+			],
+			"sid": 740844733322995,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 960710493528637,
+					"parameters": {
+						"variable": "EstouMiniGame"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 649636844950412,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 750192825120511
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 545686318770050,
+					"parameters": {
+						"variable": "eEsseMaterialQueORoboUsa"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 738344100834046,
+					"parameters": {
+						"tag": "\"MontagemMusic\""
+					}
+				}
+			],
+			"sid": 182582899687343
 		}
 	],
 	"sid": 162936259003711
