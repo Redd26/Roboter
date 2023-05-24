@@ -188,6 +188,10 @@
 			"includeSheet": "EV_Pause"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Ev_Hud"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -903,16 +907,6 @@
 								{
 									"callFunction": "AnalisarMaterial",
 									"sid": 940772702358894
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 285996857532258,
-									"disabled": true,
-									"parameters": {
-										"variable": "eEsseMaterialQueORoboUsa",
-										"value": "false"
-									}
 								}
 							],
 							"sid": 389781033404654,
@@ -993,6 +987,15 @@
 										{
 											"type": "comment",
 											"text": "Dar mensagem de erro"
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 504983419540740,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
 										},
 										{
 											"id": "go-to-layout",
@@ -1482,6 +1485,15 @@
 											"text": "Dar mensagem de erro"
 										},
 										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 536818212025897,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
 											"id": "go-to-layout",
 											"objectClass": "System",
 											"sid": 784190513052342,
@@ -1849,68 +1861,112 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 583222279645605,
+									"sid": 377739123674581,
 									"parameters": {
 										"variable": "materialEscolhido",
 										"value": "\"cobre\""
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "MaterialCobreDestruir",
-									"sid": 399956733994535,
-									"parameters": {
-										"x": "535",
-										"y": "357"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialCobreDestruir",
-									"sid": 957924913196833,
-									"parameters": {
-										"animation": "\"IdleCobre\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 220286073994270,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 714502364988638,
-									"parameters": {
-										"x": "531",
-										"y": "353"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 154434051640590,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 490641292154484,
-									"disabled": true,
-									"parameters": {
-										"variable": "eEsseMaterialQueORoboUsa",
-										"value": "false"
-									}
+									"callFunction": "AnalisarMaterial",
+									"sid": 154710984436972
 								}
 							],
 							"sid": 481002117887671,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 108212735888675,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 309293041263310,
+											"parameters": {
+												"x": "535",
+												"y": "357"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialCobreDestruir",
+											"sid": 648661223339833,
+											"parameters": {
+												"animation": "\"IdleCobre\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 683573938507854,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 286445125409274,
+											"parameters": {
+												"x": "531",
+												"y": "353"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 640903271344873,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 135310615960252
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 987385589752720,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 356263507262297,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 802973607452098,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 278818084324924
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1922,6 +1978,14 @@
 												"variable": "materialEscolhido",
 												"comparison": 0,
 												"value": "\"cobre\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 260265663848382,
+											"parameters": {
+												"variable": "TransformarMouse"
 											}
 										}
 									],
@@ -2267,61 +2331,105 @@
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "MaterialViridisDestruir",
-									"sid": 802343600929871,
-									"parameters": {
-										"x": "535",
-										"y": "357"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialViridisDestruir",
-									"sid": 355713009301415,
-									"parameters": {
-										"animation": "\"IdleViridis\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 994535995472389,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 333155679698593,
-									"parameters": {
-										"x": "531",
-										"y": "353"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 616756778802590,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 140771328863300,
-									"disabled": true,
-									"parameters": {
-										"variable": "eEsseMaterialQueORoboUsa",
-										"value": "false"
-									}
+									"callFunction": "AnalisarMaterial",
+									"sid": 832528859054993
 								}
 							],
 							"sid": 371430980102000,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 673281637945346,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 348566113199131,
+											"parameters": {
+												"x": "535",
+												"y": "357"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialViridisDestruir",
+											"sid": 458991969827787,
+											"parameters": {
+												"animation": "\"IdleViridis\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 370393013738155,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 946084647067162,
+											"parameters": {
+												"x": "531",
+												"y": "353"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 389540933907871,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 525933588430375
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 120517613320360,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 631195065838975,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 423348921840594,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 156584633812149
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -2333,6 +2441,14 @@
 												"variable": "materialEscolhido",
 												"comparison": 0,
 												"value": "\"viridis\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 993758243301537,
+											"parameters": {
+												"variable": "TransformarMouse"
 											}
 										}
 									],
@@ -2715,61 +2831,105 @@
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "MaterialEritroDestruir",
-									"sid": 907946335457548,
-									"parameters": {
-										"x": "535",
-										"y": "357"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "MaterialEritroDestruir",
-									"sid": 597322675214420,
-									"parameters": {
-										"animation": "\"IdleEritro\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 938759887762944,
-									"parameters": {
-										"seconds": "1.5"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 945945524481110,
-									"parameters": {
-										"x": "531",
-										"y": "353"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "HitBoxMaterialDestruir",
-									"sid": 276330390631458,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 208288619031464,
-									"disabled": true,
-									"parameters": {
-										"variable": "eEsseMaterialQueORoboUsa",
-										"value": "false"
-									}
+									"callFunction": "AnalisarMaterial",
+									"sid": 862174558861919
 								}
 							],
 							"sid": 776309093751353,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 750305123006694,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 329588666843541,
+											"parameters": {
+												"x": "535",
+												"y": "357"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "MaterialEritroDestruir",
+											"sid": 222980708774033,
+											"parameters": {
+												"animation": "\"IdleEritro\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 357634055926454,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 616742040740121,
+											"parameters": {
+												"x": "531",
+												"y": "353"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "HitBoxMaterialDestruir",
+											"sid": 698818056647363,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 124012892694282
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 393094970497774,
+											"parameters": {
+												"variable": "PedidoAutorizado"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 804702287870393,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 539882788445769,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 630252771001302
+								},
 								{
 									"eventType": "block",
 									"conditions": [

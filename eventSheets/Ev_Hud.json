@@ -2,6 +2,10 @@
 	"name": "Ev_Hud",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Pedidos"
+		},
+		{
 			"eventType": "variable",
 			"name": "Maldicao",
 			"type": "number",
@@ -42,27 +46,41 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 582222352092140,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 984581503064743,
-							"parameters": {
-								"variable": "Maldicao",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "HUDMaldicao",
-							"sid": 244870898480524,
-							"parameters": {
-								"animation": "\"UmMaldicao\"",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 279079594711450
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 320966492986175,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 940220821752501,
+									"parameters": {
+										"animation": "\"UmMaldicao\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 675440711241626
 						}
-					],
-					"sid": 582222352092140
+					]
 				},
 				{
 					"eventType": "block",
@@ -78,27 +96,41 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 205474354509830,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 948956493004859,
-							"parameters": {
-								"variable": "Maldicao",
-								"value": "2"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "HUDMaldicao",
-							"sid": 934352899667655,
-							"parameters": {
-								"animation": "\"DoisMaldicao\"",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 454438380918338
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 697036055891832,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 527366032871254,
+									"parameters": {
+										"animation": "\"DoisMaldicao\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 130692840816001
 						}
-					],
-					"sid": 205474354509830
+					]
 				},
 				{
 					"eventType": "block",
@@ -114,31 +146,45 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 754100403749437,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 230507181424266,
-							"parameters": {
-								"variable": "Maldicao",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "HUDMaldicao",
-							"sid": 442998966280056,
-							"parameters": {
-								"animation": "\"TresMaldicao\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "Depois ele ira ser possuido pela maldicao fadado a andar \"vagando\" para sempre"
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 193535603293141
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Depois ele ira ser possuido pela maldicao fadado a andar \"vagando\" para sempre"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 448625237782865,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 495263895927426,
+									"parameters": {
+										"animation": "\"TresMaldicao\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 565524793323961
 						}
-					],
-					"sid": 754100403749437
+					]
 				},
 				{
 					"eventType": "block",

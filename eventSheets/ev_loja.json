@@ -194,6 +194,26 @@
 						"variable": "EstouLoja",
 						"value": "true"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 331247156588577,
+					"parameters": {
+						"tag": "\"MenuMusic\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 873142136664057,
+					"parameters": {
+						"audio-file": "Musica_BGM_Ambientação_Montagem_01",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"MontagemMusic\""
+					}
 				}
 			],
 			"sid": 416672428889199
@@ -543,15 +563,6 @@
 											"parameters": {
 												"variable": "PedidoAceito",
 												"value": "true"
-											}
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 785069172478365,
-											"parameters": {
-												"variable": "robo",
-												"value": "1"
 											}
 										},
 										{
@@ -1112,6 +1123,15 @@
 										{
 											"callFunction": "FecharCarimbo",
 											"sid": 555409818464608
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 142621522341551,
+											"parameters": {
+												"variable": "robo",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 324015433351181
@@ -1381,9 +1401,9 @@
 											}
 										},
 										{
-											"id": "set-eventvar-value",
+											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 482183472081402,
+											"sid": 680468934501618,
 											"parameters": {
 												"variable": "NumeroCartaNegada",
 												"value": "1"

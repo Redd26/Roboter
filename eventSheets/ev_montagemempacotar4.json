@@ -77,7 +77,7 @@
 			"eventType": "variable",
 			"name": "MaxBrilho",
 			"type": "number",
-			"initialValue": "4",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -579,7 +579,7 @@
 			"eventType": "variable",
 			"name": "i",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "-1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -679,9 +679,9 @@
 									],
 									"actions": [
 										{
-											"id": "set-text",
+											"id": "append-text",
 											"objectClass": "AcertouDebug",
-											"sid": 659751629331375,
+											"sid": 304239123752727,
 											"parameters": {
 												"text": "\"acertou\""
 											}
@@ -701,6 +701,24 @@
 											"parameters": {
 												"layer": "\"empacotarHitLayer\"",
 												"interactive": false
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 549717904756229,
+											"parameters": {
+												"variable": "acertou",
+												"value": "true"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 322563612621114,
+											"parameters": {
+												"variable": "ContadorDeBrilho",
+												"value": "1"
 											}
 										}
 									],
@@ -757,7 +775,8 @@
 													}
 												}
 											],
-											"sid": 563978772673098
+											"sid": 563978772673098,
+											"disabled": true
 										}
 									]
 								},
@@ -795,6 +814,24 @@
 												"layer": "\"empacotarHitLayer\"",
 												"interactive": false
 											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 910179780293722,
+											"parameters": {
+												"variable": "i",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 949480601985095,
+											"parameters": {
+												"variable": "ContadorDeBrilho",
+												"value": "0"
+											}
 										}
 									],
 									"sid": 725407989213723,
@@ -810,6 +847,7 @@
 											],
 											"actions": [],
 											"sid": 317293894040253,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -853,7 +891,8 @@
 															}
 														}
 													],
-													"sid": 555523585295987
+													"sid": 555523585295987,
+													"disabled": true
 												}
 											]
 										}
@@ -981,7 +1020,8 @@
 							}
 						}
 					],
-					"sid": 762743870803344
+					"sid": 762743870803344,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1101,7 +1141,8 @@
 							}
 						}
 					],
-					"sid": 596756856879726
+					"sid": 596756856879726,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1221,7 +1262,8 @@
 							}
 						}
 					],
-					"sid": 402943795027765
+					"sid": 402943795027765,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1357,7 +1399,8 @@
 							}
 						}
 					],
-					"sid": 324306891102120
+					"sid": 324306891102120,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1366,6 +1409,7 @@
 							"id": "compare-eventvar",
 							"objectClass": "System",
 							"sid": 136994678772547,
+							"disabled": true,
 							"parameters": {
 								"variable": "ErroBrilho",
 								"comparison": 5,
@@ -1408,7 +1452,8 @@
 							}
 						}
 					],
-					"sid": 923079565849809
+					"sid": 923079565849809,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1489,58 +1534,6 @@
 					}
 				},
 				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 175198338311029,
-					"parameters": {
-						"x": "0",
-						"y": "0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Transicao",
-					"sid": 886700682848710,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 244823146218295,
-					"parameters": {
-						"seconds": "1.3"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 585726928173303,
-					"parameters": {
-						"x": "3000",
-						"y": "1500"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 386010204785289,
-					"parameters": {
-						"variable": "PedidoFinalizado",
-						"value": "true"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 822587059293232,
-					"parameters": {
-						"layout": "Loja"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 844702067809907,
@@ -1552,6 +1545,110 @@
 				}
 			],
 			"sid": 927212547521976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "CabecaCortaPao",
+					"sid": 610169771162139,
+					"parameters": {
+						"object": "ColicaoCabecaEmpacotar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "CabecaCortaPao",
+					"sid": 358185046224099,
+					"parameters": {
+						"object": "ColicaoCabecaEmpacotar",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoLevel",
+					"sid": 763629180450749,
+					"parameters": {
+						"x": "1094",
+						"y": "526"
+					}
+				}
+			],
+			"sid": 714617141631190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 199060947646315,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoLevel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 117187125941414,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 138008942462881,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 473567532355807,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 625054013288712,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 281290255616042,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 531370367610432,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 755983622845115
 		}
 	],
 	"sid": 904139227086244

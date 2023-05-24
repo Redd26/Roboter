@@ -96,6 +96,26 @@
 			"sid": 497561751922802
 		},
 		{
+			"eventType": "variable",
+			"name": "JogadorErrou",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 831122424083803
+		},
+		{
+			"eventType": "variable",
+			"name": "PularCarta",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 465614911070551
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -218,6 +238,130 @@
 			"sid": 658790350345835
 		},
 		{
+			"eventType": "comment",
+			"text": "Tirar quando colocar tutorial"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 790223976516942,
+					"parameters": {
+						"variable": "PedidoNegado"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 983203014661158,
+					"parameters": {
+						"variable": "robo",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 311754865058111,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 922869792837877,
+					"parameters": {
+						"variable": "PularCarta",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 260622661840820,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 129781887313823,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 779706461313876,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 279962219006421,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 572000446827393,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 195605459909475,
+					"parameters": {
+						"variable": "PedidoNegado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CarimbadaAprovada",
+					"sid": 734740676992913,
+					"parameters": {
+						"animation": "\"IdleAprovado\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CarimbadaNegada",
+					"sid": 496406771308337,
+					"parameters": {
+						"animation": "\"IdleNegado\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 531275386657244
+		},
+		{
+			"eventType": "comment",
+			"text": "Deixar no tutorial"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -237,6 +381,15 @@
 					"parameters": {
 						"variable": "robo",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 780062059172036,
+					"parameters": {
+						"variable": "PularCarta",
+						"value": "true"
 					}
 				},
 				{
@@ -291,6 +444,24 @@
 					"parameters": {
 						"variable": "PedidoNegado",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CarimbadaAprovada",
+					"sid": 724422694554944,
+					"parameters": {
+						"animation": "\"IdleAprovado\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CarimbadaNegada",
+					"sid": 459979306115718,
+					"parameters": {
+						"animation": "\"IdleNegado\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1051,6 +1222,71 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "Fase 4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "repetir para os demais robos"
+				},
+				{
+					"eventType": "comment",
+					"text": "Somente quando terminar a sequencia"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 777807085659175,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 917855233196311,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 0,
+								"second-value": "MaxBrilho"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "CabecaCortaPao",
+							"sid": 827860686128517,
+							"parameters": {
+								"object": "SpawnRobos",
+								"layer": "\"game\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ColicaoCabecaEmpacotar",
+							"sid": 176377745245660,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 485810029604235
+				}
+			],
+			"sid": 782170677474286
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "Quarto 1",
 			"description": "",
 			"isActiveOnStart": true,
@@ -1261,6 +1497,494 @@
 				}
 			],
 			"sid": 346182188172137
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Erros 1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 705448735248502,
+							"parameters": {
+								"first-value": "materialEscolhido",
+								"comparison": 1,
+								"second-value": "MaterialCerto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 292283648075688,
+							"parameters": {
+								"variable": "JogadorErrou",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 583224165097016
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 250248335699443,
+							"parameters": {
+								"variable": "JogadorErrou"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 958581727329126,
+							"parameters": {
+								"variable": "JogadorErrou",
+								"value": "false"
+							}
+						},
+						{
+							"callFunction": "AnalisarErro1",
+							"sid": 438865280962634
+						}
+					],
+					"sid": 309104716110212
+				},
+				{
+					"functionName": "AnalisarErro1",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 128077789087396,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 133277663856770,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 867423016465539,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 986900099831915,
+									"parameters": {
+										"animation": "\"UmMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 609241479692710,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 306343224251294
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 543587115741846,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 820415419790972,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 780003529340620,
+									"parameters": {
+										"animation": "\"DoisMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 193031323310061,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 458176035639711
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 459953741080368,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 371104990491790,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 653539834243999,
+									"parameters": {
+										"animation": "\"TresMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 237238409636536,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 440571005122830
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 460360965835738,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 258439466414578,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 882658130610011,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 108884651218247,
+									"parameters": {
+										"animation": "\"DoisMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 265559562150663,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 560399138601143
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 212738009486195,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 291454828458074,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 420648656388440,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 169053244714405,
+									"parameters": {
+										"animation": "\"TresMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 227835686557502,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 620347982749093
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 619613883731768,
+									"parameters": {
+										"variable": "Erro",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 944709083684299,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 552185279611539,
+									"parameters": {
+										"variable": "Maldicao",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "HUDMaldicao",
+									"sid": 855474987711138,
+									"parameters": {
+										"animation": "\"TresMaldicao\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 454898259145038,
+									"parameters": {
+										"variable": "PularCarta",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 248433893847945
+						}
+					]
+				}
+			],
+			"sid": 231691270321314
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Erros 2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 805018218889816
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "CartasNegadas",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 839985829288286,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 831693525336381,
+							"parameters": {
+								"variable": "PularCarta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 647524151943029,
+							"parameters": {
+								"animation": "\"Pedido02Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 412891125627378,
+							"parameters": {
+								"variable": "PularCarta",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 529173969854611
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 342898068926436,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 428167669663427,
+							"parameters": {
+								"variable": "PularCarta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 314369092591899,
+							"parameters": {
+								"animation": "\"Pedido03Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 662047093760482,
+							"parameters": {
+								"variable": "PularCarta",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 695771193894546
+				}
+			],
+			"sid": 949722409680873
 		}
 	],
 	"sid": 524867988248230

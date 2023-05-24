@@ -779,12 +779,12 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 118673134997025,
+					"sid": 694532015835710,
 					"parameters": {
-						"variable": "Erro",
-						"value": "1"
+						"variable": "JogadorErrou",
+						"value": "true"
 					}
 				},
 				{

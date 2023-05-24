@@ -133,6 +133,18 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 193254882811143,
+					"parameters": {
+						"audio-file": "BGM_MENU",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"MenuMusic\""
+					}
 				}
 			],
 			"sid": 998850988571924

@@ -144,7 +144,9 @@
 			"CarimbadaNegada",
 			"CarimbadaAprovada",
 			"CasaDosCarimbos",
-			"Transicao"
+			"Transicao",
+			"SpawnRobos",
+			"ColicaoCabecaEmpacotar"
 		],
 		"subfolders": [
 			{
@@ -408,6 +410,14 @@
 					"name": "Musica_BGM_Ambientação_Montagem_01.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 320658350871188,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BGM_MENU.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 253403472979703,
 					"file-info": {
 						"purpose": "none"
 					}
