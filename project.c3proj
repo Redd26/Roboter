@@ -146,7 +146,8 @@
 			"CasaDosCarimbos",
 			"Transicao",
 			"SpawnRobos",
-			"ColicaoCabecaEmpacotar"
+			"ColicaoCabecaEmpacotar",
+			"BotaoFecharCarta"
 		],
 		"subfolders": [
 			{
