@@ -874,15 +874,6 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 694532015835710,
-					"parameters": {
-						"variable": "JogadorErrou",
-						"value": "true"
-					}
-				},
-				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 284894705051181,
@@ -891,7 +882,40 @@
 					}
 				}
 			],
-			"sid": 751146605169251
+			"sid": 751146605169251,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 904698895777116
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 963924093813880,
+							"parameters": {
+								"variable": "Erro",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 965478462238030,
+							"parameters": {
+								"variable": "JogadorErrou",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 211499793502877
+				}
+			]
 		},
 		{
 			"eventType": "block",

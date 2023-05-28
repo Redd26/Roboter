@@ -398,7 +398,8 @@
 							}
 						}
 					],
-					"sid": 849985508611312
+					"sid": 849985508611312,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -424,7 +425,8 @@
 							}
 						}
 					],
-					"sid": 254930285503305
+					"sid": 254930285503305,
+					"disabled": true
 				},
 				{
 					"eventType": "block",

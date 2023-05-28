@@ -59,7 +59,7 @@
 			"eventType": "variable",
 			"name": "Dia",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1321,18 +1321,6 @@
 						{
 							"callFunction": "Estudar 1",
 							"sid": 299513271417632
-						},
-						{
-							"callFunction": "Estudar 2",
-							"sid": 630984826958290
-						},
-						{
-							"callFunction": "Dormir 1",
-							"sid": 770270670306409
-						},
-						{
-							"callFunction": "Dormir 2",
-							"sid": 623250495214151
 						}
 					],
 					"sid": 246062912422092
@@ -1346,168 +1334,155 @@
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
-					"conditions": [
+					"conditions": [],
+					"actions": [],
+					"sid": 866696214516201,
+					"children": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 430432346514902,
-							"parameters": {
-								"variable": "Dia",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 719807789756586,
-							"parameters": {
-								"variable": "Estudar",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 491717004402640,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 997288933848250,
+									"parameters": {
+										"variable": "Estudar",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 721156421051467,
+									"parameters": {
+										"variable": "Dormir",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 315934341105830
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 915731812033534,
-							"parameters": {
-								"variable": "Dormir",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 232371166099881
-				},
-				{
-					"functionName": "Estudar 2",
-					"functionCopyPicked": false,
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 174116441636338,
-							"parameters": {
-								"variable": "Dia",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 483984224468267,
-							"parameters": {
-								"variable": "Estudar",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 590874373121710,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 386865352887003,
+									"parameters": {
+										"variable": "Estudar",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 215351332462117,
+									"parameters": {
+										"variable": "Dormir",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 315186050723923
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 974258032606862,
-							"parameters": {
-								"variable": "Dormir",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 841020243837784
-				},
-				{
-					"functionName": "Dormir 1",
-					"functionCopyPicked": false,
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 469777222191118,
-							"parameters": {
-								"variable": "Dia",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 908221420385133,
-							"parameters": {
-								"variable": "Dormir",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 528169872014854,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 216788804113666,
+									"parameters": {
+										"variable": "Dormir",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 514231494915855,
+									"parameters": {
+										"variable": "Estudar",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 149575302136970
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 826721891017556,
-							"parameters": {
-								"variable": "Estudar",
-								"value": "false"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 971039982212412,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 736561732861657,
+									"parameters": {
+										"variable": "Dormir",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 139245430389474,
+									"parameters": {
+										"variable": "Estudar",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 799872817435913
 						}
-					],
-					"sid": 623777550063991
-				},
-				{
-					"functionName": "Dormir 2",
-					"functionCopyPicked": false,
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 322763786326548,
-							"parameters": {
-								"variable": "Dia",
-								"comparison": 0,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 928695805169420,
-							"parameters": {
-								"variable": "Dormir",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 411349317288703,
-							"parameters": {
-								"variable": "Estudar",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 364320905982538
+					]
 				}
 			],
 			"sid": 346182188172137

@@ -269,6 +269,24 @@
 							"text": "Adicionar a Barra de upgrade mais um"
 						},
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 659991769631601,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 406225543162283,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "false"
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "RelogioDiaNoite",
 							"sid": 964395458131725,
@@ -280,28 +298,26 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 666683731326043,
+							"sid": 348504442287819,
 							"parameters": {
 								"variable": "Dia",
 								"value": "1"
 							}
 						},
 						{
-							"id": "add-to-eventvar",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 238066398742905,
+							"sid": 298887095520206,
 							"parameters": {
-								"variable": "BarraRobotica",
-								"value": "1"
+								"seconds": "0.5"
 							}
 						},
 						{
-							"id": "set-boolean-eventvar",
+							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 805262264506269,
+							"sid": 624014183755319,
 							"parameters": {
-								"variable": "Estudar",
-								"value": "false"
+								"layout": "Loja"
 							}
 						}
 					],
