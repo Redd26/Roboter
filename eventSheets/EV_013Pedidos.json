@@ -1250,10 +1250,10 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 917855233196311,
+							"sid": 843137193529186,
 							"parameters": {
 								"first-value": "ContadorDeBrilho",
-								"comparison": 0,
+								"comparison": 5,
 								"second-value": "MaxBrilho"
 							}
 						}

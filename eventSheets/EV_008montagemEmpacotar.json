@@ -781,57 +781,14 @@
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 422301173684219,
+													"sid": 307515028723926,
 													"parameters": {
 														"variable": "i",
-														"value": "0"
+														"value": "-1"
 													}
 												}
 											],
 											"sid": 687076449928404
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "trigger-once-while-true",
-													"objectClass": "System",
-													"sid": 337813835688812,
-													"disabled": true
-												},
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 727167678446117,
-													"parameters": {
-														"first-value": "i",
-														"comparison": 0,
-														"second-value": "SequenciaDeNotas.Width"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 426059085409272,
-													"parameters": {
-														"variable": "acertou",
-														"value": "true"
-													}
-												},
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 478687473561938,
-													"parameters": {
-														"variable": "ContadorDeBrilho",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 243565643533048,
-											"disabled": true
 										},
 										{
 											"eventType": "block",
@@ -887,964 +844,21 @@
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 414166646704447,
-													"parameters": {
-														"variable": "ContadorDeBrilho",
-														"value": "0"
-													}
-												},
-												{
-													"id": "set-eventvar-value",
-													"objectClass": "System",
-													"sid": 434354786689399,
+													"sid": 201250293511986,
 													"parameters": {
 														"variable": "i",
-														"value": "0"
+														"value": "-1"
 													}
 												}
 											],
 											"sid": 367924530567671,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "trigger-once-while-true",
-															"objectClass": "System",
-															"sid": 779825137999527
-														}
-													],
-													"actions": [
-														{
-															"id": "set-text",
-															"objectClass": "AcertouDebug",
-															"sid": 739894970470747,
-															"parameters": {
-																"text": "\"\""
-															}
-														},
-														{
-															"id": "set-text",
-															"objectClass": "ErrouDebug",
-															"sid": 117258623928505,
-															"parameters": {
-																"text": "\"Reiniciou o jogo\""
-															}
-														},
-														{
-															"id": "wait",
-															"objectClass": "System",
-															"sid": 338539371791915,
-															"parameters": {
-																"seconds": "3"
-															}
-														},
-														{
-															"id": "set-text",
-															"objectClass": "ErrouDebug",
-															"sid": 870275336178922,
-															"parameters": {
-																"text": "\"\""
-															}
-														},
-														{
-															"id": "set-eventvar-value",
-															"objectClass": "System",
-															"sid": 142400837871826,
-															"parameters": {
-																"variable": "empacotarContador",
-																"value": "0"
-															}
-														},
-														{
-															"id": "set-eventvar-value",
-															"objectClass": "System",
-															"sid": 178023875439504,
-															"parameters": {
-																"variable": "empacotarSequencia",
-																"value": "3"
-															}
-														},
-														{
-															"id": "set-eventvar-value",
-															"objectClass": "System",
-															"sid": 873200514701649,
-															"parameters": {
-																"variable": "empacotarJogadorSequencia",
-																"value": "0"
-															}
-														},
-														{
-															"id": "set-visible",
-															"objectClass": "BotaoDeIniciarEmpacotar",
-															"sid": 292898728627825,
-															"parameters": {
-																"visibility": "visible"
-															}
-														},
-														{
-															"id": "clear",
-															"objectClass": "SequenciaDeNotas",
-															"sid": 812415838969364,
-															"parameters": {
-																"value": "0"
-															}
-														},
-														{
-															"id": "clear",
-															"objectClass": "SequenciaDeNotasJogador",
-															"sid": 528381074006355,
-															"parameters": {
-																"value": "0"
-															}
-														},
-														{
-															"id": "set-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 593039663451472,
-															"parameters": {
-																"variable": "validacao",
-																"value": "false"
-															}
-														},
-														{
-															"id": "wait",
-															"objectClass": "System",
-															"sid": 826382081323169,
-															"parameters": {
-																"seconds": "0.5"
-															}
-														}
-													],
-													"sid": 213688902033800,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-two-values",
-																	"objectClass": "System",
-																	"sid": 159486622000324,
-																	"parameters": {
-																		"first-value": "i",
-																		"comparison": 1,
-																		"second-value": "SequenciaDeNotas.PickedCount"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "add-to-eventvar",
-																	"objectClass": "System",
-																	"sid": 820454476553637,
-																	"parameters": {
-																		"variable": "ErroBrilho",
-																		"value": "1"
-																	}
-																},
-																{
-																	"id": "wait",
-																	"objectClass": "System",
-																	"sid": 689350051397768,
-																	"parameters": {
-																		"seconds": "0.5"
-																	}
-																},
-																{
-																	"id": "set-eventvar-value",
-																	"objectClass": "System",
-																	"sid": 705664221054805,
-																	"parameters": {
-																		"variable": "i",
-																		"value": "0"
-																	}
-																}
-															],
-															"sid": 257741736213484,
-															"disabled": true
-														}
-													]
-												}
-											]
+											"disabled": true
 										}
 									]
-								},
-								{
-									"eventType": "comment",
-									"text": "antigo"
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-at-x",
-											"objectClass": "SequenciaDeNotasJogador",
-											"sid": 919270352213446,
-											"parameters": {
-												"x": "i",
-												"comparison": 0,
-												"value": "SequenciaDeNotas.At(i)"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "append-text",
-											"objectClass": "AcertouDebug",
-											"sid": 304239123752727,
-											"parameters": {
-												"text": "\"acertou\""
-											}
-										},
-										{
-											"id": "set-font-color",
-											"objectClass": "AcertouDebug",
-											"sid": 538952056159551,
-											"parameters": {
-												"color": "rgbEx(0, 255, 0)"
-											}
-										},
-										{
-											"id": "set-layer-interactive",
-											"objectClass": "System",
-											"sid": 881058382569137,
-											"parameters": {
-												"layer": "\"empacotarHitLayer\"",
-												"interactive": false
-											}
-										},
-										{
-											"id": "set-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 549717904756229,
-											"parameters": {
-												"variable": "acertou",
-												"value": "true"
-											}
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 322563612621114,
-											"parameters": {
-												"variable": "ContadorDeBrilho",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 232911226261359,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 994442005507327,
-													"parameters": {
-														"first-value": "i",
-														"comparison": 0,
-														"second-value": "SequenciaDeNotas.Width"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 472125252934682,
-													"parameters": {
-														"variable": "acertou",
-														"value": "true"
-													}
-												},
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 234572489077813,
-													"parameters": {
-														"variable": "ContadorDeBrilho",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 427619456777209,
-													"parameters": {
-														"seconds": "0.5"
-													}
-												},
-												{
-													"id": "set-eventvar-value",
-													"objectClass": "System",
-													"sid": 614271163213937,
-													"parameters": {
-														"variable": "i",
-														"value": "0"
-													}
-												}
-											],
-											"sid": 563978772673098
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 755790717426373
-										}
-									],
-									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "ErrouDebug",
-											"sid": 512850661265061,
-											"parameters": {
-												"text": "\"ERROU\""
-											}
-										},
-										{
-											"id": "set-font-color",
-											"objectClass": "ErrouDebug",
-											"sid": 580234616642063,
-											"parameters": {
-												"color": "rgbEx(255, 0, 0)"
-											}
-										},
-										{
-											"id": "set-layer-interactive",
-											"objectClass": "System",
-											"sid": 375536048527807,
-											"parameters": {
-												"layer": "\"empacotarHitLayer\"",
-												"interactive": false
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 855013930919568,
-											"parameters": {
-												"variable": "i",
-												"value": "0"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 381641333801189,
-											"parameters": {
-												"variable": "ContadorDeBrilho",
-												"value": "0"
-											}
-										}
-									],
-									"sid": 667811114676117,
-									"disabled": true,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "trigger-once-while-true",
-													"objectClass": "System",
-													"sid": 502368078986987
-												}
-											],
-											"actions": [],
-											"sid": 521159797772126,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 159971058687448,
-															"parameters": {
-																"first-value": "i",
-																"comparison": 1,
-																"second-value": "SequenciaDeNotas.PickedCount"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 269547389673372,
-															"parameters": {
-																"variable": "ErroBrilho",
-																"value": "1"
-															}
-														},
-														{
-															"id": "wait",
-															"objectClass": "System",
-															"sid": 898028048863732,
-															"parameters": {
-																"seconds": "0.5"
-															}
-														},
-														{
-															"id": "set-eventvar-value",
-															"objectClass": "System",
-															"sid": 909178589041177,
-															"parameters": {
-																"variable": "i",
-																"value": "0"
-															}
-														}
-													],
-													"sid": 536378025450765
-												}
-											]
-										}
-									]
-								},
-								{
-									"eventType": "comment",
-									"text": "mais ou menos certo somente para o playtest"
 								}
 							]
 						}
 					]
-				},
-				{
-					"eventType": "comment",
-					"text": "contador antigo"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 814228437947899,
-							"parameters": {
-								"variable": "ContadorDeBrilho",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 121354734082185,
-							"parameters": {
-								"text": "\"ESSA É A SEGUNDA VEZ\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 747482594500666,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 405893829297338,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 530178487061883,
-							"parameters": {
-								"variable": "empacotarContador",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 291712509943687,
-							"parameters": {
-								"variable": "empacotarSequencia",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 431076802240322,
-							"parameters": {
-								"variable": "empacotarJogadorSequencia",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoDeIniciarEmpacotar",
-							"sid": 168834878707441,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotas",
-							"sid": 574207765040450,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotasJogador",
-							"sid": 557410774977876,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 304282657823531,
-							"parameters": {
-								"variable": "validacao",
-								"value": "false"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 536918310368976,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 286981523429126,
-							"disabled": true,
-							"parameters": {
-								"variable": "acertou",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 762743870803344,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 787805462281156,
-							"parameters": {
-								"variable": "ContadorDeBrilho",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 721546502222347,
-							"parameters": {
-								"text": "\"ESSA É A TERCEIRA VEZ\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 452834667338333,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 228442424602638,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 950344613058227,
-							"parameters": {
-								"variable": "empacotarContador",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 340165338790570,
-							"parameters": {
-								"variable": "empacotarSequencia",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 225618357980058,
-							"parameters": {
-								"variable": "empacotarJogadorSequencia",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoDeIniciarEmpacotar",
-							"sid": 681837683219600,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotas",
-							"sid": 153342579605000,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotasJogador",
-							"sid": 610637635126005,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 114174599271097,
-							"parameters": {
-								"variable": "validacao",
-								"value": "false"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 280112808107665,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 326488281773658,
-							"disabled": true,
-							"parameters": {
-								"variable": "acertou",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 596756856879726,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 348717235749685,
-							"parameters": {
-								"variable": "ContadorDeBrilho",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 711953468944631,
-							"parameters": {
-								"text": "\"ESSA É A QUARTA VEZ\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 830988636093100,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 339446932386931,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 570275023039962,
-							"parameters": {
-								"variable": "empacotarContador",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 246932929067899,
-							"parameters": {
-								"variable": "empacotarSequencia",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 450216517015673,
-							"parameters": {
-								"variable": "empacotarJogadorSequencia",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoDeIniciarEmpacotar",
-							"sid": 184801470760039,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotas",
-							"sid": 237512106016753,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotasJogador",
-							"sid": 907338813692266,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 676453324765350,
-							"parameters": {
-								"variable": "validacao",
-								"value": "false"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 311482685296153,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 420502623829188,
-							"disabled": true,
-							"parameters": {
-								"variable": "acertou",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 402943795027765,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 755272894117557,
-							"parameters": {
-								"variable": "ErroBrilho",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "ErrouDebug",
-							"sid": 700438136099574,
-							"parameters": {
-								"text": "\"JA FOI SEU PRIMEIRO ERRO\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 663463859581648,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "ErrouDebug",
-							"sid": 309624857445032,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 484091121116889,
-							"parameters": {
-								"variable": "empacotarContador",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 852839050105916,
-							"parameters": {
-								"variable": "empacotarSequencia",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 657832979324368,
-							"parameters": {
-								"variable": "empacotarJogadorSequencia",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoDeIniciarEmpacotar",
-							"sid": 318952432638826,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotas",
-							"sid": 157156930586460,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "SequenciaDeNotasJogador",
-							"sid": 767795285669767,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 868537767439597,
-							"parameters": {
-								"variable": "validacao",
-								"value": "false"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 239114695151170,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						}
-					],
-					"sid": 324306891102120,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 136994678772547,
-							"disabled": true,
-							"parameters": {
-								"variable": "ErroBrilho",
-								"comparison": 5,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "ErrouDebug",
-							"sid": 491843568434068,
-							"parameters": {
-								"text": "\"ACABARAM SUAS TENTATIVAS\""
-							}
-						},
-						{
-							"id": "set-layer-interactive",
-							"objectClass": "System",
-							"sid": 266855643227945,
-							"parameters": {
-								"layer": "\"empacotarHitLayer\"",
-								"interactive": false
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "AcertouDebug",
-							"sid": 181321318181975,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BotaoDeIniciarEmpacotar",
-							"sid": 422484890923094,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 923079565849809,
-					"disabled": true
 				},
 				{
 					"eventType": "comment",
@@ -2209,74 +1223,647 @@
 						}
 					],
 					"sid": 323050548768554
+				},
+				{
+					"eventType": "comment",
+					"text": "erro"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 553286154020498,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"comparison": 2,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AcertouDebug",
+							"sid": 340986776733553,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 528111413001840,
+							"parameters": {
+								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 130376564556427,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 539152184711078,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 194455391767417,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 897275157063276,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 102428606383326,
+							"parameters": {
+								"variable": "empacotarSequencia",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 307421776609200,
+							"parameters": {
+								"variable": "empacotarJogadorSequencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BotaoDeIniciarEmpacotar",
+							"sid": 188553940179192,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotas",
+							"sid": 335069146050939,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotasJogador",
+							"sid": 741856612556641,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 184003768392278,
+							"parameters": {
+								"variable": "validacao",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 665426456226050,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 542349918920354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 115511365910222,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AcertouDebug",
+							"sid": 433113233918394,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 815718198592274,
+							"parameters": {
+								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 791172362947791,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 540009216840330,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 398556036885049,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 254068297896570,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 724203116479317,
+							"parameters": {
+								"variable": "empacotarSequencia",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 221819559661336,
+							"parameters": {
+								"variable": "empacotarJogadorSequencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BotaoDeIniciarEmpacotar",
+							"sid": 151493018967931,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotas",
+							"sid": 262000895493120,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotasJogador",
+							"sid": 495046337974077,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 728330242300827,
+							"parameters": {
+								"variable": "validacao",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 531423213359457,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 101509719360806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 291821977492336,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AcertouDebug",
+							"sid": 502544742348451,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 458585813381332,
+							"parameters": {
+								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 467070088009018,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 344117949685590,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 395795798798520,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 119686441027952,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 652585819045786,
+							"parameters": {
+								"variable": "empacotarSequencia",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 499861193650405,
+							"parameters": {
+								"variable": "empacotarJogadorSequencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BotaoDeIniciarEmpacotar",
+							"sid": 632715860501495,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotas",
+							"sid": 590796157749049,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotasJogador",
+							"sid": 903086286500072,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 785681653334715,
+							"parameters": {
+								"variable": "validacao",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 539620114407744,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 896496477084852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 156561406447094,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AcertouDebug",
+							"sid": 717748647078824,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 737442240897384,
+							"parameters": {
+								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 214922790702658,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 733130584588411,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 286862073166275,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 497212274168447,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 480029131807034,
+							"parameters": {
+								"variable": "empacotarSequencia",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 982452804876698,
+							"parameters": {
+								"variable": "empacotarJogadorSequencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BotaoDeIniciarEmpacotar",
+							"sid": 318609420975795,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotas",
+							"sid": 921384220354918,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotasJogador",
+							"sid": 303369362196942,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 701703916441112,
+							"parameters": {
+								"variable": "validacao",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 603627932046755,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 372633833356784
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 937708557607099,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AcertouDebug",
+							"sid": 837644223433876,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 560216762910779,
+							"parameters": {
+								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 715978965946755,
+							"parameters": {
+								"variable": "ContadorDeBrilho",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 279710678879197,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ErrouDebug",
+							"sid": 749114645129565,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 155138171226914,
+							"parameters": {
+								"variable": "empacotarContador",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 432809998030570,
+							"parameters": {
+								"variable": "empacotarSequencia",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 964697605657089,
+							"parameters": {
+								"variable": "empacotarJogadorSequencia",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BotaoDeIniciarEmpacotar",
+							"sid": 439190697333107,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotas",
+							"sid": 730594183549814,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "SequenciaDeNotasJogador",
+							"sid": 837909659001236,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 263475076110602,
+							"parameters": {
+								"variable": "validacao",
+								"value": "false"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 165895671308952,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 467436074797961
 				}
 			]
-		},
-		{
-			"eventType": "comment",
-			"text": "antigo"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 526166103327129,
-					"parameters": {
-						"first-value": "ContadorDeBrilho",
-						"comparison": 0,
-						"second-value": "MaxBrilho"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "CaixaMontadaDebug",
-					"sid": 796852775002596,
-					"parameters": {
-						"text": "\"Caixa Montada\""
-					}
-				},
-				{
-					"id": "set-layer-interactive",
-					"objectClass": "System",
-					"sid": 960567822782506,
-					"parameters": {
-						"layer": "\"empacotarHitLayer\"",
-						"interactive": false
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "AcertouDebug",
-					"sid": 387006571013641,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "BotaoDeIniciarEmpacotar",
-					"sid": 811273564022238,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 844702067809907,
-					"disabled": true,
-					"parameters": {
-						"variable": "empacotarContador",
-						"value": "3"
-					}
-				}
-			],
-			"sid": 927212547521976,
-			"disabled": true
 		},
 		{
 			"eventType": "comment",
@@ -2328,16 +1915,6 @@
 					"sid": 266390164589176,
 					"parameters": {
 						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 104232387581525,
-					"disabled": true,
-					"parameters": {
-						"variable": "empacotarContador",
-						"value": "3"
 					}
 				}
 			],
