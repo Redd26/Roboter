@@ -440,6 +440,16 @@
 										{
 											"id": "compare-boolean-eventvar",
 											"objectClass": "System",
+											"sid": 708596280342144,
+											"disabled": true,
+											"parameters": {
+												"variable": "PedidoAceito"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
 											"sid": 592664657192134,
 											"parameters": {
 												"variable": "BloquearCorreio"
@@ -480,6 +490,7 @@
 											"id": "set-enabled",
 											"objectClass": "TextoCarta",
 											"sid": 891023039304049,
+											"disabled": true,
 											"behaviorType": "MoveTo",
 											"parameters": {
 												"enabled": false
@@ -1103,31 +1114,12 @@
 											"sid": 557932022847233
 										},
 										{
-											"id": "move-to-position",
-											"objectClass": "BotaoAceitar",
-											"sid": 502518449844308,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"x": "BotaoAceitar.PosX",
-												"y": "BotaoAceitar.PosY",
-												"mode": "direct"
-											}
-										},
-										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
 											"sid": 227798400318297,
 											"parameters": {
 												"variable": "PedidoAceito",
 												"value": "true"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 875525314641517,
-											"parameters": {
-												"seconds": "4"
 											}
 										},
 										{
@@ -1383,25 +1375,6 @@
 											"sid": 110648519667407
 										},
 										{
-											"id": "move-to-position",
-											"objectClass": "BotaoRecusar",
-											"sid": 249758479982842,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"x": "BotaoRecusar.PosX",
-												"y": "BotaoRecusar.PosY",
-												"mode": "direct"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 676937973123209,
-											"parameters": {
-												"seconds": "3"
-											}
-										},
-										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 131207722725259,
@@ -1507,6 +1480,134 @@
 										}
 									],
 									"sid": 384370989699788
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 814440468253133,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "SeletorCarimbo"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 439942861040172,
+											"parameters": {
+												"variable": "PedidoAceito"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "FecharCarimbo",
+											"sid": 744372249070877
+										}
+									],
+									"sid": 957911451574096
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 965314721728624,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "BotaoFecharCarta"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 704941261495812,
+											"parameters": {
+												"variable": "PedidoAceito"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 422878089949481,
+											"parameters": {
+												"layer": "\"cartaContainer\"",
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 715238332997409
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 436151179336114,
+											"parameters": {
+												"variable": "PedidoAceito"
+											}
+										},
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 284651674367620,
+											"parameters": {
+												"layer": "\"cartaContainer\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "BotaoFecharCarta",
+											"sid": 982807015656095,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "BotaoFecharCarta",
+											"sid": 944929216293626,
+											"parameters": {
+												"x": "990",
+												"y": "93"
+											}
+										}
+									],
+									"sid": 209955744263744
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 654586179360706
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "BotaoFecharCarta",
+											"sid": 585618903205844,
+											"parameters": {
+												"x": "1589",
+												"y": "203"
+											}
+										}
+									],
+									"sid": 837018687092751
 								},
 								{
 									"functionName": "AbrirCarimbos",
