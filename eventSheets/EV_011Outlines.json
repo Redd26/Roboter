@@ -305,9 +305,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Robozao",
-							"sid": 730657280190803,
+							"sid": 843879581809541,
 							"parameters": {
-								"animation": "\"Animation 1\"",
+								"animation": "\"Idle\"",
 								"from": "beginning"
 							}
 						}
@@ -591,13 +591,22 @@
 							"parameters": {
 								"object": "ArCondicionadoLoja"
 							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 413836937764859,
+							"parameters": {
+								"animation": "\"Click\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "ArCondicionadoLoja",
-							"sid": 565479881431182,
+							"sid": 606849722112826,
 							"parameters": {
 								"animation": "\"Outline\"",
 								"from": "beginning"
@@ -615,6 +624,15 @@
 							"sid": 856487019323938,
 							"parameters": {
 								"object": "ArCondicionadoLoja"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 181748006992050,
+							"parameters": {
+								"animation": "\"Click\""
 							},
 							"isInverted": true
 						}
@@ -710,6 +728,104 @@
 				}
 			],
 			"sid": 730790377958747
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ClicksLoja",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 699229031202941,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ArCondicionadoLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 300103043050845,
+							"parameters": {
+								"animation": "\"Click\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 305285123242895
+				}
+			],
+			"sid": 364823153397864
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MiniGames",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 702116014923022,
+							"parameters": {
+								"object": "ProximoLevel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ProximoLevel",
+							"sid": 491013635363756,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 317820919862939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 639373431561239,
+							"parameters": {
+								"object": "ProximoLevel"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ProximoLevel",
+							"sid": 782867493743495,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 482686123828107
+				}
+			],
+			"sid": 515600360412289
 		}
 	],
 	"sid": 891906922951720

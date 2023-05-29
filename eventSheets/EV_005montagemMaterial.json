@@ -202,6 +202,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_011Outlines"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -524,10 +528,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "SombraMArtelo",
-							"sid": 257898392788289,
+							"sid": 619079581979983,
 							"parameters": {
-								"x": "835",
-								"y": "257"
+								"x": "808.080922",
+								"y": "264.420023"
 							}
 						},
 						{
@@ -537,9 +541,134 @@
 							"parameters": {
 								"z": "11"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 582086235619765,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Martelo",
+							"sid": 904635122258320,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 405720504504649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 970515271828925,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Martelo"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 229638603701653,
+							"parameters": {
+								"variable": "TransformarMouse"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 353087605541237,
+							"parameters": {
+								"variable": "TransformarMouse",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 263473065805504
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 851735574830563,
+							"parameters": {
+								"object": "Martelo"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 576162719804320,
+							"parameters": {
+								"variable": "TransformarMouse"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Martelo",
+							"sid": 608062388810971,
+							"parameters": {
+								"animation": "\"Outline\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 128289673657649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 468681880784863,
+							"parameters": {
+								"object": "Martelo"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 566568283862579,
+							"parameters": {
+								"variable": "TransformarMouse"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Martelo",
+							"sid": 900402466484514,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 652983878034642
 				},
 				{
 					"eventType": "block",
@@ -621,6 +750,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-animation",
+							"objectClass": "Martelo",
+							"sid": 179752726173976,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 205231625818072,
@@ -640,10 +778,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "Martelo",
-							"sid": 462217346648231,
+							"sid": 242627235516788,
 							"parameters": {
-								"x": "835",
-								"y": "257"
+								"x": "808.080922",
+								"y": "264.420023"
 							}
 						},
 						{
@@ -653,6 +791,18 @@
 							"parameters": {
 								"x": "2000",
 								"y": "3000"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 157180458138569,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -876,6 +1026,18 @@
 						{
 							"callFunction": "AbrirSeletorMaterial",
 							"sid": 774263294426932
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 297244554163859,
+							"parameters": {
+								"audio-file": "GavetaAbrir",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 247112071074577
@@ -906,6 +1068,18 @@
 						{
 							"callFunction": "FecharSeletorMaterial",
 							"sid": 450498129297445
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 942393008302580,
+							"parameters": {
+								"audio-file": "GavetaFechar",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 993744254356990
@@ -932,6 +1106,18 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 718581340255073,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
@@ -1170,6 +1356,18 @@
 								{
 									"callFunction": "CriarHitPoint",
 									"sid": 626572093964415
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 793385675416984,
+									"parameters": {
+										"audio-file": "mineOuro",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 318517687379958,
@@ -1429,6 +1627,18 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 437695386227419,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
 									"sid": 844358929721110,
@@ -1674,6 +1884,44 @@
 								{
 									"callFunction": "CriarHitPoint",
 									"sid": 994952214564370
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 891853674214320,
+									"parameters": {
+										"audio-file": "mineFerro",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Martelo",
+									"sid": 811986632513711,
+									"parameters": {
+										"animation": "\"Martelando\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 210498356662179,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Martelo",
+									"sid": 382966605216068,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 510400073667153,
@@ -1895,6 +2143,18 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 343347379083822,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
@@ -2137,6 +2397,18 @@
 								{
 									"callFunction": "CriarHitPoint",
 									"sid": 403506278868775
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 553043947557832,
+									"parameters": {
+										"audio-file": "mineCobre",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 480931886824264,
@@ -2358,6 +2630,18 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 486113638407411,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
@@ -2600,6 +2884,18 @@
 								{
 									"callFunction": "CriarHitPoint",
 									"sid": 552626148263997
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 114046087871930,
+									"parameters": {
+										"audio-file": "mineViridisOre",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 212217867073541,
@@ -2859,6 +3155,18 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 313408287555263,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
 									"sid": 906862009211923,
@@ -3092,6 +3400,18 @@
 								{
 									"callFunction": "CriarHitPoint",
 									"sid": 931783710867396
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 972134268071254,
+									"parameters": {
+										"audio-file": "mineEritro",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 258907669089508,
@@ -3889,6 +4209,18 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 271022395877609,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "Transicao",
 							"sid": 750997934483350,
@@ -4041,23 +4373,6 @@
 				}
 			],
 			"sid": 740844733322995,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 960710493528637,
-					"parameters": {
-						"variable": "EstouMiniGame"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [],
-			"sid": 649636844950412,
 			"disabled": true
 		},
 		{

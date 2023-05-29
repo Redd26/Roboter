@@ -14,6 +14,18 @@
 			"includeSheet": "EV_013Pedidos"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_011Outlines"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_012Pause"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_009Hud"
+		},
+		{
 			"eventType": "variable",
 			"name": "pecasQuebraCabecaAdicionadas",
 			"type": "number",
@@ -54,26 +66,24 @@
 			"sid": 702359905968737
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 740625158487880
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "AcertouDebug",
-					"sid": 347960441609524,
-					"parameters": {
-						"text": "pecaPosicaoXOriginal & \";\" & pecaPosicaoYOriginal"
-					}
-				}
-			],
-			"sid": 552883453296351,
-			"disabled": true
+			"eventType": "variable",
+			"name": "EnergiaEscolhida",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 655212311604510
+		},
+		{
+			"eventType": "variable",
+			"name": "SeletorDeEnergiaAberto",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 225866021476775
 		},
 		{
 			"eventType": "block",
@@ -281,7 +291,7 @@
 			"disabled": false,
 			"title": "Montagem Quebra-Cabeça",
 			"description": "",
-			"isActiveOnStart": true,
+			"isActiveOnStart": false,
 			"children": [
 				{
 					"eventType": "group",
@@ -1033,6 +1043,538 @@
 				}
 			],
 			"sid": 188660424504055
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SelecionarMaterial",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 583889653065660,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "SeletorEnergia"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 195177380306492,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "AbrirEnergia",
+							"sid": 313497963307795
+						}
+					],
+					"sid": 116743129563568
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 284323165700369,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "BarraEnergias"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 843204592264491,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "FecharEnergia",
+							"sid": 787847095966723
+						}
+					],
+					"sid": 818599729740856
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 617946274929777,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "IconeMuscular"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 294175158734606,
+							"parameters": {
+								"variable": "EnergiaEscolhida",
+								"value": "\"Muscular\""
+							}
+						},
+						{
+							"callFunction": "AnalisarEnergia",
+							"sid": 224260612706115
+						}
+					],
+					"sid": 141582750906816
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 900106366951677,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 694635440003800,
+							"parameters": {
+								"group-name": "\"Montagem Quebra-Cabeça\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 466008256990033
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 552297545899133,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 430814477703574,
+							"parameters": {
+								"variable": "EnergiaEscolhida",
+								"comparison": 1,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 811174785152520,
+							"parameters": {
+								"group-name": "\"Montagem Quebra-Cabeça\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 724734726731378,
+							"disabled": true,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 464342510673307,
+							"disabled": true,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 135338666569031,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 783522770157932,
+							"disabled": true,
+							"parameters": {
+								"seconds": "1.3"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 509457893486179,
+							"disabled": true,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 722905383167651,
+							"disabled": true,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 162346914507685
+				},
+				{
+					"functionName": "AbrirEnergia",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 524960225501868,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 598806604659424,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "BarraEnergias",
+							"sid": 184421124235198,
+							"parameters": {
+								"object": "SeletorEnergia",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SeletorEnergia",
+							"sid": 342890498686824,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeMuscular",
+							"sid": 906205214914809,
+							"parameters": {
+								"x": "1133.387956",
+								"y": " 222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeCarvao",
+							"sid": 294058390717503,
+							"parameters": {
+								"x": "1133.387956",
+								"y": "303.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeBloqueado",
+							"sid": 765169015570526,
+							"parameters": {
+								"x": "1133.387956",
+								"y": " 384.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeBloqueado2",
+							"sid": 105239622630757,
+							"parameters": {
+								"x": "1133.387956",
+								"y": "465.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "MuscularNome",
+							"sid": 508599992714620,
+							"parameters": {
+								"x": "1133.387956",
+								"y": " 222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "CarvaoNome",
+							"sid": 928213923319633,
+							"parameters": {
+								"x": "1133.387956",
+								"y": " 303.149392"
+							}
+						}
+					],
+					"sid": 794585157587465
+				},
+				{
+					"functionName": "FecharEnergia",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 600250951408781,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 463453991811008,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SeletorEnergia",
+							"sid": 177797798018264,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "BarraEnergias",
+							"sid": 202061589535331,
+							"parameters": {
+								"x": "1497.387956",
+								"y": "378.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeMuscular",
+							"sid": 409722054628440,
+							"parameters": {
+								"x": "1387.387956",
+								"y": "222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeCarvao",
+							"sid": 836907094904153,
+							"parameters": {
+								"x": "1387.387956",
+								"y": "222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeBloqueado",
+							"sid": 153584049741027,
+							"parameters": {
+								"x": "1387.387956",
+								"y": " 222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "IconeBloqueado2",
+							"sid": 820733191680702,
+							"parameters": {
+								"x": "1387.387956",
+								"y": "222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "MuscularNome",
+							"sid": 177811586670525,
+							"parameters": {
+								"x": "1387.387956",
+								"y": "222.149392"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "CarvaoNome",
+							"sid": 907313049837675,
+							"parameters": {
+								"x": "1387.387956",
+								"y": " 222.149392"
+							}
+						}
+					],
+					"sid": 330960880466651
+				}
+			],
+			"sid": 150098756478360
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mouse em cima",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 467146093538184,
+							"parameters": {
+								"object": "IconeMuscular"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "MuscularNome",
+							"sid": 300016623514048,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 910453477394037
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 142359802118899,
+							"parameters": {
+								"object": "IconeMuscular"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "MuscularNome",
+							"sid": 456927298100019,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 845199709105655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 483991668267294,
+							"parameters": {
+								"object": "IconeCarvao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CarvaoNome",
+							"sid": 316038341996215,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 139195270042783
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 475342350912594,
+							"parameters": {
+								"object": "IconeCarvao"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CarvaoNome",
+							"sid": 888141718430151,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 326928406246081
+				}
+			],
+			"sid": 196058686622510
 		}
 	],
 	"sid": 573301943181991

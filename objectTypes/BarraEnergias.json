@@ -1,0 +1,57 @@
+{
+	"name": "BarraEnergias",
+	"plugin-id": "Sprite",
+	"sid": 926799473117018,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 162,
+						"height": 358,
+						"originX": 1,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6793252,
+						"collisionPoly": {
+							"points": [
+								0.15432098765432098,
+								0.08100558659217877,
+								0.5246913580246914,
+								0.002793296089385475,
+								0.9938271604938271,
+								0.036312849162011177,
+								0.9938271604938271,
+								0.505586592178771,
+								0.9691358024691358,
+								0.9636871508379888,
+								0.5246913580246914,
+								0.9972067039106145,
+								0.15432098765432098,
+								0.9301675977653632,
+								0.006172839506172839,
+								0.505586592178771
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 948071960966012,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

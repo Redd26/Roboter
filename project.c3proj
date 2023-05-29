@@ -147,7 +147,18 @@
 			"Transicao",
 			"SpawnRobos",
 			"ColicaoCabecaEmpacotar",
-			"BotaoFecharCarta"
+			"BotaoFecharCarta",
+			"SuporteScroll",
+			"FundoScroll",
+			"Ventuinhas",
+			"ParticulasSerra",
+			"BarraEnergias",
+			"IconeMuscular",
+			"IconeCarvao",
+			"IconeBloqueado",
+			"IconeBloqueado2",
+			"MuscularNome",
+			"CarvaoNome"
 		],
 		"subfolders": [
 			{
@@ -223,7 +234,8 @@
 					"ExplicacaoFerro",
 					"ExplicacaoOuro",
 					"Intro",
-					"SeletorCarimbo"
+					"SeletorCarimbo",
+					"SeletorEnergia"
 				],
 				"subfolders": [],
 				"name": "MiniGameMinerio"
@@ -398,6 +410,94 @@
 					"name": "stamp_3.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 594655897078679,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mineOuro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 941200020696093,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mineFerro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 125382658338787,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mineEritro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 603611520802357,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mineViridisOre.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 144935336824303,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mineCobre.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 456488098395917,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "GavetaAbrir.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 359302446209582,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "GavetaFechar.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 253993789050230,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CartaFechar.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 609787451856192,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CartaAbrir.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 464669828417794,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MoverChapa.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 446729110738462,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SomSerra.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 724362417115406,
 					"file-info": {
 						"purpose": "none"
 					}

@@ -13,8 +13,8 @@
 					{
 						"width": 346,
 						"height": 162,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -64,8 +64,8 @@
 					{
 						"width": 350,
 						"height": 170,
-						"originX": 0.008571428571428572,
-						"originY": 0.01764705882352941,
+						"originX": 0.5057142857142857,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

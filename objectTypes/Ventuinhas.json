@@ -1,0 +1,91 @@
+{
+	"name": "Ventuinhas",
+	"plugin-id": "Sprite",
+	"sid": 459360975810636,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 74,
+						"height": 166,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 604321,
+						"collisionPoly": {
+							"points": [
+								0.5540540540540541,
+								0.7530120481927711,
+								0.5540540540540541,
+								0.06626506024096386,
+								0.06756756756756757,
+								0.06626506024096386
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 74,
+						"height": 166,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7358246,
+						"collisionPoly": {
+							"points": [
+								0.5540540540540541,
+								0.7530120481927711,
+								0.5540540540540541,
+								0.06626506024096386,
+								0.06756756756756757,
+								0.06626506024096386
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 74,
+						"height": 166,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4319021,
+						"collisionPoly": {
+							"points": [
+								0.5540540540540541,
+								0.7530120481927711,
+								0.5540540540540541,
+								0.06626506024096386,
+								0.06756756756756757,
+								0.06626506024096386
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 159441437700128,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 12
+			}
+		],
+		"subfolders": []
+	}
+}

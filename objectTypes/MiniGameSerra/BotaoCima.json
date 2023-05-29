@@ -24,7 +24,93 @@
 					}
 				],
 				"sid": 596944432700639,
-				"name": "Animation 1",
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 70,
+						"height": 70,
+						"originX": 0.04285714285714286,
+						"originY": 0.04285714285714286,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7088936,
+						"collisionPoly": {
+							"points": [
+								0.18571428571428572,
+								0.18571428571428572,
+								0.5,
+								0.014285714285714285,
+								0.8142857142857143,
+								0.18571428571428572,
+								0.9857142857142858,
+								0.5,
+								0.8142857142857143,
+								0.8142857142857143,
+								0.5,
+								0.9857142857142858,
+								0.18571428571428572,
+								0.8142857142857143,
+								0.014285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 646083118936356,
+				"name": "MouseOver",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 62,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2752761,
+						"collisionPoly": {
+							"points": [
+								0.14516129032258066,
+								0.14516129032258066,
+								0.5,
+								0.016129032258064516,
+								0.8548387096774194,
+								0.14516129032258066,
+								0.9838709677419355,
+								0.5,
+								0.8548387096774194,
+								0.8548387096774194,
+								0.5,
+								0.9838709677419355,
+								0.14516129032258066,
+								0.8548387096774194,
+								0.016129032258064516,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 728098369304315,
+				"name": "Clicked",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

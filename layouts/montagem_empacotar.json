@@ -19,12 +19,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 164,
+						"x": -1.065341,
+						"y": 167.039322,
 						"width": 1282,
-						"height": 558,
-						"originX": 0.00078003120124805,
-						"originY": 0.0017921146953405018,
+						"height": 554,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -375,7 +375,7 @@
 					"type": "ProximoLevel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -402,10 +402,10 @@
 					"world": {
 						"x": 791,
 						"y": 901,
-						"width": 60,
-						"height": 60,
-						"originX": 0.49748743718592964,
-						"originY": 0.5025125628140703,
+						"width": 62,
+						"height": 62,
+						"originX": 0.4952990760252877,
+						"originY": 0.5047009239747122,
 						"color": [
 							1,
 							1,

@@ -471,6 +471,18 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 393786255167812,
+											"parameters": {
+												"audio-file": "CartaAbrir",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 818321323739302,
@@ -565,12 +577,33 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 592279456648158,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
 											"sid": 708909013294226,
 											"parameters": {
 												"variable": "NumeroCarta",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "CarimbadaNegada",
+											"sid": 219913651765503,
+											"parameters": {
+												"animation": "\"ComEscrita\"",
+												"from": "beginning"
 											}
 										},
 										{
@@ -726,6 +759,15 @@
 												"y": "TextoCarta.Y+80",
 												"mode": "direct"
 											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "SuporteScroll",
+											"sid": 607400996343334,
+											"parameters": {
+												"x": "SuporteScroll.X",
+												"y": "SuporteScroll.Y - 3"
+											}
 										}
 									],
 									"sid": 672202073977959
@@ -762,6 +804,15 @@
 												"x": "TextoCarta.X",
 												"y": "TextoCarta.Y-80",
 												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "SuporteScroll",
+											"sid": 625529148063655,
+											"parameters": {
+												"x": "SuporteScroll.X",
+												"y": "SuporteScroll.Y+ 3"
 											}
 										}
 									],
@@ -973,7 +1024,34 @@
 											}
 										}
 									],
-									"sid": 386909752460948
+									"sid": 386909752460948,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 657322993231139
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 510769399915879,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 815206014542904
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -1132,6 +1210,18 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 353285618087738,
+											"parameters": {
+												"audio-file": "CartaFechar",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"callFunction": "FecharCarimbo",
 											"sid": 555409818464608
 										},
@@ -1234,7 +1324,34 @@
 											}
 										}
 									],
-									"sid": 798348888145896
+									"sid": 798348888145896,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 201056390773487
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 234594595587165,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 326040822666215
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -1384,6 +1501,18 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 556616818818615,
+											"parameters": {
+												"audio-file": "CartaFechar",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
 											"sid": 474687881194180,
@@ -1477,6 +1606,18 @@
 										{
 											"callFunction": "AbrirCarimbos",
 											"sid": 216952721594530
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 727748016651485,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
 										}
 									],
 									"sid": 384370989699788
@@ -1515,6 +1656,84 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 648852912103544,
+											"parameters": {
+												"object": "BotaoFecharCarta"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoFecharCarta",
+											"sid": 607136076238706,
+											"parameters": {
+												"animation": "\"Outline\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 633498946095398,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 841550509032929
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 836671925345203,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 206662891531022
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 746024558074079,
+											"parameters": {
+												"object": "BotaoFecharCarta"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "BotaoFecharCarta",
+											"sid": 173866642198806,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 595575533266956
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "on-object-clicked",
 											"objectClass": "Mouse",
 											"sid": 965314721728624,
@@ -1541,6 +1760,18 @@
 											"parameters": {
 												"layer": "\"cartaContainer\"",
 												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 501713644770515,
+											"parameters": {
+												"audio-file": "CartaFechar",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
 											}
 										}
 									],
@@ -1578,10 +1809,10 @@
 										{
 											"id": "set-position",
 											"objectClass": "BotaoFecharCarta",
-											"sid": 944929216293626,
+											"sid": 938123953694154,
 											"parameters": {
-												"x": "990",
-												"y": "93"
+												"x": "981.574806",
+												"y": "101.237324"
 											}
 										}
 									],
@@ -1608,6 +1839,48 @@
 										}
 									],
 									"sid": 837018687092751
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 465062779204824,
+											"parameters": {
+												"object": "SeletorCarimbo"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 640677566525856,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 639523898100528
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 582172932937505,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 423058865636179
+										}
+									]
 								},
 								{
 									"functionName": "AbrirCarimbos",

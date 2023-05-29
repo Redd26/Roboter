@@ -1,0 +1,57 @@
+{
+	"name": "FundoScroll",
+	"plugin-id": "Sprite",
+	"sid": 259063244549411,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 290,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8819574,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.2537591859807802,
+								0.9303030303030302,
+								0,
+								1,
+								0.2944601469756924,
+								1,
+								0.3758620689655172,
+								1,
+								0.457263990955342,
+								0.9303030303030302,
+								0.9456755228942906,
+								0,
+								0.4979649519502543,
+								0,
+								0.3758620689655172
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 946687348856432,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

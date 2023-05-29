@@ -311,6 +311,18 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 144553162267963,
+									"parameters": {
+										"audio-file": "CartaAbrir",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								},
+								{
 									"id": "move-to-position",
 									"objectClass": "Carta",
 									"sid": 224864358301209,
@@ -429,6 +441,18 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 678721581977966,
+									"parameters": {
+										"audio-file": "CartaFechar",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"Click\""
+									}
+								},
 								{
 									"id": "move-to-position",
 									"objectClass": "Carta",
@@ -627,11 +651,11 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 340483024352218,
+					"sid": 368970132635888,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y+130",
+						"y": "TextoCarta.Y+80",
 						"mode": "direct"
 					}
 				}
@@ -664,11 +688,11 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "TextoCarta",
-					"sid": 751486315888394,
+					"sid": 748206442602131,
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y-130",
+						"y": "TextoCarta.Y-80",
 						"mode": "direct"
 					}
 				}

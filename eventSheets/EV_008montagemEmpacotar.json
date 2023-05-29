@@ -14,6 +14,18 @@
 			"includeSheet": "EV_013Pedidos"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_012Pause"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_011Outlines"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Ev_009Hud"
+		},
+		{
 			"eventType": "variable",
 			"name": "empacotarContador",
 			"type": "number",

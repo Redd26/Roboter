@@ -1,0 +1,49 @@
+{
+	"name": "IconeBloqueado2",
+	"plugin-id": "Sprite",
+	"sid": 710257555623571,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 82,
+						"height": 66,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2756017,
+						"collisionPoly": {
+							"points": [
+								0.4024390243902439,
+								0.015151515151515152,
+								0.15853658536585366,
+								0.9848484848484849,
+								0.4024390243902439,
+								0.9848484848484849,
+								0.6463414634146342,
+								0.9848484848484849
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 366269209561707,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

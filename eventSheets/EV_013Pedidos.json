@@ -116,6 +116,26 @@
 			"sid": 465614911070551
 		},
 		{
+			"eventType": "variable",
+			"name": "EnergiaCerta",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 433206605681850
+		},
+		{
+			"eventType": "variable",
+			"name": "EnergiaLiberada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 237730124805228
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -533,7 +553,8 @@
 					}
 				}
 			],
-			"sid": 344533951271640
+			"sid": 344533951271640,
+			"disabled": true
 		},
 		{
 			"eventType": "comment",
@@ -582,15 +603,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 554541018984294,
-					"parameters": {
-						"variable": "PedidoFinalizado",
-						"value": "false"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 340878934822847,
@@ -634,9 +646,43 @@
 						"variable": "PedidoAutorizado",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 282260850963340,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
 				}
 			],
-			"sid": 347037047952506
+			"sid": 347037047952506,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 601527941420927
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 480622616481068,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 676630159477408,
+					"disabled": true
+				}
+			]
 		},
 		{
 			"eventType": "comment",
@@ -709,6 +755,15 @@
 							"parameters": {
 								"variable": "MaterialCerto",
 								"value": "\"ferro\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 822869859905381,
+							"parameters": {
+								"variable": "EnergiaCerta",
+								"value": "\"Muscular\""
 							}
 						}
 					],
@@ -950,6 +1005,14 @@
 								"comparison": 0,
 								"value": "1"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 858358798474591,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
 						}
 					],
 					"actions": [
@@ -1060,6 +1123,14 @@
 								"variable": "robo",
 								"comparison": 0,
 								"value": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 140979733240932,
+							"parameters": {
+								"variable": "EnergiaLiberada"
 							}
 						}
 					],
@@ -1215,6 +1286,40 @@
 						}
 					],
 					"sid": 984776448544163
+				},
+				{
+					"functionName": "AnalisarEnergia",
+					"functionCopyPicked": false,
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 994533746455675,
+							"parameters": {
+								"first-value": "EnergiaCerta",
+								"comparison": 0,
+								"second-value": "EnergiaEscolhida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 472170008327170,
+							"parameters": {
+								"variable": "EnergiaLiberada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 294998950538666
 				}
 			],
 			"sid": 374219924983506
@@ -1604,9 +1709,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 912831557821599,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 730032742776807,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 306343224251294
+							"sid": 306343224251294,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 124838069339664
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 590845938105512,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 925132637284744
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1649,9 +1796,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 299004016457970,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 801550004515773,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 458176035639711
+							"sid": 458176035639711,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 454779810436173
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 732762759084031,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 114285636450082
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1694,9 +1883,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 105144094563332,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 267119100347686,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 440571005122830
+							"sid": 440571005122830,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 359410582664356
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 592762090604012,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 772718222105785
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1749,9 +1980,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 933735702557022,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 189038751673779,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 560399138601143
+							"sid": 560399138601143,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 918935934105521
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 710013084443281,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 452225626873568
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1804,9 +2077,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 483061294462748,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 889123590016475,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 620347982749093
+							"sid": 620347982749093,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 547893317156342
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 884353055837608,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 835630788094125
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1859,9 +2174,51 @@
 										"variable": "PularCarta",
 										"value": "true"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 143667787133411,
+									"parameters": {
+										"variable": "PedidoAceito",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 260150197862880,
+									"parameters": {
+										"variable": "PedidoAutorizado",
+										"value": "false"
+									}
 								}
 							],
-							"sid": 248433893847945
+							"sid": 248433893847945,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 900781549431487
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "ArCondicionadoLoja",
+											"sid": 146568939239576,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 245458858300035
+								}
+							]
 						}
 					]
 				}
