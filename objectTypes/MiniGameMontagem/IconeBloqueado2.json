@@ -1,7 +1,7 @@
 {
-	"name": "CarvaoNome",
+	"name": "IconeBloqueado2",
 	"plugin-id": "Sprite",
-	"sid": 190622760960022,
+	"sid": 710257555623571,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,31 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 83,
-						"height": 67,
+						"width": 82,
+						"height": 66,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3720259,
+						"imageSpriteId": 2756017,
 						"collisionPoly": {
 							"points": [
 								0,
-								1,
 								0,
 								0,
+								0.9949495720140862,
 								1,
-								0,
 								1,
-								1
+								1,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 602118753599782,
+				"sid": 366269209561707,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -509,6 +509,15 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
+							"sid": 765339816998095,
+							"parameters": {
+								"variable": "TransformarMouse"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
 							"sid": 149140997979566,
 							"parameters": {
 								"variable": "isMaterialClicado"
@@ -653,6 +662,15 @@
 							"sid": 566568283862579,
 							"parameters": {
 								"variable": "TransformarMouse"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Martelo",
+							"sid": 101730119817264,
+							"parameters": {
+								"animation": "\"Martelando\""
 							},
 							"isInverted": true
 						}
@@ -1909,9 +1927,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 210498356662179,
+									"sid": 922943796586685,
 									"parameters": {
-										"seconds": "0.2"
+										"seconds": "0.5"
 									}
 								},
 								{

@@ -671,6 +671,22 @@
 					"uid": 56,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 1211.917052,
 						"y": 71.270737,

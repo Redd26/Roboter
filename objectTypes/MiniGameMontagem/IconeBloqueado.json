@@ -1,7 +1,7 @@
 {
-	"name": "MuscularNome",
+	"name": "IconeBloqueado",
 	"plugin-id": "Sprite",
-	"sid": 265047123571166,
+	"sid": 852786180146695,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,22 +11,22 @@
 			{
 				"frames": [
 					{
-						"width": 83,
-						"height": 67,
+						"width": 82,
+						"height": 66,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5546190,
+						"imageSpriteId": 4898516,
 						"collisionPoly": {
 							"points": [
-								0,
 								1,
 								0,
 								0,
-								0.9759036144578314,
 								0,
+								0,
+								1,
 								1,
 								1
 							]
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 737236082247569,
+				"sid": 240801274531297,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

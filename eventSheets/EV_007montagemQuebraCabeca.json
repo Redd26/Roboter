@@ -3,6 +3,10 @@
 	"events": [
 		{
 			"eventType": "include",
+			"includeSheet": "EV_012Pause"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "EV_003loja"
 		},
 		{
@@ -16,10 +20,6 @@
 		{
 			"eventType": "include",
 			"includeSheet": "EV_011Outlines"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "EV_012Pause"
 		},
 		{
 			"eventType": "include",
@@ -385,6 +385,18 @@
 									"parameters": {
 										"state2": "disabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 201823317006907,
+									"parameters": {
+										"audio-file": "ColocarDrag",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 671180667298426
@@ -517,6 +529,18 @@
 									"behaviorType": "BoundedDragDrop",
 									"parameters": {
 										"state2": "disabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 854008281838057,
+									"parameters": {
+										"audio-file": "ColocarDrag",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -651,6 +675,18 @@
 									"parameters": {
 										"state2": "disabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 338333180939122,
+									"parameters": {
+										"audio-file": "ColocarDrag",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 103291848617752
@@ -783,6 +819,18 @@
 									"behaviorType": "BoundedDragDrop",
 									"parameters": {
 										"state2": "disabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 100392923721654,
+									"parameters": {
+										"audio-file": "ColocarDrag",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -917,6 +965,18 @@
 									"parameters": {
 										"state2": "disabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 851532533284488,
+									"parameters": {
+										"audio-file": "ColocarDrag",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 337351290404765
@@ -999,6 +1059,18 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 288231574408252,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Transicao",
 					"sid": 131975126680539,
@@ -1078,6 +1150,18 @@
 						{
 							"callFunction": "AbrirEnergia",
 							"sid": 313497963307795
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 792092525621855,
+							"parameters": {
+								"audio-file": "GavetaAbrir",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 116743129563568
@@ -1108,6 +1192,18 @@
 						{
 							"callFunction": "FecharEnergia",
 							"sid": 787847095966723
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 133402980802033,
+							"parameters": {
+								"audio-file": "GavetaFechar",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 818599729740856
@@ -1572,9 +1668,95 @@
 						}
 					],
 					"sid": 326928406246081
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 116417887349251,
+							"parameters": {
+								"object": "ObjetosEnergias"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 535323665236612
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ObjetosEnergias",
+							"sid": 279908262022795,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 315479556663375
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 140476446327461,
+							"parameters": {
+								"object": "ObjetosEnergias"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "ObjetosEnergias",
+							"sid": 786691707489601,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 337010019310454
 				}
 			],
 			"sid": 196058686622510
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 765897422053098,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "QuebraCabecaPecas"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 334509091692768,
+					"parameters": {
+						"audio-file": "pegarDrag",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 184611164797549
 		}
 	],
 	"sid": 573301943181991

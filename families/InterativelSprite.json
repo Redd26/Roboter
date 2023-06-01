@@ -33,11 +33,6 @@
 		"DireitaMeioCortaPao",
 		"BaseCortaPao",
 		"SeletorCarimbo",
-		"SeletorEnergia",
-		"BarraEnergias",
-		"IconeBloqueado2",
-		"IconeBloqueado",
-		"IconeCarvao",
-		"IconeMuscular"
+		"SeletorEnergia"
 	]
 }

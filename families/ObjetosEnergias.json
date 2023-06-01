@@ -1,0 +1,20 @@
+{
+	"name": "ObjetosEnergias",
+	"plugin-id": "Sprite",
+	"sid": 734766757059240,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline2"
+		}
+	],
+	"members": [
+		"BarraEnergias",
+		"CarvaoNome",
+		"MuscularNome",
+		"IconeBloqueado",
+		"IconeBloqueado2"
+	]
+}

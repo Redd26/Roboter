@@ -135,30 +135,7 @@
 			"Mouse",
 			"Browser",
 			"Audio",
-			"Keyboard",
-			"IconeHUDmaldicao",
-			"HUDMaldicao",
-			"IconeHUDrobotica",
-			"HUDrobotica",
-			"FundoDosCarimbos",
-			"CarimbadaNegada",
-			"CarimbadaAprovada",
-			"CasaDosCarimbos",
-			"Transicao",
-			"SpawnRobos",
-			"ColicaoCabecaEmpacotar",
-			"BotaoFecharCarta",
-			"SuporteScroll",
-			"FundoScroll",
-			"Ventuinhas",
-			"ParticulasSerra",
-			"BarraEnergias",
-			"IconeMuscular",
-			"IconeCarvao",
-			"IconeBloqueado",
-			"IconeBloqueado2",
-			"MuscularNome",
-			"CarvaoNome"
+			"Keyboard"
 		],
 		"subfolders": [
 			{
@@ -203,7 +180,14 @@
 					"Porta",
 					"PrateleirasLoja",
 					"RestosRobosLoja",
-					"TapeteLoja"
+					"TapeteLoja",
+					"CarimbadaAprovada",
+					"CarimbadaNegada",
+					"CasaDosCarimbos",
+					"FundoDosCarimbos",
+					"FundoScroll",
+					"SuporteScroll",
+					"Transicao"
 				],
 				"subfolders": [],
 				"name": "Loja"
@@ -254,7 +238,9 @@
 					"BotaoCima",
 					"BotaoIniciarCorte",
 					"FitaDaSerra",
-					"LinhaCortar"
+					"LinhaCortar",
+					"ParticulasSerra",
+					"Ventuinhas"
 				],
 				"subfolders": [],
 				"name": "MiniGameSerra"
@@ -271,7 +257,14 @@
 					"EsquerdaMeioCortaPao",
 					"EsquerdaMeioCortaPaoColisao",
 					"PescocoCortaPao",
-					"PescocoCortaPaoColisao"
+					"PescocoCortaPaoColisao",
+					"BarraEnergias",
+					"CarvaoNome",
+					"IconeBloqueado",
+					"IconeBloqueado2",
+					"IconeCarvao",
+					"IconeMuscular",
+					"MuscularNome"
 				],
 				"subfolders": [],
 				"name": "MiniGameMontagem"
@@ -287,7 +280,9 @@
 					"ContadorDosBrilhosEmpacotar",
 					"ErrouDebug",
 					"AcertouDebug",
-					"BotaoDeIniciarEmpacotar"
+					"BotaoDeIniciarEmpacotar",
+					"ColicaoCabecaEmpacotar",
+					"SpawnRobos"
 				],
 				"subfolders": [],
 				"name": "MiniGameEmbalar"
@@ -303,7 +298,12 @@
 					"PauseIcone",
 					"ProximoLevel",
 					"RelogioDiaNoite",
-					"TextoCarta"
+					"TextoCarta",
+					"BotaoFecharCarta",
+					"HUDMaldicao",
+					"HUDrobotica",
+					"IconeHUDmaldicao",
+					"IconeHUDrobotica"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -349,7 +349,8 @@
 			"InterativelTexto",
 			"InterativelUtil",
 			"QuebraCabecaPecas",
-			"QuebraCabecaSombras"
+			"QuebraCabecaSombras",
+			"ObjetosEnergias"
 		],
 		"subfolders": []
 	},
@@ -498,6 +499,22 @@
 					"name": "SomSerra.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 724362417115406,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ColocarDrag.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 358898787842202,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pegarDrag.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 198343951199858,
 					"file-info": {
 						"purpose": "none"
 					}

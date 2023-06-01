@@ -461,11 +461,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 638069274455736,
+											"sid": 163501714004917,
 											"parameters": {
 												"audio-file": "menu_confirm",
 												"loop": "not-looping",
-												"volume": "0",
+												"volume": "-5",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -539,11 +539,11 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 627604564483709,
+													"sid": 177291502435358,
 													"parameters": {
 														"audio-file": "menu_select",
 														"loop": "not-looping",
-														"volume": "0",
+														"volume": "-5",
 														"stereo-pan": "0",
 														"tag-optional": "\"Click\""
 													}
@@ -1610,7 +1610,20 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 727748016651485,
+											"sid": 941183362803956,
+											"parameters": {
+												"audio-file": "GavetaAbrir",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 251074364818813,
+											"disabled": true,
 											"parameters": {
 												"audio-file": "menu_confirm",
 												"loop": "not-looping",
