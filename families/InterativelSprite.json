@@ -33,6 +33,7 @@
 		"DireitaMeioCortaPao",
 		"BaseCortaPao",
 		"SeletorCarimbo",
-		"SeletorEnergia"
+		"SeletorEnergia",
+		"CaixaMeioFundo"
 	]
 }

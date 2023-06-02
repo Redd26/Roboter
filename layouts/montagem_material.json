@@ -1238,15 +1238,15 @@
 					"behaviors": {},
 					"effects": {
 						"BetterOutline": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}

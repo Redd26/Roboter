@@ -42,6 +42,26 @@
 			"sid": 458914978056482
 		},
 		{
+			"eventType": "variable",
+			"name": "ColisorPrimeiroID",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 886199262008340
+		},
+		{
+			"eventType": "variable",
+			"name": "ColisorUltimoID",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 832269469086771
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_003loja"
 		},
@@ -1184,6 +1204,7 @@
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 491894827404281,
+							"disabled": true,
 							"parameters": {
 								"audio-file": "SomSerra",
 								"loop": "looping",
@@ -1216,10 +1237,10 @@
 		},
 		{
 			"functionName": "Colidiu",
-			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
+			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
@@ -1332,10 +1353,10 @@
 		},
 		{
 			"functionName": "Colidiu2",
-			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
+			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
@@ -1541,18 +1562,82 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 795779270190598
+					"id": "is-overlapping-another-object",
+					"objectClass": "Serra",
+					"sid": 476368277148059,
+					"parameters": {
+						"object": "ChapaFerro"
+					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 732542487198807,
+			"children": [
 				{
-					"callFunction": "Colidiu2",
-					"sid": 323002627697325
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 508252789832135
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 633865216940690,
+							"parameters": {
+								"audio-file": "SomSerra",
+								"loop": "looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"SomSerra\""
+							}
+						}
+					],
+					"sid": 722966420646472
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Serra",
+					"sid": 855529567372411,
+					"parameters": {
+						"object": "ChapaFerro"
+					},
+					"isInverted": true
 				}
 			],
-			"sid": 392349605669510
+			"actions": [],
+			"sid": 429928692377968,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 376758434469817
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 376720171100413,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						}
+					],
+					"sid": 206283975633949
+				}
+			]
 		}
 	],
 	"sid": 886171643003322

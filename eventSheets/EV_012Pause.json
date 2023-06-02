@@ -288,11 +288,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 654886832333648,
+									"sid": 170794053221741,
 									"parameters": {
 										"audio-file": "menu_select",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-10",
 										"stereo-pan": "0",
 										"tag-optional": "\"Click\""
 									}

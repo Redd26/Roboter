@@ -847,10 +847,10 @@
 				},
 				{
 					"functionName": "AnalisarMaterial",
-					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -1060,6 +1060,14 @@
 							"id": "set-visible",
 							"objectClass": "PescocoCortaPao",
 							"sid": 970248673133291,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CortaPaoSombra",
+							"sid": 910285390819397,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1289,10 +1297,10 @@
 				},
 				{
 					"functionName": "AnalisarEnergia",
-					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -1432,10 +1440,10 @@
 				},
 				{
 					"functionName": "Estudar 1",
-					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -1657,10 +1665,10 @@
 				},
 				{
 					"functionName": "AnalisarErro1",
-					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
+					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",

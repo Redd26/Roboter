@@ -225,11 +225,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 821051452021133,
+					"sid": 228080539523919,
 					"parameters": {
 						"audio-file": "BGM_Loja",
 						"loop": "looping",
-						"volume": "-10",
+						"volume": "-25",
 						"stereo-pan": "0",
 						"tag-optional": "\"LojaMusic\""
 					}
@@ -461,11 +461,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 163501714004917,
+											"sid": 895118456869383,
 											"parameters": {
 												"audio-file": "menu_confirm",
 												"loop": "not-looping",
-												"volume": "-5",
+												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -539,11 +539,11 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 177291502435358,
+													"sid": 310222078766958,
 													"parameters": {
 														"audio-file": "menu_select",
 														"loop": "not-looping",
-														"volume": "-5",
+														"volume": "-10",
 														"stereo-pan": "0",
 														"tag-optional": "\"Click\""
 													}
@@ -1142,11 +1142,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 700342645513798,
+											"sid": 157870164833205,
 											"parameters": {
 												"audio-file": "stamp_3",
 												"loop": "not-looping",
-												"volume": "0",
+												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -1212,11 +1212,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 353285618087738,
+											"sid": 766934120173088,
 											"parameters": {
 												"audio-file": "CartaFechar",
 												"loop": "not-looping",
-												"volume": "0",
+												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -1442,11 +1442,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 972791439125510,
+											"sid": 227528796863671,
 											"parameters": {
 												"audio-file": "stamp_3",
 												"loop": "not-looping",
-												"volume": "0",
+												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -1503,11 +1503,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 556616818818615,
+											"sid": 541154780384172,
 											"parameters": {
 												"audio-file": "CartaFechar",
 												"loop": "not-looping",
-												"volume": "0",
+												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
 											}
@@ -1897,10 +1897,10 @@
 								},
 								{
 									"functionName": "AbrirCarimbos",
-									"functionCopyPicked": false,
 									"functionDescription": "",
 									"functionCategory": "",
 									"functionReturnType": "none",
+									"functionCopyPicked": false,
 									"functionIsAsync": false,
 									"functionParameters": [],
 									"eventType": "function-block",
@@ -1946,10 +1946,10 @@
 								},
 								{
 									"functionName": "FecharCarimbo",
-									"functionCopyPicked": false,
 									"functionDescription": "",
 									"functionCategory": "",
 									"functionReturnType": "none",
+									"functionCopyPicked": false,
 									"functionIsAsync": false,
 									"functionParameters": [],
 									"eventType": "function-block",
@@ -2139,6 +2139,47 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
+							"sid": 886724631750680,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Porta"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 614414190035952,
+							"parameters": {
+								"variable": "horarioDoDia",
+								"comparison": 0,
+								"value": "\"noite\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 185868616817670,
+							"parameters": {
+								"audio-file": "door_locked",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 910167221447879
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
 							"sid": 536279845864084,
 							"parameters": {
 								"mouse-button": "left",
@@ -2158,6 +2199,18 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 891009553365268,
+							"parameters": {
+								"audio-file": "door_open",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",

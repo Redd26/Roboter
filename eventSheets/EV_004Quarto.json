@@ -211,6 +211,15 @@
 							}
 						},
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 834541318863007,
+							"parameters": {
+								"variable": "BloquearCorreio",
+								"value": "false"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 641871229083653,
@@ -226,6 +235,18 @@
 							"parameters": {
 								"variable": "Dormir",
 								"value": "false"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 828879194359654,
+							"parameters": {
+								"audio-file": "BatidaDoRelogio",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -269,6 +290,15 @@
 							"text": "Adicionar a Barra de upgrade mais um"
 						},
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 990068192269369,
+							"parameters": {
+								"variable": "BloquearCorreio",
+								"value": "false"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 659991769631601,
@@ -310,6 +340,18 @@
 							"sid": 298887095520206,
 							"parameters": {
 								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 809328539181135,
+							"parameters": {
+								"audio-file": "BatidaDoRelogio",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -528,6 +570,48 @@
 			],
 			"sid": 825560692357594,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 934200449874215,
+					"parameters": {
+						"variable": "EstouQuarto"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 481621621567249,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 390398353377205
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 146181845719644,
+							"parameters": {
+								"audio-file": "door_locked",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 872940504542577
+				}
+			]
 		}
 	],
 	"sid": 319169129069670

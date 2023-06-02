@@ -126,6 +126,16 @@
 			"sid": 330891510134733
 		},
 		{
+			"eventType": "variable",
+			"name": "PodeMontarCaixa",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 784014568931777
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -292,10 +302,10 @@
 		},
 		{
 			"functionName": "TocarEmpacotarSequencia",
-			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
+			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
@@ -1897,6 +1907,23 @@
 			],
 			"actions": [
 				{
+					"id": "set-visible",
+					"objectClass": "CaixaEmpacotar",
+					"sid": 192896023752033,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 647747753772271,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "true"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "CaixaMontadaDebug",
 					"sid": 771712276700501,
@@ -2056,6 +2083,560 @@
 				}
 			],
 			"sid": 674400020280566
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MouseOver",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Baixo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 765020703412978,
+							"parameters": {
+								"object": "CaixaLadoBaixoHitbox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 276195435105783,
+							"parameters": {
+								"animation": "\"MouseOver\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 469265051854789,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 859452763706799,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 537846591687033
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 227855904664018,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 382179317246105
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 884606366173395,
+							"parameters": {
+								"object": "CaixaLadoBaixoHitbox"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 901806414986079,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 449298630365909,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 102836946826774,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 987362165345142
+				},
+				{
+					"eventType": "comment",
+					"text": "Direita"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 938970622925891,
+							"parameters": {
+								"object": "CaixaLadoDireitoHitbox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 202652794159138,
+							"parameters": {
+								"animation": "\"MouseOver\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 223268633590969,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 488505435854626,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 967417047050131
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 117015089772721,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 406476131859887
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 301035567750654,
+							"parameters": {
+								"object": "CaixaLadoDireitoHitbox"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 735055747053629,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 123008495037008,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 470175466263313,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 960688771460412
+				},
+				{
+					"eventType": "comment",
+					"text": "Esquerda entre a foice e o martelo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 408727240985030,
+							"parameters": {
+								"object": "CaixaLadoEsquerdoHitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 480029402996157,
+							"parameters": {
+								"animation": "\"MouseOver\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 191074898611425,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 655115457495648,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 184836995350071
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 562893105980370,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 209922538668788
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 948796670231686,
+							"parameters": {
+								"object": "CaixaLadoEsquerdoHitBox"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 270923898676327,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 387240659226305,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 381710511262013,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 778868879484873
+				},
+				{
+					"eventType": "comment",
+					"text": "Cima, ao infinito e alem"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 324336717811602,
+							"parameters": {
+								"object": "CaixaLadoCimaHitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 424439759741596,
+							"parameters": {
+								"animation": "\"MouseOver\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 703869329236494,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 515415838252705,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 936150352402316
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 687085094634221,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 425105691597538
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 612789443615289,
+							"parameters": {
+								"object": "CaixaLadoCimaHitBox"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 174884806759551,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 387615220267760,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 277699017056639,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 536780921154846
+				}
+			],
+			"sid": 762150924682683
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 795260067137138,
+					"parameters": {
+						"variable": "PodeMontarCaixa"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "comment",
+					"text": "Baixo"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CaixaLadoBaixoHitbox",
+					"sid": 745119133264634,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CaixaLadoBaixoHitbox",
+					"sid": 674165840355126,
+					"parameters": {
+						"animation": "\"MoverBaixo\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Esquerda"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CaixaLadoEsquerdoHitBox",
+					"sid": 315899662863614,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CaixaLadoEsquerdoHitBox",
+					"sid": 912799773795016,
+					"parameters": {
+						"animation": "\"MoverEsquerda\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Cima"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CaixaLadoCimaHitBox",
+					"sid": 204674358999740,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CaixaLadoCimaHitBox",
+					"sid": 610283415207191,
+					"parameters": {
+						"animation": "\"MoverCima\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Direita"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CaixaLadoDireitoHitbox",
+					"sid": 795987838546601,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CaixaLadoDireitoHitbox",
+					"sid": 131593098581937,
+					"parameters": {
+						"animation": "\"MoverDireita\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CaixaMeioFundo",
+					"sid": 420982433607941,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 245473672702108
 		}
 	],
 	"sid": 904139227086244

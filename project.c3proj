@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 33600,
+	"savedWithRelease": 34400,
 	"name": "Roboter",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -135,7 +135,9 @@
 			"Mouse",
 			"Browser",
 			"Audio",
-			"Keyboard"
+			"Keyboard",
+			"FecharGaveta",
+			"MaoJogador"
 		],
 		"subfolders": [
 			{
@@ -259,12 +261,10 @@
 					"PescocoCortaPao",
 					"PescocoCortaPaoColisao",
 					"BarraEnergias",
-					"CarvaoNome",
 					"IconeBloqueado",
 					"IconeBloqueado2",
 					"IconeCarvao",
-					"IconeMuscular",
-					"MuscularNome"
+					"IconeMuscular"
 				],
 				"subfolders": [],
 				"name": "MiniGameMontagem"
@@ -282,7 +282,8 @@
 					"AcertouDebug",
 					"BotaoDeIniciarEmpacotar",
 					"ColicaoCabecaEmpacotar",
-					"SpawnRobos"
+					"SpawnRobos",
+					"CaixaMeioFundo"
 				],
 				"subfolders": [],
 				"name": "MiniGameEmbalar"
@@ -515,6 +516,38 @@
 					"name": "pegarDrag.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 198343951199858,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "door_locked.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 303401442018003,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "door_open.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 450675607442750,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "door_close.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 825921636848383,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BatidaDoRelogio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 119249028924913,
 					"file-info": {
 						"purpose": "none"
 					}

@@ -1,47 +1,44 @@
 {
-	"name": "CarvaoNome",
+	"name": "CaixaMeioFundo",
 	"plugin-id": "Sprite",
-	"sid": 190622760960022,
+	"sid": 906208685933886,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "skymen_BetterOutline",
-			"name": "BetterOutline"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 83,
-						"height": 67,
-						"originX": 0,
-						"originY": 0,
+						"width": 106,
+						"height": 118,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3720259,
+						"imageSpriteId": 4799306,
 						"collisionPoly": {
 							"points": [
 								0,
-								1,
+								0,
+								0,
 								0,
 								0,
 								1,
-								0,
 								1,
-								1
+								1,
+								1,
+								0.011299424252267608
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 602118753599782,
-				"name": "Animation 1",
+				"sid": 799843480371509,
+				"name": "idle",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
