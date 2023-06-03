@@ -89,7 +89,7 @@
 			"eventType": "variable",
 			"name": "MaxBrilho",
 			"type": "number",
-			"initialValue": "9",
+			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -145,12 +145,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 229882711882748,
-					"disabled": true
-				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
@@ -391,6 +385,15 @@
 										"variable": "empacotarContador",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BloquearCliques",
+									"sid": 388732808818341,
+									"parameters": {
+										"x": "606",
+										"y": "382"
+									}
 								}
 							],
 							"sid": 566696063612142
@@ -482,6 +485,15 @@
 					"parameters": {
 						"layer": "\"empacotarHitLayer\"",
 						"interactive": true
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BloquearCliques",
+					"sid": 331134060555819,
+					"parameters": {
+						"x": "411",
+						"y": "961"
 					}
 				}
 			],
@@ -1124,7 +1136,8 @@
 							}
 						}
 					],
-					"sid": 139266747014651
+					"sid": 139266747014651,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1244,7 +1257,8 @@
 							}
 						}
 					],
-					"sid": 323050548768554
+					"sid": 323050548768554,
+					"disabled": true
 				},
 				{
 					"eventType": "comment",
@@ -1279,6 +1293,15 @@
 							"sid": 528111413001840,
 							"parameters": {
 								"text": "\"Reiniciou o jogo\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "BloquearCliques",
+							"sid": 575096438888769,
+							"parameters": {
+								"x": "606",
+								"y": "382"
 							}
 						},
 						{
@@ -1892,6 +1915,10 @@
 			"text": "novo"
 		},
 		{
+			"eventType": "comment",
+			"text": "Alterar na variave global que a MaxBrilho comeca com ooutro valor"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2105,6 +2132,15 @@
 							"parameters": {
 								"object": "CaixaLadoBaixoHitbox"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 205631762582075,
+							"parameters": {
+								"object": "BloquearCliques"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -2214,6 +2250,15 @@
 							"parameters": {
 								"object": "CaixaLadoDireitoHitbox"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 972867171172102,
+							"parameters": {
+								"object": "BloquearCliques"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -2323,6 +2368,15 @@
 							"parameters": {
 								"object": "CaixaLadoEsquerdoHitBox"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 884783986778815,
+							"parameters": {
+								"object": "BloquearCliques"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -2432,6 +2486,15 @@
 							"parameters": {
 								"object": "CaixaLadoCimaHitBox"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 785173329888621,
+							"parameters": {
+								"object": "BloquearCliques"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -2542,101 +2605,235 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 245473672702108,
+			"children": [
 				{
-					"type": "comment",
-					"text": "Baixo"
-				},
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 993666450583359
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Baixo"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 693804139161168,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoBaixoHitbox",
+							"sid": 650937939052459,
+							"parameters": {
+								"animation": "\"MoverBaixo\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Esquerda"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 296350468737987,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoEsquerdoHitBox",
+							"sid": 397750416570044,
+							"parameters": {
+								"animation": "\"MoverEsquerda\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Cima"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 953328821272951,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoCimaHitBox",
+							"sid": 443599241681478,
+							"parameters": {
+								"animation": "\"MoverCima\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Direita"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 473001668447176,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaLadoDireitoHitbox",
+							"sid": 913776361969538,
+							"parameters": {
+								"animation": "\"MoverDireita\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaMeioFundo",
+							"sid": 565936469395976,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 836516349656170
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"id": "set-visible",
-					"objectClass": "CaixaLadoBaixoHitbox",
-					"sid": 745119133264634,
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 971449328934284,
 					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "CaixaLadoBaixoHitbox",
-					"sid": 674165840355126,
-					"parameters": {
-						"animation": "\"MoverBaixo\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"type": "comment",
-					"text": "Esquerda"
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "CaixaLadoEsquerdoHitBox",
-					"sid": 315899662863614,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "CaixaLadoEsquerdoHitBox",
-					"sid": 912799773795016,
-					"parameters": {
-						"animation": "\"MoverEsquerda\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"type": "comment",
-					"text": "Cima"
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "CaixaLadoCimaHitBox",
-					"sid": 204674358999740,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "CaixaLadoCimaHitBox",
-					"sid": 610283415207191,
-					"parameters": {
-						"animation": "\"MoverCima\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"type": "comment",
-					"text": "Direita"
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "CaixaLadoDireitoHitbox",
-					"sid": 795987838546601,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "CaixaLadoDireitoHitbox",
-					"sid": 131593098581937,
-					"parameters": {
-						"animation": "\"MoverDireita\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "CaixaMeioFundo",
-					"sid": 420982433607941,
-					"parameters": {
-						"visibility": "visible"
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CaixaLadoBaixoHitbox"
 					}
 				}
 			],
-			"sid": 245473672702108
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 848244726210820,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 482217371292987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 322529162543023,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CaixaLadoCimaHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 955490085211259,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 708816768958193
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 846426176507225,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CaixaLadoDireitoHitbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 152988277224949,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 455743231257620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 910880421435891,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CaixaLadoEsquerdoHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 324830743071631,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 294285161072037
 		}
 	],
 	"sid": 904139227086244

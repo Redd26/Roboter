@@ -137,7 +137,9 @@
 			"Audio",
 			"Keyboard",
 			"FecharGaveta",
-			"MaoJogador"
+			"MaoJogador",
+			"ParaReiniciarMiniGameMontagem",
+			"BloquearCliques"
 		],
 		"subfolders": [
 			{

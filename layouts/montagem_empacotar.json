@@ -444,6 +444,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "ParaReiniciarMiniGameMontagem",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 240,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 883,
+						"y": 254,
+						"width": 70.39886362719217,
+						"height": 70.39886362719217,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 337799063233307,
@@ -483,7 +512,7 @@
 					"type": "CaixaLadoBaixoHitbox",
 					"properties": {
 						"initially-visible": false,
-						"initial-animation": "idle",
+						"initial-animation": "MoverBaixo",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -492,12 +521,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 605.0671313799222,
-						"y": 498.4444444444444,
-						"width": 106,
-						"height": 118,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 603.9077295846557,
+						"y": 498.7345265653648,
+						"width": 160,
+						"height": 152,
+						"originX": 0.475,
+						"originY": 0.5197368421052632,
 						"color": [
 							1,
 							1,
@@ -521,8 +550,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 708.0671313799222,
-						"y": 382.4444444444444,
+						"x": 707.8020041481182,
+						"y": 382.01220285886933,
 						"width": 106,
 						"height": 118,
 						"originX": 0.5,
@@ -550,8 +579,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 605.0671313799222,
-						"y": 266.4444444444444,
+						"x": 603.8656877683052,
+						"y": 266.0487182569432,
 						"width": 106,
 						"height": 118,
 						"originX": 0.5,
@@ -579,10 +608,68 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 502.0671313799222,
-						"y": 382.4444444444444,
+						"x": 499.99359625459965,
+						"y": 382.02251279214255,
 						"width": 106,
 						"height": 118,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CaixaMeioFundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 239,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 603.9195729384296,
+						"y": 382.45524612637877,
+						"width": 106,
+						"height": 118.88069090245722,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BloquearCliques",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 241,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 606,
+						"y": 382,
+						"width": 350,
+						"height": 350,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1031,35 +1118,6 @@
 						"angle": 0,
 						"zElevation": 0,
 						"blendMode": "destination-out"
-					}
-				},
-				{
-					"type": "CaixaMeioFundo",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 239,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 606.0286987149676,
-						"y": 382.87671052007283,
-						"width": 106,
-						"height": 118.88069090245722,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				}
 			],
