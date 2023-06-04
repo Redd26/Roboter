@@ -86,102 +86,9 @@
 			"sid": 225866021476775
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 500510224458218
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 108472976334489,
-					"parameters": {
-						"variable": "EstouMiniGame",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 940459521460451,
-					"parameters": {
-						"variable": "EstouLoja",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 118240625834947,
-					"parameters": {
-						"variable": "EstouQuarto",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 634380396552460,
-					"parameters": {
-						"variable": "totalQuebraCabecaPecas",
-						"value": "QuebraCabecaPecas.Count"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "RelogioDiaNoite",
-					"sid": 282476653680753,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 941483857796451,
-					"disabled": true,
-					"parameters": {
-						"tag": "\"LojaMusic\""
-					}
-				}
-			],
-			"sid": 269853752494714
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 840426296715320,
-					"parameters": {
-						"variable": "pecasQuebraCabecaAdicionadas",
-						"comparison": 0,
-						"value": "totalQuebraCabecaPecas"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "ProximoLevel",
-					"sid": 597306129930803,
-					"parameters": {
-						"x": "1094",
-						"y": "526"
-					}
-				}
-			],
-			"sid": 968409870994055
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Interação Mouse",
+			"title": "EvQuebraCabecaGrupo",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -189,1128 +96,991 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 594883360696424,
-							"parameters": {
-								"object": "QuebraCabecaPecas"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
+							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 309171457560441
+							"sid": 923601995910113
 						}
 					],
 					"actions": [
 						{
-							"id": "set-scale",
-							"objectClass": "QuebraCabecaPecas",
-							"sid": 423755588711007,
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 432969623768695,
 							"parameters": {
-								"scale": "1.1"
+								"variable": "EstouMiniGame",
+								"value": "true"
 							}
 						},
 						{
-							"id": "move-to-top",
-							"objectClass": "QuebraCabecaPecas",
-							"sid": 232829444777940
-						}
-					],
-					"sid": 219923840727676
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 887406253355289,
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 272275784236560,
 							"parameters": {
-								"object": "QuebraCabecaPecas"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "QuebraCabecaPecas",
-							"sid": 426358398472632,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 665906502806177
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 955954147334535,
-							"parameters": {
-								"object": "QuebraCabecaPecas"
+								"variable": "EstouLoja",
+								"value": "false"
 							}
 						},
 						{
-							"id": "trigger-once-while-true",
+							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 635055724565657
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 191365677349481,
+							"sid": 883195121668266,
 							"parameters": {
-								"variable": "pecaPosicaoXOriginal",
-								"value": "round(QuebraCabecaPecas.X * 100) / 100"
+								"variable": "EstouQuarto",
+								"value": "false"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 383790749647359,
+							"sid": 986913072172150,
 							"parameters": {
-								"variable": "pecaPosicaoYOriginal",
-								"value": "round(QuebraCabecaPecas.Y * 100) / 100"
-							}
-						}
-					],
-					"sid": 799349720522150
-				}
-			],
-			"sid": 515351664662129
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Montagem Quebra-Cabeça",
-			"description": "",
-			"isActiveOnStart": false,
-			"children": [
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Cabeca",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "CabecaCortaPao",
-									"sid": 641201043697420,
-									"parameters": {
-										"object": "QuebraCabecaSombras"
-									}
-								},
-								{
-									"id": "isdragging0",
-									"objectClass": "CabecaCortaPao",
-									"sid": 619749802150242,
-									"behaviorType": "BoundedDragDrop"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-scale",
-									"objectClass": "CabecaCortaPao",
-									"sid": 307048501374410,
-									"parameters": {
-										"scale": ".9"
-									}
-								}
-							],
-							"sid": 385250769676428
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "CabecaCortaPao",
-									"sid": 234688918051536,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "CabecaCortaPao",
-									"sid": 994250293308201,
-									"parameters": {
-										"object": "CabecaCortaPaoColisao"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-object",
-									"objectClass": "CabecaCortaPao",
-									"sid": 630386538464737,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "CabecaCortaPaoColisao",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 925109009715539,
-									"parameters": {
-										"variable": "pecasQuebraCabecaAdicionadas",
-										"value": "1"
-									}
-								},
-								{
-									"id": "move-to-layer",
-									"objectClass": "CabecaCortaPao",
-									"sid": 769114536825906,
-									"parameters": {
-										"layer": "\"desativaInteracao\""
-									}
-								},
-								{
-									"id": "setenabled0",
-									"objectClass": "CabecaCortaPao",
-									"sid": 881037395485914,
-									"behaviorType": "BoundedDragDrop",
-									"parameters": {
-										"state2": "disabled"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 201823317006907,
-									"parameters": {
-										"audio-file": "ColocarDrag",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 671180667298426
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "CabecaCortaPao",
-									"sid": 337709171454825,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "CabecaCortaPao",
-									"sid": 128508894022618,
-									"parameters": {
-										"object": "CabecaCortaPaoColisao"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "CabecaCortaPao",
-									"sid": 747187696941146,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "pecaPosicaoXOriginal",
-										"y": "pecaPosicaoYOriginal",
-										"mode": "direct"
-									}
-								}
-							],
-							"sid": 849232024119997
-						}
-					],
-					"sid": 105202822272960
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Pescoco",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "PescocoCortaPao",
-									"sid": 273644137014268,
-									"parameters": {
-										"object": "QuebraCabecaSombras"
-									}
-								},
-								{
-									"id": "isdragging0",
-									"objectClass": "PescocoCortaPao",
-									"sid": 764110000374542,
-									"behaviorType": "BoundedDragDrop"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-scale",
-									"objectClass": "PescocoCortaPao",
-									"sid": 419755245208235,
-									"parameters": {
-										"scale": ".9"
-									}
-								}
-							],
-							"sid": 161311019378441
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "PescocoCortaPao",
-									"sid": 775535278886886,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "PescocoCortaPao",
-									"sid": 152246205002958,
-									"parameters": {
-										"object": "PescocoCortaPaoColisao"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-object",
-									"objectClass": "PescocoCortaPao",
-									"sid": 350340313231590,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "PescocoCortaPaoColisao",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 919987878786173,
-									"parameters": {
-										"variable": "pecasQuebraCabecaAdicionadas",
-										"value": "1"
-									}
-								},
-								{
-									"id": "move-to-layer",
-									"objectClass": "PescocoCortaPao",
-									"sid": 874824695448960,
-									"parameters": {
-										"layer": "\"desativaInteracao\""
-									}
-								},
-								{
-									"id": "setenabled0",
-									"objectClass": "PescocoCortaPao",
-									"sid": 646039581461324,
-									"behaviorType": "BoundedDragDrop",
-									"parameters": {
-										"state2": "disabled"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 854008281838057,
-									"parameters": {
-										"audio-file": "ColocarDrag",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 870669211395821
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "PescocoCortaPao",
-									"sid": 352349220272631,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "PescocoCortaPao",
-									"sid": 376166845738649,
-									"parameters": {
-										"object": "PescocoCortaPaoColisao"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "PescocoCortaPao",
-									"sid": 809610964174996,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "pecaPosicaoXOriginal",
-										"y": "pecaPosicaoYOriginal",
-										"mode": "direct"
-									}
-								}
-							],
-							"sid": 681811984150538
-						}
-					],
-					"sid": 475134123405421
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Meio esquerdo",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 220641975836650,
-									"parameters": {
-										"object": "QuebraCabecaSombras"
-									}
-								},
-								{
-									"id": "isdragging0",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 638446662473798,
-									"behaviorType": "BoundedDragDrop"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-scale",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 936780538415187,
-									"parameters": {
-										"scale": ".9"
-									}
-								}
-							],
-							"sid": 531308585959703
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 752260702241182,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 997649283393773,
-									"parameters": {
-										"object": "EsquerdaMeioCortaPaoColisao"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-object",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 273362918952837,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "EsquerdaMeioCortaPaoColisao",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 831328879059820,
-									"parameters": {
-										"variable": "pecasQuebraCabecaAdicionadas",
-										"value": "1"
-									}
-								},
-								{
-									"id": "move-to-layer",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 314101506507232,
-									"parameters": {
-										"layer": "\"desativaInteracao\""
-									}
-								},
-								{
-									"id": "setenabled0",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 889805853794936,
-									"behaviorType": "BoundedDragDrop",
-									"parameters": {
-										"state2": "disabled"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 338333180939122,
-									"parameters": {
-										"audio-file": "ColocarDrag",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 103291848617752
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 773298095592572,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 811937929279490,
-									"parameters": {
-										"object": "EsquerdaMeioCortaPaoColisao"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 511887053994075,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "pecaPosicaoXOriginal",
-										"y": "pecaPosicaoYOriginal",
-										"mode": "direct"
-									}
-								}
-							],
-							"sid": 997384576480981
-						}
-					],
-					"sid": 697861959414604
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Meio Direita",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 648686100263282,
-									"parameters": {
-										"object": "QuebraCabecaSombras"
-									}
-								},
-								{
-									"id": "isdragging0",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 698576173448523,
-									"behaviorType": "BoundedDragDrop"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-scale",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 373027523302819,
-									"parameters": {
-										"scale": ".9"
-									}
-								}
-							],
-							"sid": 333405711339648
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 662073444198876,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 956486233255837,
-									"parameters": {
-										"object": "DireitaMeioCortaPaoColisao"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-object",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 977635601466194,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "DireitaMeioCortaPaoColisao",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 656924628358926,
-									"parameters": {
-										"variable": "pecasQuebraCabecaAdicionadas",
-										"value": "1"
-									}
-								},
-								{
-									"id": "move-to-layer",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 460492824675740,
-									"parameters": {
-										"layer": "\"desativaInteracao\""
-									}
-								},
-								{
-									"id": "setenabled0",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 471768681452521,
-									"behaviorType": "BoundedDragDrop",
-									"parameters": {
-										"state2": "disabled"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 100392923721654,
-									"parameters": {
-										"audio-file": "ColocarDrag",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 433408974481342
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 686937833331308,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 847329987683984,
-									"parameters": {
-										"object": "DireitaMeioCortaPaoColisao"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 362845538384444,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "pecaPosicaoXOriginal",
-										"y": "pecaPosicaoYOriginal",
-										"mode": "direct"
-									}
-								}
-							],
-							"sid": 704680102434180
-						}
-					],
-					"sid": 204151216808159
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Base",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "BaseCortaPao",
-									"sid": 573591926088522,
-									"parameters": {
-										"object": "QuebraCabecaSombras"
-									}
-								},
-								{
-									"id": "isdragging0",
-									"objectClass": "BaseCortaPao",
-									"sid": 691125915794381,
-									"behaviorType": "BoundedDragDrop"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-scale",
-									"objectClass": "BaseCortaPao",
-									"sid": 598846675884884,
-									"parameters": {
-										"scale": ".9"
-									}
-								}
-							],
-							"sid": 242430977716166
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "BaseCortaPao",
-									"sid": 909795874401011,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "BaseCortaPao",
-									"sid": 326525170911721,
-									"parameters": {
-										"object": "BaseCortaPaoColisao"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-object",
-									"objectClass": "BaseCortaPao",
-									"sid": 507495402065152,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"object": "BaseCortaPaoColisao",
-										"image-point": "0",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 307635366387299,
-									"parameters": {
-										"variable": "pecasQuebraCabecaAdicionadas",
-										"value": "1"
-									}
-								},
-								{
-									"id": "move-to-layer",
-									"objectClass": "BaseCortaPao",
-									"sid": 310572400900981,
-									"parameters": {
-										"layer": "\"desativaInteracao\""
-									}
-								},
-								{
-									"id": "setenabled0",
-									"objectClass": "BaseCortaPao",
-									"sid": 133430318452181,
-									"behaviorType": "BoundedDragDrop",
-									"parameters": {
-										"state2": "disabled"
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 851532533284488,
-									"parameters": {
-										"audio-file": "ColocarDrag",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 337351290404765
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "ondrop2",
-									"objectClass": "BaseCortaPao",
-									"sid": 863918213358956,
-									"behaviorType": "BoundedDragDrop"
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "BaseCortaPao",
-									"sid": 811602559134052,
-									"parameters": {
-										"object": "BaseCortaPaoColisao"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "BaseCortaPao",
-									"sid": 430207819866813,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "pecaPosicaoXOriginal",
-										"y": "pecaPosicaoYOriginal",
-										"mode": "direct"
-									}
-								}
-							],
-							"sid": 113296575798831
-						}
-					],
-					"sid": 327593836644776
-				}
-			],
-			"sid": 562421012444758
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-end-of-layout",
-					"objectClass": "System",
-					"sid": 966426431612216
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 989415259703235,
-					"parameters": {
-						"tag": "\"musicaConstrucao\""
-					}
-				}
-			],
-			"sid": 651122568400329,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 506123707844157,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "ProximoLevel"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 288231574408252,
-					"parameters": {
-						"audio-file": "menu_confirm",
-						"loop": "not-looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 131975126680539,
-					"parameters": {
-						"x": "0",
-						"y": "0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Transicao",
-					"sid": 661266502842377,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 875749463559372,
-					"parameters": {
-						"seconds": "1.3"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 571201934529072,
-					"parameters": {
-						"x": "3000",
-						"y": "1500"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 690429961186619,
-					"parameters": {
-						"layout": "Montagem_Empacotar"
-					}
-				}
-			],
-			"sid": 188660424504055
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "SelecionarMaterial",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 583889653065660,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "SeletorEnergia"
+								"variable": "totalQuebraCabecaPecas",
+								"value": "QuebraCabecaPecas.Count"
 							}
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 195177380306492,
+							"id": "set-visible",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 703859207471740,
 							"parameters": {
-								"variable": "SeletorDeEnergiaAberto"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "AbrirEnergia",
-							"sid": 313497963307795
+								"visibility": "invisible"
+							}
 						},
 						{
-							"id": "play",
+							"id": "stop",
 							"objectClass": "Audio",
-							"sid": 792092525621855,
+							"sid": 940261489300423,
+							"disabled": true,
 							"parameters": {
-								"audio-file": "GavetaAbrir",
-								"loop": "not-looping",
-								"volume": "-10",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag": "\"LojaMusic\""
 							}
 						}
 					],
-					"sid": 116743129563568
+					"sid": 742274894837531
 				},
 				{
 					"eventType": "block",
 					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 284323165700369,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "BarraEnergias"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 843204592264491,
-							"parameters": {
-								"variable": "SeletorDeEnergiaAberto"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "FecharEnergia",
-							"sid": 787847095966723
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 133402980802033,
-							"parameters": {
-								"audio-file": "GavetaFechar",
-								"loop": "not-looping",
-								"volume": "-10",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 818599729740856
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 617946274929777,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "IconeMuscular"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 294175158734606,
-							"parameters": {
-								"variable": "EnergiaEscolhida",
-								"value": "\"Muscular\""
-							}
-						},
-						{
-							"callFunction": "AnalisarEnergia",
-							"sid": 224260612706115
-						}
-					],
-					"sid": 141582750906816
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 900106366951677,
-							"parameters": {
-								"variable": "EnergiaLiberada"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 694635440003800,
-							"parameters": {
-								"group-name": "\"Montagem Quebra-Cabeça\"",
-								"state": "activated"
-							}
-						}
-					],
-					"sid": 466008256990033
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 552297545899133,
-							"parameters": {
-								"variable": "EnergiaLiberada"
-							},
-							"isInverted": true
-						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 430814477703574,
+							"sid": 145813602725895,
 							"parameters": {
-								"variable": "EnergiaEscolhida",
-								"comparison": 1,
-								"value": "\"\""
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"comparison": 0,
+								"value": "totalQuebraCabecaPecas"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 811174785152520,
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 306092855371652,
 							"parameters": {
-								"group-name": "\"Montagem Quebra-Cabeça\"",
-								"state": "deactivated"
+								"x": "1094",
+								"y": "526"
 							}
+						}
+					],
+					"sid": 713210914112076
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Interação Mouse",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 454567823427394,
+									"parameters": {
+										"object": "QuebraCabecaPecas"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 927504915490649
+								}
+							],
+							"actions": [
+								{
+									"id": "set-scale",
+									"objectClass": "QuebraCabecaPecas",
+									"sid": 772977905235249,
+									"parameters": {
+										"scale": "1.1"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "QuebraCabecaPecas",
+									"sid": 245090718243302
+								}
+							],
+							"sid": 381160683426072
 						},
 						{
-							"id": "wait",
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 670918726778131,
+									"parameters": {
+										"object": "QuebraCabecaPecas"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-scale",
+									"objectClass": "QuebraCabecaPecas",
+									"sid": 201742303455970,
+									"parameters": {
+										"scale": "1"
+									}
+								}
+							],
+							"sid": 326121994238618
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 168720820509456,
+									"parameters": {
+										"object": "QuebraCabecaPecas"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 810149772626117
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 698808945907310,
+									"parameters": {
+										"variable": "pecaPosicaoXOriginal",
+										"value": "round(QuebraCabecaPecas.X * 100) / 100"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 690364066268000,
+									"parameters": {
+										"variable": "pecaPosicaoYOriginal",
+										"value": "round(QuebraCabecaPecas.Y * 100) / 100"
+									}
+								}
+							],
+							"sid": 365360057552547
+						}
+					],
+					"sid": 667388064372332
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Montagem Quebra-Cabeça",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Cabeca",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaCortaPao",
+											"sid": 999314092761291,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CabecaCortaPao",
+											"sid": 389738808575931,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CabecaCortaPao",
+											"sid": 707860616567647,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 173836569500807
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaCortaPao",
+											"sid": 200674217653288,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaCortaPao",
+											"sid": 796705474642336,
+											"parameters": {
+												"object": "CabecaCortaPaoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CabecaCortaPao",
+											"sid": 989832290946480,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CabecaCortaPaoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 156047094706398,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CabecaCortaPao",
+											"sid": 663631366830984,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CabecaCortaPao",
+											"sid": 887628250095642,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 514990749406254,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 786406551206068
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaCortaPao",
+											"sid": 787075530404264,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaCortaPao",
+											"sid": 430832705569216,
+											"parameters": {
+												"object": "CabecaCortaPaoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CabecaCortaPao",
+											"sid": 885182069256838,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 620300406557134
+								}
+							],
+							"sid": 694023496456188
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Pescoco",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoCortaPao",
+											"sid": 967849797390129,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PescocoCortaPao",
+											"sid": 972082806198236,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PescocoCortaPao",
+											"sid": 962934341635138,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 695143357354748
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PescocoCortaPao",
+											"sid": 584812861791192,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoCortaPao",
+											"sid": 356698331295886,
+											"parameters": {
+												"object": "PescocoCortaPaoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PescocoCortaPao",
+											"sid": 999377430625522,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PescocoCortaPaoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 276781167658129,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PescocoCortaPao",
+											"sid": 705979373823969,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PescocoCortaPao",
+											"sid": 225304254719663,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 110916162726948,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 178088088139952
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PescocoCortaPao",
+											"sid": 588798141823617,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoCortaPao",
+											"sid": 716313566913472,
+											"parameters": {
+												"object": "PescocoCortaPaoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PescocoCortaPao",
+											"sid": 268265525500412,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 446181253586064
+								}
+							],
+							"sid": 309002915995306
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Meio esquerdo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 823112666470796,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 497908318810344,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 791798927667796,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 434473220638177
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 386323312118704,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 869481803784856,
+											"parameters": {
+												"object": "EsquerdaMeioCortaPaoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 159974215169331,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "EsquerdaMeioCortaPaoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 619749037380698,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 333353414189113,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 244569237458611,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 282964127391916,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 349976381529069
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 100256024668854,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 470220076729080,
+											"parameters": {
+												"object": "EsquerdaMeioCortaPaoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "EsquerdaMeioCortaPao",
+											"sid": 313891435773578,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 346201568059776
+								}
+							],
+							"sid": 330134587972349
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Meio Direita",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 972516532447192,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 517686585049407,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 499830004890047,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 652264146019793
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 110610512179643,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 917418085111191,
+											"parameters": {
+												"object": "DireitaMeioCortaPaoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 733695016684788,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "DireitaMeioCortaPaoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 573932702005023,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 846514262471089,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 784394921182023,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 457457360326530,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 716183420109010
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 837179651098926,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 340092064689747,
+											"parameters": {
+												"object": "DireitaMeioCortaPaoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "DireitaMeioCortaPao",
+											"sid": 475141004704086,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 461349599435941
+								}
+							],
+							"sid": 583167716946413
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Base",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCortaPao",
+											"sid": 318253373341371,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "BaseCortaPao",
+											"sid": 114422643993749,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "BaseCortaPao",
+											"sid": 836112909281044,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 264116495543391
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BaseCortaPao",
+											"sid": 466570547416455,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCortaPao",
+											"sid": 932253263549042,
+											"parameters": {
+												"object": "BaseCortaPaoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "BaseCortaPao",
+											"sid": 869002872593768,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "BaseCortaPaoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 129226204984603,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "BaseCortaPao",
+											"sid": 454882153338367,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "BaseCortaPao",
+											"sid": 235250938099856,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 259960488462759,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 988224333739765
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BaseCortaPao",
+											"sid": 440220638961594,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCortaPao",
+											"sid": 373793693268484,
+											"parameters": {
+												"object": "BaseCortaPaoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "BaseCortaPao",
+											"sid": 758122977592574,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 749629168004010
+								}
+							],
+							"sid": 706162589711261
+						}
+					],
+					"sid": 463360636385239
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-end-of-layout",
 							"objectClass": "System",
-							"sid": 724734726731378,
-							"disabled": true,
+							"sid": 175013867747723
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 265489769964927,
 							"parameters": {
-								"seconds": "2"
+								"tag": "\"musicaConstrucao\""
+							}
+						}
+					],
+					"sid": 858995843578379,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 276228858304442,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ProximoLevel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 585599989270571,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
 							"id": "set-position",
 							"objectClass": "Transicao",
-							"sid": 464342510673307,
-							"disabled": true,
+							"sid": 271635795821741,
 							"parameters": {
 								"x": "0",
 								"y": "0"
@@ -1319,8 +1089,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Transicao",
-							"sid": 135338666569031,
-							"disabled": true,
+							"sid": 103366158214257,
 							"parameters": {
 								"animation": "\"Animation 1\"",
 								"from": "beginning"
@@ -1329,8 +1098,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 783522770157932,
-							"disabled": true,
+							"sid": 674768205068305,
 							"parameters": {
 								"seconds": "1.3"
 							}
@@ -1338,8 +1106,7 @@
 						{
 							"id": "set-position",
 							"objectClass": "Transicao",
-							"sid": 509457893486179,
-							"disabled": true,
+							"sid": 620864115699801,
 							"parameters": {
 								"x": "3000",
 								"y": "1500"
@@ -1348,731 +1115,1082 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 722905383167651,
-							"disabled": true,
+							"sid": 344541963480691,
 							"parameters": {
-								"layout": "Loja"
+								"layout": "Montagem_Empacotar"
 							}
 						}
 					],
-					"sid": 162346914507685
+					"sid": 841653183418538
 				},
 				{
-					"functionName": "AbrirEnergia",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "SelecionarMaterial",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 524960225501868,
-							"parameters": {
-								"seconds": "0.1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 181583333472633,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "SeletorEnergia"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 744235358677669,
+									"parameters": {
+										"variable": "SeletorDeEnergiaAberto"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 181843758814414,
+									"parameters": {
+										"variable": "EnergiaEscolhida",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirEnergia",
+									"sid": 699464372766539
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 727544051937670,
+									"parameters": {
+										"audio-file": "GavetaAbrir",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 635763944781152
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 598806604659424,
-							"parameters": {
-								"variable": "SeletorDeEnergiaAberto",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 121005691418489,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "BarraEnergias"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 782081655030351,
+									"parameters": {
+										"variable": "SeletorDeEnergiaAberto"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "FecharEnergia",
+									"sid": 606687488388454
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 814309275836630,
+									"parameters": {
+										"audio-file": "GavetaFechar",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 177078077217425
 						},
 						{
-							"id": "set-position-to-another-object",
-							"objectClass": "BarraEnergias",
-							"sid": 184421124235198,
-							"parameters": {
-								"object": "SeletorEnergia",
-								"image-point-optional": "0"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 289504141982209,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "IconeMuscular"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 870335091245287,
+									"parameters": {
+										"variable": "EnergiaEscolhida",
+										"value": "\"Muscular\""
+									}
+								},
+								{
+									"callFunction": "AnalisarEnergia",
+									"sid": 799614733481279
+								}
+							],
+							"sid": 925681166797308
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "SeletorEnergia",
-							"sid": 342890498686824,
-							"parameters": {
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 526622476073115,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 554397386048855,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 457257057128780
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeMuscular",
-							"sid": 906205214914809,
-							"parameters": {
-								"x": "1133.387956",
-								"y": " 222.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 291576467968401,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 577695555993415,
+									"parameters": {
+										"variable": "EnergiaEscolhida",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 235995891395574,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 691405024518790,
+									"disabled": true,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Transicao",
+									"sid": 896967639496787,
+									"disabled": true,
+									"parameters": {
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Transicao",
+									"sid": 192287774559514,
+									"disabled": true,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 738366259816341,
+									"disabled": true,
+									"parameters": {
+										"seconds": "1.3"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Transicao",
+									"sid": 363678336282135,
+									"disabled": true,
+									"parameters": {
+										"x": "3000",
+										"y": "1500"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 505402596009972,
+									"disabled": true,
+									"parameters": {
+										"layout": "Loja"
+									}
+								}
+							],
+							"sid": 492632729475550
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeCarvao",
-							"sid": 294058390717503,
-							"parameters": {
-								"x": "1133.387956",
-								"y": "303.149392"
-							}
+							"functionName": "AbrirEnergia",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 832990793275969,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 810960235111141,
+									"parameters": {
+										"variable": "SeletorDeEnergiaAberto",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "BarraEnergias",
+									"sid": 530618422333942,
+									"parameters": {
+										"object": "SeletorEnergia",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SeletorEnergia",
+									"sid": 846343602247029,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeMuscular",
+									"sid": 970174805746328,
+									"parameters": {
+										"x": "1133.387956",
+										"y": " 222.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeCarvao",
+									"sid": 122269683586837,
+									"parameters": {
+										"x": "1133.387956",
+										"y": "303.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeBloqueado",
+									"sid": 304110308003795,
+									"parameters": {
+										"x": "1133.387956",
+										"y": " 384.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeBloqueado2",
+									"sid": 638413640781914,
+									"parameters": {
+										"x": "1133.387956",
+										"y": "465.149392"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "FecharGaveta",
+									"sid": 297737429608114,
+									"parameters": {
+										"object": "BarraEnergias",
+										"image-point-optional": "\"Image Point 1\""
+									}
+								}
+							],
+							"sid": 491560045287670
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeBloqueado",
-							"sid": 765169015570526,
-							"parameters": {
-								"x": "1133.387956",
-								"y": " 384.149392"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "IconeBloqueado2",
-							"sid": 105239622630757,
-							"parameters": {
-								"x": "1133.387956",
-								"y": "465.149392"
-							}
-						},
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "FecharGaveta",
-							"sid": 913984741676724,
-							"parameters": {
-								"object": "BarraEnergias",
-								"image-point-optional": "\"Image Point 1\""
-							}
+							"functionName": "FecharEnergia",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 649263548952771,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 935975390011226,
+									"parameters": {
+										"variable": "SeletorDeEnergiaAberto",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SeletorEnergia",
+									"sid": 140992916193618,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BarraEnergias",
+									"sid": 458749776297497,
+									"parameters": {
+										"x": "1497.387956",
+										"y": "378.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeMuscular",
+									"sid": 700871696850597,
+									"parameters": {
+										"x": "1387.387956",
+										"y": "222.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeCarvao",
+									"sid": 601941458717046,
+									"parameters": {
+										"x": "1387.387956",
+										"y": "222.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeBloqueado",
+									"sid": 625922153156978,
+									"parameters": {
+										"x": "1387.387956",
+										"y": " 222.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "IconeBloqueado2",
+									"sid": 370561000923340,
+									"parameters": {
+										"x": "1387.387956",
+										"y": "222.149392"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FecharGaveta",
+									"sid": 762233237272299,
+									"parameters": {
+										"x": "2000",
+										"y": "2001"
+									}
+								}
+							],
+							"sid": 395355081180391
 						}
 					],
-					"sid": 794585157587465
+					"sid": 569679396899077
 				},
 				{
-					"functionName": "FecharEnergia",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Mouse em cima",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 600250951408781,
-							"parameters": {
-								"seconds": "0.1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 964573969875974,
+									"parameters": {
+										"object": "IconeMuscular"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeMuscular",
+									"sid": 654447701020423,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 200053892777106,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 325060983808589
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 768708777977056,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 874281119388662
+								}
+							]
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 463453991811008,
-							"parameters": {
-								"variable": "SeletorDeEnergiaAberto",
-								"value": "false"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 387450467842724,
+									"parameters": {
+										"object": "IconeMuscular"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeMuscular",
+									"sid": 577563190465611,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 940629792540047
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "SeletorEnergia",
-							"sid": 177797798018264,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 489154061362286,
+									"parameters": {
+										"object": "IconeCarvao"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeCarvao",
+									"sid": 313410061834782,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 606211041292418,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 470717167770975
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 485275070797675,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 727056017117929
+								}
+							]
 						},
 						{
-							"id": "set-position",
-							"objectClass": "BarraEnergias",
-							"sid": 202061589535331,
-							"parameters": {
-								"x": "1497.387956",
-								"y": "378.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 155989216821238,
+									"parameters": {
+										"object": "IconeCarvao"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeCarvao",
+									"sid": 879449868211728,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 902712396067888
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeMuscular",
-							"sid": 409722054628440,
-							"parameters": {
-								"x": "1387.387956",
-								"y": "222.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 339578070601708,
+									"parameters": {
+										"object": "IconeCarvao"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 784333993374099,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeCarvao",
+									"sid": 737951788278105,
+									"parameters": {
+										"animation": "\"BloqueadoMV\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 564736744088906,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 297367156044599
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 714426358677135,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 980303433500042
+								}
+							]
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeCarvao",
-							"sid": 836907094904153,
-							"parameters": {
-								"x": "1387.387956",
-								"y": "222.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 354321709403787,
+									"parameters": {
+										"object": "IconeCarvao"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 568480911222567,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeCarvao",
+									"sid": 303717233553451,
+									"parameters": {
+										"animation": "\"Bloqueado\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 991737164458730
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeBloqueado",
-							"sid": 153584049741027,
-							"parameters": {
-								"x": "1387.387956",
-								"y": " 222.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 185323884158505,
+									"parameters": {
+										"object": "IconeBloqueado"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeBloqueado",
+									"sid": 956860381125683,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 670278051107476,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 214239739459196
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 480834838107774,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 691391953439244
+								}
+							]
 						},
 						{
-							"id": "set-position",
-							"objectClass": "IconeBloqueado2",
-							"sid": 820733191680702,
-							"parameters": {
-								"x": "1387.387956",
-								"y": "222.149392"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 219689367530001,
+									"parameters": {
+										"object": "IconeBloqueado"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeBloqueado",
+									"sid": 991656166029718,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 435854987961195
 						},
 						{
-							"id": "set-position",
-							"objectClass": "FecharGaveta",
-							"sid": 677465803401714,
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 771059209923636,
+									"parameters": {
+										"object": "IconeBloqueado2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeBloqueado2",
+									"sid": 940991812255117,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 774542496676965,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 600913772342591
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 983337182733664,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 113455450145450
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 639150143198194,
+									"parameters": {
+										"object": "IconeBloqueado2"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "IconeBloqueado2",
+									"sid": 889514508744326,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 781499563206967
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 538401722961066,
+									"parameters": {
+										"object": "ObjetosEnergias"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 115318262928413
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ObjetosEnergias",
+									"sid": 901785441302519,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 292218939534146
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 173207243317018,
+									"parameters": {
+										"object": "ObjetosEnergias"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ObjetosEnergias",
+									"sid": 761107881721081,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 323729359744489
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 476734591219693,
+									"parameters": {
+										"object": "SeletorEnergia"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 754646715771720,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 608764174058317
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 404390815518311,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 481752198752385
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 940892125166436,
+									"parameters": {
+										"object": "BarraEnergias"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "FecharGaveta",
+									"sid": 863835238586758,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 674461628365749,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 487735890178532
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 597991591910030,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 120095140844479
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 953958261181618,
+									"parameters": {
+										"object": "FecharGaveta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "FecharGaveta",
+									"sid": 273827833171963,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 576179943483228
+						}
+					],
+					"sid": 369760034337069
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 235999714685752,
 							"parameters": {
-								"x": "2000",
-								"y": "2001"
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "QuebraCabecaPecas"
 							}
 						}
 					],
-					"sid": 330960880466651
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 340421897455685,
+							"parameters": {
+								"audio-file": "pegarDrag",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 801862121488118
 				}
 			],
-			"sid": 150098756478360
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Mouse em cima",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 467146093538184,
-							"parameters": {
-								"object": "IconeMuscular"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeMuscular",
-							"sid": 371724593226909,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 910453477394037,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 635643717755962
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 562020318553592,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 342983626909989
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 142359802118899,
-							"parameters": {
-								"object": "IconeMuscular"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeMuscular",
-							"sid": 170334161459550,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 845199709105655
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 483991668267294,
-							"parameters": {
-								"object": "IconeCarvao"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeCarvao",
-							"sid": 451600043411106,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 139195270042783,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 687856662374708
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 494961370080404,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 892620134318359
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 475342350912594,
-							"parameters": {
-								"object": "IconeCarvao"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeCarvao",
-							"sid": 871655480187317,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 326928406246081
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 617016855530251,
-							"parameters": {
-								"object": "IconeBloqueado"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeBloqueado",
-							"sid": 944040877942252,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 889175611026717,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 881226403297866
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 140610821040762,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 802468752887304
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 501265117695200,
-							"parameters": {
-								"object": "IconeBloqueado"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeBloqueado",
-							"sid": 558330864694556,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 766585400473235
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 788519837866007,
-							"parameters": {
-								"object": "IconeBloqueado2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeBloqueado2",
-							"sid": 906190361161563,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 983664498162859,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 366920775480032
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 983114952800612,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 266194968059706
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 625030370579340,
-							"parameters": {
-								"object": "IconeBloqueado2"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "IconeBloqueado2",
-							"sid": 372076566725968,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 889710941148786
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 116417887349251,
-							"parameters": {
-								"object": "ObjetosEnergias"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 535323665236612
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "ObjetosEnergias",
-							"sid": 279908262022795,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 315479556663375
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 140476446327461,
-							"parameters": {
-								"object": "ObjetosEnergias"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "ObjetosEnergias",
-							"sid": 786691707489601,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						}
-					],
-					"sid": 337010019310454
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 959071780236089,
-							"parameters": {
-								"object": "SeletorEnergia"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 798366948854633,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 129921352466056
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 199431143123416,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 398246013327039
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 383450139610472,
-							"parameters": {
-								"object": "BarraEnergias"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "FecharGaveta",
-							"sid": 224963669114074,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 280840071372361,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 690041714048391
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 519077439595941,
-									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 563554416937489
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 740187391209340,
-							"parameters": {
-								"object": "FecharGaveta"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "FecharGaveta",
-							"sid": 232139221566191,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 215452707149493
-				}
-			],
-			"sid": 196058686622510
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 765897422053098,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "QuebraCabecaPecas"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 334509091692768,
-					"parameters": {
-						"audio-file": "pegarDrag",
-						"loop": "not-looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 184611164797549
+			"sid": 508712111113882
 		}
 	],
 	"sid": 573301943181991

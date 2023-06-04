@@ -86,6 +86,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fader",
 			"name": "Fader",
 			"author": "Colludium",
@@ -137,9 +144,21 @@
 			"Audio",
 			"Keyboard",
 			"FecharGaveta",
-			"MaoJogador",
-			"ParaReiniciarMiniGameMontagem",
-			"BloquearCliques"
+			"BloquearCliques",
+			"CaixaParteDeCima",
+			"SombraPegaPega",
+			"GarraCimaPegaPegaColisao",
+			"GarraBaixoPegaPegaColisao",
+			"MolaPegaPegaColisao",
+			"BasePegaPegaColisao",
+			"EmpunhadoraCimaPegaPegaColisao",
+			"EmpunhadoraBaixoPegaPegaColisao",
+			"GarraCimaPegaPega",
+			"GarraBaixoPegaPega",
+			"MolaPegaPega",
+			"BasePegaPega",
+			"EmpunhadoraCimaPegaPega",
+			"EmpunhadoraBaixoPegaPega"
 		],
 		"subfolders": [
 			{
@@ -285,7 +304,8 @@
 					"BotaoDeIniciarEmpacotar",
 					"ColicaoCabecaEmpacotar",
 					"SpawnRobos",
-					"CaixaMeioFundo"
+					"CaixaMeioFundo",
+					"IndicadorDeAcertos"
 				],
 				"subfolders": [],
 				"name": "MiniGameEmbalar"

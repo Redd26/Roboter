@@ -1,0 +1,51 @@
+{
+	"name": "GarraBaixoPegaPegaColisao",
+	"plugin-id": "Sprite",
+	"sid": 367229789029311,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9034856,
+						"collisionPoly": {
+							"points": [
+								0.14705882352941177,
+								0.045454545454545456,
+								0.9705882352941176,
+								0.4090909090909091,
+								0.9705882352941176,
+								0.9545454545454551,
+								0.14705882352941177,
+								0.9545454545454551,
+								0.029411764705882353,
+								0.5909090909090909
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 699686541976960,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

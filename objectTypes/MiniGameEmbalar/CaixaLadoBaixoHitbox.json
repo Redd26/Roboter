@@ -671,6 +671,69 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 114,
+						"height": 122,
+						"originX": 0.5,
+						"originY": 0.4918032786885246,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3244402,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								1,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 114,
+						"height": 122,
+						"originX": 0.5,
+						"originY": 0.4918032786885246,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 727844,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								1,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 134404597240276,
+				"name": "Click",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

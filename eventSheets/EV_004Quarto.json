@@ -133,41 +133,6 @@
 			"sid": 825423674699673
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 938291368619044,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "quartoSaida"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 238485031479049,
-					"parameters": {
-						"layout": "Loja"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 179367754588541,
-					"parameters": {
-						"variable": "horarioDoDia",
-						"value": "\"dia\""
-					}
-				}
-			],
-			"sid": 433129956956526
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "dormir",
@@ -217,15 +182,6 @@
 							"parameters": {
 								"variable": "BloquearCorreio",
 								"value": "false"
-							}
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 641871229083653,
-							"parameters": {
-								"variable": "Dia",
-								"value": "1"
 							}
 						},
 						{
@@ -290,15 +246,6 @@
 							"text": "Adicionar a Barra de upgrade mais um"
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 990068192269369,
-							"parameters": {
-								"variable": "BloquearCorreio",
-								"value": "false"
-							}
-						},
-						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 659991769631601,
@@ -324,43 +271,6 @@
 								"animation": "\"dia\"",
 								"from": "beginning"
 							}
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 348504442287819,
-							"parameters": {
-								"variable": "Dia",
-								"value": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 298887095520206,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 809328539181135,
-							"parameters": {
-								"audio-file": "BatidaDoRelogio",
-								"loop": "not-looping",
-								"volume": "-10",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 624014183755319,
-							"parameters": {
-								"layout": "Loja"
-							}
 						}
 					],
 					"sid": 960960685716617
@@ -380,13 +290,96 @@
 						"click-type": "clicked",
 						"object-clicked": "tapeteQuarto"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 360180679851353,
+					"parameters": {
+						"variable": "Estudar"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 102201675092656,
+					"parameters": {
+						"variable": "Dormir"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 585209194196921,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "false"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 215704441081191,
+					"parameters": {
+						"audio-file": "BatidaDoRelogio",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 607984966424470,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Transicao",
+					"sid": 626486267880551,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 733119763910005,
+					"parameters": {
+						"seconds": "1.3"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transicao",
+					"sid": 515223213880359,
+					"parameters": {
+						"x": "3000",
+						"y": "1500"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 439021196538667,
+					"parameters": {
+						"variable": "Dia",
+						"value": "1"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 135669925252418,
+					"sid": 997475794751681,
 					"parameters": {
 						"layout": "Loja"
 					}

@@ -43,23 +43,13 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "ColisorPrimeiroID",
-			"type": "number",
-			"initialValue": "0",
+			"name": "ChapaFinalizada",
+			"type": "boolean",
+			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 886199262008340
-		},
-		{
-			"eventType": "variable",
-			"name": "ColisorUltimoID",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 832269469086771
+			"sid": 593573485987715
 		},
 		{
 			"eventType": "include",
@@ -86,167 +76,9 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 724316504202287
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "ApagadorSerra",
-					"sid": 530236465656064,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "Serra",
-						"x": true,
-						"y": true,
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "RelogioDiaNoite",
-					"sid": 729381348303423,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 534037707966264,
-					"parameters": {
-						"variable": "EstouMiniGame",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 898902136539400,
-					"parameters": {
-						"variable": "EstouLoja",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 411140726342746,
-					"parameters": {
-						"variable": "EstouQuarto",
-						"value": "false"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 252933286224977,
-					"disabled": true,
-					"parameters": {
-						"tag": "\"LojaMusic\""
-					}
-				},
-				{
-					"id": "preload",
-					"objectClass": "Audio",
-					"sid": 472031870733008,
-					"disabled": true,
-					"parameters": {
-						"audio-file": "Musica_BGM_Ambientação_Montagem_01"
-					}
-				}
-			],
-			"sid": 718301532446357
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 224835528646527,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "ProximoLevel"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 788246830680247,
-					"parameters": {
-						"audio-file": "menu_confirm",
-						"loop": "not-looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 130967939518134,
-					"parameters": {
-						"x": "0",
-						"y": "0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Transicao",
-					"sid": 535710455528201,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 937540589358018,
-					"parameters": {
-						"seconds": "1.3"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 477569287698595,
-					"parameters": {
-						"x": "3000",
-						"y": "1500"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 424809746398780,
-					"parameters": {
-						"layout": "Montagem_QuebraCabeca"
-					}
-				}
-			],
-			"sid": 397516936659760
-		},
-		{
-			"eventType": "comment",
-			"text": "Mecanica para a chapa andar"
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Fazer Chapas Andar",
+			"title": "EvChapaGrupo",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -254,21 +86,94 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 937770008945751,
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 517018854075434
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "ApagadorSerra",
+							"sid": 953000919811827,
+							"behaviorType": "Pin",
 							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "BotaoIniciarCorte"
+								"pin-to": "Serra",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
 							}
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 445125130905206,
+							"id": "set-visible",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 903398778729431,
 							"parameters": {
-								"variable": "ChapaPreparada"
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 410388918919907,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 886854975730159,
+							"parameters": {
+								"variable": "EstouLoja",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 773108932958716,
+							"parameters": {
+								"variable": "EstouQuarto",
+								"value": "false"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 852908147489840,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"LojaMusic\""
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 441125198797696,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "Musica_BGM_Ambientação_Montagem_01"
+							}
+						}
+					],
+					"sid": 902920228772996
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 139844767438255,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ProximoLevel"
 							}
 						}
 					],
@@ -276,7 +181,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 942625970340736,
+							"sid": 313726788779768,
 							"parameters": {
 								"audio-file": "menu_confirm",
 								"loop": "not-looping",
@@ -286,340 +191,98 @@
 							}
 						},
 						{
-							"id": "set-boolean-eventvar",
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 845669401588934,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 529875232346585,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 802370755224251,
+							"sid": 794762204434189,
 							"parameters": {
-								"variable": "ChapaAndar",
-								"value": "true"
+								"seconds": "1.3"
 							}
 						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 143915246016721,
-							"parameters": {
-								"animation": "\"Cliked\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Serra",
-							"sid": 525827582412186,
-							"parameters": {
-								"animation": "\"Ativada\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 387153085450959
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 262481543620984,
-							"parameters": {
-								"object": "BotaoIniciarCorte"
-							}
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 379400676456689,
-							"parameters": {
-								"animation": "\"Cliked\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 171234440270416,
-							"parameters": {
-								"animation": "\"Idle\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 608252471626123,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 242363841973309
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 253878286891689,
-							"parameters": {
-								"object": "BotaoIniciarCorte"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 466286032710312,
-							"parameters": {
-								"animation": "\"Cliked\""
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoIniciarCorte",
-							"sid": 930101163427258,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 458595496406753
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 148276613304326,
-							"parameters": {
-								"variable": "ChapaAndar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Colisor",
-							"sid": 183527769107947,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "0"
-							}
-						},
-						{
-							"id": "set-speed",
-							"objectClass": "Colisor",
-							"sid": 766181901942946,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "75"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Colisor",
-							"sid": 403528966783921,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "ChapaFerro",
-							"sid": 155752551238667,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "0"
-							}
-						},
-						{
-							"id": "set-speed",
-							"objectClass": "ChapaFerro",
-							"sid": 595675654328805,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "75"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "ChapaFerro",
-							"sid": 278129040364912,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "LinhaCortar",
-							"sid": 737116645922623,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "0"
-							}
-						},
-						{
-							"id": "set-speed",
-							"objectClass": "LinhaCortar",
-							"sid": 836782059035442,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "75"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "LinhaCortar",
-							"sid": 169363170292180,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						}
-					],
-					"sid": 974173013668150,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 922795024283391
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 797974968556045,
-									"parameters": {
-										"audio-file": "MoverChapa",
-										"loop": "looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"SomChapa\""
-									}
-								}
-							],
-							"sid": 858702665574780
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 647057885497329,
-							"parameters": {
-								"variable": "ChapaAndar"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
 						{
 							"id": "set-position",
-							"objectClass": "ChapaFerro",
-							"sid": 785128522185256,
+							"objectClass": "Transicao",
+							"sid": 913630387883419,
 							"parameters": {
-								"x": "ChapaFerro.X",
-								"y": "ChapaFerro.Y"
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 470792395346880,
+							"parameters": {
+								"layout": "Montagem_QuebraCabeca"
 							}
 						}
 					],
-					"sid": 200892907391661
-				}
-			],
-			"sid": 818277162746123
-		},
-		{
-			"eventType": "comment",
-			"text": "Mecanica para os botoes de subir e descer"
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Subir e Descer Chapas",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+					"sid": 863542191406129
+				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 529440934998101,
-							"parameters": {
-								"object": "BotaoCima"
-							}
-						},
-						{
-							"id": "mouse-button-is-down",
-							"objectClass": "Mouse",
-							"sid": 910452755257850,
-							"parameters": {
-								"mouse-button": "left"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 680696088891791,
-							"parameters": {
-								"variable": "ChapaAndar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 766364790088530,
-							"parameters": {
-								"variable": "ChapaSubir",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoCima",
-							"sid": 598814160691076,
-							"parameters": {
-								"animation": "\"Clicked\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 591020492191616,
+					"eventType": "comment",
+					"text": "Mecanica para a chapa andar"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Fazer Chapas Andar",
+					"description": "",
+					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 682107760221547,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "BotaoIniciarCorte"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 225696450025588
+									"sid": 166805339509486,
+									"parameters": {
+										"variable": "ChapaPreparada"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 809397226886770,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 321255443676793,
+									"sid": 481248538428732,
 									"parameters": {
 										"audio-file": "menu_confirm",
 										"loop": "not-looping",
@@ -627,1017 +290,1535 @@
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 972289049471693,
+									"parameters": {
+										"variable": "ChapaAndar",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 234185069319230,
+									"parameters": {
+										"animation": "\"Cliked\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Serra",
+									"sid": 600983341476914,
+									"parameters": {
+										"animation": "\"Ativada\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Ventuinhas",
+									"sid": 180152593155353,
+									"parameters": {
+										"animation": "\"Ativado\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ApagarChapa",
+									"sid": 328471798067372,
+									"parameters": {
+										"animation": "\"Ativado\"",
+										"from": "beginning"
+									}
 								}
 							],
-							"sid": 219497925110954
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 885939268962625,
-							"parameters": {
-								"object": "BotaoCima"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoCima",
-							"sid": 282115205127734,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 502293592683114
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 793266347497499,
-							"parameters": {
-								"object": "BotaoCima"
-							}
+							"sid": 380937914480514
 						},
 						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoCima",
-							"sid": 511700439830693,
-							"parameters": {
-								"animation": "\"Clicked\""
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 836577584352388,
+									"parameters": {
+										"object": "BotaoIniciarCorte"
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 216433670968202,
+									"parameters": {
+										"animation": "\"Cliked\""
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 320581666017301,
+									"parameters": {
+										"animation": "\"Idle\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 963017941636251,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 205494732905089,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 268121267435810,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 750840944181174
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 898432173574802,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 911571284566330
+								}
+							]
 						},
 						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoCima",
-							"sid": 645736921052191,
-							"parameters": {
-								"animation": "\"Idle\""
-							}
-						}
-					],
-					"actions": [
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 300830270950302,
+									"parameters": {
+										"object": "BotaoIniciarCorte"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 307625334889430,
+									"parameters": {
+										"animation": "\"Cliked\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 864625059123339,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 796098281652347
+						},
 						{
-							"id": "set-animation",
-							"objectClass": "BotaoCima",
-							"sid": 372340005260806,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 163682538151503,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Colisor",
+									"sid": 121688250753746,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Colisor",
+									"sid": 814123827384120,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Colisor",
+									"sid": 350972486999284,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ChapaFerro",
+									"sid": 338088213690193,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ChapaFerro",
+									"sid": 338969694220888,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ChapaFerro",
+									"sid": 153714760827089,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "LinhaCortar",
+									"sid": 771106769945794,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "LinhaCortar",
+									"sid": 175927149008825,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "LinhaCortar",
+									"sid": 989033919038007,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 400013331081078,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 750366925427287
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 207543114514278,
+											"parameters": {
+												"audio-file": "MoverChapa",
+												"loop": "looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"SomChapa\""
+											}
+										}
+									],
+									"sid": 976000780787832
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 877642476257428,
+									"parameters": {
+										"variable": "ChapaAndar"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "ChapaFerro",
+									"sid": 216909983040513,
+									"parameters": {
+										"x": "ChapaFerro.X",
+										"y": "ChapaFerro.Y"
+									}
+								}
+							],
+							"sid": 895722638320826
 						}
 					],
-					"sid": 712616349709400,
+					"sid": 774221854382379
+				},
+				{
+					"eventType": "comment",
+					"text": "Mecanica para os botoes de subir e descer"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Subir e Descer Chapas",
+					"description": "",
+					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 280279828991637,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "BotaoCima"
+									}
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 401255904899283,
+									"parameters": {
+										"object": "BotaoCima"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 483843936034119
+									"sid": 615708094179557,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 997202453422690,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 535006545146084,
+									"parameters": {
+										"object": "BotaoBaixo"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 405641167558324,
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 448372668755284,
 									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"variable": "ChapaSubir",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 683035027187387,
+									"parameters": {
+										"variable": "ChapaDescer",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoCima",
+									"sid": 701818696403913,
+									"parameters": {
+										"animation": "\"Clicked\"",
+										"from": "beginning"
 									}
 								}
 							],
-							"sid": 955854117914862
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 510709420413843
+							"sid": 326256394911368,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 262420991089736
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 801275156032927,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 411117566425881
+								}
+							]
 						},
-						{
-							"id": "compare-y",
-							"objectClass": "Serra",
-							"sid": 328098496067303,
-							"parameters": {
-								"comparison": 3,
-								"y-co-ordinate": "285"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 730647364123153,
-							"parameters": {
-								"variable": "ChapaSubir",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 974612881283361
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-released",
-							"objectClass": "Mouse",
-							"sid": 742189464868252,
-							"parameters": {
-								"mouse-button": "left"
-							}
-						},
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 467152978518283,
-							"parameters": {
-								"object": "BotaoCima"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 347718444324615,
-							"parameters": {
-								"variable": "ChapaAndar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 422724403888761,
-							"parameters": {
-								"variable": "ChapaSubir",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoCima",
-							"sid": 924766973536933,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 930495012796503
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 591324884653521,
-							"parameters": {
-								"object": "BotaoBaixo"
-							}
-						},
-						{
-							"id": "mouse-button-is-down",
-							"objectClass": "Mouse",
-							"sid": 635241511367020,
-							"parameters": {
-								"mouse-button": "left"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 201966179110568,
-							"parameters": {
-								"variable": "ChapaAndar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 827546038572883,
-							"parameters": {
-								"variable": "ChapaDescer",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoBaixo",
-							"sid": 755945516184332,
-							"parameters": {
-								"animation": "\"Clicked\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 997269976530855,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 906200391831951
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 463386491926123,
+									"parameters": {
+										"object": "BotaoCima"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 123120443215638,
+									"id": "set-animation",
+									"objectClass": "BotaoCima",
+									"sid": 367071813883410,
 									"parameters": {
-										"audio-file": "menu_confirm",
-										"loop": "not-looping",
-										"volume": "-10",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"animation": "\"Idle\"",
+										"from": "beginning"
 									}
 								}
 							],
-							"sid": 952436934452287
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 880984256582190,
-							"parameters": {
-								"object": "BotaoBaixo"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoBaixo",
-							"sid": 326355261105659,
-							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 606141255054370
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 899657383284196,
-							"parameters": {
-								"object": "BotaoBaixo"
-							}
+							"sid": 222109622018465
 						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoBaixo",
-							"sid": 681795476006750,
-							"parameters": {
-								"animation": "\"Clicked\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "BotaoBaixo",
-							"sid": 365165957066715,
-							"parameters": {
-								"animation": "\"Idle\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoBaixo",
-							"sid": 847361754844138,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 669479363002114,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 450958788783768,
+									"parameters": {
+										"object": "BotaoCima"
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoCima",
+									"sid": 980432883216988,
+									"parameters": {
+										"animation": "\"Clicked\""
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoCima",
+									"sid": 247216528792451,
+									"parameters": {
+										"animation": "\"Idle\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 180291285164743
+									"sid": 673410229937990,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 405034346445125,
+									"id": "set-animation",
+									"objectClass": "BotaoCima",
+									"sid": 221584993352452,
 									"parameters": {
-										"audio-file": "menu_select",
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"\""
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
 									}
 								}
 							],
-							"sid": 509098139383944
+							"sid": 682542716369562,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 186666848935315
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 754135283291078,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 829082260973258
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 938092393146585
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "Serra",
+									"sid": 964761171639599,
+									"parameters": {
+										"comparison": 3,
+										"y-co-ordinate": "285"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 684609352921746,
+									"parameters": {
+										"variable": "ChapaSubir",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 365921086371250
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 470957528433053,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 944139771249923,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 207873320782048,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 469627678133997,
+									"parameters": {
+										"variable": "ChapaSubir",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoCima",
+									"sid": 109608461664497,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 479113960275440
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 543544267866685,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "BotaoBaixo"
+									}
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 241148947705690,
+									"parameters": {
+										"object": "BotaoBaixo"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 760976151743424,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 665333748889820,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 219147053322106,
+									"parameters": {
+										"object": "BotaoCima"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 223571952673109,
+									"parameters": {
+										"variable": "ChapaDescer",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 127488107143717,
+									"parameters": {
+										"variable": "ChapaSubir",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoBaixo",
+									"sid": 136726354999419,
+									"parameters": {
+										"animation": "\"Clicked\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 762115065979694,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 145119137348852
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 857917836437697,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 963289672830296
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 629400876720581,
+									"parameters": {
+										"object": "BotaoBaixo"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoBaixo",
+									"sid": 574514211798958,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 477047627106134
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 850308213933659,
+									"parameters": {
+										"object": "BotaoBaixo"
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoBaixo",
+									"sid": 807531468010347,
+									"parameters": {
+										"animation": "\"Clicked\""
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BotaoBaixo",
+									"sid": 928195165787051,
+									"parameters": {
+										"animation": "\"Idle\""
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 497153334492248,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoBaixo",
+									"sid": 452488144415972,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 430827023106092,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 165730087653886
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 176247214130665,
+											"parameters": {
+												"audio-file": "menu_select",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 316159036621966
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 285802987923122
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "Serra",
+									"sid": 625029570056379,
+									"parameters": {
+										"comparison": 5,
+										"y-co-ordinate": "425"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 329233533751508,
+									"parameters": {
+										"variable": "ChapaDescer",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 639710987863648
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 121739727266296,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 689020394289273,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 453191709177601,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 704848215531765,
+									"parameters": {
+										"variable": "ChapaDescer",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoBaixo",
+									"sid": 125752099639243,
+									"parameters": {
+										"animation": "\"MouseOver\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 766181267670272
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 149202015021350,
+									"parameters": {
+										"variable": "ChapaSubir"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Serra",
+									"sid": 197447394528533,
+									"parameters": {
+										"x": "Serra.X",
+										"y": "Serra.Y - 1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ApagadorSerra",
+									"sid": 343603282891237,
+									"parameters": {
+										"x": "ApagadorSerra.X",
+										"y": "ApagadorSerra.Y - 1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ParticulasSerra",
+									"sid": 537428717737414,
+									"parameters": {
+										"x": "ParticulasSerra.X",
+										"y": "ParticulasSerra.Y - 1"
+									}
+								}
+							],
+							"sid": 949640155163082
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 151913275084049,
+									"parameters": {
+										"variable": "ChapaDescer"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Serra",
+									"sid": 476002718169722,
+									"parameters": {
+										"x": "Serra.X",
+										"y": "Serra.Y + 1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ApagadorSerra",
+									"sid": 518832074694348,
+									"parameters": {
+										"x": "ApagadorSerra.X",
+										"y": "ApagadorSerra.Y + 1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ParticulasSerra",
+									"sid": 818578587442567,
+									"parameters": {
+										"x": "ParticulasSerra.X",
+										"y": "ParticulasSerra.Y + 1"
+									}
+								}
+							],
+							"sid": 109257892507984
 						}
-					]
+					],
+					"sid": 746263112251104
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 361409898281059
-						},
-						{
-							"id": "compare-y",
-							"objectClass": "Serra",
-							"sid": 537978593207580,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Colisor",
+							"sid": 811234607942608,
 							"parameters": {
-								"comparison": 5,
-								"y-co-ordinate": "425"
+								"object": "ApagadorSerra"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
+							"id": "destroy",
+							"objectClass": "Colisor",
+							"sid": 102053711337000
+						},
+						{
+							"callFunction": "Colidiu",
+							"sid": 216013991436531
+						},
+						{
+							"id": "create-object",
 							"objectClass": "System",
-							"sid": 851395426900346,
-							"parameters": {
-								"variable": "ChapaDescer",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 862575381914013
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-button-released",
-							"objectClass": "Mouse",
-							"sid": 713166529735128,
-							"parameters": {
-								"mouse-button": "left"
-							}
-						},
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 407079096347305,
-							"parameters": {
-								"object": "BotaoBaixo"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 573252770858941,
-							"parameters": {
-								"variable": "ChapaAndar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 981126764592357,
-							"parameters": {
-								"variable": "ChapaDescer",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "BotaoBaixo",
-							"sid": 315925650182864,
-							"parameters": {
-								"animation": "\"MouseOver\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 765047614476212
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 380595462388997,
-							"parameters": {
-								"variable": "ChapaSubir"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Serra",
-							"sid": 842045885226265,
-							"parameters": {
-								"x": "Serra.X",
-								"y": "Serra.Y - 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ApagadorSerra",
-							"sid": 713679770237521,
-							"parameters": {
-								"x": "ApagadorSerra.X",
-								"y": "ApagadorSerra.Y - 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ParticulasSerra",
-							"sid": 368516278587997,
-							"parameters": {
-								"x": "ParticulasSerra.X",
-								"y": "ParticulasSerra.Y - 1"
-							}
-						}
-					],
-					"sid": 340181776072867
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 742374316733467,
-							"parameters": {
-								"variable": "ChapaDescer"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Serra",
-							"sid": 788189780330434,
-							"parameters": {
-								"x": "Serra.X",
-								"y": "Serra.Y + 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ApagadorSerra",
-							"sid": 437411922236386,
-							"parameters": {
-								"x": "ApagadorSerra.X",
-								"y": "ApagadorSerra.Y + 1"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ParticulasSerra",
-							"sid": 398396029711238,
-							"parameters": {
-								"x": "ParticulasSerra.X",
-								"y": "ParticulasSerra.Y + 1"
-							}
-						}
-					],
-					"sid": 223440233583451
-				}
-			],
-			"sid": 466186537669398
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Colisor",
-					"sid": 808053280064843,
-					"parameters": {
-						"object": "ApagadorSerra"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Colisor",
-					"sid": 555873488474110
-				},
-				{
-					"callFunction": "Colidiu",
-					"sid": 702346770108482
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 861777434521980,
-					"disabled": true,
-					"parameters": {
-						"object-to-create": "ApagadorSerra",
-						"layer": "\"ObjetosApagar\"",
-						"x": "ApagadorSerra.X",
-						"y": "ApagadorSerra.Y",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 913911004976092,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 929086184022098
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 491894827404281,
+							"sid": 906715959928338,
 							"disabled": true,
 							"parameters": {
-								"audio-file": "SomSerra",
-								"loop": "looping",
-								"volume": "-15",
-								"stereo-pan": "0",
-								"tag-optional": "\"SomSerra\""
+								"object-to-create": "ApagadorSerra",
+								"layer": "\"ObjetosApagar\"",
+								"x": "ApagadorSerra.X",
+								"y": "ApagadorSerra.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 855643779151162,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 165276735302458
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 387042155502383,
+									"disabled": true,
+									"parameters": {
+										"audio-file": "SomSerra",
+										"loop": "looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"SomSerra\""
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ParticulasSerra",
+									"sid": 427128926553523,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ParticulasSerra",
+									"sid": 425457666207834,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 384014735248568
+						}
+					]
+				},
+				{
+					"functionName": "Colidiu",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 765419839381751,
+							"parameters": {
+								"first-value": "Colisor.Count",
+								"comparison": 3,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 210929923902494,
+							"parameters": {
+								"seconds": "2"
 							}
 						},
 						{
 							"id": "set-visible",
 							"objectClass": "ParticulasSerra",
-							"sid": 942970297679532,
+							"sid": 215371981201420,
 							"parameters": {
-								"visibility": "visible"
+								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-animation",
-							"objectClass": "ParticulasSerra",
-							"sid": 550186427134313,
+							"objectClass": "BotaoIniciarCorte",
+							"sid": 856237250169768,
 							"parameters": {
 								"animation": "\"Idle\"",
 								"from": "beginning"
 							}
-						}
-					],
-					"sid": 603689955824519
-				}
-			]
-		},
-		{
-			"functionName": "Colidiu",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 722350386099304,
-					"parameters": {
-						"first-value": "Colisor.Count",
-						"comparison": 3,
-						"second-value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 141082726180459,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "ParticulasSerra",
-					"sid": 122523539645506,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Serra",
-					"sid": 361584410287087,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 154822266186036,
-					"parameters": {
-						"tag": "\"SomChapa\""
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 324685029622784,
-					"parameters": {
-						"tag": "\"SomSerra\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "ProximoLevel",
-					"sid": 894098991591327,
-					"parameters": {
-						"x": "1095",
-						"y": "239"
-					}
-				}
-			],
-			"sid": 150636054671870
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-end-of-layout",
-					"objectClass": "System",
-					"sid": 478000892829511
-				},
-				{
-					"id": "compare-distance-travelled",
-					"objectClass": "ChapaFerro",
-					"sid": 306565229719007,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"comparison": 5,
-						"distance": "710"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 957776670362515,
-					"parameters": {
-						"first-value": "Colisor.Count",
-						"comparison": 5,
-						"second-value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 745473661452640,
-					"parameters": {
-						"tag": "\"MontagemMusic\""
-					}
-				}
-			],
-			"sid": 379461603236539
-		},
-		{
-			"functionName": "Colidiu2",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [
-				{
-					"id": "compare-distance-travelled",
-					"objectClass": "ChapaFerro",
-					"sid": 257669012607078,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"comparison": 5,
-						"distance": "710"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 571314847331505,
-					"parameters": {
-						"first-value": "Colisor.Count",
-						"comparison": 5,
-						"second-value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Serra",
-					"sid": 612729548680424,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "ParticulasSerra",
-					"sid": 137749353758645,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 423557218212224,
-					"parameters": {
-						"tag": "\"SomChapa\""
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 929073251420470,
-					"parameters": {
-						"tag": "\"SomSerra\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 711687789343783,
-					"parameters": {
-						"x": "0",
-						"y": "0"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Transicao",
-					"sid": 545354012742606,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 703227502571776,
-					"parameters": {
-						"seconds": "1.3"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Transicao",
-					"sid": 135283191478993,
-					"parameters": {
-						"x": "3000",
-						"y": "1500"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 659471139160091,
-					"parameters": {
-						"variable": "EstouMiniGame",
-						"value": "true"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 284894705051181,
-					"parameters": {
-						"layout": "Loja"
-					}
-				}
-			],
-			"sid": 751146605169251,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
+						},
 						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 904698895777116
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 963924093813880,
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 458834737923498,
 							"parameters": {
-								"variable": "Erro",
-								"value": "1"
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ventuinhas",
+							"sid": 250489261087093,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ApagarChapa",
+							"sid": 728776020135944,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
 							}
 						},
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 965478462238030,
+							"sid": 374789038432638,
 							"parameters": {
-								"variable": "JogadorErrou",
+								"variable": "ChapaFinalizada",
 								"value": "true"
 							}
-						}
-					],
-					"sid": 211499793502877
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-distance-travelled",
-					"objectClass": "ChapaFerro",
-					"sid": 619769752745938,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"comparison": 5,
-						"distance": "718"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "ChapaFerro",
-					"sid": 984756637578463
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 577317781956252,
-					"parameters": {
-						"tag": "\"SomChapa\""
-					}
-				}
-			],
-			"sid": 107679956222577
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-distance-travelled",
-					"objectClass": "LinhaCortar",
-					"sid": 182218467804205,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"comparison": 5,
-						"distance": "718"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "LinhaCortar",
-					"sid": 288386812026680
-				}
-			],
-			"sid": 921954006545381
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Serra",
-					"sid": 476368277148059,
-					"parameters": {
-						"object": "ChapaFerro"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 732542487198807,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
+						},
 						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 508252789832135
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
+							"id": "stop",
 							"objectClass": "Audio",
-							"sid": 633865216940690,
+							"sid": 583626099653585,
 							"parameters": {
-								"audio-file": "SomSerra",
-								"loop": "looping",
-								"volume": "-15",
-								"stereo-pan": "0",
-								"tag-optional": "\"SomSerra\""
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 186444735964756,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 977183329004574,
+							"parameters": {
+								"x": "1095",
+								"y": "239"
 							}
 						}
 					],
-					"sid": 722966420646472
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Serra",
-					"sid": 855529567372411,
-					"parameters": {
-						"object": "ChapaFerro"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [],
-			"sid": 429928692377968,
-			"children": [
+					"sid": 244699887386460
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "trigger-once-while-true",
+							"id": "on-end-of-layout",
 							"objectClass": "System",
-							"sid": 376758434469817
+							"sid": 598938495343973
+						},
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaFerro",
+							"sid": 170107306018596,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "710"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 241021205454734,
+							"parameters": {
+								"first-value": "Colisor.Count",
+								"comparison": 5,
+								"second-value": "2"
+							}
 						}
 					],
 					"actions": [
 						{
 							"id": "stop",
 							"objectClass": "Audio",
-							"sid": 376720171100413,
+							"sid": 414428349925803,
 							"parameters": {
-								"tag": "\"SomSerra\""
+								"tag": "\"MontagemMusic\""
 							}
 						}
 					],
-					"sid": 206283975633949
+					"sid": 606534508235779
+				},
+				{
+					"functionName": "Colidiu2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaFerro",
+							"sid": 358699052204289,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "710"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 455316913398422,
+							"parameters": {
+								"first-value": "Colisor.Count",
+								"comparison": 5,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 397751002940320,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 187321410319666,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 243125555932998,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 686481784795909,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 358998617310892,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 768418357975592,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 956194652180431,
+							"parameters": {
+								"seconds": "1.3"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 301865110170204,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 587138100960620,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 280375824139010,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 657737822418273,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 223271320418973
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 780784831369041,
+									"parameters": {
+										"variable": "Erro",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 110620990901048,
+									"parameters": {
+										"variable": "JogadorErrou",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 587531217089182
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaFerro",
+							"sid": 163006478958215,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChapaFerro",
+							"sid": 878196352389993
+						},
+						{
+							"callFunction": "Colidiu2",
+							"sid": 732988110183150
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 138775714694167,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						}
+					],
+					"sid": 313326869326347
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "LinhaCortar",
+							"sid": 744652725467537,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LinhaCortar",
+							"sid": 641512408869378
+						}
+					],
+					"sid": 380617534683445
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Serra",
+							"sid": 638576098632845,
+							"parameters": {
+								"object": "ChapaFerro"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 900889809334940,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 782240093136150
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 402160321733244,
+									"parameters": {
+										"audio-file": "SomSerra",
+										"loop": "looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"SomSerra\""
+									}
+								}
+							],
+							"sid": 988990164679485
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Serra",
+							"sid": 271887327098772,
+							"parameters": {
+								"object": "ChapaFerro"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 790318304037654,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 866455937195753
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 720896132555187,
+									"parameters": {
+										"tag": "\"SomSerra\""
+									}
+								}
+							],
+							"sid": 920681444337706
+						}
+					]
 				}
-			]
+			],
+			"sid": 202286291549454
 		}
 	],
 	"sid": 886171643003322

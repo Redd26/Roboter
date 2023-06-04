@@ -9,6 +9,12 @@
 		"PescocoCortaPaoColisao",
 		"DireitaMeioCortaPaoColisao",
 		"EsquerdaMeioCortaPaoColisao",
-		"CabecaCortaPaoColisao"
+		"CabecaCortaPaoColisao",
+		"BasePegaPegaColisao",
+		"EmpunhadoraBaixoPegaPegaColisao",
+		"EmpunhadoraCimaPegaPegaColisao",
+		"GarraBaixoPegaPegaColisao",
+		"GarraCimaPegaPegaColisao",
+		"MolaPegaPegaColisao"
 	]
 }

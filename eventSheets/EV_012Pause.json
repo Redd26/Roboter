@@ -417,9 +417,54 @@
 						{
 							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 990871562753066,
+							"sid": 272347331499167,
 							"parameters": {
-								"group-name": "\"Desativar Layers\"",
+								"group-name": "\"EvLojaGrupo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 499827077399949,
+							"parameters": {
+								"group-name": "\"EvMontagemGrupo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 634547485513809,
+							"parameters": {
+								"group-name": "\"EvChapaGrupo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 629915632159991,
+							"parameters": {
+								"group-name": "\"EvQuebraCabecaGrupo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 657242784824869,
+							"parameters": {
+								"group-name": "\"EvCaixaGrupo\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 432409996028056,
+							"parameters": {
+								"group-name": "\"EvCartasGrupo\"",
 								"state": "deactivated"
 							}
 						}
@@ -443,9 +488,54 @@
 						{
 							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 142478109748674,
+							"sid": 299817376370348,
 							"parameters": {
-								"group-name": "\"Desativar Layers\"",
+								"group-name": "\"EvLojaGrupo\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 545652227479393,
+							"parameters": {
+								"group-name": "\"EvMontagemGrupo\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 917935545148525,
+							"parameters": {
+								"group-name": "\"EvChapaGrupo\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 657167823292008,
+							"parameters": {
+								"group-name": "\"EvQuebraCabecaGrupo\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 486304442940599,
+							"parameters": {
+								"group-name": "\"EvCaixaGrupo\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 646474107991669,
+							"parameters": {
+								"group-name": "\"EvCartasGrupo\"",
 								"state": "activated"
 							}
 						}

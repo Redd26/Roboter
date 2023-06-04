@@ -1,0 +1,141 @@
+{
+	"name": "IndicadorDeAcertos",
+	"plugin-id": "Sprite",
+	"sid": 396190264266395,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 174,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4864649,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 162007600231614,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 174,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5652540,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 211723857119427,
+				"name": "PrimeiroAcerto",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 174,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4207397,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 644116223719232,
+				"name": "SegundoAcerto",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 174,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8645527,
+						"collisionPoly": {
+							"points": [
+								0.028735632183908046,
+								0.012195121951219513,
+								0.9942528735632183,
+								0.06097560975609756,
+								0.9712643678160919,
+								0.9878048780487805,
+								0.005747126436781609,
+								0.9390243902439024
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 724051184075365,
+				"name": "TerceiroAcerto",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 174,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1198434,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 891891178965597,
+				"name": "QuartoAcerto",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

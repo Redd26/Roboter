@@ -509,6 +509,16 @@
 						"comparison": 0,
 						"value": "1"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 193832335067360,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -599,6 +609,16 @@
 						"comparison": 0,
 						"value": "1"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 171906283291099,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -630,6 +650,24 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 416005314400747,
+					"parameters": {
+						"variable": "EnergiaCerta",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 349976910466879,
+					"parameters": {
+						"variable": "EnergiaEscolhida",
+						"value": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 869010720728531,
@@ -653,6 +691,24 @@
 					"sid": 282260850963340,
 					"parameters": {
 						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 505832385207667,
+					"parameters": {
+						"variable": "EnergiaLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 871762270351894,
+					"parameters": {
+						"variable": "ChapaFinalizada",
 						"value": "false"
 					}
 				}
@@ -712,6 +768,32 @@
 				}
 			],
 			"sid": 999321334908002
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 492584188367692,
+					"parameters": {
+						"variable": "FinalizarDia"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 292800031918904,
+					"parameters": {
+						"variable": "BloquearCorreio",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 141031362241837
 		},
 		{
 			"eventType": "group",
@@ -841,9 +923,153 @@
 								"variable": "MaterialCerto",
 								"value": "\"Eritro\""
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 829418715498250,
+							"parameters": {
+								"variable": "EnergiaCerta",
+								"value": "\"Muscular\""
+							}
 						}
 					],
 					"sid": 955738754013306
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 705782426655297,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 858347088562060,
+							"parameters": {
+								"animation": "\"Pedido03Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 741965552652146,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"viridis\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 797644182915819,
+							"parameters": {
+								"variable": "EnergiaCerta",
+								"value": "\"Carvao\""
+							}
+						}
+					],
+					"sid": 589392898621806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 841826780284430,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 216121664057149,
+							"parameters": {
+								"animation": "\"Pedido03Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 379942684452514,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"cobre\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 802689556314455,
+							"parameters": {
+								"variable": "EnergiaCerta",
+								"value": "\"Muscular\""
+							}
+						}
+					],
+					"sid": 761290196060917
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 962581604048520,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 608861720821251,
+							"parameters": {
+								"animation": "\"Pedido03Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 162917705247518,
+							"parameters": {
+								"variable": "MaterialCerto",
+								"value": "\"ouro\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 904916428685242,
+							"parameters": {
+								"variable": "EnergiaCerta",
+								"value": "\"carvao\""
+							}
+						}
+					],
+					"sid": 398015242378469
 				},
 				{
 					"functionName": "AnalisarMaterial",
@@ -1296,6 +1522,194 @@
 					"sid": 984776448544163
 				},
 				{
+					"eventType": "comment",
+					"text": "Setar posicao dos objetos"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 712642769525008,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 213147787451393,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SombraPegaPega",
+							"sid": 234421761746500,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPega",
+							"sid": 543653217544818,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPegaColisao",
+							"sid": 850272578661568,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPegaColisao",
+							"sid": 325127601115893,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 114799028775214,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPegaColisao",
+							"sid": 698736720675907,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 771795138098038,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPega",
+							"sid": 105547848749057,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPegaColisao",
+							"sid": 229803612944251,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 670469472700565,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+							"sid": 155303578817230,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 616043873644125,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+							"sid": 698918144448249,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BasePegaPega",
+							"sid": 163985124191585,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 767444629931458,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 348418675964349,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 197770167858556,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 125374927378702,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "MolaPegaPega",
+							"sid": 217950762382053,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 834538218004665
+				},
+				{
 					"functionName": "AnalisarEnergia",
 					"functionDescription": "",
 					"functionCategory": "",
@@ -1387,10 +1801,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "SpawnRobos",
-									"sid": 819733859387001,
+									"sid": 746657877132144,
 									"parameters": {
 										"object": "CabecaCortaPao",
-										"layer": "\"game\"",
+										"layer": "\"empacotarHitLayer\"",
 										"image-point": "0",
 										"create-hierarchy": false
 									}
@@ -1405,6 +1819,67 @@
 								}
 							],
 							"sid": 677753051829422
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 818289012730045,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 296843728660620,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 285710044151788,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 721391377693896
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "SpawnRobos",
+									"sid": 155958681035694,
+									"parameters": {
+										"object": "BasePegaPega",
+										"layer": "\"empacotarHitLayer\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ColicaoCabecaEmpacotar",
+									"sid": 372439741397646,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 691310320969897
 						}
 					]
 				}
@@ -1465,27 +1940,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 315934341105830,
+							"children": [
 								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 997288933848250,
-									"parameters": {
-										"variable": "Estudar",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 721156421051467,
-									"parameters": {
-										"variable": "Dormir",
-										"value": "false"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 475017011251324
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 901179434095665,
+											"parameters": {
+												"variable": "Estudar",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 144197413346611,
+											"parameters": {
+												"variable": "Dormir",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 498424359399371
 								}
-							],
-							"sid": 315934341105830
+							]
 						},
 						{
 							"eventType": "block",
@@ -1501,27 +1990,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 315186050723923,
+							"children": [
 								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 386865352887003,
-									"parameters": {
-										"variable": "Estudar",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 215351332462117,
-									"parameters": {
-										"variable": "Dormir",
-										"value": "false"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 459972477778697
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 811810780660881,
+											"parameters": {
+												"variable": "Estudar",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 847533776855815,
+											"parameters": {
+												"variable": "Dormir",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 154180493506826
 								}
-							],
-							"sid": 315186050723923
+							]
 						},
 						{
 							"eventType": "block",
@@ -1537,27 +2040,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 149575302136970,
+							"children": [
 								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 216788804113666,
-									"parameters": {
-										"variable": "Dormir",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 514231494915855,
-									"parameters": {
-										"variable": "Estudar",
-										"value": "false"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 958396206019545
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 588018254620264,
+											"parameters": {
+												"variable": "Dormir",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 432531181519368,
+											"parameters": {
+												"variable": "Estudar",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 656723415610821
 								}
-							],
-							"sid": 149575302136970
+							]
 						},
 						{
 							"eventType": "block",
@@ -1573,27 +2090,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 799872817435913,
+							"children": [
 								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 736561732861657,
-									"parameters": {
-										"variable": "Dormir",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 139245430389474,
-									"parameters": {
-										"variable": "Estudar",
-										"value": "false"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 998963437923792
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 779192573991998,
+											"parameters": {
+												"variable": "Dormir",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 781093804488850,
+											"parameters": {
+												"variable": "Estudar",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 915556253180342
 								}
-							],
-							"sid": 799872817435913
+							]
 						}
 					]
 				}

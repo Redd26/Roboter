@@ -18,6 +18,15 @@
 							"parameters": {
 								"object": "CamaQuarto"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 393545379897429,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -69,6 +78,15 @@
 							"parameters": {
 								"object": "MesaDeEstudos"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 687715692915660,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -120,6 +138,15 @@
 							"parameters": {
 								"object": "MesaPlantas"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 957792328458106,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -171,6 +198,15 @@
 							"parameters": {
 								"object": "EstanteDeLivrosQuarto"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 658937224585562,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -222,6 +258,15 @@
 							"parameters": {
 								"object": "ObjetoAmaldicoado"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 269734206554357,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -273,6 +318,15 @@
 							"parameters": {
 								"object": "Robozao"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 982133066119016,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -324,6 +378,15 @@
 							"parameters": {
 								"object": "JanelaQuarto"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 899994020211382,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -438,6 +501,15 @@
 							"parameters": {
 								"object": "FornoCenarioLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 995421129261139,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -489,6 +561,15 @@
 							"parameters": {
 								"object": "MineriosLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 997398901738105,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -540,6 +621,15 @@
 							"parameters": {
 								"object": "BauLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 412638661046042,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -591,6 +681,15 @@
 							"parameters": {
 								"object": "ArCondicionadoLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 796348833705987,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						},
 						{
 							"id": "is-animation-playing",
@@ -660,6 +759,15 @@
 							"parameters": {
 								"object": "CaixaCorreiosLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 440475831329929,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -748,6 +856,15 @@
 								"click-type": "clicked",
 								"object-clicked": "ArCondicionadoLoja"
 							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 139005906466993,
+							"parameters": {
+								"object": "PauseFundo"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [

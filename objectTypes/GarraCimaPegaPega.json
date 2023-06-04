@@ -1,0 +1,64 @@
+{
+	"name": "GarraCimaPegaPega",
+	"plugin-id": "Sprite",
+	"sid": 147120366248213,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 286735432802571
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2037983,
+						"collisionPoly": {
+							"points": [
+								0.14705882352941177,
+								0.05555555555555555,
+								0.9705882352941181,
+								0.05555555555555555,
+								0.9705882352941181,
+								0.7222222222222222,
+								0.2647058823529412,
+								0.9444444444444452,
+								0.029411764705882353,
+								0.9444444444444452,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 358523360926200,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

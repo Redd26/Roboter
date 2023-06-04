@@ -16,6 +16,12 @@
 		"PescocoCortaPao",
 		"EsquerdaMeioCortaPao",
 		"DireitaMeioCortaPao",
-		"BaseCortaPao"
+		"BaseCortaPao",
+		"BasePegaPega",
+		"EmpunhadoraBaixoPegaPega",
+		"EmpunhadoraCimaPegaPega",
+		"GarraBaixoPegaPega",
+		"GarraCimaPegaPega",
+		"MolaPegaPega"
 	]
 }

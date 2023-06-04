@@ -1,0 +1,55 @@
+{
+	"name": "CaixaParteDeCima",
+	"plugin-id": "Sprite",
+	"sid": 760275834875789,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 359998588525922
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 122,
+						"height": 134,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7788699,
+						"collisionPoly": {
+							"points": [
+								0.00819672131147541,
+								0.007462686567164179,
+								0.9918032786885246,
+								0.007462686567164179,
+								0.9918032786885246,
+								0.9925373134328358,
+								0.00819672131147541,
+								0.9925373134328358
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 417497684755160,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

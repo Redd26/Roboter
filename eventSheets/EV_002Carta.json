@@ -42,838 +42,909 @@
 			"sid": 192333327441917
 		},
 		{
+			"eventType": "variable",
+			"name": "CartaChegou",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 158568965638977
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Interação Carta",
+			"title": "EvCartasGrupo",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Carta Fundo",
+					"title": "Interação Carta",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Carta Fundo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "on-start-of-layout",
-									"objectClass": "System",
-									"sid": 323443996875544
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 410914328700951
+										}
+									],
+									"actions": [
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "CartaMascara",
+											"sid": 446479078937127,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Carta",
+												"x": true,
+												"y": true,
+												"angle": true,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "Carta",
+											"sid": 415273883629100,
+											"parameters": {
+												"x": "-302",
+												"y": "786"
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "Carta",
+											"sid": 355991183879135,
+											"parameters": {
+												"angle": "22.1"
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "CartaMascara",
+											"sid": 289247308192852,
+											"disabled": true,
+											"parameters": {
+												"angle": "22.1"
+											}
+										}
+									],
+									"sid": 129252963425517
+								},
+								{
+									"eventType": "comment",
+									"text": "Mouse Over teve que ser separado para habilitar o outline do comando para movimentar a carta"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 775709108010405,
+											"parameters": {
+												"object": "Carta"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-effect-enabled",
+											"objectClass": "Carta",
+											"sid": 318658355210061,
+											"parameters": {
+												"mode": "enable",
+												"effect": "\"BetterOutline\""
+											}
+										}
+									],
+									"sid": 805749616828152
+								},
+								{
+									"eventType": "comment",
+									"text": "acoesCarta serve para saber qual ação está sendo realizada para não ter conflitos entre o movimento qnd tem Mouse Over de quando a carta é clicada"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 640109835237403,
+											"parameters": {
+												"object": "Carta"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 992668085238359,
+											"parameters": {
+												"variable": "acoesCarta",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "Carta",
+											"sid": 287136244869586,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-225",
+												"y": "714",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 889279360740627,
+											"parameters": {
+												"variable": "acoesCarta",
+												"value": "1"
+											}
+										},
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "TextoCarta",
+											"sid": 503030333593476,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Carta",
+												"x": true,
+												"y": true,
+												"angle": true,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										}
+									],
+									"sid": 631679164592755
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 546822136636889,
+											"parameters": {
+												"object": "Carta"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-effect-enabled",
+											"objectClass": "Carta",
+											"sid": 152540456047684,
+											"parameters": {
+												"mode": "disable",
+												"effect": "\"BetterOutline\""
+											}
+										}
+									],
+									"sid": 344596457053635
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 332012213577555,
+											"parameters": {
+												"object": "Carta"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 986333351592061,
+											"parameters": {
+												"variable": "acoesCarta",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "Carta",
+											"sid": 729805847027755,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-302",
+												"y": "786",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 823476160995154,
+											"parameters": {
+												"variable": "acoesCarta",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 131631086064497
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 649973222534997,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Carta"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 522331915457143,
+											"parameters": {
+												"variable": "isCartaClicada"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 655999974201348,
+											"parameters": {
+												"variable": "acoesCarta",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 660813903752607,
+											"parameters": {
+												"variable": "CartaChegou"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 125126123106022,
+											"parameters": {
+												"audio-file": "CartaAbrir",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "Carta",
+											"sid": 514351188950563,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "640",
+												"y": "360",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "wait-for-previous-actions",
+											"objectClass": "System",
+											"sid": 475003957843833
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 495189426033996,
+											"parameters": {
+												"variable": "isCartaClicada",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 878996439838239,
+											"parameters": {
+												"variable": "direcaoCarta",
+												"value": "\"indo\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 162402389854921,
+											"parameters": {
+												"variable": "acoesCarta",
+												"value": "2"
+											}
+										},
+										{
+											"id": "signal",
+											"objectClass": "System",
+											"sid": 456120870781719,
+											"parameters": {
+												"tag": "\"unpinTextoCarta\""
+											}
+										}
+									],
+									"sid": 255927232237106
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Carta",
+											"sid": 554119675138726,
+											"behaviorType": "MoveTo"
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 136400249259327,
+											"parameters": {
+												"variable": "direcaoCarta",
+												"comparison": 0,
+												"value": "\"indo\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle",
+											"objectClass": "Carta",
+											"sid": 965241429545752,
+											"parameters": {
+												"angle": "lerp(Self.Angle, 0, 3 * dt)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 659857064018726,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 407205659456745,
+											"parameters": {
+												"variable": "CartaChegou",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 531068487167823
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 805250976077866,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Carta"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 231712690991582,
+											"parameters": {
+												"variable": "isCartaClicada"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 241620750048229,
+											"parameters": {
+												"variable": "acoesCarta",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 145715959328162,
+											"parameters": {
+												"variable": "CartaChegou"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 171253388605053,
+											"parameters": {
+												"audio-file": "CartaFechar",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "Carta",
+											"sid": 302546454839991,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "-302",
+												"y": "786",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "wait-for-previous-actions",
+											"objectClass": "System",
+											"sid": 700120086259407
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 357366206405809,
+											"parameters": {
+												"variable": "isCartaClicada",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 817286396354485,
+											"parameters": {
+												"variable": "direcaoCarta",
+												"value": "\"voltando\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 849817866080390,
+											"parameters": {
+												"variable": "acoesCarta",
+												"value": "1"
+											}
+										},
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "TextoCarta",
+											"sid": 561078024168464,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Carta",
+												"x": true,
+												"y": true,
+												"angle": true,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "TextoCarta",
+											"sid": 107882168000796,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										}
+									],
+									"sid": 781087666048594
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Carta",
+											"sid": 667832454679785,
+											"behaviorType": "MoveTo"
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 449151075131056,
+											"parameters": {
+												"variable": "direcaoCarta",
+												"comparison": 0,
+												"value": "\"voltando\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle",
+											"objectClass": "Carta",
+											"sid": 345350716019977,
+											"parameters": {
+												"angle": "lerp(Self.Angle, 22.1, 3 * dt)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 562720180995671,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 110161834022751,
+											"parameters": {
+												"variable": "CartaChegou",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 766461572602284
 								}
 							],
-							"actions": [
-								{
-									"id": "pin-to-object-properties",
-									"objectClass": "CartaMascara",
-									"sid": 682416040142092,
-									"behaviorType": "Pin",
-									"parameters": {
-										"pin-to": "Carta",
-										"x": true,
-										"y": true,
-										"angle": true,
-										"width-type": "no",
-										"height-type": "no",
-										"z": false
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Carta",
-									"sid": 978747650728990,
-									"parameters": {
-										"x": "-302",
-										"y": "786"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "Carta",
-									"sid": 105980329594196,
-									"parameters": {
-										"angle": "22.1"
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "CartaMascara",
-									"sid": 371557841894737,
-									"disabled": true,
-									"parameters": {
-										"angle": "22.1"
-									}
-								}
-							],
-							"sid": 165585161231309
+							"sid": 574665782667258
 						},
 						{
-							"eventType": "comment",
-							"text": "Mouse Over teve que ser separado para habilitar o outline do comando para movimentar a carta"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Carta Mudar Mouse",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 721819687657715,
-									"parameters": {
-										"object": "Carta"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 615367963020823,
+											"parameters": {
+												"object": "Carta"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-cursor-style",
+											"objectClass": "Mouse",
+											"sid": 441758826964788,
+											"parameters": {
+												"cursor-style": "hand"
+											}
+										}
+									],
+									"sid": 875118995884204
 								}
 							],
-							"actions": [
-								{
-									"id": "set-effect-enabled",
-									"objectClass": "Carta",
-									"sid": 277001289722927,
-									"parameters": {
-										"mode": "enable",
-										"effect": "\"BetterOutline\""
-									}
-								}
-							],
-							"sid": 537202189393073
-						},
-						{
-							"eventType": "comment",
-							"text": "acoesCarta serve para saber qual ação está sendo realizada para não ter conflitos entre o movimento qnd tem Mouse Over de quando a carta é clicada"
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 895216935440497,
-									"parameters": {
-										"object": "Carta"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 889059806443144,
-									"parameters": {
-										"variable": "acoesCarta",
-										"comparison": 0,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "Carta",
-									"sid": 124054013079749,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "-225",
-										"y": "714",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 589439171559057,
-									"parameters": {
-										"variable": "acoesCarta",
-										"value": "1"
-									}
-								},
-								{
-									"id": "pin-to-object-properties",
-									"objectClass": "TextoCarta",
-									"sid": 479596258041845,
-									"behaviorType": "Pin",
-									"parameters": {
-										"pin-to": "Carta",
-										"x": true,
-										"y": true,
-										"angle": true,
-										"width-type": "no",
-										"height-type": "no",
-										"z": false
-									}
-								}
-							],
-							"sid": 672330201072508
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 455965216576401,
-									"parameters": {
-										"object": "Carta"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-enabled",
-									"objectClass": "Carta",
-									"sid": 407192178359871,
-									"parameters": {
-										"mode": "disable",
-										"effect": "\"BetterOutline\""
-									}
-								}
-							],
-							"sid": 591610554288244
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 780528374682587,
-									"parameters": {
-										"object": "Carta"
-									},
-									"isInverted": true
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 949546472710644,
-									"parameters": {
-										"variable": "acoesCarta",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "move-to-position",
-									"objectClass": "Carta",
-									"sid": 958402014228531,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "-302",
-										"y": "786",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 540139791427625,
-									"parameters": {
-										"variable": "acoesCarta",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 321322875940371
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-object-clicked",
-									"objectClass": "Mouse",
-									"sid": 243315014452621,
-									"parameters": {
-										"mouse-button": "left",
-										"click-type": "clicked",
-										"object-clicked": "Carta"
-									}
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 399202721829542,
-									"parameters": {
-										"variable": "isCartaClicada"
-									},
-									"isInverted": true
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 970156007842571,
-									"parameters": {
-										"variable": "acoesCarta",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 144553162267963,
-									"parameters": {
-										"audio-file": "CartaAbrir",
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"Click\""
-									}
-								},
-								{
-									"id": "move-to-position",
-									"objectClass": "Carta",
-									"sid": 224864358301209,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "640",
-										"y": "360",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "wait-for-previous-actions",
-									"objectClass": "System",
-									"sid": 672062071828389
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 785552713820481,
-									"parameters": {
-										"variable": "isCartaClicada",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 665461991556661,
-									"parameters": {
-										"variable": "direcaoCarta",
-										"value": "\"indo\""
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 120667500459442,
-									"parameters": {
-										"variable": "acoesCarta",
-										"value": "2"
-									}
-								},
-								{
-									"id": "signal",
-									"objectClass": "System",
-									"sid": 981267076667128,
-									"parameters": {
-										"tag": "\"unpinTextoCarta\""
-									}
-								}
-							],
-							"sid": 362338792138250
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-moving",
-									"objectClass": "Carta",
-									"sid": 217669349000107,
-									"behaviorType": "MoveTo"
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 259133927401492,
-									"parameters": {
-										"variable": "direcaoCarta",
-										"comparison": 0,
-										"value": "\"indo\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "Carta",
-									"sid": 465827681599664,
-									"parameters": {
-										"angle": "lerp(Self.Angle, 0, 3 * dt)"
-									}
-								}
-							],
-							"sid": 163446128037312
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-object-clicked",
-									"objectClass": "Mouse",
-									"sid": 810330691485065,
-									"parameters": {
-										"mouse-button": "left",
-										"click-type": "clicked",
-										"object-clicked": "Carta"
-									}
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 824806035265509,
-									"parameters": {
-										"variable": "isCartaClicada"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 124855501240736,
-									"parameters": {
-										"variable": "acoesCarta",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 678721581977966,
-									"parameters": {
-										"audio-file": "CartaFechar",
-										"loop": "not-looping",
-										"volume": "0",
-										"stereo-pan": "0",
-										"tag-optional": "\"Click\""
-									}
-								},
-								{
-									"id": "move-to-position",
-									"objectClass": "Carta",
-									"sid": 220114395666923,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"x": "-302",
-										"y": "786",
-										"mode": "direct"
-									}
-								},
-								{
-									"id": "wait-for-previous-actions",
-									"objectClass": "System",
-									"sid": 591565537692620
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 129363070228382,
-									"parameters": {
-										"variable": "isCartaClicada",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 268839408982979,
-									"parameters": {
-										"variable": "direcaoCarta",
-										"value": "\"voltando\""
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 846641235968303,
-									"parameters": {
-										"variable": "acoesCarta",
-										"value": "1"
-									}
-								},
-								{
-									"id": "pin-to-object-properties",
-									"objectClass": "TextoCarta",
-									"sid": 813098753422349,
-									"behaviorType": "Pin",
-									"parameters": {
-										"pin-to": "Carta",
-										"x": true,
-										"y": true,
-										"angle": true,
-										"width-type": "no",
-										"height-type": "no",
-										"z": false
-									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "TextoCarta",
-									"sid": 970361433732384,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"enabled": false
-									}
-								}
-							],
-							"sid": 194242058363560
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-moving",
-									"objectClass": "Carta",
-									"sid": 865317763028524,
-									"behaviorType": "MoveTo"
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 973151566622519,
-									"parameters": {
-										"variable": "direcaoCarta",
-										"comparison": 0,
-										"value": "\"voltando\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-angle",
-									"objectClass": "Carta",
-									"sid": 638042253068014,
-									"parameters": {
-										"angle": "lerp(Self.Angle, 22.1, 3 * dt)"
-									}
-								}
-							],
-							"sid": 207283737955764
+							"sid": 195491983449905
 						}
 					],
-					"sid": 656351260778356
+					"sid": 500043406915359
 				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Carta Mudar Mouse",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 457555005738878,
-									"parameters": {
-										"object": "Carta"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-cursor-style",
-									"objectClass": "Mouse",
-									"sid": 853123387747585,
-									"parameters": {
-										"cursor-style": "hand"
-									}
-								}
-							],
-							"sid": 567016485330580
-						}
-					],
-					"sid": 631390580812544
-				}
-			],
-			"sid": 643733478473822
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 977960286172963
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "TextoCarta",
-					"sid": 644974550801532,
-					"parameters": {
-						"object": "Carta",
-						"image-point-optional": "0"
-					}
-				},
-				{
-					"id": "set-angle",
-					"objectClass": "TextoCarta",
-					"sid": 135283981394925,
-					"parameters": {
-						"angle": "22.1"
-					}
-				}
-			],
-			"sid": 828232998051096
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-mouse-wheel",
-					"objectClass": "Mouse",
-					"sid": 346652877792186,
-					"parameters": {
-						"direction": "up"
-					}
-				},
-				{
-					"id": "compare-y",
-					"objectClass": "TextoCarta",
-					"sid": 491374212660928,
-					"parameters": {
-						"comparison": 5,
-						"y-co-ordinate": "300"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "move-to-position",
-					"objectClass": "TextoCarta",
-					"sid": 368970132635888,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y+80",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 767509139917389
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-mouse-wheel",
-					"objectClass": "Mouse",
-					"sid": 372248304646111,
-					"parameters": {
-						"direction": "down"
-					}
-				},
-				{
-					"id": "compare-y",
-					"objectClass": "TextoCarta",
-					"sid": 364482420424789,
-					"parameters": {
-						"comparison": 3,
-						"y-co-ordinate": "20"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "move-to-position",
-					"objectClass": "TextoCarta",
-					"sid": 748206442602131,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "TextoCarta.X",
-						"y": "TextoCarta.Y-80",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 284772804639207
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 991224569767394,
-					"parameters": {
-						"variable": "robo",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 586200293643967,
-			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 261227183770177
+						}
+					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
+							"id": "set-position-to-another-object",
 							"objectClass": "TextoCarta",
-							"sid": 157414842480593,
+							"sid": 746427366799605,
 							"parameters": {
-								"frame-number": "robo - 1"
+								"object": "Carta",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "TextoCarta",
+							"sid": 292414400483600,
+							"parameters": {
+								"angle": "22.1"
 							}
 						}
 					],
-					"sid": 382034216585260
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 974690301444609,
-					"parameters": {
-						"variable": "acoesCarta",
-						"comparison": 0,
-						"value": "2"
-					}
+					"sid": 620733146255249
 				},
 				{
-					"id": "is-moving",
-					"objectClass": "Carta",
-					"sid": 860434291242351,
-					"behaviorType": "MoveTo",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "unpin",
-					"objectClass": "TextoCarta",
-					"sid": 446456894126328,
-					"behaviorType": "Pin"
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-mouse-wheel",
+							"objectClass": "Mouse",
+							"sid": 976980452900434,
+							"parameters": {
+								"direction": "up"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "TextoCarta",
+							"sid": 365353093790842,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "300"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "TextoCarta",
+							"sid": 757752897022350,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "TextoCarta.X",
+								"y": "TextoCarta.Y+80",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 455824830322283
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "TextoCarta",
-					"sid": 400819715740305,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"enabled": true
-					}
-				}
-			],
-			"sid": 278696084668488
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "TextoCarta",
-					"sid": 989316227557590,
-					"parameters": {
-						"comparison": 2,
-						"y-co-ordinate": "-20"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 475535963082270,
-					"parameters": {
-						"variable": "PosicaoCarimbada",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 246006676770403
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-y",
-					"objectClass": "TextoCarta",
-					"sid": 530374356286499,
-					"parameters": {
-						"comparison": 2,
-						"y-co-ordinate": "-20"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 706610468947977,
-					"parameters": {
-						"variable": "PosicaoCarimbada",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 119514060444078
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 870296098254400,
-					"parameters": {
-						"variable": "PosicaoCarimbada"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "CarimbadaNegada",
-					"sid": 925086358660324,
-					"parameters": {
-						"x": "480.01514",
-						"y": "568.152085"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-mouse-wheel",
+							"objectClass": "Mouse",
+							"sid": 811690449964748,
+							"parameters": {
+								"direction": "down"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "TextoCarta",
+							"sid": 254022572674679,
+							"parameters": {
+								"comparison": 3,
+								"y-co-ordinate": "20"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "TextoCarta",
+							"sid": 564687920024093,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "TextoCarta.X",
+								"y": "TextoCarta.Y-80",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 517019127569434
 				},
 				{
-					"id": "set-position",
-					"objectClass": "CarimbadaAprovada",
-					"sid": 352734371445663,
-					"parameters": {
-						"x": "807.954508",
-						"y": "567.117249"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 620824010192810,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 560526283882744,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "TextoCarta",
+									"sid": 172957917510451,
+									"parameters": {
+										"frame-number": "robo - 1"
+									}
+								}
+							],
+							"sid": 181126965959828
+						}
+					]
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "CarimbadaAprovada",
-					"sid": 644855584029635,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 397173912442815,
+							"parameters": {
+								"variable": "acoesCarta",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Carta",
+							"sid": 981492217562151,
+							"behaviorType": "MoveTo",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "TextoCarta",
+							"sid": 374803673223984,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "TextoCarta",
+							"sid": 492797003049407,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
+							}
+						}
+					],
+					"sid": 942895352857147
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "CarimbadaNegada",
-					"sid": 817616049825297,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "TextoCarta",
+							"sid": 706264599536705,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "-20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 925828660500274,
+							"parameters": {
+								"variable": "PosicaoCarimbada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 936210783508668
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "TextoCarta",
+							"sid": 460505445192461,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "-20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 992280719296906,
+							"parameters": {
+								"variable": "PosicaoCarimbada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 223721991391762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 151822184953216,
+							"parameters": {
+								"variable": "PosicaoCarimbada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "CarimbadaNegada",
+							"sid": 452577969593089,
+							"parameters": {
+								"x": "480.01514",
+								"y": "568.152085"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "CarimbadaAprovada",
+							"sid": 483260599889043,
+							"parameters": {
+								"x": "807.954508",
+								"y": "567.117249"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CarimbadaAprovada",
+							"sid": 444353074239155,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CarimbadaNegada",
+							"sid": 761112816147716,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 379989875495965
 				}
 			],
-			"sid": 990512211774074
+			"sid": 324480927064888
 		}
 	],
 	"sid": 896571990791601
