@@ -1,0 +1,63 @@
+{
+	"name": "LinhaCortarViridis",
+	"plugin-id": "Sprite",
+	"sid": 605012284608561,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 200346032158308
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 114,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4549518,
+						"collisionPoly": {
+							"points": [
+								0.002074688796680498,
+								0.00877192982456134,
+								0.08506224066390042,
+								0.00877192982456134,
+								0.9979253112033195,
+								0.5,
+								0.9979253112033195,
+								0.6052631578947368,
+								0.7074688796680498,
+								0.9912280701754386,
+								0.44190871369294604,
+								0.9912280701754386,
+								0.18464730290456433,
+								0.6052631578947368,
+								0.002074688796680498,
+								0.11403508771929824
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 253455661704692,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

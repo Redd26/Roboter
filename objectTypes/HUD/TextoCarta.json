@@ -99,6 +99,87 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 602,
+						"height": 623,
+						"originX": 0.5074750830564784,
+						"originY": 0.3879118890552256,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 108918,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 412512101419670,
+				"name": "Pedido04Carta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 588,
+						"height": 718,
+						"originX": 0.5076530612244898,
+						"originY": 0.3679449585435384,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5461394,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.001392757660167131,
+								0.9931972789115646,
+								0,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 320580022427921,
+				"name": "Pedido05Carta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 594,
+						"height": 608,
+						"originX": 0.5075757575757576,
+						"originY": 0.3874210141018725,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5861949,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 403395831095755,
+				"name": "Pedido06Carta",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []

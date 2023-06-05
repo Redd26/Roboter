@@ -40,7 +40,34 @@
 							}
 						}
 					],
-					"sid": 661453063281538
+					"sid": 661453063281538,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 111785065935958
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 801738813821859,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 236967038110247
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -100,7 +127,34 @@
 							}
 						}
 					],
-					"sid": 837159671043097
+					"sid": 837159671043097,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 564896256835168
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 167931191296042,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 368846370931926
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -160,7 +214,34 @@
 							}
 						}
 					],
-					"sid": 140180041124356
+					"sid": 140180041124356,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 827125862211694
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 221710284014142,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 493085431182719
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -220,7 +301,34 @@
 							}
 						}
 					],
-					"sid": 112489588452692
+					"sid": 112489588452692,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 698752756138857
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 808509943641300,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 918417607206720
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -280,7 +388,34 @@
 							}
 						}
 					],
-					"sid": 341280759661110
+					"sid": 341280759661110,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 685823020440732
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 897450488455128,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 551025600970488
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -340,7 +475,34 @@
 							}
 						}
 					],
-					"sid": 515668533100566
+					"sid": 515668533100566,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 767261188877149
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 709210407321247,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 136139470767552
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -400,7 +562,34 @@
 							}
 						}
 					],
-					"sid": 804552495570342
+					"sid": 804552495570342,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 311347569364149
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 195300058591431,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 249900256837908
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -523,7 +712,34 @@
 							}
 						}
 					],
-					"sid": 967484457856298
+					"sid": 967484457856298,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 674385706773466
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 203457593817688,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 459611649438620
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -583,7 +799,34 @@
 							}
 						}
 					],
-					"sid": 732217286877874
+					"sid": 732217286877874,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 945328880698033
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 292176321927185,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 225075831202366
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -643,7 +886,34 @@
 							}
 						}
 					],
-					"sid": 311100796922355
+					"sid": 311100796922355,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 632376188864849
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 266844754322804,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 473483408917934
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -712,7 +982,34 @@
 							}
 						}
 					],
-					"sid": 884792954298227
+					"sid": 884792954298227,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 806329793835851
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 490601449871256,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 237652928257104
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -832,7 +1129,34 @@
 							}
 						}
 					],
-					"sid": 721091180703702
+					"sid": 721091180703702,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 454063433186504
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 972520471876510,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 517856829804443
+						}
+					]
 				}
 			],
 			"sid": 730790377958747

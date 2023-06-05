@@ -39,7 +39,7 @@
 			"eventType": "variable",
 			"name": "totalQuebraCabecaPecas",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -133,6 +133,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 986913072172150,
+							"disabled": true,
 							"parameters": {
 								"variable": "totalQuebraCabecaPecas",
 								"value": "QuebraCabecaPecas.Count"
@@ -2836,7 +2837,7 @@
 											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
 											"sid": 918420145350010,
 											"parameters": {
-												"object": "ExteriorEsquerdoBaixcAquecedorColisao"
+												"object": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao"
 											}
 										}
 									],
@@ -2847,7 +2848,7 @@
 											"sid": 154458539588514,
 											"behaviorType": "MoveTo",
 											"parameters": {
-												"object": "ExteriorEsquerdoBaixcAquecedorColisao",
+												"object": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao",
 												"image-point": "0",
 												"mode": "direct"
 											}
@@ -2907,7 +2908,7 @@
 											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
 											"sid": 274715172184934,
 											"parameters": {
-												"object": "ExteriorEsquerdoBaixcAquecedorColisao"
+												"object": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao"
 											},
 											"isInverted": true
 										}
@@ -6665,11 +6666,52 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 579889467432535,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "IconeCarvao"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 887098162705638,
+									"parameters": {
+										"variable": "EnergiaEscolhida",
+										"value": "\"Carvao\""
+									}
+								},
+								{
+									"callFunction": "AnalisarEnergia",
+									"sid": 589622219372749
+								}
+							],
+							"sid": 992686932878151
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 526622476073115,
 									"parameters": {
 										"variable": "EnergiaLiberada"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 749049185253640,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"ferro\""
 									}
 								}
 							],
@@ -6686,14 +6728,445 @@
 								{
 									"id": "set-group-active",
 									"objectClass": "System",
-									"sid": 250948242532316,
+									"sid": 162844598891603,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 969127679309294,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 943368476252747,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 5\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 953109055246211,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 6\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 457257057128780,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 827941935299887
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 365884880902669,
+											"parameters": {
+												"variable": "totalQuebraCabecaPecas",
+												"value": "5"
+											}
+										}
+									],
+									"sid": 192459953393058
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 549938896221022,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 406209793559773,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"eritio\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 920432581952728,
 									"parameters": {
 										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
 										"state": "activated"
 									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 700030442705646,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 779641050297018,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 360244771394829,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 5\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 349030695935295,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 6\"",
+										"state": "deactivated"
+									}
 								}
 							],
-							"sid": 457257057128780
+							"sid": 661781909104815,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 960690366273572
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 492673337709530,
+											"parameters": {
+												"variable": "totalQuebraCabecaPecas",
+												"value": "6"
+											}
+										}
+									],
+									"sid": 818407774107961
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 152497642488084,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 499667049866605,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"viridis\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 518796265356271,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 731666348068739,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 135002762941506,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 147606983303109,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 5\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 585204607356975,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 6\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 850598590229128,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 551118216422054
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 894212796463608,
+											"parameters": {
+												"variable": "totalQuebraCabecaPecas",
+												"value": "12"
+											}
+										}
+									],
+									"sid": 219046110463420
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 944906512546940,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 554290507550054,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"cobre\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 891757241826690,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 706946707450038,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 910505329761759,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 454627338770706,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 5\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 992562380487440,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 6\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 214619892724195,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 824951702273819
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 559580230217966,
+											"parameters": {
+												"variable": "totalQuebraCabecaPecas",
+												"value": "7"
+											}
+										}
+									],
+									"sid": 940875794349325
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 911308025173503,
+									"parameters": {
+										"variable": "EnergiaLiberada"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 672039722944475,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"ouro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 770545322118306,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 544638718163011,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 979580858149448,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 870864678134192,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 5\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 298526559957341,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 6\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 510562308286879,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 296137376050933
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 643945490422384,
+											"parameters": {
+												"variable": "totalQuebraCabecaPecas",
+												"value": "12"
+											}
+										}
+									],
+									"sid": 561958751313844
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -6732,8 +7205,19 @@
 									"id": "set-group-active",
 									"objectClass": "System",
 									"sid": 984736428166713,
+									"disabled": true,
 									"parameters": {
 										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 921157871755611,
+									"disabled": true,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 4\"",
 										"state": "deactivated"
 									}
 								},

@@ -242,7 +242,305 @@
 							}
 						}
 					],
-					"sid": 165823987614690
+					"sid": 165823987614690,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 109466514563694
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 420998643192812,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 540457836585075,
+									"parameters": {
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 725996475992326,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "AnimDias",
+									"sid": 291848126445230,
+									"parameters": {
+										"animation": "\"Dia 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 786892121753277,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 794133470256429,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 813390506619555,
+									"parameters": {
+										"x": "1616",
+										"y": "-123"
+									}
+								}
+							],
+							"sid": 317801248448916
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 415967572896441
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 831404310442575,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 126244506369701,
+									"parameters": {
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 743139084960236,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "AnimDias",
+									"sid": 697916502110504,
+									"parameters": {
+										"animation": "\"Dia 2\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 438960342230766,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 152481811089452,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 661309122639179,
+									"parameters": {
+										"x": "1616",
+										"y": "-123"
+									}
+								}
+							],
+							"sid": 952254174175945
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 121286561746116
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 977294156545167,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 318267884834213,
+									"parameters": {
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 198306616781782,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "AnimDias",
+									"sid": 277938750086165,
+									"parameters": {
+										"animation": "\"Dia 3\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 848797060638655,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 870199927211043,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 778397393315384,
+									"parameters": {
+										"x": "1616",
+										"y": "-123"
+									}
+								}
+							],
+							"sid": 505557940469730
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 648299529833988
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 372726441464988,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 863561302113471,
+									"parameters": {
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 746260824299422,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "AnimDias",
+									"sid": 781557022311083,
+									"parameters": {
+										"animation": "\"Dia 4\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 735163143400001,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AnimDias",
+									"sid": 782285683658893,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AnimDias",
+									"sid": 830413885483375,
+									"parameters": {
+										"x": "1616",
+										"y": "-123"
+									}
+								}
+							],
+							"sid": 253384523661986
+						}
+					]
 				},
 				{
 					"eventType": "block",

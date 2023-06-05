@@ -167,6 +167,18 @@
 							"text": "SetarCut"
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 684483286942931,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "RelogioDiaNoite",
 							"sid": 363525314870540,
@@ -204,6 +216,10 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"callFunction": "ChamarAnimDormir",
+							"sid": 915086984842142
 						}
 					],
 					"sid": 510687027527261
@@ -219,6 +235,10 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "comment",
+					"text": "Quando der upgrade para o carvao"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -229,6 +249,16 @@
 								"mouse-button": "left",
 								"click-type": "clicked",
 								"object-clicked": "MesaDeEstudos"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 542076948426378,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "0"
 							}
 						},
 						{
@@ -246,9 +276,21 @@
 							"text": "Adicionar a Barra de upgrade mais um"
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 661922512146414,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 659991769631601,
+							"sid": 586149535374292,
 							"parameters": {
 								"variable": "BarraRobotica",
 								"value": "1"
@@ -257,7 +299,7 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 406225543162283,
+							"sid": 479116296752560,
 							"parameters": {
 								"variable": "Estudar",
 								"value": "false"
@@ -266,14 +308,105 @@
 						{
 							"id": "set-animation",
 							"objectClass": "RelogioDiaNoite",
-							"sid": 964395458131725,
+							"sid": 764872590926106,
 							"parameters": {
 								"animation": "\"dia\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"callFunction": "ChamarAnimUpgrade 1",
+							"sid": 125243155041627
 						}
 					],
 					"sid": 960960685716617
+				},
+				{
+					"eventType": "comment",
+					"text": "Quando der upgrade para ao polir"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 537475813747623,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MesaDeEstudos"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 799284072221190,
+							"parameters": {
+								"variable": "Estudar"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 357335853303011,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Adicionar a Barra de upgrade mais um"
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 853388797165414,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 377427145515773,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 677528073402480,
+							"parameters": {
+								"variable": "Estudar",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 882689240978320,
+							"parameters": {
+								"animation": "\"dia\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"callFunction": "ChamarAnimUpgrade 2",
+							"sid": 492240164059806
+						}
+					],
+					"sid": 502278585058900
 				}
 			],
 			"sid": 721372035831389
@@ -311,6 +444,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 101541134936172,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
@@ -605,6 +750,212 @@
 					"sid": 872940504542577
 				}
 			]
+		},
+		{
+			"functionName": "ChamarAnimUpgrade 1",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "UpgradeAnim",
+					"sid": 407474793112882,
+					"parameters": {
+						"x": "-1.008933",
+						"y": "158.998627"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 722302165740672,
+					"parameters": {
+						"animation": "\"InCarvao\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 598039880222677,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 619434668051357,
+					"parameters": {
+						"animation": "\"OutCarvao\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 324020888345606,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 193712100385877,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 579856258683763
+		},
+		{
+			"functionName": "ChamarAnimUpgrade 2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "UpgradeAnim",
+					"sid": 515105988807144,
+					"parameters": {
+						"x": "-1.008933",
+						"y": "158.998627"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 563561245765914,
+					"parameters": {
+						"animation": "\"InPolir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 724613672337199,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 901763161946901,
+					"parameters": {
+						"animation": "\"OutPolir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 102908339091621,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 865934160466158,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 906116780557799
+		},
+		{
+			"functionName": "ChamarAnimDormir",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 864234737534714,
+					"parameters": {
+						"x": "-1.517213",
+						"y": "159.479665"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 511330192175276,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 148484127737802,
+					"parameters": {
+						"animation": "\"Dormir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 595178001598550,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 232615913439572,
+					"parameters": {
+						"animation": "\"Acordar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 853291389838808,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 697050059914639,
+					"parameters": {
+						"x": "-1429",
+						"y": "58"
+					}
+				}
+			],
+			"sid": 567684877177825
 		}
 	],
 	"sid": 319169129069670

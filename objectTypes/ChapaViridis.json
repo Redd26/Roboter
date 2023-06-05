@@ -1,0 +1,55 @@
+{
+	"name": "ChapaViridis",
+	"plugin-id": "Sprite",
+	"sid": 286062929594854,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 961439496227625
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 486,
+						"height": 182,
+						"originX": 0.5041152263374485,
+						"originY": 0.4230769230769231,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8040301,
+						"collisionPoly": {
+							"points": [
+								0.0102880658436214,
+								0.005494505494505495,
+								0.9979423868312757,
+								0.027472527472527472,
+								0.9897119341563786,
+								0.9945054945054945,
+								0.00205761316872428,
+								0.9725274725274725
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 557170990717464,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"name": "LinhaCortarCobre",
+	"plugin-id": "Sprite",
+	"sid": 375466564412200,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 193525471562888
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 90,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7012374,
+						"collisionPoly": {
+							"points": [
+								0.13485477178423236,
+								0.011111111111111112,
+								0.23443983402489627,
+								0.011111111111111112,
+								0.39211618257261416,
+								0.8000000000000003,
+								0.7012448132780088,
+								0.811111111111111,
+								0.7842323651452284,
+								0.39999999999999986,
+								1,
+								0.4055555555555554,
+								0.9979253112033195,
+								0.5444444444444444,
+								0.7240663900414938,
+								0.9888888888888889,
+								0.3755186721991701,
+								0.9888888888888889,
+								0.17946058091286302,
+								0.16111111111111126,
+								0.053941908713692886,
+								0.7111111111111111,
+								0.002074688796680498,
+								0.7222222222222222,
+								0.002074688796680498,
+								0.5888888888888889
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 397350428828781,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

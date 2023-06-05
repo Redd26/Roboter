@@ -1,0 +1,160 @@
+{
+	"name": "AnimDias",
+	"plugin-id": "Sprite",
+	"sid": 533074450274575,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 310726088452465
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1282,
+						"height": 722,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 828925,
+						"collisionPoly": {
+							"points": [
+								0.00078003120124805,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.9986149584487535,
+								0.00078003120124805,
+								0.9986149584487535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 515471380047546,
+				"name": "Dia 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3280169,
+						"collisionPoly": {
+							"points": [
+								0.00078003120124805,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.9986149584487535,
+								0.00078003120124805,
+								0.9986149584487535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 807822919407719,
+				"name": "Dia 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9600736,
+						"collisionPoly": {
+							"points": [
+								0.00078003120124805,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.9986149584487535,
+								0.00078003120124805,
+								0.9986149584487535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 182870307925219,
+				"name": "Dia 3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2236587,
+						"collisionPoly": {
+							"points": [
+								0.00078003120124805,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.9986149584487535,
+								0.00078003120124805,
+								0.9986149584487535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 344540915150324,
+				"name": "Dia 4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

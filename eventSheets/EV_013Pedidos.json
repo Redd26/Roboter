@@ -927,10 +927,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 156236642086724,
+							"sid": 935003835179793,
 							"parameters": {
 								"variable": "MaterialCerto",
-								"value": "\"Eritro\""
+								"value": "\"eritro\""
 							}
 						},
 						{
@@ -1153,10 +1153,74 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "LinhaCortar",
+							"objectClass": "LinhaCortarFerro",
 							"sid": 200296447002765,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaEritro",
+							"sid": 870779509883923,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 719137528962709,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaViridis",
+							"sid": 888247099987143,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 874994181449634,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaOuro",
+							"sid": 316034164620982,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 433408391952746,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaCobre",
+							"sid": 773252361853539,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarCobre",
+							"sid": 760088844914108,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						},
 						{
@@ -1170,6 +1234,434 @@
 						}
 					],
 					"sid": 910083872596345
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 605372536760979,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"cobre\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaCobre",
+							"sid": 290538211783287,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarCobre",
+							"sid": 749534337445983,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 565924205114334,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 780559799046478,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaEritro",
+							"sid": 605604228917633,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 951024455562209,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaViridis",
+							"sid": 667411916238833,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 345558870258568,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaOuro",
+							"sid": 458072748429102,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 433279859320715,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 688008904657251,
+							"parameters": {
+								"variable": "ChapaPreparada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 213970235478740
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 235439236965466,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"eritro\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaEritro",
+							"sid": 208401727553987,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 251845409926670,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaCobre",
+							"sid": 163489387011534,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarCobre",
+							"sid": 811276601607448,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 739841072653202,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 651948070745715,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaViridis",
+							"sid": 368992357127658,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 641393020264838,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaOuro",
+							"sid": 800822062769093,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 897297780644114,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 292715138612775,
+							"parameters": {
+								"variable": "ChapaPreparada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 400150352821565
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 202101691382678,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"Viridis\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaViridis",
+							"sid": 984047794475434,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 439725545855146,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaEritro",
+							"sid": 804690254732382,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 992276529103030,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaCobre",
+							"sid": 292622470014992,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarCobre",
+							"sid": 804637320830739,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 700267538766014,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 879874795153876,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaOuro",
+							"sid": 331944440313110,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 611340259691153,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 987679226582271,
+							"parameters": {
+								"variable": "ChapaPreparada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 459162066077139
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 290784634073512,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "\"ouro\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaOuro",
+							"sid": 498566845816478,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 425456930508625,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaViridis",
+							"sid": 814860577317405,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 279189659139223,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaEritro",
+							"sid": 747199099436252,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 672811939652005,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaCobre",
+							"sid": 996518204433928,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarCobre",
+							"sid": 914113189769120,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ChapaFerro",
+							"sid": 797736855586916,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 188917338354392,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 734658007043476,
+							"parameters": {
+								"variable": "ChapaPreparada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 428897869138823
 				},
 				{
 					"eventType": "comment",
@@ -1201,7 +1693,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "LinhaCortar",
+							"objectClass": "LinhaCortarFerro",
 							"sid": 864726927346209,
 							"parameters": {
 								"visibility": "invisible"
@@ -1209,7 +1701,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Colisor",
+							"objectClass": "ColisorFerro",
 							"sid": 817143503394771,
 							"parameters": {
 								"visibility": "invisible"
@@ -1689,35 +2181,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPegaColisao",
-							"sid": 850272578661568,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPegaColisao",
-							"sid": 325127601115893,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "GarraCimaPegaPega",
 							"sid": 114799028775214,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPegaColisao",
-							"sid": 698736720675907,
-							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1756,26 +2221,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-							"sid": 155303578817230,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "EmpunhadoraCimaPegaPega",
 							"sid": 616043873644125,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-							"sid": 698918144448249,
-							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2101,7 +2548,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "SombraPegaPega",
+							"objectClass": "SombraAquecedor",
 							"sid": 585348651477668,
 							"parameters": {
 								"visibility": "visible"
@@ -2109,7 +2556,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPega",
+							"objectClass": "CabecaAquecedor",
 							"sid": 692378383636232,
 							"parameters": {
 								"visibility": "visible"
@@ -2117,25 +2564,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPegaColisao",
-							"sid": 281925882487150,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPegaColisao",
-							"sid": 182473696927580,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "AquecedorBracoDireito",
 							"sid": 116632708488193,
 							"parameters": {
 								"visibility": "visible"
@@ -2143,16 +2572,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPegaColisao",
-							"sid": 128977239132290,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "AquecedorBracoEsquerdo",
 							"sid": 342041656358694,
 							"parameters": {
 								"visibility": "visible"
@@ -2160,7 +2580,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "Cano2Aquecedor",
 							"sid": 822161539757025,
 							"parameters": {
 								"visibility": "visible"
@@ -2168,15 +2588,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPegaColisao",
-							"sid": 692047844594351,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "CanoAquecedor",
 							"sid": 512775561711879,
 							"parameters": {
 								"visibility": "visible"
@@ -2184,16 +2596,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-							"sid": 316179775016235,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "EsteriorEsquerdoCimaAquecedor",
 							"sid": 653693828713974,
 							"parameters": {
 								"visibility": "visible"
@@ -2201,16 +2604,55 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-							"sid": 198797297665984,
-							"disabled": true,
+							"objectClass": "ExteriorDireitoCimaAquecedor",
+							"sid": 321877387043956,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+							"sid": 569591820138640,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InferiorDireitoAquecedor",
+							"sid": 847495056510276,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InferiorEsquerdoAquecedor",
+							"sid": 123644034626762,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PeDireitoAquecedor",
+							"sid": 516245509648964,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PeEsquerdoAquecedor",
+							"sid": 272677606587401,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "BasePegaPega",
+							"objectClass": "CabecaAquecedor",
 							"sid": 260806868475662,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2219,7 +2661,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "AquecedorBracoDireito",
 							"sid": 392007186382896,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2228,7 +2670,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "AquecedorBracoEsquerdo",
 							"sid": 660828901698054,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2237,7 +2679,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "Cano2Aquecedor",
 							"sid": 133751614174943,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2246,7 +2688,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "CanoAquecedor",
 							"sid": 953780411659730,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2255,8 +2697,62 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "EsteriorEsquerdoCimaAquecedor",
 							"sid": 211973219355768,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "ExteriorDireitoCimaAquecedor",
+							"sid": 503697624949518,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+							"sid": 902328417683088,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "InferiorDireitoAquecedor",
+							"sid": 210026189030048,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "InferiorEsquerdoAquecedor",
+							"sid": 942255162870066,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PeDireitoAquecedor",
+							"sid": 118640077138199,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PeEsquerdoAquecedor",
+							"sid": 717887511872674,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
 								"state2": "enabled"
@@ -2277,101 +2773,119 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "CortaPaoSombra",
-									"sid": 975355554889782,
+									"objectClass": "SombraPegaPega",
+									"sid": 633546960176072,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPaoColisao",
-									"sid": 138952908476408,
+									"objectClass": "BasePegaPegaColisao",
+									"sid": 211250511418937,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPaoColisao",
-									"sid": 739572776373062,
+									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+									"sid": 519556614259827,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPaoColisao",
-									"sid": 267883470142499,
+									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+									"sid": 484042783261105,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPaoColisao",
-									"sid": 706271345134574,
+									"objectClass": "GarraBaixoPegaPegaColisao",
+									"sid": 688978467460338,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPaoColisao",
-									"sid": 876739694200848,
+									"objectClass": "GarraCimaPegaPegaColisao",
+									"sid": 506971904902437,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPao",
-									"sid": 117878914780894,
+									"objectClass": "MolaPegaPegaColisao",
+									"sid": 951438949713657,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 847201734962807,
+									"objectClass": "BasePegaPega",
+									"sid": 684055082107668,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPao",
-									"sid": 560979298845823,
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 977905656027753,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 725836880062542,
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 358520528419542,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPao",
-									"sid": 410490419793784,
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 508614486253781,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 474812602718438,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPega",
+									"sid": 200912186912937,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
 									}
 								},
 								{
@@ -2380,119 +2894,227 @@
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPega",
-									"sid": 753016896618314,
-									"parameters": {
-										"x": "434",
-										"y": "266"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPega",
-									"sid": 617285391658077,
-									"parameters": {
-										"x": "369",
-										"y": "377"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPega",
-									"sid": 273341186674208,
+									"objectClass": "SombraAquecedor",
+									"sid": 803876218061072,
 									"parameters": {
 										"x": "436",
-										"y": "489"
+										"y": "329"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPega",
-									"sid": 415832629516990,
+									"objectClass": "CabecaAquecedorColisao",
+									"sid": 489745075493695,
 									"parameters": {
-										"x": "792",
-										"y": "442"
+										"x": "536.030549",
+										"y": "336.969451"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPega",
-									"sid": 668432695425682,
+									"objectClass": "CanoAquecedorColisao",
+									"sid": 593744180173293,
 									"parameters": {
-										"x": "780",
-										"y": "368"
+										"x": "492.132097",
+										"y": "329.056586"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPega",
-									"sid": 260538302494172,
+									"objectClass": "Cano2AquecedorColisao",
+									"sid": 780731642554976,
 									"parameters": {
-										"x": "472",
-										"y": "490"
+										"x": "511.984446",
+										"y": "341.015554"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "SombraPegaPega",
-									"sid": 136582834042652,
+									"objectClass": "AquecedorBracoDireitoColisao",
+									"sid": 744100184966972,
 									"parameters": {
-										"x": "602",
-										"y": "372"
+										"x": "596",
+										"y": "373"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-									"sid": 962177050156423,
+									"objectClass": "AquecedorBracoEsquerdoColisao",
+									"sid": 462908672504081,
 									"parameters": {
-										"x": "602.007555",
-										"y": "400.03503"
+										"x": "436",
+										"y": "373"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-									"sid": 592620554752993,
+									"objectClass": "EsteriorEsquerdoCimaAquecedorColisao",
+									"sid": 300767898463429,
 									"parameters": {
-										"x": "602.007555",
-										"y": "372.03503"
+										"x": "475.976629",
+										"y": "356.926426"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPegaColisao",
-									"sid": 867253598793506,
+									"objectClass": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao",
+									"sid": 963875580751387,
 									"parameters": {
-										"x": "622.007555",
-										"y": "380.03503"
+										"x": "475.950407",
+										"y": "385.090044"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPegaColisao",
-									"sid": 915081489507725,
+									"objectClass": "ExteriorDireitoCimaAquecedorColisao",
+									"sid": 897569863873029,
 									"parameters": {
-										"x": "662.007535",
-										"y": "399.924924"
+										"x": "535.959203",
+										"y": "356.944877"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPegaColisao",
-									"sid": 211296926478676,
+									"objectClass": "InferiorEsquerdoAquecedorColisao",
+									"sid": 879376044122022,
 									"parameters": {
-										"x": "662.012108",
-										"y": "384.008269"
+										"x": "487.733303",
+										"y": "369.382923"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPegaColisao",
-									"sid": 769054370294027,
+									"objectClass": "InferiorDireitoAquecedorColisao",
+									"sid": 544334008039852,
 									"parameters": {
-										"x": "634.000371",
-										"y": "387.994799"
+										"x": "531.725355",
+										"y": "369.426554"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeDireitoAquecedorColisao",
+									"sid": 189152330248278,
+									"parameters": {
+										"x": "544.09542",
+										"y": "416.711271"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeEsquerdoAquecedorColisao",
+									"sid": 744880145378571,
+									"parameters": {
+										"x": "500.080269",
+										"y": "416.879721"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaAquecedor",
+									"sid": 648150904233149,
+									"parameters": {
+										"x": "294",
+										"y": "373"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AquecedorBracoDireito",
+									"sid": 824192430191333,
+									"parameters": {
+										"x": "514",
+										"y": "239"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "AquecedorBracoEsquerdo",
+									"sid": 291476496883615,
+									"parameters": {
+										"x": "423",
+										"y": "257"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Cano2Aquecedor",
+									"sid": 896485179275538,
+									"parameters": {
+										"x": "667",
+										"y": "435"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CanoAquecedor",
+									"sid": 166643394661763,
+									"parameters": {
+										"x": "359",
+										"y": "409"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsteriorEsquerdoCimaAquecedor",
+									"sid": 138843269455524,
+									"parameters": {
+										"x": "744",
+										"y": "417"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ExteriorDireitoCimaAquecedor",
+									"sid": 367723829728637,
+									"parameters": {
+										"x": "679",
+										"y": "306"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+									"sid": 116643840924109,
+									"parameters": {
+										"x": "418",
+										"y": "449"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "InferiorDireitoAquecedor",
+									"sid": 283152541333258,
+									"parameters": {
+										"x": "599",
+										"y": "273"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "InferiorEsquerdoAquecedor",
+									"sid": 210011816033003,
+									"parameters": {
+										"x": "337",
+										"y": "242"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeDireitoAquecedor",
+									"sid": 648535953202737,
+									"parameters": {
+										"x": "603",
+										"y": "483"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeEsquerdoAquecedor",
+									"sid": 612454289979236,
+									"parameters": {
+										"x": "338",
+										"y": "329"
 									}
 								}
 							],
@@ -2529,7 +3151,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "SombraPegaPega",
+							"objectClass": "SombraCatapulta",
 							"sid": 587419264709262,
 							"parameters": {
 								"visibility": "visible"
@@ -2537,7 +3159,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPega",
+							"objectClass": "BaseCatapulta",
 							"sid": 688829996365660,
 							"parameters": {
 								"visibility": "visible"
@@ -2545,25 +3167,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPegaColisao",
-							"sid": 344952901355381,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPegaColisao",
-							"sid": 177643112150016,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "BracoCatapulta",
 							"sid": 737880507048123,
 							"parameters": {
 								"visibility": "visible"
@@ -2571,16 +3175,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPegaColisao",
-							"sid": 440444893604617,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "CanoCatapulta",
 							"sid": 616082398928281,
 							"parameters": {
 								"visibility": "visible"
@@ -2588,7 +3183,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "EngrenagemCatapulta",
 							"sid": 288407510431612,
 							"parameters": {
 								"visibility": "visible"
@@ -2596,7 +3191,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPegaColisao",
+							"objectClass": "ParafusosCatapulta",
 							"sid": 467753814384916,
 							"parameters": {
 								"visibility": "visible"
@@ -2604,7 +3199,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "PrendedorCatapulta",
 							"sid": 742734350171070,
 							"parameters": {
 								"visibility": "visible"
@@ -2612,33 +3207,15 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-							"sid": 761708262695092,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "RodaCatapulta",
 							"sid": 145254132004729,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-							"sid": 733308253130220,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
 							"id": "setenabled0",
-							"objectClass": "BasePegaPega",
+							"objectClass": "BaseCatapulta",
 							"sid": 970917001630066,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2647,7 +3224,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "BracoCatapulta",
 							"sid": 251369911909936,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2656,7 +3233,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "CanoCatapulta",
 							"sid": 943563411328125,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2665,7 +3242,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "EngrenagemCatapulta",
 							"sid": 814663828161800,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2674,7 +3251,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "ParafusosCatapulta",
 							"sid": 639859708848643,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -2683,8 +3260,17 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "PrendedorCatapulta",
 							"sid": 110253195303427,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "RodaCatapulta",
+							"sid": 839569689937873,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
 								"state2": "enabled"
@@ -2705,101 +3291,119 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "CortaPaoSombra",
-									"sid": 661619139126393,
+									"objectClass": "SombraAquecedor",
+									"sid": 118039111244494,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPaoColisao",
-									"sid": 533156064605745,
+									"objectClass": "AquecedorBracoDireito",
+									"sid": 745999087032708,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPaoColisao",
-									"sid": 801276874320482,
+									"objectClass": "AquecedorBracoEsquerdo",
+									"sid": 960997741468406,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPaoColisao",
-									"sid": 430393960450547,
+									"objectClass": "CabecaAquecedor",
+									"sid": 709957143552071,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPaoColisao",
-									"sid": 547981868221880,
+									"objectClass": "Cano2Aquecedor",
+									"sid": 615717649137203,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPaoColisao",
-									"sid": 663474887814681,
+									"objectClass": "CanoAquecedor",
+									"sid": 843145595609408,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPao",
-									"sid": 289177010648328,
+									"objectClass": "EsteriorEsquerdoCimaAquecedor",
+									"sid": 917630124611487,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 460382018907805,
+									"objectClass": "ExteriorDireitoCimaAquecedor",
+									"sid": 650989437639302,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPao",
-									"sid": 563359471857604,
+									"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+									"sid": 968913341286195,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 211155859822195,
+									"objectClass": "InferiorDireitoAquecedor",
+									"sid": 575126890379198,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPao",
-									"sid": 153944597487684,
+									"objectClass": "InferiorEsquerdoAquecedor",
+									"sid": 659092287517413,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "4000",
+										"y": "4000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeDireitoAquecedor",
+									"sid": 649322386447710,
+									"parameters": {
+										"x": "4000",
+										"y": "4000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeEsquerdoAquecedor",
+									"sid": 208530741545333,
+									"parameters": {
+										"x": "4000",
+										"y": "4000"
 									}
 								},
 								{

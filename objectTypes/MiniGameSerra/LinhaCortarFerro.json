@@ -1,0 +1,71 @@
+{
+	"name": "LinhaCortarFerro",
+	"plugin-id": "Sprite",
+	"sid": 717906921243897,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 829900195979652
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 102,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7370143,
+						"collisionPoly": {
+							"points": [
+								0.12448132780082989,
+								0.8333333333333336,
+								0.2925311203319503,
+								0.029411764705882353,
+								0.6908713692946058,
+								0.00980392156862745,
+								0.7925311203319503,
+								0.49999999999999994,
+								0.991701244813278,
+								0.49019607843137275,
+								0.9979253112033195,
+								0.6372549019607843,
+								0.7821576763485478,
+								0.6568627450980392,
+								0.6742738589211617,
+								0.14705882352941183,
+								0.3205394190871367,
+								0.15196078431372576,
+								0.14107883817427397,
+								0.9803921568627452,
+								0.002074688796680498,
+								0.9901960784313726,
+								0.002074688796680498,
+								0.8725490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 775457411994836,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"name": "ExteriorEsquerdoBaixcAquecedorColisao",
+	"name": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao",
 	"plugin-id": "Sprite",
 	"sid": 375186996786914,
 	"isGlobal": false,
@@ -13,8 +13,8 @@
 					{
 						"width": 62,
 						"height": 34,
-						"originX": 0.532258064516129,
-						"originY": 0.2647058823529412,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

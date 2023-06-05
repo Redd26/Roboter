@@ -1,14 +1,14 @@
 {
-	"name": "Colisor",
+	"name": "ColisorCobre",
 	"plugin-id": "Sprite",
-	"sid": 347062594772517,
+	"sid": 728715487066816,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",
 			"name": "Bullet",
-			"sid": 535873276185785
+			"sid": 958266136160872
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4542857,
+						"imageSpriteId": 2817746,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 377971456593482,
+				"sid": 897568425892074,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

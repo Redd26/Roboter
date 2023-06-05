@@ -462,12 +462,22 @@
 									"parameters": {
 										"variable": "ChapaAndar"
 									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 204680812924376,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"ferro\""
+									}
 								}
 							],
 							"actions": [
 								{
 									"id": "set-angle-of-motion",
-									"objectClass": "Colisor",
+									"objectClass": "ColisorFerro",
 									"sid": 121688250753746,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -476,7 +486,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Colisor",
+									"objectClass": "ColisorFerro",
 									"sid": 814123827384120,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -485,7 +495,7 @@
 								},
 								{
 									"id": "set-enabled",
-									"objectClass": "Colisor",
+									"objectClass": "ColisorFerro",
 									"sid": 350972486999284,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -521,7 +531,7 @@
 								},
 								{
 									"id": "set-angle-of-motion",
-									"objectClass": "LinhaCortar",
+									"objectClass": "LinhaCortarFerro",
 									"sid": 771106769945794,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -530,7 +540,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "LinhaCortar",
+									"objectClass": "LinhaCortarFerro",
 									"sid": 175927149008825,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -539,7 +549,7 @@
 								},
 								{
 									"id": "set-enabled",
-									"objectClass": "LinhaCortar",
+									"objectClass": "LinhaCortarFerro",
 									"sid": 989033919038007,
 									"behaviorType": "Bullet",
 									"parameters": {
@@ -573,6 +583,542 @@
 										}
 									],
 									"sid": 976000780787832
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 599357024469476,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 711859917853835,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"eritro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ColisorEritro",
+									"sid": 662464183413262,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ColisorEritro",
+									"sid": 217918323218524,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ColisorEritro",
+									"sid": 872962179658098,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ChapaEritro",
+									"sid": 952145622857555,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ChapaEritro",
+									"sid": 586290768519608,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ChapaEritro",
+									"sid": 784408073655348,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "LinhaCortarEritro",
+									"sid": 854529796950581,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "LinhaCortarEritro",
+									"sid": 863811514890590,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "LinhaCortarEritro",
+									"sid": 995841677255614,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 582561210973641,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 124438090679190
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 744290062842895,
+											"parameters": {
+												"audio-file": "MoverChapa",
+												"loop": "looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"SomChapa\""
+											}
+										}
+									],
+									"sid": 258662181564233
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 965447703147421,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 796470281748325,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"viridis\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ColisorViridis",
+									"sid": 101943126578975,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ColisorViridis",
+									"sid": 490234740415321,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ColisorViridis",
+									"sid": 362332714295869,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ChapaViridis",
+									"sid": 719344504903274,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ChapaViridis",
+									"sid": 442534177274392,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ChapaViridis",
+									"sid": 821535713808401,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "LinhaCortarViridis",
+									"sid": 983461183001285,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "LinhaCortarViridis",
+									"sid": 226938323677982,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "LinhaCortarViridis",
+									"sid": 321564273994798,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 119202863750779,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 669696521706803
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 242837765317097,
+											"parameters": {
+												"audio-file": "MoverChapa",
+												"loop": "looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"SomChapa\""
+											}
+										}
+									],
+									"sid": 726881348114363
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 246081266625338,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 816385464449080,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"cobre\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ColisorCobre",
+									"sid": 271039487642219,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ColisorCobre",
+									"sid": 453485631941808,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ColisorCobre",
+									"sid": 377381367337767,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ChapaCobre",
+									"sid": 739766490725494,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ChapaCobre",
+									"sid": 993809712390823,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ChapaCobre",
+									"sid": 766615468785911,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "LinhaCortarCobre",
+									"sid": 849494846163516,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "LinhaCortarCobre",
+									"sid": 154822294235305,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "LinhaCortarCobre",
+									"sid": 418196936281858,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 769525882841543,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 332483368585651
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 711335772534744,
+											"parameters": {
+												"audio-file": "MoverChapa",
+												"loop": "looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"SomChapa\""
+											}
+										}
+									],
+									"sid": 472145138895630
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 436795630413237,
+									"parameters": {
+										"variable": "ChapaAndar"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 880576402161144,
+									"parameters": {
+										"variable": "MaterialCerto",
+										"comparison": 0,
+										"value": "\"ouro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ColisorOuro",
+									"sid": 885490961578721,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ColisorOuro",
+									"sid": 629753058658951,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ColisorOuro",
+									"sid": 741070858354746,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ChapaOuro",
+									"sid": 579795937847255,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ChapaOuro",
+									"sid": 585026721084577,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ChapaOuro",
+									"sid": 313155379408511,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "LinhaCortarOuro",
+									"sid": 455378831404229,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "LinhaCortarOuro",
+									"sid": 440373356185864,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "75"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "LinhaCortarOuro",
+									"sid": 957384166611946,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 685459903866180,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 453987192262444
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 851417781543483,
+											"parameters": {
+												"audio-file": "MoverChapa",
+												"loop": "looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"SomChapa\""
+											}
+										}
+									],
+									"sid": 841970056094078
 								}
 							]
 						},
@@ -1290,11 +1836,15 @@
 					"sid": 746263112251104
 				},
 				{
+					"eventType": "comment",
+					"text": "ColisorFerro"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Colisor",
+							"objectClass": "ColisorFerro",
 							"sid": 811234607942608,
 							"parameters": {
 								"object": "ApagadorSerra"
@@ -1304,26 +1854,12 @@
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Colisor",
+							"objectClass": "ColisorFerro",
 							"sid": 102053711337000
 						},
 						{
-							"callFunction": "Colidiu",
+							"callFunction": "ColidiuFerro",
 							"sid": 216013991436531
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 906715959928338,
-							"disabled": true,
-							"parameters": {
-								"object-to-create": "ApagadorSerra",
-								"layer": "\"ObjetosApagar\"",
-								"x": "ApagadorSerra.X",
-								"y": "ApagadorSerra.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
 						}
 					],
 					"sid": 855643779151162,
@@ -1338,19 +1874,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 387042155502383,
-									"disabled": true,
-									"parameters": {
-										"audio-file": "SomSerra",
-										"loop": "looping",
-										"volume": "-15",
-										"stereo-pan": "0",
-										"tag-optional": "\"SomSerra\""
-									}
-								},
 								{
 									"id": "set-visible",
 									"objectClass": "ParticulasSerra",
@@ -1374,7 +1897,251 @@
 					]
 				},
 				{
-					"functionName": "Colidiu",
+					"eventType": "comment",
+					"text": "ColisorEritro"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ColisorEritro",
+							"sid": 872260250859300,
+							"parameters": {
+								"object": "ApagadorSerra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ColisorEritro",
+							"sid": 525937826582445
+						},
+						{
+							"callFunction": "ColidiuEritro",
+							"sid": 569709248053938
+						}
+					],
+					"sid": 870436522392499,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 431606779238240
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "ParticulasSerra",
+									"sid": 492057826993685,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ParticulasSerra",
+									"sid": 126668173864572,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 667346518908934
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "ColisorViridis"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ColisorViridis",
+							"sid": 370147716413009,
+							"parameters": {
+								"object": "ApagadorSerra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ColisorViridis",
+							"sid": 584159357754142
+						},
+						{
+							"callFunction": "ColidiuViridis",
+							"sid": 772973969506977
+						}
+					],
+					"sid": 915199185686220,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 205486553599482
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "ParticulasSerra",
+									"sid": 148011655851473,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ParticulasSerra",
+									"sid": 255019660664878,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 842655599887035
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "ColisorCobre"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ColisorCobre",
+							"sid": 222404918964006,
+							"parameters": {
+								"object": "ApagadorSerra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ColisorCobre",
+							"sid": 106575832424636
+						},
+						{
+							"callFunction": "ColidiuCobre",
+							"sid": 320164979788720
+						}
+					],
+					"sid": 497081847470089,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 474319021014145
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "ParticulasSerra",
+									"sid": 751739978649123,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ParticulasSerra",
+									"sid": 855533541364581,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 906168192039969
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "ColisorOuro"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ColisorOuro",
+							"sid": 455716786123623,
+							"parameters": {
+								"object": "ApagadorSerra"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ColisorOuro",
+							"sid": 458774254068803
+						},
+						{
+							"callFunction": "ColidiuOuro",
+							"sid": 772441335310364
+						}
+					],
+					"sid": 291809383116450,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 231803114526268
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "ParticulasSerra",
+									"sid": 182657937037249,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ParticulasSerra",
+									"sid": 779643225374539,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 550616192409672
+						}
+					]
+				},
+				{
+					"functionName": "ColidiuFerro",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -1388,7 +2155,7 @@
 							"objectClass": "System",
 							"sid": 765419839381751,
 							"parameters": {
-								"first-value": "Colisor.Count",
+								"first-value": "ColisorFerro.Count",
 								"comparison": 3,
 								"second-value": "1"
 							}
@@ -1485,6 +2252,450 @@
 					"sid": 244699887386460
 				},
 				{
+					"functionName": "ColidiuViridis",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 793526641001941,
+							"parameters": {
+								"first-value": "ColisorViridis.Count",
+								"comparison": 3,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 798062237528719,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 357125766728146,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoIniciarCorte",
+							"sid": 735168601425621,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 610721769090697,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ventuinhas",
+							"sid": 153296956430096,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ApagarChapa",
+							"sid": 846594051296357,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 277619303330759,
+							"parameters": {
+								"variable": "ChapaFinalizada",
+								"value": "true"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 537710117490483,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 839283031954493,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 731811923734058,
+							"parameters": {
+								"x": "1095",
+								"y": "239"
+							}
+						}
+					],
+					"sid": 663412679273809
+				},
+				{
+					"functionName": "ColidiuEritro",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 504466230562977,
+							"parameters": {
+								"first-value": "ColisorEritro.Count",
+								"comparison": 3,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 437367390637346,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 175907692789318,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoIniciarCorte",
+							"sid": 628923588225229,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 547122784569381,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ventuinhas",
+							"sid": 119486550946846,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ApagarChapa",
+							"sid": 230430833075614,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 720728633693019,
+							"parameters": {
+								"variable": "ChapaFinalizada",
+								"value": "true"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 922050375876212,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 359707588128113,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 409559560481802,
+							"parameters": {
+								"x": "1095",
+								"y": "239"
+							}
+						}
+					],
+					"sid": 115745632403226
+				},
+				{
+					"functionName": "ColidiuCobre",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 683726467188256,
+							"parameters": {
+								"first-value": "ColisorCobre.Count",
+								"comparison": 3,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 239332885885169,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 730930426371915,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoIniciarCorte",
+							"sid": 248400889441102,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 680415134218411,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ventuinhas",
+							"sid": 210215574515320,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ApagarChapa",
+							"sid": 581723004074335,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 806784856552098,
+							"parameters": {
+								"variable": "ChapaFinalizada",
+								"value": "true"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 323586193455355,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 743594546332558,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 326924426041617,
+							"parameters": {
+								"x": "1095",
+								"y": "239"
+							}
+						}
+					],
+					"sid": 514877048702774
+				},
+				{
+					"functionName": "ColidiuOuro",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 435774673608496,
+							"parameters": {
+								"first-value": "ColisorOuro.Count",
+								"comparison": 3,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 477289517240343,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 532399826874313,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotaoIniciarCorte",
+							"sid": 632242142335824,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 730905871773238,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ventuinhas",
+							"sid": 826801177794746,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ApagarChapa",
+							"sid": 784563779931872,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 450825261586672,
+							"parameters": {
+								"variable": "ChapaFinalizada",
+								"value": "true"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 940704450805517,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 608068482830131,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 196971791801962,
+							"parameters": {
+								"x": "1095",
+								"y": "239"
+							}
+						}
+					],
+					"sid": 421955536896593
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -1507,7 +2718,7 @@
 							"objectClass": "System",
 							"sid": 241021205454734,
 							"parameters": {
-								"first-value": "Colisor.Count",
+								"first-value": "ColisorFerro.Count",
 								"comparison": 5,
 								"second-value": "2"
 							}
@@ -1550,7 +2761,7 @@
 							"objectClass": "System",
 							"sid": 455316913398422,
 							"parameters": {
-								"first-value": "Colisor.Count",
+								"first-value": "ColisorFerro.Count",
 								"comparison": 5,
 								"second-value": "2"
 							}
@@ -1718,7 +2929,7 @@
 					"conditions": [
 						{
 							"id": "compare-distance-travelled",
-							"objectClass": "LinhaCortar",
+							"objectClass": "LinhaCortarFerro",
 							"sid": 744652725467537,
 							"behaviorType": "Bullet",
 							"parameters": {
@@ -1730,7 +2941,7 @@
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "LinhaCortar",
+							"objectClass": "LinhaCortarFerro",
 							"sid": 641512408869378
 						}
 					],
