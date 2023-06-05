@@ -1,0 +1,60 @@
+{
+	"name": "DetalheCabeca2Forno",
+	"plugin-id": "Sprite",
+	"sid": 165615713050492,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 247591823817273
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 14,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4578718,
+						"collisionPoly": {
+							"points": [
+								0.16666666666666666,
+								0.07142857142857142,
+								0.9666666666666667,
+								0.35714285714285715,
+								0.9666666666666667,
+								0.9285714285714286,
+								0.03333333333333333,
+								0.9285714285714286
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 296737434977089,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

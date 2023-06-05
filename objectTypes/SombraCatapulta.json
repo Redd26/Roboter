@@ -1,0 +1,65 @@
+{
+	"name": "SombraCatapulta",
+	"plugin-id": "Sprite",
+	"sid": 400221072988814,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 150,
+						"height": 118,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4828559,
+						"collisionPoly": {
+							"points": [
+								0.9133333333333333,
+								0.00847457627118644,
+								0.9933333333333333,
+								0.0423728813559322,
+								0.9933333333333333,
+								0.17796610169491525,
+								0.6733333333333333,
+								0.8220338983050848,
+								0.43333333333333335,
+								0.9915254237288136,
+								0.3,
+								0.9915254237288136,
+								0.06,
+								0.8220338983050848,
+								0.006666666666666667,
+								0.7542372881355932,
+								0.006666666666666667,
+								0.652542372881356,
+								0.14,
+								0.17796610169491525,
+								0.19333333333333333,
+								0.11016949152542373,
+								0.2733333333333333,
+								0.07627118644067797
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 604144236992467,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

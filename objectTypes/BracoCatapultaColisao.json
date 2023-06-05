@@ -1,0 +1,55 @@
+{
+	"name": "BracoCatapultaColisao",
+	"plugin-id": "Sprite",
+	"sid": 973747909450742,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 82,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3624812,
+						"collisionPoly": {
+							"points": [
+								0.8414634146341463,
+								0.02631578947368421,
+								0.9878048780487805,
+								0.13157894736842105,
+								0.9878048780487805,
+								0.5526315789473685,
+								0.8414634146341463,
+								0.868421052631579,
+								0.012195121951219513,
+								0.9736842105263158,
+								0.06097560975609756,
+								0.6578947368421053,
+								0.15853658536585366,
+								0.5526315789473685
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 606039006662514,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

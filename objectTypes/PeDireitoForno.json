@@ -1,0 +1,62 @@
+{
+	"name": "PeDireitoForno",
+	"plugin-id": "Sprite",
+	"sid": 275097424194062,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 519426619793924
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7180430,
+						"collisionPoly": {
+							"points": [
+								0.7,
+								0.19230769230769232,
+								0.9666666666666667,
+								0.6538461538461539,
+								0.9666666666666667,
+								0.9615384615384616,
+								0.03333333333333333,
+								0.9615384615384616,
+								0.03333333333333333,
+								0.6538461538461539
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 411870784288216,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

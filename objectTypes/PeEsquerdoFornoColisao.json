@@ -1,0 +1,53 @@
+{
+	"name": "PeEsquerdoFornoColisao",
+	"plugin-id": "Sprite",
+	"sid": 327600260972464,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7663669,
+						"collisionPoly": {
+							"points": [
+								0.3,
+								0.045454545454545456,
+								0.7,
+								0.045454545454545456,
+								0.9666666666666667,
+								0.5909090909090909,
+								0.9666666666666667,
+								0.9545454545454546,
+								0.03333333333333333,
+								0.9545454545454546,
+								0.03333333333333333,
+								0.5909090909090909
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 472937292993845,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

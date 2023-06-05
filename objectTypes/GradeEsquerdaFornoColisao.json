@@ -1,0 +1,53 @@
+{
+	"name": "GradeEsquerdaFornoColisao",
+	"plugin-id": "Sprite",
+	"sid": 285684074567454,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5722012,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.03333333333333333,
+								0.9761904761904762,
+								0.03333333333333333,
+								0.9761904761904762,
+								0.9666666666666667,
+								0.023809523809523978,
+								0.8333333333333334,
+								0.023809523809523978,
+								0.5666666666666667,
+								0.30952380952380953,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 187767176411417,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

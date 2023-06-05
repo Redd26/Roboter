@@ -1,0 +1,68 @@
+{
+	"name": "AquecedorBracoDireito",
+	"plugin-id": "Sprite",
+	"sid": 287832701116611,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 164403853189661
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8127892,
+						"collisionPoly": {
+							"points": [
+								0.21428571428571427,
+								0.03333333333333333,
+								0.6904761904761905,
+								0.03333333333333333,
+								0.9761904761904762,
+								0.16666666666666666,
+								0.9761904761904762,
+								0.8333333333333334,
+								0.6904761904761905,
+								0.9666666666666667,
+								0.21428571428571427,
+								0.9666666666666667,
+								0.023809523809523808,
+								0.8333333333333334,
+								0.023809523809523808,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 358307664078566,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

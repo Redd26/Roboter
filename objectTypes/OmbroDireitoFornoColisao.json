@@ -1,0 +1,57 @@
+{
+	"name": "OmbroDireitoFornoColisao",
+	"plugin-id": "Sprite",
+	"sid": 671681151329565,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 415523,
+						"collisionPoly": {
+							"points": [
+								0.3,
+								0.03333333333333333,
+								0.7,
+								0.03333333333333333,
+								0.9666666666666667,
+								0.3,
+								0.9666666666666667,
+								0.7,
+								0.7,
+								0.9666666666666662,
+								0.3,
+								0.9666666666666662,
+								0.03333333333333333,
+								0.7,
+								0.03333333333333333,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 891338284519273,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

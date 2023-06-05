@@ -1,0 +1,64 @@
+{
+	"name": "GradeEsquerdaForno",
+	"plugin-id": "Sprite",
+	"sid": 825162027785288,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 763303977976105
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6336309,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.03333333333333333,
+								0.9761904761904762,
+								0.03333333333333333,
+								0.9761904761904762,
+								0.9666666666666667,
+								0.023809523809523978,
+								0.8333333333333334,
+								0.023809523809523978,
+								0.5666666666666667,
+								0.30952380952380953,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 653107185312677,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"name": "CabecaAquecedor",
+	"plugin-id": "Sprite",
+	"sid": 651660905695109,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 544174054541977
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8649564,
+						"collisionPoly": {
+							"points": [
+								0.10869565217391304,
+								0.045454545454545456,
+								0.9782608695652174,
+								0.22727272727272727,
+								0.9782608695652174,
+								0.9545454545454546,
+								0.021739130434782608,
+								0.9545454545454546
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 164679259937529,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

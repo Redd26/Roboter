@@ -1,0 +1,64 @@
+{
+	"name": "InferiorEsquerdoAquecedor",
+	"plugin-id": "Sprite",
+	"sid": 280444394446153,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 320882358140043
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2676566,
+						"collisionPoly": {
+							"points": [
+								0.1956521739130435,
+								0.02631578947368421,
+								0.9782608695652174,
+								0.02631578947368421,
+								0.9782608695652174,
+								0.9736842105263158,
+								0.1956521739130435,
+								0.9736842105263158,
+								0.021739130434782608,
+								0.7631578947368421,
+								0.021739130434782608,
+								0.23684210526315788
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 937851090407330,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -711,6 +711,15 @@
 						"variable": "ChapaFinalizada",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 674759008978526,
+					"parameters": {
+						"variable": "pecasQuebraCabecaAdicionadas",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 347037047952506,
@@ -1344,7 +1353,121 @@
 							}
 						}
 					],
-					"sid": 751300434602916
+					"sid": 751300434602916,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 496366776436622
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPao",
+									"sid": 738173242591192,
+									"parameters": {
+										"x": "434",
+										"y": "266"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPao",
+									"sid": 679758278229556,
+									"parameters": {
+										"x": "369",
+										"y": "377"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPao",
+									"sid": 488638158881123,
+									"parameters": {
+										"x": "436",
+										"y": "489"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPao",
+									"sid": 493370507834025,
+									"parameters": {
+										"x": "792",
+										"y": "442"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPao",
+									"sid": 246639185268017,
+									"parameters": {
+										"x": "780",
+										"y": "368"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CortaPaoSombra",
+									"sid": 973524233758954,
+									"parameters": {
+										"x": "602",
+										"y": "372"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPaoColisao",
+									"sid": 467438097368361,
+									"parameters": {
+										"x": "606",
+										"y": "310"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPaoColisao",
+									"sid": 776339215972206,
+									"parameters": {
+										"x": "605",
+										"y": "341"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPaoColisao",
+									"sid": 674427937024861,
+									"parameters": {
+										"x": "639.000422",
+										"y": "381"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPaoColisao",
+									"sid": 364703375456520,
+									"parameters": {
+										"x": "575",
+										"y": "393"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPaoColisao",
+									"sid": 767528233440918,
+									"parameters": {
+										"x": "601",
+										"y": "440"
+									}
+								}
+							],
+							"sid": 591864343507979
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -1568,6 +1691,7 @@
 							"id": "set-visible",
 							"objectClass": "BasePegaPegaColisao",
 							"sid": 850272578661568,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1576,6 +1700,7 @@
 							"id": "set-visible",
 							"objectClass": "GarraCimaPegaPegaColisao",
 							"sid": 325127601115893,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1592,6 +1717,7 @@
 							"id": "set-visible",
 							"objectClass": "GarraBaixoPegaPegaColisao",
 							"sid": 698736720675907,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1632,6 +1758,7 @@
 							"id": "set-visible",
 							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
 							"sid": 155303578817230,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1648,6 +1775,7 @@
 							"id": "set-visible",
 							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
 							"sid": 698918144448249,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1707,7 +1835,1526 @@
 							}
 						}
 					],
-					"sid": 834538218004665
+					"sid": 834538218004665,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 691124093078715
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "CortaPaoSombra",
+									"sid": 927688704677096,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPaoColisao",
+									"sid": 305401912262544,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPaoColisao",
+									"sid": 410221117165589,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPaoColisao",
+									"sid": 400032403910020,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPaoColisao",
+									"sid": 495989594353195,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPaoColisao",
+									"sid": 332980475560416,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPao",
+									"sid": 951566034634960,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPao",
+									"sid": 868778257208130,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPao",
+									"sid": 401622469079852,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPao",
+									"sid": 161733655132123,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPao",
+									"sid": 537824542914617,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Pega Pega"
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPega",
+									"sid": 973263161773108,
+									"parameters": {
+										"x": "434",
+										"y": "266"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 419181426673404,
+									"parameters": {
+										"x": "369",
+										"y": "377"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 598761999210975,
+									"parameters": {
+										"x": "436",
+										"y": "489"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 252157817469318,
+									"parameters": {
+										"x": "792",
+										"y": "442"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 183245132866091,
+									"parameters": {
+										"x": "780",
+										"y": "368"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPega",
+									"sid": 525572080285669,
+									"parameters": {
+										"x": "472",
+										"y": "490"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SombraPegaPega",
+									"sid": 452184742327083,
+									"parameters": {
+										"x": "602",
+										"y": "372"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+									"sid": 142283656463867,
+									"parameters": {
+										"x": "602.007555",
+										"y": "400.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+									"sid": 429464829587840,
+									"parameters": {
+										"x": "602.007555",
+										"y": "372.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPegaColisao",
+									"sid": 315354009932721,
+									"parameters": {
+										"x": "622.007555",
+										"y": "380.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPegaColisao",
+									"sid": 242513372635020,
+									"parameters": {
+										"x": "662.007535",
+										"y": "399.924924"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPegaColisao",
+									"sid": 818835418833417,
+									"parameters": {
+										"x": "662.012108",
+										"y": "384.008269"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPegaColisao",
+									"sid": 261063875674170,
+									"parameters": {
+										"x": "634.000371",
+										"y": "387.994799"
+									}
+								}
+							],
+							"sid": 229467302514768
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "aquecedor"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 840356079181394,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 997727492151345,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SombraPegaPega",
+							"sid": 585348651477668,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPega",
+							"sid": 692378383636232,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPegaColisao",
+							"sid": 281925882487150,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPegaColisao",
+							"sid": 182473696927580,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 116632708488193,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPegaColisao",
+							"sid": 128977239132290,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 342041656358694,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPega",
+							"sid": 822161539757025,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPegaColisao",
+							"sid": 692047844594351,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 512775561711879,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+							"sid": 316179775016235,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 653693828713974,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+							"sid": 198797297665984,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BasePegaPega",
+							"sid": 260806868475662,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 392007186382896,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 660828901698054,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 133751614174943,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 953780411659730,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "MolaPegaPega",
+							"sid": 211973219355768,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 866511819143679,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 530514233203837
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "CortaPaoSombra",
+									"sid": 975355554889782,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPaoColisao",
+									"sid": 138952908476408,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPaoColisao",
+									"sid": 739572776373062,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPaoColisao",
+									"sid": 267883470142499,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPaoColisao",
+									"sid": 706271345134574,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPaoColisao",
+									"sid": 876739694200848,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPao",
+									"sid": 117878914780894,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPao",
+									"sid": 847201734962807,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPao",
+									"sid": 560979298845823,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPao",
+									"sid": 725836880062542,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPao",
+									"sid": 410490419793784,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Pega Pega"
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPega",
+									"sid": 753016896618314,
+									"parameters": {
+										"x": "434",
+										"y": "266"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 617285391658077,
+									"parameters": {
+										"x": "369",
+										"y": "377"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 273341186674208,
+									"parameters": {
+										"x": "436",
+										"y": "489"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 415832629516990,
+									"parameters": {
+										"x": "792",
+										"y": "442"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 668432695425682,
+									"parameters": {
+										"x": "780",
+										"y": "368"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPega",
+									"sid": 260538302494172,
+									"parameters": {
+										"x": "472",
+										"y": "490"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SombraPegaPega",
+									"sid": 136582834042652,
+									"parameters": {
+										"x": "602",
+										"y": "372"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+									"sid": 962177050156423,
+									"parameters": {
+										"x": "602.007555",
+										"y": "400.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+									"sid": 592620554752993,
+									"parameters": {
+										"x": "602.007555",
+										"y": "372.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPegaColisao",
+									"sid": 867253598793506,
+									"parameters": {
+										"x": "622.007555",
+										"y": "380.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPegaColisao",
+									"sid": 915081489507725,
+									"parameters": {
+										"x": "662.007535",
+										"y": "399.924924"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPegaColisao",
+									"sid": 211296926478676,
+									"parameters": {
+										"x": "662.012108",
+										"y": "384.008269"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPegaColisao",
+									"sid": 769054370294027,
+									"parameters": {
+										"x": "634.000371",
+										"y": "387.994799"
+									}
+								}
+							],
+							"sid": 989956112906775
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "catapulta"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 923670733019781,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 216472316656824,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SombraPegaPega",
+							"sid": 587419264709262,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPega",
+							"sid": 688829996365660,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPegaColisao",
+							"sid": 344952901355381,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPegaColisao",
+							"sid": 177643112150016,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 737880507048123,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPegaColisao",
+							"sid": 440444893604617,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 616082398928281,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPega",
+							"sid": 288407510431612,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPegaColisao",
+							"sid": 467753814384916,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 742734350171070,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+							"sid": 761708262695092,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 145254132004729,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+							"sid": 733308253130220,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BasePegaPega",
+							"sid": 970917001630066,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 251369911909936,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 943563411328125,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 814663828161800,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 639859708848643,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "MolaPegaPega",
+							"sid": 110253195303427,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 221113226586304,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 740147839539898
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "CortaPaoSombra",
+									"sid": 661619139126393,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPaoColisao",
+									"sid": 533156064605745,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPaoColisao",
+									"sid": 801276874320482,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPaoColisao",
+									"sid": 430393960450547,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPaoColisao",
+									"sid": 547981868221880,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPaoColisao",
+									"sid": 663474887814681,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPao",
+									"sid": 289177010648328,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPao",
+									"sid": 460382018907805,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPao",
+									"sid": 563359471857604,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPao",
+									"sid": 211155859822195,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPao",
+									"sid": 153944597487684,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Pega Pega"
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPega",
+									"sid": 695608669568518,
+									"parameters": {
+										"x": "434",
+										"y": "266"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 377270370545821,
+									"parameters": {
+										"x": "369",
+										"y": "377"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 306805286727934,
+									"parameters": {
+										"x": "436",
+										"y": "489"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 446661609155427,
+									"parameters": {
+										"x": "792",
+										"y": "442"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 679242244697529,
+									"parameters": {
+										"x": "780",
+										"y": "368"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPega",
+									"sid": 468657509359065,
+									"parameters": {
+										"x": "472",
+										"y": "490"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SombraPegaPega",
+									"sid": 199804791009817,
+									"parameters": {
+										"x": "602",
+										"y": "372"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+									"sid": 123362773920744,
+									"parameters": {
+										"x": "602.007555",
+										"y": "400.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+									"sid": 397956572809569,
+									"parameters": {
+										"x": "602.007555",
+										"y": "372.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPegaColisao",
+									"sid": 802007826350012,
+									"parameters": {
+										"x": "622.007555",
+										"y": "380.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPegaColisao",
+									"sid": 773074123955225,
+									"parameters": {
+										"x": "662.007535",
+										"y": "399.924924"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPegaColisao",
+									"sid": 485320356374103,
+									"parameters": {
+										"x": "662.012108",
+										"y": "384.008269"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPegaColisao",
+									"sid": 958136330128169,
+									"parameters": {
+										"x": "634.000371",
+										"y": "387.994799"
+									}
+								}
+							],
+							"sid": 712548046995450
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "forno"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 214167197306708,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 715579916064650,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SombraPegaPega",
+							"sid": 403902677084717,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPega",
+							"sid": 732223181765469,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BasePegaPegaColisao",
+							"sid": 525524598517105,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPegaColisao",
+							"sid": 389814695865782,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 761003468587910,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPegaColisao",
+							"sid": 837834877694609,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 171187381484483,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPega",
+							"sid": 917448263270780,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MolaPegaPegaColisao",
+							"sid": 987655255611666,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 600068538751732,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+							"sid": 587217341112594,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 117753403392281,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+							"sid": 389392209757378,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "BasePegaPega",
+							"sid": 904391506904856,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"sid": 569228441038962,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "EmpunhadoraCimaPegaPega",
+							"sid": 811000401761769,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraBaixoPegaPega",
+							"sid": 278961491938307,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GarraCimaPegaPega",
+							"sid": 168945576355698,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "MolaPegaPega",
+							"sid": 151619574054246,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						}
+					],
+					"sid": 601482991105384,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 219683237937195
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "CortaPaoSombra",
+									"sid": 181552767404472,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPaoColisao",
+									"sid": 249033120145845,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPaoColisao",
+									"sid": 649220743019634,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPaoColisao",
+									"sid": 645706608105235,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPaoColisao",
+									"sid": 661689572449671,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPaoColisao",
+									"sid": 667692453898966,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CabecaCortaPao",
+									"sid": 326145340005105,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EsquerdaMeioCortaPao",
+									"sid": 622310894486433,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCortaPao",
+									"sid": 805336557646875,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DireitaMeioCortaPao",
+									"sid": 397710345320870,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoCortaPao",
+									"sid": 332886555796285,
+									"parameters": {
+										"x": "2000",
+										"y": "2000"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Pega Pega"
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPega",
+									"sid": 586903642184570,
+									"parameters": {
+										"x": "434",
+										"y": "266"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 400958055919248,
+									"parameters": {
+										"x": "369",
+										"y": "377"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 318094399466134,
+									"parameters": {
+										"x": "436",
+										"y": "489"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 219972001977756,
+									"parameters": {
+										"x": "792",
+										"y": "442"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 776005436434394,
+									"parameters": {
+										"x": "780",
+										"y": "368"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPega",
+									"sid": 907174536264128,
+									"parameters": {
+										"x": "472",
+										"y": "490"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SombraPegaPega",
+									"sid": 987919587951783,
+									"parameters": {
+										"x": "602",
+										"y": "372"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
+									"sid": 359925262909354,
+									"parameters": {
+										"x": "602.007555",
+										"y": "400.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
+									"sid": 401400980637597,
+									"parameters": {
+										"x": "602.007555",
+										"y": "372.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BasePegaPegaColisao",
+									"sid": 587896093866867,
+									"parameters": {
+										"x": "622.007555",
+										"y": "380.03503"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraBaixoPegaPegaColisao",
+									"sid": 185242299147513,
+									"parameters": {
+										"x": "662.007535",
+										"y": "399.924924"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GarraCimaPegaPegaColisao",
+									"sid": 449319663201748,
+									"parameters": {
+										"x": "662.012108",
+										"y": "384.008269"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "MolaPegaPegaColisao",
+									"sid": 380559279109837,
+									"parameters": {
+										"x": "634.000371",
+										"y": "387.994799"
+									}
+								}
+							],
+							"sid": 946469090580074
+						}
+					]
 				},
 				{
 					"functionName": "AnalisarEnergia",

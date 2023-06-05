@@ -1029,6 +1029,5411 @@
 					"sid": 463360636385239
 				},
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Montagem Quebra-Cabeça Robo 3",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Cabeca2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BasePegaPega",
+											"sid": 403958490904876,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "BasePegaPega",
+											"sid": 896359024883027,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "BasePegaPega",
+											"sid": 689838660423169,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 925849711708153
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BasePegaPega",
+											"sid": 914804345502351,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BasePegaPega",
+											"sid": 904599245050900,
+											"parameters": {
+												"object": "BasePegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "BasePegaPega",
+											"sid": 838232147195600,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "BasePegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 237326400478730,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "BasePegaPega",
+											"sid": 332666784197935,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "BasePegaPega",
+											"sid": 456531514951408,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 555624565332904,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 927028138258726
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BasePegaPega",
+											"sid": 150147868241685,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BasePegaPega",
+											"sid": 111530793117685,
+											"parameters": {
+												"object": "BasePegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "BasePegaPega",
+											"sid": 383648097723379,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 970728203592994
+								}
+							],
+							"sid": 134225949908446
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Mola",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "MolaPegaPega",
+											"sid": 526088256999868,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "MolaPegaPega",
+											"sid": 126189018834137,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "MolaPegaPega",
+											"sid": 601097223510854,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 308291418265949
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "MolaPegaPega",
+											"sid": 850097385563090,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "MolaPegaPega",
+											"sid": 974203141733241,
+											"parameters": {
+												"object": "MolaPegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "MolaPegaPega",
+											"sid": 285516448768776,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "MolaPegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 862149601038107,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "MolaPegaPega",
+											"sid": 210867442748461,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "MolaPegaPega",
+											"sid": 753410425669703,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 585104118274780,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 872532821022254
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "MolaPegaPega",
+											"sid": 636854358094661,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "MolaPegaPega",
+											"sid": 160772698918707,
+											"parameters": {
+												"object": "MolaPegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "MolaPegaPega",
+											"sid": 482991435923404,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 316742600678774
+								}
+							],
+							"sid": 475890137707750
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Empunhadora Baixo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 192747669184129,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 657489476671173,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 959818713132361,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 779277064748353
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 766395714261650,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 447366075956840,
+											"parameters": {
+												"object": "EmpunhadoraBaixoPegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 478157430884715,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "EmpunhadoraBaixoPegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 924917396487103,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 818833811592148,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 388516545200934,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 745414997209415,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 277198422802034
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 892955906416237,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 224623689407835,
+											"parameters": {
+												"object": "EmpunhadoraBaixoPegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 274124439359489,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 922683308805322
+								}
+							],
+							"sid": 103522157600330
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "EmpunhadoraCima",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 993488202874236,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 824500676664876,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 741355422636750,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 755883142362199
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 262364140333372,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 706274724721958,
+											"parameters": {
+												"object": "EmpunhadoraCimaPegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 362850364646106,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "EmpunhadoraCimaPegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 479232575121947,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 347338531297990,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 904190997324195,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 941523006741591,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 786410921940479
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 380764317012773,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 246680270201491,
+											"parameters": {
+												"object": "EmpunhadoraCimaPegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 785258288015027,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 633045095376009
+								}
+							],
+							"sid": 900172242824570
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "GarraCima",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 317768459255118,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 804435268845018,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 820267549101001,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 669933157479488
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 526296235984992,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 457120804633608,
+											"parameters": {
+												"object": "GarraCimaPegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 378070850306039,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "GarraCimaPegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 302472479443899,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 506989571423882,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 194156575233618,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 392506802789264,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 616665454353052
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 205616527794332,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 205311909547327,
+											"parameters": {
+												"object": "GarraCimaPegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 429490349331835,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 915321771452424
+								}
+							],
+							"sid": 681166198348326
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "GarraBaixo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 474610423325587,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 768297115427391,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 844858026513457,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 441227758987297
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 398982213430469,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 766427418367536,
+											"parameters": {
+												"object": "GarraBaixoPegaPegaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 343170529180817,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "GarraBaixoPegaPegaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 899404166805931,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 497338960237620,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 274265720435653,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 994282289825982,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 205507538552259
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 859317842783681,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 284939556232577,
+											"parameters": {
+												"object": "GarraBaixoPegaPegaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 957570041513799,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 413827060998856
+								}
+							],
+							"sid": 848229601903875
+						}
+					],
+					"sid": 533657852273235
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Montagem Quebra-Cabeça Robo 4",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Cabeca3",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaAquecedor",
+											"sid": 989266996874135,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CabecaAquecedor",
+											"sid": 279915573351893,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CabecaAquecedor",
+											"sid": 913086555594057,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 435092019221245
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaAquecedor",
+											"sid": 314801238408440,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaAquecedor",
+											"sid": 668966665413641,
+											"parameters": {
+												"object": "CabecaAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CabecaAquecedor",
+											"sid": 855539123816622,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CabecaAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 918720471171364,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CabecaAquecedor",
+											"sid": 467349083856274,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CabecaAquecedor",
+											"sid": 144748618925455,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 791005378383628,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 804500186683245
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaAquecedor",
+											"sid": 962923977142534,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaAquecedor",
+											"sid": 225050525945494,
+											"parameters": {
+												"object": "CabecaAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CabecaAquecedor",
+											"sid": 611703458068796,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 919630489043322
+								}
+							],
+							"sid": 556300179182170
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "ChamineMaior",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoAquecedor",
+											"sid": 224666023913369,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CanoAquecedor",
+											"sid": 246317482373918,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CanoAquecedor",
+											"sid": 773479535611291,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 217833447737095
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CanoAquecedor",
+											"sid": 558462759191148,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoAquecedor",
+											"sid": 174077757755293,
+											"parameters": {
+												"object": "CanoAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CanoAquecedor",
+											"sid": 945927441831146,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CanoAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 131189902614233,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CanoAquecedor",
+											"sid": 744032593472411,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CanoAquecedor",
+											"sid": 575185648135602,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 864522023552932,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 782570895452164
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CanoAquecedor",
+											"sid": 601718183005694,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoAquecedor",
+											"sid": 748623058433911,
+											"parameters": {
+												"object": "CanoAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CanoAquecedor",
+											"sid": 753675718128685,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 221012843961503
+								}
+							],
+							"sid": 814833989239268
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "ChamineMenor",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 211347198836111,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 799221368462910,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 918083674374372,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 584994319603962
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 202895526201550,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 174631475748452,
+											"parameters": {
+												"object": "Cano2AquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 170844944613663,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "Cano2AquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 672784871697133,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 345535819873901,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 265300159807558,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 200343619524149,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 164471338836725
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 476470894718426,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 160041479477841,
+											"parameters": {
+												"object": "Cano2AquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 647345690059009,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 300626613653192
+								}
+							],
+							"sid": 163170102538184
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "BracoDireito",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 754813284199718,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 254771568433644,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 105669430718732,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 218881885042407
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 922121686853372,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 866733511601666,
+											"parameters": {
+												"object": "AquecedorBracoDireitoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 400338568614815,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "AquecedorBracoDireitoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 467055215261999,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 272645575585106,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 369807636024892,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 483699712272902,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 434922998062185
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 101856917238015,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 219494182746079,
+											"parameters": {
+												"object": "AquecedorBracoDireitoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 617322545126195,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 349847299560281
+								}
+							],
+							"sid": 454456439230062
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "BracoEsquerdo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 620676832094684,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 297389744250886,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 394118063848330,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 856157664394340
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 113483503493558,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 903487356289559,
+											"parameters": {
+												"object": "AquecedorBracoEsquerdoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 248633897660780,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "AquecedorBracoEsquerdoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 889383408494474,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 623400250572012,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 509264069081281,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 936723909314969,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 149482548724222
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 142113700580636,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 509805547051940,
+											"parameters": {
+												"object": "AquecedorBracoEsquerdoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 966065434032362,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 148948996790160
+								}
+							],
+							"sid": 649232757338344
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CorpoExteriorDireito",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 812059921829414,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 858640703504834,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 844512605998813,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 793495117095474
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 841422925616496,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 111154158406340,
+											"parameters": {
+												"object": "ExteriorDireitoCimaAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 151543031939889,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "ExteriorDireitoCimaAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 372050273792230,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 306322174994633,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 292825315511159,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 880200291074255,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 864997683894072
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 986381307698227,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 908762862451058,
+											"parameters": {
+												"object": "ExteriorDireitoCimaAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 921394293818521,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 797702064214652
+								}
+							],
+							"sid": 804045390244042
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CorpoExteriorBaixo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 845617065706062,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 200909832781241,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 277606262755206,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 846880309731003
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 136209515833966,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 918420145350010,
+											"parameters": {
+												"object": "ExteriorEsquerdoBaixcAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 154458539588514,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "ExteriorEsquerdoBaixcAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 424472461101543,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 723673805058750,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 276831716777958,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 412223771333289,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 213584239518677
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 683556224708640,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 274715172184934,
+											"parameters": {
+												"object": "ExteriorEsquerdoBaixcAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 858283329538988,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 828796227749931
+								}
+							],
+							"sid": 704775064582558
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CorpoExteriorCima",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 613393648151780,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 569969857993797,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 375814094590065,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 799207200609200
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 728013468014516,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 607594120792702,
+											"parameters": {
+												"object": "EsteriorEsquerdoCimaAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 180512484641799,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "EsteriorEsquerdoCimaAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 470169703067209,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 413961382948405,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 141903473233045,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 666817725334125,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 926856554736366
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 954505188300531,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 912625323316303,
+											"parameters": {
+												"object": "EsteriorEsquerdoCimaAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 801415078796604,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 764914098546357
+								}
+							],
+							"sid": 527233387964657
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "InferiorDireito",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 563150633361663,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 308418409740088,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 216982294261057,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 620296491061386
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 729206907976259,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 514441616454208,
+											"parameters": {
+												"object": "InferiorDireitoAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 356854684390472,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "InferiorDireitoAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 694966907384873,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 973170723721553,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 934920210330894,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 529873511182667,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 712050407567797
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 354280233704004,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 860603306704945,
+											"parameters": {
+												"object": "InferiorDireitoAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 378623505342526,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 968099979452259
+								}
+							],
+							"sid": 447693900119240
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "InferiorEsquerdo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 904903626305810,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 524128212773446,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 168940728222617,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 599049460129580
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 662658264809639,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 152746612877448,
+											"parameters": {
+												"object": "InferiorEsquerdoAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 450119584355840,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "InferiorEsquerdoAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 955674331473046,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 811061765674324,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 103235219824388,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 686968268464415,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 386256901744919
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 894055585241454,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 175822624286148,
+											"parameters": {
+												"object": "InferiorEsquerdoAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 882604335961002,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 999206882343722
+								}
+							],
+							"sid": 396997042599091
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "PeDireito",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 179737474157846,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 356129321008479,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 914601642972703,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 894527324839969
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 852151512369402,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 786066027759210,
+											"parameters": {
+												"object": "PeDireitoAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 215057150520344,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PeDireitoAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 346235998106135,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 496818164413526,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 872967701883038,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 195904239518740,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 529075513488887
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 301425145858240,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 374741964133366,
+											"parameters": {
+												"object": "PeDireitoAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 929957425903170,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 619823541056177
+								}
+							],
+							"sid": 150093928792015
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "PeEsquerdo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 518605631677871,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 765212879350493,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 794024203427267,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 683907159397549
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 466679551823427,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 227804290431298,
+											"parameters": {
+												"object": "PeEsquerdoAquecedorColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 297699713447243,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PeEsquerdoAquecedorColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 619672594662801,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 937502441907324,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 528487920494757,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 739665654753957,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 190641279708441
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 307775363742555,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 480500451635177,
+											"parameters": {
+												"object": "PeEsquerdoAquecedorColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 945374140908886,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 536037319760829
+								}
+							],
+							"sid": 634041971594056
+						}
+					],
+					"sid": 869161533901051
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Montagem Quebra-Cabeça Robo 5",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Engrenagem",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 179099934507938,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 958985332182591,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 519610728000877,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 214066415683470
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 959457294936924,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 415801867952480,
+											"parameters": {
+												"object": "EngrenagemCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 309557895145809,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "EngrenagemCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 614855955635685,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 255910071636005,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 708583164389327,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 271242253878509,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 811913197871717
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 547238770818242,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 509063757841151,
+											"parameters": {
+												"object": "EngrenagemCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 526884923810368,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 304476203593545
+								}
+							],
+							"sid": 213581463668587
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Pescoco2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoCatapulta",
+											"sid": 787200379131153,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CanoCatapulta",
+											"sid": 416028163155392,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CanoCatapulta",
+											"sid": 528802819726876,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 957257497055201
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CanoCatapulta",
+											"sid": 423678431587867,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoCatapulta",
+											"sid": 406742572050799,
+											"parameters": {
+												"object": "CanoCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CanoCatapulta",
+											"sid": 406817759646966,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CanoCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 992486125618127,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CanoCatapulta",
+											"sid": 579246178158103,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CanoCatapulta",
+											"sid": 350375077238311,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 858665526109622,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 179056074848946
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CanoCatapulta",
+											"sid": 429199512202656,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CanoCatapulta",
+											"sid": 733401558908729,
+											"parameters": {
+												"object": "CanoCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CanoCatapulta",
+											"sid": 186894825429878,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 144352242864249
+								}
+							],
+							"sid": 193125941665719
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Braco",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BracoCatapulta",
+											"sid": 521270699707954,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "BracoCatapulta",
+											"sid": 603513737081771,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "BracoCatapulta",
+											"sid": 900946653013637,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 342630741264457
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BracoCatapulta",
+											"sid": 676223474184651,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BracoCatapulta",
+											"sid": 924798010911730,
+											"parameters": {
+												"object": "BracoCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "BracoCatapulta",
+											"sid": 672161708003142,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "BracoCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 765795859851359,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "BracoCatapulta",
+											"sid": 251012318809736,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "BracoCatapulta",
+											"sid": 812277733286436,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 211402227698226,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 268960154100030
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BracoCatapulta",
+											"sid": 977186913763321,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BracoCatapulta",
+											"sid": 100200895291754,
+											"parameters": {
+												"object": "BracoCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "BracoCatapulta",
+											"sid": 279259699857269,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 647513986654205
+								}
+							],
+							"sid": 852640189672940
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "corpo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCatapulta",
+											"sid": 617370328285835,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "BaseCatapulta",
+											"sid": 451492278686258,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "BaseCatapulta",
+											"sid": 458087136065228,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 117963104581713
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BaseCatapulta",
+											"sid": 618975804331953,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCatapulta",
+											"sid": 963387301653910,
+											"parameters": {
+												"object": "BaseCatapultacolisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "BaseCatapulta",
+											"sid": 889300928834578,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "BaseCatapultacolisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 802633887895345,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "BaseCatapulta",
+											"sid": 104276597842505,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "BaseCatapulta",
+											"sid": 432279008517684,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 591742954207428,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 223932897669162
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "BaseCatapulta",
+											"sid": 732414241160650,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BaseCatapulta",
+											"sid": 269781973204516,
+											"parameters": {
+												"object": "BaseCatapultacolisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "BaseCatapulta",
+											"sid": 917639075291905,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 565457260822254
+								}
+							],
+							"sid": 952423910114094
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "prendendor",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 774278024257000,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 273512682697428,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 267183694230071,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 257304436014363
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 187353582486870,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 461006366855906,
+											"parameters": {
+												"object": "PrendedorCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 942456588583121,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PrendedorCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 590262674368662,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 519200451776257,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 881564404599599,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 198080098334388,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 962259159041325
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 293591581424083,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 356783861126262,
+											"parameters": {
+												"object": "PrendedorCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 222839382935793,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 103530275745883
+								}
+							],
+							"sid": 430173046574922
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "roda",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "RodaCatapulta",
+											"sid": 549821956891310,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "RodaCatapulta",
+											"sid": 525207897527041,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "RodaCatapulta",
+											"sid": 878468799610535,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 284576927367410
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "RodaCatapulta",
+											"sid": 781049782156257,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "RodaCatapulta",
+											"sid": 172632457711700,
+											"parameters": {
+												"object": "RodaCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "RodaCatapulta",
+											"sid": 760768404521846,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "RodaCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 610365000532214,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "RodaCatapulta",
+											"sid": 536341953863648,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "RodaCatapulta",
+											"sid": 498453677846047,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 205242457769424,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 453395715145175
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "RodaCatapulta",
+											"sid": 194198589847688,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "RodaCatapulta",
+											"sid": 247986623026670,
+											"parameters": {
+												"object": "RodaCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "RodaCatapulta",
+											"sid": 349604613993939,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 281355906363221
+								}
+							],
+							"sid": 791408817759291
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "parafusos",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 518872293917207,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 334979063677035,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 973112104669595,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 623619570540554
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 909356683252890,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 572587311320113,
+											"parameters": {
+												"object": "ParafusosCatapultaColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 695781013391540,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "ParafusosCatapultaColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 406275376408381,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 349044833851420,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 336340795865558,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 788260114201105,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 606092091847479
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 651847292966243,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 587477913854554,
+											"parameters": {
+												"object": "ParafusosCatapultaColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 132882998438014,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 405890374515794
+								}
+							],
+							"sid": 572411302503604
+						}
+					],
+					"sid": 182028185291686
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Montagem Quebra-Cabeça Robo 6",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Cabeca4",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaForno",
+											"sid": 603176621043184,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CabecaForno",
+											"sid": 718886734026596,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CabecaForno",
+											"sid": 787498559040341,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 504052064613974
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaForno",
+											"sid": 575084726586160,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaForno",
+											"sid": 419597642262193,
+											"parameters": {
+												"object": "CabecaFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CabecaForno",
+											"sid": 165702419366929,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CabecaFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 472369272842216,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CabecaForno",
+											"sid": 572300704615839,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CabecaForno",
+											"sid": 645038245175881,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 770757899877423,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 431797371684557
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CabecaForno",
+											"sid": 816294549080207,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CabecaForno",
+											"sid": 837672787255271,
+											"parameters": {
+												"object": "CabecaFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CabecaForno",
+											"sid": 513321119524650,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 110904742736923
+								}
+							],
+							"sid": 660599844876888
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CabecaChamine",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 390601434649594,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 538809481561951,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 620563173943027,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 773342548746774
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 943895884788934,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 194210588114380,
+											"parameters": {
+												"object": "DetalheCabeca2FornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 180450462232117,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "DetalheCabeca2FornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 432093817890563,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 822667439822035,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 411452464228256,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 572310029618722,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 746681499597358
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 239650965735390,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 393725102924209,
+											"parameters": {
+												"object": "DetalheCabeca2FornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 280249737275383,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 944343712508611
+								}
+							],
+							"sid": 379097378629299
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CanoChamine",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 508348810315389,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 908785269552595,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 633268030115045,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 461006647449062
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 321123249790170,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 213356431626169,
+											"parameters": {
+												"object": "DetalheCabeca1FornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 884950044107038,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "DetalheCabeca1FornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 934801531430639,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 554758311434992,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 756695285888951,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 881974510259498,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 339793021839467
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 204206899028225,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 740203550058073,
+											"parameters": {
+												"object": "DetalheCabeca1FornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 933514880533164,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 449527507681856
+								}
+							],
+							"sid": 451694284064209
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "BracoDireito2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 873965990800967,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 983567948473530,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 630013800596704,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 724174976221940
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 458475456847432,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 782044196304873,
+											"parameters": {
+												"object": "OmbroDireitoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 360821543969285,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "OmbroDireitoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 644926045478512,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 848357423424600,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 957884794058339,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 475280101408489,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 942878350486318
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 418807242131732,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 327771235003618,
+											"parameters": {
+												"object": "OmbroDireitoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 172778277461968,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 557579268769278
+								}
+							],
+							"sid": 804432290346029
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "BracoEsquerdo2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 994801900819446,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 270181851105223,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 107848825140272,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 587061726096089
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 857279985058004,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 213610776173239,
+											"parameters": {
+												"object": "OmbroEsquerdoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 966709771319414,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "OmbroEsquerdoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 242984670926488,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 405460415678070,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 746275118198977,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 294933923486191,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 975298863145621
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 601287467702484,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 249448616075043,
+											"parameters": {
+												"object": "OmbroEsquerdoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 476149881085497,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 812153563158573
+								}
+							],
+							"sid": 774299371320379
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CorpoExteriorDireito2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 465893869430827,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 211955863247032,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 340307834797040,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 937689539061168
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 769620741069604,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 264860359320262,
+											"parameters": {
+												"object": "CorpoInferiorDireitoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 588091959050348,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CorpoInferiorDireitoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 971069641606505,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 180699147698175,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 321152852131579,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 329906641104885,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 558285392402195
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 911862898301842,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 291833337546334,
+											"parameters": {
+												"object": "CorpoInferiorDireitoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 190489583181860,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 199497451535496
+								}
+							],
+							"sid": 286307287015335
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "CorpoExteriorEsquerdo",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 733081827384207,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 732269615424771,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 992536753966065,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 552466413266622
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 692192280768389,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 811874924338472,
+											"parameters": {
+												"object": "CorpoInferiorEsquerdoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 957434549318735,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "CorpoInferiorEsquerdoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 191955250230644,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 262778814442862,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 590858928109483,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 909130743842330,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 670349745487825
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 904174166753791,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 390493454049937,
+											"parameters": {
+												"object": "CorpoInferiorEsquerdoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 210665000581098,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 784550770301902
+								}
+							],
+							"sid": 883026472875950
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "InferiorDireito2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeDireitaForno",
+											"sid": 502126535781536,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "GradeDireitaForno",
+											"sid": 967512522528486,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "GradeDireitaForno",
+											"sid": 874152400483743,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 230313254114220
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GradeDireitaForno",
+											"sid": 188358359520530,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeDireitaForno",
+											"sid": 933454110857464,
+											"parameters": {
+												"object": "GradeDireitaFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "GradeDireitaForno",
+											"sid": 964594557284441,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "GradeDireitaFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 636055630441280,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "GradeDireitaForno",
+											"sid": 127507542420507,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "GradeDireitaForno",
+											"sid": 531037371559595,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 407189263356983,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 586609371600137
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GradeDireitaForno",
+											"sid": 517012754412819,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeDireitaForno",
+											"sid": 736880568645826,
+											"parameters": {
+												"object": "GradeDireitaFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "GradeDireitaForno",
+											"sid": 849462366988368,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 199047705089018
+								}
+							],
+							"sid": 288400361739990
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "InferiorEsquerdo2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 278800849124448,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 105709571450536,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 370793010862585,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 324502254836042
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 121615694103074,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 389468649746365,
+											"parameters": {
+												"object": "GradeEsquerdaFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 672907802294062,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "GradeEsquerdaFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 181256238819421,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 512237980273290,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 219688104314950,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 629551015977731,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 654795355288728
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 357092701724426,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 466831970542842,
+											"parameters": {
+												"object": "GradeEsquerdaFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 118667490018683,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 646901588996606
+								}
+							],
+							"sid": 179348162797193
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "PeDireito2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoForno",
+											"sid": 773834712204451,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PeDireitoForno",
+											"sid": 333281869804957,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PeDireitoForno",
+											"sid": 869377824682192,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 286766682764499
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeDireitoForno",
+											"sid": 222848837626765,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoForno",
+											"sid": 653411213939000,
+											"parameters": {
+												"object": "PeDireitoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PeDireitoForno",
+											"sid": 310928603261213,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PeDireitoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 887005303861603,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PeDireitoForno",
+											"sid": 309044545456806,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PeDireitoForno",
+											"sid": 823089435438779,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 506811745766441,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 576579298308543
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeDireitoForno",
+											"sid": 524887851056472,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeDireitoForno",
+											"sid": 594066083266750,
+											"parameters": {
+												"object": "PeDireitoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PeDireitoForno",
+											"sid": 633444379454853,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 978235685382997
+								}
+							],
+							"sid": 947289672509471
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "PeEsquerdo2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 935708102347645,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 215506209060107,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 878557364725622,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 656103553117870
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 883099689407965,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 797896892032722,
+											"parameters": {
+												"object": "PeEsquerdoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 938573639557681,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PeEsquerdoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 829568736919165,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 627977708467271,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 202720638448358,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 214783311302252,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 605220127108021
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 347409231439966,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 419452408469479,
+											"parameters": {
+												"object": "PeEsquerdoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 596691548876693,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 773656474418740
+								}
+							],
+							"sid": 145247610040882
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "boquinha",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoForno",
+											"sid": 775138270744619,
+											"parameters": {
+												"object": "QuebraCabecaSombras"
+											}
+										},
+										{
+											"id": "isdragging0",
+											"objectClass": "PescocoForno",
+											"sid": 198558297862101,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-scale",
+											"objectClass": "PescocoForno",
+											"sid": 737262500062455,
+											"parameters": {
+												"scale": ".9"
+											}
+										}
+									],
+									"sid": 176164870830186
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PescocoForno",
+											"sid": 494327842759391,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoForno",
+											"sid": 591380489625143,
+											"parameters": {
+												"object": "PescocoFornoColisao"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "PescocoForno",
+											"sid": 412826094714208,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "PescocoFornoColisao",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 170358026570685,
+											"parameters": {
+												"variable": "pecasQuebraCabecaAdicionadas",
+												"value": "1"
+											}
+										},
+										{
+											"id": "move-to-layer",
+											"objectClass": "PescocoForno",
+											"sid": 563165252478957,
+											"parameters": {
+												"layer": "\"desativaInteracao\""
+											}
+										},
+										{
+											"id": "setenabled0",
+											"objectClass": "PescocoForno",
+											"sid": 521252975709635,
+											"behaviorType": "BoundedDragDrop",
+											"parameters": {
+												"state2": "disabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 234374513229769,
+											"parameters": {
+												"audio-file": "ColocarDrag",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 357731426981489
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ondrop2",
+											"objectClass": "PescocoForno",
+											"sid": 192282130218694,
+											"behaviorType": "BoundedDragDrop"
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "PescocoForno",
+											"sid": 315610033181091,
+											"parameters": {
+												"object": "PescocoFornoColisao"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-position",
+											"objectClass": "PescocoForno",
+											"sid": 667949397550727,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "pecaPosicaoXOriginal",
+												"y": "pecaPosicaoYOriginal",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 978702420833485
+								}
+							],
+							"sid": 838792383509746
+						}
+					],
+					"sid": 102077269499103
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -1277,6 +6682,15 @@
 										"group-name": "\"Montagem Quebra-Cabeça\"",
 										"state": "activated"
 									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 250948242532316,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
+										"state": "activated"
+									}
 								}
 							],
 							"sid": 457257057128780
@@ -1311,6 +6725,15 @@
 									"sid": 235995891395574,
 									"parameters": {
 										"group-name": "\"Montagem Quebra-Cabeça\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 984736428166713,
+									"parameters": {
+										"group-name": "\"Montagem Quebra-Cabeça Robo 3\"",
 										"state": "deactivated"
 									}
 								},

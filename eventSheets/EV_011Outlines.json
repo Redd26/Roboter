@@ -940,6 +940,1966 @@
 						}
 					],
 					"sid": 482686123828107
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "QuebraCabeca",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 304997292179027,
+									"parameters": {
+										"object": "BasePegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BasePegaPega",
+									"sid": 451061923501667,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 108209961086529
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 464692007772801,
+									"parameters": {
+										"object": "BasePegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BasePegaPega",
+									"sid": 339702924980702,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 292648204122917
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 571486663440891,
+									"parameters": {
+										"object": "GarraBaixoPegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 284575058431618,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 474734581091996
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 934362741145592,
+									"parameters": {
+										"object": "GarraBaixoPegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GarraBaixoPegaPega",
+									"sid": 213600488821780,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 365953816630695
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 218633435504516,
+									"parameters": {
+										"object": "GarraCimaPegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 149597940248796,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 587512379691785
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 320087270718770,
+									"parameters": {
+										"object": "GarraCimaPegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GarraCimaPegaPega",
+									"sid": 971613822350324,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 378817617863773
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 615648560237443,
+									"parameters": {
+										"object": "MolaPegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "MolaPegaPega",
+									"sid": 303192334646627,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 319250096965773
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 648446173301615,
+									"parameters": {
+										"object": "MolaPegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "MolaPegaPega",
+									"sid": 984974543987367,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 327544650300655
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 171541169960968,
+									"parameters": {
+										"object": "EmpunhadoraBaixoPegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 509780589764935,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 635903951549916
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 884499797290863,
+									"parameters": {
+										"object": "EmpunhadoraBaixoPegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EmpunhadoraBaixoPegaPega",
+									"sid": 628138028637904,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 830313159556523
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 524827662863171,
+									"parameters": {
+										"object": "EmpunhadoraCimaPegaPega"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 718707315830500,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 325922128284798
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 713427614258079,
+									"parameters": {
+										"object": "EmpunhadoraCimaPegaPega"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EmpunhadoraCimaPegaPega",
+									"sid": 870423838214248,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 239953916704681
+						},
+						{
+							"eventType": "comment",
+							"text": "Aquecedor"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 853847330054516,
+									"parameters": {
+										"object": "AquecedorBracoDireito"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "AquecedorBracoDireito",
+									"sid": 414531762277065,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 523952566262965
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 113534511621437,
+									"parameters": {
+										"object": "AquecedorBracoDireito"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "AquecedorBracoDireito",
+									"sid": 993688278916070,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 152658282530378
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 934561282033623,
+									"parameters": {
+										"object": "AquecedorBracoEsquerdo"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "AquecedorBracoEsquerdo",
+									"sid": 952290176938818,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 433700582233933
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 260568172601531,
+									"parameters": {
+										"object": "AquecedorBracoEsquerdo"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "AquecedorBracoEsquerdo",
+									"sid": 623396809771033,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 463737551737763
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 538553925272548,
+									"parameters": {
+										"object": "CabecaAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CabecaAquecedor",
+									"sid": 574559201142711,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 568575211823383
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 984905012742237,
+									"parameters": {
+										"object": "CabecaAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CabecaAquecedor",
+									"sid": 575642260607407,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 577657932030645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 229002392846663,
+									"parameters": {
+										"object": "Cano2Aquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "Cano2Aquecedor",
+									"sid": 550069872198059,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 892751209023086
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 886278274108414,
+									"parameters": {
+										"object": "Cano2Aquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "Cano2Aquecedor",
+									"sid": 582687218073916,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 398017241008622
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 326904223273647,
+									"parameters": {
+										"object": "CanoAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CanoAquecedor",
+									"sid": 530535967927170,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 201623495069848
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 269428835743939,
+									"parameters": {
+										"object": "CanoAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CanoAquecedor",
+									"sid": 112390921444709,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 845115734912232
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 958929241736565,
+									"parameters": {
+										"object": "EsteriorEsquerdoCimaAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EsteriorEsquerdoCimaAquecedor",
+									"sid": 189265255480086,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 364881457333393
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 942657795187220,
+									"parameters": {
+										"object": "EsteriorEsquerdoCimaAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EsteriorEsquerdoCimaAquecedor",
+									"sid": 745841598312469,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 705369613491985
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 414143499981585,
+									"parameters": {
+										"object": "ExteriorDireitoCimaAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ExteriorDireitoCimaAquecedor",
+									"sid": 705149890382932,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 322016200825401
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 490979675902871,
+									"parameters": {
+										"object": "ExteriorDireitoCimaAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ExteriorDireitoCimaAquecedor",
+									"sid": 731983943671439,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 286024107721505
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 321880053109092,
+									"parameters": {
+										"object": "ExteriorEsquerdoBaixcAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+									"sid": 332421720311533,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 608985968281971
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 528424083454135,
+									"parameters": {
+										"object": "ExteriorEsquerdoBaixcAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+									"sid": 310627143426889,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 866406188684913
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 147005898265956,
+									"parameters": {
+										"object": "InferiorDireitoAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "InferiorDireitoAquecedor",
+									"sid": 193508208795966,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 792762503852381
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 818705088109402,
+									"parameters": {
+										"object": "InferiorDireitoAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "InferiorDireitoAquecedor",
+									"sid": 932091274984173,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 307667531165715
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 906646814958337,
+									"parameters": {
+										"object": "InferiorEsquerdoAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "InferiorEsquerdoAquecedor",
+									"sid": 200735929303169,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 399225494329426
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 981805620386270,
+									"parameters": {
+										"object": "InferiorEsquerdoAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "InferiorEsquerdoAquecedor",
+									"sid": 812606733056326,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 429463617360129
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 658228437923256,
+									"parameters": {
+										"object": "PeDireitoAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeDireitoAquecedor",
+									"sid": 454122897766532,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 865223301559262
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 574093046227360,
+									"parameters": {
+										"object": "PeDireitoAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeDireitoAquecedor",
+									"sid": 993800392289450,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 142602618685626
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 711112922317116,
+									"parameters": {
+										"object": "PeEsquerdoAquecedor"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeEsquerdoAquecedor",
+									"sid": 592684765584317,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 467112294815460
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 564620184387407,
+									"parameters": {
+										"object": "PeEsquerdoAquecedor"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeEsquerdoAquecedor",
+									"sid": 750701929091554,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 300877641465771
+						},
+						{
+							"eventType": "comment",
+							"text": "Catapulta"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 162576042114336,
+									"parameters": {
+										"object": "BaseCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BaseCatapulta",
+									"sid": 606136500732155,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 443149161990856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 936881133335719,
+									"parameters": {
+										"object": "BaseCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BaseCatapulta",
+									"sid": 981812989961060,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 114902777411795
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 797517441741211,
+									"parameters": {
+										"object": "BracoCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BracoCatapulta",
+									"sid": 592874576196776,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 982681471635633
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 462451132208015,
+									"parameters": {
+										"object": "BracoCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BracoCatapulta",
+									"sid": 669772847110283,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 164564575660891
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 955340248308580,
+									"parameters": {
+										"object": "CanoCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CanoCatapulta",
+									"sid": 671199774781318,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 241463641516068
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 830323471204407,
+									"parameters": {
+										"object": "CanoCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CanoCatapulta",
+									"sid": 882169846502065,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 291400854157604
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 833310742827074,
+									"parameters": {
+										"object": "EngrenagemCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EngrenagemCatapulta",
+									"sid": 427947672594438,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 145112083007423
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 688617332682165,
+									"parameters": {
+										"object": "EngrenagemCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "EngrenagemCatapulta",
+									"sid": 844868772507678,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 628336454825856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 636457836392287,
+									"parameters": {
+										"object": "ParafusosCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ParafusosCatapulta",
+									"sid": 337540713894362,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 638139251045813
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 363520362471524,
+									"parameters": {
+										"object": "ParafusosCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "ParafusosCatapulta",
+									"sid": 764734394886325,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 898952050726554
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 126969861789272,
+									"parameters": {
+										"object": "PrendedorCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PrendedorCatapulta",
+									"sid": 274557754861766,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 836454712474764
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 789803461124458,
+									"parameters": {
+										"object": "PrendedorCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PrendedorCatapulta",
+									"sid": 355210976256359,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 563222243032155
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 273797576624193,
+									"parameters": {
+										"object": "RodaCatapulta"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "RodaCatapulta",
+									"sid": 761135170267263,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 165198867153272
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 468412410266901,
+									"parameters": {
+										"object": "RodaCatapulta"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "RodaCatapulta",
+									"sid": 228272894994641,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 171619221632641
+						},
+						{
+							"eventType": "comment",
+							"text": "Forno"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 922471121311557,
+									"parameters": {
+										"object": "CabecaForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CabecaForno",
+									"sid": 765777273157796,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 612945268883148
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 166343721501933,
+									"parameters": {
+										"object": "CabecaForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CabecaForno",
+									"sid": 976965553297958,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 423927072440659
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 110619301237231,
+									"parameters": {
+										"object": "CorpoInferiorEsquerdoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorEsquerdoForno",
+									"sid": 128506150514563,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 826383747570129
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 181809930297561,
+									"parameters": {
+										"object": "CorpoInferiorEsquerdoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorEsquerdoForno",
+									"sid": 738151441150133,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 499858771036671
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 597498500343461,
+									"parameters": {
+										"object": "CorpoInferiorFornoDireito"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorFornoDireito",
+									"sid": 194293700255312,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 142648361367827
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 692045624806651,
+									"parameters": {
+										"object": "CorpoInferiorFornoDireito"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorFornoDireito",
+									"sid": 841749635981316,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 516107178723931
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 226444521823252,
+									"parameters": {
+										"object": "CorpoInferiorEsquerdoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorEsquerdoForno",
+									"sid": 646442817100122,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 214355857427806
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 106645926845132,
+									"parameters": {
+										"object": "CorpoInferiorEsquerdoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "CorpoInferiorEsquerdoForno",
+									"sid": 781248255200404,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 485119020147489
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 210835986218572,
+									"parameters": {
+										"object": "DetalheCabeca1Forno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "DetalheCabeca1Forno",
+									"sid": 420850022596474,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 670399334835478
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 710563037741868,
+									"parameters": {
+										"object": "DetalheCabeca1Forno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "DetalheCabeca1Forno",
+									"sid": 281873992671511,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 105978386828907
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 716808368702063,
+									"parameters": {
+										"object": "DetalheCabeca2Forno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "DetalheCabeca2Forno",
+									"sid": 297985137286785,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 846470496633759
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 363873601892295,
+									"parameters": {
+										"object": "DetalheCabeca2Forno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "DetalheCabeca2Forno",
+									"sid": 864412637562425,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 890285092558205
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 787952951739136,
+									"parameters": {
+										"object": "GradeDireitaForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GradeDireitaForno",
+									"sid": 844143780388231,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 566718653532133
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 434082243630721,
+									"parameters": {
+										"object": "GradeDireitaForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GradeDireitaForno",
+									"sid": 677787255418358,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 740494104132749
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 769081523998864,
+									"parameters": {
+										"object": "GradeEsquerdaForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GradeEsquerdaForno",
+									"sid": 259069233677221,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 990342966802241
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 718878234355981,
+									"parameters": {
+										"object": "GradeEsquerdaForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "GradeEsquerdaForno",
+									"sid": 592625522451274,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 430279382883169
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 359994105827533,
+									"parameters": {
+										"object": "OmbroDireitoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "OmbroDireitoForno",
+									"sid": 335072775562219,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 417935010015630
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 418387427010915,
+									"parameters": {
+										"object": "OmbroDireitoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "OmbroDireitoForno",
+									"sid": 127463759542451,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 608216162261152
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 518309313794515,
+									"parameters": {
+										"object": "OmbroEsquerdoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "OmbroEsquerdoForno",
+									"sid": 671583794551464,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 867165338180306
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 786267151910795,
+									"parameters": {
+										"object": "OmbroEsquerdoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "OmbroEsquerdoForno",
+									"sid": 797400390645223,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 335301794446347
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 539937942604120,
+									"parameters": {
+										"object": "PescocoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PescocoForno",
+									"sid": 370502387465948,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 244397391692433
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 292763012480755,
+									"parameters": {
+										"object": "PescocoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PescocoForno",
+									"sid": 793372049294219,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 584537457059207
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 701902240616509,
+									"parameters": {
+										"object": "PeDireitoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeDireitoForno",
+									"sid": 400439476647990,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 146105312836531
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 578386093668396,
+									"parameters": {
+										"object": "PeDireitoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeDireitoForno",
+									"sid": 938904104083709,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 459025486770335
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 171688108674144,
+									"parameters": {
+										"object": "PeEsquerdoForno"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeEsquerdoForno",
+									"sid": 386961406687509,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 249513989231451
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 535772741096045,
+									"parameters": {
+										"object": "PeEsquerdoForno"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "PeEsquerdoForno",
+									"sid": 801871963139228,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								}
+							],
+							"sid": 132784859739430
+						}
+					],
+					"sid": 712923802396601
 				}
 			],
 			"sid": 515600360412289

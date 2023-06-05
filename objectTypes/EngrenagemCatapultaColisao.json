@@ -1,0 +1,65 @@
+{
+	"name": "EngrenagemCatapultaColisao",
+	"plugin-id": "Sprite",
+	"sid": 722485187072352,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2245552,
+						"collisionPoly": {
+							"points": [
+								0.42,
+								0.01851851851851865,
+								0.5800000000000002,
+								0.01851851851851865,
+								0.82,
+								0.09259259259259259,
+								0.98,
+								0.24074074074074073,
+								0.98,
+								0.7592592592592593,
+								0.82,
+								0.9074074074074074,
+								0.5800000000000002,
+								0.9814814814814815,
+								0.42,
+								0.9814814814814815,
+								0.18,
+								0.9074074074074074,
+								0.02000000000000007,
+								0.7592592592592593,
+								0.02000000000000007,
+								0.24074074074074073,
+								0.18,
+								0.09259259259259259
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 240620156213738,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

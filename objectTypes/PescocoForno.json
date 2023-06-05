@@ -1,0 +1,60 @@
+{
+	"name": "PescocoForno",
+	"plugin-id": "Sprite",
+	"sid": 524753903202695,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 699844436296775
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8367083,
+						"collisionPoly": {
+							"points": [
+								0.016129032258064516,
+								0.05555555555555555,
+								0.9838709677419355,
+								0.05555555555555555,
+								0.9193548387096774,
+								0.9444444444444444,
+								0.016129032258064516,
+								0.7222222222222214
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 622349770617002,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

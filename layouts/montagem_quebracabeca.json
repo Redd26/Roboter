@@ -82,8 +82,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 640,
-						"y": 360,
+						"x": 1828,
+						"y": 25,
 						"width": 132,
 						"height": 164,
 						"originX": 0.5,
@@ -369,10 +369,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1197,
-						"y": -172,
+						"x": 549,
+						"y": -111,
 						"width": 94,
-						"height": 62,
+						"height": 61.99999999999999,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -398,8 +398,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1257,
-						"y": -160,
+						"x": 727,
+						"y": -157,
 						"width": 34,
 						"height": 18,
 						"originX": 0,
@@ -427,8 +427,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1257,
-						"y": -144,
+						"x": 727,
+						"y": -141,
 						"width": 34,
 						"height": 22,
 						"originX": 0,
@@ -456,9 +456,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1233,
-						"y": -156,
-						"width": 26,
+						"x": 581,
+						"y": -95,
+						"width": 30,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -485,8 +485,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1217,
-						"y": -164,
+						"x": 687,
+						"y": -161,
 						"width": 18,
 						"height": 46,
 						"originX": 0,
@@ -514,8 +514,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1197,
-						"y": -172,
+						"x": 667,
+						"y": -169,
 						"width": 22,
 						"height": 34,
 						"originX": 0,
@@ -543,8 +543,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1197,
-						"y": -144,
+						"x": 667,
+						"y": -141,
 						"width": 22,
 						"height": 34,
 						"originX": 0,
@@ -553,6 +553,3656 @@
 							0.01568627450980392,
 							0,
 							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SombraAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 256,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 436,
+						"y": 329,
+						"width": 202,
+						"height": 110,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AquecedorBracoEsquerdoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 257,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 426,
+						"y": 373,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AquecedorBracoDireitoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 595,
+						"y": 374,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CanoAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 259,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 491,
+						"y": 330,
+						"width": 18,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Cano2AquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 260,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 511,
+						"y": 342,
+						"width": 18,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CabecaAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 261,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 535,
+						"y": 338,
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeEsquerdoAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 262,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 499,
+						"y": 418,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeDireitoAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 263,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 543,
+						"y": 418,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EsteriorEsquerdoCimaAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 264,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 475,
+						"y": 358,
+						"width": 62,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExteriorEsquerdoBaixcAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 265,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 508,
+						"y": 395,
+						"width": 62,
+						"height": 34,
+						"originX": 0.532258064516129,
+						"originY": 0.2647058823529412,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExteriorDireitoCimaAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 266,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 535,
+						"y": 358,
+						"width": 62,
+						"height": 62,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InferiorEsquerdoAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 267,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 485.2461993437092,
+						"y": 372.4029773720248,
+						"width": 46,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InferiorDireitoAquecedorColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 268,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 529.2382519450812,
+						"y": 372.44660842242814,
+						"width": 54,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AquecedorBracoDireito",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 269,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 239,
+						"y": 369,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AquecedorBracoEsquerdo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 270,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 344,
+						"y": 216,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CabecaAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 271,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 225,
+						"y": 322,
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Cano2Aquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 272,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 317,
+						"y": 342,
+						"width": 18,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CanoAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 273,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 276,
+						"y": 416,
+						"width": 18,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeDireitoAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 274,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 679,
+						"y": 414,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeEsquerdoAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 275,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 283,
+						"y": 290,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InferiorEsquerdoAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 276,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 215,
+						"y": 251,
+						"width": 46,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InferiorDireitoAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 277,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 660,
+						"y": 293,
+						"width": 54,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EsteriorEsquerdoCimaAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 278,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 791,
+						"y": 393,
+						"width": 62,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExteriorEsquerdoBaixcAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 279,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 767,
+						"y": 330,
+						"width": 62,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ExteriorDireitoCimaAquecedor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 280,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 746,
+						"y": 242,
+						"width": 62,
+						"height": 62,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SombraCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 281,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -26,
+						"y": -169,
+						"width": 150,
+						"height": 118,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EngrenagemCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 282,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 187,
+						"y": -253,
+						"width": 50,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RodaCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 283,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 193,
+						"y": -160,
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CanoCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 284,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 267,
+						"y": -210,
+						"width": 18,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BracoCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 285,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 227,
+						"y": -78,
+						"width": 82,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BaseCatapultacolisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 286,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 31,
+						"y": -263,
+						"width": 106,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrendedorCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 287,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -136,
+						"y": -253,
+						"width": 82,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ParafusosCatapultaColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 288,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 134,
+						"y": -35,
+						"width": 66,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ParafusosCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 289,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 209,
+						"y": -289,
+						"width": 74,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BracoCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 290,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 230,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 94,
+						"y": -358,
+						"width": 82,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BaseCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 291,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "enabled",
+								"bound-to": "radius",
+								"bound-by": "origin",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 231,
+						"y": -368,
+						"width": 106,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrendedorCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 292,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": -65,
+						"y": -359,
+						"width": 82,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RodaCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 293,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": -164,
+						"y": -347,
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EngrenagemCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 294,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": -50.183822518522305,
+						"y": -219.952207061724,
+						"width": 50,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CanoCatapulta",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 295,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": -98.1838225185223,
+						"y": -208.952207061724,
+						"width": 18,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SombraForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 296,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 569,
+						"y": -504,
+						"width": 126,
+						"height": 138,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "OmbroEsquerdoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 297,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 569,
+						"y": -452,
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CorpoInferiorEsquerdoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 299,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 577,
+						"y": -444,
+						"width": 58,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CorpoInferiorDireitoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 300,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 633,
+						"y": -444,
+						"width": 54,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeEsquerdoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 301,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 597,
+						"y": -388,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeDireitoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 302,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 633,
+						"y": -388,
+						"width": 30,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CabecaFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 303,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 605,
+						"y": -484,
+						"width": 54,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DetalheCabeca1FornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 304,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 621,
+						"y": -496,
+						"width": 22,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DetalheCabeca2FornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 305,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 617,
+						"y": -504,
+						"width": 30,
+						"height": 14,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "OmbroDireitoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 298,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 665,
+						"y": -452,
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PescocoFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 306,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 693,
+						"y": -557,
+						"width": 62,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GradeEsquerdaFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 307,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 515,
+						"y": -570,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GradeDireitaFornoColisao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 308,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 551,
+						"y": -570,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.01568627450980392,
+							0,
+							0.9607843137254902,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeDireitoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 309,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 746,
+						"y": -439,
+						"width": 30,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PeEsquerdoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 310,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 711,
+						"y": -438,
+						"width": 30,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "OmbroDireitoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 311,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 755,
+						"y": -477,
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "OmbroEsquerdoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 312,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 712,
+						"y": -483,
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CorpoInferiorFornoDireito",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 313,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 750,
+						"y": -403,
+						"width": 54,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CorpoInferiorEsquerdoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 314,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 693,
+						"y": -404,
+						"width": 58,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CabecaForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 315,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 728,
+						"y": -528,
+						"width": 54,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DetalheCabeca1Forno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 316,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 230,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 821,
+						"y": -477,
+						"width": 22,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DetalheCabeca2Forno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 317,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 817,
+						"y": -497,
+						"width": 30,
+						"height": 14,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PescocoForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 318,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 809,
+						"y": -540,
+						"width": 62,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GradeDireitaForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 319,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 871,
+						"y": -479,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GradeEsquerdaForno",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 320,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 842,
+						"y": -438,
+						"width": 42,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MolaPegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 252,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 693.7752019064508,
+						"y": -104.59245952365706,
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GarraBaixoPegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 251,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 677,
+						"y": -73,
+						"width": 34,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BasePegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 253,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 471,
+						"y": -235,
+						"width": 18,
+						"height": 46,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EmpunhadoraBaixoPegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 255,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 482,
+						"y": -119,
+						"width": 26,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GarraCimaPegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 250,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 753,
+						"y": -189,
+						"width": 34,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EmpunhadoraCimaPegaPega",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 254,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundedDragDrop": {
+							"properties": {
+								"axes": "both",
+								"initial-state": "disabled",
+								"bound-to": "position",
+								"bound-by": "edge",
+								"bound-method": "clamp",
+								"bound-xradius": 100,
+								"bound-yradius": 100,
+								"bound-min-x": 40,
+								"bound-max-x": 1055,
+								"bound-min-y": 203,
+								"bound-max-y": 560
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 641,
+						"y": -275,
+						"width": 26,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
 							1
 						],
 						"angle": 0,
@@ -572,8 +4222,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 639.857516877954,
-						"y": 427.84214588670824,
+						"x": 1827,
+						"y": 93,
 						"width": 132,
 						"height": 28,
 						"originX": 0.5,
@@ -601,8 +4251,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 613.1036171742169,
-						"y": 381.5164479358975,
+						"x": 1801,
+						"y": 46,
 						"width": 72,
 						"height": 72,
 						"originX": 0.5,
@@ -630,8 +4280,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 676.6076358744126,
-						"y": 369.9334141218216,
+						"x": 1865,
+						"y": 34,
 						"width": 58,
 						"height": 50,
 						"originX": 0.5,
@@ -659,8 +4309,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 643.7952824827855,
-						"y": 329.39600677091175,
+						"x": 1831,
+						"y": -6,
 						"width": 26.459413465945094,
 						"height": 32.64073954935954,
 						"originX": 0.5,
@@ -688,8 +4338,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 644.2799766102556,
-						"y": 298.2036196294688,
+						"x": 1832,
+						"y": -37,
 						"width": 88,
 						"height": 32,
 						"originX": 0.5,
@@ -702,438 +4352,6 @@
 						],
 						"angle": 0,
 						"zElevation": 1
-					}
-				},
-				{
-					"type": "GarraCimaPegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 250,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1355,
-						"y": -116,
-						"width": 34,
-						"height": 18,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "GarraBaixoPegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 251,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1301,
-						"y": -74,
-						"width": 34,
-						"height": 22,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "MolaPegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 252,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1228,
-						"y": -83,
-						"width": 30,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "EmpunhadoraCimaPegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 254,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1181,
-						"y": -81,
-						"width": 26,
-						"height": 34,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "BasePegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 253,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 560,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1137,
-						"y": -97,
-						"width": 18,
-						"height": 46,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
-					}
-				},
-				{
-					"type": "EmpunhadoraBaixoPegaPega",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 255,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"BoundedDragDrop": {
-							"properties": {
-								"axes": "both",
-								"initial-state": "disabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
-								"bound-method": "clamp",
-								"bound-xradius": 100,
-								"bound-yradius": 100,
-								"bound-min-x": 40,
-								"bound-max-x": 1055,
-								"bound-min-y": 203,
-								"bound-max-y": 560
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 1121,
-						"y": -140,
-						"width": 26,
-						"height": 34,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 2
 					}
 				},
 				{
@@ -1192,8 +4410,8 @@
 						}
 					},
 					"world": {
-						"x": 474.4283142089844,
-						"y": 476.8325500488281,
+						"x": 1662,
+						"y": 142,
 						"width": 130,
 						"height": 26,
 						"originX": 0.5,
@@ -1264,8 +4482,8 @@
 						}
 					},
 					"world": {
-						"x": 407.61788155858005,
-						"y": 364.97035686816565,
+						"x": 1595,
+						"y": 30,
 						"width": 74,
 						"height": 74,
 						"originX": 0.5,
@@ -1336,8 +4554,8 @@
 						}
 					},
 					"world": {
-						"x": 830.813533271705,
-						"y": 429.73792595446616,
+						"x": 2018,
+						"y": 95,
 						"width": 58,
 						"height": 50,
 						"originX": 0.5344827586206896,
@@ -1408,8 +4626,8 @@
 						}
 					},
 					"world": {
-						"x": 472,
-						"y": 254,
+						"x": 1660,
+						"y": -81,
 						"width": 90,
 						"height": 34,
 						"originX": 0.5,
@@ -1480,8 +4698,8 @@
 						}
 					},
 					"world": {
-						"x": 818.3871414154044,
-						"y": 355.62971248353165,
+						"x": 2006,
+						"y": 21,
 						"width": 26,
 						"height": 36,
 						"originX": 0.5,

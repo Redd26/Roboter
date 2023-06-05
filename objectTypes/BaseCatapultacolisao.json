@@ -1,0 +1,57 @@
+{
+	"name": "BaseCatapultacolisao",
+	"plugin-id": "Sprite",
+	"sid": 562443886703387,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9493530,
+						"collisionPoly": {
+							"points": [
+								0.08490566037735849,
+								0.03333333333333333,
+								0.839622641509434,
+								0.03333333333333333,
+								0.9150943396226415,
+								0.16666666666666666,
+								0.9905660377358491,
+								0.43333333333333335,
+								0.9528301886792453,
+								0.9666666666666667,
+								0.08490566037735849,
+								0.9666666666666667,
+								0.009433962264150943,
+								0.7,
+								0.009433962264150943,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 989147671402069,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

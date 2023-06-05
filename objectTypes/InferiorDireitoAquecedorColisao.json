@@ -1,0 +1,53 @@
+{
+	"name": "InferiorDireitoAquecedorColisao",
+	"plugin-id": "Sprite",
+	"sid": 641829904157645,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 54,
+						"height": 38,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6603161,
+						"collisionPoly": {
+							"points": [
+								0.018518518518518517,
+								0.02631578947368421,
+								0.8333333333333334,
+								0.02631578947368421,
+								0.9814814814814815,
+								0.23684210526315788,
+								0.9814814814814815,
+								0.7631578947368421,
+								0.8333333333333334,
+								0.9736842105263158,
+								0.018518518518518517,
+								0.9736842105263158
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 813920187808476,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

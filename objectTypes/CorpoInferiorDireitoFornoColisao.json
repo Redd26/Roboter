@@ -1,0 +1,57 @@
+{
+	"name": "CorpoInferiorDireitoFornoColisao",
+	"plugin-id": "Sprite",
+	"sid": 769648159438763,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 54,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6854564,
+						"collisionPoly": {
+							"points": [
+								0.018518518518518517,
+								0.017241379310344827,
+								0.46296296296296297,
+								0.017241379310344827,
+								0.6111111111111112,
+								0.08620689655172414,
+								0.8333333333333334,
+								0.2931034482758623,
+								0.9074074074074074,
+								0.43103448275862066,
+								0.9814814814814815,
+								0.6379310344827587,
+								0.9814814814814815,
+								0.9827586206896551,
+								0.018518518518518517,
+								0.9827586206896551
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 666596171025405,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

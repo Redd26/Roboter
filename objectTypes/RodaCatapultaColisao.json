@@ -1,0 +1,53 @@
+{
+	"name": "RodaCatapultaColisao",
+	"plugin-id": "Sprite",
+	"sid": 760226602306691,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 22,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3115608,
+						"collisionPoly": {
+							"points": [
+								0.021739130434782608,
+								0.045454545454545456,
+								0.9782608695652174,
+								0.045454545454545456,
+								0.9782608695652174,
+								0.4090909090909091,
+								0.717391304347826,
+								0.9545454545454546,
+								0.2826086956521739,
+								0.9545454545454546,
+								0.021739130434782608,
+								0.4090909090909091
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 834725182555697,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

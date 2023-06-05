@@ -1,0 +1,62 @@
+{
+	"name": "ExteriorEsquerdoBaixcAquecedor",
+	"plugin-id": "Sprite",
+	"sid": 692155316907868,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "CV_BoundedDragnDrop",
+			"name": "BoundedDragDrop",
+			"sid": 870674772875749
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2951524,
+						"collisionPoly": {
+							"points": [
+								0.016129032258064516,
+								0.029411764705882353,
+								0.9838709677419355,
+								0.029411764705882353,
+								0.9838709677419355,
+								0.9705882352941176,
+								0.20967741935483872,
+								0.9705882352941176,
+								0.016129032258064516,
+								0.6176470588235294
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 957141472321033,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
