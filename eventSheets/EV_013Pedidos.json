@@ -236,6 +236,81 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 716586446270317,
+					"parameters": {
+						"animation": "\"Pedido04Carta\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 354772299708287,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 583804394715568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 278605394457673,
+					"parameters": {
+						"animation": "\"Pedido05Carta\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 906999143326983,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 846315799165298
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "TextoCarta",
+					"sid": 197178109779735,
+					"parameters": {
+						"animation": "\"Pedido06Carta\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 247077826247321,
+					"parameters": {
+						"variable": "NumeroCarta",
+						"value": "6"
+					}
+				}
+			],
+			"sid": 720065063101950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 911048412652403,
@@ -488,6 +563,10 @@
 			"sid": 273133212538170
 		},
 		{
+			"eventType": "comment",
+			"text": "Ver"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -720,6 +799,33 @@
 						"variable": "pecasQuebraCabecaAdicionadas",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 875394564978785,
+					"parameters": {
+						"variable": "ContadorDeBrilho",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 857702457378041,
+					"parameters": {
+						"variable": "ChapaAndar",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 235134042613688,
+					"parameters": {
+						"variable": "contadorHitPoints",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 347037047952506,
@@ -745,6 +851,686 @@
 						}
 					],
 					"sid": 676630159477408,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 768582677994462,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 778130515697056,
+					"disabled": true,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 937341155754956,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 156645487805258,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 398430850734107,
+					"parameters": {
+						"variable": "EnergiaCerta",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 294650726510508,
+					"parameters": {
+						"variable": "EnergiaEscolhida",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 103955334825981,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 345847116564393,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 226953453675541,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 604839016788460,
+					"parameters": {
+						"variable": "EnergiaLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 762974763104879,
+					"parameters": {
+						"variable": "ChapaFinalizada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 818489922685506,
+					"parameters": {
+						"variable": "pecasQuebraCabecaAdicionadas",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 813615660530174,
+					"parameters": {
+						"variable": "ContadorDeBrilho",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 776812054954797,
+					"parameters": {
+						"variable": "ChapaAndar",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 305615856938360,
+					"parameters": {
+						"variable": "contadorHitPoints",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 928573172267207,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 848972028470873
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 921221528423924,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 853766886743565,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 759106181859072,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 336626579373098,
+					"disabled": true,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 579699303374362,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 468568851113344,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 586987993056601,
+					"parameters": {
+						"variable": "EnergiaCerta",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 463852828547997,
+					"parameters": {
+						"variable": "EnergiaEscolhida",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 536627403507137,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 735826584115974,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 922956018340067,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 251590284250455,
+					"parameters": {
+						"variable": "EnergiaLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 291026266972511,
+					"parameters": {
+						"variable": "ChapaFinalizada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 808236142483537,
+					"parameters": {
+						"variable": "pecasQuebraCabecaAdicionadas",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 293700268704956,
+					"parameters": {
+						"variable": "ContadorDeBrilho",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 785407774891493,
+					"parameters": {
+						"variable": "ChapaAndar",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 574611256809873,
+					"parameters": {
+						"variable": "contadorHitPoints",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 703048270327768,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 628032485188745
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 382015377649545,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 367566163208605,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 891115321647066,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 314382004954651,
+					"disabled": true,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 819113521072811,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 686732401316509,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 919090125123996,
+					"parameters": {
+						"variable": "EnergiaCerta",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 275444525175014,
+					"parameters": {
+						"variable": "EnergiaEscolhida",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 500561504552172,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 875733799919626,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 932155646092704,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 869229199409830,
+					"parameters": {
+						"variable": "EnergiaLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 380370374247634,
+					"parameters": {
+						"variable": "ChapaFinalizada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 988089379420971,
+					"parameters": {
+						"variable": "pecasQuebraCabecaAdicionadas",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 598475360483189,
+					"parameters": {
+						"variable": "ContadorDeBrilho",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 937772705190973,
+					"parameters": {
+						"variable": "ChapaAndar",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 996837536156281,
+					"parameters": {
+						"variable": "contadorHitPoints",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 599895097034667,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 577151228042977
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 427203090585499,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 148828366688852,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 519584113047576,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 473878011720364,
+					"disabled": true,
+					"parameters": {
+						"variable": "robo",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 907488380630050,
+					"parameters": {
+						"variable": "materialEscolhido",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 701910071401376,
+					"parameters": {
+						"variable": "MaterialCerto",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 555472349539747,
+					"parameters": {
+						"variable": "EnergiaCerta",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 309291606040842,
+					"parameters": {
+						"variable": "EnergiaEscolhida",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 706854474400338,
+					"parameters": {
+						"variable": "PedidoAceito",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 796055147838178,
+					"parameters": {
+						"variable": "PedidoAutorizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 758769246173680,
+					"parameters": {
+						"variable": "PedidoFinalizado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 984462150731212,
+					"parameters": {
+						"variable": "EnergiaLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 115538269575903,
+					"parameters": {
+						"variable": "ChapaFinalizada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 238552458993782,
+					"parameters": {
+						"variable": "pecasQuebraCabecaAdicionadas",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 428261891661805,
+					"parameters": {
+						"variable": "ContadorDeBrilho",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 202851236666416,
+					"parameters": {
+						"variable": "ChapaAndar",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 777294594835575,
+					"parameters": {
+						"variable": "contadorHitPoints",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 419003682508589,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 355300157345053
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ArCondicionadoLoja",
+							"sid": 690423868859311,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 334285007150325,
 					"disabled": true
 				}
 			]
@@ -963,9 +1749,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "TextoCarta",
-							"sid": 858347088562060,
+							"sid": 231634947856972,
 							"parameters": {
-								"animation": "\"Pedido03Carta\"",
+								"animation": "\"Pedido04Carta\"",
 								"from": "beginning"
 							}
 						},
@@ -1008,9 +1794,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "TextoCarta",
-							"sid": 216121664057149,
+							"sid": 867636041073851,
 							"parameters": {
-								"animation": "\"Pedido03Carta\"",
+								"animation": "\"Pedido05Carta\"",
 								"from": "beginning"
 							}
 						},
@@ -1053,9 +1839,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "TextoCarta",
-							"sid": 608861720821251,
+							"sid": 736274532934476,
 							"parameters": {
-								"animation": "\"Pedido03Carta\"",
+								"animation": "\"Pedido06Carta\"",
 								"from": "beginning"
 							}
 						},
@@ -4332,6 +5118,38 @@
 									"parameters": {
 										"visibility": "visible"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoBaixoHitbox",
+									"sid": 223418048222150,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoCimaHitBox",
+									"sid": 796593532964878,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 118571300442932,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoDireitoHitbox",
+									"sid": 151228230490135,
+									"parameters": {
+										"visibility": "invisible"
+									}
 								}
 							],
 							"sid": 677753051829422
@@ -4392,6 +5210,38 @@
 									"sid": 372439741397646,
 									"parameters": {
 										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoBaixoHitbox",
+									"sid": 251003968877565,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoCimaHitBox",
+									"sid": 310847813721230,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 955175657933261,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CaixaLadoDireitoHitbox",
+									"sid": 572479154740441,
+									"parameters": {
+										"visibility": "invisible"
 									}
 								}
 							],
@@ -5383,6 +6233,138 @@
 						}
 					],
 					"sid": 695771193894546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 704920369266458,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 980710338490859,
+							"parameters": {
+								"variable": "PularCarta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 539923431230495,
+							"parameters": {
+								"animation": "\"Pedido04Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 904646840774186,
+							"parameters": {
+								"variable": "PularCarta",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 374451165871156
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 151762801416802,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 543004632912706,
+							"parameters": {
+								"variable": "PularCarta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 714305591139025,
+							"parameters": {
+								"animation": "\"Pedido05Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 417584953365692,
+							"parameters": {
+								"variable": "PularCarta",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 469641285680766
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 114359903475121,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 450347410376029,
+							"parameters": {
+								"variable": "PularCarta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TextoCarta",
+							"sid": 219696947409043,
+							"parameters": {
+								"animation": "\"Pedido06Carta\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 538131013270643,
+							"parameters": {
+								"variable": "PularCarta",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 312093530084360
 				}
 			],
 			"sid": 949722409680873

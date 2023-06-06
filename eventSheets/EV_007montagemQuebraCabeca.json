@@ -8278,6 +8278,26 @@
 									"parameters": {
 										"object": "IconeCarvao"
 									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 171576731672818,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 502072183183644,
+									"parameters": {
+										"variable": "BarraRobotica",
+										"comparison": 0,
+										"value": "2"
+									}
 								}
 							],
 							"actions": [
@@ -8331,6 +8351,26 @@
 										"object": "IconeCarvao"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 961986607587813,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 227235534884752,
+									"parameters": {
+										"variable": "BarraRobotica",
+										"comparison": 0,
+										"value": "2"
+									}
 								}
 							],
 							"actions": [
@@ -8360,12 +8400,24 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 156583683620690,
+									"sid": 545777634564542,
 									"parameters": {
 										"variable": "BarraRobotica",
 										"comparison": 0,
 										"value": "2"
-									}
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 455421223051741,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -8423,12 +8475,24 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 328907522146146,
+									"sid": 630973528793888,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 0,
+										"value": "4"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 123163410551873,
 									"parameters": {
 										"variable": "BarraRobotica",
 										"comparison": 0,
 										"value": "2"
-									}
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [

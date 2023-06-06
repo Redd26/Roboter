@@ -1574,6 +1574,478 @@
 											"eventType": "block",
 											"conditions": [
 												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 390428676130172,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 621267210241182,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 257163105701498,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 225832760735366,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 550072190551645,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 937829633111107,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 551375310028460,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 932396561708352,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 765445913553008
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 593346574528342,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 616530784922162,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 384357545588031,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 651095156693444
+												}
+											],
+											"sid": 657502478018627
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 928632726663681,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 942249422886606,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 946959176876205,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 642379248923987,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 498368255588686,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 435122155793840,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 792716653398120,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 347617887346853,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 440966417665037
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 482970022794522,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 998733427128643,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 605887181493384,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 518899593223222
+												}
+											],
+											"sid": 878133706792508
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 606180584710928,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 497693790672885,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 763474772036731,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "5"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 833650208978076,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 599087382404339,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 465752161517699,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 531684743913988,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 124328292082036,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 519256156018204
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 430072214300411,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 791319266826345,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 457930864704039,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 416921787262890
+												}
+											],
+											"sid": 531823893442271
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 258330225096951,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 310139102211950,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 771206461107057,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "6"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 921935664871945,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 210425463730886,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 374795845730025,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 336189551649543,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 282604840866765,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 964460622332392
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 278784593835011,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 358551695058171,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 891013658875331,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 135704917738531
+												}
+											],
+											"sid": 430702007863422
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
 													"id": "is-animation-playing",
 													"objectClass": "BotaoAceitar",
 													"sid": 407556973591428,

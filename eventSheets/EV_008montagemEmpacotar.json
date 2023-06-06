@@ -2450,6 +2450,73 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "BasePegaPega",
+							"sid": 822243687013572,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "BasePegaPega",
+							"sid": 727992131879128,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BasePegaPega",
+							"sid": 855178881815515
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 261696895801915
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 980922474900509,
+							"parameters": {
+								"object": "CaixaMeioFundo",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 452641402199565,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 655903564549032,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 440494767909737,
+							"parameters": {
+								"x": "1094",
+								"y": "526"
+							}
+						}
+					],
+					"sid": 124197611366991
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-end-of-layout",
 							"objectClass": "System",
 							"sid": 830033688102537
