@@ -315,8 +315,8 @@
 							}
 						},
 						{
-							"callFunction": "ChamarAnimUpgrade 1",
-							"sid": 125243155041627
+							"callFunction": "ChamarAnimUpgradePolir",
+							"sid": 204502193819738
 						}
 					],
 					"sid": 960960685716617
@@ -402,8 +402,8 @@
 							}
 						},
 						{
-							"callFunction": "ChamarAnimUpgrade 2",
-							"sid": 492240164059806
+							"callFunction": "ChamarAnimUpgrade Carvao",
+							"sid": 894212607994603
 						}
 					],
 					"sid": 502278585058900
@@ -752,7 +752,73 @@
 			]
 		},
 		{
-			"functionName": "ChamarAnimUpgrade 1",
+			"functionName": "ChamarAnimUpgradePolir",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "UpgradeAnim",
+					"sid": 856405327347282,
+					"parameters": {
+						"x": "-1.008933",
+						"y": "158.998627"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 545009880573524,
+					"parameters": {
+						"animation": "\"InPolir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 750713208033766,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 429307862675388,
+					"parameters": {
+						"animation": "\"OutPolir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 368899409343147,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "UpgradeAnim",
+					"sid": 906827735373006,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 794495533328147
+		},
+		{
+			"functionName": "ChamarAnimUpgrade Carvao",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -816,72 +882,6 @@
 				}
 			],
 			"sid": 579856258683763
-		},
-		{
-			"functionName": "ChamarAnimUpgrade 2",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "UpgradeAnim",
-					"sid": 515105988807144,
-					"parameters": {
-						"x": "-1.008933",
-						"y": "158.998627"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "UpgradeAnim",
-					"sid": 563561245765914,
-					"parameters": {
-						"animation": "\"InPolir\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 724613672337199,
-					"parameters": {
-						"seconds": "4"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "UpgradeAnim",
-					"sid": 901763161946901,
-					"parameters": {
-						"animation": "\"OutPolir\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 102908339091621,
-					"parameters": {
-						"seconds": "3"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "UpgradeAnim",
-					"sid": 865934160466158,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 906116780557799
 		},
 		{
 			"functionName": "ChamarAnimDormir",

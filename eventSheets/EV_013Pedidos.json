@@ -1071,10 +1071,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 904916428685242,
+							"sid": 460132191508247,
 							"parameters": {
 								"variable": "EnergiaCerta",
-								"value": "\"carvao\""
+								"value": "\"Carvao\""
 							}
 						}
 					],
@@ -3412,119 +3412,137 @@
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPega",
-									"sid": 695608669568518,
+									"objectClass": "BracoCatapulta",
+									"sid": 216220848637483,
 									"parameters": {
-										"x": "434",
-										"y": "266"
+										"x": "671",
+										"y": "335"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPega",
-									"sid": 377270370545821,
+									"objectClass": "BaseCatapulta",
+									"sid": 450700303295350,
 									"parameters": {
-										"x": "369",
-										"y": "377"
+										"x": "470",
+										"y": "230"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPega",
-									"sid": 306805286727934,
+									"objectClass": "PrendedorCatapulta",
+									"sid": 635768493458424,
 									"parameters": {
-										"x": "436",
-										"y": "489"
+										"x": "370",
+										"y": "319"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPega",
-									"sid": 446661609155427,
+									"objectClass": "RodaCatapulta",
+									"sid": 375742130747273,
 									"parameters": {
-										"x": "792",
-										"y": "442"
+										"x": "279",
+										"y": "297"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPega",
-									"sid": 679242244697529,
+									"objectClass": "CanoCatapulta",
+									"sid": 398394449110138,
 									"parameters": {
-										"x": "780",
-										"y": "368"
+										"x": "348",
+										"y": "411"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPega",
-									"sid": 468657509359065,
+									"objectClass": "EngrenagemCatapulta",
+									"sid": 140100479581210,
 									"parameters": {
-										"x": "472",
-										"y": "490"
+										"x": "389",
+										"y": "438"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "SombraPegaPega",
-									"sid": 199804791009817,
+									"objectClass": "ParafusosCatapulta",
+									"sid": 781145673030839,
 									"parameters": {
-										"x": "602",
-										"y": "372"
+										"x": "669",
+										"y": "430"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-									"sid": 123362773920744,
+									"objectClass": "SombraCatapulta",
+									"sid": 536536406973248,
 									"parameters": {
-										"x": "602.007555",
-										"y": "400.03503"
+										"x": "479",
+										"y": "331"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-									"sid": 397956572809569,
+									"objectClass": "BracoCatapultaColisao",
+									"sid": 635886441409569,
 									"parameters": {
-										"x": "602.007555",
-										"y": "372.03503"
+										"x": "546.999481",
+										"y": "330.870826"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPegaColisao",
-									"sid": 802007826350012,
+									"objectClass": "EngrenagemCatapultaColisao",
+									"sid": 255646283132534,
 									"parameters": {
-										"x": "622.007555",
-										"y": "380.03503"
+										"x": "499.037641",
+										"y": "338.869278"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPegaColisao",
-									"sid": 773074123955225,
+									"objectClass": "BaseCatapultacolisao",
+									"sid": 127896827627417,
 									"parameters": {
-										"x": "662.007535",
-										"y": "399.924924"
+										"x": "478.967525",
+										"y": "399.007948"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPegaColisao",
-									"sid": 485320356374103,
+									"objectClass": "PrendedorCatapultaColisao",
+									"sid": 860633734649453,
 									"parameters": {
-										"x": "662.012108",
-										"y": "384.008269"
+										"x": "494.578185",
+										"y": "407.128468"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPegaColisao",
-									"sid": 958136330128169,
+									"objectClass": "ParafusosCatapultaColisao",
+									"sid": 618742539086225,
 									"parameters": {
-										"x": "634.000371",
-										"y": "387.994799"
+										"x": "502.617104",
+										"y": "410.89282"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "RodaCatapultaColisao",
+									"sid": 614954472814564,
+									"parameters": {
+										"x": "511.030112",
+										"y": "427.073676"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CanoCatapultaColisao",
+									"sid": 526598384190921,
+									"parameters": {
+										"x": "515.038998",
+										"y": "386.738032"
 									}
 								}
 							],
@@ -3561,7 +3579,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "SombraPegaPega",
+							"objectClass": "SombraForno",
 							"sid": 403902677084717,
 							"parameters": {
 								"visibility": "visible"
@@ -3569,7 +3587,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPega",
+							"objectClass": "CabecaForno",
 							"sid": 732223181765469,
 							"parameters": {
 								"visibility": "visible"
@@ -3577,25 +3595,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "BasePegaPegaColisao",
-							"sid": 525524598517105,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPegaColisao",
-							"sid": 389814695865782,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "CorpoInferiorEsquerdoForno",
 							"sid": 761003468587910,
 							"parameters": {
 								"visibility": "visible"
@@ -3603,16 +3603,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPegaColisao",
-							"sid": 837834877694609,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "CorpoInferiorFornoDireito",
 							"sid": 171187381484483,
 							"parameters": {
 								"visibility": "visible"
@@ -3620,7 +3611,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "DetalheCabeca1Forno",
 							"sid": 917448263270780,
 							"parameters": {
 								"visibility": "visible"
@@ -3628,7 +3619,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "MolaPegaPegaColisao",
+							"objectClass": "DetalheCabeca2Forno",
 							"sid": 987655255611666,
 							"parameters": {
 								"visibility": "visible"
@@ -3636,7 +3627,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "GradeEsquerdaForno",
 							"sid": 600068538751732,
 							"parameters": {
 								"visibility": "visible"
@@ -3644,16 +3635,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-							"sid": 587217341112594,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "GradeDireitaForno",
 							"sid": 117753403392281,
 							"parameters": {
 								"visibility": "visible"
@@ -3661,16 +3643,47 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-							"sid": 389392209757378,
-							"disabled": true,
+							"objectClass": "OmbroDireitoForno",
+							"sid": 165115116024346,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "OmbroEsquerdoForno",
+							"sid": 245659823602316,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PeDireitoForno",
+							"sid": 822818620792226,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PeEsquerdoForno",
+							"sid": 406075928791592,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PescocoForno",
+							"sid": 554278036601833,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "BasePegaPega",
+							"objectClass": "CabecaForno",
 							"sid": 904391506904856,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -3679,7 +3692,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraBaixoPegaPega",
+							"objectClass": "CorpoInferiorEsquerdoForno",
 							"sid": 569228441038962,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -3688,7 +3701,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "EmpunhadoraCimaPegaPega",
+							"objectClass": "CorpoInferiorFornoDireito",
 							"sid": 811000401761769,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -3697,7 +3710,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraBaixoPegaPega",
+							"objectClass": "DetalheCabeca1Forno",
 							"sid": 278961491938307,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -3706,7 +3719,7 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "GarraCimaPegaPega",
+							"objectClass": "DetalheCabeca2Forno",
 							"sid": 168945576355698,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
@@ -3715,8 +3728,62 @@
 						},
 						{
 							"id": "setenabled0",
-							"objectClass": "MolaPegaPega",
+							"objectClass": "GradeDireitaForno",
 							"sid": 151619574054246,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "GradeEsquerdaForno",
+							"sid": 275788505537086,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "OmbroDireitoForno",
+							"sid": 257614934273679,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "OmbroEsquerdoForno",
+							"sid": 180016092852955,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PeDireitoForno",
+							"sid": 761496416136742,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PeEsquerdoForno",
+							"sid": 365847211451155,
+							"behaviorType": "BoundedDragDrop",
+							"parameters": {
+								"state2": "enabled"
+							}
+						},
+						{
+							"id": "setenabled0",
+							"objectClass": "PescocoForno",
+							"sid": 770307723368355,
 							"behaviorType": "BoundedDragDrop",
 							"parameters": {
 								"state2": "enabled"
@@ -3737,222 +3804,420 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "CortaPaoSombra",
-									"sid": 181552767404472,
+									"objectClass": "SombraForno",
+									"sid": 674212469585353,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "485",
+										"y": "317"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPaoColisao",
-									"sid": 249033120145845,
+									"objectClass": "CabecaFornoColisao",
+									"sid": 126699110079919,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "521.02409",
+										"y": "337.016755"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPaoColisao",
-									"sid": 649220743019634,
+									"objectClass": "CorpoInferiorDireitoFornoColisao",
+									"sid": 957551171648684,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "549.000313",
+										"y": "377.006269"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPaoColisao",
-									"sid": 645706608105235,
+									"objectClass": "CorpoInferiorEsquerdoFornoColisao",
+									"sid": 896712524944586,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "492.999793",
+										"y": "377.013918"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPaoColisao",
-									"sid": 661689572449671,
+									"objectClass": "DetalheCabeca1FornoColisao",
+									"sid": 683270687850920,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "536.991704",
+										"y": "324.970148"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPaoColisao",
-									"sid": 667692453898966,
+									"objectClass": "DetalheCabeca2FornoColisao",
+									"sid": 842978686656058,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "533.001234",
+										"y": "317.009414"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "CabecaCortaPao",
-									"sid": 326145340005105,
+									"objectClass": "GradeDireitaFornoColisao",
+									"sid": 309730650929929,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "545.013133",
+										"y": "393.006403"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EsquerdaMeioCortaPao",
-									"sid": 622310894486433,
+									"objectClass": "GradeEsquerdaFornoColisao",
+									"sid": 521420316006970,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "509.018485",
+										"y": "393.010136"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BaseCortaPao",
-									"sid": 805336557646875,
+									"objectClass": "OmbroDireitoFornoColisao",
+									"sid": 651020471354444,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "581.042565",
+										"y": "368.984853"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "DireitaMeioCortaPao",
-									"sid": 397710345320870,
+									"objectClass": "OmbroEsquerdoFornoColisao",
+									"sid": 746216151730555,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "485.138104",
+										"y": "369.130174"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "PescocoCortaPao",
-									"sid": 332886555796285,
+									"objectClass": "PeDireitoFornoColisao",
+									"sid": 105818017655267,
 									"parameters": {
-										"x": "2000",
-										"y": "2000"
+										"x": "549.019531",
+										"y": "432.979055"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeEsquerdoFornoColisao",
+									"sid": 201079412658259,
+									"parameters": {
+										"x": "512.986905",
+										"y": "433.003509"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoFornoColisao",
+									"sid": 487442016408320,
+									"parameters": {
+										"x": "517.001094",
+										"y": "364.965378"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BracoCatapulta",
+									"sid": 627809719470689,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BaseCatapulta",
+									"sid": 382709789005874,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PrendedorCatapulta",
+									"sid": 916626710281961,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "RodaCatapulta",
+									"sid": 349900275049959,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CanoCatapulta",
+									"sid": 383557488074054,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "EngrenagemCatapulta",
+									"sid": 219793253856621,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "ParafusosCatapulta",
+									"sid": 614358541058394,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SombraCatapulta",
+									"sid": 310144222715655,
+									"parameters": {
+										"x": "5000",
+										"y": "5000"
 									}
 								},
 								{
 									"type": "comment",
-									"text": "Pega Pega"
+									"text": "forno"
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPega",
-									"sid": 586903642184570,
+									"objectClass": "CabecaForno",
+									"sid": 333175209571074,
 									"parameters": {
-										"x": "434",
-										"y": "266"
+										"x": "263",
+										"y": "396"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPega",
-									"sid": 400958055919248,
+									"objectClass": "CorpoInferiorFornoDireito",
+									"sid": 570179422302575,
 									"parameters": {
-										"x": "369",
-										"y": "377"
+										"x": "772 ",
+										"y": "375"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPega",
-									"sid": 318094399466134,
+									"objectClass": "CorpoInferiorEsquerdoForno",
+									"sid": 681680829896370,
 									"parameters": {
-										"x": "436",
+										"x": "363",
+										"y": "263"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DetalheCabeca1Forno",
+									"sid": 423930079009449,
+									"parameters": {
+										"x": "608",
 										"y": "489"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPega",
-									"sid": 219972001977756,
+									"objectClass": "DetalheCabeca2Forno",
+									"sid": 497143758383988,
 									"parameters": {
-										"x": "792",
-										"y": "442"
+										"x": "281",
+										"y": "336"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPega",
-									"sid": 776005436434394,
+									"objectClass": "GradeDireitaForno",
+									"sid": 924149067918071,
 									"parameters": {
-										"x": "780",
-										"y": "368"
+										"x": "378",
+										"y": "488"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPega",
-									"sid": 907174536264128,
+									"objectClass": "GradeEsquerdaForno",
+									"sid": 871524017839318,
 									"parameters": {
-										"x": "472",
-										"y": "490"
+										"x": "671",
+										"y": "277"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "SombraPegaPega",
-									"sid": 987919587951783,
+									"objectClass": "OmbroDireitoForno",
+									"sid": 275994765946149,
 									"parameters": {
-										"x": "602",
-										"y": "372"
+										"x": "364",
+										"y": "366"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraBaixoPegaPegaColisao",
-									"sid": 359925262909354,
+									"objectClass": "OmbroEsquerdoForno",
+									"sid": 844121452664872,
 									"parameters": {
-										"x": "602.007555",
-										"y": "400.03503"
+										"x": "789",
+										"y": "299"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "EmpunhadoraCimaPegaPegaColisao",
-									"sid": 401400980637597,
+									"objectClass": "PeDireitoForno",
+									"sid": 600542327622146,
 									"parameters": {
-										"x": "602.007555",
-										"y": "372.03503"
+										"x": "612",
+										"y": "237"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "BasePegaPegaColisao",
-									"sid": 587896093866867,
+									"objectClass": "PeEsquerdoForno",
+									"sid": 937649658825741,
 									"parameters": {
-										"x": "622.007555",
-										"y": "380.03503"
+										"x": "304",
+										"y": "480"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraBaixoPegaPegaColisao",
-									"sid": 185242299147513,
+									"objectClass": "PescocoForno",
+									"sid": 278980637263308,
 									"parameters": {
-										"x": "662.007535",
-										"y": "399.924924"
+										"x": "695",
+										"y": "506"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "GarraCimaPegaPegaColisao",
-									"sid": 449319663201748,
+									"objectClass": "SombraForno",
+									"sid": 108372161148792,
 									"parameters": {
-										"x": "662.012108",
-										"y": "384.008269"
+										"x": "485",
+										"y": "317"
 									}
 								},
 								{
 									"id": "set-position",
-									"objectClass": "MolaPegaPegaColisao",
-									"sid": 380559279109837,
+									"objectClass": "CabecaFornoColisao",
+									"sid": 497125159191148,
 									"parameters": {
-										"x": "634.000371",
-										"y": "387.994799"
+										"x": "521.02409",
+										"y": "337.016755"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CorpoInferiorDireitoFornoColisao",
+									"sid": 172921572733536,
+									"parameters": {
+										"x": "549.000313",
+										"y": "377.006269"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CorpoInferiorEsquerdoFornoColisao",
+									"sid": 870235897080567,
+									"parameters": {
+										"x": "492.999793",
+										"y": "377.013918"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DetalheCabeca1FornoColisao",
+									"sid": 104233519601405,
+									"parameters": {
+										"x": "536.991704",
+										"y": "324.970148"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "DetalheCabeca2FornoColisao",
+									"sid": 350627329373939,
+									"parameters": {
+										"x": "533.001234",
+										"y": "317.009414"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GradeDireitaFornoColisao",
+									"sid": 472488404067648,
+									"parameters": {
+										"x": "545.013133",
+										"y": "393.006403"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "GradeEsquerdaFornoColisao",
+									"sid": 208763996310104,
+									"parameters": {
+										"x": "509.018485",
+										"y": "393.010136"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "OmbroDireitoFornoColisao",
+									"sid": 564891602224471,
+									"parameters": {
+										"x": "581.042565",
+										"y": "368.984853"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "OmbroEsquerdoFornoColisao",
+									"sid": 810580066620393,
+									"parameters": {
+										"x": "485.138104",
+										"y": "369.130174"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeDireitoFornoColisao",
+									"sid": 977569300978420,
+									"parameters": {
+										"x": "549.019531",
+										"y": "432.979055"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PeEsquerdoFornoColisao",
+									"sid": 135655104542306,
+									"parameters": {
+										"x": "512.986905",
+										"y": "433.003509"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PescocoFornoColisao",
+									"sid": 332415002684853,
+									"parameters": {
+										"x": "517.001094",
+										"y": "364.965378"
 									}
 								}
 							],

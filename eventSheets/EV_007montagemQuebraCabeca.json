@@ -1077,6 +1077,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "BasePegaPega",
+											"sid": 197728747886628,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "BasePegaPega",
+											"sid": 267862354293858
+										}
+									],
+									"sid": 713043563756592
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "BasePegaPega",
 											"sid": 914804345502351,
@@ -1217,6 +1236,25 @@
 										}
 									],
 									"sid": 308291418265949
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "MolaPegaPega",
+											"sid": 145703696900565,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "MolaPegaPega",
+											"sid": 302458013591088
+										}
+									],
+									"sid": 571236327014718
 								},
 								{
 									"eventType": "block",
@@ -1367,6 +1405,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 586435821118635,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "EmpunhadoraBaixoPegaPega",
+											"sid": 195096795136354
+										}
+									],
+									"sid": 701582963097542
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "EmpunhadoraBaixoPegaPega",
 											"sid": 766395714261650,
@@ -1507,6 +1564,25 @@
 										}
 									],
 									"sid": 755883142362199
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 655968874613708,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "EmpunhadoraCimaPegaPega",
+											"sid": 592462997052125
+										}
+									],
+									"sid": 631387387837238
 								},
 								{
 									"eventType": "block",
@@ -1657,6 +1733,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 918617527766152,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "GarraCimaPegaPega",
+											"sid": 637634485995651
+										}
+									],
+									"sid": 325378752084866
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "GarraCimaPegaPega",
 											"sid": 526296235984992,
@@ -1797,6 +1892,25 @@
 										}
 									],
 									"sid": 441227758987297
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 132013871589768,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "GarraBaixoPegaPega",
+											"sid": 602527263179767
+										}
+									],
+									"sid": 675500390624097
 								},
 								{
 									"eventType": "block",
@@ -1957,6 +2071,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "CabecaAquecedor",
+											"sid": 729263415691804,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CabecaAquecedor",
+											"sid": 270034376035361
+										}
+									],
+									"sid": 653934729687540
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "CabecaAquecedor",
 											"sid": 314801238408440,
@@ -2097,6 +2230,25 @@
 										}
 									],
 									"sid": 217833447737095
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "CanoAquecedor",
+											"sid": 839018550393724,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CanoAquecedor",
+											"sid": 352307400277125
+										}
+									],
+									"sid": 823792262191431
 								},
 								{
 									"eventType": "block",
@@ -2247,6 +2399,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 276935900605871,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "Cano2Aquecedor",
+											"sid": 259703829878128
+										}
+									],
+									"sid": 508250118495835
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "Cano2Aquecedor",
 											"sid": 202895526201550,
@@ -2387,6 +2558,25 @@
 										}
 									],
 									"sid": 218881885042407
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 894464276558373,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "AquecedorBracoDireito",
+											"sid": 931904502533986
+										}
+									],
+									"sid": 326132902119575
 								},
 								{
 									"eventType": "block",
@@ -2537,6 +2727,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 909760099848777,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "AquecedorBracoEsquerdo",
+											"sid": 964906814570858
+										}
+									],
+									"sid": 139482984755825
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "AquecedorBracoEsquerdo",
 											"sid": 113483503493558,
@@ -2677,6 +2886,25 @@
 										}
 									],
 									"sid": 793495117095474
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 192396835941664,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "ExteriorDireitoCimaAquecedor",
+											"sid": 268601873434453
+										}
+									],
+									"sid": 302685054957027
 								},
 								{
 									"eventType": "block",
@@ -2827,6 +3055,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 326208896812972,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
+											"sid": 800875448812131
+										}
+									],
+									"sid": 362335029929901
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "ExteriorEsquerdoBaixcAquecedor",
 											"sid": 136209515833966,
@@ -2967,6 +3214,25 @@
 										}
 									],
 									"sid": 799207200609200
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 556541476291739,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "EsteriorEsquerdoCimaAquecedor",
+											"sid": 301978523937909
+										}
+									],
+									"sid": 772896238639036
 								},
 								{
 									"eventType": "block",
@@ -3117,6 +3383,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 337166533555468,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "InferiorDireitoAquecedor",
+											"sid": 178604501206584
+										}
+									],
+									"sid": 950648757877828
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "InferiorDireitoAquecedor",
 											"sid": 729206907976259,
@@ -3257,6 +3542,25 @@
 										}
 									],
 									"sid": 599049460129580
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 566987962629587,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "InferiorEsquerdoAquecedor",
+											"sid": 773440939376203
+										}
+									],
+									"sid": 262050564717732
 								},
 								{
 									"eventType": "block",
@@ -3407,6 +3711,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 830740337212120,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PeDireitoAquecedor",
+											"sid": 176925696703196
+										}
+									],
+									"sid": 970732820509586
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "PeDireitoAquecedor",
 											"sid": 852151512369402,
@@ -3547,6 +3870,25 @@
 										}
 									],
 									"sid": 683907159397549
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 540071795301178,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PeEsquerdoAquecedor",
+											"sid": 798184724318018
+										}
+									],
+									"sid": 970607027649521
 								},
 								{
 									"eventType": "block",
@@ -3707,6 +4049,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 811347783106526,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "EngrenagemCatapulta",
+											"sid": 507893656171617
+										}
+									],
+									"sid": 488451245209856
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "EngrenagemCatapulta",
 											"sid": 959457294936924,
@@ -3847,6 +4208,25 @@
 										}
 									],
 									"sid": 957257497055201
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "CanoCatapulta",
+											"sid": 130919394945697,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CanoCatapulta",
+											"sid": 664343661616484
+										}
+									],
+									"sid": 896973051639319
 								},
 								{
 									"eventType": "block",
@@ -3997,6 +4377,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "BracoCatapulta",
+											"sid": 102172850821045,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "BracoCatapulta",
+											"sid": 518792971891090
+										}
+									],
+									"sid": 302785951569344
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "BracoCatapulta",
 											"sid": 676223474184651,
@@ -4137,6 +4536,25 @@
 										}
 									],
 									"sid": 117963104581713
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "BaseCatapulta",
+											"sid": 745796932699563,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "BaseCatapulta",
+											"sid": 265820676977136
+										}
+									],
+									"sid": 910624984379241
 								},
 								{
 									"eventType": "block",
@@ -4287,6 +4705,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 592397055432169,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PrendedorCatapulta",
+											"sid": 265097021622548
+										}
+									],
+									"sid": 475526812142307
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "PrendedorCatapulta",
 											"sid": 187353582486870,
@@ -4432,6 +4869,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "RodaCatapulta",
+											"sid": 188799250704943,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "RodaCatapulta",
+											"sid": 252753410694341
+										}
+									],
+									"sid": 198770976339372
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "RodaCatapulta",
 											"sid": 781049782156257,
@@ -4572,6 +5028,25 @@
 										}
 									],
 									"sid": 623619570540554
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 559333583992993,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "ParafusosCatapulta",
+											"sid": 334724748068175
+										}
+									],
+									"sid": 298871015207435
 								},
 								{
 									"eventType": "block",
@@ -4732,6 +5207,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "CabecaForno",
+											"sid": 547986386200589,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CabecaForno",
+											"sid": 912596432550982
+										}
+									],
+									"sid": 167809606932724
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "CabecaForno",
 											"sid": 575084726586160,
@@ -4872,6 +5366,25 @@
 										}
 									],
 									"sid": 773342548746774
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 657259913689870,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "DetalheCabeca2Forno",
+											"sid": 167416054940435
+										}
+									],
+									"sid": 555347048399345
 								},
 								{
 									"eventType": "block",
@@ -5022,6 +5535,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 607401335439553,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "DetalheCabeca1Forno",
+											"sid": 962873661912505
+										}
+									],
+									"sid": 558765660795837
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "DetalheCabeca1Forno",
 											"sid": 321123249790170,
@@ -5162,6 +5694,25 @@
 										}
 									],
 									"sid": 724174976221940
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 405410360250440,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "OmbroDireitoForno",
+											"sid": 842466844138429
+										}
+									],
+									"sid": 367867010459885
 								},
 								{
 									"eventType": "block",
@@ -5312,6 +5863,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 984473071606988,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "OmbroEsquerdoForno",
+											"sid": 670361393020736
+										}
+									],
+									"sid": 174541934375792
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "OmbroEsquerdoForno",
 											"sid": 857279985058004,
@@ -5452,6 +6022,25 @@
 										}
 									],
 									"sid": 937689539061168
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 546007086939727,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CorpoInferiorFornoDireito",
+											"sid": 538924744684612
+										}
+									],
+									"sid": 346122141754103
 								},
 								{
 									"eventType": "block",
@@ -5602,6 +6191,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 792051895647590,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CorpoInferiorEsquerdoForno",
+											"sid": 748607134198225
+										}
+									],
+									"sid": 827829704709971
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "CorpoInferiorEsquerdoForno",
 											"sid": 692192280768389,
@@ -5742,6 +6350,25 @@
 										}
 									],
 									"sid": 230313254114220
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "GradeDireitaForno",
+											"sid": 886729713952914,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "GradeDireitaForno",
+											"sid": 946114467659115
+										}
+									],
+									"sid": 676200279936546
 								},
 								{
 									"eventType": "block",
@@ -5892,6 +6519,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 313983169524959,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "GradeEsquerdaForno",
+											"sid": 692761237279440
+										}
+									],
+									"sid": 432341659197195
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "GradeEsquerdaForno",
 											"sid": 121615694103074,
@@ -6032,6 +6678,25 @@
 										}
 									],
 									"sid": 286766682764499
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "PeDireitoForno",
+											"sid": 123351366437449,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PeDireitoForno",
+											"sid": 956732730752478
+										}
+									],
+									"sid": 365270829032391
 								},
 								{
 									"eventType": "block",
@@ -6182,6 +6847,25 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "isdragging0",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 637134095951352,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PeEsquerdoForno",
+											"sid": 514185962263956
+										}
+									],
+									"sid": 383000596641297
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "ondrop2",
 											"objectClass": "PeEsquerdoForno",
 											"sid": 883099689407965,
@@ -6322,6 +7006,25 @@
 										}
 									],
 									"sid": 176164870830186
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "isdragging0",
+											"objectClass": "PescocoForno",
+											"sid": 105683259606090,
+											"behaviorType": "BoundedDragDrop"
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "PescocoForno",
+											"sid": 576428134455771
+										}
+									],
+									"sid": 767868931217636
 								},
 								{
 									"eventType": "block",
@@ -6674,6 +7377,16 @@
 										"click-type": "clicked",
 										"object-clicked": "IconeCarvao"
 									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 667809017836495,
+									"parameters": {
+										"variable": "Dia",
+										"comparison": 5,
+										"value": "3"
+									}
 								}
 							],
 							"actions": [
@@ -6802,11 +7515,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 406209793559773,
+									"sid": 560641892219700,
 									"parameters": {
 										"variable": "MaterialCerto",
 										"comparison": 0,
-										"value": "\"eritio\""
+										"value": "\"eritro\""
 									}
 								}
 							],
@@ -7157,10 +7870,10 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 643945490422384,
+											"sid": 117151571311019,
 											"parameters": {
 												"variable": "totalQuebraCabecaPecas",
-												"value": "12"
+												"value": "13"
 											}
 										}
 									],
@@ -7647,11 +8360,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 784333993374099,
+									"sid": 156583683620690,
 									"parameters": {
-										"variable": "Dia",
+										"variable": "BarraRobotica",
 										"comparison": 0,
-										"value": "1"
+										"value": "2"
 									}
 								}
 							],
@@ -7710,11 +8423,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 568480911222567,
+									"sid": 328907522146146,
 									"parameters": {
-										"variable": "Dia",
+										"variable": "BarraRobotica",
 										"comparison": 0,
-										"value": "1"
+										"value": "2"
 									}
 								}
 							],

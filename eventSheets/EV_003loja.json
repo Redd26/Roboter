@@ -1459,6 +1459,16 @@
 													"parameters": {
 														"object": "CarimbadaAprovada"
 													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 729862544184125,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "0"
+													}
 												}
 											],
 											"actions": [
