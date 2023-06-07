@@ -240,7 +240,11 @@
 			"AnimDias",
 			"AnimDormirAcordar",
 			"MaquinaDePolir",
-			"MascaraDePolir"
+			"MascaraDePolir",
+			"FundinhoHUD",
+			"FalasObjetosINterativosLoja",
+			"FalasObjetosInterativosQuarto",
+			"ObjetoParaPolir"
 		],
 		"subfolders": [
 			{

@@ -1,153 +1,182 @@
 {
-	"name": "AnimDias",
+	"name": "FalasObjetosInterativosQuarto",
 	"plugin-id": "Sprite",
-	"sid": 533074450274575,
+	"sid": 747119366751972,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 310726088452465
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1282,
-						"height": 722,
+						"width": 580,
+						"height": 124,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5380787,
+						"imageSpriteId": 8802196,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 515471380047546,
-				"name": "Dia 1",
+				"sid": 325292690221235,
+				"name": "FalaEstante",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 614,
+						"height": 90,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3280169,
+						"imageSpriteId": 8756439,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 807822919407719,
-				"name": "Dia 2",
+				"sid": 297722754521789,
+				"name": "FalaJanela",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 577,
+						"height": 85,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9600736,
+						"imageSpriteId": 5843942,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 182870307925219,
-				"name": "Dia 3",
+				"sid": 984355058088199,
+				"name": "FalasMaldicao",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 538,
+						"height": 99,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2236587,
+						"imageSpriteId": 2360977,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 344540915150324,
-				"name": "Dia 4",
+				"sid": 815710866686547,
+				"name": "FalasPlantas",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 533,
+						"height": 95,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7804274,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 408917982660977,
+				"name": "FalasRobozao",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

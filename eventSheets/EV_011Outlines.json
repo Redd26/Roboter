@@ -3227,6 +3227,770 @@
 				}
 			],
 			"sid": 515600360412289
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mouse clicked",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 210188566702438,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MesaPlantas"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 193083302767130
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 542838744036506,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Robozao"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 609171877694606
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 916940859459760,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ArCondicionadoQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 142541746346022
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 633162200833260,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ObjetoAmaldicoado"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 422326037274545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 443021797158337,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "JanelaQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 562329971787474
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 539541266885544,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EstanteDeLivrosQuarto"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 315732112442185
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 477294443616368,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "BauLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 589804246824822,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 958550670782763,
+							"parameters": {
+								"x": "445",
+								"y": "44"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 706473687692719,
+							"parameters": {
+								"animation": "\"FalaBau\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 979509123568216,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 373038633920630,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 875885698583264,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 567914793164420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 914115528952792,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "FornoCenarioLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 246855777916338,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 936092200421184,
+							"parameters": {
+								"x": "445",
+								"y": "44"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 816757551227856,
+							"parameters": {
+								"animation": "\"FalasForno\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 834620325472581,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 457384186932887,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 146751832033574,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 948277239084156
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 606592644784320,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MineriosLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 745909444023119,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 840269851578823,
+							"parameters": {
+								"x": "445",
+								"y": "44"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 582707792876137,
+							"parameters": {
+								"animation": "\"FalaCaixas\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 338121546644972,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 351543989159789,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 128362708780095,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 399104137547816
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 815980383546120,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ArCondicionadoLoja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 129981641171359,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 124160245288587,
+							"parameters": {
+								"x": "445",
+								"y": "44"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 627652434538053,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 189362671355380,
+							"parameters": {
+								"animation": "\"FalasAr\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 219161524047751,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 656791383518465,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 368922677225892,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 764563511436443
+				},
+				{
+					"eventType": "comment",
+					"text": "quarto"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 606160885376232,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EstanteDeLivrosQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 926167917385481,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 759749568523901,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 647076195388748,
+							"parameters": {
+								"animation": "\"FalaEstante\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 790370896688970,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 928844820348772,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 875829001894760,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 195967139870927
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 895890442554633,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "JanelaQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 514110082446722,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 316509543525925,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 620533790213703,
+							"parameters": {
+								"animation": "\"FalaJanela\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 255054797390958,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 749024429006014,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 981421150611336,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 421837037743875
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 253875191737823,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Robozao"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 289328539141191,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 581320491878275,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 957607060679318,
+							"parameters": {
+								"animation": "\"FalasRobozao\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 789325529825296,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 652643964124667,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 733608759617412,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 899681643020682
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 693726755621673,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "MesaPlantas"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 224565281610594,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 900591740651752,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 681135042344887,
+							"parameters": {
+								"animation": "\"FalasPlantas\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 244492430452577,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 179287549601479,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 885672594339623,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 691714875794824
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 541778617050055,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ObjetoAmaldicoado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 651289221065170,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 525020047771167,
+							"parameters": {
+								"x": "444",
+								"y": "23"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 581742416442615,
+							"parameters": {
+								"animation": "\"FalasMaldicao\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 162083957422422,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FalasObjetosINterativosLoja",
+							"sid": 696190354734175,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 528184192511939,
+							"parameters": {
+								"x": "4000",
+								"y": "4000"
+							}
+						}
+					],
+					"sid": 455278058621655
+				}
+			],
+			"sid": 260470849061204
 		}
 	],
 	"sid": 891906922951720

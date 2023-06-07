@@ -6,6 +6,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_003loja"
+		},
+		{
 			"eventType": "variable",
 			"name": "QualMaterial",
 			"type": "number",
@@ -666,11 +670,58 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 236923257558036,
+					"sid": 199313117829847,
 					"parameters": {
 						"variable": "PedidosAcertos",
 						"comparison": 0,
-						"value": "5"
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 693088563781158,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 268547678895869,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 200240198256889,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 301088908846636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 986778086304529,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "4"
 					}
 				},
 				{
@@ -713,11 +764,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 872033357531002,
+					"sid": 572016039678633,
 					"parameters": {
 						"variable": "PedidosAcertos",
 						"comparison": 0,
-						"value": "6"
+						"value": "5"
 					}
 				},
 				{
@@ -3235,6 +3286,7 @@
 							"id": "set-visible",
 							"objectClass": "MolaPegaPegaColisao",
 							"sid": 229803612944251,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -5336,33 +5388,50 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 502888773205869
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "SpawnRobos",
-									"sid": 746657877132144,
+									"id": "on-animation-finished",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 690418611798376,
 									"parameters": {
-										"object": "CabecaCortaPao",
-										"layer": "\"empacotarHitLayer\"",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "ColicaoCabecaEmpacotar",
-									"sid": 140011026475762,
-									"parameters": {
-										"visibility": "visible"
+										"animation": "\"MoverEsquerda\""
 									}
 								}
 							],
-							"sid": 677753051829422
+							"actions": [],
+							"sid": 446401705840407,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 121260382657346
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SpawnRobos",
+											"sid": 594817750538043,
+											"parameters": {
+												"object": "CabecaCortaPao",
+												"layer": "\"empacotarHitLayer\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ColicaoCabecaEmpacotar",
+											"sid": 551058650197566,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 455664479696467
+								}
+							]
 						}
 					]
 				},
@@ -5397,33 +5466,284 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 721391377693896
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "SpawnRobos",
-									"sid": 155958681035694,
+									"id": "on-animation-finished",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 361538577820687,
 									"parameters": {
-										"object": "BasePegaPega",
-										"layer": "\"empacotarHitLayer\"",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "ColicaoCabecaEmpacotar",
-									"sid": 372439741397646,
-									"parameters": {
-										"visibility": "visible"
+										"animation": "\"MoverEsquerda\""
 									}
 								}
 							],
-							"sid": 691310320969897
+							"actions": [],
+							"sid": 173382266735642,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 249561241548440
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SpawnRobos",
+											"sid": 145907248886541,
+											"parameters": {
+												"object": "BasePegaPega",
+												"layer": "\"empacotarHitLayer\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ColicaoCabecaEmpacotar",
+											"sid": 833243194850322,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 231060795157280
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 149597758785168,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 935187973248916,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 782795102675188,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 597313666244319,
+									"parameters": {
+										"animation": "\"MoverEsquerda\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 185990427797026,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 656652074317790
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SpawnRobos",
+											"sid": 305986395677966,
+											"parameters": {
+												"object": "CabecaAquecedor",
+												"layer": "\"empacotarHitLayer\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ColicaoCabecaEmpacotar",
+											"sid": 208177587798049,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 311621035777081
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 888231230184915,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 514340304110600,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 146551292222986,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 394688244585246,
+									"parameters": {
+										"animation": "\"MoverEsquerda\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 996467832737928,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 151766985611800
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SpawnRobos",
+											"sid": 356208709334108,
+											"parameters": {
+												"object": "EngrenagemCatapulta",
+												"layer": "\"empacotarHitLayer\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ColicaoCabecaEmpacotar",
+											"sid": 328005154903223,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 898780530640408
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 697363750403427,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 580400450890426,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 5,
+								"second-value": "MaxBrilho"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 428769743346265,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "CaixaLadoEsquerdoHitBox",
+									"sid": 412384835799254,
+									"parameters": {
+										"animation": "\"MoverEsquerda\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 956539386248424,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 921224190682348
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SpawnRobos",
+											"sid": 278927425376377,
+											"parameters": {
+												"object": "CabecaForno",
+												"layer": "\"empacotarHitLayer\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ColicaoCabecaEmpacotar",
+											"sid": 512901954215777,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 951637967426205
+								}
+							]
 						}
 					]
 				}
@@ -6311,15 +6631,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Erros 2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 805018218889816
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "CartasNegadas",
 			"description": "",
 			"isActiveOnStart": true,
@@ -6733,7 +7044,8 @@
 							}
 						}
 					],
-					"sid": 265525463394286
+					"sid": 265525463394286,
+					"disabled": true
 				},
 				{
 					"eventType": "block",

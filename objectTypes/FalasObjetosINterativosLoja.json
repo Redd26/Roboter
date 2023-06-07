@@ -1,158 +1,152 @@
 {
-	"name": "AnimDias",
+	"name": "FalasObjetosINterativosLoja",
 	"plugin-id": "Sprite",
-	"sid": 533074450274575,
+	"sid": 312849239072028,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 310726088452465
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1282,
-						"height": 722,
+						"width": 497,
+						"height": 74,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5380787,
+						"imageSpriteId": 6341640,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 515471380047546,
-				"name": "Dia 1",
+				"sid": 304330319411328,
+				"name": "FalaBau",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 636,
+						"height": 79,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3280169,
+						"imageSpriteId": 5330221,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 807822919407719,
-				"name": "Dia 2",
+				"sid": 336714984499650,
+				"name": "FalaCaixas",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 578,
+						"height": 74,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9600736,
+						"imageSpriteId": 3056143,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 182870307925219,
-				"name": "Dia 3",
+				"sid": 377257705766927,
+				"name": "FalasForno",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 720,
+						"width": 526,
+						"height": 86,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2236587,
+						"imageSpriteId": 6919722,
 						"collisionPoly": {
 							"points": [
-								0.00078003120124805,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.0013850415512465374,
-								0.999219968798752,
-								0.9986149584487535,
-								0.00078003120124805,
-								0.9986149584487535
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 344540915150324,
-				"name": "Dia 4",
+				"sid": 704145624948615,
+				"name": "FalasAr",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

@@ -101,6 +101,18 @@
 						"variable": "EstouLoja",
 						"value": "false"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 627257090851553,
+					"parameters": {
+						"audio-file": "BGM_Quarto",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"QuartoMusic\""
+					}
 				}
 			],
 			"sid": 126308477982106
@@ -176,15 +188,6 @@
 								"volume": "-10",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "RelogioDiaNoite",
-							"sid": 363525314870540,
-							"parameters": {
-								"animation": "\"dia\"",
-								"from": "beginning"
 							}
 						},
 						{
@@ -306,15 +309,6 @@
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "RelogioDiaNoite",
-							"sid": 764872590926106,
-							"parameters": {
-								"animation": "\"dia\"",
-								"from": "beginning"
-							}
-						},
-						{
 							"callFunction": "ChamarAnimUpgradePolir",
 							"sid": 204502193819738
 						}
@@ -393,15 +387,6 @@
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "RelogioDiaNoite",
-							"sid": 882689240978320,
-							"parameters": {
-								"animation": "\"dia\"",
-								"from": "beginning"
-							}
-						},
-						{
 							"callFunction": "ChamarAnimUpgrade Carvao",
 							"sid": 894212607994603
 						}
@@ -457,6 +442,24 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 182289399517073,
+					"parameters": {
+						"variable": "horarioDoDia",
+						"value": "\"dia\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "RelogioDiaNoite",
+					"sid": 118044723997582,
+					"parameters": {
+						"animation": "\"dia\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 585209194196921,
@@ -468,13 +471,24 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 215704441081191,
+					"sid": 200510098382187,
 					"parameters": {
 						"audio-file": "BatidaDoRelogio",
 						"loop": "not-looping",
 						"volume": "-10",
 						"stereo-pan": "0",
-						"tag-optional": "\"\""
+						"tag-optional": "\"inicioDoDia\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 457391309418446,
+					"parameters": {
+						"tag": "\"inicioDoDia\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
 					}
 				},
 				{
