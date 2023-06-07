@@ -2277,6 +2277,7 @@
 							"id": "set-text",
 							"objectClass": "CaixaMontadaDebug",
 							"sid": 641598012799354,
+							"disabled": true,
 							"parameters": {
 								"text": "\"Caixa Montada\""
 							}

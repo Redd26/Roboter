@@ -3030,6 +3030,91 @@
 				}
 			],
 			"sid": 202286291549454
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 241355024711694,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "MaquinaDePolir",
+					"sid": 505262361025801,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "MaquinaDePolir",
+					"sid": 317225640295069,
+					"parameters": {
+						"x": "1204",
+						"y": "242"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MascaraDePolir",
+					"sid": 874971783140470,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 778558820574545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 153513602220339,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "MaquinaDePolir"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "MaquinaDePolir",
+					"sid": 131171945107134,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ObjetoParaPolir",
+					"sid": 241949565744159,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "MaquinaDePolir",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 547009066958323
 		}
 	],
 	"sid": 886171643003322
