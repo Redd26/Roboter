@@ -1,0 +1,57 @@
+{
+	"name": "MaquinaDePolir",
+	"plugin-id": "Sprite",
+	"sid": 635547730628300,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 94,
+						"height": 70,
+						"originX": 0.648936170212766,
+						"originY": 0.4714285714285714,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7255295,
+						"collisionPoly": {
+							"points": [
+								0.5212765957446809,
+								0.014285714285714285,
+								0.7340425531914894,
+								0.014285714285714285,
+								0.9893617021276596,
+								0.35714285714285715,
+								0.9893617021276596,
+								0.6428571428571429,
+								0.7361701803004486,
+								0.9628570556640627,
+								0.5212765957446809,
+								0.9714285714285715,
+								0.31702114673371,
+								0.7428571428571432,
+								0.27872337178981055,
+								0.3685713631766183
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 140527198839221,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -238,7 +238,9 @@
 			"ColisorOuro",
 			"UpgradeAnim",
 			"AnimDias",
-			"AnimDormirAcordar"
+			"AnimDormirAcordar",
+			"MaquinaDePolir",
+			"MascaraDePolir"
 		],
 		"subfolders": [
 			{

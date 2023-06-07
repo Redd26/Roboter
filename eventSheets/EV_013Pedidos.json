@@ -614,6 +614,147 @@
 			"sid": 759442838904041
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 354214708343484,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 650284252062732,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 350173173127706,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 655067431052121,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 254859095601323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 236923257558036,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 902040751624965,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 285777479559558,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 783890408411677,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 847447322725687
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 872033357531002,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 162788176300901,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 416398879175691,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 538641371875253,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 131005063265669
+		},
+		{
 			"eventType": "comment",
 			"text": "Contagem de dias"
 		},
@@ -826,6 +967,15 @@
 						"variable": "contadorHitPoints",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 638759575073821,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 347037047952506,
@@ -870,16 +1020,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 778130515697056,
-					"disabled": true,
-					"parameters": {
-						"variable": "robo",
-						"value": "2"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -996,6 +1136,15 @@
 						"variable": "contadorHitPoints",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 204308200721040,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 928573172267207,
@@ -1011,17 +1160,16 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "ArCondicionadoLoja",
-							"sid": 921221528423924,
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 362517531565127,
 							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
+								"variable": "robo",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 853766886743565,
-					"disabled": true
+					"sid": 853766886743565
 				}
 			]
 		},
@@ -1040,16 +1188,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 336626579373098,
-					"disabled": true,
-					"parameters": {
-						"variable": "robo",
-						"value": "2"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -1166,6 +1304,15 @@
 						"variable": "contadorHitPoints",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 588630669977238,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 703048270327768,
@@ -1181,17 +1328,16 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "ArCondicionadoLoja",
-							"sid": 382015377649545,
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 428226994017911,
 							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
+								"variable": "robo",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 367566163208605,
-					"disabled": true
+					"sid": 367566163208605
 				}
 			]
 		},
@@ -1210,16 +1356,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 314382004954651,
-					"disabled": true,
-					"parameters": {
-						"variable": "robo",
-						"value": "2"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -1336,6 +1472,15 @@
 						"variable": "contadorHitPoints",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 800337633439929,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 599895097034667,
@@ -1351,17 +1496,16 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "ArCondicionadoLoja",
-							"sid": 427203090585499,
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 315050794500087,
 							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
+								"variable": "robo",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 148828366688852,
-					"disabled": true
+					"sid": 148828366688852
 				}
 			]
 		},
@@ -1380,16 +1524,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 473878011720364,
-					"disabled": true,
-					"parameters": {
-						"variable": "robo",
-						"value": "2"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -1506,6 +1640,15 @@
 						"variable": "contadorHitPoints",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 760348656780961,
+					"parameters": {
+						"variable": "PodeMontarCaixa",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 419003682508589,
@@ -1521,17 +1664,16 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "ArCondicionadoLoja",
-							"sid": 690423868859311,
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 369716730803679,
 							"parameters": {
-								"animation": "\"Idle\"",
-								"from": "beginning"
+								"variable": "robo",
+								"value": "1"
 							}
 						}
 					],
-					"sid": 334285007150325,
-					"disabled": true
+					"sid": 334285007150325
 				}
 			]
 		},
@@ -1926,6 +2068,26 @@
 								"comparison": 0,
 								"second-value": "\"ferro\""
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 858870595218950,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 865994993202132,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
@@ -2032,6 +2194,26 @@
 								"first-value": "MaterialCerto",
 								"comparison": 0,
 								"second-value": "\"cobre\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 338871058603705,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 117545905271668,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 1,
+								"value": "0"
 							}
 						}
 					],
@@ -2140,6 +2322,26 @@
 								"comparison": 0,
 								"second-value": "\"eritro\""
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 394357882621942,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 104791203997136,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 1,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
@@ -2247,6 +2449,26 @@
 								"comparison": 0,
 								"second-value": "\"Viridis\""
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 177811680263899,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 134102979179700,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 1,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
@@ -2353,6 +2575,26 @@
 								"first-value": "MaterialCerto",
 								"comparison": 0,
 								"second-value": "\"ouro\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 564207351089806,
+							"parameters": {
+								"variable": "robo",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 851830240146392,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 1,
+								"value": "0"
 							}
 						}
 					],
@@ -5118,38 +5360,6 @@
 									"parameters": {
 										"visibility": "visible"
 									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoBaixoHitbox",
-									"sid": 223418048222150,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoCimaHitBox",
-									"sid": 796593532964878,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoEsquerdoHitBox",
-									"sid": 118571300442932,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoDireitoHitbox",
-									"sid": 151228230490135,
-									"parameters": {
-										"visibility": "invisible"
-									}
 								}
 							],
 							"sid": 677753051829422
@@ -5210,38 +5420,6 @@
 									"sid": 372439741397646,
 									"parameters": {
 										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoBaixoHitbox",
-									"sid": 251003968877565,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoCimaHitBox",
-									"sid": 310847813721230,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoEsquerdoHitBox",
-									"sid": 955175657933261,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "CaixaLadoDireitoHitbox",
-									"sid": 572479154740441,
-									"parameters": {
-										"visibility": "invisible"
 									}
 								}
 							],

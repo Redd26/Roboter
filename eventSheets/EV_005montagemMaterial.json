@@ -1435,6 +1435,32 @@
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
 											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 679842389399945,
+											"parameters": {
+												"animation": "\"Martelando\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 809376931247525,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 847941312007847,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 997808367092253,
@@ -2476,6 +2502,32 @@
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
 											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 894034270498103,
+											"parameters": {
+												"animation": "\"Martelando\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 879259501999198,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 205132181749462,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 729203674455149,
@@ -2962,6 +3014,32 @@
 												"volume": "-10",
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 897025333737198,
+											"parameters": {
+												"animation": "\"Martelando\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 703270785433878,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 401586981928367,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
 											}
 										}
 									],
@@ -3479,6 +3557,32 @@
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
 											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 938123469010585,
+											"parameters": {
+												"animation": "\"Martelando\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 523378766299898,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Martelo",
+											"sid": 363709074519564,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 858198344524409,
@@ -3684,11 +3788,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 701004906485586,
+													"sid": 428551342881351,
 													"parameters": {
 														"variable": "contadorHitPoints",
 														"comparison": 0,
-														"value": "5"
+														"value": "6"
 													}
 												}
 											],
