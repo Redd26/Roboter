@@ -7870,10 +7870,10 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 117151571311019,
+											"sid": 258924574159943,
 											"parameters": {
 												"variable": "totalQuebraCabecaPecas",
-												"value": "13"
+												"value": "12"
 											}
 										}
 									],
@@ -8282,11 +8282,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 171576731672818,
+									"sid": 646449268617152,
 									"parameters": {
 										"variable": "Dia",
-										"comparison": 0,
-										"value": "4"
+										"comparison": 5,
+										"value": "3"
 									}
 								},
 								{
@@ -8355,11 +8355,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 961986607587813,
+									"sid": 640358614048456,
 									"parameters": {
 										"variable": "Dia",
-										"comparison": 0,
-										"value": "4"
+										"comparison": 5,
+										"value": "3"
 									}
 								},
 								{
@@ -8411,11 +8411,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 455421223051741,
+									"sid": 937881392960892,
 									"parameters": {
 										"variable": "Dia",
-										"comparison": 0,
-										"value": "4"
+										"comparison": 5,
+										"value": "3"
 									},
 									"isInverted": true
 								}
@@ -8475,11 +8475,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 630973528793888,
+									"sid": 746998562592084,
 									"parameters": {
 										"variable": "Dia",
-										"comparison": 0,
-										"value": "4"
+										"comparison": 5,
+										"value": "3"
 									},
 									"isInverted": true
 								},

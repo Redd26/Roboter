@@ -1590,11 +1590,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 257163105701498,
+													"sid": 262401754088259,
 													"parameters": {
 														"variable": "robo",
 														"comparison": 0,
-														"value": "3"
+														"value": "2"
 													}
 												}
 											],
@@ -1708,11 +1708,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 946959176876205,
+													"sid": 329808644237020,
 													"parameters": {
 														"variable": "robo",
 														"comparison": 0,
-														"value": "4"
+														"value": "3"
 													}
 												}
 											],
@@ -1826,11 +1826,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 763474772036731,
+													"sid": 873743204611195,
 													"parameters": {
 														"variable": "robo",
 														"comparison": 0,
-														"value": "5"
+														"value": "4"
 													}
 												}
 											],
@@ -1944,11 +1944,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 771206461107057,
+													"sid": 660376236639990,
 													"parameters": {
 														"variable": "robo",
 														"comparison": 0,
-														"value": "6"
+														"value": "5"
 													}
 												}
 											],
@@ -2041,6 +2041,124 @@
 												}
 											],
 											"sid": 430702007863422
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 582091299188733,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 724278535157385,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 439187587556291,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "6"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 827884776300902,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 491203461797376,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 787680537566900,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 475663113903947,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 804665879121370,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 164858982155336
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 291883636117353,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 104048055679649,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 410446331371473,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 633009319405244
+												}
+											],
+											"sid": 484068910540053
 										},
 										{
 											"eventType": "block",

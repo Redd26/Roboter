@@ -244,7 +244,12 @@
 			"FundinhoHUD",
 			"FalasObjetosINterativosLoja",
 			"FalasObjetosInterativosQuarto",
-			"ObjetoParaPolir"
+			"ObjetoParaPolir",
+			"MaquinaDePolirSombra",
+			"ColisaoPolir",
+			"CutDormir",
+			"TelaDeErro",
+			"cutMaldicao"
 		],
 		"subfolders": [
 			{
@@ -471,7 +476,8 @@
 			"Montagem_Material",
 			"Montagem_CortarChapa",
 			"Montagem_QuebraCabeca",
-			"Montagem_Empacotar"
+			"Montagem_Empacotar",
+			"cut"
 		],
 		"subfolders": []
 	},
@@ -489,7 +495,8 @@
 			"EV_013Pedidos",
 			"EV_010Movimentacao",
 			"EV_011Outlines",
-			"Ev_009Hud"
+			"Ev_009Hud",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},

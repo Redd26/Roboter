@@ -1,0 +1,49 @@
+{
+	"name": "TelaDeErro",
+	"plugin-id": "Sprite",
+	"sid": 708441127239795,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1282,
+						"height": 722,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4338239,
+						"collisionPoly": {
+							"points": [
+								0.00078003120124805,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.0013850415512465374,
+								0.999219968798752,
+								0.9986149584487535,
+								0.00078003120124805,
+								0.9986149584487535
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 900665650531970,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

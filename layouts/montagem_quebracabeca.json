@@ -101,7 +101,7 @@
 				{
 					"type": "CanoCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -649,7 +649,7 @@
 				{
 					"type": "AquecedorBracoEsquerdoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -678,7 +678,7 @@
 				{
 					"type": "AquecedorBracoDireitoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -707,7 +707,7 @@
 				{
 					"type": "CanoAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -736,7 +736,7 @@
 				{
 					"type": "Cano2AquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -765,7 +765,7 @@
 				{
 					"type": "CabecaAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -794,7 +794,7 @@
 				{
 					"type": "PeEsquerdoAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -823,7 +823,7 @@
 				{
 					"type": "PeDireitoAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -852,7 +852,7 @@
 				{
 					"type": "EsteriorEsquerdoCimaAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -881,7 +881,7 @@
 				{
 					"type": "ExteriorEsquerdoBaixcAquecedorAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -910,7 +910,7 @@
 				{
 					"type": "ExteriorDireitoCimaAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -939,7 +939,7 @@
 				{
 					"type": "InferiorEsquerdoAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -968,7 +968,7 @@
 				{
 					"type": "InferiorDireitoAquecedorColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1861,7 +1861,7 @@
 				{
 					"type": "EngrenagemCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1890,7 +1890,7 @@
 				{
 					"type": "RodaCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1919,7 +1919,7 @@
 				{
 					"type": "BracoCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1948,7 +1948,7 @@
 				{
 					"type": "BaseCatapultacolisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1958,8 +1958,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 230,
-						"y": -404,
+						"x": -42,
+						"y": -430,
 						"width": 106,
 						"height": 30,
 						"originX": 0,
@@ -2006,7 +2006,7 @@
 				{
 					"type": "ParafusosCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2352,7 +2352,7 @@
 				{
 					"type": "OmbroEsquerdoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2381,7 +2381,7 @@
 				{
 					"type": "CorpoInferiorEsquerdoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2410,7 +2410,7 @@
 				{
 					"type": "CorpoInferiorDireitoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2439,7 +2439,7 @@
 				{
 					"type": "PeEsquerdoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2468,7 +2468,7 @@
 				{
 					"type": "PeDireitoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2497,7 +2497,7 @@
 				{
 					"type": "CabecaFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2526,7 +2526,7 @@
 				{
 					"type": "DetalheCabeca1FornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2555,7 +2555,7 @@
 				{
 					"type": "DetalheCabeca2FornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2584,7 +2584,7 @@
 				{
 					"type": "OmbroDireitoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2613,7 +2613,7 @@
 				{
 					"type": "PescocoFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2642,7 +2642,7 @@
 				{
 					"type": "GradeEsquerdaFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2671,7 +2671,7 @@
 				{
 					"type": "GradeDireitaFornoColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -3876,8 +3876,8 @@
 							"properties": {
 								"axes": "both",
 								"initial-state": "enabled",
-								"bound-to": "radius",
-								"bound-by": "origin",
+								"bound-to": "position",
+								"bound-by": "edge",
 								"bound-method": "clamp",
 								"bound-xradius": 100,
 								"bound-yradius": 100,
@@ -3905,8 +3905,8 @@
 						}
 					},
 					"world": {
-						"x": 221,
-						"y": -573,
+						"x": 99.07183177542453,
+						"y": -436.71770627502025,
 						"width": 106,
 						"height": 30,
 						"originX": 0,

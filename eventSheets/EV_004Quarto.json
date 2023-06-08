@@ -209,11 +209,63 @@
 							}
 						},
 						{
+							"callFunction": "ChamarAnimDormir",
+							"sid": 915086984842142
+						}
+					],
+					"sid": 510687027527261
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 760802546731744,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "CamaQuarto"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 859666687987248,
+							"parameters": {
+								"variable": "Dormir"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 632332099369599,
+							"parameters": {
+								"variable": "FinalizarDia"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 457223713055954,
+							"parameters": {
+								"variable": "PedidosAcertos",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "SetarCut"
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 828879194359654,
+							"sid": 869072302308462,
 							"parameters": {
-								"audio-file": "BatidaDoRelogio",
+								"audio-file": "menu_confirm",
 								"loop": "not-looping",
 								"volume": "-10",
 								"stereo-pan": "0",
@@ -221,11 +273,46 @@
 							}
 						},
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 397393315471084,
+							"parameters": {
+								"variable": "BloquearCorreio",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 350136742859802,
+							"parameters": {
+								"variable": "Dormir",
+								"value": "false"
+							}
+						},
+						{
 							"callFunction": "ChamarAnimDormir",
-							"sid": 915086984842142
+							"sid": 305982961813137
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 342021570869906,
+							"parameters": {
+								"layout": "cut"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cutMaldicao",
+							"sid": 590121345401761,
+							"parameters": {
+								"animation": "\"continua\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 510687027527261
+					"sid": 805335345904555
 				}
 			],
 			"sid": 346628142447910
@@ -547,183 +634,6 @@
 			"sid": 618564429862308
 		},
 		{
-			"eventType": "comment",
-			"text": "Caixas de dialogo"
-		},
-		{
-			"eventType": "group",
-			"disabled": true,
-			"title": "InteracoesQuarto",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 140506487658846,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "MesaPlantas"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 664047836353518,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 748498658648324,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "Robozao"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 915279279993869,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 543342892892359,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "ArCondicionadoQuarto"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 334368970667004,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 181883703681522,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "ObjetoAmaldicoado"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 703466284114821,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 662240295562027,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "JanelaQuarto"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 634176220860088,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 271211984115000,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "EstanteDeLivrosQuarto"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 714798822349573,
-					"disabled": true
-				}
-			],
-			"sid": 866965185709682
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 622497556652019,
-					"parameters": {
-						"variable": "EstouQuarto"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 985174161063032,
-					"parameters": {
-						"variable": "horarioDoDia",
-						"comparison": 0,
-						"value": "\"noite\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 944150396328354,
-					"parameters": {
-						"tag": "\"MontagemMusic\""
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 451904479846754,
-					"parameters": {
-						"tag": "\"LojaMusic\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 546407462083559,
-					"parameters": {
-						"audio-file": "BGM_Quarto",
-						"loop": "looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"QuartoMusic\""
-					}
-				}
-			],
-			"sid": 825560692357594,
-			"disabled": true
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -943,6 +853,41 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "CutDormir",
+					"sid": 888083397114408,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "CutDormir",
+					"sid": 441160363344292,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 507028936281692,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CutDormir",
+					"sid": 263027341597657,
+					"parameters": {
+						"x": "4000",
+						"y": "4000"
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "AnimDormirAcordar",
 					"sid": 232615913439572,
@@ -970,6 +915,29 @@
 				}
 			],
 			"sid": 567684877177825
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "CutDormir",
+					"sid": 532064336141909,
+					"parameters": {
+						"animation": "\"idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "CutDormir",
+					"sid": 672343105024358,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 487644268836549,
+			"disabled": true
 		}
 	],
 	"sid": 319169129069670

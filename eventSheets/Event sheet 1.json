@@ -1,0 +1,39 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 205799541016788
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 894314987771009,
+					"parameters": {
+						"audio-file": "menu_confirm",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Click\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 819897949498132,
+					"parameters": {
+						"layout": "MenuPrincipal"
+					}
+				}
+			],
+			"sid": 994658577603987
+		}
+	],
+	"sid": 267318483995002
+}

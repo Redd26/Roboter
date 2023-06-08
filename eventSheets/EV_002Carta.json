@@ -2,6 +2,10 @@
 	"name": "EV_002Carta",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "EV_013Pedidos"
+		},
+		{
 			"eventType": "variable",
 			"name": "isCartaClicada",
 			"type": "boolean",

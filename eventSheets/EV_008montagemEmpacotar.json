@@ -2518,6 +2518,207 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CabecaAquecedor",
+							"sid": 526109864918623,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CabecaAquecedor",
+							"sid": 402015603214939,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CabecaAquecedor",
+							"sid": 778736584067769
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 176521570725219
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 103442093700413,
+							"parameters": {
+								"object": "CaixaMeioFundo",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 527975788612963,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 459569972020637,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 773333670915581,
+							"parameters": {
+								"x": "1094",
+								"y": "526"
+							}
+						}
+					],
+					"sid": 530975290964420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "EngrenagemCatapulta",
+							"sid": 894435330147554,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "EngrenagemCatapulta",
+							"sid": 248344302870900,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EngrenagemCatapulta",
+							"sid": 569824463545436
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 330364307371872
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 942941803884059,
+							"parameters": {
+								"object": "CaixaMeioFundo",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 629089113481984,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 348209479016556,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 386843148144740,
+							"parameters": {
+								"x": "1094",
+								"y": "526"
+							}
+						}
+					],
+					"sid": 669730111350087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CabecaForno",
+							"sid": 210373849350345,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CabecaForno",
+							"sid": 302301667310075,
+							"parameters": {
+								"object": "ColicaoCabecaEmpacotar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CabecaForno",
+							"sid": 310426808113286
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 840527973908495
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 977100429906161,
+							"parameters": {
+								"object": "CaixaMeioFundo",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 246218476494522,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "CaixaParteDeCima",
+							"sid": 677028934527294,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ProximoLevel",
+							"sid": 988446571909489,
+							"parameters": {
+								"x": "1094",
+								"y": "526"
+							}
+						}
+					],
+					"sid": 777592004262828
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-end-of-layout",
 							"objectClass": "System",
 							"sid": 830033688102537

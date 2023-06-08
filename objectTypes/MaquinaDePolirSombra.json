@@ -1,16 +1,10 @@
 {
-	"name": "MaquinaDePolir",
+	"name": "MaquinaDePolirSombra",
 	"plugin-id": "Sprite",
-	"sid": 635547730628300,
+	"sid": 468319637504269,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "CV_BoundedDragnDrop",
-			"name": "BoundedDragDrop",
-			"sid": 918344038314568
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7255295,
+						"imageSpriteId": 2035320,
 						"collisionPoly": {
 							"points": [
 								0.5212765957446809,
@@ -49,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 140527198839221,
+				"sid": 925886956352159,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

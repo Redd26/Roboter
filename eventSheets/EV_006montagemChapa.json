@@ -52,6 +52,26 @@
 			"sid": 593573485987715
 		},
 		{
+			"eventType": "variable",
+			"name": "TransformarPolir",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 456193119652265
+		},
+		{
+			"eventType": "variable",
+			"name": "DestravarPlay",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235903354349847
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_003loja"
 		},
@@ -276,6 +296,24 @@
 										"variable": "ChapaFinalizada"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 215399675051361,
+									"parameters": {
+										"variable": "DestravarPlay"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 339353549814214,
+									"parameters": {
+										"variable": "robo",
+										"comparison": 4,
+										"value": "1"
+									}
 								}
 							],
 							"actions": [
@@ -338,6 +376,117 @@
 								}
 							],
 							"sid": 380937914480514
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 133466825640806,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "BotaoIniciarCorte"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 371797673487968,
+									"parameters": {
+										"variable": "ChapaPreparada"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 313392754194882,
+									"parameters": {
+										"variable": "ChapaFinalizada"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 864740013429325,
+									"parameters": {
+										"variable": "DestravarPlay"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 841463287317207,
+									"parameters": {
+										"variable": "robo",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 934899331736582,
+									"parameters": {
+										"audio-file": "menu_confirm",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 704583062898536,
+									"parameters": {
+										"variable": "ChapaAndar",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BotaoIniciarCorte",
+									"sid": 605904150036942,
+									"parameters": {
+										"animation": "\"Cliked\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Serra",
+									"sid": 727390999977170,
+									"parameters": {
+										"animation": "\"Ativada\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Ventuinhas",
+									"sid": 267911751003050,
+									"parameters": {
+										"animation": "\"Ativado\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "ApagarChapa",
+									"sid": 648116561158296,
+									"parameters": {
+										"animation": "\"Ativado\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 154986704308405
 						},
 						{
 							"eventType": "block",
@@ -2803,6 +2952,23 @@
 						},
 						{
 							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 847725293172248,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 308345735219899,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-position",
 							"objectClass": "Transicao",
 							"sid": 358998617310892,
 							"parameters": {
@@ -2817,14 +2983,6 @@
 							"parameters": {
 								"animation": "\"Animation 1\"",
 								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 956194652180431,
-							"parameters": {
-								"seconds": "1.3"
 							}
 						},
 						{
@@ -3037,10 +3195,10 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 241355024711694,
+					"sid": 343236340879574,
 					"parameters": {
 						"variable": "BarraRobotica",
-						"comparison": 0,
+						"comparison": 5,
 						"value": "1"
 					}
 				}
@@ -3058,6 +3216,15 @@
 					"id": "set-position",
 					"objectClass": "MaquinaDePolir",
 					"sid": 317225640295069,
+					"parameters": {
+						"x": "1204",
+						"y": "242"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "MaquinaDePolirSombra",
+					"sid": 380387182726181,
 					"parameters": {
 						"x": "1204",
 						"y": "242"
@@ -3086,13 +3253,82 @@
 						"click-type": "clicked",
 						"object-clicked": "MaquinaDePolir"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 879778273935549,
+					"parameters": {
+						"variable": "TransformarPolir"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 454737326515170,
+					"parameters": {
+						"variable": "TransformarPolir",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 547009066958323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 395926919832391,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked",
+						"object-clicked": "MaquinaDePolirSombra"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 969466082318985,
+					"parameters": {
+						"variable": "TransformarPolir"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 935560377814375,
+					"parameters": {
+						"variable": "TransformarPolir",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 135236508203151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 151013537156542,
+					"parameters": {
+						"variable": "TransformarPolir"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-position",
 					"objectClass": "MaquinaDePolir",
-					"sid": 131171945107134,
+					"sid": 373811406040739,
 					"parameters": {
 						"x": "Mouse.X",
 						"y": "Mouse.Y"
@@ -3101,7 +3337,7 @@
 				{
 					"id": "pin-to-object-properties",
 					"objectClass": "ObjetoParaPolir",
-					"sid": 241949565744159,
+					"sid": 200702726632275,
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "MaquinaDePolir",
@@ -3114,7 +3350,168 @@
 					}
 				}
 			],
-			"sid": 547009066958323
+			"sid": 943305655641575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "MaquinaDePolir",
+					"sid": 424098894777361,
+					"parameters": {
+						"object": "MascaraDePolir"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 365309280507910,
+					"parameters": {
+						"object-to-create": "ObjetoParaPolir",
+						"layer": "\"CamadaDoPolir\"",
+						"x": "MaquinaDePolir.X",
+						"y": "MaquinaDePolir.Y",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 638067496250020
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ObjetoParaPolir",
+					"sid": 927293191042165,
+					"parameters": {
+						"object": "ColisaoPolir"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ColisaoPolir",
+					"sid": 930346022462634
+				},
+				{
+					"callFunction": "ColidiuPolir",
+					"sid": 953827987154045
+				}
+			],
+			"sid": 309049532278207
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 427254507995190
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ColidiuPolir",
+					"sid": 290112261756204
+				}
+			],
+			"sid": 216997615400140
+		},
+		{
+			"functionName": "ColidiuPolir",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 643142905848998,
+					"parameters": {
+						"first-value": "ColisaoPolir.Count",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 311196491531831,
+					"parameters": {
+						"variable": "DestravarPlay",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 289570945023919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "isdragging0",
+					"objectClass": "MaquinaDePolir",
+					"sid": 447547697240222,
+					"disabled": true,
+					"behaviorType": "BoundedDragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "MaquinaDePolir",
+					"sid": 117005712129358,
+					"disabled": true,
+					"parameters": {
+						"object": "MascaraDePolir"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 635042024388622,
+					"disabled": true,
+					"parameters": {
+						"object-to-create": "ObjetoParaPolir",
+						"layer": "\"CamadaDoPolir\"",
+						"x": "MaquinaDePolir.X",
+						"y": "MaquinaDePolir.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 910287039292130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 751868662957596
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ObjetoParaPolir",
+					"sid": 183440085285849
+				}
+			],
+			"sid": 970514234424867
 		}
 	],
 	"sid": 886171643003322
