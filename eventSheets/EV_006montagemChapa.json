@@ -2969,6 +2969,15 @@
 						},
 						{
 							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 223379131220342,
+							"parameters": {
+								"x": "-1364",
+								"y": "-4"
+							}
+						},
+						{
+							"id": "set-position",
 							"objectClass": "Transicao",
 							"sid": 358998617310892,
 							"parameters": {
@@ -3398,10 +3407,6 @@
 					"id": "destroy",
 					"objectClass": "ColisaoPolir",
 					"sid": 930346022462634
-				},
-				{
-					"callFunction": "ColidiuPolir",
-					"sid": 953827987154045
 				}
 			],
 			"sid": 309049532278207
@@ -3436,10 +3441,10 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 643142905848998,
+					"sid": 417904189799821,
 					"parameters": {
 						"first-value": "ColisaoPolir.Count",
-						"comparison": 0,
+						"comparison": 3,
 						"second-value": "1"
 					}
 				}

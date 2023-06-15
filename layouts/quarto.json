@@ -47,6 +47,22 @@
 					"uid": 177,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 838.9008459521017,
 						"y": 651.012747279558,
@@ -596,35 +612,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "FalasObjetosInterativosQuarto",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "FalaEstante",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 395,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 501,
-						"y": -287,
-						"width": 580,
-						"height": 124,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 891345089239605,
@@ -660,51 +647,6 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "quartoSaida",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 62,
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"BetterOutline": {
-							"isEnabled": false,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 892.0677073278558,
-						"y": 674.1138251014866,
-						"width": 103.67637315332524,
-						"height": 43.887236822942555,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "Personagem",
 					"properties": {
@@ -1031,6 +973,20 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -1091,6 +1047,105 @@
 						"y": -859,
 						"width": 1284.003125,
 						"height": 724.0055555555556,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TileDialogos",
+					"properties": {
+						"initially-visible": false,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 412,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 40,
+							"height": 22,
+							"max-width": 40,
+							"max-height": 22,
+							"data": "243x0,1,7,19,19x0,2,8,20,19x0,3,9,21,19x0,4,10,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,10,22,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,6,18,24,128x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FalasObjetosInterativosQuarto",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "FalaEstante",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 395,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 501,
+						"y": -287,
+						"width": 580,
+						"height": 124,
 						"originX": 0,
 						"originY": 0,
 						"color": [

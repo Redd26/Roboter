@@ -1288,6 +1288,32 @@
 													}
 												},
 												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 418710023969109,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 998914303736820,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 673502790284875,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
+													}
+												},
+												{
 													"id": "go-to-layout",
 													"objectClass": "System",
 													"sid": 225797496632007,
@@ -1834,6 +1860,32 @@
 													}
 												},
 												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 680534671565230,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 226883153598038,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 270113233521596,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
+													}
+												},
+												{
 													"id": "go-to-layout",
 													"objectClass": "System",
 													"sid": 519804640581330,
@@ -2347,6 +2399,32 @@
 													}
 												},
 												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 909128529815889,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 474001796056716,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 873669168542429,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
+													}
+												},
+												{
 													"id": "go-to-layout",
 													"objectClass": "System",
 													"sid": 534423422029011,
@@ -2857,6 +2935,32 @@
 													"parameters": {
 														"variable": "Erro",
 														"value": "1"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 270232212302670,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 440661900994138,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 580265030985339,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
 													}
 												},
 												{
@@ -3407,6 +3511,32 @@
 													"parameters": {
 														"variable": "Erro",
 														"value": "1"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 677616880073682,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 596885050092684,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 140233718406607,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
 													}
 												},
 												{

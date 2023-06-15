@@ -2,6 +2,16 @@
 	"name": "EV_011Outlines",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "DialogoVisivel",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 982539812621742
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Quarto",
@@ -1157,6 +1167,84 @@
 							"sid": 517856829804443
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 165682703079365,
+							"parameters": {
+								"object": "tapeteQuarto"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "tapeteQuarto",
+							"sid": 916741279330586,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 790777851368356,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 147254791679373
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 600250435539743,
+									"parameters": {
+										"audio-file": "menu_select",
+										"loop": "not-looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 192428468819292
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 658343644785176,
+							"parameters": {
+								"object": "tapeteQuarto"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "tapeteQuarto",
+							"sid": 647895247301630,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 294089059895375
 				}
 			],
 			"sid": 730790377958747
@@ -3349,14 +3437,31 @@
 								"click-type": "clicked",
 								"object-clicked": "BauLoja"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 732997191740036,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 934354257627709,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 589804246824822,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 578513590317775,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3380,20 +3485,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 979509123568216,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 224677388352271,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 373038633920630,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 426820675864097,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 967378642989806,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 602358228238566,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 152386333788453,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 930525046685851,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 719612259159255,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3403,6 +3547,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 848772645864265,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 521415061654171,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3420,14 +3581,31 @@
 								"click-type": "clicked",
 								"object-clicked": "FornoCenarioLoja"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 219894649902533,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 361357491580507,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 246855777916338,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 780181516543611,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3451,20 +3629,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 834620325472581,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 433980139966487,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 457384186932887,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 677043403850046,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 534722098773438,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 807308279985099,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 685989921954040,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 977529958578226,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 153261952775102,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3474,6 +3691,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 746574246862707,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 989001466718096,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3491,14 +3725,31 @@
 								"click-type": "clicked",
 								"object-clicked": "MineriosLoja"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 752103242189476,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 784108019248874,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 745909444023119,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 263181621012309,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3522,20 +3773,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 338121546644972,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 853953201537018,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 351543989159789,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 517950361798784,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 172949249698314,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 843592394663104,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 144159674562242,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 139552040351861,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 988623544536334,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3545,6 +3835,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 312555832909804,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 454336424011947,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3562,14 +3869,31 @@
 								"click-type": "clicked",
 								"object-clicked": "ArCondicionadoLoja"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 289286423879695,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 751986943007123,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 129981641171359,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 528470013891208,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3602,20 +3926,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 219161524047751,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 988434611758388,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 656791383518465,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 327661352686819,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 875457985510612,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 792840294866428,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 903451391663901,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 966186404814559,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 164188939680647,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3625,6 +3988,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 690775239940208,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 886999139450666,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3646,14 +4026,31 @@
 								"click-type": "clicked",
 								"object-clicked": "EstanteDeLivrosQuarto"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 170497941820005,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 905219785487393,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 926167917385481,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 194424483219381,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3677,20 +4074,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 790370896688970,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 775791515670247,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 928844820348772,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 848110781988875,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 415914488404371,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 880561831916568,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 708560315423157,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 832191412275039,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 383890067424587,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3700,6 +4136,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 510130433483274,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 239729384159002,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3717,14 +4170,31 @@
 								"click-type": "clicked",
 								"object-clicked": "JanelaQuarto"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 862804853593172,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 347811629701588,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 514110082446722,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 919760862408555,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3748,20 +4218,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 255054797390958,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 478369752760248,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 749024429006014,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 350760169336028,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 775627491920298,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 144043775840104,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 402605611569129,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 644270049448415,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 571820183113771,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3771,6 +4280,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 241110300383291,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 106500902582431,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3788,14 +4314,31 @@
 								"click-type": "clicked",
 								"object-clicked": "Robozao"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 118165359514366,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 333174246741666,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 289328539141191,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 970335088677090,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3819,20 +4362,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 789325529825296,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 901819825557284,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 652643964124667,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 792826536698262,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 576871818548398,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 195889959896349,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 236623334868530,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 887482369951539,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 115953637923918,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3842,6 +4424,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 966965563887313,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 432273329433552,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3859,14 +4458,31 @@
 								"click-type": "clicked",
 								"object-clicked": "MesaPlantas"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 997700547834256,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 416007358490212,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 224565281610594,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 739242166147873,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3890,20 +4506,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 244492430452577,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 827270090095251,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 179287549601479,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 662346272743512,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 512712479979293,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 129514980357753,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 838939305426320,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 815020092794586,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 451998975786644,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3913,6 +4568,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 971820197404444,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 604511471571823,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],
@@ -3930,14 +4602,31 @@
 								"click-type": "clicked",
 								"object-clicked": "ObjetoAmaldicoado"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 474388102549862,
+							"parameters": {
+								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 475810582532144,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "true"
+							}
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 651289221065170,
-							"disabled": true,
+							"objectClass": "TileDialogos",
+							"sid": 828793385843577,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -3961,20 +4650,59 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 162083957422422,
+							"id": "set-fade-in-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 209697867945303,
+							"behaviorType": "Fade",
 							"parameters": {
-								"seconds": "3"
+								"fade-in-time": "2"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "FalasObjetosINterativosLoja",
-							"sid": 696190354734175,
-							"disabled": true,
+							"id": "set-fade-out-time",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 334911186545933,
+							"behaviorType": "Fade",
 							"parameters": {
-								"visibility": "invisible"
+								"fade-out-time": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FalasObjetosInterativosQuarto",
+							"sid": 703866261320838,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "TileDialogos",
+							"sid": 236138858229467,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "TileDialogos",
+							"sid": 209370125881022,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "4"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "TileDialogos",
+							"sid": 119913799024006,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 936139659983371,
+							"parameters": {
+								"seconds": "5"
 							}
 						},
 						{
@@ -3984,6 +4712,23 @@
 							"parameters": {
 								"x": "4000",
 								"y": "4000"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TileDialogos",
+							"sid": 919257766168753,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 285566032090557,
+							"parameters": {
+								"variable": "DialogoVisivel",
+								"value": "false"
 							}
 						}
 					],

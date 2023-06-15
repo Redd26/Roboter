@@ -2326,6 +2326,18 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 549231677677835,
+							"parameters": {
+								"audio-file": "menu_confirm",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "Transicao",
 							"sid": 195019827367158,
@@ -2436,6 +2448,14 @@
 							"behaviorType": "Fade"
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 952574105219193,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
 							"sid": 864012631569798,
@@ -2501,6 +2521,14 @@
 							"objectClass": "CaixaParteDeCima",
 							"sid": 655903564549032,
 							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 272668819161753,
+							"parameters": {
+								"seconds": "2"
+							}
 						},
 						{
 							"id": "set-position",
@@ -2570,6 +2598,14 @@
 							"behaviorType": "Fade"
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 776104185929597,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
 							"sid": 773333670915581,
@@ -2637,6 +2673,14 @@
 							"behaviorType": "Fade"
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 381190122325817,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
 							"sid": 386843148144740,
@@ -2702,6 +2746,14 @@
 							"objectClass": "CaixaParteDeCima",
 							"sid": 677028934527294,
 							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 498837080131145,
+							"parameters": {
+								"seconds": "2"
+							}
 						},
 						{
 							"id": "set-position",

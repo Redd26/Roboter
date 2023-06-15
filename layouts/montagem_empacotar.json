@@ -491,6 +491,22 @@
 					"uid": 67,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 603.9077295846557,
 						"y": 498.7345265653648,
@@ -520,6 +536,22 @@
 					"uid": 72,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 707.8020041481182,
 						"y": 382.01220285886933,
@@ -549,6 +581,22 @@
 					"uid": 60,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 603.8656877683052,
 						"y": 266.0487182569432,
@@ -578,6 +626,22 @@
 					"uid": 77,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 499.99359625459965,
 						"y": 382.02251279214255,
@@ -607,6 +671,22 @@
 					"uid": 239,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 603.9195729384296,
 						"y": 382.45524612637877,
@@ -769,6 +849,20 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": true,
 							"parameters": {

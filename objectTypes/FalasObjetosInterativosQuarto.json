@@ -4,7 +4,13 @@
 	"sid": 747119366751972,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 474820039677284
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -49,7 +55,7 @@
 						"width": 614,
 						"height": 90,
 						"originX": 0,
-						"originY": 0,
+						"originY": -0.15555555555555556,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -84,7 +90,7 @@
 						"width": 577,
 						"height": 85,
 						"originX": 0,
-						"originY": 0,
+						"originY": -0.16470588235294117,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -119,7 +125,7 @@
 						"width": 538,
 						"height": 99,
 						"originX": 0,
-						"originY": 0,
+						"originY": -0.18181818181818182,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -154,7 +160,7 @@
 						"width": 533,
 						"height": 95,
 						"originX": 0,
-						"originY": 0,
+						"originY": -0.18947368421052632,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

@@ -529,6 +529,20 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -4435,35 +4449,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "TelaDeErro",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 409,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -1364,
-						"y": -4,
-						"width": 1282,
-						"height": 722,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 199284589719870,
@@ -4925,6 +4910,35 @@
 						"y": 949,
 						"width": 1280,
 						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TelaDeErro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 409,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -1364,
+						"y": -4,
+						"width": 1282,
+						"height": 722,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -6392,6 +6392,78 @@
 												"animation": "\"Idle\"",
 												"from": "beginning"
 											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 271808478091261,
+											"parameters": {
+												"variable": "PedidoFinalizado",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 557154745339207,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"value": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 448659235297400,
+											"parameters": {
+												"variable": "MaterialCerto",
+												"value": "\"\""
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 359598143085821,
+											"parameters": {
+												"variable": "PedidoAceito",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 752675426441715,
+											"parameters": {
+												"variable": "PedidoAutorizado",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 965175810269819,
+											"parameters": {
+												"variable": "PedidoNegado",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "CarimbadaAprovada",
+											"sid": 522111662475446,
+											"parameters": {
+												"animation": "\"IdleAprovado\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "CarimbadaNegada",
+											"sid": 961933307775684,
+											"parameters": {
+												"animation": "\"IdleNegado\"",
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 925132637284744

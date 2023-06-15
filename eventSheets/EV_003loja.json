@@ -96,6 +96,16 @@
 			"sid": 106123472105139
 		},
 		{
+			"eventType": "variable",
+			"name": "MostrarAnimDia",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 666714055042243
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "EvLojaGrupo",
@@ -261,6 +271,14 @@
 										"comparison": 0,
 										"value": "1"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 568060031789355,
+									"parameters": {
+										"variable": "MostrarAnimDia"
+									}
 								}
 							],
 							"actions": [
@@ -314,6 +332,15 @@
 										"x": "1616",
 										"y": "-123"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 162921726422785,
+									"parameters": {
+										"variable": "MostrarAnimDia",
+										"value": "false"
+									}
 								}
 							],
 							"sid": 317801248448916
@@ -334,6 +361,14 @@
 										"variable": "Dia",
 										"comparison": 0,
 										"value": "2"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 610821790949574,
+									"parameters": {
+										"variable": "MostrarAnimDia"
 									}
 								}
 							],
@@ -388,6 +423,15 @@
 										"x": "1616",
 										"y": "-123"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 243357773514365,
+									"parameters": {
+										"variable": "MostrarAnimDia",
+										"value": "false"
+									}
 								}
 							],
 							"sid": 952254174175945
@@ -408,6 +452,14 @@
 										"variable": "Dia",
 										"comparison": 0,
 										"value": "3"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 665289450517723,
+									"parameters": {
+										"variable": "MostrarAnimDia"
 									}
 								}
 							],
@@ -462,6 +514,15 @@
 										"x": "1616",
 										"y": "-123"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 784966171624005,
+									"parameters": {
+										"variable": "MostrarAnimDia",
+										"value": "false"
+									}
 								}
 							],
 							"sid": 505557940469730
@@ -482,6 +543,14 @@
 										"variable": "Dia",
 										"comparison": 0,
 										"value": "4"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 509186800023992,
+									"parameters": {
+										"variable": "MostrarAnimDia"
 									}
 								}
 							],
@@ -535,6 +604,15 @@
 									"parameters": {
 										"x": "1616",
 										"y": "-123"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 582169719459416,
+									"parameters": {
+										"variable": "MostrarAnimDia",
+										"value": "false"
 									}
 								}
 							],

@@ -4,7 +4,12 @@
 	"sid": 235308455086963,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline2"
+		}
+	],
 	"members": [
 		"BotaoAceitar",
 		"BotaoRecusar",
@@ -34,6 +39,7 @@
 		"BaseCortaPao",
 		"SeletorCarimbo",
 		"SeletorEnergia",
-		"CaixaMeioFundo"
+		"CaixaMeioFundo",
+		"tapeteQuarto"
 	]
 }

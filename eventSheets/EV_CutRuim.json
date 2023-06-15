@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "EV_CutRuim",
 	"events": [
 		{
 			"eventType": "block",
@@ -21,6 +21,31 @@
 						"volume": "0",
 						"stereo-pan": "0",
 						"tag-optional": "\"Click\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 866517645095636,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cutMaldicao",
+					"sid": 510678466681890,
+					"parameters": {
+						"animation": "\"continua\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 968141087701348,
+					"parameters": {
+						"seconds": "3"
 					}
 				},
 				{

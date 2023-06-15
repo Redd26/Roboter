@@ -56,6 +56,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -249,7 +256,8 @@
 			"ColisaoPolir",
 			"CutDormir",
 			"TelaDeErro",
-			"cutMaldicao"
+			"cutMaldicao",
+			"TileDialogos"
 		],
 		"subfolders": [
 			{
@@ -496,7 +504,7 @@
 			"EV_010Movimentacao",
 			"EV_011Outlines",
 			"Ev_009Hud",
-			"Event sheet 1"
+			"EV_CutRuim"
 		],
 		"subfolders": []
 	},

@@ -241,6 +241,22 @@
 					"uid": 14,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 1495,
 						"y": 401,
@@ -324,6 +340,20 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -375,6 +405,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -426,6 +470,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -479,6 +537,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -530,6 +602,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -581,6 +667,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -632,6 +732,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -683,6 +797,20 @@
 						}
 					},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
@@ -1237,6 +1365,20 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
+						"BetterOutline2": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
 						"BetterOutline": {
 							"isEnabled": false,
 							"parameters": {
