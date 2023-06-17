@@ -140,6 +140,26 @@
 			"sid": 237730124805228
 		},
 		{
+			"eventType": "variable",
+			"name": "Tutorial",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 552282012962604
+		},
+		{
+			"eventType": "variable",
+			"name": "Fase1Tutorial",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 843090352607931
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -7421,6 +7441,138 @@
 				}
 			],
 			"sid": 721978836388461
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Tutorial",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 822156765133749,
+							"parameters": {
+								"variable": "Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 998808106340036,
+							"parameters": {
+								"variable": "Fase1Tutorial",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 178124935105325,
+							"parameters": {
+								"group-name": "\"Interacoes Oficina\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 348963203034244,
+							"parameters": {
+								"group-name": "\"Interacoes Oficina Tutorial\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 460789022174468
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 562612846544161,
+							"parameters": {
+								"variable": "Tutorial"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 560412024035002,
+							"parameters": {
+								"variable": "Fase1Tutorial",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 908383166161178,
+							"parameters": {
+								"group-name": "\"Interacoes Oficina Tutorial\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 740419432168227,
+							"parameters": {
+								"group-name": "\"Interacoes Oficina\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 871483722705922
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 640822714004100,
+							"parameters": {
+								"variable": "Tutorial"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906460777884297,
+							"parameters": {
+								"variable": "BarraRobotica",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 227258422930035,
+							"parameters": {
+								"variable": "Tutorial",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 196300776356430
+				}
+			],
+			"sid": 393127667130371
 		}
 	],
 	"sid": 524867988248230

@@ -1170,6 +1170,15 @@
 												"click-type": "clicked",
 												"object-clicked": "ouro"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 110609931950812,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -1742,6 +1751,14 @@
 												"click-type": "clicked",
 												"object-clicked": "Ferro"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 816533705339039,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											}
 										}
 									],
 									"actions": [
@@ -1925,6 +1942,213 @@
 												}
 											],
 											"sid": 939871557754418
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 502969398365426,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Ferro"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 265183980614707,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 761456131677332,
+											"parameters": {
+												"audio-file": "menu_confirm",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 713004319196434,
+											"parameters": {
+												"variable": "materialEscolhido",
+												"value": "\"ferro\""
+											}
+										},
+										{
+											"callFunction": "AnalisarMaterial",
+											"sid": 581987526159405
+										}
+									],
+									"sid": 241197933200239,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 853049019503839,
+													"parameters": {
+														"variable": "PedidoAutorizado"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "MaterialFerroDestruir",
+													"sid": 402947500382989,
+													"parameters": {
+														"x": "535",
+														"y": "357"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "MaterialFerroDestruir",
+													"sid": 263971085203105,
+													"parameters": {
+														"animation": "\"IdleFerro\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 819386363455811,
+													"parameters": {
+														"seconds": "1.5"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "HitBoxMaterialDestruir",
+													"sid": 386613896894583,
+													"parameters": {
+														"x": "531",
+														"y": "353"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "HitBoxMaterialDestruir",
+													"sid": 559902077030350,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 880801204570049
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 950798689078331,
+													"parameters": {
+														"variable": "PedidoAutorizado"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"type": "comment",
+													"text": "Dar mensagem de erro"
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 389261841797671,
+													"parameters": {
+														"variable": "Erro",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 460094014439088,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 701204414378684,
+													"parameters": {
+														"seconds": "2"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "TelaDeErro",
+													"sid": 551799142721907,
+													"parameters": {
+														"x": "-1364",
+														"y": "-4"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 361624251203639,
+													"parameters": {
+														"layout": "Loja"
+													}
+												}
+											],
+											"sid": 425733790987422
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 607855548933615,
+													"parameters": {
+														"variable": "materialEscolhido",
+														"comparison": 0,
+														"value": "\"ferro\""
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 647914400272774,
+													"parameters": {
+														"variable": "TransformarMouse"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "CriarHitPoint",
+													"sid": 543149737618985
+												}
+											],
+											"sid": 174123269274394
 										}
 									]
 								},
@@ -2285,6 +2509,15 @@
 												"click-type": "clicked",
 												"object-clicked": "cobre"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 359935348298596,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -2824,6 +3057,15 @@
 												"click-type": "clicked",
 												"object-clicked": "viridisOre"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 973485799096310,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -3400,6 +3642,15 @@
 												"click-type": "clicked",
 												"object-clicked": "Eritro"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 338149386955808,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -4151,6 +4402,45 @@
 								}
 							],
 							"sid": 753533947822389
+						},
+						{
+							"eventType": "comment",
+							"text": "Tutorial"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 924993405590315,
+									"parameters": {
+										"variable": "Fase1Tutorial"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 437830536331903,
+									"parameters": {
+										"variable": "materialEscolhido",
+										"comparison": 1,
+										"value": "\"ferro\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 617817237488242,
+									"parameters": {
+										"variable": "isMaterialClicado",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 562300782458341
 						}
 					],
 					"sid": 748403445098952

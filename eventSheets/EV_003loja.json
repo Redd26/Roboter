@@ -652,7 +652,7 @@
 					"disabled": false,
 					"title": "Interacoes Oficina",
 					"description": "",
-					"isActiveOnStart": true,
+					"isActiveOnStart": false,
 					"children": [
 						{
 							"eventType": "group",
@@ -3072,6 +3072,1976 @@
 						}
 					],
 					"sid": 207612867271053
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Interacoes Oficina Tutorial",
+					"description": "",
+					"isActiveOnStart": false,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Carta2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 573302505235646,
+											"parameters": {
+												"layer": "\"cartaContainer\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 208289263503989,
+											"parameters": {
+												"group-name": "\"Invisivel2\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 642878680539909,
+											"parameters": {
+												"group-name": "\"Visivel2\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 560613517965560,
+											"parameters": {
+												"group-name": "\"Ativar Layers2\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 376092665416986,
+											"parameters": {
+												"group-name": "\"Desativar Layers2\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "FundoDosCarimbos",
+											"sid": 762939518923796,
+											"parameters": {
+												"x": "-4",
+												"y": "-1317"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "FundoDosCarimbos",
+											"sid": 838309133177683,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 501367036866000
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 453010056195792,
+											"parameters": {
+												"layer": "\"cartaContainer\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 507248926832357,
+											"parameters": {
+												"group-name": "\"Invisivel2\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 982211765238684,
+											"parameters": {
+												"group-name": "\"Visivel2\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 521945710834059,
+											"parameters": {
+												"group-name": "\"Ativar Layers2\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 922345992734638,
+											"parameters": {
+												"group-name": "\"Desativar Layers2\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "FundoDosCarimbos",
+											"sid": 473876627538788,
+											"parameters": {
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "FundoDosCarimbos",
+											"sid": 469798795190809,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 895462896507199
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Invisivel2",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 130194008735788,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "CaixaCorreiosLoja"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 672515960479442,
+													"disabled": true,
+													"parameters": {
+														"variable": "PedidoAceito"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 289948996344693,
+													"parameters": {
+														"variable": "BloquearCorreio"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 394940879057302,
+													"parameters": {
+														"object": "PauseFundo"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 223872229010569,
+													"parameters": {
+														"audio-file": "menu_confirm",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 393553064878077,
+													"parameters": {
+														"audio-file": "CartaAbrir",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 278738132924321,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 941957870131900
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "TextoCarta",
+													"sid": 720464590460645,
+													"disabled": true,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": false
+													}
+												}
+											],
+											"sid": 285268899253602
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 865873823089641,
+													"parameters": {
+														"object": "CaixaCorreiosLoja"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 324204880250779,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 978169484590196
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 315143611139468,
+															"parameters": {
+																"audio-file": "menu_select",
+																"loop": "not-looping",
+																"volume": "-10",
+																"stereo-pan": "0",
+																"tag-optional": "\"Click\""
+															}
+														}
+													],
+													"sid": 382457487820255
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 175256713318966,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "MesaOficina"
+													}
+												},
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 546097250114584,
+													"parameters": {
+														"object": "PauseFundo"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 871317795444802,
+													"parameters": {
+														"variable": "PedidoAceito"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 395453868458673,
+													"parameters": {
+														"audio-file": "menu_select",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 603505004596186,
+													"parameters": {
+														"variable": "NumeroCarta",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaNegada",
+													"sid": 422459623418228,
+													"parameters": {
+														"animation": "\"ComEscrita\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 499669328199606,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 873547859783558
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 440070758120435,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Transicao",
+													"sid": 256780869401625,
+													"parameters": {
+														"x": "0",
+														"y": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "Transicao",
+													"sid": 496609149942738,
+													"parameters": {
+														"animation": "\"Animation 1\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 264136121370337,
+													"parameters": {
+														"seconds": "1.3"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Transicao",
+													"sid": 817917627695598,
+													"parameters": {
+														"x": "3000",
+														"y": "1500"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 962456118083133,
+													"parameters": {
+														"layout": "Montagem_Material"
+													}
+												}
+											],
+											"sid": 702047553705551
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 878537254056894,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "MesaOficina"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 719134661835798,
+													"parameters": {
+														"variable": "PedidoAceito"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 931593953951643
+										}
+									],
+									"sid": 837072137102477
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Visivel2",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "TextoCarta",
+													"sid": 976171084041359,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"enabled": true
+													}
+												}
+											],
+											"sid": 543709101376535
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-mouse-wheel",
+													"objectClass": "Mouse",
+													"sid": 278567023930779,
+													"parameters": {
+														"direction": "up"
+													}
+												},
+												{
+													"id": "compare-y",
+													"objectClass": "TextoCarta",
+													"sid": 589401592036050,
+													"parameters": {
+														"comparison": 5,
+														"y-co-ordinate": "300"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "TextoCarta",
+													"sid": 142203301730969,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "TextoCarta.X",
+														"y": "TextoCarta.Y+80",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "SuporteScroll",
+													"sid": 982746488175653,
+													"parameters": {
+														"x": "SuporteScroll.X",
+														"y": "SuporteScroll.Y - 3"
+													}
+												}
+											],
+											"sid": 978579660082901
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-mouse-wheel",
+													"objectClass": "Mouse",
+													"sid": 771422938178278,
+													"parameters": {
+														"direction": "down"
+													}
+												},
+												{
+													"id": "compare-y",
+													"objectClass": "TextoCarta",
+													"sid": 563440310788106,
+													"parameters": {
+														"comparison": 3,
+														"y-co-ordinate": "20"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-position",
+													"objectClass": "TextoCarta",
+													"sid": 432863457677817,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"x": "TextoCarta.X",
+														"y": "TextoCarta.Y-80",
+														"mode": "direct"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "SuporteScroll",
+													"sid": 505428291253717,
+													"parameters": {
+														"x": "SuporteScroll.X",
+														"y": "SuporteScroll.Y+ 3"
+													}
+												}
+											],
+											"sid": 673486902841253
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-y",
+													"objectClass": "TextoCarta",
+													"sid": 189890733500026,
+													"parameters": {
+														"comparison": 3,
+														"y-co-ordinate": "20"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 236958756848844,
+													"parameters": {
+														"variable": "PosicaoCarimbada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 308007306063575,
+													"parameters": {
+														"variable": "PosicaoCarimbada",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 342289253386666
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-y",
+													"objectClass": "TextoCarta",
+													"sid": 806230920063592,
+													"parameters": {
+														"comparison": 5,
+														"y-co-ordinate": "50"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 432333582751570,
+													"parameters": {
+														"variable": "PosicaoCarimbada"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 313349225601264,
+													"parameters": {
+														"variable": "PosicaoCarimbada",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 663653573834678
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 861867008008701,
+													"parameters": {
+														"variable": "PosicaoCarimbada"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 293325647101810,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "CarimbadaNegada",
+													"sid": 984623605591001,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "CarimbadaNegada",
+													"sid": 610078001589964,
+													"parameters": {
+														"x": "480.01514",
+														"y": "568.152085"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 842623253499018,
+													"parameters": {
+														"x": "807.954508",
+														"y": "567.117249"
+													}
+												}
+											],
+											"sid": 357331450816052
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 439484310370848,
+													"parameters": {
+														"variable": "PosicaoCarimbada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 245382627210682,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "CarimbadaNegada",
+													"sid": 638328850392789,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "CarimbadaNegada",
+													"sid": 610690286561856,
+													"parameters": {
+														"x": "76",
+														"y": "1103"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 743569503678805,
+													"parameters": {
+														"x": "805",
+														"y": "1117"
+													}
+												}
+											],
+											"sid": 340340194645144
+										},
+										{
+											"eventType": "comment",
+											"text": "Aprovado"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 263171607808277,
+													"parameters": {
+														"object": "BotaoAceitar"
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 152257679925479,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 220572419565065,
+													"parameters": {
+														"animation": "\"MouseCarimboAprovado\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 693305338351832,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 357812784755363
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 758643752866968,
+															"parameters": {
+																"audio-file": "menu_select",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"Click\""
+															}
+														}
+													],
+													"sid": 894143146288774
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 114108095633617,
+													"parameters": {
+														"object": "BotaoAceitar"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 921542123920513,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 173184235746968,
+													"parameters": {
+														"animation": "\"IdleCarimbo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 599847169656629
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 749247829780852,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 901516842991655,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "BotaoAceitar",
+													"sid": 162187562923913,
+													"parameters": {
+														"x": "BotaoAceitar.PosX",
+														"y": "BotaoAceitar.PosY"
+													}
+												}
+											],
+											"sid": 701987139634180
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 584610564192654,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 114942061031527,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 949337010681644,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "0"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 434818104316162,
+													"parameters": {
+														"variable": "Fase1Tutorial"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 307515460313426,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoAceitar",
+													"sid": 835594784060726,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 460034043081560,
+													"parameters": {
+														"object": "CarimbadaAprovada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaAprovada",
+													"sid": 306786311378406,
+													"parameters": {
+														"animation": "\"ComEscritaAprovado\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 456821709701781,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoAceitar",
+													"sid": 210762896934069
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 586661926337090,
+													"parameters": {
+														"variable": "PedidoAceito",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 220674062084126,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 660362093672361,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 874714068440543
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 588769973555630,
+													"parameters": {
+														"variable": "robo",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 394294243847045
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BotaoAceitar",
+													"sid": 844899569923166,
+													"parameters": {
+														"animation": "\"Carimbando\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoAceitar",
+													"sid": 944651039978916,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "disabled"
+													}
+												}
+											],
+											"sid": 977686019067996
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BotaoAceitar",
+													"sid": 320674903474618,
+													"parameters": {
+														"animation": "\"Carimbando\""
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoAceitar",
+													"sid": 845447695738782,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "enabled"
+													}
+												}
+											],
+											"sid": 420698422070617
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 695272691052437,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoAceitar",
+													"sid": 331729124742820,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "enabled"
+													}
+												}
+											],
+											"sid": 721821985314898
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 708480183457909,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoAceitar",
+													"sid": 562282869822994,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "disabled"
+													}
+												}
+											],
+											"sid": 554958014819621
+										},
+										{
+											"eventType": "comment",
+											"text": "Recusado"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 343262064206599,
+													"parameters": {
+														"object": "BotaoRecusar"
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoRecusar",
+													"sid": 730948901440202,
+													"parameters": {
+														"object": "CarimbadaNegada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoRecusar",
+													"sid": 148663696706384,
+													"parameters": {
+														"animation": "\"MouseCarimboNegadi\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 792209816276597,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 698878240251248
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 479783875014081,
+															"parameters": {
+																"audio-file": "menu_select",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"Click\""
+															}
+														}
+													],
+													"sid": 233600051145103
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 906390456131088,
+													"parameters": {
+														"object": "BotaoRecusar"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoRecusar",
+													"sid": 434160671201734,
+													"parameters": {
+														"object": "CarimbadaNegada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoRecusar",
+													"sid": 971041896388005,
+													"parameters": {
+														"animation": "\"IdleCarimbo\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 484938736224793
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoRecusar",
+													"sid": 771047577715504,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoRecusar",
+													"sid": 287906217514123,
+													"parameters": {
+														"object": "CarimbadaNegada"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "BotaoRecusar",
+													"sid": 387192417311762,
+													"parameters": {
+														"x": "BotaoRecusar.PosX",
+														"y": "BotaoRecusar.PosY"
+													}
+												}
+											],
+											"sid": 995316160762729
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoRecusar",
+													"sid": 708209804701210,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoRecusar",
+													"sid": 966038257458530,
+													"parameters": {
+														"object": "CarimbadaNegada"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 914260662169962,
+													"parameters": {
+														"variable": "Fase1Tutorial"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 581198883019944,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 278587877047330,
+													"parameters": {
+														"audio-file": "stamp_3",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "BotaoRecusar",
+													"sid": 579273021357382,
+													"parameters": {
+														"object": "CarimbadaNegada",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoRecusar",
+													"sid": 600289540265378,
+													"parameters": {
+														"animation": "\"Carimbando\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "CarimbadaNegada",
+													"sid": 955068813117854,
+													"parameters": {
+														"animation": "\"ComEscrita\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 131626189778670,
+													"parameters": {
+														"seconds": "1"
+													}
+												},
+												{
+													"id": "move-to-top",
+													"objectClass": "BotaoRecusar",
+													"sid": 640799023984015
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 575170430896090,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 940481868379348,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 137201147673255,
+													"parameters": {
+														"variable": "PedidoNegado",
+														"value": "true"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 381506441748899,
+													"parameters": {
+														"variable": "NumeroCartaNegada",
+														"value": "1"
+													}
+												},
+												{
+													"callFunction": "FecharCarimbo",
+													"sid": 430002440344536
+												}
+											],
+											"sid": 832953641270643
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BotaoRecusar",
+													"sid": 502568212221650,
+													"parameters": {
+														"animation": "\"Carimbando\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoRecusar",
+													"sid": 112898068872440,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "disabled"
+													}
+												}
+											],
+											"sid": 240847029952262
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BotaoRecusar",
+													"sid": 453266357876055,
+													"parameters": {
+														"animation": "\"Carimbando\""
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoRecusar",
+													"sid": 622261660175376,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "enabled"
+													}
+												}
+											],
+											"sid": 824132041020770
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 610778449196753,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoRecusar",
+													"sid": 275192170224732,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "disabled"
+													}
+												}
+											],
+											"sid": 572353901482695
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 887695492495597,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "BotaoRecusar",
+													"sid": 783064481982143,
+													"behaviorType": "DragDrop",
+													"parameters": {
+														"state": "enabled"
+													}
+												}
+											],
+											"sid": 940991315891543
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 313763738461024,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "SeletorCarimbo"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "AbrirCarimbos2",
+													"sid": 223312654696409
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 950682008559140,
+													"parameters": {
+														"audio-file": "GavetaAbrir",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 333914189930231,
+													"disabled": true,
+													"parameters": {
+														"audio-file": "menu_confirm",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 775513034893575
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 214451582944052,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "SeletorCarimbo"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 633057719157808,
+													"parameters": {
+														"variable": "PedidoAceito"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "FecharCarimbo2",
+													"sid": 671437117889908
+												}
+											],
+											"sid": 826358488523687
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 518709195615157,
+													"parameters": {
+														"object": "BotaoFecharCarta"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoFecharCarta",
+													"sid": 600909798617680,
+													"parameters": {
+														"animation": "\"Outline\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 728464948263913,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 352230748221536
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 473724425184315,
+															"parameters": {
+																"audio-file": "menu_select",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"Click\""
+															}
+														}
+													],
+													"sid": 651042868944068
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 920199320872999,
+													"parameters": {
+														"object": "BotaoFecharCarta"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BotaoFecharCarta",
+													"sid": 644694976841980,
+													"parameters": {
+														"animation": "\"Idle\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 609521164640800
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 464947708683246,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "BotaoFecharCarta"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 202868376685552,
+													"parameters": {
+														"variable": "PedidoAceito"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 720814987921046,
+													"parameters": {
+														"layer": "\"cartaContainer\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 507272346596717,
+													"parameters": {
+														"audio-file": "CartaFechar",
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"Click\""
+													}
+												}
+											],
+											"sid": 560729210028082
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 947170177123453,
+													"parameters": {
+														"variable": "PedidoAceito"
+													}
+												},
+												{
+													"id": "layer-is-visible",
+													"objectClass": "System",
+													"sid": 246452628282705,
+													"parameters": {
+														"layer": "\"cartaContainer\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "BotaoFecharCarta",
+													"sid": 628567234385559,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoFecharCarta",
+													"sid": 565820746118562,
+													"parameters": {
+														"x": "981.574806",
+														"y": "101.237324"
+													}
+												}
+											],
+											"sid": 887847132308103
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 701683234291132
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "BotaoFecharCarta",
+													"sid": 196403261430192,
+													"parameters": {
+														"x": "1589",
+														"y": "203"
+													}
+												}
+											],
+											"sid": 942741458734304
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 107291060985867,
+													"parameters": {
+														"object": "SeletorCarimbo"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 833183509482080,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 220394105297694
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 885632458317842,
+															"parameters": {
+																"audio-file": "menu_select",
+																"loop": "not-looping",
+																"volume": "0",
+																"stereo-pan": "0",
+																"tag-optional": "\"Click\""
+															}
+														}
+													],
+													"sid": 357930238700433
+												}
+											]
+										},
+										{
+											"functionName": "AbrirCarimbos2",
+											"functionDescription": "",
+											"functionCategory": "",
+											"functionReturnType": "none",
+											"functionCopyPicked": false,
+											"functionIsAsync": false,
+											"functionParameters": [],
+											"eventType": "function-block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "CasaDosCarimbos",
+													"sid": 714642725061743,
+													"parameters": {
+														"object": "SeletorCarimbo",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "SeletorCarimbo",
+													"sid": 155891389718435,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoAceitar",
+													"sid": 267556547681943,
+													"parameters": {
+														"x": "BotaoAceitar.PosX",
+														"y": "BotaoAceitar.PosY"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoRecusar",
+													"sid": 504632202871823,
+													"parameters": {
+														"x": "BotaoRecusar.PosX",
+														"y": "BotaoRecusar.PosY"
+													}
+												}
+											],
+											"sid": 197687954631066
+										},
+										{
+											"functionName": "FecharCarimbo2",
+											"functionDescription": "",
+											"functionCategory": "",
+											"functionReturnType": "none",
+											"functionCopyPicked": false,
+											"functionIsAsync": false,
+											"functionParameters": [],
+											"eventType": "function-block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CasaDosCarimbos",
+													"sid": 296861175401401,
+													"parameters": {
+														"x": "-479",
+														"y": "449"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "SeletorCarimbo",
+													"sid": 587909586884037,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoAceitar",
+													"sid": 795206454529312,
+													"parameters": {
+														"x": "-341",
+														"y": "361"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoRecusar",
+													"sid": 689122938628475,
+													"parameters": {
+														"x": "-341",
+														"y": "549"
+													}
+												}
+											],
+											"sid": 585988255861988
+										}
+									],
+									"sid": 292552759964369
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Ativar Layers2",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-layer-interactive",
+													"objectClass": "System",
+													"sid": 242125764137815,
+													"parameters": {
+														"layer": "\"game\"",
+														"interactive": true
+													}
+												},
+												{
+													"id": "set-layer-interactive",
+													"objectClass": "System",
+													"sid": 782118427036498,
+													"parameters": {
+														"layer": "\"background\"",
+														"interactive": true
+													}
+												}
+											],
+											"sid": 261188971670962
+										}
+									],
+									"sid": 437240132792119
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Desativar Layers2",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-layer-interactive",
+													"objectClass": "System",
+													"sid": 164873420867612,
+													"parameters": {
+														"layer": "\"game\"",
+														"interactive": false
+													}
+												},
+												{
+													"id": "set-layer-interactive",
+													"objectClass": "System",
+													"sid": 181990397481029,
+													"parameters": {
+														"layer": "\"background\"",
+														"interactive": false
+													}
+												}
+											],
+											"sid": 127674300760851
+										}
+									],
+									"sid": 667186144691642
+								}
+							],
+							"sid": 106927411622659
+						}
+					],
+					"sid": 821669882126870
 				},
 				{
 					"eventType": "group",
