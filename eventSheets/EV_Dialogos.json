@@ -1,0 +1,537 @@
+{
+	"name": "EV_Dialogos",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Falas",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 336830199660475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 880871538747915,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 436108682066627,
+					"parameters": {
+						"animation": "\"Fala1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 531128920103687
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 574995168898438,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 360367483329185,
+					"parameters": {
+						"animation": "\"Fala2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 983718334462279
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 322690959637771,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 476403760617590,
+					"parameters": {
+						"animation": "\"Fala3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 614482627425812
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 501698922494624,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 111013528338935,
+					"parameters": {
+						"animation": "\"Fala4\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 254173522876222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 537204415417159,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 555063533754356,
+					"parameters": {
+						"animation": "\"Fala5\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 543523073869629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 890981705959532,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 757200364543093,
+					"parameters": {
+						"animation": "\"Fala6\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 754555872125875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 780579585134048,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 995631924907652,
+					"parameters": {
+						"animation": "\"Fala7\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 514814528276950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 879379700495376,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 308892722897295,
+					"parameters": {
+						"animation": "\"Fala8\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 556422337127280
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 678924161303648,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 590521013252095,
+					"parameters": {
+						"animation": "\"Fala9\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 672627856386592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 470794896656882,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FalasTutorial",
+					"sid": 125299145799856,
+					"parameters": {
+						"animation": "\"Fala10\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 544965164801682
+		},
+		{
+			"functionName": "FecharDialogoAndADD",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-wait-time",
+					"objectClass": "FalasTutorial",
+					"sid": 560911378774918,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "TileDialogos",
+					"sid": 516330370689754,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "FalasTutorial",
+					"sid": 114941007542949,
+					"parameters": {
+						"x": "4000",
+						"y": "4000"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TileDialogos",
+					"sid": 794873045981951,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 974872252292471,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 190130269300844,
+					"parameters": {
+						"variable": "Falas",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 969141403125946
+		},
+		{
+			"functionName": "FecharDialogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-wait-time",
+					"objectClass": "FalasTutorial",
+					"sid": 264236321574937,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "TileDialogos",
+					"sid": 271917489495441,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "FalasTutorial",
+					"sid": 686116599597415,
+					"parameters": {
+						"x": "4000",
+						"y": "4000"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TileDialogos",
+					"sid": 961906648486936,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 631410477373342,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				}
+			],
+			"sid": 717177105586623
+		},
+		{
+			"functionName": "AbrirDialogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TileDialogos",
+					"sid": 118502201001751,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FalasTutorial",
+					"sid": 195250063271372,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "FalasTutorial",
+					"sid": 212220316925580,
+					"parameters": {
+						"x": "445",
+						"y": "44"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "FalasTutorial",
+					"sid": 254935379423966,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "FalasTutorial",
+					"sid": 890844440223922,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "3"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "FalasTutorial",
+					"sid": 439135623951784,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "FalasTutorial",
+					"sid": 729539144599269,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "TileDialogos",
+					"sid": 800871714261834,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "1"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "TileDialogos",
+					"sid": 505389100164676,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "100"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "TileDialogos",
+					"sid": 716781258883969,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "4"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "TileDialogos",
+					"sid": 233029858545639,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 429479322003109
+		},
+		{
+			"functionName": "AddDialogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 175084344452119,
+					"parameters": {
+						"variable": "Falas",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 543840524283445
+		}
+	],
+	"sid": 525965330782059
+}

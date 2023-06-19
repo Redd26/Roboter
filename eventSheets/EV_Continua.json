@@ -1,0 +1,76 @@
+{
+	"name": "EV_Continua",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 312724385560799
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "CutContinua",
+					"sid": 306083916349350,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 878964122097455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "CutContinua",
+					"sid": 678845613045796,
+					"parameters": {
+						"comparison": 0,
+						"number": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "CutContinua",
+					"sid": 990427433169793,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "3"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "CutContinua",
+					"sid": 725310159397151,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 228673473617411,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 855777155022746,
+					"parameters": {
+						"layout": "MenuPrincipal"
+					}
+				}
+			],
+			"sid": 194924508630513
+		}
+	],
+	"sid": 210255327249212
+}

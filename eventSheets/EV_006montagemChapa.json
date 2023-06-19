@@ -96,6 +96,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Dialogos"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "EvChapaGrupo",
@@ -484,6 +488,10 @@
 										"animation": "\"Ativado\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"callFunction": "FecharDialogoAndADD",
+									"sid": 265631799758665
 								}
 							],
 							"sid": 154986704308405
@@ -2391,10 +2399,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 977183329004574,
+							"sid": 789721535166369,
 							"parameters": {
-								"x": "1095",
-								"y": "239"
+								"x": "1094",
+								"y": "526"
 							}
 						}
 					],
@@ -2502,10 +2510,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 731811923734058,
+							"sid": 764970516632928,
 							"parameters": {
-								"x": "1095",
-								"y": "239"
+								"x": "1094",
+								"y": "526"
 							}
 						}
 					],
@@ -2613,10 +2621,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 409559560481802,
+							"sid": 862010361220566,
 							"parameters": {
-								"x": "1095",
-								"y": "239"
+								"x": "1094",
+								"y": "526"
 							}
 						}
 					],
@@ -2724,10 +2732,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 326924426041617,
+							"sid": 458846726058277,
 							"parameters": {
-								"x": "1095",
-								"y": "239"
+								"x": "1094",
+								"y": "526"
 							}
 						}
 					],
@@ -2835,10 +2843,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 196971791801962,
+							"sid": 450677574331013,
 							"parameters": {
-								"x": "1095",
-								"y": "239"
+								"x": "1094",
+								"y": "526"
 							}
 						}
 					],
@@ -3013,15 +3021,159 @@
 							}
 						},
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 447842488998156,
+							"parameters": {
+								"variable": "ChapaAndar",
+								"value": "false"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 612636440274959
+						}
+					],
+					"sid": 657737822418273
+				},
+				{
+					"functionName": "ColidiuOuroDestruir",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaOuro",
+							"sid": 899002744578283,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "710"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 198719975036473,
+							"parameters": {
+								"first-value": "ColisorOuro.Count",
+								"comparison": 5,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 228307209394277,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 387536464221587,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 314784879874012,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 828447536125517,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 429178998544768,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 637407300503052,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 699598687708083,
+							"parameters": {
+								"x": "-1364",
+								"y": "-4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 967229837548771,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 454408692522208,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 858013368088185,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 706091361848334,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 280375824139010,
+							"sid": 606979643464281,
 							"parameters": {
 								"layout": "Loja"
 							}
 						}
 					],
-					"sid": 657737822418273,
+					"sid": 332536283160438,
 					"children": [
 						{
 							"eventType": "block",
@@ -3029,14 +3181,14 @@
 								{
 									"id": "trigger-once-while-true",
 									"objectClass": "System",
-									"sid": 223271320418973
+									"sid": 180980476459848
 								}
 							],
 							"actions": [
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 780784831369041,
+									"sid": 728047283272630,
 									"parameters": {
 										"variable": "Erro",
 										"value": "1"
@@ -3045,14 +3197,356 @@
 								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 110620990901048,
+									"sid": 601686942104606,
 									"parameters": {
 										"variable": "JogadorErrou",
 										"value": "true"
 									}
 								}
 							],
-							"sid": 587531217089182
+							"sid": 662467883901571
+						}
+					]
+				},
+				{
+					"functionName": "ColidiuEritroDestruir",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaEritro",
+							"sid": 314594479052883,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "710"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 701457009468955,
+							"parameters": {
+								"first-value": "ColisorEritro.Count",
+								"comparison": 5,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 992080728062268,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 378102077354491,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 395373592593050,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 101353534981946,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 376048465222671,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 530443122986538,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 399485904943595,
+							"parameters": {
+								"x": "-1364",
+								"y": "-4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 574643109049377,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 612806906216829,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 580714018179326,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 141144334764740,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 857141237345275,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 751728082378525,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 362860950833386
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 213148418173668,
+									"parameters": {
+										"variable": "Erro",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 748241988912829,
+									"parameters": {
+										"variable": "JogadorErrou",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 517582234242308
+						}
+					]
+				},
+				{
+					"functionName": "ColidiuViridisDestruir",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaViridis",
+							"sid": 339748493022271,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "710"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 933871826863756,
+							"parameters": {
+								"first-value": "ColisorViridis.Count",
+								"comparison": 5,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Serra",
+							"sid": 913043955131033,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ParticulasSerra",
+							"sid": 645399579975356,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 947441896116369,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 377017958469722,
+							"parameters": {
+								"tag": "\"SomSerra\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 423636933675420,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 736285989473603,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TelaDeErro",
+							"sid": 801502522670173,
+							"parameters": {
+								"x": "-1364",
+								"y": "-4"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 543332621387134,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Transicao",
+							"sid": 981831907395021,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transicao",
+							"sid": 112854573020072,
+							"parameters": {
+								"x": "3000",
+								"y": "1500"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 472453759822579,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 207492011624868,
+							"parameters": {
+								"layout": "Loja"
+							}
+						}
+					],
+					"sid": 666308560541642,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 861359590964779
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 529244015307746,
+									"parameters": {
+										"variable": "Erro",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 973444107595537,
+									"parameters": {
+										"variable": "JogadorErrou",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 501757660809452
 						}
 					]
 				},
@@ -3113,6 +3607,180 @@
 						}
 					],
 					"sid": 380617534683445
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaEritro",
+							"sid": 417225788325332,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChapaEritro",
+							"sid": 810091601131991
+						},
+						{
+							"callFunction": "ColidiuEritroDestruir",
+							"sid": 779355805011245
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 107737927693219,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						}
+					],
+					"sid": 224775208066997
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "LinhaCortarEritro",
+							"sid": 942677957726575,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 640807091359880
+						}
+					],
+					"sid": 753552268392125
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaOuro",
+							"sid": 542898580222837,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChapaOuro",
+							"sid": 969082946694501
+						},
+						{
+							"callFunction": "ColidiuOuroDestruir",
+							"sid": 463614604255448
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 408998771674536,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						}
+					],
+					"sid": 705607735733258
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "LinhaCortarOuro",
+							"sid": 812804400330710,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 468878089631971
+						}
+					],
+					"sid": 923012010536870
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "ChapaViridis",
+							"sid": 251015812403750,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChapaViridis",
+							"sid": 308849127436410
+						},
+						{
+							"callFunction": "Colidiu2",
+							"sid": 706567502087012
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 197855922272635,
+							"parameters": {
+								"tag": "\"SomChapa\""
+							}
+						}
+					],
+					"sid": 576668457717337
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-distance-travelled",
+							"objectClass": "LinhaCortarViridis",
+							"sid": 505928730912453,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"comparison": 5,
+								"distance": "718"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LinhaCortarFerro",
+							"sid": 911743826679905
+						}
+					],
+					"sid": 700382298215064
 				},
 				{
 					"eventType": "block",
@@ -3517,6 +4185,35 @@
 				}
 			],
 			"sid": 970514234424867
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 324163754566328,
+					"parameters": {
+						"variable": "ChapaAndar"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 678662672854026,
+					"parameters": {
+						"variable": "Fase1Tutorial"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "AbrirDialogo",
+					"sid": 382620049720711
+				}
+			],
+			"sid": 893588823304972
 		}
 	],
 	"sid": 886171643003322

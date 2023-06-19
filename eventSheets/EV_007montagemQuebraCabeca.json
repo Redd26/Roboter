@@ -26,6 +26,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Dialogos"
+		},
+		{
 			"eventType": "variable",
 			"name": "pecasQuebraCabecaAdicionadas",
 			"type": "number",
@@ -177,7 +181,7 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 306092855371652,
+							"sid": 848662966763591,
 							"parameters": {
 								"x": "1094",
 								"y": "526"
@@ -8872,6 +8876,321 @@
 						}
 					],
 					"sid": 801862121488118
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 172258689282642,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 130223111515590,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550925737181001,
+							"parameters": {
+								"variable": "EnergiaEscolhida",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 607464862316097,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorEnergia",
+							"sid": 427787089573075,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline3\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 148688074537830,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorEnergia",
+							"sid": 655171406457367,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline3\""
+							}
+						}
+					],
+					"sid": 978730488968350,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 659978009728001
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirDialogo",
+									"sid": 376697350090038
+								}
+							],
+							"sid": 963146302392708
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 595782270297677,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 737330387612140,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 477799103190224,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorEnergia",
+							"sid": 882755808095518,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline3\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "IconeMuscular",
+							"sid": 622615310406863,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline3\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 711175335643470,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "IconeMuscular",
+							"sid": 859300869862887,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline3\""
+							}
+						}
+					],
+					"sid": 766987204247201
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 666245357637860,
+							"parameters": {
+								"variable": "SeletorDeEnergiaAberto"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 112587846714310,
+							"parameters": {
+								"variable": "EnergiaEscolhida",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorEnergia",
+							"sid": 813836413301365,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "IconeMuscular",
+							"sid": 863116210340829,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 160060639986186,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 578605938913601,
+							"parameters": {
+								"interval-seconds": "3"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 211904819091148,
+							"parameters": {
+								"first-value": "EnergiaCerta",
+								"comparison": 0,
+								"second-value": "EnergiaEscolhida"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 698631155675687,
+							"parameters": {
+								"variable": "pecasQuebraCabecaAdicionadas",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 384485807045612,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "QuebraCabecaPecas",
+							"sid": 352217344991627,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BeterOutiline\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 330914139041381,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "QuebraCabecaPecas",
+							"sid": 297109353731656,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BeterOutiline\""
+							}
+						}
+					],
+					"sid": 557069548295781
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 880525493344756,
+							"parameters": {
+								"first-value": "EnergiaCerta",
+								"comparison": 0,
+								"second-value": "EnergiaEscolhida"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 732894524634851,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 742209404023519,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 480588392736195
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "FecharDialogoAndADD",
+									"sid": 933006804874999
+								}
+							],
+							"sid": 923209881885160
+						}
+					]
 				}
 			],
 			"sid": 508712111113882

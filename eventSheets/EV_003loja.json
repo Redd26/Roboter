@@ -26,6 +26,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Dialogos"
+		},
+		{
 			"eventType": "variable",
 			"name": "horarioDoDia",
 			"type": "string",
@@ -104,6 +108,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 666714055042243
+		},
+		{
+			"eventType": "variable",
+			"name": "MostrarDialogo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 661225048554642
 		},
 		{
 			"eventType": "group",
@@ -340,6 +354,15 @@
 									"parameters": {
 										"variable": "MostrarAnimDia",
 										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 690758040756385,
+									"parameters": {
+										"variable": "MostrarDialogo",
+										"value": "true"
 									}
 								}
 							],
@@ -3249,16 +3272,6 @@
 												{
 													"id": "compare-boolean-eventvar",
 													"objectClass": "System",
-													"sid": 672515960479442,
-													"disabled": true,
-													"parameters": {
-														"variable": "PedidoAceito"
-													},
-													"isInverted": true
-												},
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
 													"sid": 289948996344693,
 													"parameters": {
 														"variable": "BloquearCorreio"
@@ -3308,6 +3321,10 @@
 														"layer": "\"cartaContainer\"",
 														"visibility": "visible"
 													}
+												},
+												{
+													"callFunction": "FecharDialogoAndADD",
+													"sid": 982248347994781
 												}
 											],
 											"sid": 941957870131900
@@ -3454,6 +3471,10 @@
 														"variable": "PedidoAceito",
 														"value": "true"
 													}
+												},
+												{
+													"callFunction": "FecharDialogoAndADD",
+													"sid": 124242252690457
 												},
 												{
 													"id": "set-position",
@@ -4078,9 +4099,67 @@
 														"variable": "robo",
 														"value": "1"
 													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "BotaoAceitar",
+													"sid": 687639815668134,
+													"parameters": {
+														"x": "142.877682",
+														"y": "548.889979"
+													}
 												}
 											],
 											"sid": 394294243847045
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "BotaoAceitar",
+													"sid": 820304284192158,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "BotaoAceitar",
+													"sid": 651662735553455,
+													"parameters": {
+														"object": "CarimbadaAprovada"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 286987746056174,
+													"parameters": {
+														"variable": "robo",
+														"comparison": 0,
+														"value": "1"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 663991080146371,
+													"parameters": {
+														"variable": "Fase1Tutorial"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "BotaoAceitar",
+													"sid": 869276733542222,
+													"parameters": {
+														"x": "142.877682",
+														"y": "548.889979"
+													}
+												}
+											],
+											"sid": 924861404382493
 										},
 										{
 											"eventType": "block",
@@ -5039,6 +5118,51 @@
 								}
 							],
 							"sid": 106927411622659
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 254860644900849,
+									"parameters": {
+										"variable": "MostrarDialogo"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 608580516268742,
+									"parameters": {
+										"variable": "Fase1Tutorial"
+									}
+								},
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 911704372574127,
+									"parameters": {
+										"layer": "\"cartaContainer\""
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 545691991361964,
+									"parameters": {
+										"variable": "EstouLoja"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirDialogo",
+									"sid": 374163239474802
+								}
+							],
+							"sid": 536243584763253
 						}
 					],
 					"sid": 821669882126870

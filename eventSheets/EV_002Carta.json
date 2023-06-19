@@ -298,6 +298,141 @@
 									"sid": 131631086064497
 								},
 								{
+									"eventType": "comment",
+									"text": "Tutorial"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 227654899736882,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Carta"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 604051447697508,
+											"parameters": {
+												"variable": "isCartaClicada"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 325794900343018,
+											"parameters": {
+												"variable": "acoesCarta",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 596494681469222,
+											"parameters": {
+												"variable": "CartaChegou"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 847471572128993,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 523593986928132,
+											"parameters": {
+												"variable": "Falas",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 490495319882623,
+											"parameters": {
+												"audio-file": "CartaAbrir",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"Click\""
+											}
+										},
+										{
+											"id": "move-to-position",
+											"objectClass": "Carta",
+											"sid": 754318800477698,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"x": "640",
+												"y": "360",
+												"mode": "direct"
+											}
+										},
+										{
+											"id": "wait-for-previous-actions",
+											"objectClass": "System",
+											"sid": 426685256955573
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 962758784154353,
+											"parameters": {
+												"variable": "isCartaClicada",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 799092669635600,
+											"parameters": {
+												"variable": "direcaoCarta",
+												"value": "\"indo\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 196598004061852,
+											"parameters": {
+												"variable": "acoesCarta",
+												"value": "2"
+											}
+										},
+										{
+											"id": "signal",
+											"objectClass": "System",
+											"sid": 817871386161891,
+											"parameters": {
+												"tag": "\"unpinTextoCarta\""
+											}
+										},
+										{
+											"callFunction": "FecharDialogoAndADD",
+											"sid": 718215521041256
+										}
+									],
+									"sid": 837212835156606
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -506,6 +641,15 @@
 												"volume": "0",
 												"stereo-pan": "0",
 												"tag-optional": "\"Click\""
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 142360443858525,
+											"parameters": {
+												"variable": "MostarCarta",
+												"value": "false"
 											}
 										},
 										{

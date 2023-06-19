@@ -950,35 +950,6 @@
 					}
 				},
 				{
-					"type": "Transicao",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 214,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 15,
-						"y": 879,
-						"width": 1280,
-						"height": 720,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "AnimDias",
 					"properties": {
 						"initially-visible": true,
@@ -1040,8 +1011,8 @@
 								"fade-in-time": 0,
 								"wait-time": 0,
 								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
+								"destroy": false,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
@@ -1094,6 +1065,75 @@
 						"y": -453,
 						"width": 497,
 						"height": 74,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FalasTutorial",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Fala1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 415,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 445,
+						"y": -190,
+						"width": 467,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transicao",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 214,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 15,
+						"y": 879,
+						"width": 1280,
+						"height": 720,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1179,6 +1219,20 @@
 											1
 										],
 										"width": 5,
+										"precision-step": 1,
+										"samples": 16
+									}
+								},
+								"BetterOutline2": {
+									"isEnabled": true,
+									"parameters": {
+										"color": [
+											0,
+											0,
+											0,
+											1
+										],
+										"width": 1,
 										"precision-step": 1,
 										"samples": 16
 									}

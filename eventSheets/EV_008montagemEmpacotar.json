@@ -26,6 +26,10 @@
 			"includeSheet": "Ev_009Hud"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EV_Dialogos"
+		},
+		{
 			"eventType": "variable",
 			"name": "empacotarContador",
 			"type": "number",
@@ -2458,7 +2462,7 @@
 						{
 							"id": "set-position",
 							"objectClass": "ProximoLevel",
-							"sid": 864012631569798,
+							"sid": 193432924524887,
 							"parameters": {
 								"x": "1094",
 								"y": "526"
@@ -3628,6 +3632,103 @@
 						}
 					],
 					"sid": 184724326588715
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 385140525135321,
+							"parameters": {
+								"variable": "comecarEmpacotar"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 561022327639132,
+							"parameters": {
+								"variable": "comecarEmpacotarJogador"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 919366973058357,
+							"parameters": {
+								"first-value": "ContadorDeBrilho",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 764104680447659,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 106812274780648
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirDialogo",
+									"sid": 478572158086510
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FalasTutorial",
+									"sid": 207343370563528,
+									"parameters": {
+										"x": "373",
+										"y": "51"
+									}
+								}
+							],
+							"sid": 701355085322771
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 661912007751699,
+							"parameters": {
+								"variable": "comecarEmpacotar"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 405241245553227,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 839422029830865
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "FecharDialogo",
+									"sid": 171481399000427
+								}
+							],
+							"sid": 184350213495191
+						}
+					]
 				}
 			],
 			"sid": 896202508901365

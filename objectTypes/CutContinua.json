@@ -1,0 +1,187 @@
+{
+	"name": "CutContinua",
+	"plugin-id": "Sprite",
+	"sid": 991075898874417,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 316737361499531
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5436677,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2132192,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4326339,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5954793,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8957563,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3778800,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1264970,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6960240,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2526160,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5475422,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9991749,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 739677,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1282,
+						"height": 721,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8523838,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 755248564571296,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

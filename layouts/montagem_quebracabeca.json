@@ -287,20 +287,34 @@
 					"behaviors": {},
 					"effects": {
 						"BetterOutline2": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
 						},
 						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
+						"BetterOutline3": {
 							"isEnabled": false,
 							"parameters": {
 								"color": [
@@ -397,6 +411,34 @@
 					},
 					"effects": {
 						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
+						"BetterOutline2": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									0.9294117647058824,
+									0.9294117647058824,
+									0.9294117647058824,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
+						"BetterOutline3": {
 							"isEnabled": false,
 							"parameters": {
 								"color": [
@@ -4898,8 +4940,8 @@
 						"y": 695,
 						"width": 62,
 						"height": 62,
-						"originX": 0.4952990760252877,
-						"originY": 0.5047009239747122,
+						"originX": 0.4953225806451613,
+						"originY": 0.5046774193548387,
 						"color": [
 							1,
 							1,
@@ -5174,6 +5216,105 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TileDialogos",
+					"properties": {
+						"initially-visible": false,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 40,
+							"height": 22,
+							"max-width": 40,
+							"max-height": 22,
+							"data": "243x0,1,7,19,19x0,2,8,20,19x0,3,9,21,19x0,4,10,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,10,22,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,6,18,24,128x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FalasTutorial",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Fala1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 419,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 1509,
+						"y": 826,
+						"width": 467,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 689755593869808,
@@ -5244,6 +5385,20 @@
 									1
 								],
 								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
+						"BetterOutline2": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}

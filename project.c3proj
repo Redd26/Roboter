@@ -257,7 +257,10 @@
 			"CutDormir",
 			"TelaDeErro",
 			"cutMaldicao",
-			"TileDialogos"
+			"TileDialogos",
+			"CutInicio",
+			"CutContinua",
+			"FalasTutorial"
 		],
 		"subfolders": [
 			{
@@ -337,9 +340,6 @@
 					"viridisOre",
 					"SeletorMaterialBandeja",
 					"SeletorMaterialPuxador",
-					"ExplicacaoFerro",
-					"ExplicacaoOuro",
-					"Intro",
 					"SeletorCarimbo",
 					"SeletorEnergia"
 				],
@@ -485,7 +485,9 @@
 			"Montagem_CortarChapa",
 			"Montagem_QuebraCabeca",
 			"Montagem_Empacotar",
-			"cut"
+			"CutRuim",
+			"CutInicio",
+			"CutContinua"
 		],
 		"subfolders": []
 	},
@@ -504,7 +506,10 @@
 			"EV_010Movimentacao",
 			"EV_011Outlines",
 			"Ev_009Hud",
-			"EV_CutRuim"
+			"EV_CutRuim",
+			"EV_CutInicio",
+			"EV_Continua",
+			"EV_Dialogos"
 		],
 		"subfolders": []
 	},

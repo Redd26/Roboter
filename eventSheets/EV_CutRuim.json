@@ -58,6 +58,54 @@
 				}
 			],
 			"sid": 994658577603987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "cutMaldicao",
+					"sid": 842162641226005,
+					"parameters": {
+						"comparison": 0,
+						"number": "17"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "cutMaldicao",
+					"sid": 856441888906007,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "3"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "cutMaldicao",
+					"sid": 352777370801401,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 957935897632041,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 137266778667601,
+					"parameters": {
+						"layout": "MenuPrincipal"
+					}
+				}
+			],
+			"sid": 758661702204799
 		}
 	],
 	"sid": 267318483995002

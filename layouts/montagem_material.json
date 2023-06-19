@@ -71,134 +71,6 @@
 			],
 			"instances": [
 				{
-					"type": "ExplicacaoFerro",
-					"properties": {
-						"text": "É um metal nobre, pois não enferruja",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0.8588235294117647,
-							0.8588235294117647,
-							0.8588235294117647,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center",
-						"read-aloud": false
-					},
-					"uid": 23,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fader": {
-							"properties": {
-								"running-at-start": "yes",
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"at-end": "destroy"
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1737,
-						"y": 111,
-						"width": 320,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ExplicacaoOuro",
-					"properties": {
-						"text": "É resistente à corrosão;\nMetal macio e flexível.",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0.8509803921568627,
-							0.8980392156862745,
-							0.1803921568627451,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center",
-						"read-aloud": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"Fader": {
-							"properties": {
-								"running-at-start": "yes",
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"at-end": "destroy"
-							}
-						}
-					},
-					"world": {
-						"x": 1739,
-						"y": -24,
-						"width": 320,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "MaterialFerroDestruir",
 					"properties": {
 						"initially-visible": true,
@@ -275,59 +147,6 @@
 					}
 				},
 				{
-					"type": "Intro",
-					"properties": {
-						"text": "Escolha o material",
-						"enable-bbcode": true,
-						"font": "Minecraftia-Regular",
-						"size": 22,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 21,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fader": {
-							"properties": {
-								"running-at-start": "yes",
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 0.8,
-								"at-end": "destroy"
-							}
-						}
-					},
-					"world": {
-						"x": 108,
-						"y": 108,
-						"width": 443,
-						"height": 88,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "SeletorMaterialPuxador",
 					"properties": {
 						"initially-visible": true,
@@ -341,15 +160,15 @@
 					"behaviors": {},
 					"effects": {
 						"BetterOutline2": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -538,15 +357,15 @@
 					},
 					"effects": {
 						"BetterOutline2": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1116,8 +935,8 @@
 						"y": 739,
 						"width": 62,
 						"height": 62,
-						"originX": 0.4952990760252877,
-						"originY": 0.5047009239747122,
+						"originX": 0.4953225806451613,
+						"originY": 0.5046774193548387,
 						"color": [
 							1,
 							1,
@@ -1172,6 +991,22 @@
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge"
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
 							}
 						}
 					},
@@ -1526,6 +1361,134 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TileDialogos",
+					"properties": {
+						"initially-visible": false,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 413,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 40,
+							"height": 22,
+							"max-width": 40,
+							"max-height": 22,
+							"data": "243x0,1,7,19,19x0,2,8,20,19x0,3,9,21,19x0,4,10,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,9,22,19x0,4,10,22,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,4,10,23,19x0,6,18,24,128x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FalasObjetosINterativosLoja",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "FalaBau",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 414,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1818,
+						"y": -340,
+						"width": 497,
+						"height": 74,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FalasTutorial",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Fala1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 418,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 994,
+						"y": -134,
+						"width": 467,
+						"height": 29,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 122200636164233,
@@ -1596,6 +1559,20 @@
 									1
 								],
 								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						},
+						"BetterOutline2": {
+							"isEnabled": false,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}

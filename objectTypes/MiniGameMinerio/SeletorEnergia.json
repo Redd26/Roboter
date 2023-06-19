@@ -9,6 +9,10 @@
 		{
 			"effectId": "skymen_BetterOutline",
 			"name": "BetterOutline"
+		},
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline3"
 		}
 	],
 	"animations": {

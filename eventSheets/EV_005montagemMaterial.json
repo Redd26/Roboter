@@ -182,6 +182,16 @@
 			"sid": 827245917946134
 		},
 		{
+			"eventType": "variable",
+			"name": "MostarCarta",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 266517214681360
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "EV_003loja"
 		},
@@ -204,6 +214,10 @@
 		{
 			"eventType": "include",
 			"includeSheet": "EV_011Outlines"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EV_Dialogos"
 		},
 		{
 			"eventType": "group",
@@ -286,6 +300,89 @@
 						}
 					],
 					"sid": 438787576351893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 214224087276131
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 356120760866294,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 431335409121697,
+							"parameters": {
+								"layer": "\"cartaTexto\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 705014195031717,
+							"disabled": true
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "RelogioDiaNoite",
+							"sid": 599779341834237,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 586360926364404,
+							"parameters": {
+								"variable": "EstouMiniGame",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 433522356269607,
+							"parameters": {
+								"variable": "EstouLoja",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 337193721731493,
+							"parameters": {
+								"variable": "EstouQuarto",
+								"value": "false"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 932036050237184,
+							"parameters": {
+								"audio-file": "Musica_BGM_Ambientação_Montagem_01",
+								"loop": "looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"MontagemMusic\""
+							}
+						}
+					],
+					"sid": 619129479572420
 				},
 				{
 					"functionName": "AbrirSeletorMaterial",
@@ -578,6 +675,10 @@
 										"animation": "\"Idle\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"callFunction": "FecharDialogoAndADD",
+									"sid": 720404759661440
 								}
 							],
 							"sid": 241011250518789
@@ -831,7 +932,31 @@
 									}
 								}
 							],
-							"sid": 679771320748797
+							"sid": 679771320748797,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 205509478266357
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 816070552761868,
+											"parameters": {
+												"variable": "Falas",
+												"value": "7"
+											}
+										}
+									],
+									"sid": 820516334502276
+								}
+							]
 						}
 					],
 					"sid": 896977840771114
@@ -2474,6 +2599,10 @@
 											"id": "destroy",
 											"objectClass": "HitPoint",
 											"sid": 235445568435294
+										},
+										{
+											"callFunction": "AbrirDialogo",
+											"sid": 652593577358439
 										},
 										{
 											"id": "set-position",
@@ -4349,61 +4478,6 @@
 							]
 						},
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-visible",
-									"objectClass": "Intro",
-									"sid": 311826674305035
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 921726562833720,
-									"parameters": {
-										"variable": "isMaterialClicado"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "pausethefade5",
-									"objectClass": "Intro",
-									"sid": 206815744378588,
-									"behaviorType": "Fader"
-								}
-							],
-							"sid": 824912524974047
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-visible",
-									"objectClass": "Intro",
-									"sid": 616363995427504
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 392353043464169,
-									"parameters": {
-										"variable": "isMaterialClicado"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "resumefade1",
-									"objectClass": "Intro",
-									"sid": 267481934345611,
-									"behaviorType": "Fader"
-								}
-							],
-							"sid": 753533947822389
-						},
-						{
 							"eventType": "comment",
 							"text": "Tutorial"
 						},
@@ -4427,13 +4501,120 @@
 										"comparison": 1,
 										"value": "\"ferro\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 671263854073727,
+									"parameters": {
+										"variable": "isMaterialClicado"
+									}
 								}
 							],
 							"actions": [
 								{
+									"id": "set-visible",
+									"objectClass": "TileDialogos",
+									"sid": 488938602884394,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FalasObjetosINterativosLoja",
+									"sid": 560830113170995,
+									"parameters": {
+										"x": "445",
+										"y": "44"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "FalasObjetosINterativosLoja",
+									"sid": 254999466415438,
+									"parameters": {
+										"animation": "\"FalaBau\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "FalasObjetosInterativosQuarto",
+									"sid": 173019762441615,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "2"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "FalasObjetosInterativosQuarto",
+									"sid": 745381364264902,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "3"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "FalasObjetosInterativosQuarto",
+									"sid": 614090399622737,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "TileDialogos",
+									"sid": 139044048772814,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "1"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "TileDialogos",
+									"sid": 635823571684063,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "4"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "TileDialogos",
+									"sid": 698290639564765,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 398959961439998,
+									"parameters": {
+										"seconds": "5"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "FalasObjetosINterativosLoja",
+									"sid": 258417635186188,
+									"parameters": {
+										"x": "4000",
+										"y": "4000"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TileDialogos",
+									"sid": 476902037182401,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 617817237488242,
+									"sid": 256111155745391,
 									"parameters": {
 										"variable": "isMaterialClicado",
 										"value": "false"
@@ -4674,7 +4855,8 @@
 									}
 								}
 							],
-							"sid": 709317209539634
+							"sid": 709317209539634,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -4885,6 +5067,10 @@
 							],
 							"actions": [
 								{
+									"callFunction": "FecharDialogoAndADD",
+									"sid": 822045918623442
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 633729610750591,
@@ -5080,6 +5266,422 @@
 						}
 					],
 					"sid": 576246919200952
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 164689276495507,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 313609464676693,
+							"parameters": {
+								"variable": "isCartaClicada"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 780244160157612,
+							"parameters": {
+								"variable": "MostarCarta"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 277827944237003,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Carta",
+							"sid": 764203450950837,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 922819153772476,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Carta",
+							"sid": 777038540163385,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 209859552869939,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 954643246124097
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirDialogo",
+									"sid": 686703076144822
+								}
+							],
+							"sid": 198825597802417
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 775197177908052,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 365230371809988,
+							"parameters": {
+								"variable": "isSeletorMaterialClicado"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 895983097577978,
+							"parameters": {
+								"variable": "MostarCarta"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 510675897884475,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 525145322184551,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterialPuxador",
+							"sid": 332729179742417,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 632412918757485,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterialPuxador",
+							"sid": 640135991046803,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 474668009182290,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 922394609337604
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AbrirDialogo",
+									"sid": 110317098485519
+								}
+							],
+							"sid": 179890828195664
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 732357006438027,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 245905049710019,
+							"parameters": {
+								"variable": "isSeletorMaterialClicado"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 571798915436142,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 249832032213822,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterialPuxador",
+							"sid": 942348735471876,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ferro",
+							"sid": 776502548260047,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 444247694319180,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ferro",
+							"sid": 816036380129888,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 816463709540684
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 603084200849890,
+							"parameters": {
+								"variable": "isSeletorMaterialClicado"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 107704319784156,
+							"parameters": {
+								"variable": "materialEscolhido",
+								"comparison": 1,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 593430055384476,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "SeletorMaterialPuxador",
+							"sid": 362989560819218,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Ferro",
+							"sid": 372355916801277,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 658580673406771,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 946672874771249
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 606269127586689,
+									"parameters": {
+										"variable": "Falas",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 808256925156093
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 512476604688456,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 228282992066985,
+							"parameters": {
+								"first-value": "MaterialCerto",
+								"comparison": 0,
+								"second-value": "materialEscolhido"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 970532601535054,
+							"parameters": {
+								"variable": "TransformarMouse"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 219829416273458,
+							"parameters": {
+								"first-value": "contadorHitPoints",
+								"comparison": 1,
+								"second-value": "HitPointsTotalFerro"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 561309980639554,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Martelo",
+							"sid": 616054746226546,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 478552517592726,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Martelo",
+							"sid": 443775967421500,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 505506845875148
 				}
 			],
 			"sid": 649528265404461
