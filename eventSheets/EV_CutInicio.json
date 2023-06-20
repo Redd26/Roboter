@@ -5,14 +5,74 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-click",
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 120130093696464
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "CutInicio",
+					"sid": 549138238102774,
+					"parameters": {
+						"animation": "\"Parte1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 862408893446963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "CutInicio",
+					"sid": 976240507092356,
+					"parameters": {
+						"animation": "\"Parte1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoLevel",
+					"sid": 118547479021572,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoLevel",
+					"sid": 698042691033026,
+					"parameters": {
+						"x": "1156",
+						"y": "607"
+					}
+				}
+			],
+			"sid": 337334274046477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 785513362990475
+					"sid": 332059014770042,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoLevel"
+					}
 				},
 				{
 					"id": "is-animation-playing",
 					"objectClass": "CutInicio",
-					"sid": 303670432406491,
+					"sid": 759699860451641,
 					"parameters": {
 						"animation": "\"Parte1\""
 					}
@@ -22,31 +82,74 @@
 				{
 					"id": "set-animation",
 					"objectClass": "CutInicio",
-					"sid": 623109943834099,
+					"sid": 390084987309724,
 					"parameters": {
 						"animation": "\"Parte2\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoLevel",
+					"sid": 690667307445521,
+					"parameters": {
+						"x": "2000",
+						"y": "2000"
+					}
 				}
 			],
-			"sid": 534459578478045
+			"sid": 851621778753461
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 764103475485706,
+					"id": "on-animation-finished",
+					"objectClass": "CutInicio",
+					"sid": 940996747375614,
 					"parameters": {
-						"mouse-button": "right",
-						"click-type": "clicked"
+						"animation": "\"Parte2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoCut",
+					"sid": 535868960291573,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoCut",
+					"sid": 766183239179309,
+					"parameters": {
+						"x": "1156",
+						"y": "607"
+					}
+				}
+			],
+			"sid": 603089023274224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 583768812425170,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoCut"
 					}
 				},
 				{
 					"id": "is-animation-playing",
 					"objectClass": "CutInicio",
-					"sid": 672688595776924,
+					"sid": 984647497920943,
 					"parameters": {
 						"animation": "\"Parte2\""
 					}
@@ -56,14 +159,90 @@
 				{
 					"id": "set-animation",
 					"objectClass": "CutInicio",
-					"sid": 709709526416194,
+					"sid": 834003830947595,
 					"parameters": {
 						"animation": "\"Parte3\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoCut",
+					"sid": 290574082627132,
+					"parameters": {
+						"x": "2000",
+						"y": "2000"
+					}
 				}
 			],
-			"sid": 625806459878589
+			"sid": 663286925808853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "CutInicio",
+					"sid": 785787148121719,
+					"parameters": {
+						"animation": "\"Parte3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ProximoCut",
+					"sid": 679198128716588,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ProximoCut",
+					"sid": 766900529900657,
+					"parameters": {
+						"x": "1156",
+						"y": "607"
+					}
+				}
+			],
+			"sid": 456874433790720
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 100573364213592,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ProximoCut"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "CutInicio",
+					"sid": 776712894158840,
+					"parameters": {
+						"animation": "\"Parte3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 750122138687903,
+					"parameters": {
+						"layout": "Loja"
+					}
+				}
+			],
+			"sid": 102416602724684
 		}
 	],
 	"sid": 187738087711846

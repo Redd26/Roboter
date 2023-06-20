@@ -177,11 +177,11 @@
 					],
 					"actions": [
 						{
-							"id": "go-to-layout-by-name",
+							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 245887972152754,
+							"sid": 932064003349191,
 							"parameters": {
-								"layout": "\"Loja\""
+								"layout": "CutInicio"
 							}
 						},
 						{

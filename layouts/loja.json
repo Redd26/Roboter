@@ -524,15 +524,15 @@
 					"behaviors": {},
 					"effects": {
 						"BetterOutline2": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1101,8 +1101,8 @@
 						}
 					},
 					"world": {
-						"x": 445,
-						"y": -190,
+						"x": 381,
+						"y": -157,
 						"width": 467,
 						"height": 29,
 						"originX": 0,
@@ -1716,7 +1716,7 @@
 							},
 							"effects": {
 								"BetterOutline2": {
-									"isEnabled": true,
+									"isEnabled": false,
 									"parameters": {
 										"color": [
 											0,
@@ -1771,7 +1771,7 @@
 							},
 							"effects": {
 								"BetterOutline2": {
-									"isEnabled": true,
+									"isEnabled": false,
 									"parameters": {
 										"color": [
 											0,

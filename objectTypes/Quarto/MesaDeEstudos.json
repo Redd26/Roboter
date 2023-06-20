@@ -115,6 +115,57 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 346,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2230872,
+						"collisionPoly": {
+							"points": [
+								0.24341499364613134,
+								0.29224039651523526,
+								0.24224600931240722,
+								0.11567510383821861,
+								0.3456112918300354,
+								0,
+								0.4712515139268901,
+								0,
+								0.5654385100284917,
+								0.10965059295183703,
+								0.5667029191292314,
+								0.3039681305273925,
+								0.9027531825319924,
+								0.29576284103033074,
+								0.902196360025802,
+								0.8056444647665496,
+								1,
+								0.8135700858608952,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.30633041644637826
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 182261383358813,
+				"name": "Upgrade",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

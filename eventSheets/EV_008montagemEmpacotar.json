@@ -3663,6 +3663,14 @@
 								"comparison": 0,
 								"second-value": "0"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 596138692200641,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							}
 						}
 					],
 					"actions": [],
@@ -3705,6 +3713,14 @@
 							"sid": 661912007751699,
 							"parameters": {
 								"variable": "comecarEmpacotar"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 312457651434693,
+							"parameters": {
+								"variable": "Fase1Tutorial"
 							}
 						}
 					],

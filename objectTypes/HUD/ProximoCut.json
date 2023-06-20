@@ -1,0 +1,105 @@
+{
+	"name": "ProximoCut",
+	"plugin-id": "Sprite",
+	"sid": 542928153580535,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 62,
+						"originX": 0.4953225806451613,
+						"originY": 0.5046774193548387,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3612144,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								1,
+								1,
+								0.5,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 574908982661787,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 70,
+						"height": 70,
+						"originX": 0.49214285714285716,
+						"originY": 0.5078571428571428,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2648912,
+						"collisionPoly": {
+							"points": [
+								0.014285714285714285,
+								0.014285714285714285,
+								0.5,
+								0.014285714285714285,
+								0.9857142857142858,
+								0.014285714285714285,
+								0.9857142857142858,
+								0.5,
+								0.9857142857142858,
+								0.9857142857142858,
+								0.5,
+								0.9857142857142858,
+								0.014285714285714285,
+								0.9857142857142858,
+								0.014285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 732879008551180,
+				"name": "Outline",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

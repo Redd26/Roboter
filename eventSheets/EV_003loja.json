@@ -5163,6 +5163,167 @@
 								}
 							],
 							"sid": 536243584763253
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 596037969246919,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 341316117757447,
+									"parameters": {
+										"variable": "EstouLoja"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 598964678775950,
+									"parameters": {
+										"variable": "Falas",
+										"comparison": 0,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 819205510232758,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 852187554322007
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "AddDialogo",
+											"sid": 565751938367760
+										}
+									],
+									"sid": 822468899878498
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 641072124934404,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 423569494342361,
+									"parameters": {
+										"variable": "EstouLoja"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 433046786330514,
+									"parameters": {
+										"variable": "Falas",
+										"comparison": 0,
+										"value": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "FalasTutorial",
+									"sid": 648440463488767,
+									"parameters": {
+										"x": "386",
+										"y": "52"
+									}
+								}
+							],
+							"sid": 752024812349212
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 662344068463708,
+									"parameters": {
+										"variable": "NumeroCartaNegada",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 202041888881380,
+									"parameters": {
+										"variable": "EstouLoja"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 626431220734808,
+									"parameters": {
+										"variable": "Falas",
+										"comparison": 0,
+										"value": "12"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 846802197021447,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 236877842369968
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 227487720749269,
+											"parameters": {
+												"seconds": "7"
+											}
+										},
+										{
+											"callFunction": "AddDialogo",
+											"sid": 454837053743488
+										}
+									],
+									"sid": 933267333832553
+								}
+							]
 						}
 					],
 					"sid": 821669882126870
@@ -5226,7 +5387,26 @@
 									}
 								}
 							],
-							"sid": 379696846029845
+							"sid": 379696846029845,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 994314982690585
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "AddDialogo",
+											"sid": 136572187313651
+										}
+									],
+									"sid": 391387805087940
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -5294,6 +5474,10 @@
 								}
 							],
 							"actions": [
+								{
+									"callFunction": "FecharDialogoAndADD",
+									"sid": 815166575431680
+								},
 								{
 									"id": "play",
 									"objectClass": "Audio",

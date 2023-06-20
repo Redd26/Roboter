@@ -164,6 +164,10 @@
 					"sid": 742274894837531
 				},
 				{
+					"eventType": "comment",
+					"text": "Aqui"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -7367,7 +7371,88 @@
 									"sid": 799614733481279
 								}
 							],
-							"sid": 925681166797308
+							"sid": 925681166797308,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 624367501541758,
+											"parameters": {
+												"variable": "EnergiaLiberada"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 773190923793770,
+											"parameters": {
+												"first-value": "EnergiaCerta",
+												"comparison": 1,
+												"second-value": "EnergiaEscolhida"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 368548885238468,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 371857004034079,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "TelaDeErro",
+											"sid": 762079590646818,
+											"parameters": {
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 649672388672069,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "TelaDeErro",
+											"sid": 664906282537831,
+											"parameters": {
+												"x": "-1364",
+												"y": "-4"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 855794388254947,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 888296293721137
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -7408,7 +7493,88 @@
 									"sid": 589622219372749
 								}
 							],
-							"sid": 992686932878151
+							"sid": 992686932878151,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 304358374178263,
+											"parameters": {
+												"variable": "EnergiaLiberada"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 679813045144033,
+											"parameters": {
+												"first-value": "EnergiaCerta",
+												"comparison": 1,
+												"second-value": "EnergiaEscolhida"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 819755699413503,
+											"parameters": {
+												"variable": "Fase1Tutorial"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 409876193794336,
+											"parameters": {
+												"variable": "Erro",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "TelaDeErro",
+											"sid": 811049379306354,
+											"parameters": {
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 549910763697731,
+											"parameters": {
+												"seconds": "2"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "TelaDeErro",
+											"sid": 439918095955323,
+											"parameters": {
+												"x": "-1364",
+												"y": "-4"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 430482876993469,
+											"parameters": {
+												"layout": "Loja"
+											}
+										}
+									],
+									"sid": 667062577736347
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -9151,6 +9317,14 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 741152142700895,
+							"parameters": {
+								"variable": "EnergiaLiberada"
+							}
+						},
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",

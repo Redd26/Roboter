@@ -425,7 +425,8 @@
 					"HUDMaldicao",
 					"HUDrobotica",
 					"IconeHUDmaldicao",
-					"IconeHUDrobotica"
+					"IconeHUDrobotica",
+					"ProximoCut"
 				],
 				"subfolders": [],
 				"name": "HUD"
@@ -479,6 +480,7 @@
 	"layouts": {
 		"items": [
 			"MenuPrincipal",
+			"CutInicio",
 			"Loja",
 			"Quarto",
 			"Montagem_Material",
@@ -486,8 +488,8 @@
 			"Montagem_QuebraCabeca",
 			"Montagem_Empacotar",
 			"CutRuim",
-			"CutInicio",
-			"CutContinua"
+			"CutContinua",
+			"Creditos"
 		],
 		"subfolders": []
 	},
@@ -509,7 +511,8 @@
 			"EV_CutRuim",
 			"EV_CutInicio",
 			"EV_Continua",
-			"EV_Dialogos"
+			"EV_Dialogos",
+			"EV_Creditos"
 		],
 		"subfolders": []
 	},
@@ -676,6 +679,22 @@
 					"name": "BatidaDoRelogio.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 119249028924913,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Forno.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 915011502067427,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "VaporAr.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 740424455358847,
 					"file-info": {
 						"purpose": "none"
 					}

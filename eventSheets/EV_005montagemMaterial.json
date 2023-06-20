@@ -5442,6 +5442,14 @@
 							],
 							"actions": [
 								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 748496952179235,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
 									"callFunction": "AbrirDialogo",
 									"sid": 110317098485519
 								}

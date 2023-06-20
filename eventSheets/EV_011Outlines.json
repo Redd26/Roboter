@@ -90,20 +90,63 @@
 								"object": "CamaQuarto"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 146300622792217,
+							"parameters": {
+								"variable": "Dormir"
+							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "CamaQuarto",
-							"sid": 822613304600057,
+							"sid": 278468832476953,
+							"parameters": {
+								"animation": "\"Dormir\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 125379611179829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 951322308369693,
+							"parameters": {
+								"object": "CamaQuarto"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 256515149330867,
+							"parameters": {
+								"variable": "Dormir"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CamaQuarto",
+							"sid": 266279192582281,
 							"parameters": {
 								"animation": "\"Idle\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 125379611179829
+					"sid": 304307098927143
 				},
 				{
 					"eventType": "block",
@@ -177,20 +220,63 @@
 								"object": "MesaDeEstudos"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 116079084801738,
+							"parameters": {
+								"variable": "Estudar"
+							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "MesaDeEstudos",
-							"sid": 913222530502558,
+							"sid": 568222389480601,
+							"parameters": {
+								"animation": "\"Upgrade\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 696498537588909
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 631761822252945,
+							"parameters": {
+								"object": "MesaDeEstudos"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 437224274022738,
+							"parameters": {
+								"variable": "Estudar"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaDeEstudos",
+							"sid": 865311902192649,
 							"parameters": {
 								"animation": "\"Idle\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 696498537588909
+					"sid": 453557340068673
 				},
 				{
 					"eventType": "block",
@@ -1101,20 +1187,200 @@
 								"object": "CaixaCorreiosLoja"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 868717142889301,
+							"parameters": {
+								"variable": "PedidoAceito"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 493592964863788,
+							"parameters": {
+								"variable": "PedidoNegado"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "CaixaCorreiosLoja",
-							"sid": 615059370229775,
+							"sid": 672458502881759,
+							"parameters": {
+								"animation": "\"ComCartas\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 694943782360893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 198156078925128,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 604918142012158,
+							"parameters": {
+								"variable": "PedidoAceito"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 713191629168609,
+							"parameters": {
+								"variable": "PedidoNegado"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 809609367937068,
 							"parameters": {
 								"animation": "\"IdleCorreio\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 694943782360893
+					"sid": 989933429615914
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 264254786197203,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 131852669400645,
+							"parameters": {
+								"variable": "PedidoAceito"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 789798515879246,
+							"parameters": {
+								"variable": "PedidoNegado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 750619177451220,
+							"parameters": {
+								"animation": "\"IdleCorreio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 424468123093621
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 933924918990260,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 580949802585511,
+							"parameters": {
+								"variable": "PedidoAceito"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 808540199728810,
+							"parameters": {
+								"variable": "PedidoNegado"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 839592830460680,
+							"parameters": {
+								"animation": "\"IdleCorreio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 804816160562824
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 864219126184891,
+							"parameters": {
+								"object": "CaixaCorreiosLoja"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 937779627802457,
+							"parameters": {
+								"variable": "BloquearCorreio"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "CaixaCorreiosLoja",
+							"sid": 324830170748775,
+							"parameters": {
+								"animation": "\"IdleCorreio\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 790361338583148
 				},
 				{
 					"eventType": "block",
@@ -1167,6 +1433,31 @@
 							"sid": 517856829804443
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 411275743935098,
+							"parameters": {
+								"variable": "PedidoAceito"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MesaOficina",
+							"sid": 633562110657641,
+							"parameters": {
+								"animation": "\"Pronta\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 368625501193438
 				},
 				{
 					"eventType": "block",
@@ -1287,6 +1578,18 @@
 							"parameters": {
 								"animation": "\"Click\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 887568885641624,
+							"parameters": {
+								"audio-file": "VaporAr",
+								"loop": "not-looping",
+								"volume": "-10",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3446,6 +3749,15 @@
 								"variable": "DialogoVisivel"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 305574440176133,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -3588,6 +3900,15 @@
 							"sid": 219894649902533,
 							"parameters": {
 								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 690167475660404,
+							"parameters": {
+								"variable": "Fase1Tutorial"
 							},
 							"isInverted": true
 						}
@@ -3734,6 +4055,15 @@
 								"variable": "DialogoVisivel"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 741421942213851,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -3876,6 +4206,15 @@
 							"sid": 289286423879695,
 							"parameters": {
 								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 889471254356220,
+							"parameters": {
+								"variable": "Fase1Tutorial"
 							},
 							"isInverted": true
 						}
@@ -4035,6 +4374,15 @@
 								"variable": "DialogoVisivel"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 955670437290079,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -4177,6 +4525,15 @@
 							"sid": 862804853593172,
 							"parameters": {
 								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 764511232780520,
+							"parameters": {
+								"variable": "Fase1Tutorial"
 							},
 							"isInverted": true
 						}
@@ -4323,6 +4680,15 @@
 								"variable": "DialogoVisivel"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 969652315088077,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -4465,6 +4831,15 @@
 							"sid": 997700547834256,
 							"parameters": {
 								"variable": "DialogoVisivel"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 701445702721743,
+							"parameters": {
+								"variable": "Fase1Tutorial"
 							},
 							"isInverted": true
 						}
@@ -4611,6 +4986,15 @@
 								"variable": "DialogoVisivel"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 347864329529462,
+							"parameters": {
+								"variable": "Fase1Tutorial"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -4733,6 +5117,56 @@
 						}
 					],
 					"sid": 455278058621655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 883275752883044,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 446233610008637,
+							"parameters": {
+								"variable": "BloquearCorreio"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Porta",
+							"sid": 895528813581073,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline2\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 876721073715338,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Porta",
+							"sid": 157720058797801,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline2\""
+							}
+						}
+					],
+					"sid": 438019855775727
 				}
 			],
 			"sid": 260470849061204

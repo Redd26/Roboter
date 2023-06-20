@@ -904,6 +904,234 @@
 			"disabled": true
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 229252365367595,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 843720348296987,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 818306130049404,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 841936547931484,
+					"parameters": {
+						"variable": "Dia",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 612773497073492,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 365495973590244
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 965892253216290,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 793842003500784,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 568785854439871,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 666676001542499,
+					"parameters": {
+						"variable": "Dia",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 358439143074209,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 763533246605977
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 361434228024826,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 225968203128689,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 661115268864850,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 787561930979298,
+					"parameters": {
+						"variable": "Dia",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 608310827439810,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 419785444945084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 936307245487129,
+					"parameters": {
+						"variable": "PedidosAcertos",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 889236042574962,
+					"parameters": {
+						"variable": "NumeroCartaNegada",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 425135468328519,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 673263317129941,
+					"parameters": {
+						"variable": "Dia",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 210214052861360,
+					"parameters": {
+						"variable": "FinalizarDia",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 665275080524821
+		},
+		{
 			"eventType": "comment",
 			"text": "Contagem de dias"
 		},
@@ -2610,6 +2838,15 @@
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "MascaraDePolir",
+							"sid": 165354580002592,
+							"parameters": {
+								"animation": "\"PolirCobre\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 688008904657251,
@@ -2734,6 +2971,15 @@
 							"sid": 897297780644114,
 							"parameters": {
 								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "MascaraDePolir",
+							"sid": 875567504103871,
+							"parameters": {
+								"animation": "\"PolirEritro\"",
+								"from": "beginning"
 							}
 						},
 						{
@@ -2864,6 +3110,15 @@
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "MascaraDePolir",
+							"sid": 116393666955120,
+							"parameters": {
+								"animation": "\"PolirViridis\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 987679226582271,
@@ -2988,6 +3243,15 @@
 							"sid": 188917338354392,
 							"parameters": {
 								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "MascaraDePolir",
+							"sid": 900606781407043,
+							"parameters": {
+								"animation": "\"PolirOuro\"",
+								"from": "beginning"
 							}
 						},
 						{
@@ -6288,6 +6552,33 @@
 						}
 					],
 					"sid": 583224165097016
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 614156336082830,
+							"parameters": {
+								"first-value": "EnergiaEscolhida",
+								"comparison": 1,
+								"second-value": "EnergiaCerta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 666054258405038,
+							"parameters": {
+								"variable": "JogadorErrou",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 931647956274426
 				},
 				{
 					"eventType": "block",

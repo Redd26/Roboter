@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 484,
-						"height": 180,
+						"width": 488,
+						"height": 208,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4686489,
+						"imageSpriteId": 4222045,
 						"collisionPoly": {
 							"points": [
 								0.7272727272727273,
@@ -42,7 +42,130 @@
 					}
 				],
 				"sid": 810780625572696,
-				"name": "Animation 1",
+				"name": "PolirCobre",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 488,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8670690,
+						"collisionPoly": {
+							"points": [
+								0.7272727272727273,
+								0.13333333333333333,
+								0.8925619834710744,
+								0.4222222222222222,
+								0.9090909090909091,
+								0.9111111111111111,
+								0.18181818181818182,
+								0.8222222222222222,
+								0.10743801652892562,
+								0.5555555555555556,
+								0.09917355371900827,
+								0.28888888888888886,
+								0.15702479338842976,
+								0.26666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 161153826656557,
+				"name": "PolirOuro",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 488,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4386313,
+						"collisionPoly": {
+							"points": [
+								0.7272727272727273,
+								0.13333333333333333,
+								0.8925619834710744,
+								0.4222222222222222,
+								0.9090909090909091,
+								0.9111111111111111,
+								0.18181818181818182,
+								0.8222222222222222,
+								0.10743801652892562,
+								0.5555555555555556,
+								0.09917355371900827,
+								0.28888888888888886,
+								0.15702479338842976,
+								0.26666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 656451401143302,
+				"name": "PolirEritro",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 488,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6438219,
+						"collisionPoly": {
+							"points": [
+								0.7272727272727273,
+								0.13333333333333333,
+								0.8925619834710744,
+								0.4222222222222222,
+								0.9090909090909091,
+								0.9111111111111111,
+								0.18181818181818182,
+								0.8222222222222222,
+								0.10743801652892562,
+								0.5555555555555556,
+								0.09917355371900827,
+								0.28888888888888886,
+								0.15702479338842976,
+								0.26666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 443363967258993,
+				"name": "PolirViridis",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

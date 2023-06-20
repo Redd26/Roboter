@@ -199,6 +199,15 @@
 								"click-type": "clicked",
 								"object-clicked": "ProximoLevel"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 374294204313820,
+							"parameters": {
+								"variable": "TransformarPolir"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -247,6 +256,14 @@
 							"parameters": {
 								"x": "3000",
 								"y": "1500"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "MascaraDePolir",
+							"sid": 541851070352073,
+							"parameters": {
+								"visibility": "visible"
 							}
 						},
 						{
@@ -318,9 +335,26 @@
 										"comparison": 4,
 										"value": "1"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 435213789801325,
+									"parameters": {
+										"variable": "TransformarPolir"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "MascaraDePolir",
+									"sid": 270379836820453,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
 								{
 									"id": "play",
 									"objectClass": "Audio",
@@ -3985,6 +4019,15 @@
 						"variable": "TransformarPolir",
 						"value": "false"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaquinaDePolir",
+					"sid": 261794290046945,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 135236508203151
@@ -4054,9 +4097,48 @@
 						"create-hierarchy": true,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MaquinaDePolir",
+					"sid": 274443855192025,
+					"parameters": {
+						"animation": "\"EmUso\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 638067496250020
+		},
+		{
+			"eventType": "comment",
+			"text": "funciona?"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "MaquinaDePolir",
+					"sid": 184705313158891,
+					"parameters": {
+						"object": "MascaraDePolir"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MaquinaDePolir",
+					"sid": 389717991993149,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 519586886998939
 		},
 		{
 			"eventType": "block",
@@ -4125,6 +4207,14 @@
 					"parameters": {
 						"variable": "DestravarPlay",
 						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MascaraDePolir",
+					"sid": 419961026937326,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -4214,6 +4304,75 @@
 				}
 			],
 			"sid": 893588823304972
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 417806677631931,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 477127183433676,
+					"parameters": {
+						"variable": "TransformarPolir"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 565852712339952,
+					"parameters": {
+						"variable": "DestravarPlay"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 368349402052750,
+					"parameters": {
+						"object": "MaquinaDePolir"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "MaquinaDePolir",
+					"sid": 828087035108646,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"BetterOutline\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 477891801199370,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "MaquinaDePolir",
+					"sid": 630464386545947,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BetterOutline\""
+					}
+				}
+			],
+			"sid": 867044611369788
 		}
 	],
 	"sid": 886171643003322

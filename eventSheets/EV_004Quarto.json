@@ -295,6 +295,14 @@
 							"sid": 305982961813137
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 431707331807725,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 729685052125763,
@@ -389,6 +397,18 @@
 						{
 							"callFunction": "ChamarAnimUpgradePolir",
 							"sid": 204502193819738
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 474587390225472,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"callFunction": "AddDialogo",
+							"sid": 547380872400687
 						}
 					],
 					"sid": 960960685716617
@@ -908,6 +928,72 @@
 			"sid": 567684877177825
 		},
 		{
+			"functionName": "ChamarAnimDormir2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 658562349388793,
+					"parameters": {
+						"x": "-1.517213",
+						"y": "159.479665"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 440642472962535,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 972772113099987,
+					"parameters": {
+						"animation": "\"Dormir\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 392065119112060,
+					"parameters": {
+						"animation": "\"Acordar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 910947257942614,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "AnimDormirAcordar",
+					"sid": 123134450521781,
+					"parameters": {
+						"x": "-1429",
+						"y": "58"
+					}
+				}
+			],
+			"sid": 595539078505465
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -929,6 +1015,143 @@
 			],
 			"sid": 487644268836549,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 539326398114790,
+					"parameters": {
+						"variable": "EstouQuarto"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 123320089134366,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "FalasTutorial",
+					"sid": 550696293463905,
+					"parameters": {
+						"x": "386",
+						"y": "50"
+					}
+				}
+			],
+			"sid": 189306943637524,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 105601880063387
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "AbrirDialogo",
+							"sid": 691656541253401
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 532117634153672,
+							"parameters": {
+								"seconds": "7"
+							}
+						},
+						{
+							"callFunction": "AddDialogo",
+							"sid": 784217678331272
+						}
+					],
+					"sid": 233434740357082
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 318339552985590,
+					"parameters": {
+						"variable": "BarraRobotica",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 677970728655479,
+					"parameters": {
+						"variable": "EstouQuarto"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 998630063177853,
+					"parameters": {
+						"variable": "Falas",
+						"comparison": 0,
+						"value": "17"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 438430280625052,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 834812655697724
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 277750463112441,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"callFunction": "FecharDialogo",
+							"sid": 701159313329911
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 299970420748638,
+							"parameters": {
+								"variable": "Tutorial",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 504136933065621
+				}
+			]
 		}
 	],
 	"sid": 319169129069670

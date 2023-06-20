@@ -2033,7 +2033,7 @@
 				{
 					"type": "PrendedorCatapultaColisao",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2534,8 +2534,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 994,
-						"y": -487,
+						"x": 912,
+						"y": -425,
 						"width": 30,
 						"height": 22,
 						"originX": 0,
@@ -2881,8 +2881,8 @@
 						}
 					},
 					"world": {
-						"x": 749,
-						"y": -440,
+						"x": 1127,
+						"y": -512,
 						"width": 30,
 						"height": 26,
 						"originX": 0,
